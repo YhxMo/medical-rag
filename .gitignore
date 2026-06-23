@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.claude/
+.vscode/
+tmp/
+outputs/
+*.pyc
+.env
+.env.*
+!.env.example
+
+data/pdfs/*.pdf
+data/excluded_pdfs/*.pdf
+vector_db/
+*.sqlite3
