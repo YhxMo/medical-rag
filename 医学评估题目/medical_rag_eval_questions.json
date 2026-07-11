@@ -1,0 +1,781 @@
+[
+  {
+    "question_id": "web_rad_001",
+    "question": "疑似急性卒中患者为什么通常首先做头颅 CT 或头颅 MRI？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p51:addd5977653f",
+      "医学影像学.pdf:layout_heading:p52:c632bde45ab1"
+    ],
+    "expected_answer": "因为卒中的治疗取决于类型，首先需要区分缺血性卒中和出血性卒中。头颅 CT 能快速发现脑内出血、部分缺血改变和其他急症；头颅 MRI 可更细致评估脑组织损伤。必要时可加做 CTA、CTP、MRA 或 MRP 来评估血管和灌注情况。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "卒中影像评估",
+      "modality": [
+        "CT",
+        "MRI",
+        "CTA",
+        "CTP",
+        "MRA"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Stroke",
+      "source_url": "https://www.radiologyinfo.org/en/info/stroke",
+      "answer_points": [
+        "区分缺血性和出血性卒中",
+        "CT/MRI 常为首选初始检查",
+        "CTA/CTP/MRA 可辅助判断血管和灌注"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_002",
+    "question": "急性卒中评估中，CTA 和 CTP 分别主要帮助回答什么问题？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p52:c632bde45ab1",
+      "医学影像学.pdf:layout_heading:p358:0b5793e7b366"
+    ],
+    "expected_answer": "CTA 主要显示脑血管，用于寻找血管狭窄、闭塞、血栓或动脉瘤等异常；CTP 主要评估脑血流灌注，帮助判断缺血核心、低灌注区域和是否适合再通治疗。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "卒中 CT 血管与灌注成像",
+      "modality": [
+        "CTA",
+        "CTP"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Stroke",
+      "source_url": "https://www.radiologyinfo.org/en/info/stroke",
+      "answer_points": [
+        "CTA 评估脑血管",
+        "CTP 评估脑血流灌注",
+        "辅助治疗决策"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_003",
+    "question": "头颅 CT 在急诊头痛、头外伤或卒中症状中主要能发现哪些重要问题？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p51:addd5977653f",
+      "医学影像学.pdf:layout_heading:p64:92302a5d78d9"
+    ],
+    "expected_answer": "头颅 CT 可快速发现颅内出血、脑损伤、颅骨骨折、动脉瘤破裂相关出血、脑内血栓或出血性卒中表现，也可评估脑肿瘤、脑积水等其他颅内异常。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "头颅 CT 适应证",
+      "modality": [
+        "CT"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Head CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/headct",
+      "answer_points": [
+        "发现颅内出血",
+        "发现脑损伤和颅骨骨折",
+        "评估卒中和其他颅内病变"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_004",
+    "question": "非增强头颅 CT 上急性脑实质出血的典型影像表现是什么？",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p41:6a55cece72b6",
+      "医学影像诊断学习题集:第二章:43"
+    ],
+    "expected_answer": "急性脑实质出血通常表现为脑实质内高密度血肿，周围可有低密度水肿带，并可伴有占位效应、脑室受压、中线移位或破入脑室等表现。非增强 CT 是急诊快速识别急性出血的重要检查。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "脑出血 CT 表现",
+      "modality": [
+        "CT"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Head CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/headct",
+      "answer_points": [
+        "脑实质内高密度血肿",
+        "周围水肿和占位效应",
+        "CT 可快速发现急性出血"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_005",
+    "question": "外伤后硬膜外血肿和硬膜下血肿在头颅 CT 形态上如何区分？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p64:92302a5d78d9"
+    ],
+    "expected_answer": "硬膜外血肿多呈双凸透镜形或梭形颅板下高密度影，常受颅缝限制，常伴颅骨骨折；硬膜下血肿多呈新月形沿脑表面分布，可跨越颅缝，但通常受大脑镰、天幕等硬膜反折限制。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "颅脑外伤 CT 鉴别",
+      "modality": [
+        "CT"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Head CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/headct",
+      "answer_points": [
+        "硬膜外血肿双凸透镜形",
+        "硬膜下血肿新月形",
+        "硬膜外常受颅缝限制"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_006",
+    "question": "蛛网膜下腔出血疑诊时，头颅 CT 和 CTA 的作用分别是什么？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p64:92302a5d78d9",
+      "医学影像学.pdf:layout_heading:p354:b1d60c455778"
+    ],
+    "expected_answer": "头颅 CT 用于快速发现蛛网膜下腔内出血，尤其是突发剧烈头痛患者；CTA 可进一步评估脑血管，帮助寻找破裂动脉瘤或其他血管异常。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "蛛网膜下腔出血",
+      "modality": [
+        "CT",
+        "CTA"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Head CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/headct",
+      "answer_points": [
+        "CT 快速发现颅内出血",
+        "CTA 评估动脉瘤或血管异常",
+        "适用于突发严重头痛场景"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_007",
+    "question": "胸部 X 线在临床上常用于评估哪些胸部问题？",
+    "expected_evidence_ids": [],
+    "expected_answer": "胸部 X 线常用于评估呼吸困难、持续咳嗽、发热、胸痛或外伤，也可帮助诊断或随访肺炎、心力衰竭、肺气肿、肺癌、医疗器械位置以及胸腔积液或气胸等。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "胸片适应证",
+      "modality": [
+        "X-ray"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Chest X-ray",
+      "source_url": "https://www.radiologyinfo.org/en/info/chestrad",
+      "answer_points": [
+        "评估肺、心脏和胸壁",
+        "用于肺炎、肺气肿、胸腔气体或液体等",
+        "快速、简便，适合急诊初筛"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_008",
+    "question": "胸部 X 线上骨、软组织和含气肺组织通常分别呈什么密度表现？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p16:0a720560acd1"
+    ],
+    "expected_answer": "骨组织吸收 X 线较多，通常呈白色或浅灰色；软组织呈不同灰度；含气肺组织吸收较少，通常呈较黑的透亮影。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "X 线基本密度",
+      "modality": [
+        "X-ray"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Chest X-ray",
+      "source_url": "https://www.radiologyinfo.org/en/info/chestrad",
+      "answer_points": [
+        "骨白或浅灰",
+        "软组织灰",
+        "空气黑"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_009",
+    "question": "为什么正常或不典型的胸片不能排除肺栓塞？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p154:8999eac5e045"
+    ],
+    "expected_answer": "胸片对肺栓塞本身不敏感，许多肺栓塞患者胸片可正常或仅有非特异表现。胸片主要用于排除肺炎、气胸、心衰等其他胸痛或呼吸困难原因；疑似肺栓塞时通常需要根据风险分层进一步做 D-二聚体、CTPA 或 V/Q 扫描等。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "肺栓塞诊断",
+      "modality": [
+        "X-ray",
+        "CTPA",
+        "V/Q scan"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Pulmonary Embolism",
+      "source_url": "https://www.merckmanuals.com/professional/pulmonary-disorders/pulmonary-embolism-pe/pulmonary-embolism-pe",
+      "answer_points": [
+        "胸片表现常非特异",
+        "胸片不能排除肺栓塞",
+        "CTPA 通常用于确诊"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_010",
+    "question": "气胸在直立胸片上的典型影像表现有哪些？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p116:25aae20867f9"
+    ],
+    "expected_answer": "典型表现包括胸膜腔内透亮气体影、可见脏层胸膜线、该线外周肺纹理消失，肺组织向肺门或内侧萎陷。大量或张力性气胸还可出现纵隔或气管向对侧移位。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "气胸胸片表现",
+      "modality": [
+        "X-ray"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Pneumothorax",
+      "source_url": "https://www.merckmanuals.com/professional/pulmonary-disorders/mediastinal-and-pleural-disorders/pneumothorax",
+      "answer_points": [
+        "胸膜线",
+        "外周肺纹理消失",
+        "大量气胸可有纵隔移位"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_011",
+    "question": "张力性气胸为什么不能等待影像学确认后再处理？",
+    "expected_evidence_ids": [],
+    "expected_answer": "张力性气胸会使胸膜腔压力持续升高，导致肺萎陷、纵隔移位和静脉回流受阻，可能迅速出现低血压、呼吸循环衰竭或心脏骤停。因此一旦临床高度怀疑，应立即减压处理，不能因等待胸片或 CT 而延误。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "张力性气胸",
+      "modality": [
+        "Clinical",
+        "X-ray"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Pneumothorax",
+      "source_url": "https://www.merckmanuals.com/professional/pulmonary-disorders/mediastinal-and-pleural-disorders/pneumothorax",
+      "answer_points": [
+        "纵隔移位和静脉回流受阻",
+        "可迅速危及生命",
+        "临床诊断后立即处理"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_012",
+    "question": "仰卧位胸片中提示气胸的 deep sulcus sign 指什么？",
+    "expected_evidence_ids": [],
+    "expected_answer": "仰卧位时胸膜腔气体可聚集在前下胸腔，不一定表现为肺尖气胸。deep sulcus sign 指患侧肋膈角异常加深、透亮，提示仰卧位气胸，尤其适用于创伤或不能站立患者。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "仰卧位气胸征象",
+      "modality": [
+        "X-ray"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Pneumothorax",
+      "source_url": "https://www.merckmanuals.com/professional/pulmonary-disorders/mediastinal-and-pleural-disorders/pneumothorax",
+      "answer_points": [
+        "仰卧位气体分布不同",
+        "肋膈角异常加深透亮",
+        "提示气胸"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_013",
+    "question": "疑似急性肺栓塞时，CT 肺动脉造影和 V/Q 扫描各在什么情况下更常用？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p154:8999eac5e045"
+    ],
+    "expected_answer": "CT 肺动脉造影通常是诊断急性肺栓塞的首选影像检查，可直接显示肺动脉内充盈缺损并评估其他肺部病变。若存在肾功能不全、碘对比剂禁忌或妊娠等情况，且胸片正常或接近正常，V/Q 扫描常作为替代选择。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "肺栓塞 CTPA 与 V/Q 扫描",
+      "modality": [
+        "CTPA",
+        "V/Q scan"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Pulmonary Embolism",
+      "source_url": "https://www.merckmanuals.com/professional/pulmonary-disorders/pulmonary-embolism-pe/pulmonary-embolism-pe",
+      "answer_points": [
+        "CTPA 常为首选",
+        "V/Q 适合对比剂禁忌或妊娠等",
+        "CTPA 可见充盈缺损"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_014",
+    "question": "肺栓塞在胸片上有哪些经典但不敏感的提示性表现？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p154:8999eac5e045"
+    ],
+    "expected_answer": "胸片可正常或仅有非特异表现。经典但不敏感的提示性表现包括局灶血管纹理减少的 Westermark sign、胸膜基底楔形阴影即 Hampton hump、右下肺动脉增宽、局灶浸润、肺不张、膈肌升高或少量胸腔积液等。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "肺栓塞胸片征象",
+      "modality": [
+        "X-ray"
+      ],
+      "difficulty": "进阶",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Pulmonary Embolism",
+      "source_url": "https://www.merckmanuals.com/professional/pulmonary-disorders/pulmonary-embolism-pe/pulmonary-embolism-pe",
+      "answer_points": [
+        "Westermark sign",
+        "Hampton hump",
+        "经典征象不敏感"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_015",
+    "question": "与胸片相比，胸部 CT 在胸部疾病评估中有哪些优势？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p99:1984f52ea021",
+      "医学影像学.pdf:layout_heading:p100:f70b76f669bd"
+    ],
+    "expected_answer": "胸部 CT 可提供横断面和多平面图像，对肺结节、肿瘤、肺炎、结核、支气管扩张、胸膜疾病、间质性肺病、胸部外伤和血管病变等显示更详细；必要时还可做 CTA 评价胸部血管。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "胸部 CT 适应证",
+      "modality": [
+        "CT",
+        "CTA"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Chest CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/chestct",
+      "answer_points": [
+        "比胸片显示软组织和血管更详细",
+        "可评估肺结节、肿瘤、肺炎和结核等",
+        "可进行 CTA"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_016",
+    "question": "胸片发现肺炎可疑但临床或影像不典型时，为什么可能需要进一步做胸部 CT？",
+    "expected_evidence_ids": [],
+    "expected_answer": "胸片是肺炎等胸部疾病常用初筛检查，但对小病灶、复杂病变、并发症或被重叠结构遮挡的异常有限。胸部 CT 能更清楚显示肺实质、胸膜和纵隔结构，有助于评估肺炎范围、并发症以及其他可能诊断。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "肺炎影像评估",
+      "modality": [
+        "X-ray",
+        "CT"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Chest X-ray; Chest CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/chestct",
+      "source_urls": [
+        "https://www.radiologyinfo.org/en/info/chestrad",
+        "https://www.radiologyinfo.org/en/info/chestct"
+      ],
+      "answer_points": [
+        "胸片适合初筛",
+        "胸部 CT 显示更详细",
+        "用于不典型或复杂情况"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_017",
+    "question": "腹部和盆腔 CT 常用于评估哪些腹盆腔疾病或急症？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p222:54c8ef95a5f0",
+      "医学影像学.pdf:layout_heading:p226:23b7075ed145"
+    ],
+    "expected_answer": "腹部和盆腔 CT 常用于寻找腹痛、恶心呕吐原因，评估阑尾炎、憩室炎、肾盂肾炎、感染性积液或脓肿、炎症性肠病、胰腺炎、肝肠肾胰等肿瘤、肾和膀胱结石、腹主动脉瘤以及外伤导致的实质脏器损伤和出血。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "腹盆腔 CT 适应证",
+      "modality": [
+        "CT"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Abdominal and Pelvic CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/abdominct",
+      "answer_points": [
+        "腹痛急症",
+        "感染、炎症、肿瘤、结石",
+        "腹主动脉瘤和外伤"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_018",
+    "question": "成人疑似急性阑尾炎时，哪种影像检查常被优先用于诊断，理由是什么？",
+    "expected_evidence_ids": [],
+    "expected_answer": "成人疑似急性阑尾炎时，腹部和盆腔 CT 常被优先用于诊断，因为它准确性高，能显示阑尾炎本身及周围炎症、穿孔、脓肿等并发症，也能帮助排除其他腹痛原因。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "急性阑尾炎 CT",
+      "modality": [
+        "CT"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Appendicitis",
+      "source_url": "https://www.radiologyinfo.org/en/info/appendicitis",
+      "answer_points": [
+        "成人常用 CT",
+        "准确性高",
+        "可评估并发症和鉴别诊断"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_019",
+    "question": "儿童或孕妇疑似阑尾炎时，为什么常先考虑超声或 MRI？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p302:8aa9a2d9cc3e"
+    ],
+    "expected_answer": "儿童和孕妇需要尽量减少电离辐射暴露。超声不使用电离辐射，常作为儿童和孕妇阑尾炎评估的优先检查；若超声结果不明确，孕妇或年轻患者可考虑 MRI 进一步评估。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "特殊人群阑尾炎影像选择",
+      "modality": [
+        "Ultrasound",
+        "MRI"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Appendicitis",
+      "source_url": "https://www.radiologyinfo.org/en/info/appendicitis",
+      "answer_points": [
+        "减少电离辐射",
+        "超声优先",
+        "MRI 可作为进一步检查"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_020",
+    "question": "阑尾炎破裂形成腹腔脓肿时，影像引导经皮脓肿引流的作用是什么？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p366:96ba072d8a8b",
+      "医学影像学.pdf:layout_heading:p332:81c22805a137"
+    ],
+    "expected_answer": "当阑尾炎破裂形成脓肿时，经皮脓肿引流可在影像引导下将感染性液体从体内引出，控制感染和脓肿负荷，常与后续或同步的外科处理、抗感染治疗等共同使用。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "阑尾炎并发脓肿介入处理",
+      "modality": [
+        "Image-guided procedure",
+        "CT",
+        "Ultrasound"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Appendicitis",
+      "source_url": "https://www.radiologyinfo.org/en/info/appendicitis",
+      "answer_points": [
+        "影像引导下引流感染液体",
+        "控制脓肿",
+        "辅助整体治疗"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_021",
+    "question": "急性胆囊炎的腹部超声常见诊断线索有哪些？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p200:fa7c8e55ff41"
+    ],
+    "expected_answer": "常见线索包括胆囊结石或胆囊颈/胆囊管梗阻证据、胆囊壁增厚、胆囊周围液体、超声 Murphy 征阳性，以及胆囊扩张等。若超声结果不明确，可考虑胆道核素显像；怀疑穿孔、脓肿或胆总管结石时可进一步用 CT、MRI/MRCP。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "急性胆囊炎超声",
+      "modality": [
+        "Ultrasound",
+        "HIDA",
+        "CT",
+        "MRI",
+        "MRCP"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Acute Cholecystitis",
+      "source_url": "https://www.merckmanuals.com/professional/hepatic-and-biliary-disorders/gallbladder-and-bile-duct-disorders/acute-cholecystitis",
+      "answer_points": [
+        "胆囊结石",
+        "超声 Murphy 征",
+        "胆囊壁增厚和胆囊周围液体"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_022",
+    "question": "无结石性胆囊炎在影像上应如何怀疑？",
+    "expected_evidence_ids": [],
+    "expected_answer": "高危患者如重症、长期禁食、免疫抑制或休克患者，即使没有胆结石，如果出现超声 Murphy 征、胆囊壁增厚、胆囊周围液体、胆囊扩张或胆泥，也应怀疑无结石性胆囊炎。胆道核素显像对该病较可靠，CT/MRI 多作为补充。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "无结石性胆囊炎",
+      "modality": [
+        "Ultrasound",
+        "HIDA",
+        "CT",
+        "MRI"
+      ],
+      "difficulty": "进阶",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Acute Cholecystitis",
+      "source_url": "https://www.merckmanuals.com/professional/hepatic-and-biliary-disorders/gallbladder-and-bile-duct-disorders/acute-cholecystitis",
+      "answer_points": [
+        "无结石但有胆囊炎影像征象",
+        "常见于重症或禁食患者",
+        "胆道核素显像有帮助"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_023",
+    "question": "急性胰腺炎中，超声、CT 和 MRCP 各自主要用于解决什么问题？",
+    "expected_evidence_ids": [],
+    "expected_answer": "超声主要用于寻找胆囊结石和胆道梗阻等病因；腹部 CT 可显示胰腺和周围结构，评估炎症、梗阻及并发症；MRCP 能详细显示肝胆胰管系统，对胆道树内结石或导管阻塞评估有价值。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "急性胰腺炎影像选择",
+      "modality": [
+        "Ultrasound",
+        "CT",
+        "MRCP"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Pancreatitis",
+      "source_url": "https://www.radiologyinfo.org/en/info/pancreatitis",
+      "answer_points": [
+        "超声找胆石和胆道梗阻",
+        "CT 评估炎症和并发症",
+        "MRCP 显示胆胰管和胆道结石"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_024",
+    "question": "增强横断面影像在坏死性胰腺炎评估中的价值是什么？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p206:e8dc0ab322c4"
+    ],
+    "expected_answer": "增强 CT 或其他增强横断面影像可显示胰腺或胰周组织坏死、液体积聚、包裹性坏死、感染征象和其他局部并发症。坏死性胰腺炎通常提示病程更重、住院时间更长且并发症风险更高。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "坏死性胰腺炎",
+      "modality": [
+        "Contrast-enhanced CT",
+        "MRI"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "Merck Manual Professional: Acute Pancreatitis",
+      "source_url": "https://www.merckmanuals.com/professional/gastrointestinal-disorders/pancreatitis/acute-pancreatitis",
+      "answer_points": [
+        "显示胰腺及胰周坏死",
+        "评估局部并发症",
+        "提示较重病程"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_025",
+    "question": "MRCP 在胆源性胰腺炎或胆道梗阻评估中有什么优势？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p196:919744d7fba3",
+      "医学影像学.pdf:layout_heading:p198:8bd528cc2f77"
+    ],
+    "expected_answer": "MRCP 是 MRI 技术，可清楚显示肝脏、胆囊、胆管、胰腺和胰管，适合评估胆总管或胆道树内结石、胆道梗阻和胰胆管解剖。某些胆道结石在超声或 CT 上不容易显示，MRCP 可提供补充信息。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "MRCP 胰胆管成像",
+      "modality": [
+        "MRCP",
+        "MRI"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Pancreatitis",
+      "source_url": "https://www.radiologyinfo.org/en/info/pancreatitis",
+      "answer_points": [
+        "显示肝胆胰管系统",
+        "评估胆道树结石",
+        "补充超声和 CT 的不足"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_026",
+    "question": "腹部 CT 在泌尿系结石和腹主动脉瘤评估中有什么作用？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p222:54c8ef95a5f0",
+      "医学影像学.pdf:layout_heading:p227:9a4d594ba2d4"
+    ],
+    "expected_answer": "腹部和盆腔 CT 可用于寻找肾和膀胱结石，判断结石部位、梗阻和相关并发症；也可评估腹主动脉瘤，帮助判断动脉瘤存在、范围以及是否有急性并发症或其他腹痛原因。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "腹部 CT 结石与血管急症",
+      "modality": [
+        "CT"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Abdominal and Pelvic CT",
+      "source_url": "https://www.radiologyinfo.org/en/info/abdominct",
+      "answer_points": [
+        "评估肾和膀胱结石",
+        "评估腹主动脉瘤",
+        "帮助寻找腹痛原因"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_027",
+    "question": "筛查性乳腺 X 线摄影的主要目的是什么？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p155:ec384ef640de"
+    ],
+    "expected_answer": "筛查性乳腺 X 线摄影使用低剂量 X 线在无症状阶段尽早发现乳腺癌或癌前病变，因为早期发现时治疗选择更多、预后更好。它也能发现一些尚不能触及的肿块、密度异常或钙化。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "乳腺摄影筛查",
+      "modality": [
+        "Mammography"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Mammography",
+      "source_url": "https://www.radiologyinfo.org/en/info/mammo",
+      "answer_points": [
+        "低剂量 X 线",
+        "无症状阶段早期发现",
+        "可发现肿块、密度异常或钙化"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_028",
+    "question": "乳腺断层合成成像，也称 3D mammography，相比常规二维乳腺摄影可能有哪些优势？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p155:ec384ef640de"
+    ],
+    "expected_answer": "乳腺断层合成成像从多个角度采集图像并重建为三维图像组，可减少组织重叠影响，更容易发现被常规图像遮盖的小癌灶，减少不必要召回，并更准确判断病灶大小、形态和位置，尤其对致密乳腺更有帮助。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "乳腺断层合成",
+      "modality": [
+        "Digital breast tomosynthesis",
+        "Mammography"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Mammography",
+      "source_url": "https://www.radiologyinfo.org/en/info/mammo",
+      "answer_points": [
+        "多角度采集并重建",
+        "减少组织重叠",
+        "提高检出并减少召回"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_029",
+    "question": "乳腺肿块评估中，乳腺超声和乳腺 MRI 各自常用于补充哪些信息？",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p156:c3181f8f0710"
+    ],
+    "expected_answer": "乳腺超声可帮助判断肿块是实性还是囊性，并能评估乳腺摄影较难显示的区域；乳腺 MRI 可提供乳腺内部更详细的软组织信息，常用于乳腺摄影或超声不易显示的病灶、致密乳腺或需要评估病变范围的情况。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "乳腺多模态影像",
+      "modality": [
+        "Ultrasound",
+        "MRI",
+        "Mammography"
+      ],
+      "difficulty": "基础",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: Breast Cancer",
+      "source_url": "https://www.radiologyinfo.org/en/info/breast-cancer",
+      "answer_points": [
+        "超声区分实性与囊性",
+        "MRI 显示详细软组织信息",
+        "适合致密乳腺或范围评估"
+      ]
+    }
+  },
+  {
+    "question_id": "web_rad_030",
+    "question": "BI-RADS 3、4、5 类在乳腺影像报告中分别大致提示什么管理策略？",
+    "expected_evidence_ids": [],
+    "expected_answer": "BI-RADS 3 表示大概率良性，但仍建议短期随访，常见为 6 个月复查；BI-RADS 4 表示可疑异常，通常建议活检，并可细分 4A、4B、4C；BI-RADS 5 表示高度提示恶性，强烈建议活检以确诊。",
+    "reviewed": true,
+    "metadata": {
+      "domain": "医学影像学",
+      "topic": "BI-RADS 报告解读",
+      "modality": [
+        "Mammography",
+        "Ultrasound",
+        "MRI"
+      ],
+      "difficulty": "中等",
+      "question_type": "short_answer",
+      "source_title": "RadiologyInfo: How to Read Your Breast Imaging Report using BI-RADS",
+      "source_url": "https://www.radiologyinfo.org/en/info/article-breast-imaging-report",
+      "answer_points": [
+        "BI-RADS 3 短期随访",
+        "BI-RADS 4 建议活检",
+        "BI-RADS 5 高度疑恶性并建议活检"
+      ]
+    }
+  }
+]

@@ -1,15 +1,33 @@
+# Python caches and local environments
 __pycache__/
 .pytest_cache/
-.claude/
-.vscode/
-tmp/
-outputs/
+.ruff_cache/
+.venv/
+venv/
 *.pyc
-.env
-.env.*
-!.env.example
 
-data/pdfs/*.pdf
-data/excluded_pdfs/*.pdf
-vector_db/
-*.sqlite3
+# Local secrets/configuration
+.env
+config.yaml
+
+# Generated artifacts and model/data assets
+artifacts/
+models/
+experiments/results/
+data/test_questions.json
+data/*.pdf
+模型详情/
+*.faiss
+*.pkl
+*.jsonl
+
+# Local tooling caches and temporary outputs
+.codegraph/
+.tmp_pytest/
+.tmp_pytest_cache/
+tmp/
+temp/
+dir/
+*.tmp
+*.log
+scripts/_tmp*

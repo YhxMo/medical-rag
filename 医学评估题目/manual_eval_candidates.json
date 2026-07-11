@@ -1,0 +1,902 @@
+[
+  {
+    "question_id": "manual_eval_0001",
+    "question": "什么是数字化X线成像？",
+    "expected_answer": "数字化X线成像：在X线设备成像过程中，将透过人体的X线信息进行像素化和数字化。再经计算机系统进行各种处理，最后转换为模拟X线图像的方式。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第一章:名词解释:1"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 2,
+    "page_end": 14,
+    "difficulty": "easy",
+    "source_quote": "题目：数字化X线成像 答案：数字化X线成像：在X线设备成像过程中，将透过人体的X线信息进行像素化和数字化， 解析：再经计算机系统进行各种处理，最后转换为模拟X线图像的方式。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0002",
+    "question": "关于CT成像的局限性，以下哪项认识是错误的？",
+    "expected_answer": "E",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第一章:A1型题:15"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 6,
+    "page_end": 17,
+    "difficulty": "easy",
+    "source_quote": "题目：关于CT成像的局限性，以下哪项认识是错误的 答案：E",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0003",
+    "question": "什么是脑血管造影？",
+    "expected_answer": "脑血管造影：通常用DSA技术，包括颈动脉造影和椎动脉造影。主要用于评估脑血管疾病，如颅内动脉瘤、动静脉畸形等，是脑血管疾病诊断的“金标准”，也是脑血管疾病介人治疗的组成部分。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第二章:名词解释:1"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 22,
+    "page_end": 32,
+    "difficulty": "easy",
+    "source_quote": "题目：脑血管造影 答案：脑血管造影：通常用DSA技术，包括颈动脉造影和椎动脉造影。主要用于评估脑血管疾病，如 解析：颅内动脉瘤、动静脉畸形等，是脑血管疾病诊断的“金标准”，也是脑血管疾病介人治疗的组成部分。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0004",
+    "question": "试述髓内肿瘤的常见类型及其MRI表现？",
+    "expected_answer": "试述髓内肿瘤的常见类型及其MRI表现。髓内肿瘤的常见类型：髓内肿瘤常见为星形细胞瘤和室管膜瘤。MRI表现：①脊髓增粗，周围 蛛网膜下腔对称性变窄、闭塞；②TWI呈低信号，TWI呈等或稍高信号，增强扫描肿块可见不同程 度强化，囊变部分不强化。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第二章:简答题:14"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 32,
+    "page_end": 37,
+    "difficulty": "medium",
+    "source_quote": "题目：试述髓内肿瘤的常见类型及其MRI表现。 答案：试述髓内肿瘤的常见类型及其MRI表现。 解析：髓内肿瘤的常见类型：髓内肿瘤常见为星形细胞瘤和室管膜瘤。MRI表现：①脊髓增粗，周围 蛛网膜下腔对称性变窄、闭塞；②TWI呈低信号，TWI呈等或稍高信号，增强扫描肿块可见不同程 度强化，囊变部分不强化。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0005",
+    "question": "根据该习题，支气管扩张按其形态可分为以下三型的答案是什么？",
+    "expected_answer": "柱状支气管扩张囊状支气管扩张曲张型支气管扩张",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第四章:填空题:10"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 55,
+    "page_end": 66,
+    "difficulty": "medium",
+    "source_quote": "题目：支气管扩张按其形态可分为以下三型： 答案：柱状支气管扩张囊状支气管扩张曲张型支气管扩张",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0006",
+    "question": "根据该习题，主动脉瘤是指主动脉管腔扩张大于正常主动脉的多少倍以上的答案是什么？",
+    "expected_answer": "B",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第五章:24"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 73,
+    "page_end": 80,
+    "difficulty": "easy",
+    "source_quote": "题目：主动脉瘤是指主动脉管腔扩张大于正常主动脉的多少倍以上 答案：B",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0007",
+    "question": "根据该习题，对于妊娠女性，临床医生触及乳腺肿块，首选的检查是的答案是什么？",
+    "expected_answer": "C",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第六章:21"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 86,
+    "page_end": 88,
+    "difficulty": "easy",
+    "source_quote": "题目：对于妊娠女性，临床医生触及乳腺肿块，首选的检查是 答案：C",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0008",
+    "question": "根据该习题，反复发作的慢性胰腺炎与胰腺癌鉴别困难，以下征象最有助于两者鉴别的是的答案是什么？",
+    "expected_answer": "E",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第七章:第二节:45"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 100,
+    "page_end": 105,
+    "difficulty": "easy",
+    "source_quote": "题目：反复发作的慢性胰腺炎与胰腺癌鉴别困难，以下征象最有助于两者鉴别的是 答案：E",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0009",
+    "question": "什么是结节性肾上腺增生？",
+    "expected_answer": "结节性肾上腺增生：是皮质增生的一种表现类型，除显示弥漫性增生所具有的双侧肾上腺。增大外，还于增大肾上腺的边缘见一个或多个小结节影，且通常为双侧性。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第八章:第二节:名词解释:2"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 118,
+    "page_end": 120,
+    "difficulty": "easy",
+    "source_quote": "题目：结节性肾上腺增生 答案：结节性肾上腺增生：是皮质增生的一种表现类型，除显示弥漫性增生所具有的双侧肾上腺 解析：增大外，还于增大肾上腺的边缘见一个或多个小结节影，且通常为双侧性。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0010",
+    "question": "什么是Codman三角？",
+    "expected_answer": "Codman三角：随骨骼病变进展，已经形成的骨膜新生骨可被病变破坏，破坏区两侧的骨膜。新生骨残端与母骨间呈三角形外观，称Codman三角，也称骨膜三角，常见于骨肉瘤。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第九章:名词解释:17"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 133,
+    "page_end": 145,
+    "difficulty": "easy",
+    "source_quote": "题目：Codman三角 答案：Codman三角：随骨骼病变进展，已经形成的骨膜新生骨可被病变破坏，破坏区两侧的骨膜 解析：新生骨残端与母骨间呈三角形外观，称Codman三角，也称骨膜三角，常见于骨肉瘤。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0011",
+    "question": "根据该习题，干端及骨局限性骨质疏松，骨小梁纤细，模糊或不连续，病变进展可出现多数斑点密 度减低区及椭圆形或不规则骨质破坏区，边缘锐利，部分边缘硬化，破坏区内有时可见多发砂粒状 死骨，病变向关节方向发展的疾病是的答案是什么？",
+    "expected_answer": "B",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第九章:85"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 143,
+    "page_end": 147,
+    "difficulty": "medium",
+    "source_quote": "题目：干端及骨局限性骨质疏松，骨小梁纤细，模糊或不连续，病变进展可出现多数斑点密 度减低区及椭圆形或不规则骨质破坏区，边缘锐利，部分边缘硬化，破坏区内有时可见多发砂粒状 死骨，病变向关节方向发展的疾病是 答案：B",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0012",
+    "question": "什么是血管内支架？",
+    "expected_answer": "血管内支架：是指应用医用不锈钢或各种合金材料制作的是管状形态的网格结构，为专门。用于治疗狭窄性血管病变的介入治疗器材。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第十二章:名词解释:3"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 161,
+    "page_end": 164,
+    "difficulty": "easy",
+    "source_quote": "题目：血管内支架 答案：血管内支架：是指应用医用不锈钢或各种合金材料制作的是管状形态的网格结构，为专门 解析：用于治疗狭窄性血管病变的介入治疗器材。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0013",
+    "question": "根据该习题，血小板低于60×10/L且至少有过一次食管胃底静脉曲张破裂出血病史的答案是什么？",
+    "expected_answer": "A",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第十三章:55"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 172,
+    "page_end": 174,
+    "difficulty": "medium",
+    "source_quote": "题目：血小板低于60×10/L且至少有过一次食管胃底静脉曲张破裂出血病史 答案：A",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0014",
+    "question": "简述子宫动脉栓塞治疗子宫肌瘤的禁忌证和适应证？",
+    "expected_answer": "简述子宫动脉栓塞治疗子宫肌瘤的禁忌证和适应证。适应证包括：①育龄期妇女，绝经期之前，希望保留生育功能或子宫者；②子宫肌瘤所引起的 经血过多或压迫性症状明显；③保守治疗（包括药物治疗及肌瘤局部切除术）无效或复发者：④无 症状，但有心理影响者：5体弱或合并严重内科疾病不能耐受手术者：6巨大子官肌瘤手术切除前 辅助性栓塞治疗。 禁忌证包括：①严重心脑血管疾病：②严重肝肾功能障碍；③凝血功能障碍；④带蒂的浆膜下 肌瘤、阔韧带肌瘤。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第十五章:简答题:3"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 187,
+    "page_end": 188,
+    "difficulty": "medium",
+    "source_quote": "题目：简述子宫动脉栓塞治疗子宫肌瘤的禁忌证和适应证。 答案：简述子宫动脉栓塞治疗子宫肌瘤的禁忌证和适应证。 解析：适应证包括：①育龄期妇女，绝经期之前，希望保留生育功能或子宫者；②子宫肌瘤所引起的 经血过多或压迫性症状明显；③保守治疗（包括药物治疗及肌瘤局部切除术）无效或复发者：④无 症状，但有心理影响者：5体弱或合并严重内科疾病不能耐受手术者：6巨大子官肌瘤手术切除前 辅助性栓塞治疗。 禁忌证包括：①严重心脑血管疾病：②严重肝肾功能障碍；③凝血功能障碍；④带蒂的浆膜下 肌瘤、阔韧带肌瘤。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0015",
+    "question": "本类疾病的影像学检查选择原则是什么？",
+    "expected_answer": "影像学检查选择原则。（1）超声可作为首次筛查手段，可见多发肝内胆管扩张，发现肝门部肿块。 （2）MRI结合MRCP是本病的理想检查方法，尤其对于胆管癌诊断价值高，MRCP可以明确胆 管梗阻的部位和范围，可判断肝内胆管扩张程度。 （3）CT多用于评估远处转移情况，并用于随访及疗效评估。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第七章消化系统与腹膜腔:7-6:2"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 221,
+    "page_end": 225,
+    "difficulty": "medium",
+    "source_quote": "题目：本类疾病的影像学检查选择原则是什么？ 答案：影像学检查选择原则 解析：（1）超声可作为首次筛查手段，可见多发肝内胆管扩张，发现肝门部肿块。 （2）MRI结合MRCP是本病的理想检查方法，尤其对于胆管癌诊断价值高，MRCP可以明确胆 管梗阻的部位和范围，可判断肝内胆管扩张程度。 （3）CT多用于评估远处转移情况，并用于随访及疗效评估。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0016",
+    "question": "超声证实左侧骼静脉及股静脉可见大量弱回声，提示血栓形成，应首选何种治疗？",
+    "expected_answer": "首选治疗方法下腔静脉滤器置入术及置管溶栓术。",
+    "expected_evidence_ids": [
+      "医学影像学学习指导与习题集:第十三章血管疾病的介入治疗:13-6:2"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像学学习指导与习题集.pdf",
+    "page_start": 249,
+    "page_end": 250,
+    "difficulty": "medium",
+    "source_quote": "题目：超声证实左侧骼静脉及股静脉可见大量弱回声，提示血栓形成，应首选何种治疗？ 答案：首选治疗方法下腔静脉滤器置入术及置管溶栓术。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0017",
+    "question": "根据该习题，关于椎管内肿瘤，叙述不正确的是 二章 中枢神经系统的答案是什么？",
+    "expected_answer": "D",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第二章:62"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 16,
+    "page_end": 22,
+    "difficulty": "easy",
+    "source_quote": "题目：关于椎管内肿瘤，叙述不正确的是 二章 中枢神经系统 答案：D",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0018",
+    "question": "简述颈动脉体瘤影像学诊断？",
+    "expected_answer": "简述颈动脉体瘤影像学诊断。平扫表现为颈总动脉分叉处类圆形软组织肿块，边界清楚；增强扫描，瘤体明显强 化，边界更清楚；颈动脉CTA三维重建示颈内、外动脉分叉间距增大，形似杯状。因肿瘤 富血供，MR可见点状和迁曲、增粗流空血管影，为本病MR特征性表现。",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第三章:简答题:8"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 32,
+    "page_end": 35,
+    "difficulty": "medium",
+    "source_quote": "题目：简述颈动脉体瘤影像学诊断。 答案：简述颈动脉体瘤影像学诊断。 解析：平扫表现为颈总动脉分叉处类圆形软组织肿块，边界清楚；增强扫描，瘤体明显强 化，边界更清楚；颈动脉CTA三维重建示颈内、外动脉分叉间距增大，形似杯状。因肿瘤 富血供，MR可见点状和迁曲、增粗流空血管影，为本病MR特征性表现。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0019",
+    "question": "试述气胸与液气胸的X线、CT表现？",
+    "expected_answer": "试述气胸与液气胸的X线、CT表现。X线表现：胸膜腔内气体表现为均匀一致的低密度，位于较高的部位（包裹性气胸例 外）。同时可见受压的肺组织，其密度高于正常肺组织，并向肺门方向收缩。液气胸则在 上述表现基础上出现液平面。 呼 CT表现：可显示脏层胸膜线，呈弧形细线样软组织影，与胸壁平行，并向胸壁方向凸 吸 出，其外侧为无肺组织的透亮区。CT可发现少量的气体及液体，可更清楚地显示肺组织 系 的受压。 统",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第四章:简答题:13"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 43,
+    "page_end": 48,
+    "difficulty": "medium",
+    "source_quote": "题目：试述气胸与液气胸的X线、CT表现。 答案：试述气胸与液气胸的X线、CT表现。 解析：X线表现：胸膜腔内气体表现为均匀一致的低密度，位于较高的部位（包裹性气胸例 外）。同时可见受压的肺组织，其密度高于正常肺组织，并向肺门方向收缩。液气胸则在 上述表现基础上出现液平面。 呼 CT表现：可显示脏层胸膜线，呈弧形细线样软组织影，与胸壁平行，并向胸壁方向凸 吸 出，其外侧为无肺组织的透亮区。CT可发现少量的气体及液体，可更清楚地显示肺组织 系 的受压。 统",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0020",
+    "question": "什么是阴性结石？",
+    "expected_answer": "阴性结石：胆道结石的钙盐成分较多时，X线透过率下降，称为阳性结石，反之。称为阴性结石。胆囊结石仅10%～20%为阳性结石，平片诊断价值有限。",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第六章:名词解释:20"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 62,
+    "page_end": 87,
+    "difficulty": "easy",
+    "source_quote": "题目：阴性结石 答案：阴性结石：胆道结石的钙盐成分较多时，X线透过率下降，称为阳性结石，反之 解析：称为阴性结石。胆囊结石仅10%～20%为阳性结石，平片诊断价值有限。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0021",
+    "question": "根据该习题，患者有腹部钝性损伤史而怀疑脾外伤，CT检查的目的是的答案是什么？",
+    "expected_answer": "E",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第六章:105"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 77,
+    "page_end": 88,
+    "difficulty": "easy",
+    "source_quote": "题目：患者有腹部钝性损伤史而怀疑脾外伤，CT检查的目的是 答案：E",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0022",
+    "question": "什么是肾自截？",
+    "expected_answer": "肾自截：严重肾结核患者，全肾散布钙化或全肾钙化，并且肾体积缩小，形成肾。自截。 泌尿系统及肾上腺、腹膜后间隙",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第七章:名词解释:4"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 95,
+    "page_end": 106,
+    "difficulty": "easy",
+    "source_quote": "题目：肾自截 答案：肾自截：严重肾结核患者，全肾散布钙化或全肾钙化，并且肾体积缩小，形成肾 解析：自截。 泌尿系统及肾上腺、腹膜后间隙",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0023",
+    "question": "根据该习题，男性生殖系统影像学检查时的基本病变包括 基本 病变。 ，必要时辅以的答案是什么？",
+    "expected_answer": "前列腺精囊腺阴囊和睾丸",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第八章生殖系统与乳腺:填空题:5"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 111,
+    "page_end": 117,
+    "difficulty": "medium",
+    "source_quote": "题目：男性生殖系统影像学检查时的基本病变包括 基本 病变。 ，必要时辅以 答案：前列腺精囊腺阴囊和睾丸",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0024",
+    "question": "简述类风湿关节炎的X线表现？",
+    "expected_answer": "简述类风湿关节炎的X线表现。（1）早期，手足小关节多发对称性的梭形软组织肿胀，关节间隙正常或略变宽，骨端 骨质疏松，边缘呈虫蚀状骨破坏。 （2）进展期，关节软骨破坏，关节间隙常呈一致性变窄，关节面骨皮质侵蚀性破坏， 骨性关节面模糊、中断，骨端出现多发的边界不清的小囊状透明区，骨质疏松加重。 （3）晚期，骨质疏松显著，关节面可出现明显骨质增生硬化，形成纤维性或者骨性强 直。骨破坏严重和肌肉萎缩可引起骨与骨之间的压迫性侵蚀，多见于承重性关…",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第九章骨:简答题:6"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 134,
+    "page_end": 136,
+    "difficulty": "medium",
+    "source_quote": "题目：简述类风湿关节炎的X线表现。 答案：简述类风湿关节炎的X线表现。 解析：（1）早期，手足小关节多发对称性的梭形软组织肿胀，关节间隙正常或略变宽，骨端 骨质疏松，边缘呈虫蚀状骨破坏。 （2）进展期，关节软骨破坏，关节间隙常呈一致性变窄，关节面骨皮质侵蚀性破坏， 骨性关节面模糊、中断，骨端出现多发的边界不清的小囊状透明区，骨质疏松加重。 （3）晚期，骨质疏松显著，关节面可出现明显骨质增生硬化，形成纤维性或者骨性强 直。骨破坏严重和肌肉萎缩可引起骨与骨之间的压迫性侵蚀，多见于承重性关节。另 外，RA还可导致关节半…",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0025",
+    "question": "简述视网膜母细胞瘤影像学表现？",
+    "expected_answer": "简述视网膜母细胞瘤影像学表现。（1）超声表现：①玻璃体腔内肿块，起自眼底光带，回声强弱不均匀；常见强回声“钙 斑”，其后有声影。②CDFI可见瘤内有丰富血流信号。 （2）CT表现：诊断视网膜母细胞瘤的敏感性和特异性均较高。眼球内不规则钙化性 肿块是诊断的重要直接征象，钙化呈团块状、片状或斑点状。 （3）MRI表现：与正常玻璃体信号相比，肿块TWI上呈稍高信号，T2WI上低信号； 并有明显强化。MRI观察视神经转移及颅内侵犯更敏感，可作…",
+    "expected_evidence_ids": [
+      "医学影像诊断学习题集:第十章儿科影像诊断:简答题:5"
+    ],
+    "evidence_type": "exercise_qa",
+    "source_file": "医学影像诊断学习题集.pdf",
+    "page_start": 149,
+    "page_end": 152,
+    "difficulty": "medium",
+    "source_quote": "题目：简述视网膜母细胞瘤影像学表现。 答案：简述视网膜母细胞瘤影像学表现。 解析：（1）超声表现：①玻璃体腔内肿块，起自眼底光带，回声强弱不均匀；常见强回声“钙 斑”，其后有声影。②CDFI可见瘤内有丰富血流信号。 （2）CT表现：诊断视网膜母细胞瘤的敏感性和特异性均较高。眼球内不规则钙化性 肿块是诊断的重要直接征象，钙化呈团块状、片状或斑点状。 （3）MRI表现：与正常玻璃体信号相比，肿块TWI上呈稍高信号，T2WI上低信号； 并有明显强化。MRI观察视神经转移及颅内侵犯更敏感，可作为超声和CT的补充检查 方法。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0026",
+    "question": "根据引文，影像学检查也常用于什么？",
+    "expected_answer": "用于健康体检，能够早期发现病变尤其是某些恶性肿瘤（例如早期肺癌、肾细胞 癌、早期乳腺癌等），这对于疾病的及时治疗、改善预后均具有重要的临床意义",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p13:95d63bd114c5"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 13,
+    "page_end": 14,
+    "difficulty": "easy",
+    "source_quote": "⑥影像学检查也常用于健康体检，能够早期发现病变尤其是某些恶性肿瘤（例如早期肺癌、肾细胞 癌、早期乳腺癌等），这对于疾病的及时治疗、改善预后均具有重要的临床意义；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0027",
+    "question": "根据引文，有助于颅内病变尤其是什么？",
+    "expected_answer": "是肿瘤性病变的诊 断与鉴别诊断",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p52:c632bde45ab1"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 52,
+    "page_end": 52,
+    "difficulty": "easy",
+    "source_quote": "4. 1H-MRS 检查 通过分析病变组织内代谢物的改变，有助于颅内病变尤其是肿瘤性病变的诊 断与鉴别诊断。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0028",
+    "question": "根据引文，左侧腮腺区可见什么？",
+    "expected_answer": "可见卵圆形软组织密度影，边界清楚",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p94:02f384cbad54"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 94,
+    "page_end": 94,
+    "difficulty": "easy",
+    "source_quote": "图3-11 腮腺多形性腺瘤 a. CT 检查，左侧腮腺区可见卵圆形软组织密度影，边界清楚；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0029",
+    "question": "根据引文，淋巴道转移者可表现为什么？",
+    "expected_answer": "表现为两肺门和 / 或纵隔淋巴结增大，同时可见自 肺门向外呈放射状分布的条索状影，可伴“串珠样”改变",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p130:6cd03c11004b"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 130,
+    "page_end": 130,
+    "difficulty": "easy",
+    "source_quote": "淋巴道转移者可表现为两肺门和 / 或纵隔淋巴结增大，同时可见自 肺门向外呈放射状分布的条索状影，可伴“串珠样”改变。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0030",
+    "question": "根据引文，肠壁表现为什么？",
+    "expected_answer": "表现为早期增厚、晚期变薄",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p172:837a4411cd50"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 172,
+    "page_end": 172,
+    "difficulty": "easy",
+    "source_quote": "缺血性肠 梗阻时，肠壁表现为早期增厚、晚期变薄。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0031",
+    "question": "根据引文，囊壁可见什么？",
+    "expected_answer": "可见，囊内有数条厚薄 不一的分隔（↑）",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p210:ff25379ce93f"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 210,
+    "page_end": 210,
+    "difficulty": "easy",
+    "source_quote": "200 第一篇 影像诊断学 图7-42 胰腺囊性肿瘤 a. 黏液性囊腺瘤，CT 增强显示胰体、尾部有一较大囊性肿块，囊壁可见，囊内有数条厚薄 不一的分隔（↑）；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0032",
+    "question": "根据引文，临床上主要表现为什么？",
+    "expected_answer": "表现为月经改变、邻近器官受压、疼痛、不孕和盆腔肿块",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p248:b10412302715"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 248,
+    "page_end": 248,
+    "difficulty": "easy",
+    "source_quote": "临床上主要表现为月经改变、邻近器官受压、疼痛、不孕和盆腔肿块。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0033",
+    "question": "根据引文，代谢性骨病是什么？",
+    "expected_answer": "是指机体因先天或后天性因素，破坏或 干扰了正常骨代谢和生化状态而引发的骨疾病",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p286:255a279232c5"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 286,
+    "page_end": 286,
+    "difficulty": "easy",
+    "source_quote": "（一） 代谢性骨病 代谢性骨病（metabolic bone disease）是指机体因先天或后天性因素，破坏或 干扰了正常骨代谢和生化状态而引发的骨疾病。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0034",
+    "question": "根据引文，经导管血管栓塞术的常见并发症包括什么？",
+    "expected_answer": "包括以下几个方面：①栓塞后综合征（post-embolization syndrome）， 指肿瘤和器官动脉栓塞后，因组织缺血坏死引起的恶心、呕吐、局部疼痛、发热、反射性肠郁张或麻痹性 肠梗阻、食欲下降等",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p330:86a3271e7013"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 330,
+    "page_end": 330,
+    "difficulty": "medium",
+    "source_quote": "经导管血管栓塞术的常见并发症包括以下几个方面：①栓塞后综合征（post-embolization syndrome）， 指肿瘤和器官动脉栓塞后，因组织缺血坏死引起的恶心、呕吐、局部疼痛、发热、反射性肠郁张或麻痹性 肠梗阻、食欲下降等；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0035",
+    "question": "根据引文，消融治疗是什么？",
+    "expected_answer": "是近年来发展起来的一项针对实体肿瘤，特别是原发性或转移性肝癌的微创治疗技术， 由于其创伤小、疗效确切、适应证范围广，越来越受到人们的重视",
+    "expected_evidence_ids": [
+      "医学影像学.pdf:layout_heading:p374:481549bb92ac"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像学.pdf",
+    "page_start": 374,
+    "page_end": 374,
+    "difficulty": "medium",
+    "source_quote": "364 第二篇 介入放射学 二、 肝癌的消融治疗 消融治疗是近年来发展起来的一项针对实体肿瘤，特别是原发性或转移性肝癌的微创治疗技术， 由于其创伤小、疗效确切、适应证范围广，越来越受到人们的重视。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0036",
+    "question": "根据引文，SWI表现为什么？",
+    "expected_answer": "表现为低信号（图2-15），且 能发现微小病变，是诊断脑出血最敏感的检查技术",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p42:b451c400b598"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 42,
+    "page_end": 43,
+    "difficulty": "easy",
+    "source_quote": "SWI表现为低信号（图2-15），且 能发现微小病变，是诊断脑出血最敏感的检查技术。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0037",
+    "question": "根据引文，CT可见什么？",
+    "expected_answer": "可见胸10椎体压缩性骨折，椎 板分离骨折，并椎体半脱位",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p75:ab93b064e1d6"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 75,
+    "page_end": 75,
+    "difficulty": "easy",
+    "source_quote": "CT可见胸10椎体压缩性骨折，椎 板分离骨折，并椎体半脱位。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0038",
+    "question": "根据引文，主要征象包括什么？",
+    "expected_answer": "包括：①梨状窝变窄或消失：主要表 现在梨状窝前壁、侧壁或后壁明显增厚，会厌皱增厚，致梨状窝狭窄或消失",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p98:845150625bcf"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 98,
+    "page_end": 99,
+    "difficulty": "easy",
+    "source_quote": "主要征象包括：①梨状窝变窄或消失：主要表 现在梨状窝前壁、侧壁或后壁明显增厚，会厌皱增厚，致梨状窝狭窄或消失；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0039",
+    "question": "根据引文，目前一般不用于什么？",
+    "expected_answer": "用于细支气管的检查",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p122:07c3fd10f0b3"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 122,
+    "page_end": 122,
+    "difficulty": "medium",
+    "source_quote": "第 （3）气管支气管的多平面重建、CT仿真内镜：层厚0.5～2mm：能显示气管及较大支气管， 四 章 特异性、敏感性均较低，显示的小支气管形态容易失真，目前一般不用于细支气管的检查。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0040",
+    "question": "根据引文，脓胸主要表现为什么？",
+    "expected_answer": "表现为胸腔积液，但容易形成分隔包裹及胸膜肥厚，结合典型临床表现不难诊断",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p150:aeca4f122a6f"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 150,
+    "page_end": 151,
+    "difficulty": "easy",
+    "source_quote": "【诊断与鉴别诊断】 脓胸主要表现为胸腔积液，但容易形成分隔包裹及胸膜肥厚，结合典型临床表现不难诊断。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0041",
+    "question": "根据引文，冠心病是什么？",
+    "expected_answer": "是严重威胁中、 老年人群健康的重要心脏病之一，流行病学调查显示冠心病的发病率有逐年上升的趋势",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p179:f7749703ba98"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 179,
+    "page_end": 180,
+    "difficulty": "easy",
+    "source_quote": "冠心病是严重威胁中、 老年人群健康的重要心脏病之一，流行病学调查显示冠心病的发病率有逐年上升的趋势。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0042",
+    "question": "根据引文，EUS）是什么？",
+    "expected_answer": "是将微型高频超声探头安装在内镜的前端，当 内镜置于消化道管腔时，不仅可以直接观察消化道黏膜表面情况，同时可判断病变浸润的深度、 与周围组织脏器之间的关系及淋巴结转移情况",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p209:62f755e6000b"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 209,
+    "page_end": 209,
+    "difficulty": "medium",
+    "source_quote": "图6-45肝脏多发环形强化，牛眼征，结肠癌肝脏多发转移 （三）超声检查 超声内镜（endoscopicultrasonography，EUS）是将微型高频超声探头安装在内镜的前端，当 内镜置于消化道管腔时，不仅可以直接观察消化道黏膜表面情况，同时可判断病变浸润的深度、 与周围组织脏器之间的关系及淋巴结转移情况。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0043",
+    "question": "根据引文，血管成像方法包括什么？",
+    "expected_answer": "包括时间飞跃 法、相位对比法及对比增强法等",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p233:b9dc062810a7"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 233,
+    "page_end": 233,
+    "difficulty": "easy",
+    "source_quote": "3.磁共振血管造影（magneticresonance angiography，MRA）血管成像方法包括时间飞跃 法、相位对比法及对比增强法等。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0044",
+    "question": "根据引文，上胆管癌的表现包括什么？",
+    "expected_answer": "包括：①胆管狭窄：局限或广泛的规则、不规 则狭窄，是其主要表现",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p269:8ffcddb21d27"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 269,
+    "page_end": 271,
+    "difficulty": "easy",
+    "source_quote": "【影像学表现】 1.X线表现PTC和ERCP上胆管癌的表现包括：①胆管狭窄：局限或广泛的规则、不规 则狭窄，是其主要表现；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0045",
+    "question": "根据引文，静脉肾盂造影是什么？",
+    "expected_answer": "是本病重要的检查方法之一，可表现为一侧肾区有上下两套肾盂、肾盏系 统，下肾孟肾盏形态近似正常",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p297:5201535bb60d"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 297,
+    "page_end": 298,
+    "difficulty": "easy",
+    "source_quote": "(2）静脉肾盂造影是本病重要的检查方法之一，可表现为一侧肾区有上下两套肾盂、肾盏系 统，下肾孟肾盏形态近似正常；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0046",
+    "question": "根据引文，腹主动脉旁可见什么？",
+    "expected_answer": "可见两个中等信号结节，信号均匀：B.TWI，肿块呈高信号：C.DWI，肿块呈明显 高信号",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p326:c97d110eb5b3"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 326,
+    "page_end": 327,
+    "difficulty": "easy",
+    "source_quote": "泌尿系统及肾上腺 腹膜后间隙 图7-31肝癌腹膜后转移MRI表现 A.TWI，腹主动脉旁可见两个中等信号结节，信号均匀：B.TWI，肿块呈高信号：C.DWI，肿块呈明显 高信号。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0047",
+    "question": "根据引文，X线可见什么？",
+    "expected_answer": "可见眩骨中段局部斑片样高密度影：B、C.石骨症：X线及CT显示所 及胸廊诸骨普遍性密度增高 骨密度增高主要见于先天性疾病、成骨性肿瘤、慢性炎症、骨内钙化以及骨质坏死等",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p353:12cee6a90be4"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 353,
+    "page_end": 353,
+    "difficulty": "medium",
+    "source_quote": "图9-1骨密度增加 A.左侧股骨中段慢性骨髓炎：X线可见眩骨中段局部斑片样高密度影：B、C.石骨症：X线及CT显示所 及胸廊诸骨普遍性密度增高 骨密度增高主要见于先天性疾病、成骨性肿瘤、慢性炎症、骨内钙化以及骨质坏死等。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0048",
+    "question": "根据引文，并且影像学表现为什么？",
+    "expected_answer": "表现为胫骨结节骨不规则增大、密度增高， 韧带下多个排列不规整的游离碎骨片或钙化骨，即可诊断",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p383:1cf3f71e7db3"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 383,
+    "page_end": 384,
+    "difficulty": "easy",
+    "source_quote": "【诊断与鉴别诊断】 若局部疼痛、肿胀以及明显压痛，并且影像学表现为胫骨结节骨不规则增大、密度增高， 韧带下多个排列不规整的游离碎骨片或钙化骨，即可诊断。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0049",
+    "question": "根据引文，中早期感染可见什么？",
+    "expected_answer": "可见小头畸形，白质体积减少，脑室扩张，局部脑回粗大、皮质增厚，小脑发 第十章 育不良",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p404:6190722eb9f3"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 404,
+    "page_end": 405,
+    "difficulty": "easy",
+    "source_quote": "（2）中早期感染可见小头畸形，白质体积减少，脑室扩张，局部脑回粗大、皮质增厚，小脑发 第十章 育不良。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0050",
+    "question": "根据引文，临床表现主要表现为什么？",
+    "expected_answer": "表现为精神不振、皮肤苍白、皮肤和黏膜血管出血及瘀斑、血尿及血便等",
+    "expected_evidence_ids": [
+      "医学影像诊断学.pdf:layout_heading:p433:38f8642cd260"
+    ],
+    "evidence_type": "text",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 433,
+    "page_end": 433,
+    "difficulty": "easy",
+    "source_quote": "【临床与病理】 1.临床表现主要表现为精神不振、皮肤苍白、皮肤和黏膜血管出血及瘀斑、血尿及血便等。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0051",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型**：胸部后前位X线平片（常规X线影像） **解剖部位**：胸部，包括胸廓、肺野、纵隔、心脏及部分上腹部结构。",
+    "expected_evidence_ids": [
+      "cap_img_d845d2f19ed6"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像学.pdf",
+    "page_start": 16,
+    "page_end": 16,
+    "difficulty": "easy",
+    "source_quote": "**图像类型**：胸部后前位X线平片（常规X线影像） **解剖部位**：胸部，包括胸廓、肺野、纵隔、心脏及部分上腹部结构。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0052",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "图像描述：该医学影像图片为**图4-21 胸膜肿块**，包含两个子图（a 和 b），分别展示不同成像序列下胸膜肿块的影像表现。",
+    "expected_evidence_ids": [
+      "cap_img_a1c96fceaaad"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像学.pdf",
+    "page_start": 117,
+    "page_end": 117,
+    "difficulty": "easy",
+    "source_quote": "图像描述：该医学影像图片为**图4-21 胸膜肿块**，包含两个子图（a 和 b），分别展示不同成像序列下胸膜肿块的影像表现。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0053",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型**：多幅CT增强影像图（包含CTA及CT增强冠状位重组），共4幅子图（a、b、c、d），均为不同患者肝血管异常的影像表现。",
+    "expected_evidence_ids": [
+      "cap_img_a9629542c82e"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像学.pdf",
+    "page_start": 186,
+    "page_end": 186,
+    "difficulty": "easy",
+    "source_quote": "**图像类型**：多幅CT增强影像图（包含CTA及CT增强冠状位重组），共4幅子图（a、b、c、d），均为不同患者肝血管异常的影像表现。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0054",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "图像描述：该页为医学影像学教材第263页，属于第九章“骨骼与肌肉系统”，主要展示正常腰椎在不同影像学检查中的表现。",
+    "expected_evidence_ids": [
+      "cap_img_51cb053a40bd"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像学.pdf",
+    "page_start": 263,
+    "page_end": 263,
+    "difficulty": "easy",
+    "source_quote": "图像描述：该页为医学影像学教材第263页，属于第九章“骨骼与肌肉系统”，主要展示正常腰椎在不同影像学检查中的表现。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0055",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型与来源** - **图像类型**：示意图（线描图），用于解释经皮血管内支架置入术的操作过程。",
+    "expected_evidence_ids": [
+      "cap_img_71fd21d58156"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像学.pdf",
+    "page_start": 329,
+    "page_end": 329,
+    "difficulty": "easy",
+    "source_quote": "**图像类型与来源** - **图像类型**：示意图（线描图），用于解释经皮血管内支架置入术的操作过程。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0056",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "图像描述：该页为医学影像诊断学教材第44页（页码27），属于第二章“中枢神经系统”内容，主要展示并解释高血压患者脑内微小出血灶的磁共振成像表现。",
+    "expected_evidence_ids": [
+      "cap_img_f50462504859"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 44,
+    "page_end": 44,
+    "difficulty": "easy",
+    "source_quote": "图像描述：该页为医学影像诊断学教材第44页（页码27），属于第二章“中枢神经系统”内容，主要展示并解释高血压患者脑内微小出血灶的磁共振成像表现。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0057",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型**：医学教材插图（非实际影像片，为示意图或典型影像示例） **解剖部位**：胸部，主要涉及肺部 **疾病/病变**：肺气肿（emphysema），包括弥漫性肺气肿及肺大疱形成 **序列/检查方式**： - **图4-1A）**：对应X线表现（X-ray） - **图4-1B）**：对应CT表现（Computed Tomography） **征象与图中标注**： 1. **图4-1A）**（X线表现）： - 主要显示**弥…",
+    "expected_evidence_ids": [
+      "cap_img_346fa640b801"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 123,
+    "page_end": 123,
+    "difficulty": "easy",
+    "source_quote": "**图像类型**：医学教材插图（非实际影像片，为示意图或典型影像示例） **解剖部位**：胸部，主要涉及肺部 **疾病/病变**：肺气肿（emphysema），包括弥漫性肺气肿及肺大疱形成 **序列/检查方式**： - **图4-1A）**：对应X线表现（X-ray） - **图4-1B）**：对应CT表现（Computed Tomography） **征象与图中标注**： 1. **图4-1A）**（X线表现）： - 主要显示**弥漫性肺气肿**的典型X线征象。",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0058",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型**：嵌入式CT影像图（共4幅横断面图像，标记为A、B、C、D） **解剖部位**：胃体中下段及胃窦部 **疾病/病变**：胃癌（进展期，符合Moss分期Ⅱ~Ⅲ期特征） **序列/扫描方式**： - **A图**：平扫CT - **B图**：增强扫描动脉期 - **C、D图**：增强扫描门脉期及延迟期",
+    "expected_evidence_ids": [
+      "cap_img_a9ab994d840f"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 217,
+    "page_end": 217,
+    "difficulty": "easy",
+    "source_quote": "**图像类型**：嵌入式CT影像图（共4幅横断面图像，标记为A、B、C、D） **解剖部位**：胃体中下段及胃窦部 **疾病/病变**：胃癌（进展期，符合Moss分期Ⅱ~Ⅲ期特征） **序列/扫描方式**： - **A图**：平扫CT - **B图**：增强扫描动脉期 - **C、D图**：增强扫描门脉期及延迟期",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0059",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型**：嵌入式CT影像图（含多序列平扫及增强扫描，以及MPR重建图像） **解剖部位**：双侧肾脏，重点为右侧肾盂区域 **疾病/病变**：肾盂癌（renal pelvic carcinoma） **序列与征象**： - **A. CT平扫**：右肾盂内可见不规则条状软组织密度肿块，边界尚清，未见明显压迫肾盂肾盏结构；",
+    "expected_evidence_ids": [
+      "cap_img_28816a0b033a"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 306,
+    "page_end": 306,
+    "difficulty": "easy",
+    "source_quote": "**图像类型**：嵌入式CT影像图（含多序列平扫及增强扫描，以及MPR重建图像） **解剖部位**：双侧肾脏，重点为右侧肾盂区域 **疾病/病变**：肾盂癌（renal pelvic carcinoma） **序列与征象**： - **A. CT平扫**：右肾盂内可见不规则条状软组织密度肿块，边界尚清，未见明显压迫肾盂肾盏结构；",
+    "reviewed": false
+  },
+  {
+    "question_id": "manual_eval_0060",
+    "question": "根据图片描述，这张图片明确显示或描述了什么？",
+    "expected_answer": "**图像类型**：医学影像教材插图（包含X线、CT、MRI等多模态影像表现） **解剖部位**：长骨干骺端，尤其是股骨远端、胫骨近端、肱骨近端等（根据上下文，具体病灶可能位于股骨或胫骨等长骨） **疾病/病变**：骨肉瘤（osteosarcoma），亦称成骨肉瘤（osteogenic sarcoma），为恶性肿瘤。",
+    "expected_evidence_ids": [
+      "cap_img_cd504e7985e8"
+    ],
+    "evidence_type": "image_caption",
+    "source_file": "医学影像诊断学.pdf",
+    "page_start": 389,
+    "page_end": 389,
+    "difficulty": "easy",
+    "source_quote": "**图像类型**：医学影像教材插图（包含X线、CT、MRI等多模态影像表现） **解剖部位**：长骨干骺端，尤其是股骨远端、胫骨近端、肱骨近端等（根据上下文，具体病灶可能位于股骨或胫骨等长骨） **疾病/病变**：骨肉瘤（osteosarcoma），亦称成骨肉瘤（osteogenic sarcoma），为恶性肿瘤。",
+    "reviewed": false
+  }
+]

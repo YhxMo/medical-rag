@@ -1,30 +1,26 @@
-"""测试本地配置加载。"""
-from __future__ import annotations
+from pathlib import Path
 
-import os
-
-from config import load_local_env
+from src.config.settings import load_settings
 
 
-def test_load_local_env_reads_dotenv_without_overriding_environment(
-    tmp_path,
-    monkeypatch,
-):
-    """本地.env可提供密钥，但不能覆盖已设置的环境变量。"""
-    env_file = tmp_path / ".env"
-    env_file.write_text(
-        "\n".join([
-            "# local secrets",
-            "DEEPSEEK_API_KEY=local-test-key",
-            "DEEPSEEK_MODEL=local-test-model",
-        ]),
+def test_load_settings_resolves_environment(tmp_path, monkeypatch):
+    config = tmp_path / "config.yaml"
+    config.write_text(
+        """
+active:
+  chunking: layout_heading
+vision_captioner:
+  ocr_text_min_chars: 50
+llm:
+  api_key: "${DASHSCOPE_API_KEY}"
+""",
         encoding="utf-8",
     )
+    monkeypatch.setenv("DASHSCOPE_API_KEY", "secret")
 
-    monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
-    monkeypatch.setenv("DEEPSEEK_MODEL", "existing-model")
+    settings = load_settings(config)
 
-    load_local_env(env_file)
-
-    assert os.environ["DEEPSEEK_API_KEY"] == "local-test-key"
-    assert os.environ["DEEPSEEK_MODEL"] == "existing-model"
+    assert settings.active_chunking == "layout_heading"
+    assert settings.ocr_min_chars == 50
+    assert settings.get("llm", "api_key") == "secret"
+    assert isinstance(settings.path, Path)
