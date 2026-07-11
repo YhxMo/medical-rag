@@ -1,5 +1,7 @@
 # Medical Imaging Learning RAG
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 Chinese medical-imaging retrieval-augmented generation project for learning,
 review, and source-grounded search over local radiology textbooks and exercise
 books.
