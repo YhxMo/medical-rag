@@ -1,0 +1,14 @@
+{
+  "candidate_count": 60,
+  "human_reviewed_count": 0,
+  "automated_check_passed_count": 58,
+  "dev_count": 30,
+  "eval_count": 30,
+  "source_page_overlap_between_splits": 0,
+  "dataset_sha256": {
+    "dev": "ceb12ae324b623fe7fa2bf7ad31902c51670e8f4582b12b2d6666645eaac9024",
+    "eval": "991cf0f52ed21964915e75c73f1828caed378d2084b7387f0e555333dc60d809"
+  },
+  "model_requested": "deepseek-flash",
+  "scope": "source-conditioned candidates, not an expert benchmark"
+}

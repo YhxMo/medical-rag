@@ -1,0 +1,155 @@
+{
+  "status": "provisional_unreviewed_source_conditioned_proxy",
+  "warning": "Not clinical accuracy or an expert benchmark; source labels are not exhaustive. No tuning performed on eval split.",
+  "metrics_version": "retrieval-v2",
+  "privacy_mode": "aggregate_only",
+  "index_evidence_sha256": "8f0c6d0510978595f81e8f2d90329a3c29a574c90ec1109e7dd5724645c4c8b3",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimensions": 384,
+  "top_k": 5,
+  "candidate_top_k": 20,
+  "splits": {
+    "dev": {
+      "question_count": 30,
+      "human_reviewed_count": 0,
+      "automated_check_passed_count": 30,
+      "source_counts": {
+        "iaea_diagnostic_radiology_physics_2014.pdf": 10,
+        "iaea_radiology_quality_control_2023.pdf": 10,
+        "msf_ultrasound_manual_2018.pdf": 10
+      },
+      "dataset_sha256": "ceb12ae324b623fe7fa2bf7ad31902c51670e8f4582b12b2d6666645eaac9024",
+      "all_candidates_included": true,
+      "runs": [
+        {
+          "retrieval": "bm25_only",
+          "schema_version": 2,
+          "metrics_version": "retrieval-v2",
+          "privacy_mode": "aggregate_only",
+          "top_k": 5,
+          "search_options": {
+            "dense_top_k": 0,
+            "bm25_top_k": 20,
+            "final_top_k": 20
+          },
+          "total": 30,
+          "hit_count": 29,
+          "hit_rate_at_k": 0.9666666666666667,
+          "recall_at_k": 0.9666666666666667,
+          "precision_at_k": 0.1933333333333334,
+          "mrr": 0.7650000000000001,
+          "ndcg_at_k": 0.8157392711055074
+        },
+        {
+          "retrieval": "dense_only",
+          "schema_version": 2,
+          "metrics_version": "retrieval-v2",
+          "privacy_mode": "aggregate_only",
+          "top_k": 5,
+          "search_options": {
+            "dense_top_k": 20,
+            "bm25_top_k": 0,
+            "final_top_k": 20
+          },
+          "total": 30,
+          "hit_count": 28,
+          "hit_rate_at_k": 0.9333333333333333,
+          "recall_at_k": 0.9333333333333333,
+          "precision_at_k": 0.18666666666666673,
+          "mrr": 0.8111111111111111,
+          "ndcg_at_k": 0.841804745895372
+        },
+        {
+          "retrieval": "hybrid_rrf",
+          "schema_version": 2,
+          "metrics_version": "retrieval-v2",
+          "privacy_mode": "aggregate_only",
+          "top_k": 5,
+          "search_options": {
+            "dense_top_k": 20,
+            "bm25_top_k": 20,
+            "final_top_k": 20
+          },
+          "total": 30,
+          "hit_count": 30,
+          "hit_rate_at_k": 1.0,
+          "recall_at_k": 1.0,
+          "precision_at_k": 0.2000000000000001,
+          "mrr": 0.8983333333333333,
+          "ndcg_at_k": 0.9236772875340769
+        }
+      ]
+    },
+    "eval": {
+      "question_count": 30,
+      "human_reviewed_count": 0,
+      "automated_check_passed_count": 28,
+      "source_counts": {
+        "iaea_diagnostic_radiology_physics_2014.pdf": 10,
+        "iaea_radiology_quality_control_2023.pdf": 10,
+        "msf_ultrasound_manual_2018.pdf": 10
+      },
+      "dataset_sha256": "991cf0f52ed21964915e75c73f1828caed378d2084b7387f0e555333dc60d809",
+      "all_candidates_included": true,
+      "runs": [
+        {
+          "retrieval": "bm25_only",
+          "schema_version": 2,
+          "metrics_version": "retrieval-v2",
+          "privacy_mode": "aggregate_only",
+          "top_k": 5,
+          "search_options": {
+            "dense_top_k": 0,
+            "bm25_top_k": 20,
+            "final_top_k": 20
+          },
+          "total": 30,
+          "hit_count": 27,
+          "hit_rate_at_k": 0.9,
+          "recall_at_k": 0.9,
+          "precision_at_k": 0.18000000000000008,
+          "mrr": 0.7722222222222223,
+          "ndcg_at_k": 0.8051549589285762
+        },
+        {
+          "retrieval": "dense_only",
+          "schema_version": 2,
+          "metrics_version": "retrieval-v2",
+          "privacy_mode": "aggregate_only",
+          "top_k": 5,
+          "search_options": {
+            "dense_top_k": 20,
+            "bm25_top_k": 0,
+            "final_top_k": 20
+          },
+          "total": 30,
+          "hit_count": 28,
+          "hit_rate_at_k": 0.9333333333333333,
+          "recall_at_k": 0.9333333333333333,
+          "precision_at_k": 0.18666666666666673,
+          "mrr": 0.8305555555555556,
+          "ndcg_at_k": 0.8564178688405436
+        },
+        {
+          "retrieval": "hybrid_rrf",
+          "schema_version": 2,
+          "metrics_version": "retrieval-v2",
+          "privacy_mode": "aggregate_only",
+          "top_k": 5,
+          "search_options": {
+            "dense_top_k": 20,
+            "bm25_top_k": 20,
+            "final_top_k": 20
+          },
+          "total": 30,
+          "hit_count": 29,
+          "hit_rate_at_k": 0.9666666666666667,
+          "recall_at_k": 0.9666666666666667,
+          "precision_at_k": 0.1933333333333334,
+          "mrr": 0.8638888888888889,
+          "ndcg_at_k": 0.8897512021738769
+        }
+      ]
+    }
+  }
+}

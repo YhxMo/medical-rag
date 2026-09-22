@@ -1,0 +1,20 @@
+{
+  "model_requested": "deepseek-flash",
+  "api_host": "api.deepseek.com",
+  "budget_cny": 15.0,
+  "pricing_basis": "2026-09-19 peak: input miss 2, input hit .04, output 8 CNY/million",
+  "pricing_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "reserved_upper_cny": 9.49272,
+  "known_usage_peak_cost_upper_cny": 1.1116151199999995,
+  "requests_started": 228,
+  "requests_succeeded": 228,
+  "requests_failed": 0,
+  "prompt_tokens": 578841,
+  "completion_tokens": 38961,
+  "cached_prompt_tokens": 182528,
+  "usage_complete": true,
+  "errors": [],
+  "models_returned": [
+    "deepseek-flash"
+  ]
+}
