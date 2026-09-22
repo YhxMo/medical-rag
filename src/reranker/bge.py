@@ -5,6 +5,7 @@ from dataclasses import replace
 
 from src.reranker.base import Reranker
 from src.schema import RetrievalHit
+from src.indexer.common import retrieval_text
 
 
 class BGEReranker(Reranker):
@@ -19,7 +20,7 @@ class BGEReranker(Reranker):
         if not hits:
             return []
         model = self._load_model()
-        pairs = [(query, hit.evidence.content) for hit in hits]
+        pairs = [(query, retrieval_text(hit.evidence)) for hit in hits]
         scores = model.predict(pairs)
         reranked = [
             replace(

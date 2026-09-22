@@ -4,6 +4,8 @@ from __future__ import annotations
 import json
 import logging
 import pickle
+import re
+from functools import lru_cache
 from dataclasses import asdict
 from pathlib import Path
 from typing import Any, Iterable
@@ -19,6 +21,19 @@ DEFAULT_EVIDENCE_TYPE_WEIGHTS = {
     "exercise_qa": 0.92,
 }
 _RRF_K = 60
+
+
+def retrieval_text(item: EvidenceItem) -> str:
+    """Only versioned enhanced records opt into chapter-aware retrieval."""
+    heading = item.metadata.get("retrieval_heading", "")
+    return f"{heading}\n{item.content}" if heading else item.content
+
+
+@lru_cache(maxsize=8)
+def _cached_bm25(path: str, version: tuple[int, int, int, int]):
+    # Local, trusted build artifact only. stat identity invalidates replacements.
+    with open(path, "rb") as handle:
+        return pickle.load(handle)["bm25"]
 
 
 def write_evidence(path: Path, evidence: list[EvidenceItem]) -> None:
@@ -43,7 +58,7 @@ def build_bm25_index(path: Path, evidence: list[EvidenceItem]) -> None:
     """Build the sparse sidecar index shared by both vector backends."""
     from rank_bm25 import BM25Okapi
 
-    tokenized = [tokenize(item.content) for item in evidence]
+    tokenized = [tokenize(retrieval_text(item)) for item in evidence]
     bm25 = BM25Okapi(tokenized)
     with path.open("wb") as handle:
         pickle.dump({"bm25": bm25, "tokenized": tokenized}, handle)
@@ -54,9 +69,8 @@ def bm25_candidates(path: Path, query: str, *, limit: int) -> list[tuple[int, fl
     if limit <= 0:
         return []
 
-    with path.open("rb") as handle:
-        bm25_payload = pickle.load(handle)
-    bm25 = bm25_payload["bm25"]
+    stat = path.stat()
+    bm25 = _cached_bm25(str(path.resolve()), (stat.st_ino, stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns))
     scores = bm25.get_scores(tokenize(query))
     order = np.argsort(scores)[::-1][:limit]
     return [(int(index), float(scores[index])) for index in order]
@@ -106,6 +120,8 @@ def fuse_hybrid_candidates(
 
 def tokenize(text: str) -> list[str]:
     """Tokenize Chinese text for BM25, with a dependency-light fallback."""
+    if not re.search(r"[\u4e00-\u9fff]", text):
+        return re.findall(r"[a-z0-9]+(?:['-][a-z0-9]+)*", text.casefold())
     try:
         import jieba
 

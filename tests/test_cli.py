@@ -21,6 +21,25 @@ def test_cli_help_runs(capsys):
     assert "medical-rag" in captured.out
 
 
+def test_index_ignores_macos_pdf_sidecars(tmp_path, monkeypatch):
+    from src import cli
+    from src.config.settings import Settings
+
+    (tmp_path / "book.pdf").write_bytes(b"synthetic file")
+    (tmp_path / "._book.pdf").write_bytes(b"macOS metadata")
+    (tmp_path / "directory.pdf").mkdir()
+    seen = []
+
+    def load_pages(path, *args, **kwargs):
+        seen.append(path.name)
+        return []
+
+    monkeypatch.setattr(cli, "_load_pages", load_pages)
+    settings = Settings(tmp_path / "unused.yaml", {"paths": {"data_dir": str(tmp_path)}})
+    assert cli._load_evidence(settings, image_mode="none", captioner_name="stub", ocr_mode="never") == []
+    assert seen == ["book.pdf"]
+
+
 def test_build_reranker_none_returns_noop(tmp_path):
     config = tmp_path / "config.yaml"
     config.write_text("active:\n  reranker: none\n", encoding="utf-8")

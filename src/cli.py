@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -19,6 +20,7 @@ from src.document.loader import PDFLoader
 from src.document.ocr import OCRConfig, RapidOCRPDFLoader
 from src.embedding.bge import BGEEmbeddingProvider
 from src.embedding.simple import HashEmbeddingProvider
+from src.embedding.fastembed_provider import FastEmbedProvider
 from src.evaluation.dataset import load_dataset, save_dataset
 from src.evaluation.evaluator import evaluate_retrieval, save_result
 from src.evaluation.generator import generate_draft_questions
@@ -41,6 +43,7 @@ from src.vision.stub import StubVisionCaptioner
 LOGGER = logging.getLogger(__name__)
 
 _EMBEDDING_ALIASES = {
+    "fastembed": "fastembed",
     "hash": "hash",
     "bge": "bge",
     "bge_small_zh": "bge",
@@ -62,9 +65,9 @@ def build_parser() -> argparse.ArgumentParser:
         sub = subparsers.add_parser(command)
         sub.add_argument("--config", default="config.yaml")
         if command in {"serve", "evaluate", "generate-eval"}:
-            sub.add_argument("--embedding", choices=["hash", "bge"], default=None)
+            sub.add_argument("--embedding", choices=["hash", "bge", "fastembed"], default=None)
         if command == "index":
-            sub.add_argument("--embedding", choices=["hash", "bge"], default=None)
+            sub.add_argument("--embedding", choices=["hash", "bge", "fastembed"], default=None)
             sub.add_argument("--image-mode", choices=["none", "ocr-pages", "all-pages"], default="ocr-pages")
             sub.add_argument("--captioner", choices=["stub", "qwen", "dashscope"], default="stub")
             sub.add_argument("--ocr", choices=["auto", "never"], default="auto")
@@ -72,16 +75,22 @@ def build_parser() -> argparse.ArgumentParser:
             sub.add_argument("--output", required=True)
         if command in {"serve", "evaluate"}:
             sub.add_argument("--reranker", choices=["none", "bge"], default=None)
+        if command == "evaluate":
+            sub.add_argument("--top-k", type=int, default=5)
+            sub.add_argument("--candidate-top-k", type=int, default=20)
         if command == "serve":
-            sub.add_argument("--generator", choices=["extractive", "dashscope"], default="extractive")
+            sub.add_argument("--generator", choices=["extractive", "dashscope", "deepseek"], default="extractive")
 
     query = subparsers.add_parser("query")
-    query.add_argument("question")
+    query.add_argument("question", nargs="?", default="")
+    query.add_argument("--image", help="Local textbook screenshot (resume-v2 configuration)")
+    query.add_argument("--json", action="store_true", help="Structured resume-v2 query result")
+    query.add_argument("--expand-context", action="store_true", help="Append neighboring text, at most 10 chunks / 12000 characters")
     query.add_argument("--config", default="config.yaml")
-    query.add_argument("--embedding", choices=["hash", "bge"], default=None)
+    query.add_argument("--embedding", choices=["hash", "bge", "fastembed"], default=None)
     query.add_argument("--top-k", type=int, default=5)
     query.add_argument("--reranker", choices=["none", "bge"], default=None)
-    query.add_argument("--generator", choices=["extractive", "dashscope"], default="extractive")
+    query.add_argument("--generator", choices=["extractive", "dashscope", "deepseek"], default="extractive")
     return parser
 
 
@@ -101,6 +110,33 @@ def main(argv: list[str] | None = None) -> int:
         _apply_config_defaults(args, settings)
     except ValueError as exc:
         parser.error(str(exc))
+
+    if settings.get("active", "application") == "resume-v2" and args.command not in {"query", "serve"}:
+        parser.error("Resume-v2 uses scripts/build_resume_v2.py and scripts/evaluate_resume_v2.py to protect frozen versions")
+
+    if args.command in {"query", "serve"} and settings.get("active", "application") == "resume-v2":
+        if args.embedding != "fastembed" or getattr(args, "expand_context", False):
+            parser.error("Resume-v2 requires the indexed fastembed model and a fixed context budget")
+        if args.generator == "dashscope" or not 1 <= getattr(args, "top_k", 5) <= 5:
+            parser.error("Resume-v2 uses extractive (offline) or deepseek (automatic online routing), with top-k 1..5")
+        from src.application.service import build_service
+        try:
+            service = build_service(settings, strategy="rerank" if args.reranker == "bge" else None,
+                                    top_k=args.top_k if args.command == "query" else None)
+            if args.command == "query":
+                result = service.ask(args.question, args.image, offline=args.generator == "extractive")
+                _write_stdout(json.dumps(result.to_dict(), ensure_ascii=False, indent=2) if args.json else
+                              result.answer + "\n" + "\n".join(result.warnings))
+                return 1 if result.status == "service_error" else 0
+            from src.ui.resume_app import create_resume_app
+            create_resume_app(service).queue(default_concurrency_limit=1).launch(server_name="127.0.0.1", share=False)
+            return 0
+        finally:
+            if "service" in locals() and getattr(service.store, "_client", None) is not None:
+                service.store._client.close()
+
+    if args.command == "query" and (not args.question or args.image):
+        parser.error("Legacy query requires text; --image requires config.resume-v2.yaml")
 
     if args.command == "index":
         evidence = _load_evidence(
@@ -134,6 +170,9 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         reranker = _build_reranker(args.reranker, settings)
         hits = reranker.rerank(args.question, hits, top_k=args.top_k)
+        if args.expand_context:
+            from src.retrieval.context import ContextExpander
+            hits = ContextExpander(store.load_evidence()).expand(hits)
         generator = _build_generator(args.generator, settings)
         answer = generator.generate(args.question, hits)
         _write_stdout(answer.answer)
@@ -154,17 +193,28 @@ def main(argv: list[str] | None = None) -> int:
         ).launch()
         return 0
     if args.command == "evaluate":
+        if args.top_k < 1 or args.candidate_top_k < args.top_k:
+            parser.error("Require 1 <= top-k <= candidate-top-k")
+        dataset_path = settings.get("evaluation", "test_dataset", default="data/test_questions.json")
+        try:
+            questions = load_dataset(dataset_path, reviewed_only=True)
+        except (ValueError, OSError):
+            parser.error("Evaluation dataset is missing or invalid; check reviewed questions and labels")
         provider = _build_embedding_provider(args.embedding, settings)
         store = create_index_store(settings)
         reranker = _build_reranker(args.reranker, settings)
-        dataset_path = settings.get("evaluation", "test_dataset", default="data/test_questions.json")
-        questions = load_dataset(dataset_path, reviewed_only=True)
-        result = evaluate_retrieval(questions, store, provider, top_k=5, reranker=reranker)
+        result = evaluate_retrieval(
+            questions, store, provider, top_k=args.top_k, reranker=reranker,
+            search_kwargs={"dense_top_k": args.candidate_top_k,
+                           "bm25_top_k": args.candidate_top_k,
+                           "final_top_k": args.candidate_top_k},
+        )
         output_path = _resolve_output_path(args.output, "evaluation_result.json")
         save_result(output_path, result)
         LOGGER.warning(
-            "Evaluated %d reviewed questions; recall@5=%.3f precision@5=%.3f mrr=%.3f ndcg@5=%.3f",
+            "Evaluated %d reviewed questions at k=%d; recall=%.3f precision=%.3f mrr=%.3f ndcg=%.3f",
             result.total,
+            result.top_k,
             result.recall_at_k,
             result.precision_at_k,
             result.mrr,
@@ -186,6 +236,11 @@ def main(argv: list[str] | None = None) -> int:
 def _build_embedding_provider(name: str, settings):
     if name == "hash":
         return HashEmbeddingProvider()
+    if name == "fastembed":
+        return FastEmbedProvider(
+            model_name=settings.get("embedding", "fastembed", "model", default="BAAI/bge-small-en-v1.5"),
+            cache_dir=settings.get("embedding", "fastembed", "cache_dir", default="models/fastembed"),
+        )
     model_name = settings.get("embedding", "bge_small_zh", "model", default="BAAI/bge-small-zh-v1.5")
     device = settings.get("embedding", "bge_small_zh", "device", default="auto")
     return BGEEmbeddingProvider(model_name=model_name, device=device)
@@ -229,6 +284,14 @@ def _resolve_reranker_name(value: str | None, settings) -> str:
 def _build_generator(name: str, settings):
     if name == "extractive":
         return ExtractiveGenerator()
+    if name == "deepseek":
+        return DashScopeGenerator(
+            api_key=os.environ.get("DEEPSEEK_API_KEY", ""),
+            api_base="https://api.deepseek.com",
+            model="deepseek-flash",
+            max_tokens=2048,
+            provider_name="deepseek",
+        )
     return DashScopeGenerator(
         api_key=settings.get("llm", "api_key", default=""),
         api_base=settings.get("llm", "api_base", default="https://dashscope.aliyuncs.com/compatible-mode/v1"),
@@ -270,7 +333,9 @@ def _build_captioner(name: str, settings):
 def _load_evidence(settings, *, image_mode: str, captioner_name: str, ocr_mode: str = "auto"):
     data_dir = Path(settings.get("paths", "data_dir", default="data"))
     artifact_dir = Path(settings.get("paths", "artifact_dir", default="artifacts"))
-    pdf_files = sorted(data_dir.glob("*.pdf"))
+    # macOS external disks may create ._*.pdf metadata sidecars, not PDF documents.
+    pdf_files = sorted(path for path in data_dir.glob("*.pdf")
+                       if path.is_file() and not path.name.startswith("."))
     text_chunks = []
     exercise_chunks = []
     captions = []

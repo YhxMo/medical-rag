@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 import math
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -24,6 +24,12 @@ class EvaluationResult:
     mrr: float
     ndcg_at_k: float
     details: list[dict]
+    top_k: int = 5
+    search_options: dict[str, Any] = field(default_factory=dict)
+
+    @property
+    def hit_rate_at_k(self) -> float:
+        return self.hit_count / self.total if self.total else 0.0
 
 
 def evaluate_retrieval(
@@ -35,6 +41,12 @@ def evaluate_retrieval(
     reranker: Reranker | None = None,
     search_kwargs: dict[str, Any] | None = None,
 ) -> EvaluationResult:
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k < 1:
+        raise ValueError("top_k must be a positive integer")
+    if not questions:
+        raise ValueError("Evaluation requires at least one question")
+    if any(not q.expected_evidence_ids for q in questions):
+        raise ValueError("Every evaluation question requires relevance labels")
     reranker = reranker or NoopReranker()
     search_options = dict(search_kwargs or {})
     search_options.setdefault("final_top_k", top_k)
@@ -43,18 +55,22 @@ def evaluate_retrieval(
     precision_sum = 0.0
     reciprocal_rank_sum = 0.0
     ndcg_sum = 0.0
+    recall_sum = 0.0
 
     for question in questions:
         retrieved = store.search(question.question, embedding_provider, **search_options)
-        retrieved = reranker.rerank(question.question, retrieved, top_k=top_k)
-        retrieved_ids = [hit.evidence.evidence_id for hit in retrieved]
+        # Deduplicate before the cutoff so repeated evidence cannot inflate metrics.
+        retrieved = reranker.rerank(question.question, retrieved, top_k=None)
+        retrieved_ids = list(dict.fromkeys(hit.evidence.evidence_id for hit in retrieved))[:top_k]
         expected = set(question.expected_evidence_ids)
 
         is_hit = bool(expected and expected.intersection(retrieved_ids))
         hits += int(is_hit)
 
         matches = sum(1 for evidence_id in retrieved_ids if evidence_id in expected)
-        precision = matches / len(retrieved_ids) if retrieved_ids else 0.0
+        precision = matches / top_k
+        recall = matches / len(expected)
+        recall_sum += recall
 
         reciprocal_rank = 0.0
         for rank, evidence_id in enumerate(retrieved_ids, start=1):
@@ -62,7 +78,7 @@ def evaluate_retrieval(
                 reciprocal_rank = 1.0 / rank
                 break
 
-        ndcg = _ndcg(retrieved_ids, expected)
+        ndcg = _ndcg(retrieved_ids, expected, top_k)
 
         precision_sum += precision
         reciprocal_rank_sum += reciprocal_rank
@@ -75,6 +91,7 @@ def evaluate_retrieval(
                 "expected_evidence_ids": list(question.expected_evidence_ids),
                 "retrieved_evidence_ids": retrieved_ids,
                 "hit": is_hit,
+                "recall": recall,
                 "precision": precision,
                 "reciprocal_rank": reciprocal_rank,
                 "ndcg": ndcg,
@@ -84,16 +101,18 @@ def evaluate_retrieval(
     total = len(questions)
     return EvaluationResult(
         total=total,
-        recall_at_k=hits / total if total else 0.0,
+        recall_at_k=recall_sum / total,
         hit_count=hits,
         precision_at_k=precision_sum / total if total else 0.0,
         mrr=reciprocal_rank_sum / total if total else 0.0,
         ndcg_at_k=ndcg_sum / total if total else 0.0,
         details=details,
+        top_k=top_k,
+        search_options=search_options,
     )
 
 
-def _ndcg(retrieved_ids: list[str], expected: set[str]) -> float:
+def _ndcg(retrieved_ids: list[str], expected: set[str], top_k: int) -> float:
     """Binary-relevance NDCG over the retrieved ranking."""
     if not retrieved_ids or not expected:
         return 0.0
@@ -103,13 +122,33 @@ def _ndcg(retrieved_ids: list[str], expected: set[str]) -> float:
         for rank, evidence_id in enumerate(retrieved_ids, start=1)
         if evidence_id in expected
     )
-    ideal_hits = min(len(expected), len(retrieved_ids))
+    ideal_hits = min(len(expected), top_k)
     idcg = sum(1.0 / math.log2(rank + 1) for rank in range(1, ideal_hits + 1))
     return dcg / idcg if idcg else 0.0
+
+
+def result_summary(result: EvaluationResult) -> dict[str, Any]:
+    """Allowlisted aggregate report: never serialize questions, IDs or config."""
+    return {
+        "schema_version": 2,
+        "metrics_version": "retrieval-v2",
+        "privacy_mode": "aggregate_only",
+        "top_k": result.top_k,
+        "search_options": {key: int(result.search_options[key])
+                           for key in ("dense_top_k", "bm25_top_k", "final_top_k")
+                           if key in result.search_options},
+        "total": result.total,
+        "hit_count": result.hit_count,
+        "hit_rate_at_k": result.hit_rate_at_k,
+        "recall_at_k": result.recall_at_k,
+        "precision_at_k": result.precision_at_k,
+        "mrr": result.mrr,
+        "ndcg_at_k": result.ndcg_at_k,
+    }
 
 
 def save_result(path: str | Path, result: EvaluationResult) -> None:
     output_path = Path(path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as handle:
-        json.dump(asdict(result), handle, ensure_ascii=False, indent=2)
+        json.dump(result_summary(result), handle, ensure_ascii=False, indent=2)

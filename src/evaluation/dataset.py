@@ -21,9 +21,30 @@ class EvaluationQuestion:
 def load_dataset(path: str | Path, *, reviewed_only: bool = True) -> list[EvaluationQuestion]:
     dataset_path = Path(path)
     if not dataset_path.exists():
-        return []
+        raise ValueError("Evaluation dataset does not exist")
     with dataset_path.open("r", encoding="utf-8") as handle:
         raw = json.load(handle)
+    if not isinstance(raw, list):
+        raise ValueError("Evaluation dataset must be a list")
+    seen: set[str] = set()
+    for item in raw:
+        if not isinstance(item, dict):
+            raise ValueError("Evaluation entries must be objects")
+        qid, question = item.get("question_id"), item.get("question")
+        if not isinstance(qid, str) or not qid.strip() or qid in seen:
+            raise ValueError("Question IDs must be nonempty and unique")
+        seen.add(qid)
+        if not isinstance(question, str) or not question.strip():
+            raise ValueError("Question text must be nonempty")
+        if not isinstance(item.get("reviewed", False), bool):
+            raise ValueError("reviewed must be a JSON boolean")
+        labels = item.get("expected_evidence_ids", [])
+        if not isinstance(labels, list) or any(not isinstance(x, str) or not x.strip() for x in labels):
+            raise ValueError("Evidence labels must be a list of nonempty strings")
+        if len(labels) != len(set(labels)):
+            raise ValueError("Evidence labels must be unique within each question")
+        if item.get("reviewed") and not labels:
+            raise ValueError("Reviewed questions require evidence labels")
     questions = [
         EvaluationQuestion(
             question_id=item["question_id"],
@@ -35,7 +56,10 @@ def load_dataset(path: str | Path, *, reviewed_only: bool = True) -> list[Evalua
         )
         for item in raw
     ]
-    return [item for item in questions if item.reviewed] if reviewed_only else questions
+    selected = [item for item in questions if item.reviewed] if reviewed_only else questions
+    if reviewed_only and not selected:
+        raise ValueError("Evaluation dataset contains no reviewed questions")
+    return selected
 
 
 def save_dataset(path: str | Path, questions: list[EvaluationQuestion]) -> None:

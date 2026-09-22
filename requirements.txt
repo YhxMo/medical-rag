@@ -11,3 +11,4 @@ gradio>=4.0.0
 numpy>=1.26.0
 Pillow>=10.0.0
 rapidocr-onnxruntime>=1.4.4
+fastembed>=0.8.0

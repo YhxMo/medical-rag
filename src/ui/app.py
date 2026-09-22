@@ -169,8 +169,8 @@ class DemoController:
 
     @staticmethod
     def _validate_generator(name: str, generator: Any) -> None:
-        if name == "dashscope" and not str(getattr(generator, "api_key", "")).strip():
-            raise _DemoError("DashScope generator 未配置 API key。请选择 extractive，或在本地环境中配置密钥后重试。")
+        if name in {"dashscope", "deepseek"} and not str(getattr(generator, "api_key", "")).strip():
+            raise _DemoError("模型服务未配置 API key。请选择 extractive，或在本地环境中配置密钥后重试。")
 
 
 def create_app(
@@ -220,7 +220,7 @@ def create_app(
         with gr.Row(equal_height=True):
             embedding = gr.Dropdown(
                 label="Embedding",
-                choices=[("BGE", "bge"), ("Hash", "hash")],
+                choices=[("BGE", "bge"), ("BGE English (ONNX)", "fastembed"), ("Hash", "hash")],
                 value=default_embedding,
             )
             reranker = gr.Dropdown(
@@ -230,7 +230,7 @@ def create_app(
             )
             generator = gr.Dropdown(
                 label="Generator",
-                choices=[("Extractive", "extractive"), ("DashScope", "dashscope")],
+                choices=[("Extractive", "extractive"), ("DeepSeek V4.1 Flash", "deepseek"), ("DashScope", "dashscope")],
                 value=default_generator,
             )
 

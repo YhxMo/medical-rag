@@ -92,7 +92,13 @@ def run_retrieval_ablation(
 ) -> dict[str, Any]:
     """Run retrieval ablations and return a JSON-serializable report."""
 
-    specs = specs or default_ablation_specs(candidate_top_k=candidate_top_k, include_reranker=reranker is not None)
+    if top_k < 1 or candidate_top_k < top_k:
+        raise ValueError("Require 1 <= top_k <= candidate_top_k")
+    if not questions:
+        raise ValueError("Evaluation requires at least one question")
+    specs = specs if specs is not None else default_ablation_specs(candidate_top_k=candidate_top_k, include_reranker=reranker is not None)
+    if not specs or any(spec.use_reranker and reranker is None for spec in specs):
+        raise ValueError("Ablation requires configurations and their requested reranker")
     base_evidence_count = len(store.load_evidence())
     filtered_store_cache: dict[tuple[str, ...], tuple[EvidenceStore, int]] = {}
     runs = []
@@ -100,7 +106,6 @@ def run_retrieval_ablation(
     for spec in specs:
         active_store = store
         evidence_count = base_evidence_count
-        temp_index = None
         if spec.exclude_evidence_types:
             key = tuple(sorted(spec.exclude_evidence_types))
             if key not in filtered_store_cache:
@@ -111,7 +116,6 @@ def run_retrieval_ablation(
                     tmp_index_dir=Path(tmp_index_dir),
                 )
             active_store, evidence_count = filtered_store_cache[key]
-            temp_index = str(active_store.index_dir)
 
         result = evaluate_retrieval(
             questions,
@@ -130,13 +134,14 @@ def run_retrieval_ablation(
                 "use_reranker": spec.use_reranker,
                 "excluded_evidence_types": list(spec.exclude_evidence_types),
                 "evidence_count": evidence_count,
-                "temp_index": temp_index,
                 "metrics": _metrics(result, top_k),
-                "details": result.details,
             }
         )
 
     return {
+        "schema_version": 2,
+        "metrics_version": "retrieval-v2",
+        "privacy_mode": "aggregate_only",
         "top_k": top_k,
         "candidate_top_k": candidate_top_k,
         "question_count": len(questions),
@@ -157,8 +162,9 @@ def write_ablation_outputs(
     output_path.mkdir(parents=True, exist_ok=True)
     json_path = output_path / f"{stem}.json"
     markdown_path = output_path / f"{stem}.md"
-    json_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    markdown_path.write_text(render_ablation_markdown(report), encoding="utf-8")
+    safe_report = _aggregate_report(report)
+    json_path.write_text(json.dumps(safe_report, ensure_ascii=False, indent=2), encoding="utf-8")
+    markdown_path.write_text(render_ablation_markdown(safe_report), encoding="utf-8")
     return json_path, markdown_path
 
 
@@ -176,16 +182,14 @@ def render_ablation_markdown(report: dict[str, Any]) -> str:
         "",
         "## Metrics",
         "",
-        f"| Run | Evidence | Recall@{top_k} | Precision@{top_k} | MRR | NDCG@{top_k} | Hit/Total | Notes |",
-        "|---|---:|---:|---:|---:|---:|---:|---|",
+        f"| Run | Evidence | Recall@{top_k} | HitRate@{top_k} | Precision@{top_k} | MRR@{top_k} | NDCG@{top_k} | Hit/Total | Notes |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---|",
     ]
     for run in report["runs"]:
         metrics = run["metrics"]
         notes = run["description"]
         if run["excluded_evidence_types"]:
             notes += " Excluded: " + ", ".join(run["excluded_evidence_types"]) + "."
-        if run.get("temp_index"):
-            notes += f" Temp index: `{run['temp_index']}`."
         lines.append(
             "| "
             + " | ".join(
@@ -193,6 +197,7 @@ def render_ablation_markdown(report: dict[str, Any]) -> str:
                     _md(run["label"]),
                     str(run["evidence_count"]),
                     _fmt(metrics[f"recall_at_{top_k}"]),
+                    _fmt(metrics[f"hit_rate_at_{top_k}"]),
                     _fmt(metrics[f"precision_at_{top_k}"]),
                     _fmt(metrics["mrr"]),
                     _fmt(metrics[f"ndcg_at_{top_k}"]),
@@ -245,11 +250,44 @@ def _metrics(result: EvaluationResult, top_k: int) -> dict[str, Any]:
     return {
         "total": result.total,
         "hit_count": result.hit_count,
+        f"hit_rate_at_{top_k}": result.hit_rate_at_k,
         f"recall_at_{top_k}": result.recall_at_k,
         f"precision_at_{top_k}": result.precision_at_k,
         "mrr": result.mrr,
         f"ndcg_at_{top_k}": result.ndcg_at_k,
     }
+
+
+def _aggregate_report(report: dict[str, Any]) -> dict[str, Any]:
+    """Persist numeric metrics and known configuration labels, never raw details."""
+    k = int(report["top_k"])
+    known = {spec.name: spec for spec in default_ablation_specs()}
+    output = {"schema_version": 2, "metrics_version": "retrieval-v2",
+              "privacy_mode": "aggregate_only", "runs": []}
+    for key in ("top_k", "candidate_top_k", "question_count", "base_evidence_count"):
+        output[key] = int(report[key])
+    for i, run in enumerate(report["runs"], start=1):
+        spec = known.get(run["name"])
+        output["runs"].append({
+            "name": spec.name if spec else f"custom_{i}",
+            "label": spec.label if spec else f"Custom run {i}",
+            "description": spec.description if spec else "Custom configuration.",
+            "evidence_count": int(run["evidence_count"]),
+            "search_kwargs": {key: int(run["search_kwargs"][key])
+                              for key in ("dense_top_k", "bm25_top_k", "final_top_k")
+                              if key in run["search_kwargs"]},
+            "use_reranker": bool(run["use_reranker"]),
+            "excluded_evidence_types": [x for x in run["excluded_evidence_types"]
+                                        if x in {"text", "exercise_qa", "image_caption"}],
+            "metrics": {
+                "total": int(run["metrics"]["total"]),
+                "hit_count": int(run["metrics"]["hit_count"]),
+                **{key: float(run["metrics"][key]) for key in (
+                    f"hit_rate_at_{k}", f"recall_at_{k}",
+                    f"precision_at_{k}", "mrr", f"ndcg_at_{k}")},
+            },
+        })
+    return output
 
 
 def _fmt(value: float) -> str:

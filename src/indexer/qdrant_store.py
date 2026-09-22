@@ -15,6 +15,7 @@ from src.indexer.common import (
     evidence_to_json,
     fuse_hybrid_candidates,
     read_evidence,
+    retrieval_text,
     write_evidence,
 )
 from src.schema import EvidenceItem, RetrievalHit
@@ -59,7 +60,7 @@ class QdrantIndexStore:
             write_evidence(self.evidence_path, evidence)
             return
 
-        vectors = np.asarray(embedding_provider.embed_texts([item.content for item in evidence]), dtype="float32")
+        vectors = np.asarray(embedding_provider.embed_texts([retrieval_text(item) for item in evidence]), dtype="float32")
         if vectors.ndim != 2 or vectors.shape[0] != len(evidence):
             raise ValueError("Embeddings must be a 2D matrix with one row per evidence item.")
 

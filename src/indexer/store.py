@@ -11,6 +11,7 @@ from src.indexer.common import (
     build_bm25_index,
     fuse_hybrid_candidates,
     read_evidence,
+    retrieval_text,
     write_evidence,
 )
 from src.schema import EvidenceItem, RetrievalHit
@@ -33,7 +34,7 @@ class IndexStore:
             write_evidence(self.evidence_path, evidence)
             return
 
-        embeddings = np.array(embedding_provider.embed_texts([item.content for item in evidence]), dtype="float32")
+        embeddings = np.array(embedding_provider.embed_texts([retrieval_text(item) for item in evidence]), dtype="float32")
         if embeddings.ndim != 2:
             raise ValueError("Embeddings must be a 2D matrix.")
         faiss.normalize_L2(embeddings)

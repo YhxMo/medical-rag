@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from collections.abc import Iterator
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from src.retrieval.base import cite
 from src.schema import GeneratedAnswer, RetrievalHit
@@ -34,12 +34,13 @@ class ExtractiveGenerator:
 class DashScopeGenerator:
     """OpenAI-compatible DashScope chat generator."""
 
-    api_key: str
+    api_key: str = field(repr=False)
     api_base: str
     model: str = "qwen-plus"
     temperature: float = 0.1
     max_tokens: int = 2048
     client: object | None = None
+    provider_name: str = "dashscope"
 
     def generate(self, question: str, hits: list[RetrievalHit]) -> GeneratedAnswer:
         if not hits:
@@ -58,12 +59,14 @@ class DashScopeGenerator:
             ],
             temperature=self.temperature,
             max_tokens=self.max_tokens,
+            **({"extra_body": {"thinking": {"type": "disabled"}}}
+               if self.provider_name == "deepseek" else {}),
         )
         answer = response.choices[0].message.content
         return GeneratedAnswer(
             answer=answer,
             sources=tuple(hit.evidence for hit in hits),
-            metadata={"generator": "dashscope", "model": self.model},
+            metadata={"generator": self.provider_name, "model": self.model},
         )
 
     def stream(self, question: str, hits: list[RetrievalHit]) -> Iterator[str]:
@@ -85,6 +88,8 @@ class DashScopeGenerator:
             temperature=self.temperature,
             max_tokens=self.max_tokens,
             stream=True,
+            **({"extra_body": {"thinking": {"type": "disabled"}}}
+               if self.provider_name == "deepseek" else {}),
         )
         for chunk in response:
             choices = getattr(chunk, "choices", ())
