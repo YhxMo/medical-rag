@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided page (p. 96) contains Figure 5.7(b), which visually shows a grid of focal spot shapes across the radiation field for a 20° anode angle, labeled from 'cathode side' (bottom, −20° to 0°) to 'anode side' (top, 0° to +20°). Inspection of the figure confirms that the projected focal spots are longer (more vertically extended) near the cathode side (bottom rows) and become progressively shorter in the vertical direction toward the anode side (top rows). The tilt also changes with lateral position, as stated in the corrected reference answer. This matches the AI source correction’s basis and the expected answer. The original draft reference answer was incorrect (reversed direction), and the correction is validated by direct visual inspection of the figure."
+}

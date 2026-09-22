@@ -1,0 +1,11 @@
+{
+  "strategy": "rerank",
+  "dataset_sha256": "554ee2b3273e680c15d2a7e4b1154c687ec04f8bfe6be9c6d990caf7153c6485",
+  "versions": {
+    "baseline": "7e46a7adca814b220ec05ad75ec5c77194310d8940a2f736139fde0750078019",
+    "chapter": "9a0c02a784afcd65b9dd126360a65005011a97588bad9d37dd1baa255c9d1d0f",
+    "rerank": "1aafc877f17870e21daba81953236c49d3b194fbc427690bedc537e29c9ffb5b"
+  },
+  "selection_rule": "dev text Recall@5, then NDCG@5, then P95; keep baseline on quality tie",
+  "development_summary_sha256": "1e09abc1cda805d98791c1a236fb3796158ebe93aa388ed6352521429b08ef05"
+}

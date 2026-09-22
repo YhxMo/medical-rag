@@ -1,0 +1,84 @@
+{
+  "answer": "[1] the reflection coefficient between the transducer and the tissue, thereby increasing \nthe transducer’s sensitivity to weak echoes.\n12.4.2.\t Transmitted pulse\nThe bandwidth of the transducer determines the length of the transmitted \npulse and hence the axial (i.e. along the beam direction) resolution of the imaging \nsystem. The transmitted pulse takes the form of a gated sinusoid similar to that \nshown in Fig. 12.2. The full width at half maximum (FWHM) pulse length can be \nspecified most simply as the number of cycles, Nc, of the sinusoid multiplied by \nthe wavelength, in which case the axial resolution, AR, of the imaging system is:\n\n[2] lagen, whose purpose is to produce visually realistic speckle \nwhen the phantom is imaged.\nIn addition to the background material described above, a phantom will \ncontain several imaging targets that enable verification of the spatial and/or \ncontrast resolution of an ultrasound system. The spatial resolution targets are \nusually small diameter metal wires or monofilament fibres suspended \nhorizontally through the phantom to produce bright point-like targets when \nimaged in cross-section. A set of wire targets is positioned at the same depth \nbelow the phantom’s acoustic window in a regular pattern such that each pair \nof adjacent wires presents a progressively decreasing separation ranging from \nseveral millimetres down to 0.5  mm or less. When this pattern of targets is \nimaged, the lateral spatial resolution can be estimated by observing which pairs \nof targets are resolved in the image. Additional wire targets are oriented in a \nvertical pattern, to enable evaluation of the axial spatial resolution. A phantom \nmay include several laterally and axially oriented groups of wires at different \ndepths, to enable resolution to be assessed throughout the scanner’s FOV.\nContrast resolu\n\n[3] 299\nPHYSICS OF ULTRASOUND\nc\nAR\n2\nN\n=\nl\n\t\n(12.12)\nThe division by 2 in Eq. (12.12) arises because the pulse makes a round \ntrip from the transducer to a reflector and back. Ultrasound imaging transducers \ntypically possess high bandwidths yielding transmitted pulses 1.5–2.0 cycles in \nduration and an axial resolution finer than 1 mm.\n12.4.3.\t Radiation and diffraction\nThe beam pattern produced by an ultrasound transducer can be analysed \nin a plane parallel to the face of the aperture using scalar diffraction theory. The \nHuygens–Fresnel principle is the basis of scalar diffraction theory. This principle \nstates that an aperture can be decomposed into a collection of point sources, such \nthat the field produced by the aperture is a superposition of spherical wavelets \nradiated from each point source. In the far field of an unfocused aperture, or at \nand beyond the focus of a focused aperture, the resulting beam is given by the \nFraunhofer diffraction integral:\n(\n)\n(\n)\n(\n)\n(\n)\n(\n)\n2\n2\nexp\n,\nexp\n,\nexp\nd d\n2\njkz\nk\nk\nU x y\nj\nx\ny\nU\nj\nx\ny\nj z\nz\nz\nη\nη\nη\nΣ\n\n\n\n\n\n\n\n\n=\n+\n−\n+\n\n\n\n\n\n\n\n\n\n\n\n\n∫∫\nx\nx\nx\nl\n\t(12.13)\nFIG. 12.2.  Typical diagnostic ultrasound radiofrequency pulse wavef\n\n[4] ut 56 dB compared with the sinc2(Lx/lF) primary beam \nobtained in Eq. (13.3), but the lateral resolution is about twice as coarse as the \nresolution of the uniformly weighted aperture. Array based ultrasound systems \nalmost always employ some form of apodization because contrast resolution is a \ncrucial design consideration for diagnostic tasks such as lesion detection.\nFIG. 13.3.  Lateral PSF, PSF(x), of a linear array with f number equal to one and Hamming \nwindow apodization. Compare the lateral resolution and PSL of this beam with the lateral \nresolution and PSL of the unapodized beam in Fig. 13.2.\nIn Eq. (13.3), the convolution of the sinc(Lx/lF) term with the sampling \nfunction produces copies of the primary beam called grating lobes, spaced by \nλF/s along the lateral dimension of the focal plane (see Fig. 13.2(b)). Under the \nparaxial approximation, the azimuth angle, qm, of the mth grating lobe away from \nthe main lobe peak is:\n\n[5] 1. Introduction to ultrasound\n14\nSimple fluid is visualised with ultrasound as being anechoic, i.e. black.\nBlood clots and bone are visualised as hyperechoic, i.e. white.\nOrgans are more echogenic than fluid, and less echogenic than bone, therefore they appear \nas shades of grey.\nFigure 4: Anechoic, hyperechoic and hypoechoic structures commonly encountered\ninclude the anechoic (black) simple fluid-filled gallbladder (GB) in A; hyperechoic (echogenic) \nliver haemangioma (cursors) in B; and hypoechoic hemorrhagic ovarian cyst (arrows) in C.\nUltrasound fields\nUltrasound field\t\nThe region covered by the ultrasound beam as displayed on the screen.\nNear field\t\nThe top half of the ultrasound field, which represents anatomy closer to \nthe transducer.\nFar field\t\nThe bottom half of the ultrasound field, which represents anatomy further \naway from the transducer.\nImage resolution\nSpatial resolution\t\nAbility to distinguish two points as separate, i.e. detail of image.\nAxial resolution\t\nAbility to distinguish two points as separate in the direction parallel to the \nultrasound beam.\nLateral resolution\t\nAbility to distinguish two points as separate in the direction perpendicular \nto the ultrasou",
+  "status": "ok",
+  "warnings": [
+    "离线检索证据展示，不是模型回答或语义核验结果。"
+  ],
+  "timings": {
+    "retrieval_seconds": 0.67919020797126,
+    "total_seconds": 0.6799049158580601,
+    "model_seconds": 0,
+    "first_token_seconds": null
+  },
+  "calls": [],
+  "query": "What determines axial resolution in ultrasound?",
+  "citations": {},
+  "image_paths": [],
+  "sources": [
+    {
+      "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p325:046b958980fa",
+      "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 325,
+      "type": "text",
+      "content": "the reflection coefficient between the transducer and the tissue, thereby increasing \nthe transducer’s sensitivity to weak echoes.\n12.4.2.\t Transmitted pulse\nThe bandwidth of the transducer determines the length of the transmitted \npulse and hence the axial (i.e. along the beam direction) resolution of the imaging \nsystem. The transmitted pulse takes the form of a gated sinusoid similar to that \nshown in Fig. 12.2. The full width at half maximum (FWHM) pulse length can be \nspecified most simply as the number of cycles, Nc, of the sinusoid multiplied by \nthe wavelength, in which case the axial resolution, AR, of the imaging system is:",
+      "scores": {
+        "dense": 0.7879731381119788,
+        "bm25": 18.347280414467726,
+        "rrf": 0.03278688524590164,
+        "weighted": 0.03278688524590164
+      }
+    },
+    {
+      "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p357:8b8c529aad87",
+      "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 357,
+      "type": "text",
+      "content": "lagen, whose purpose is to produce visually realistic speckle \nwhen the phantom is imaged.\nIn addition to the background material described above, a phantom will \ncontain several imaging targets that enable verification of the spatial and/or \ncontrast resolution of an ultrasound system. The spatial resolution targets are \nusually small diameter metal wires or monofilament fibres suspended \nhorizontally through the phantom to produce bright point-like targets when \nimaged in cross-section. A set of wire targets is positioned at the same depth \nbelow the phantom’s acoustic window in a regular pattern such that each pair \nof adjacent wires presents a progressively decreasing separation ranging from \nseveral millimetres down to 0.5  mm or less. When this pattern of targets is \nimaged, the lateral spatial resolution can be estimated by observing which pairs \nof targets are resolved in the image. Additional wire targets are oriented in a \nvertical pattern, to enable evaluation of the axial spatial resolution. A phantom \nmay include several laterally and axially oriented groups of wires at different \ndepths, to enable resolution to be assessed throughout the scanner’s FOV.\nContrast resolu",
+      "scores": {
+        "dense": 0.7766371315398783,
+        "bm25": 12.803635569867858,
+        "rrf": 0.03149801587301587,
+        "weighted": 0.03149801587301587
+      }
+    },
+    {
+      "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p326:52e75fc16338",
+      "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 326,
+      "type": "text",
+      "content": "299\nPHYSICS OF ULTRASOUND\nc\nAR\n2\nN\n=\nl\n\t\n(12.12)\nThe division by 2 in Eq. (12.12) arises because the pulse makes a round \ntrip from the transducer to a reflector and back. Ultrasound imaging transducers \ntypically possess high bandwidths yielding transmitted pulses 1.5–2.0 cycles in \nduration and an axial resolution finer than 1 mm.\n12.4.3.\t Radiation and diffraction\nThe beam pattern produced by an ultrasound transducer can be analysed \nin a plane parallel to the face of the aperture using scalar diffraction theory. The \nHuygens–Fresnel principle is the basis of scalar diffraction theory. This principle \nstates that an aperture can be decomposed into a collection of point sources, such \nthat the field produced by the aperture is a superposition of spherical wavelets \nradiated from each point source. In the far field of an unfocused aperture, or at \nand beyond the focus of a focused aperture, the resulting beam is given by the \nFraunhofer diffraction integral:\n(\n)\n(\n)\n(\n)\n(\n)\n(\n)\n2\n2\nexp\n,\nexp\n,\nexp\nd d\n2\njkz\nk\nk\nU x y\nj\nx\ny\nU\nj\nx\ny\nj z\nz\nz\nη\nη\nη\nΣ\n\n\n\n\n\n\n\n\n=\n+\n−\n+\n\n\n\n\n\n\n\n\n\n\n\n\n∫∫\nx\nx\nx\nl\n\t(12.13)\nFIG. 12.2.  Typical diagnostic ultrasound radiofrequency pulse wavef",
+      "scores": {
+        "dense": 0.7675310863563266,
+        "bm25": 10.865454578254493,
+        "rrf": 0.029211087420042643,
+        "weighted": 0.029211087420042643
+      }
+    },
+    {
+      "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p342:b27262dc4375",
+      "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 342,
+      "type": "text",
+      "content": "ut 56 dB compared with the sinc2(Lx/lF) primary beam \nobtained in Eq. (13.3), but the lateral resolution is about twice as coarse as the \nresolution of the uniformly weighted aperture. Array based ultrasound systems \nalmost always employ some form of apodization because contrast resolution is a \ncrucial design consideration for diagnostic tasks such as lesion detection.\nFIG. 13.3.  Lateral PSF, PSF(x), of a linear array with f number equal to one and Hamming \nwindow apodization. Compare the lateral resolution and PSL of this beam with the lateral \nresolution and PSL of the unapodized beam in Fig. 13.2.\nIn Eq. (13.3), the convolution of the sinc(Lx/lF) term with the sampling \nfunction produces copies of the primary beam called grating lobes, spaced by \nλF/s along the lateral dimension of the focal plane (see Fig. 13.2(b)). Under the \nparaxial approximation, the azimuth angle, qm, of the mth grating lobe away from \nthe main lobe peak is:",
+      "scores": {
+        "dense": 0.785164173546363,
+        "bm25": 0.0,
+        "rrf": 0.016129032258064516,
+        "weighted": 0.016129032258064516
+      }
+    },
+    {
+      "id": "msf_ultrasound_manual_2018.pdf:fixed:p15:fd4fc7b259b6",
+      "source": "msf_ultrasound_manual_2018.pdf",
+      "page": 15,
+      "type": "text",
+      "content": "1. Introduction to ultrasound\n14\nSimple fluid is visualised with ultrasound as being anechoic, i.e. black.\nBlood clots and bone are visualised as hyperechoic, i.e. white.\nOrgans are more echogenic than fluid, and less echogenic than bone, therefore they appear \nas shades of grey.\nFigure 4: Anechoic, hyperechoic and hypoechoic structures commonly encountered\ninclude the anechoic (black) simple fluid-filled gallbladder (GB) in A; hyperechoic (echogenic) \nliver haemangioma (cursors) in B; and hypoechoic hemorrhagic ovarian cyst (arrows) in C.\nUltrasound fields\nUltrasound field\t\nThe region covered by the ultrasound beam as displayed on the screen.\nNear field\t\nThe top half of the ultrasound field, which represents anatomy closer to \nthe transducer.\nFar field\t\nThe bottom half of the ultrasound field, which represents anatomy further \naway from the transducer.\nImage resolution\nSpatial resolution\t\nAbility to distinguish two points as separate, i.e. detail of image.\nAxial resolution\t\nAbility to distinguish two points as separate in the direction parallel to the \nultrasound beam.\nLateral resolution\t\nAbility to distinguish two points as separate in the direction perpendicular \nto the ultrasou",
+      "scores": {
+        "dense": 0.0,
+        "bm25": 14.40097709285449,
+        "rrf": 0.016129032258064516,
+        "weighted": 0.016129032258064516
+      }
+    }
+  ]
+}

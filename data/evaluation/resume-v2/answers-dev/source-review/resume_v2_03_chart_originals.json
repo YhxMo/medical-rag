@@ -1,0 +1,33 @@
+{
+  "question_id": "resume_v2_03_chart",
+  "mode": "originals",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "Figure 3 explicitly labels two measuring tapes: 'Built-in measuring tape' on the X-ray tube (starting at focal spot indicator) and 'Measuring tape' on the tabletop/image receptor surface; scale insets show '0' near focus and '99' near tabletop.",
+    "reason": "The answer correctly identifies the two components with applied measuring tapes as the X-ray tube (via its built-in tape from focal spot indicator) and the tabletop/image receptor surface (via horizontal tape), matching both the figure labels and the caption text in citation 1. All descriptive details (e.g., scale insets, orientation) are directly visible or stated in the provided evidence. No unsupported claims are made.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.643608333000884,
+    "usage": {
+      "input_tokens": 4805,
+      "output_tokens": 194
+    },
+    "cost_upper_cny": 0.012714,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

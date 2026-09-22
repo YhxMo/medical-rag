@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The visual evidence (Figure 8) shows the AEC field selection area with three sensor icons; the middle icon is illuminated yellow, while the left and right are not. The caption explicitly states: 'here, the central ionization chamber is selected'. This matches the reference answer: 'The central ionization chamber (single middle sensor illuminated)'. The procedural step (d) also confirms selection of 'the central ionization chamber (Fig. 8)'. All sources align."
+}

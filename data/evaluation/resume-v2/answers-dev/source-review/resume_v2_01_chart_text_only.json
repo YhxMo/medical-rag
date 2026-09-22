@@ -1,0 +1,36 @@
+{
+  "question_id": "resume_v2_01_chart",
+  "mode": "text_only",
+  "review": {
+    "original_grade_reliable": false,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 3,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "The gold image (FIG. 12.5) shows Tx and Rx apertures with diverging dashed beams intersecting in a diamond-shaped shaded region labeled as the sample volume; the caption explicitly states the Doppler spectrum includes contributions from moving scatterers within this intersection area.",
+    "reason": "The answer correctly identifies the intersection area as the determining geometric feature, directly quoting FIG. 12.5’s caption [1] and supporting with CW Doppler’s spatial resolution limitation [3]. However, the initial grade incorrectly claims the image was available to the answerer (answer_received_originals=false), while the answer itself acknowledges no image was provided—this undermines the 'image_claims_supported' part of the initial grade. The grounding is fully supported by citations 1 and 3; no unsupported claims exist. The contradiction lies in the initial judge’s assumption about image access, not in the answer’s content."
+  },
+  "usage": {
+    "seconds": 7.601967208998758,
+    "usage": {
+      "input_tokens": 4257,
+      "output_tokens": 257
+    },
+    "cost_upper_cny": 0.012626,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

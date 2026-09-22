@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The figure caption (Fig. 5.19) explicitly states: '13.4%: 6-pulse generator'. The chart shows the 13.4% ripple curve (solid line labeled '13.4%') intersecting the 40 keV vertical line at approximately y = 1.0 on the 'photon fluence/mm²·mAs ×10⁴' axis, i.e., ~1.0 × 10⁴ photons/mm²·mAs. This matches the reference answer exactly and requires visual inspection of the chart as noted in the rationale."
+}

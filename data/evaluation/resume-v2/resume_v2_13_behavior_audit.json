@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (Section 2.1.6.3(d)) explicitly states: 'Their values should be set to default or normal level (speed: 400 (D); density correction: 0.0).' This directly contradicts the technician's claim of film speed 200 (D) and density correction +1.5. The provided image (Fig. 8) shows a control panel with 'Density 0%' and 'MA 200', but the MA value is not the film speed; the textual procedure unambiguously specifies film speed 400 (D) and density correction 0.0 as the required settings for the test. Therefore, the reference answer and expected behavior ('correct_premise') are fully supported by the evidence."
+}

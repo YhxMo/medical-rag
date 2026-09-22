@@ -1,0 +1,32 @@
+{
+  "question_id": "resume_v2_01_chart",
+  "mode": "originals",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "The gold image shows Tx and Rx transducers with diverging dashed beams intersecting in a shaded diamond-shaped region; the caption explicitly states Doppler contributions come from scatterers within this intersection area.",
+    "reason": "The answer correctly identifies the 'area of intersection of the transmit and receive beams' as the determining geometric feature, quoting verbatim the figure caption (citation 1), and accurately describes the shaded diamond region as the sample volume. The visual evidence confirms the beam geometry and intersection. All claims are directly grounded in the provided sources; no unsupported assertions are made."
+  },
+  "usage": {
+    "seconds": 5.8426225839994,
+    "usage": {
+      "input_tokens": 4311,
+      "output_tokens": 168
+    },
+    "cost_upper_cny": 0.01131,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

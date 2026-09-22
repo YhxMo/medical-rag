@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The screenshot shows Table 8 (cont.) on page 189, where Section 3.2.3 is titled 'Verification of different field sizes'. In the 'Equipment' column for that row, the entry is explicitly 'Phantom', matching the reference_answer and expected_answer. This is directly readable from the image/table layout as stated in the rationale."
+}

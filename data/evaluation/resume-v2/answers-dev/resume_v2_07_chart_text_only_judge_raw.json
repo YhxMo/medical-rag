@@ -1,0 +1,11 @@
+{
+  "correctness": 0,
+  "completeness": 0,
+  "groundedness": 0,
+  "behavior_ok": true,
+  "refused": true,
+  "unsupported_claims": false,
+  "image_claims_supported": false,
+  "citations": [],
+  "reason": "The model refused to answer, stating '现有教材证据不足，无法可靠回答。' (Existing teaching materials are insufficient to reliably answer). However, the provided gold sources—including the text on p.98 and the figure caption on p.97—explicitly identify all four labels in Figure 12: arrowheads = peri-gestational haemorrhage; curved arrow = amnion; arrow without tail = embryo; arrow with tail = yolk sac. The retrieved source msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642 contains the exact sentence: 'Also note in this early pregnancy the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail).' The figure caption also confirms the arrowheads label. Thus, sufficient evidence *is* available, and the refusal is unjustified. Since the model declined to answer despite clear support in the sources, correctness, completeness, and groundedness are 0. Behavior is acceptable (no hallucination), so behavior_ok = true and refused = true."
+}

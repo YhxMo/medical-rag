@@ -1,0 +1,171 @@
+{
+  "question_id": "resume_v2_01_chart",
+  "kind": "chart",
+  "mode": "text_only",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The caption of Figure 12.5 explicitly states: 'The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.' The figure visually depicts the transmit (Tx) and receive (Rx) beam apertures with dashed lines, and the shaded diamond-shaped region represents their intersection — the sensitive volume where moving scatterers contribute to the Doppler signal. This matches both the reference answer and the expected evidence."
+  },
+  "result": {
+    "answer": "根据所提供的资料，图 12.5 中决定哪些运动散射体对测得的多普勒频谱有贡献的几何特征是**发射（Tx）与接收（Rx）两束声束的交叠区域**。\n\n具体依据如下：\n\n- 图 12.5 的图注明确说明：该图为 CW（连续波）多普勒扫描几何，显示由发射（Tx）和接收（Rx）孔径产生的声束（虚线）的取向；**测得的 Doppler 频谱将包含两束声束交叠区域（the area of intersection of the two beams）内所有运动散射体的贡献**[1]。\n- 同一资料还指出，CW 多普勒的主要缺点正是由于发射与接收声束之间存在**大的交叠区域**，导致缺乏空间分辨力[3]。\n\n需要说明的局限：\n\n- 上述结论完全来自图 12.5 的图注文字[1]，本次未提供该图本身，因此无法从图像中直接核实声束交叠区域的具体形状或范围。\n- 资料未给出该交叠区域的计算公式或定量边界，也未说明交叠区域之外散射体被排除的具体机制（例如是否完全无贡献）。\n- 资料中未出现“Figure 12.5”这一编号形式，仅有“FIG. 12.5”[1]，二者应为同一图，但此对应关系系依据编号推断。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.4836041249800473,
+      "first_token_seconds": 2.9870746249798685,
+      "total_seconds": 4.827615624992177,
+      "model_seconds": 3.294937792001292,
+      "model_first_token_seconds": 0.45395333296619356
+    },
+    "calls": [
+      {
+        "seconds": 1.0073617920279503,
+        "usage": {
+          "input_tokens": 1612,
+          "output_tokens": 10
+        },
+        "cost_upper_cny": 0.003304,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 2.287575999973342,
+        "usage": {
+          "input_tokens": 1607,
+          "output_tokens": 291
+        },
+        "cost_upper_cny": 0.005542,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": 0.45395333296619356,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "In Figure 12.5, what geometric feature determines which moving scatterers contribute to the measured Doppler spectrum?",
+    "citations": {
+      "citation_mentions": 4,
+      "valid_citation_mentions": 4,
+      "unique_citations": [
+        1,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n303\nPHYSICS OF ULTRASOUND\nbetween transmitter and receiver beams. if the reflectors are moving, the received \nechoes are in the form cos([wo + wD]t), where wD = 2pfD, and a Doppler signal of \nthe form cos(wDt) can be recovered via frequency demodulation of the received \nsignal.\nthe maximum blood flow velocity under normal conditions is about \n1 m/s at the entrance to the aorta, so eq. (12.18) indicates that the megahertz \ntransmit frequencies used for diagnostic ultrasound will produce Doppler \nfrequencies of a few kilohertz at most, which is conveniently within the range of \naudible frequencies. therefore, the simplest cW Doppler devices just direct the \ndemodulated Doppler signal to a speaker, for the physician to interpret audibly.\nFIG. 12.5.  CW Doppler scan geometry showing the orientation of the beams (dashed lines) \nproduced by the transmit (Tx) and receive (Rx) apertures. The measured Doppler spectrum \nwill include contributions from all moving scatterers within the area of intersection of the two \nbeams.\nin addition to the audio output, Doppler systems often display the time–\nfrequency spectrum of the demodulated signal (fig. 12.6). the x axis of this \ndisplay is time, the",
+        "scores": {
+          "dense": 0.7356922887620547,
+          "bm25": 37.127619562844316,
+          "rrf": 0.031054405392392875,
+          "weighted": 0.031054405392392875,
+          "rerank": 0.9450041651725769
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:fa00e2c562b7",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 352,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nonal pulsed Doppler examination. Triplex Doppler can \nbe considered an extension of duplex Doppler, a scanning mode that predates \ncolour flow imaging in which a B-mode image and a pulsed Doppler spectrum \nare acquired and displayed simultaneously.\n13.5.2.\t Tissue Doppler imaging\nConventional Doppler systems, including continuous wave Doppler, pulsed \nwave Doppler and colour flow imaging, discriminate blood flow from soft tissue \nmotion based on velocity. Specifically, a Doppler system assumes blood flow is \nconcentrated at intermediate and high velocities, while scatterers moving at low \nvelocities correspond to soft tissue. This discrimination is achieved by applying \na high pass wall filter, also known as a clutter filter, to eliminate low Doppler \nfrequency components from the Doppler signal.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 29.533603677809623,
+          "rrf": 0.015625,
+          "weighted": 0.015625,
+          "rerank": 0.38188159465789795
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p331:37cc5778f5d8",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 331,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n304\nCHAPTER 12\nFIG. 12.6.  Representative pulsed Doppler spectral display.\n12.5.3.\t Pulsed wave Doppler\nThe primary shortcoming of CW Doppler is the lack of spatial resolution \nresulting from the large area of overlap between the transmitter and receiver \nbeams. Pulsed wave Doppler addresses this limitation by transmitting a sequence \nof short pulses similar to those used for imaging, rather than a continuous sine \ntone. The user determines the location from which Doppler data will be acquired \nby positioning a range gate cursor within a B-mode image. As the echo from each \nsuccessive transmission is received, a single sample at the expected arrival time \nof echoes from the range gate (the dotted line in Fig. 12.7(a)) is acquired and \nheld until the echo from the next pulse is received. If the scatterers are moving, \nthe signal received from the range gate will change with each subsequent pulse \nand the sample-and-hold operation will construct a staircase signal as shown in \nFig. 12.7(b). The output of the sample-and-hold operation is low pass filtered to \nobtain a smoothly varying Doppler signal. It can be shown that the frequency of \nthe smoothed signal is equal to the Doppler fr",
+        "scores": {
+          "dense": 0.7473968591467336,
+          "bm25": 33.00263465647146,
+          "rrf": 0.03149801587301587,
+          "weighted": 0.03149801587301587,
+          "rerank": 0.3107759356498718
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p328:90f6c9b3cfd2",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 328,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n301\nPHYSICS OF ULTRASOUND\nFIG. 12.3.  A typical pulse echo lateral point spread function is a sinc2 beam with the LR given \nby Eq. (12.17).\nThe ratio F/L in Eq. (12.17) is called the f number of the transducer. The f \nnumber of an ultrasound imaging system is typically between 2 and, at most, 6, \nso the LR is generally in the 1–2 mm range.\n12.5.\tDoppler Physics\n12.5.1.\t The Doppler effect\nDoppler ultrasound is a method used to image moving blood and thereby \nestimate blood velocity by exploiting the Doppler effect, which was studied in \n1842 by Christian Doppler. The Doppler effect is explained schematically for a \nmoving continuous wave source in Fig. 12.4. As the source moves to the right, \neach subsequent cycle of the wave radiates from a point shifted to the right, \nso the frequency is compressed in the direction of motion and expanded in the \nopposite direction. This phenomenon is the origin of the change in perceived \npitch as a siren or train whistle passes a stationary listener. The Doppler effect \napplies to echoes from moving reflectors such as red blood cells, as well as to \nwaves radiated from moving sources.",
+        "scores": {
+          "dense": 0.7485409409024766,
+          "bm25": 29.215205299129472,
+          "rrf": 0.03125763125763126,
+          "weighted": 0.03125763125763126,
+          "rerank": 0.0973978191614151
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nto the audio output, Doppler systems often display the time–\nfrequency spectrum of the demodulated signal (fig. 12.6). the x axis of this \ndisplay is time, the y axis is temporal frequency (which can be rescaled to velocity \nusing the Doppler equation) and the pixel greyscale represents the magnitude of \nthe short time ft of the Doppler signal. a pixel in a Doppler spectrum therefore \nrepresents the proportion of red blood cells in the field of view that was moving \nat a particular velocity at a particular time. the spectral display is an effective \nmeans of presenting the pulsatile characteristics of intracardiac and vascular flow.",
+        "scores": {
+          "dense": 0.7437971942488888,
+          "bm25": 29.02605854230321,
+          "rrf": 0.030536130536130537,
+          "weighted": 0.030536130536130537,
+          "rerank": 0.08767133206129074
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the geometric feature as 'the area of intersection of the transmit and receive beams', which is explicitly stated in the figure caption of FIG. 12.5 in both the reference text (gold source id: iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10) and the visual description (visual_fd8576eb6df1a40547f9). The answer cites [1] for the direct quote from the caption, and [3] for the supporting statement about CW Doppler’s lack of spatial resolution due to this large overlap—this is corroborated by page 331 (retrieved source id: iaea_diagnostic_radiology_physics_2014.pdf:fixed:p331:37cc5778f5d8), which states: 'The primary shortcoming of CW Doppler is the lack of spatial resolution resulting from the large area of overlap between the transmitter and receiver beams.' The image (Figure 12.5) visually confirms a shaded diamond-shaped intersection region labeled as the sample volume, with Tx and Rx apertures producing diverging dashed beams—this matches the textual description and supports the claim that the intersection defines where moving scatterers contribute. The answer appropriately acknowledges limitations (e.g., no image provided to the answerer, no quantitative formula), showing careful grounding. All required citation IDs (1 and 3) are valid and support the claims made. No unsupported claims are introduced."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 12.4228316671215,
+    "usage": {
+      "input_tokens": 4836,
+      "output_tokens": 440
+    },
+    "cost_upper_cny": 0.016712,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

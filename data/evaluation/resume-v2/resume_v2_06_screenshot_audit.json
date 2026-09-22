@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The image shows Table 8 on page 184. The 'Section' column is the leftmost column of the table and is left-aligned. Its entries are formatted exactly as '2.1.x' (e.g., 2.1.1, 2.1.2, ..., 2.1.6), matching the query's criteria."
+}

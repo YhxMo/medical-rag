@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "How is the scan line stepped across a linear array between successive pulse-echo acquisitions?",
+      "reference_answer": "By deactivating an element at one end of the active subaperture and activating a new element at the opposite end.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:9cf1fda5a667"
+      ],
+      "requires_visual": false,
+      "rationale": "The procedure is explicitly described in the first source paragraph; no visual interpretation is needed."
+    },
+    {
+      "kind": "chart",
+      "question": "In Fig. 13.1(c), what geometric feature distinguishes the phased array’s field of view from that of the linear array shown in (a)?",
+      "reference_answer": "The phased array produces a converging circular sector FOV that narrows at shallow depths, whereas the linear array yields a rectangular FOV with constant lateral width.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:04e4e6fc3e12",
+        "visual_f52432fb971b79f9d468"
+      ],
+      "requires_visual": true,
+      "rationale": "The distinction requires comparing the beam contours and shaded regions in parts (a) and (c) of the figure; the text supports but does not fully specify the shape differences without visual confirmation."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the provided page image, what does the dark grey shading in Fig. 13.1(a) represent?",
+      "reference_answer": "The active subaperture during acquisition of the indicated scan line.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_f52432fb971b79f9d468"
+      ],
+      "requires_visual": true,
+      "rationale": "The caption directly beneath the figure in the screenshot states this; the answer depends on reading the figure’s caption in the image, not just the surrounding text."
+    },
+    {
+      "kind": "behavior",
+      "question": "Correct the following premise: 'A curvilinear array produces a rectangular field of view like a linear array.'",
+      "reference_answer": "A curvilinear array produces a circular sector image with a wide field of view at all depths, not a rectangular field of view.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:04e4e6fc3e12"
+      ],
+      "requires_visual": false,
+      "rationale": "The premise is explicitly contradicted by the text stating the curvilinear array yields a 'circular sector image', making correction directly supported by the source."
+    }
+  ]
+}

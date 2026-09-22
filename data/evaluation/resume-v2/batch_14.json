@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What distance is suggested for the focal spot to image receptor setting when no standard clinical value is available?",
+      "reference_answer": "100 cm or the nearest possible distance to 100 cm",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9"
+      ],
+      "requires_visual": false,
+      "rationale": "The text in section (d) explicitly states that '100 cm or the nearest possible distance to 100 cm could be used' when no standard value exists."
+    },
+    {
+      "kind": "chart",
+      "question": "In configuration (b) of Figure 25, where is the radiation detector positioned relative to the image receptor and phantom?",
+      "reference_answer": "The radiation detector is positioned above the phantom and below the image receptor, with the phantom (water or PMMA) between them.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_d755638d47cb2b367e5a"
+      ],
+      "requires_visual": true,
+      "rationale": "This requires interpreting the spatial arrangement in diagram (b), where dashed lines show beam path, and labels indicate image receptor on top, phantom in middle, radiation detector beneath phantom—distinct from configuration (a) where detector is below the phantom but not between phantom and receptor."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the caption for Figure 25, which configuration is intended for lateral exposures or when a couch is unavailable?",
+      "reference_answer": "Configuration (d)",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9",
+        "visual_d755638d47cb2b367e5a"
+      ],
+      "requires_visual": true,
+      "rationale": "The caption explicitly states '(d) C arm unit set for lateral exposures or when a couch is not available for clinical use', and the figure visually confirms a side-on C-arm setup without a couch."
+    },
+    {
+      "kind": "behavior",
+      "question": "A user asks: 'What is the recommended patient entrance surface air kerma rate limit for fluoroscopy procedures?'",
+      "reference_answer": "The provided page does not specify any numerical limit or threshold for patient entrance surface air kerma rate.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9",
+        "visual_d755638d47cb2b367e5a"
+      ],
+      "requires_visual": false,
+      "rationale": "The page describes measurement *methods* (configurations, steps) but does not state any regulatory or recommended dose limits; thus, answering would require external knowledge, violating the instruction to refuse when information is absent."
+    }
+  ]
+}

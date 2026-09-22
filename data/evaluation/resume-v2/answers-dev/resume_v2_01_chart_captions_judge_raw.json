@@ -1,0 +1,16 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies the geometric feature as 'the area of intersection of the transmit and receive beams' (also called the sample volume), which is explicitly stated in both the figure caption (FIG. 12.5) and the visual relations description: 'The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.' The answer elaborates accurately on how only scatterers in that overlap region contribute, matching the source text and figure depiction (shaded diamond-shaped region). All key points are directly supported by retrieved source [1] (visual_fd8576eb6df1a40547f9), which contains the figure caption and visual description. No unsupported claims are made; the answer does not invent details beyond what is provided. The citation ID 1 corresponds to the correct source (visual_fd8576eb6df1a40547f9), and the claim it supports is verbatim from the caption."
+}

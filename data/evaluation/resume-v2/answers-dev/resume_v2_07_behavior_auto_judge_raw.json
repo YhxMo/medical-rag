@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies that the statement is directly supported by the provided material. The gold source (msf_ultrasound_manual_2018.pdf, p.97) contains the exact sentence: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.' The retrieved sources (both text and image caption) reproduce this sentence verbatim. The answer cites [1] and [2], corresponding to the text and image-caption sources respectively, both of which contain the supporting quote. The image (Figure 12) is also correctly described as showing the crescent-shaped collection with floating echodensities and a clot, matching the textual description. All key elements of the statement (large peri-gestational haemorrhages >40% sac size, 50% spontaneous abortion risk) are explicitly present in the evidence. No unsupported claims are made; the answer sticks strictly to the provided text and image."
+}

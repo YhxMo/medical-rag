@@ -1,0 +1,51 @@
+{
+  "dataset_sha256": "e5994ba6f45052b7d1597182351cc5a49c6f7fe6510979ad02faada76ad24ca7",
+  "kind": "contaminated_regression",
+  "reports": {
+    "baseline": {
+      "total": 57,
+      "scored": 57,
+      "failed": 0,
+      "hit": 0.9298245614035088,
+      "recall": 0.9210526315789473,
+      "mrr": 0.8192982456140352,
+      "ndcg": 0.8401566869688228,
+      "retrieval_p50_ms": 27.317000087350607,
+      "retrieval_p95_ms": 47.4049171898514,
+      "context_mean_chars": 5283.087719298245
+    },
+    "chapter": {
+      "total": 57,
+      "scored": 57,
+      "failed": 0,
+      "hit": 0.9298245614035088,
+      "recall": 0.9210526315789473,
+      "mrr": 0.8040935672514621,
+      "ndcg": 0.8291918922303732,
+      "retrieval_p50_ms": 30.626958003267646,
+      "retrieval_p95_ms": 51.34954093955457,
+      "context_mean_chars": 5382.421052631579
+    },
+    "rerank": {
+      "total": 57,
+      "scored": 57,
+      "failed": 0,
+      "hit": 0.9649122807017544,
+      "recall": 0.956140350877193,
+      "mrr": 0.9385964912280702,
+      "ndcg": 0.9382168304509215,
+      "retrieval_p50_ms": 1222.4747501313686,
+      "retrieval_p95_ms": 1702.024708967656,
+      "context_mean_chars": 5451.210526315789
+    }
+  },
+  "versions": {
+    "baseline": "01fee11de577201b634f99a7c66813b41ef326b3b56706950cdd55a522199490",
+    "chapter": "45710e81409b0f09b05d48922992ea6b3e0b7b687b048da6208be10b70355c5c",
+    "rerank": "7f85e3e366f4106182c1bfaf38aa7a5e197157be6f9e24ced935f0485068e4d7"
+  },
+  "hardware": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "measurement": "one warm pass; excludes model initialization; no clinical accuracy",
+  "missing_strategies": []
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "Page 19 failed after using all 1000 output tokens; prior client did not persist raw failed output, truncation inferred from usage.",
+  "completed_cached_pages": 18,
+  "remaining_output_limit": 2048,
+  "prompt_unchanged": true,
+  "prior_failed_call_ledger_id": 18
+}

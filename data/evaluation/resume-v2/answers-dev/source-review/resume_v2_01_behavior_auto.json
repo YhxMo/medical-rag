@@ -1,0 +1,51 @@
+{
+  "question_id": "resume_v2_01_behavior",
+  "mode": "auto",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [
+      "现有教材证据不足，无法可靠回答。"
+    ],
+    "citation_review": [],
+    "visual_understanding": "Figure 12.5 and text confirm CW Doppler measures velocity via Doppler frequency shift (rescaled using Doppler equation), not blood pressure.",
+    "reason": "All relevant retrieved passages (1,2,3) and the gold image explicitly state CW Doppler recovers Doppler frequency from demodulated signal and rescales it to *velocity* using the Doppler equation; no mention of blood pressure measurement. The answer claiming 'insufficient evidence' is incorrect and unsupported—the text definitively describes only velocity measurement, refuting the premise. Thus, the initial grade (correctness=0, groundedness=0) is reliable.",
+    "uncited_entries_ignored": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      },
+      {
+        "id": 3,
+        "supported": true
+      },
+      {
+        "id": 4,
+        "supported": false
+      },
+      {
+        "id": 5,
+        "supported": false
+      }
+    ]
+  },
+  "usage": {
+    "seconds": 0.0,
+    "usage": {
+      "input_tokens": 4739,
+      "output_tokens": 263
+    },
+    "cost_upper_cny": 0.013686,
+    "model": "qwen3-vl-plus",
+    "cache_hit": true,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

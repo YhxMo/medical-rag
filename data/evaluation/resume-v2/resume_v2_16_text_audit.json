@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The tolerance for 'Verification of beam collimation' (Section 3.2.1) is explicitly stated in the provided source text and image as '±2% of SID', matching the reference_answer and expected_answer."
+}

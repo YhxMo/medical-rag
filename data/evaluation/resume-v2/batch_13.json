@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What kilovoltage value and which ionization chamber should be selected during the AEC test procedure, according to the written instructions?",
+      "reference_answer": "70 kV and the central ionization chamber",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d"
+      ],
+      "requires_visual": false,
+      "rationale": "The text in section 2.1.6.3(d) explicitly states 'Select 70 kV and the central ionization chamber (Fig. 8)'. This is fully answerable from the text alone."
+    },
+    {
+      "kind": "chart",
+      "question": "Based on the control panel shown in Figure 8, which specific AEC ionization chamber configuration is highlighted as selected?",
+      "reference_answer": "The central ionization chamber (single middle sensor illuminated)",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_7a193c10c17bddded7d9"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure shows a red box around the AEC field selection area; the middle of the three sensor icons is illuminated yellow, indicating the central chamber is selected. The caption confirms this, but the visual confirmation is required to distinguish it from other possible configurations (e.g., left/right or all)."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the control system display shown in Figure 8, what is the displayed value for the mA parameter?",
+      "reference_answer": "200",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_7a193c10c17bddded7d9"
+      ],
+      "requires_visual": true,
+      "rationale": "The screenshot clearly shows 'MA' with the numeric value '200' directly beneath it. This value is not stated in the surrounding text and must be read from the image."
+    },
+    {
+      "kind": "behavior",
+      "question": "A technician claims that for this AEC test, the film speed should be set to 200 (D) and density correction to +1.5. Is this consistent with the procedure described?",
+      "reference_answer": "No, the procedure specifies film speed 400 (D) and density correction 0.0.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d"
+      ],
+      "requires_visual": false,
+      "rationale": "Section 2.1.6.3(d) explicitly states: 'speed: 400 (D); density correction: 0.0'. The technician’s claim contradicts this, so the correct behavior is to correct the false premise using the provided source."
+    }
+  ]
+}

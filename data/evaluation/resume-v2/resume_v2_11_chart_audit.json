@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text on page 339 explicitly states: 'This procedure yields a circular sector FOV that spans as much as 90° in azimuth angle and converges to a narrow FOV at shallow depths, near the top of an image' for the phased array (Fig. 13.1(c)), and earlier describes the linear array (Fig. 13.1(a)) as yielding 'a rectangular FOV whose lateral width is comparable to the length of the array'. The figure visually confirms this: (a) shows parallel scan lines forming a rectangle; (c) shows diverging scan lines from a point (center of array) forming a converging sector (wider at depth, narrower near transducer). The reference answer matches both textual description and visual evidence."
+}

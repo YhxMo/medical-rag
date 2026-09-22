@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The table (Table 8, Section 3.2.2 'Verification of beam geometry') explicitly lists under the 'Tolerance' column: 'Alignment: ±2% SID' and 'Centring: ±1% SID'. The question asks specifically for the tolerance for centring, which is unambiguously stated as '±1% SID' in the source text and confirmed visually in the provided image of the table."
+}

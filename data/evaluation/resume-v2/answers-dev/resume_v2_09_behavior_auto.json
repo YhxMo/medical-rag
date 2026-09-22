@@ -1,0 +1,159 @@
+{
+  "question_id": "resume_v2_09_behavior",
+  "kind": "behavior",
+  "mode": "auto",
+  "expected_behavior": "correct_premise",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text on page 279 explicitly states: 'Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.' This directly matches the premise in the question. The quoted evidence ID corresponds to this exact sentence, confirming the premise is correct per the provided source."
+  },
+  "result": {
+    "answer": "是的，该前提**正确**。\n\n根据提供的来源（MSF超声手册2018版，第278页，第23.3.2节“Consolidation”）明确指出：\n\n> “Alveolar consolidation appears as an area of poorly defined dark, i.e. hypoechoic, lung tissue resembling liver called hepatization. Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram. **Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.**”  \n> （肺泡实变表现为边界不清的低回声肺组织，类似肝脏，称为“肝化”。实变区内可见高回声点状影，对应支气管内气体，即超声空气支气管征。**塌陷的肺段在超声上可类似实变，且可能无空气支气管征。**）[1][2]\n\n此外，图像下方的文字说明（图7下方的23.3.2节内容）也重复了这一观点：\n> “Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.” [1]\n\n因此，题干所述“塌陷的肺段在超声上可能类似于实变，且可能没有空气支气管征”**完全符合所提供资料的描述**。\n\n✅ 结论：该 premise 正确。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6686073330001818,
+      "first_token_seconds": 4.35844837500008,
+      "total_seconds": 9.357557457999064,
+      "model_seconds": 7.531028999999762,
+      "model_first_token_seconds": 1.1240373330001603
+    },
+    "calls": [
+      {
+        "seconds": 1.4515504999999393,
+        "usage": {
+          "input_tokens": 3153,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.006562,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 6.079478499999823,
+        "usage": {
+          "input_tokens": 3166,
+          "output_tokens": 308
+        },
+        "cost_upper_cny": 0.01126,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.1240373330001603,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "The text states that collapsed lung segments may resemble consolidation sonographically and may not have air bronchograms. Is this premise correct according to the provided source?",
+    "citations": {
+      "citation_mentions": 3,
+      "valid_citation_mentions": 3,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_71f8551a81bbad33fa0d",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 279,
+        "type": "image_caption",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.2 Consolidation\nvisible_text: 23. Paediatric chest ultrasound\n278\n\nFigure 7: Pleural effusion\nImages showing a right sided pleural effusion (P) lying between the edge of the aerated lung and the diaphragm / liver below. The diaphragm (D) delineates the thorax from the abdominal cavity and liver. The right image shows a septated / loculated pleural effusion.\n\n23.3.2 Consolidation\nAlveolar consolidation appears as an area of poorly defined dark, i.e. hypoechoic, lung tissue resembling liver called hepatization. Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram. Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.\n\nA\nB\nvisual_relations: Figure 7 contains two upper ultrasound images labeled 'P' (pleural effusion) and 'D' (diaphragm). Below are two labeled images A and B showing hypoechoic lung regions with internal echogenic foci (air bronchograms); image A is labeled 'M', image B shows 'RPU' and 'M'. Both lower images display depth markers and machine settings (e.g., DP-10, Ped-ABD, MI 0.6–0.7, TIS 0.2–0.3).\nunits: MI (Mechanical Index): 0.6–0.7; TIS (Thermal Index for Soft tissue): 0.2–0.3; Depth scale in cm (e.g., -0 to -4 cm on right side of images A and B); Gain settings visible (e.g., 88%, 79%); Time stamps: 2014Jul08 13:20 and 2014Nov26 15:4x.\nuncertainties: Exact depth measurements not readable from image; precise size of effusion or consolidation not quantified; 'RPU' label meaning not defined in text; 'M' marker purpose unspecified; no scale bar provided for absolute sizing.\nsummary: This textbook page (p. 278) describes paediatric chest ultrasound findings: Figure 7 illustrates right-sided pleural effusion (P) adjacent to the diaphragm (D), with the right panel showing a septated/loculated form. Section 23.3.2 defines alveolar consolidation as hypoechoic ('hepatization') lung tissue with possible hyperechoic air bronchograms; it notes that collapsed lung may mimic consolidation without air bronchograms. Two additional ultrasound images (A and B) demonstrate such consolidation patterns.",
+        "scores": {
+          "dense": 0.8287328031241634,
+          "bm25": 70.51020868594429,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.998552143573761
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 279,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.2 Consolidation\n23. Paediatric chest ultrasound\n278\n \nFigure 7: Pleural effusion\nImages showing a right sided pleural effusion (P) lying between the edge of the aerated lung \nand the diaphragm / liver below. The diaphragm (D) delineates the thorax from the abdominal \ncavity and liver. The right image shows a septated / loculated pleural effusion.\n23.3.2 Consolidation\nAlveolar consolidation appears as an area of poorly defined dark, i.e. hypoechoic, lung tissue \nresembling liver called hepatisation. Within the consolidation, hyperechoic punctate areas can \nbe seen corresponding to air in the bronchi: a so called ultrasound air bronchogram. Collapsed \nlung segments can resemble consolidation sonographically and may not have air bronchograms.\nA   \nB",
+        "scores": {
+          "dense": 0.8220706479076252,
+          "bm25": 71.67610510523697,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9981479644775391
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p280:7a7a5614eb4d",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 280,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.3 Interstitial syndrome\n23. Paediatric chest ultrasound\n279\nC   \nD   \nFigure 8: Consolidation\nImages (A) and (B) shows smaller subpleural consolidations surrounded by confluent B-lines.\nImages (C) and (D) shows large areas of consolidation also referred to as ‘hepatization’ due \nto the liver-like appearance. In (C) the arrow marks the consolidated right lower lobe (LUNG), \nclearly demarcated from the liver (LIV) by the domed diaphragm (DIA).\nNote the resemblance in appearance between consolidated lung \n(with bright area = bronchograms) and the liver.\nCaution: It is very easy to mistake the liver or spleen for consolidation located close to these \norgans and vice versa. Hence, the thorax should be clearly identified with the ultrasound by \nlocating the diaphragm and visualizing the consolidated lung above and the liver or spleen below \nthe diaphragm.\n23.3.3 Interstitial syndrome\nOccasional B-lines can be seen in normal lungs, especially at the bases. Up to two B-lines in an \nintercostal space are considered normal whereas three or more are pathological. The commonest \ncauses are pulmonary oedema and viral infections (Figure 9 and Figure 10).\nB-lines can be localised, disseminated, confluent, homogenous or",
+        "scores": {
+          "dense": 0.7878450101107815,
+          "bm25": 35.10359540639658,
+          "rrf": 0.031746031746031744,
+          "weighted": 0.031746031746031744,
+          "rerank": 0.04427609592676163
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p282:c7ba0063ea42",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 282,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.3 Interstitial syndrome\n23. Paediatric chest ultrasound\n281\nD   \nFigure 9: Interstitial syndrome\nThe images above show the progression of interstitial syndrome \nwith the appearance of two B-lines in (A) indicating normality to multiple lines in (B). \nIn (C), the B-lines are becoming more confluent indicating \nmore severe pulmonary oedema while in (D) there is complete confluence (solid) B-lines.\nFigure 10: Interstitial syndrome\nThe figure shows the other appearance of the interstitial syndrome \nwith multiple B-lines (indicated by white arrows) in a child with severe pneumonia \nevidenced by the consolidation (bronchograms) seen in the top left of the image.\nThe explanation for these pathological B-lines is that they represent thickened interlobular septae \nsurrounded by alveolar air. In pulmonary interstitial oedema the juxtaposition of air in the alveoli \nand fluid in the interlobular septa causes the sound to reverberate ‘to and fro’ between the septa \ncreating a line for each reverberation which combine to form B-lines. When oedema becomes \nmore severe, the mixing of fluid and air causes more B-lines to be generated and they become \ncloser together. Very severe oedema can cause the B-lines to fuse with",
+        "scores": {
+          "dense": 0.7418014744529471,
+          "bm25": 30.040127133078933,
+          "rrf": 0.03055037313432836,
+          "weighted": 0.03055037313432836,
+          "rerank": 0.010558814741671085
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly affirms the premise as true and directly quotes the exact sentence from the source (MSF Ultrasound Manual 2018, p. 278, section 23.3.2): 'Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.' This sentence appears verbatim in both the gold source and the retrieved sources (ids: msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377 and visual_71f8551a81bbad33fa0d), confirming groundedness. The answer also correctly notes that the same statement appears in the figure caption context (Fig 7), which is supported by the retrieved image caption text. Both required citation IDs [1,2] are valid and correspond to the two retrieved source excerpts containing the key sentence. No unsupported claims are made; the conclusion is fully derived from the provided evidence. The image (Fig 7 lower panels A/B) shows consolidation with air bronchograms, but the answer does not overinterpret the images—it only uses them to contextualize the textual claim, and the textual claim itself is explicitly supported. Thus, correctness, completeness, and groundedness are all maximal (2)."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 11.794355583999277,
+    "usage": {
+      "input_tokens": 5758,
+      "output_tokens": 382
+    },
+    "cost_upper_cny": 0.017628,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

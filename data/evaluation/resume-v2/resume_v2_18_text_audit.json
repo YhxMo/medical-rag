@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states: 'Multiple gallstones (arrows) are impacted in the gallbladder neck. These stones did not move with changes in the patient’s position.' This directly matches the reference_answer and expected_answer. The figure caption below the image also reiterates: 'These stones did not move with changes in the patient’s position.' No visual interpretation is required; the finding is stated in the textual description associated with Figure 18."
+}

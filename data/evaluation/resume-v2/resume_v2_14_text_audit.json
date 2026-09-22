@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text in section (d) explicitly states: 'There are no standard values for this distance; however, 100 cm or the nearest possible distance to 100 cm could be used', which directly matches the reference and expected answer."
+}

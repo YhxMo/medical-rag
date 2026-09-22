@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states in section 5.7.3: 'With an increase in ripple, the yield drops and the spectrum softens.' This matches the reference_answer and expected_answer exactly. The figure (Fig. 5.19) visually corroborates this: the DC curve (0% ripple) has the highest amplitude (maximum photon yield) and extends to higher photon energies (hardest), while the 100% ripple curve is lower in amplitude and shifts left (softer). The textual statement is direct and unambiguous; no inference or external knowledge is required."
+}

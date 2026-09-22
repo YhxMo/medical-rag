@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What is the tolerance for image uniformity and artefacts in radiography QC tests?",
+      "reference_answer": "No artefacts",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27"
+      ],
+      "requires_visual": false,
+      "rationale": "The tolerance is explicitly stated as 'No artefacts' in section 2.1.3 of the table, requiring only text extraction."
+    },
+    {
+      "kind": "chart",
+      "question": "According to the table, what is the frequency for the AEC constancy test for digital radiography?",
+      "reference_answer": "3 months",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27"
+      ],
+      "requires_visual": false,
+      "rationale": "The frequency is listed in the 'Frequency' column for section 2.1.4; though presented in a table, this is a direct lookup from structured text—not requiring interpretation of a graphical plot or image."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the provided page image, does the table include a QC test for X-ray tube voltage (kVp) accuracy?",
+      "reference_answer": "No",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_11a672097c4760b738ba"
+      ],
+      "requires_visual": true,
+      "rationale": "The question requires inspecting the actual table layout in the image to confirm absence of a kVp-related test; the textual source excerpt does not list such a test, but verification depends on visual confirmation of the full table content."
+    },
+    {
+      "kind": "behavior",
+      "question": "A user asks: 'What is the recommended kVp tolerance for radiographic QC tests?'",
+      "reference_answer": "The document does not specify a kVp tolerance.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27",
+        "visual_11a672097c4760b738ba"
+      ],
+      "requires_visual": false,
+      "rationale": "The provided table lists six QC tests, none of which mention kVp or its tolerance; since the requested information is absent and the behavior type is 'refuse', the correct response is to refuse to provide an answer."
+    }
+  ]
+}

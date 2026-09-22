@@ -1,0 +1,51 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "According to the text, which ultrasound modality is recommended for further investigation and documentation of cardiac motion and fetal heart rate after real-time confirmation of a beating heart?",
+      "reference_answer": "M-mode ultrasound",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states: 'Cardiac motion and foetal heart rate can be further investigated and documented by M-mode ultrasound as described previously in Chapter 8.1.' This is directly answerable from the provided text."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 4, what anatomical structure is indicated by the arrowhead, and where is it located relative to the spine?",
+      "reference_answer": "The aorta, located just anterior to the spine",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+        "visual_0feefd2ce81070a9fa7f"
+      ],
+      "requires_visual": true,
+      "rationale": "The caption for Figure 4 states: 'The aorta (arrowhead) in transverse plane is evident just anterior to the spine.' The visual is required to confirm the arrowhead points to the aorta and its spatial relationship to SP (spine), which cannot be inferred from text alone without the figure reference."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the screenshot of page 105, which four fetal cardiac chambers are labeled in Figure 4, and what abbreviations are used for each?",
+      "reference_answer": "Left ventricle (LV), left atrium (LA), right ventricle (RV), right atrium (RA)",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+        "visual_0feefd2ce81070a9fa7f"
+      ],
+      "requires_visual": true,
+      "rationale": "The labels LV, LA, RV, RA appear directly on the ultrasound image in Figure 4; the caption confirms their identities. The question requires interpreting the annotated screenshot, not just reading the caption—e.g., verifying that the labels correspond to the correct chambers visually."
+    },
+    {
+      "kind": "behavior",
+      "question": "A trainee claims: 'The fetal heart axis is defined by the interventricular septum and is oriented approximately 45 degrees to the right.' Is this statement correct according to the provided material?",
+      "reference_answer": "No, the axis is oriented approximately 45 degrees to the left.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+        "visual_0feefd2ce81070a9fa7f"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states: 'The axis of the heart as defined by the interventricular septum (arrow) is oriented approximately 45 degrees to the left.' The claim says 'to the right', which is directly refutable by the source; thus, the correct behavior is to correct the premise."
+    }
+  ]
+}

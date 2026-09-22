@@ -1,0 +1,16 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies the geometric feature as 'the area of intersection of the transmit and receive beams', which is explicitly stated in the figure caption of Fig. 12.5 in both the gold source (iaea_diagnostic_radiology_physics_2014.pdf, p.330) and the retrieved visual source: 'The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.' The answer also accurately describes the shaded diamond-shaped region in the figure as the sample volume/sensitive zone, consistent with the visual relations described in the retrieved sources. All key points are directly supported by the provided evidence; no unsupported claims are made. The citation [1] corresponds to the correct source (the figure caption), and the claim it supports is verbatim from that source."
+}

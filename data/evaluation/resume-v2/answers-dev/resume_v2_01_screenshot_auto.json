@@ -1,0 +1,178 @@
+{
+  "question_id": "resume_v2_01_screenshot",
+  "kind": "screenshot",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text explicitly states: 'the x axis of this display is time, the y axis is temporal frequency (which can be rescaled to velocity using the Doppler equation)'. This matches the reference_answer and expected_answer exactly. The figure context (Fig. 12.6, referenced in the text and implied by the question's reliance on visual layout) confirms the axes labeling convention for a time–frequency Doppler spectrum. The visual evidence (image path provided) is consistent with standard Doppler spectrum displays where time is horizontal and frequency/velocity is vertical. No contradiction or missing information is present."
+  },
+  "result": {
+    "answer": "根据所提供的文本内容（特别是来源1、2和3，均来自IAEA 2014年教材第330页），**时间–频率多普勒频谱图（time–frequency Doppler spectrum）** 的坐标轴含义如下：\n\n- **x轴（横轴）表示时间（time）**  \n  即多普勒信号随时间的变化过程，用于展现血流的时变特性（如心脏搏动引起的脉动性血流）[1][2][3]。\n\n- **y轴（纵轴）表示时间频率（temporal frequency）**，该频率值**可通过多普勒方程重新标定为血流速度（velocity）**  \n  具体而言，多普勒频移 \\( f_D \\)（单位：Hz）与血流速度 \\( v \\) 成正比，关系由多普勒方程给出（文中提及 Eq. 12.18，但未展示具体公式）；在典型诊断超声中，因血流速度一般 ≤ 1 m/s、发射频率为 MHz 量级，产生的多普勒频移通常为几千赫兹（kHz），处于可听范围 [1][2][3]。\n\n此外，频谱图中每个像素的灰度（greyscale）代表**短时傅里叶变换（short time FT）的幅度**，即在特定时刻、特定频率（或速度）下，视野内红细胞所占比例——换言之, 表示在某一时刻以某一速度运动的红细胞的相对数量 [1][2]。\n\n> 注：用户上传的图像为图12.5（CW多普勒扫描几何结构），并非图12.6（时间–频率频谱图），因此图像本身不直接显示频谱坐标轴；上述解释完全基于文本描述。",
+    "status": "ok",
+    "warnings": [
+      "截图识别不确定项：The referenced Figure 12.6 is not shown; interpretation relies solely on the descriptive text.\nThe exact units for time (e.g., seconds, milliseconds) and frequency/velocity are not specified in the excerpt.",
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.619391666026786,
+      "first_token_seconds": 13.041270334040746,
+      "total_seconds": 19.23204370914027,
+      "model_seconds": 17.510571958031505,
+      "model_first_token_seconds": 1.3783893750514835
+    },
+    "calls": [
+      {
+        "seconds": 7.73247604095377,
+        "usage": {
+          "input_tokens": 915,
+          "output_tokens": 262
+        },
+        "cost_upper_cny": 0.006022,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 1800
+      },
+      {
+        "seconds": 2.2164944999385625,
+        "usage": {
+          "input_tokens": 3317,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.00689,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 7.5616014171391726,
+        "usage": {
+          "input_tokens": 3330,
+          "output_tokens": 396
+        },
+        "cost_upper_cny": 0.012996,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.3783893750514835,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "Doppler spectrum x-axis time y-axis temporal frequency velocity rescaling",
+    "citations": {
+      "citation_mentions": 8,
+      "valid_citation_mentions": 8,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png"
+    ],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nto the audio output, Doppler systems often display the time–\nfrequency spectrum of the demodulated signal (fig. 12.6). the x axis of this \ndisplay is time, the y axis is temporal frequency (which can be rescaled to velocity \nusing the Doppler equation) and the pixel greyscale represents the magnitude of \nthe short time ft of the Doppler signal. a pixel in a Doppler spectrum therefore \nrepresents the proportion of red blood cells in the field of view that was moving \nat a particular velocity at a particular time. the spectral display is an effective \nmeans of presenting the pulsatile characteristics of intracardiac and vascular flow.",
+        "scores": {
+          "dense": 0.8070019248406719,
+          "bm25": 32.256678588251226,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9966262578964233
+        }
+      },
+      {
+        "id": "visual_fd8576eb6df1a40547f9",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "image_caption",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nvisible_text: PHYSICS OF ULTRASOUND\nbetween transmitter and receiver beams. If the reflectors are moving, the received echoes are in the form cos([ω₀ + ω_D]t), where ω_D = 2πf_D, and a Doppler signal of the form cos(ω_D t) can be recovered via frequency demodulation of the received signal.\nThe maximum blood flow velocity under normal conditions is about 1 m/s at the entrance to the aorta, so Eq. (12.18) indicates that the megahertz transmit frequencies used for diagnostic ultrasound will produce Doppler frequencies of a few kilohertz at most, which is conveniently within the range of audible frequencies. Therefore, the simplest CW Doppler devices just direct the demodulated Doppler signal to a speaker, for the physician to interpret audibly.\nFIG. 12.5. CW Doppler scan geometry showing the orientation of the beams (dashed lines) produced by the transmit (Tx) and receive (Rx) apertures. The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.\nIn addition to the audio output, Doppler systems often display the time–frequency spectrum of the demodulated signal (Fig. 12.6). The x axis of this display is time, the y axis is temporal frequency (which can be rescaled to velocity using the Doppler equation) and the pixel greyscale represents the magnitude of the short time FT of the Doppler signal. A pixel in a Doppler spectrum therefore represents the proportion of red blood cells in the field of view that was moving at a particular velocity at a particular time. The spectral display is an effective means of presenting the pulsatile characteristics of intracardiac and vascular flow.\nvisual_relations: Figure 12.5 shows two transducer apertures labeled 'Tx' (transmit) and 'Rx' (receive), each producing diverging dashed beam lines. The beams intersect in a shaded diamond-shaped region representing the sample volume. A solid arrow labeled 'v' points diagonally across the intersection, indicating direction of flow. The dashed lines represent beam boundaries; the shaded region is the overlap zone where Doppler signals are acquired.\nunits: m/s\nHz\nkHz\nMHz\nuncertainties: The text states 'a few kilohertz at most' for Doppler frequencies but does not give exact values or error bounds. Equation (12.18) is referenced but not shown, so the exact relationship between velocity, frequency shift, and transmit frequency is not visible. The figure caption mentions Fig. 12.6 but the figure itself is not provided.\nsummary: This page explains continuous-wave (CW) Doppler ultrasound: moving reflectors cause frequency-shifted echoes (Doppler shift), recoverable via demodulation. With typical blood velocities (~1 m/s) and MHz transmit frequencies, Doppler shifts are in the audible kHz range, enabling audio interpretation. Figure 12.5 illustrates the beam geometry: Tx and Rx beams intersect to define a sample volume where moving scatterers contribute to the Doppler signal. Doppler systems also display time–frequency spectra (Fig. 12.6, not shown), where axes are time and frequency (rescalable to velocity), and greyscale encodes signal magnitude—representing the distribution of red blood cell velocities over time, useful for assessing pulsatile flow.",
+        "scores": {
+          "dense": 0.7729302437529197,
+          "bm25": 26.232517403894192,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.991306483745575
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n303\nPHYSICS OF ULTRASOUND\nbetween transmitter and receiver beams. if the reflectors are moving, the received \nechoes are in the form cos([wo + wD]t), where wD = 2pfD, and a Doppler signal of \nthe form cos(wDt) can be recovered via frequency demodulation of the received \nsignal.\nthe maximum blood flow velocity under normal conditions is about \n1 m/s at the entrance to the aorta, so eq. (12.18) indicates that the megahertz \ntransmit frequencies used for diagnostic ultrasound will produce Doppler \nfrequencies of a few kilohertz at most, which is conveniently within the range of \naudible frequencies. therefore, the simplest cW Doppler devices just direct the \ndemodulated Doppler signal to a speaker, for the physician to interpret audibly.\nFIG. 12.5.  CW Doppler scan geometry showing the orientation of the beams (dashed lines) \nproduced by the transmit (Tx) and receive (Rx) apertures. The measured Doppler spectrum \nwill include contributions from all moving scatterers within the area of intersection of the two \nbeams.\nin addition to the audio output, Doppler systems often display the time–\nfrequency spectrum of the demodulated signal (fig. 12.6). the x axis of this \ndisplay is time, the",
+        "scores": {
+          "dense": 0.752694695352074,
+          "bm25": 21.21456033481018,
+          "rrf": 0.03149801587301587,
+          "weighted": 0.03149801587301587,
+          "rerank": 0.6251048445701599
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p351:1093b7dcc453",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 351,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\ned to the colour \nintensity. The colour pixels are superimposed on a B-mode image, such that the \necho magnitude from tissue volumes containing no detectable flow is displayed \nin greyscale. Colour Doppler is primarily used when imaging the heart and major \nblood vessels in applications for which mean flow velocity is a diagnostically \nuseful parameter. Acquisition of the B-mode image must be interleaved with \nacquisition of the Doppler data, so the colour Doppler frame rate is always less \nthan the frame rate of conventional B-mode imaging. The velocity estimates in a \ncolour Doppler image are therefore prone to aliasing (see Section 12.5.3) because \nthe Doppler pulse repetition frequency is also limited by the need to acquire",
+        "scores": {
+          "dense": 0.7279621413278454,
+          "bm25": 16.833249983403284,
+          "rrf": 0.029850746268656716,
+          "weighted": 0.029850746268656716,
+          "rerank": 0.04208296164870262
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states that the x-axis represents time and the y-axis represents temporal frequency (rescalable to velocity via the Doppler equation), which is directly supported by both gold sources (IAEA 2014, p.330) and retrieved sources (e.g., id: iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9). The answer also accurately adds context about greyscale representing short-time FT magnitude (i.e., proportion of RBCs at given velocity/time), which is explicitly stated in the gold source. The answer acknowledges the image provided (Fig. 12.5) is not the spectrum plot (Fig. 12.6), and bases interpretation solely on text—this is appropriate and shows good grounding. All required citation IDs (1,2,3) correspond to valid retrieved sources that contain the core claim; although the answer cites 'sources 1,2,3' generically, the content matches the gold and retrieved evidence exactly. No unsupported claims are made; even the mention of Eq. 12.18 is qualified as 'not shown', matching the uncertainty noted in the gold. Thus, correctness, completeness, and groundedness are all maximal (2/2)."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 15.97346237511374,
+    "usage": {
+      "input_tokens": 5466,
+      "output_tokens": 406
+    },
+    "cost_upper_cny": 0.017428,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

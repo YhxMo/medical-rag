@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (section 4.2.11.5(f)) explicitly states: 'For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.' This directly contradicts the technician's claim that it must be *worse* than 12 lp/mm. The reference answer and expected behavior ('correct_premise') are fully supported by this evidence."
+}

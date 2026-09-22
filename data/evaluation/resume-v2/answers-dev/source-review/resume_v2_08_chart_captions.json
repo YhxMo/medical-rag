@@ -1,0 +1,44 @@
+{
+  "question_id": "resume_v2_08_chart",
+  "mode": "captions",
+  "review": {
+    "original_grade_reliable": false,
+    "material_unsupported_claims": [
+      "The answer states 'diffuse fatty liver' is present in a malnourished patient and attributes it to liver cell injury — while the caption says this, the gold reference image (Figure 2) and its caption do NOT specify the diagnosis as 'diffuse fatty liver'; the caption only states 'In this malnourished patient the liver (L) is much more echogenic (brighter) than the kidney (K). This finding is indicative of injury to liver cells.' The term 'diffuse fatty liver' appears only in the retrieved source text (citation 1), not in the visible image or its immediate caption in the gold reference. Since answer_received_originals=false, the answerer did NOT have access to the gold image caption, so claiming 'diffuse fatty liver' as a diagnosed entity is unsupported by what they could see.",
+      "The answer adds clinical context about 'nutritional status' and 'kwashiorkor' implicitly via 'malnourished patient' and 'diffuse fatty liver', but the gold reference image alone (without the external text) does not confirm the diagnosis—only relative echogenicity. The answer treats the diagnosis as certain, whereas the image only shows brightness comparison."
+    ],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      },
+      {
+        "id": 3,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "From the gold image alone (no caption available to answerer), label 'K' is adjacent to 'L' in an upper abdominal ultrasound; 'L' appears brighter than 'K'. Without the caption, the structure identification and diagnostic interpretation cannot be grounded solely in the image.",
+    "reason": "The initial grade assumes the answerer had access to the caption stating 'diffuse fatty liver', but answer_received_originals=false means they did NOT. Thus, identifying 'K' as kidney and stating liver is brighter are visually plausible, but diagnosing 'diffuse fatty liver' and linking it to malnutrition/liver injury goes beyond what the image alone supports. Citations 1–3 are valid in the full document, but grounding must reflect what the answerer could actually use. Unsupported diagnostic claim reduces groundedness.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 14.517851791000794,
+    "usage": {
+      "input_tokens": 4145,
+      "output_tokens": 505
+    },
+    "cost_upper_cny": 0.01637,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

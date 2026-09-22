@@ -1,0 +1,173 @@
+{
+  "question_id": "resume_v2_06_chart",
+  "kind": "chart",
+  "mode": "originals",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The table (Table 8, page 184) lists QC tests under 'Radiography — QC tests for radiographers'. Scanning the 'Frequency' column: row 2.1.5 ('Condition of cassettes and image plates (computed radiography only)') has frequency 'According to the supplier’s recommendations', and the next row, 2.1.6 ('AEC sensitivity'), has frequency '1–3 months'. Thus, the test immediately before '1–3 months' is indeed 'Condition of cassettes and image plates (computed radiography only)', matching the reference answer. The visual layout confirms vertical adjacency; no ambiguity in row order here."
+  },
+  "result": {
+    "answer": "根据提供的表格（Table 8，来源1、2、及图像），我们按“Frequency”列顺序查找：\n\n- 行 2.1.5：**Condition of cassettes and image plates (computed radiography only)**  \n  Frequency: **According to the supplier’s recommendations**\n\n- 行 2.1.6：**AEC sensitivity**  \n  Frequency: **1–3 months**\n\n在表格中，2.1.5 紧接在 2.1.6 之前，且其频率为 *According to the supplier’s recommendations*，而下一项（2.1.6）频率为 *1–3 months*。\n\n因此，符合题意的 QC 测试是：\n\n**Condition of cassettes and image plates (computed radiography only)**  \n[1][2]",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.586252000182867,
+      "first_token_seconds": 4.09453995898366,
+      "total_seconds": 7.14721529209055,
+      "model_seconds": 5.494430167134851,
+      "model_first_token_seconds": 1.2231637090444565
+    },
+    "calls": [
+      {
+        "seconds": 1.226891417056322,
+        "usage": {
+          "input_tokens": 3012,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.00628,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 4.267538750078529,
+        "usage": {
+          "input_tokens": 3025,
+          "output_tokens": 175
+        },
+        "cost_upper_cny": 0.00885,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.2231637090444565,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "In the table layout, which QC test has a frequency listed as 'According to the supplier’s recommendations' and appears immediately before the test with frequency '1–3 months'?",
+    "citations": {
+      "citation_mentions": 2,
+      "valid_citation_mentions": 2,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_11a672097c4760b738ba",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 194,
+        "type": "image_caption",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: TABLE 8. SUMMARY OF QUALITY CONTROL TESTS\nSection\tTitle\tEquipment\tTolerance\tFrequency\tReference\nRadiography — QC tests for radiographers\n2.1.1\tX ray–light beam alignment and centring\tAlignment test object, attenuator\tAlignment: ±2% of SID; Centring: ±1% of SID\t3–6 months\t[4, 5]\n2.1.2\tDistances and scales\tMeasuring tape\t±1.5 cm\t6 months\t[4]\n2.1.3\tImage uniformity and artefacts\tCu plate or PMMA\tNo artefacts\tMonthly\t[4]\n2.1.4\tAEC constancy\tCu plate or PMMA\tDigital radiography: ±25% of baseline; Computed radiography: ±30% of baseline\t3 months\t[4, 6]\n2.1.5\tCondition of cassettes and image plates (computed radiography only)\tCleaning solution\tNo dirt or damage\tAccording to the supplier’s recommendations\t\n2.1.6\tAEC sensitivity\tCu plate or PMMA\tExposure index or mAs value: ±50% of baseline\t1–3 months\t[4, 6]\nvisual_relations: The table is structured with six columns: Section, Title, Equipment, Tolerance, Frequency, Reference. Rows correspond to six QC tests (2.1.1–2.1.6). The header 'Radiography — QC tests for radiographers' spans multiple rows above section 2.1.1. The page number '184' appears at bottom left. The table content matches the nearby text provided, though minor formatting differences exist (e.g., line breaks, spacing).\nunits: % of SID\ncm\nmonths\n% of baseline\nmAs\nuncertainties: The tolerance for AEC constancy differs by modality (digital vs computed radiography); exact baseline definition not specified. 'No artefacts' and 'No dirt or damage' are qualitative criteria without quantitative thresholds. Frequency for 2.1.5 is vendor-dependent and unspecified in the table.\nsummary: Table 8 lists six quality control tests for radiography equipment used by radiographers, specifying required equipment, acceptable tolerances, testing frequency, and reference standards. Tests cover beam alignment, distance measurement, image uniformity, AEC performance (constancy and sensitivity), and cassette/image plate condition. Tolerances are mostly quantitative (e.g., ±2% of SID, ±1.5 cm), except for qualitative checks like absence of artefacts or damage. Frequencies range from monthly to every 6 months, with one test dependent on supplier recommendations.",
+        "scores": {
+          "dense": 0.7434430783936861,
+          "bm25": 61.534798194078284,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9447940587997437
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 194,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n184\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\nRadiography — QC tests for radiographers\n2.1.1\nX ray–light beam \nalignment and centring\nAlignment test object, \nattenuator\nAlignment: ±2% of SID\nCentring: ±1% of SID\n3–6 months\n[4, 5]\n2.1.2\nDistances and scales\nMeasuring tape\n±1.5 cm\n6 months\n[4]\n2.1.3\nImage uniformity and \nartefacts\nCu plate or PMMA\nNo artefacts\nMonthly\n[4]\n2.1.4\nAEC constancy\nCu plate or PMMA\nDigital radiography:\n±25% of baseline\nComputed radiography: \n±30% of baseline\n3 months\n[4, 6]\n2.1.5\nCondition of cassettes and \nimage plates (computed \nradiography only)\nCleaning solution\nNo dirt or damage\nAccording to the supplier’s \nrecommendations\n2.1.6\nAEC sensitivity\nCu plate or PMMA\nExposure index or mAs value: \n±50% of baseline\n\n1–3 months\n[4, 6]",
+        "scores": {
+          "dense": 0.7132996139558212,
+          "bm25": 50.5681540387211,
+          "rrf": 0.031024531024531024,
+          "weighted": 0.031024531024531024,
+          "rerank": 0.8887726068496704
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p521:7f7783a8d4b4",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 521,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n494\nCHAPTER 19\n19.5.3.1.\t General\nTABLE 19.5.  OUTLINE QC PROGRAMME FOR DIGITAL RADIOGRAPHY \nSYSTEMS — GENERAL TESTS\nParameter\nFrequency\nPriority\nEI monitoring\n1–3 monthly\nEssential \nImage uniformity (visual check)\n1–3 monthly\nEssential \nThreshold contrast visibility\n4–6 monthly\nDesirable \nLimiting spatial resolution\n4–6 monthly\nDesirable \nExposure index repeatability and consistency\nAnnually\nEssential \nImage uniformity\nAnnually\nEssential \nThreshold contrast detail detectability\nAnnually \nEssential \nLimiting spatial resolution\nAnnually\nDesirable \nScaling errors\nAnnually\nDesirable \nDark noise\nAnnually\nDesirable \nAEC sensitivity\n1–3 monthly\nEssential \nAEC backup timer operation\nAnnually\nEssential \nAEC consistency between chambers\nAnnually\nEssential \nAEC repeatability and consistency\nAnnually\nEssential \nAEC image receptor dose\nAnnually\nEssential \n19.5.3.2.\t Computed radiography\nTABLE 19.6.  OUTLINE QC PROGRAMME FOR DIGITAL RADIOGRAPHY \nSYSTEMS — Computed Radiography SPECIFIC TESTS\nParameter\nFrequency\nPriority\nCondition of cassettes and image plates\n1–3 monthly\nEssential \nErasure cycle efficiency\n Annually\nEssential",
+        "scores": {
+          "dense": 0.7170980406240283,
+          "bm25": 0.0,
+          "rrf": 0.015625,
+          "weighted": 0.015625,
+          "rerank": 0.5658494830131531
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p207:fa947a31c084",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 207,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n197\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\n5.2.6\nSpatial resolution\nMTF test object, \nsoftware, or bar pattern \n(alternatively)\nManufacturer’s specifications\nAt acceptance and after \nchanges\n[23]\n5.2.7\nCT dosimetry\nPencil ionization \nchamber, CTDI \nphantom\nCvol: ±20% of baseline\nCair: ±20% of baseline\nAnnual and after changes\n[23–27]\nCommon aspects of modalities used in diagnostic radiology — QC tests for radiographers\n6.1.1\nRoutine check of image \ndisplay\nAAPM TG18‑QC test \npattern\nAdjacent steps are \ndistinguishable\nAll low contrast inset patches \nare visible\nMonthly\n[23]\n6.1.2\nReject rate assessment\nCharts and logs\n<8%\n<5% for paediatrics\n1–3 months\n[29]\n6.1.3\nVisual inspection of the \nworkplace\n\n\n\nThermometer, \nchecklist\nSee Section 6.1.3.5\nMonthly and after changes\n[18, 23]",
+        "scores": {
+          "dense": 0.7103336694555058,
+          "bm25": 0.0,
+          "rrf": 0.014705882352941176,
+          "weighted": 0.014705882352941176,
+          "rerank": 0.5385512709617615
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p205:048707cf8b4a",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 205,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n195\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\nComputed tomography — QC tests for radiographers\n5.1.1\nDaily startup procedure\nDaily\n[23]\n5.1.2\nCT alignment laser beams\nTest device per Section \n5.2.7\n±5 mm\nMonthly\n[23]\n5.1.3\nScan projection \nradiograph accuracy\nTest object\n±2 mm\n6 months\n[23]\n5.1.4\nCT number accuracy, \nimage noise, image \nuniformity and image \nartefacts\nWater phantom\nCT number: ±5 HU of baseline \n(water)\nNoise: ±25% of baseline\nUniformity: ±10 HU (water)\nNo artefacts\n6 months (CT number \naccuracy), weekly (other \nproperties)\n[23, 24]\n5.1.5\nAccuracy of measured \ndimensions\n\n\n\n\n\nTest object\n±2% of nominal\n3 months\n[4, 12]",
+        "scores": {
+          "dense": 0.705157614740392,
+          "bm25": 0.0,
+          "rrf": 0.014285714285714285,
+          "weighted": 0.014285714285714285,
+          "rerank": 0.05626039206981659
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The question asks for the QC test with frequency 'According to the supplier’s recommendations' that appears immediately before the test with frequency '1–3 months'. From Table 8 (visible in both the gold source and retrieved sources, e.g., visual_11a672097c4760b738ba), row 2.1.5 is 'Condition of cassettes and image plates (computed radiography only)' with frequency 'According to the supplier’s recommendations', and row 2.1.6 is 'AEC sensitivity' with frequency '1–3 months'. The answer correctly identifies 2.1.5 as the required test. The cited sources [1][2] correspond to the table (visual_11a672097c4760b738ba and iaea_radiology_quality_control_2023.pdf:p194), which contain the exact data. All parts of the question are addressed accurately and fully, with no unsupported claims."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 12.000409499974921,
+    "usage": {
+      "input_tokens": 5485,
+      "output_tokens": 328
+    },
+    "cost_upper_cny": 0.016218,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

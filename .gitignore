@@ -5,21 +5,17 @@ __pycache__/
 .venv/
 venv/
 *.pyc
+._*
 
 # Local secrets/configuration
 .env
 config.yaml
 
-# Generated artifacts and model/data assets
-artifacts/
+# Generated artifacts and model/data assets (rebuildable; only frozen run records are tracked)
+artifacts/*
 models/
-experiments/results/
-data/test_questions.json
-data/*.pdf
-模型详情/
 *.faiss
 *.pkl
-*.jsonl
 
 # Local tooling caches and temporary outputs
 .codegraph/
@@ -27,7 +23,37 @@ data/*.pdf
 .tmp_pytest_cache/
 tmp/
 temp/
-dir/
 *.tmp
 *.log
 scripts/_tmp*
+
+# Private source corpora (never distributed)
+data/raw/
+data/*.pdf
+
+# Evaluation data: track only the layout guide and the frozen resume-v2 records.
+# Older local experiment datasets stay untracked (regression inputs for frozen tooling).
+data/evaluation/*
+!data/evaluation/README.md
+!data/evaluation/resume-v2/
+
+# Frozen resume-v2 run records: small JSON/text state only.
+# Indexes, images, model caches and API caches stay local; rebuild with
+# scripts/prepare_resume_v2.py + scripts/build_resume_v2.py.
+!artifacts/resume-v2/
+artifacts/resume-v2/*
+!artifacts/resume-v2/*.json
+!artifacts/resume-v2/*.txt
+!artifacts/resume-v2/workflow.log
+!artifacts/resume-v2/caption-run/
+artifacts/resume-v2/caption-run/*
+!artifacts/resume-v2/caption-run/*.json
+!artifacts/resume-v2/dev-retrieval/
+artifacts/resume-v2/dev-retrieval/*
+!artifacts/resume-v2/dev-retrieval/*.json
+!artifacts/resume-v2/regression-retrieval/
+artifacts/resume-v2/regression-retrieval/*
+!artifacts/resume-v2/regression-retrieval/*.json
+!artifacts/resume-v2/multimodal/
+artifacts/resume-v2/multimodal/*
+!artifacts/resume-v2/multimodal/build_manifest.json

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The chart (Fig. 19.2) explicitly labels the upper tolerance limit for the contrast index (DD) on the y-axis as '2.24', adjacent to the upper dashed line in the 'Contrast index DD' plot. This matches the reference_answer and expected_answer of '2.24'. The value is directly readable from the visual evidence, consistent with the rationale."
+}

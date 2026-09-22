@@ -1,0 +1,145 @@
+{
+  "question_id": "resume_v2_07_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text explicitly states: 'Ultrasound shows the haemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall', which matches the reference answer exactly. The figure (Figure 12) and its caption further corroborate this description, but the answer is directly extractable from the text alone, satisfying the 'requires_visual: false' condition."
+  },
+  "result": {
+    "answer": "According to the provided text (sources 1 and 2), the characteristic ultrasound finding of a peri-gestational haemorrhage is:\n\n**A crescent-shaped collection of blood between the gestational sac and the uterine wall** [1][2].\n\nThe text further specifies that this collection may appear:\n- Anechoic (fluid-filled),\n- Contain floating echogenic particles (e.g., floating echodensities), or\n- Be solid-appearing if clotted [1][2].\n\nThis finding is illustrated in **Figure 12**, where arrowheads point to the crescent-shaped hypoechoic collection, and floating echodensities plus a small clot confirm it as blood [1].",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6084610829129815,
+      "first_token_seconds": 4.176424707984552,
+      "total_seconds": 6.595962750026956,
+      "model_seconds": 4.837595626246184,
+      "model_first_token_seconds": 1.1781827500090003
+    },
+    "calls": [
+      {
+        "seconds": 1.2817987091839314,
+        "usage": {
+          "input_tokens": 3044,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.006344,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 3.5557969170622528,
+        "usage": {
+          "input_tokens": 3057,
+          "output_tokens": 149
+        },
+        "cost_upper_cny": 0.008498,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.1781827500090003,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to the text, what ultrasound finding is characteristic of a peri-gestational haemorrhage?",
+    "citations": {
+      "citation_mentions": 5,
+      "valid_citation_mentions": 5,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_2f92bf5a145c491fcdf8",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 98,
+        "type": "image_caption",
+        "content": "MSF-Ultrasound manual - 2018 edition > 8. Obstetrics early ultrasound – first trimester > 8.3 Abnormal early pregnancy\nvisible_text: Peri-gestational haemorrhage\nPeri-gestational haemorrhage, also called subchorionic haemorrhage or implantation bleeding, is a common cause of bleeding in the first trimester affecting about 20 % of women presenting with threatened abortion. It is a mild form of early placental abruption with separation of the edge of the placenta from the myometrium resulting in venous bleeding. Ultrasound shows the haemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall (Figure 12). The blood may be anechoic, show floating echogenic particles, or be solid appearing if clotted. Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases. Small haemorrhages are generally not of clinical significance.\n\nFigure 12: Peri-gestational haemorrhage\nLongitudinal transvaginal image of the uterus (U) of an 8-week gestational shows the characteristic crescent shaped collection of a peri-gestational haemorrhage (arrowheads). Floating echodensities within the collection and a small clot confirm the collection as being blood. Also note in this early pregnancy the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail).\n\nGestational trophoblastic disease – molar pregnancy\nGestational trophoblastic disease (GTD) or molar pregnancy is a proliferation of trophoblastic tissue from the fertilized ovum that ranges from benign and curable to aggressively malignant. Trophoblastic tissue is the functional unit of the placenta. Patients typically present in the first trimester with hyperemesis, bleeding, or toxemia. Quantitative serum beta-human chorionic gonadotropin levels (beta-hCG) are typically substantially elevated serving to confirm the diagnosis. The following forms of GTD are most relevant:\n– The complete hydatidiform mole, ‘classic’ mole, is most common accounting for 80 % of cases of GTD (Figure 13). Placental villi develop cystic changes and proliferate excessively. The uterus is larger than expected for dates. In the first trimester the uterine cavity is filled with a highly echogenic granular mass producing a ‘snowstorm’ appearance on ultrasound. The cysts that make up the mole are too small to be discretely visualized. The molar tissue shows prominent vascularity on colour Doppler (Figure 14). By the second trimester the cysts have enlarged and become distinctly visible. The ovaries are often enlarged by the presence of large cysts, e.g. theca lutein cysts. No embryo is present.\nvisual_relations: {\"Figure 12\": {\"type\": \"longitudinal transvaginal ultrasound\", \"subject\": \"uterus (U) at 8 weeks gestation\", \"key_features\": [\"crescent-shaped hypoechoic collection between gestational sac and uterine wall (arrowheads)\", \"floating echodensities within collection\", \"small clot (confirmed blood)\", \"amnion (curved arrow)\", \"embryo (arrow without tail)\", \"yolk sac (arrow with tail)\"]}}\nunits: % (percentage): 20% of women with threatened abortion; >40% haemorrhage size relative to gestational sac; 50% spontaneous abortion risk; 80% of GTD cases\nuncertainties: Text mentions 'Figure 13' and 'Figure 14' but they are not provided in the supplied image/page.\nThe phrase 'snowstorm' appears truncated in the nearby text ('snow\nely') but fully stated in the main page as 'snowstorm'.\nThe term 'peri-gestational haemorrhage' is used interchangeably with 'subchorionic haemorrhage' and 'implantation bleeding', though clinically implantation bleeding is distinct and typically earlier/milder; the text conflates them.\nsummary: This textbook page (p. 97, Chapter 8: Obstetrics early ultrasound – first trimester) describes two key first-trimester ultrasound findings: (1) Peri-gestational (subchorionic) haemorrhage—a crescent-shaped blood collection between the gestational sac and uterine wall, seen in ~20% of threatened abortions, with risk of miscarriage if >40% of sac size; Figure 12 shows an 8-week case with floating echodensities, a clot, amnion, embryo, and yolk sac. (2) Gestational trophoblastic disease (GTD), especially complete hydatidiform mole (80% of GTD), characterized by a 'snowstorm' echogenic uterine mass, elevated β-hCG, absent embryo, ovarian theca lutein cysts, and prominent vascularity on Doppler. No figures beyond Figure 12 are visible.",
+        "scores": {
+          "dense": 0.84939473001562,
+          "bm25": 37.411233829495345,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9966676831245422
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 98,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 8. Obstetrics early ultrasound – first trimester > 8.3 Abnormal early pregnancy\n8. Obstetrics early ultrasound – first trimester\n97\nPeri-gestational haemorrhage\nPeri-gestational haemorrhage, also called subchorionic haemorrhage or implantation bleeding, \nis a common cause of bleeding in the first trimester affecting about 20 % of women presenting \nwith threatened abortion. It is a mild form of early placental abruption with separation of the \nedge of the placenta from the myometrium resulting in venous bleeding. Ultrasound shows the \nhaemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall \n(Figure 12). The blood may be anechoic, show floating echogenic particles, or be solid appearing \nif clotted. Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated \nwith spontaneous abortion in 50 % of cases. Small haemorrhages are generally not of clinical \nsignificance.\nFigure 12: Peri-gestational haemorrhage\nLongitudinal transvaginal image of the uterus (U) of an 8-week gestational shows the \ncharacteristic crescent shaped collection of a peri-gestational haemorrhage (arrowheads). \nFloating echodensities within the collection and a small clot confirm the collection as being \nblood. Also note in this early",
+        "scores": {
+          "dense": 0.8564276271229505,
+          "bm25": 36.8584107416879,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9918370842933655
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p99:34e0c258ff9d",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 99,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 8. Obstetrics early ultrasound – first trimester > 8.3 Abnormal early pregnancy\ndemonstrates\nthe prominent vascularity of the molar tissue (between arrowheads).",
+        "scores": {
+          "dense": 0.755935568755191,
+          "bm25": 0.0,
+          "rrf": 0.014705882352941176,
+          "weighted": 0.014705882352941176,
+          "rerank": 0.0197284035384655
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the characteristic ultrasound finding as 'a crescent-shaped collection of blood between the gestational sac and the uterine wall', which matches the reference and is explicitly stated in both gold source (p98) and retrieved sources (e.g., visual_2f92bf5a145c491fcdf8, msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9). The additional details about appearance (anechoic, floating echogenic particles, solid if clotted) and Figure 12 are all directly supported by the provided text and image caption. The citations [1][2] correspond to the two retrieved text/image sources that contain this information. The image claim (Figure 12 showing arrowheads pointing to the crescent-shaped hypoechoic collection with floating echodensities and a clot) is confirmed by the figure caption in the gold source and the retrieved image caption. No unsupported claims are made; all statements are grounded in the evidence."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 11.03925066604279,
+    "usage": {
+      "input_tokens": 5436,
+      "output_tokens": 334
+    },
+    "cost_upper_cny": 0.016216,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

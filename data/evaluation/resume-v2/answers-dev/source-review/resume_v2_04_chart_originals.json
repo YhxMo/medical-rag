@@ -1,0 +1,37 @@
+{
+  "question_id": "resume_v2_04_chart",
+  "mode": "originals",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "Figure 22 (gold reference) shows a stack of transparent blocks on the patient table beneath the X-ray tube, consistent with PMMA; caption explicitly states 'Simple set-up using PMMA'.",
+    "reason": "The answer correctly identifies PMMA (10 cm) as the material/thickness *in Figure 22*, citing step (c) and the figure caption from sources 1 and 2, both of which state the dual option but label Fig. 22 specifically for PMMA. The visual evidence (gold image) confirms transparent blocks matching PMMA description. No unsupported claims; all numerical values (10 cm, 1 mm) and material names are directly quoted from required citations 1 and 2.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.572673749999012,
+    "usage": {
+      "input_tokens": 5838,
+      "output_tokens": 221
+    },
+    "cost_upper_cny": 0.015212,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

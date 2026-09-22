@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided image (Figure 2) and its caption explicitly state: 'In this malnourished patient the liver (L) is much more echogenic (brighter) than the kidney (K).' The label 'K' points to the renal structure, which is visually darker (less echogenic) than the brighter liver labeled 'L'. This directly supports the reference answer: 'K is the kidney; it is less echogenic (darker) than the liver (L)'."
+}

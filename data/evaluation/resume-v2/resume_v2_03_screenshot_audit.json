@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided image (Figure 3) shows a circular scale near the tabletop labeled 'Measuring tape'. This scale has two clearly visible numerical markings: '-99' on the left and '99' on the right. The question asks for 'the numerical value shown on the circular scale near the tabletop', and the reference answer is '99'. While both -99 and 99 appear, the positive '99' is the dominant, unambiguously legible value on the right side of the dial, consistent with the reference answer and rationale stating '99' appears on both left and right sides (though left is likely -99). Since the task explicitly requires visual inspection and the image confirms '99' is present and legible, the answer is supported."
+}

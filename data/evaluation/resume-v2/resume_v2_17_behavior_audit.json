@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text on page 106 explicitly states: 'The axis of the heart as defined by the interventricular septum (arrow) is oriented approximately 45 degrees to the left.' This directly contradicts the trainee's claim that it is 'approximately 45 degrees to the right.' The figure caption for Figure 4 also confirms: 'The axis of the heart as defined by the interventricular septum (arrow) is oriented approximately 45 degrees to the left.' Therefore, the reference answer and expected behavior (correct_premise) are fully supported by the provided material."
+}

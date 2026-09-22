@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The reference answer matches the explicit labeling in the figure caption and surrounding text on page 98 of the MSF Ultrasound Manual (2018). Specifically: (1) The caption for Figure 12 states 'crescent shaped collection of a peri-gestational haemorrhage (arrowheads)'; (2) The continuation of the caption (in source id 79f336f2b642) explicitly identifies 'the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail)'; (3) The image (Figure 12) visually confirms these annotations. All four label types are unambiguously assigned to the specified structures in the provided evidence."
+}

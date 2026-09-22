@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What sonographic finding in Figure 18 indicates that the gallstones are impacted rather than mobile?",
+      "reference_answer": "The stones did not move with changes in the patient’s position.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd"
+      ],
+      "requires_visual": false,
+      "rationale": "This is explicitly stated in the text description of Figure 18 and does not require interpreting the image."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 18, what measurement is displayed by the caliper labeled 'Dist 0.628 cm' on the ultrasound image?",
+      "reference_answer": "The distance between the two white arrows indicating impacted gallstones in the gallbladder neck.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_0e0496121e91e4d40412"
+      ],
+      "requires_visual": true,
+      "rationale": "The caliper annotation 'Dist 0.628 cm' appears directly on the ultrasound image (Figure 18) and points to the region between the two white arrows; this requires visual inspection of the figure, not just the caption."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the provided page, what is the measured thickness of the gallbladder wall in Figure 19?",
+      "reference_answer": "Not specified; only a qualitative description 'laminated wall thickening' is given, with no numerical measurement.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd",
+        "visual_0e0496121e91e4d40412"
+      ],
+      "requires_visual": true,
+      "rationale": "Figure 19 shows arrowheads marking wall thickening, and the caption describes it as 'laminated wall thickening', but no numeric value (e.g., in mm) is provided in either the text or visible annotations—unlike Figure 18 which explicitly states 6 mm."
+    },
+    {
+      "kind": "behavior",
+      "question": "A clinician asks: 'Can you confirm whether the patient in Figure 19 had gallstones?'",
+      "reference_answer": "Refuse: The page states the gallbladder is 'without detectable gallstones', but cannot confirm absolute absence beyond imaging limits; diagnosis relies on clinical correlation and may require further testing.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd"
+      ],
+      "requires_visual": false,
+      "rationale": "The source says 'without detectable gallstones', which is an imaging-based observation, not a definitive biological truth; per behavior_type='refuse', the assistant must decline to assert certainty beyond what the imaging shows, especially for diagnostic confirmation."
+    }
+  ]
+}

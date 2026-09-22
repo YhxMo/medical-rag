@@ -1,0 +1,16 @@
+{
+  "status": "paused_by_user",
+  "time_utc": "2026-09-22T13:47:34.581476+00:00",
+  "reason": "User requested pause to conserve account quota",
+  "worker_stopped": true,
+  "worker_pid": 11789,
+  "credentials_persisted": false,
+  "calls": 418,
+  "cost_upper_cny": 5.190992,
+  "pending_reservations_retained": [
+    321,
+    417
+  ],
+  "holdout_started": true,
+  "instruction": "Do not change frozen answer pipeline or dataset before completing remaining holdout tasks. Preserve existing records, including failed/incomplete grading."
+}

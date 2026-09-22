@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states: 'Note that the measurement taken on 6 April was repeated because the initial value of the contrast index (DD) was outside the action level.' This matches the reference_answer and expected_answer exactly. The figure caption (Fig. 19.2) on page 491 (p518 in original PDF pagination) corroborates this, confirming the reason does not require visual interpretation beyond reading the caption and accompanying text."
+}

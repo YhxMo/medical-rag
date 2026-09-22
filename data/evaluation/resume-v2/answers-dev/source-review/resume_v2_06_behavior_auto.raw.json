@@ -1,0 +1,19 @@
+{
+  "original_grade_reliable": false,
+  "material_unsupported_claims": [
+    "The answer claims kVp tolerance is '±5% or ±5 kV, or ±10% or ±10 kV (IEC), whichever is greater' and that the final容差 is the larger of the two sets — but source [1] explicitly states only one tolerance: '±5% or ±5 kV or ±10% or ±10 kV (IEC), whichever is greater', i.e., a single rule, not two competing sets. The answer’s interpretation of 'two groups' and selecting the 'more lenient' is unsupported and misrepresents the source.",
+    "The answer states 'source 4 is listed in the reference column of the table on p195' — but source [4] (p164) is unrelated to kVp testing; only source [1] (p195) contains the kVp tolerance. Citation [4] is cited in the table on p195, but the answer incorrectly implies [4] itself provides the tolerance value, which it does not."
+  ],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    },
+    {
+      "id": 4,
+      "supported": false
+    }
+  ],
+  "visual_understanding": "The image (Table 8, p184) shows QC tests for radiographers only (sections 2.1.x); kVp accuracy (section 2.2.2) is absent, consistent with gold reference stating 'the document does not specify kVp tolerance' *for radiographer tests*.",
+  "reason": "The answer correctly extracts the tolerance text from source [1] (p195), but adds an unsupported interpretation: treating '±5% or ±5 kV' and '±10% or ±10 kV (IEC)' as two separate options to compare, when the source presents them as a single combined criterion ('whichever is greater'). This misrepresentation constitutes a material unsupported claim. Additionally, citation [4] (p164) does not contain kVp tolerance data; its inclusion as supporting evidence is incorrect. The initial grade overcredited groundedness by ignoring this misinterpretation and erroneous citation support."
+}

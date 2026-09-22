@@ -1,0 +1,159 @@
+{
+  "question_id": "resume_v2_01_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text on page 330 explicitly states: 'the maximum blood flow velocity under normal conditions is about 1 m/s at the entrance to the aorta, so eq. (12.18) indicates that the megahertz transmit frequencies used for diagnostic ultrasound will produce Doppler frequencies of a few kilohertz at most'. This directly matches the reference_answer and expected_answer."
+  },
+  "result": {
+    "answer": "根据提供的资料（来源1和2），可以明确回答如下：\n\n- **最大正常血流速度**：在主动脉入口处，正常条件下的最大血流速度约为 **1 m/s** [1][2]。\n\n- **对应的多普勒频移范围**：使用兆赫兹（MHz）级的发射频率进行诊断性超声时，该速度产生的多普勒频移为 **“最多几kHz”（a few kilohertz at most）**，即通常在 **1–10 kHz 范围内**，属于可听声频范围 [1][2]。\n\n需要注意的是：\n- 文中未给出具体公式（Eq. 12.18 未显示），因此无法精确计算某一特定发射频率（如 2 MHz、5 MHz 等）对应的确切频移值；\n- “a few kilohertz at most” 是一个定性描述，表明上限一般不超过 10 kHz；实际值取决于发射频率 $ f_0 $、声速 $ c $（约 1540 m/s）、血流速度 $ v $ 和入射角 $ \\theta $，由多普勒公式决定：\n  $$\n  f_D = \\frac{2 f_0 v \\cos\\theta}{c}\n  $$\n  若取典型值 $ f_0 = 5\\,\\text{MHz} $、$ v = 1\\,\\text{m/s} $、$ \\theta = 0^\\circ $（正向血流），则：\n  $$\n  f_D = \\frac{2 \\times 5 \\times 10^6 \\times 1}{1540} \\approx 6494\\,\\text{Hz} \\approx 6.5\\,\\text{kHz}\n  $$\n  这与“几kHz”的描述一致。\n\n综上：\n- 最大正常血流速度：**1 m/s**  \n- 对应多普勒频移：**约 1–10 kHz（典型值约 3–7 kHz，取决于发射频率与角度）** [1][2]",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6271938330028206,
+      "first_token_seconds": 3.843918250175193,
+      "total_seconds": 11.204335584072396,
+      "model_seconds": 9.514529166044667,
+      "model_first_token_seconds": 0.9429057079833001
+    },
+    "calls": [
+      {
+        "seconds": 1.2174758750479668,
+        "usage": {
+          "input_tokens": 2558,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005372,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 8.2970532909967,
+        "usage": {
+          "input_tokens": 2571,
+          "output_tokens": 458
+        },
+        "cost_upper_cny": 0.01247,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 0.9429057079833001,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "What is the maximum normal blood flow velocity at the entrance to the aorta, and what Doppler frequency range does this produce with megahertz transmit frequencies?",
+    "citations": {
+      "citation_mentions": 6,
+      "valid_citation_mentions": 6,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png"
+    ],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n303\nPHYSICS OF ULTRASOUND\nbetween transmitter and receiver beams. if the reflectors are moving, the received \nechoes are in the form cos([wo + wD]t), where wD = 2pfD, and a Doppler signal of \nthe form cos(wDt) can be recovered via frequency demodulation of the received \nsignal.\nthe maximum blood flow velocity under normal conditions is about \n1 m/s at the entrance to the aorta, so eq. (12.18) indicates that the megahertz \ntransmit frequencies used for diagnostic ultrasound will produce Doppler \nfrequencies of a few kilohertz at most, which is conveniently within the range of \naudible frequencies. therefore, the simplest cW Doppler devices just direct the \ndemodulated Doppler signal to a speaker, for the physician to interpret audibly.\nFIG. 12.5.  CW Doppler scan geometry showing the orientation of the beams (dashed lines) \nproduced by the transmit (Tx) and receive (Rx) apertures. The measured Doppler spectrum \nwill include contributions from all moving scatterers within the area of intersection of the two \nbeams.\nin addition to the audio output, Doppler systems often display the time–\nfrequency spectrum of the demodulated signal (fig. 12.6). the x axis of this \ndisplay is time, the",
+        "scores": {
+          "dense": 0.7814634002203185,
+          "bm25": 75.64827554341775,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9993513226509094
+        }
+      },
+      {
+        "id": "visual_fd8576eb6df1a40547f9",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 330,
+        "type": "image_caption",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nvisible_text: PHYSICS OF ULTRASOUND\nbetween transmitter and receiver beams. If the reflectors are moving, the received echoes are in the form cos([ω₀ + ω_D]t), where ω_D = 2πf_D, and a Doppler signal of the form cos(ω_D t) can be recovered via frequency demodulation of the received signal.\nThe maximum blood flow velocity under normal conditions is about 1 m/s at the entrance to the aorta, so Eq. (12.18) indicates that the megahertz transmit frequencies used for diagnostic ultrasound will produce Doppler frequencies of a few kilohertz at most, which is conveniently within the range of audible frequencies. Therefore, the simplest CW Doppler devices just direct the demodulated Doppler signal to a speaker, for the physician to interpret audibly.\nFIG. 12.5. CW Doppler scan geometry showing the orientation of the beams (dashed lines) produced by the transmit (Tx) and receive (Rx) apertures. The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.\nIn addition to the audio output, Doppler systems often display the time–frequency spectrum of the demodulated signal (Fig. 12.6). The x axis of this display is time, the y axis is temporal frequency (which can be rescaled to velocity using the Doppler equation) and the pixel greyscale represents the magnitude of the short time FT of the Doppler signal. A pixel in a Doppler spectrum therefore represents the proportion of red blood cells in the field of view that was moving at a particular velocity at a particular time. The spectral display is an effective means of presenting the pulsatile characteristics of intracardiac and vascular flow.\nvisual_relations: Figure 12.5 shows two transducer apertures labeled 'Tx' (transmit) and 'Rx' (receive), each producing diverging dashed beam lines. The beams intersect in a shaded diamond-shaped region representing the sample volume. A solid arrow labeled 'v' points diagonally across the intersection, indicating direction of flow. The dashed lines represent beam boundaries; the shaded region is the overlap zone where Doppler signals are acquired.\nunits: m/s\nHz\nkHz\nMHz\nuncertainties: The text states 'a few kilohertz at most' for Doppler frequencies but does not give exact values or error bounds. Equation (12.18) is referenced but not shown, so the exact relationship between velocity, frequency shift, and transmit frequency is not visible. The figure caption mentions Fig. 12.6 but the figure itself is not provided.\nsummary: This page explains continuous-wave (CW) Doppler ultrasound: moving reflectors cause frequency-shifted echoes (Doppler shift), recoverable via demodulation. With typical blood velocities (~1 m/s) and MHz transmit frequencies, Doppler shifts are in the audible kHz range, enabling audio interpretation. Figure 12.5 illustrates the beam geometry: Tx and Rx beams intersect to define a sample volume where moving scatterers contribute to the Doppler signal. Doppler systems also display time–frequency spectra (Fig. 12.6, not shown), where axes are time and frequency (rescalable to velocity), and greyscale encodes signal magnitude—representing the distribution of red blood cell velocities over time, useful for assessing pulsatile flow.",
+        "scores": {
+          "dense": 0.7453089927676364,
+          "bm25": 73.9193152440716,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.999281108379364
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p328:90f6c9b3cfd2",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 328,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n301\nPHYSICS OF ULTRASOUND\nFIG. 12.3.  A typical pulse echo lateral point spread function is a sinc2 beam with the LR given \nby Eq. (12.17).\nThe ratio F/L in Eq. (12.17) is called the f number of the transducer. The f \nnumber of an ultrasound imaging system is typically between 2 and, at most, 6, \nso the LR is generally in the 1–2 mm range.\n12.5.\tDoppler Physics\n12.5.1.\t The Doppler effect\nDoppler ultrasound is a method used to image moving blood and thereby \nestimate blood velocity by exploiting the Doppler effect, which was studied in \n1842 by Christian Doppler. The Doppler effect is explained schematically for a \nmoving continuous wave source in Fig. 12.4. As the source moves to the right, \neach subsequent cycle of the wave radiates from a point shifted to the right, \nso the frequency is compressed in the direction of motion and expanded in the \nopposite direction. This phenomenon is the origin of the change in perceived \npitch as a siren or train whistle passes a stationary listener. The Doppler effect \napplies to echoes from moving reflectors such as red blood cells, as well as to \nwaves radiated from moving sources.",
+        "scores": {
+          "dense": 0.665583485516556,
+          "bm25": 41.97147651528865,
+          "rrf": 0.027479766610201392,
+          "weighted": 0.027479766610201392,
+          "rerank": 0.23099926114082336
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p165:eea85df7c4d4",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 165,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 13. Abdominal aorta > 13.2 Normal aorta\nlly has thinner more compressible walls (Figures 1 and 2).",
+        "scores": {
+          "dense": 0.7006679222604966,
+          "bm25": 0.0,
+          "rrf": 0.014925373134328358,
+          "weighted": 0.014925373134328358,
+          "rerank": 0.006248950492590666
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 1,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states the maximum normal blood flow velocity at the aortic entrance as ~1 m/s and the Doppler frequency as 'a few kilohertz at most', both directly supported by the reference text (gold source and retrieved sources). It further provides a reasonable quantitative estimate (1–10 kHz, typical 3–7 kHz) and demonstrates the calculation using the standard Doppler formula with plausible assumptions (f₀=5 MHz, v=1 m/s, θ=0°), yielding ~6.5 kHz — consistent with 'a few kHz'. The answer explicitly acknowledges the limitation that Eq. 12.18 is not shown and that exact values depend on f₀ and θ, avoiding over-precision. The citation IDs [1][2] refer to the two retrieved text sources (iaea_diagnostic_radiology_physics_2014.pdf p330, both text and image_caption), which both contain the exact quoted phrase from the reference. Although the answer uses the phrase 'sources 1 and 2' and cites them, the gold only provided one source (id ending in 7d23073ddc10); however, the second retrieved source (visual_fd8576eb6df1a40547f9) is a caption of the same page and contains identical content, so it is reasonable to treat them as supporting the same claim. Groundedness is scored 1 (not 2) because the answer introduces a specific range '1–10 kHz' and 'typical 3–7 kHz' which, while plausible and consistent, is not explicitly stated in the source — the source only says 'a few kilohertz at most'. The model does not invent unsupported values but extrapolates a reasonable range; this is acceptable for completeness but slightly exceeds strict grounding. All question parts are addressed. Image claims (Fig. 12.5 geometry) are correctly described and supported by the figure caption."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 16.807440583826974,
+    "usage": {
+      "input_tokens": 4972,
+      "output_tokens": 525
+    },
+    "cost_upper_cny": 0.018344,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

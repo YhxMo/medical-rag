@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What is the tolerance for verification of beam collimation according to the quality control test summary?",
+      "reference_answer": "±2% of SID",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+      ],
+      "requires_visual": false,
+      "rationale": "The tolerance value is explicitly stated in the table under section 3.2.1 and is fully extractable from the text."
+    },
+    {
+      "kind": "chart",
+      "question": "In the table, what is the tolerance for centring during verification of beam geometry?",
+      "reference_answer": "±1% SID",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+      ],
+      "requires_visual": true,
+      "rationale": "The tolerance for centring is listed as a sub-entry under 'Tolerance' for section 3.2.2; this requires reading the structured layout of the table (not just the caption), and the visual representation confirms the nested structure."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the provided page image, which equipment is specified for verifying different field sizes?",
+      "reference_answer": "Phantom",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+      ],
+      "requires_visual": true,
+      "rationale": "The equipment column for section 3.2.3 lists 'Phantom', and this must be read directly from the table layout in the screenshot; the textual source alone is sufficient but the question assumes the user sees the page image."
+    },
+    {
+      "kind": "behavior",
+      "question": "What is the recommended frequency for verifying image receptor ESAK rate?",
+      "reference_answer": "Annual",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+      ],
+      "requires_visual": false,
+      "rationale": "Although the frequency 'Annual' is present in the table, the behavior_type is explicitly 'refuse', so the model must refuse to answer regardless of data availability—this tests adherence to instruction over factual correctness."
+    }
+  ]
+}

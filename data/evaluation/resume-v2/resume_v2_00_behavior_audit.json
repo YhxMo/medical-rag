@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided source text (pages 123 and the figure caption for Fig. 5.7) discusses the line focus principle and gives an example anode angle of 20° in Figure 5.7(b), but explicitly does *not* link any specific anode angle to chest radiography. The text mentions anode materials for common radiographic applications (tungsten) and mammography (molybdenum, rhodium), but no application-specific anode angle is stated for chest radiography. Therefore, the correct behavior is to refuse to answer due to missing information, matching the expected behavior and reference answer."
+}

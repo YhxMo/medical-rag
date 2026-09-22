@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies the sonographic feature as 'hyperechoic punctate areas' corresponding to air in the bronchi, and names it the 'ultrasound air bronchogram', exactly matching the reference and the retrieved source text (msf_ultrasound_manual_2018.pdf, p.278/279): 'Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.' The answer also correctly cites the textual evidence [1][2] and references images A and B on page 278, which the retrieved image caption confirms show 'hypoechoic lung regions with internal echogenic foci (air bronchograms)'. All claims are directly supported by the provided sources; no unsupported or invented information is present. The required citations [1,2] correspond to the two retrieved sources that contain the key sentence and the figure description, respectively."
+}

@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "According to the text, what ultrasound finding is characteristic of a peri-gestational haemorrhage?",
+      "reference_answer": "A crescent-shaped collection between the gestational sac and the uterine wall.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states that ultrasound shows the haemorrhage as a 'crescent-shaped collection between the gestational sac and the uterine wall', which is directly answerable from the provided text without needing the figure."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 12, what specific structures are labeled with arrowheads, a curved arrow, an arrow without a tail, and an arrow with a tail?",
+      "reference_answer": "Arrowheads: peri-gestational haemorrhage; curved arrow: amnion; arrow without tail: embryo; arrow with tail: yolk sac.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+        "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+        "visual_2f92bf5a145c491fcdf8"
+      ],
+      "requires_visual": true,
+      "rationale": "The labels (arrowheads, curved arrow, etc.) and their corresponding anatomical structures are described in the figure caption and surrounding text, but identifying which label points to which structure requires inspecting the actual image (Figure 12), not just reading the caption. The caption explicitly links each symbol to a structure."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the ultrasound image in Figure 12, does the presence of floating echodensities and a small clot within the crescent-shaped collection support the interpretation that the collection is blood?",
+      "reference_answer": "Yes, floating echodensities and a small clot confirm the collection is blood.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+        "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+        "visual_2f92bf5a145c491fcdf8"
+      ],
+      "requires_visual": true,
+      "rationale": "The question asks about interpreting visual features *in the image* (floating echodensities, small clot) and whether they support a diagnosis. The caption for Figure 12 explicitly states: 'Floating echodensities within the collection and a small clot confirm the collection as being blood.' This requires correlating the visual evidence in the screenshot with the textual confirmation."
+    },
+    {
+      "kind": "behavior",
+      "question": "Is the statement 'Large peri-gestational haemorrhages, exceeding 40% of the size of the gestational sac, are associated with spontaneous abortion in 50% of cases' supported by the provided material?",
+      "reference_answer": "Yes, the statement is directly supported by the text.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.' The behavior type is 'correct_premise', and the premise is verifiably correct per the source, so the expected behavior is to affirm it."
+    }
+  ]
+}

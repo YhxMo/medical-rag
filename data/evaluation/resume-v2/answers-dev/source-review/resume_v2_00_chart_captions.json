@@ -1,0 +1,41 @@
+{
+  "question_id": "resume_v2_00_chart",
+  "mode": "captions",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [
+      "焦点在阴极侧呈较长且倾斜的矩形，在阳极侧变为更短、更窄、畸变更明显",
+      "中心区域焦点相对规则（接近矩形）",
+      "引用[3]称‘实际焦点尺寸从阳极侧到阴极侧逐渐增大’——但来源3（p124）原文为‘increasing from the anode side of the tube to the cathode’，答案误写为‘从阳极侧到阴极侧逐渐增大’（方向反了），且未说明是实际焦点；同时答案将‘actual focal spot size increases from anode to cathode’错误转述为‘阳极侧实际焦点较小，阴极侧较大’后又混入有效焦点解释，造成混淆",
+      "声称‘在阳极侧边缘处出现严重压缩和倾斜’——图5.7(b)仅显示‘more distorted toward edges’，未明确‘严重压缩’"
+    ],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 3,
+        "supported": false
+      }
+    ],
+    "visual_understanding": "图5.7(b)显示：水平轴为阴极→阳极方向，焦点形状均为倾斜矩形；从阴极侧到阳极侧, 焦点垂直高度减小（投影缩短），倾斜度增加，边缘处畸变加剧；纵轴标签异常（20°标于两端），但水平趋势可靠。",
+    "reason": "答案核心趋势（阴极侧长而倾斜→阳极侧更短更畸变）部分支持于图5.7(b)视觉描述，但混用‘实际焦点’与‘有效焦点’，错误解读p124原文方向，并虚构[3]支持；‘更窄’‘中心规则’等无直接证据。初始评分正确指出 unsupported claims，groundedness=1合理。"
+  },
+  "usage": {
+    "seconds": 13.960465624999415,
+    "usage": {
+      "input_tokens": 4765,
+      "output_tokens": 443
+    },
+    "cost_upper_cny": 0.016618,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

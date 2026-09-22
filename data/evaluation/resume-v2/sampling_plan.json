@@ -1,0 +1,399 @@
+[
+  {
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p123",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 123,
+    "split": "dev",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "4.2.\t IMAGE THEORY FUNDAMENTALS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_diagnostic_radiology_physics_2014:p123"
+  },
+  {
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p330",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 330,
+    "split": "dev",
+    "kind": "imaging_example",
+    "image_paths": [
+      "artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+      "artifacts/resume-v2/images/7605d5d0fb25d5733c6652852ed6d0831579cfe0e10b6156daaba32354a94cd6.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_diagnostic_radiology_physics_2014:p330"
+  },
+  {
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p461",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 461,
+    "split": "dev",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+      "artifacts/resume-v2/images/8b5819515877672fdd1d611349e900b2f507856dc338a5c92562a37ce62ce9a3.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_diagnostic_radiology_physics_2014:p461"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p17",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 17,
+    "split": "dev",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+      "artifacts/resume-v2/images/9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p17"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p75",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 75,
+    "split": "dev",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+      "artifacts/resume-v2/images/d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "3.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p75"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p128",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 128,
+    "split": "dev",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+      "artifacts/resume-v2/images/4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p128"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p194",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 194,
+    "split": "dev",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p194"
+  },
+  {
+    "group_id": "msf_ultrasound_manual_2018:p98",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 98,
+    "split": "dev",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+      "artifacts/resume-v2/images/ee7e8aa776b9645c4a38a74227e807ef49ce282fae467e173494ab909c57a30e.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "MSF-Ultrasound manual - 2018 edition",
+        "8. Obstetrics early ultrasound – first trimester",
+        "8.3 Abnormal early pregnancy"
+      ],
+      "chapter_origin": "bookmark"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "msf_ultrasound_manual_2018:p98"
+  },
+  {
+    "group_id": "msf_ultrasound_manual_2018:p173",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 173,
+    "split": "dev",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+      "artifacts/resume-v2/images/8b431c6669b895bf3adbe90f412f592e5e8759dd4ca48cf932e3c61d067a297b.png",
+      "artifacts/resume-v2/images/6ec85b5bf36d52a9309208853856ca8e7fe818f02704bc6ef36a83e204cd65c2.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "MSF-Ultrasound manual - 2018 edition",
+        "14. Upper abdominal scan",
+        "14.2 Liver",
+        "14.2.2 Liver abnormalities"
+      ],
+      "chapter_origin": "bookmark"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "msf_ultrasound_manual_2018:p173"
+  },
+  {
+    "group_id": "msf_ultrasound_manual_2018:p279",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 279,
+    "split": "dev",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+      "artifacts/resume-v2/images/46d12992ac30a9f5259ae34e7c945e637a9fa9f6ced7faf9c63132308a4f6d0a.png",
+      "artifacts/resume-v2/images/31fdd6069d5fa57ac9fe14020c8fe5612585b75f2de61f830a2eaca5b882d423.png",
+      "artifacts/resume-v2/images/34ed5131cc40771aee0554b29c8bdf24cfb80bf41a1ada0911ac9981ffd2d769.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "MSF-Ultrasound manual - 2018 edition",
+        "23. Paediatric chest ultrasound",
+        "23.3 Pathological findings – paediatric chest",
+        "23.3.2 Consolidation"
+      ],
+      "chapter_origin": "bookmark"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "msf_ultrasound_manual_2018:p279"
+  },
+  {
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 140,
+    "split": "holdout",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+      "artifacts/resume-v2/images/e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "4.2.\t IMAGE THEORY FUNDAMENTALS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_diagnostic_radiology_physics_2014:p140"
+  },
+  {
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 339,
+    "split": "holdout",
+    "kind": "imaging_example",
+    "image_paths": [
+      "artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+      "artifacts/resume-v2/images/591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_diagnostic_radiology_physics_2014:p339"
+  },
+  {
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p518",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 518,
+    "split": "holdout",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+      "artifacts/resume-v2/images/69fd9750e3aaab92f97d2b26b1ce095d571ec48459fe59cbfcfdcbf6f631fd4a.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_diagnostic_radiology_physics_2014:p518"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p25",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 25,
+    "split": "holdout",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+      "artifacts/resume-v2/images/b55cb8fb44692f6717d57343a5377df4506fdd6d6ee5c2352949ab16e5b1d5a4.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p25"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p82",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 82,
+    "split": "holdout",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+      "artifacts/resume-v2/images/ea197d42e90f325f01adc4787f0a584ffe54901f45ebb92e9a57823db9a59065.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p82"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p145",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 145,
+    "split": "holdout",
+    "kind": "diagram",
+    "image_paths": [
+      "artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+      "artifacts/resume-v2/images/a234c37f572dc4d8d28b351dbd176f45c2d426a5d5c92dde046adb6822dc6b3f.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "5.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p145"
+  },
+  {
+    "group_id": "iaea_radiology_quality_control_2023:p199",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 199,
+    "split": "holdout",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+      ],
+      "chapter_origin": "numbered_heading"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "iaea_radiology_quality_control_2023:p199"
+  },
+  {
+    "group_id": "msf_ultrasound_manual_2018:p106",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 106,
+    "split": "holdout",
+    "kind": "imaging_example",
+    "image_paths": [
+      "artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+      "artifacts/resume-v2/images/b7ba100b67ec0065dfca3f72871e18bb111d5d072867f9d7206a59c47b9b0147.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "MSF-Ultrasound manual - 2018 edition",
+        "9. 2nd / 3rd trimester obstetrics ultrasound",
+        "9.5 Gestational age"
+      ],
+      "chapter_origin": "bookmark"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "msf_ultrasound_manual_2018:p106"
+  },
+  {
+    "group_id": "msf_ultrasound_manual_2018:p185",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 185,
+    "split": "holdout",
+    "kind": "curve",
+    "image_paths": [
+      "artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+      "artifacts/resume-v2/images/d89eaf22516473c2ea253cbe7556943fd23f5ea898a6debe49440584444837de.png",
+      "artifacts/resume-v2/images/25e82fab7da68ea563bf05919f62ae79399fc195f7cea8483937ce50c03a7f01.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "MSF-Ultrasound manual - 2018 edition",
+        "14. Upper abdominal scan",
+        "14.3 Gallbladder",
+        "14.3.2 Gallbladder abnormalities"
+      ],
+      "chapter_origin": "bookmark"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "msf_ultrasound_manual_2018:p185"
+  },
+  {
+    "group_id": "msf_ultrasound_manual_2018:p290",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 290,
+    "split": "holdout",
+    "kind": "imaging_example",
+    "image_paths": [
+      "artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+      "artifacts/resume-v2/images/2bac08800e965813c3884779290e8f94690e307161a3408c9ff61e0c7f845853.png",
+      "artifacts/resume-v2/images/08659eae08fd66371a11c849ca9f05e92108a03c759b167dba908b0cce287e2f.png"
+    ],
+    "chapter": {
+      "chapter_path": [
+        "MSF-Ultrasound manual - 2018 edition",
+        "24. Mediastinal ultrasound in children",
+        "24.2 Lymphadenopathy"
+      ],
+      "chapter_origin": "bookmark"
+    },
+    "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+    "leakage_group": "msf_ultrasound_manual_2018:p290"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 4,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly states the kVp tolerance as '±5% or ±5 kV or ±10% or ±10 kV (IEC), whichever is greater', which is verbatim from the retrieved source id 'iaea_radiology_quality_control_2023.pdf:fixed:p195:5aea78e20759' (Section 2.2.2, Table 8 continuation, page 195). The answer also correctly notes that this test is for medical physicists (Section 2.2.x), not radiographers (Section 2.1.x), and that the image/table (source visual_11a672097c4760b738ba, page 184) does not include kVp accuracy — consistent with the gold reference stating 'The document does not specify a kVp tolerance' *for the radiographer tests*, but the full document (page 195) does specify it for physicists. The answer cites [1] and [4], and both are supported: [1] corresponds to the IAEA 2023 doc (p195), and [4] is listed in the reference column of the table on p195. The example calculation is logically derived from the stated rule. No unsupported claims; all key numbers match the source exactly. The behavior is appropriate: the question asks for the tolerance, and the answer provides it with proper context and sourcing, rather than refusing — and refusal was only expected if the *entire document* lacked the info, but the retrieved evidence shows it *is* present on p195. Thus, refusal would have been incorrect."
+}

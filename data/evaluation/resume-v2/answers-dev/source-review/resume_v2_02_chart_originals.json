@@ -1,0 +1,44 @@
+{
+  "question_id": "resume_v2_02_chart",
+  "mode": "originals",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [
+      "Citation [3] (Hessian-based tubular detectors) is unsupported—no source [3] provides this information.",
+      "The explanation that the two peaks correspond to 'outer/inner walls' is plausible but not explicitly stated in the retrieved sources; the sources only state 'two peaks' for the green profile without mechanistic detail."
+    ],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      },
+      {
+        "id": 3,
+        "supported": false
+      }
+    ],
+    "visual_understanding": "The gold image and retrieved caption confirm: (c) yellow profile = edge → single gradient magnitude peak; (d) green profile = tube-like structure → two gradient magnitude peaks. This matches the answer’s core claim.",
+    "reason": "The answer correctly identifies green = tube, yellow = edge, and their peak counts (2 vs. 1), fully supported by citations [1] and [2]. However, citation [3] is absent in retrieved sources and introduces an unsupported algorithmic claim. The 'outer/inner wall' interpretation, while reasonable, exceeds explicit textual support. Thus groundedness is reduced per initial grade.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 8.97324479100098,
+    "usage": {
+      "input_tokens": 5231,
+      "output_tokens": 288
+    },
+    "cost_upper_cny": 0.01507,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

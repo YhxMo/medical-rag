@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "According to the text, what sonographic feature within alveolar consolidation corresponds to air in the bronchi?",
+      "reference_answer": "A so-called ultrasound air bronchogram (hyperechoic punctate areas)",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states: 'Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.' This is directly answerable from the provided text."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 7 (left image), what anatomical structure is labeled 'D' and what does it separate?",
+      "reference_answer": "The diaphragm (D), which delineates the thorax from the abdominal cavity and liver",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377",
+        "visual_71f8551a81bbad33fa0d"
+      ],
+      "requires_visual": true,
+      "rationale": "The label 'D' is visible in the left ultrasound image of Figure 7; the caption identifies it as the diaphragm and states its function. The visual is required to locate the label and confirm its position relative to P and the lung/liver interface."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the two ultrasound images labeled A and B under section 23.3.2, what key difference is visually apparent between them regarding internal structure?",
+      "reference_answer": "Image A shows a relatively homogeneous hypoechoic area (consolidation), while Image B shows multiple internal echogenic septations dividing the fluid space, indicating a septated or loculated effusion",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_71f8551a81bbad33fa0d"
+      ],
+      "requires_visual": true,
+      "rationale": "The distinction between a simple consolidation (A) and a septated effusion (B) requires direct visual inspection of the internal echotexture of the two images; the text describes septated effusions but does not explicitly link images A and B to those descriptions—only the figure caption and visual do."
+    },
+    {
+      "kind": "behavior",
+      "question": "The text states that collapsed lung segments may resemble consolidation sonographically and may not have air bronchograms. Is this premise correct according to the provided source?",
+      "reference_answer": "Yes, the premise is correct.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377"
+      ],
+      "requires_visual": false,
+      "rationale": "The source explicitly says: 'Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.' This directly supports the premise, making 'correct_premise' the appropriate behavior."
+    }
+  ]
+}

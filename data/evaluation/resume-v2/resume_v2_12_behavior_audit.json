@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The QC chart (Fig. 19.2) includes a 'Temperature (C)' section with columns for Date, Developer, and Fixer, but all cells under 'Developer' (and other columns) are empty — no numerical values are recorded. The question asks for the *exact* temperature value for the developer on 10 April, which is absent from the chart. As stated in the task rationale, the correct behavior is to refuse (not infer or guess), and the reference answer is 'Not available in the provided material'. The visual evidence (image path provided in task) confirms empty cells. Therefore, the expected behavior and answer are fully supported by the source."
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "resume_v2_03_chart",
+  "mode": "text_only",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [],
+    "visual_understanding": "Figure 3 explicitly labels 'Built-in measuring tape' on the X-ray tube (focal spot indicator side) and 'Measuring tape' on the Table surface.",
+    "reason": "The procedural text (citation 1, section 2.1.2.3(b)) states: 'Measure the actual SID... starting at the focal spot indicator on the side of the X-ray tube and extending to the tabletop or surface of the image receptor (Fig. 3)'. The figure visually confirms two labeled tapes: one built-in on the tube (pointing to focal spot indicator), and one horizontal on the table. Thus, the reference answer is fully supported. The model’s refusal ('现有教材证据不足') is unjustified—evidence is present in both text and figure. Groundedness should be 1, not 0.",
+    "uncited_entries_ignored": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "seconds": 7.401022207999631,
+    "usage": {
+      "input_tokens": 4234,
+      "output_tokens": 225
+    },
+    "cost_upper_cny": 0.012068,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

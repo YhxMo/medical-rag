@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states: 'the x axis of this display is time, the y axis is temporal frequency (which can be rescaled to velocity using the Doppler equation)'. This matches the reference_answer and expected_answer exactly. The figure context (Fig. 12.6, referenced in the text and implied by the question's reliance on visual layout) confirms the axes labeling convention for a time–frequency Doppler spectrum. The visual evidence (image path provided) is consistent with standard Doppler spectrum displays where time is horizontal and frequency/velocity is vertical. No contradiction or missing information is present."
+}

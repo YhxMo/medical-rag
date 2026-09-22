@@ -1,0 +1,24 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 3,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly states the maximum allowable deviation is 10% at 2.5, 5, and 7.5 cycles/mm, directly quoting section 4.2.11.5(b) from the retrieved source (id: iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329), which matches the reference. It also correctly cites section 4.2.11.7 (id: iaea_radiology_quality_control_2023.pdf:fixed:p129:853a339f3fa0) stating that a change ≥10% triggers consultation with the manufacturer, reinforcing the 10% tolerance. The image caption (id: visual_3d4fbb0eddc00f97a0d6) repeats the same text as the page 128 source, supporting claim [2]. All three required citations are valid and support the claims made. The answer clarifies the deviation is relative (±10%), notes the baseline must be established during commissioning, and correctly observes no absolute values or units beyond % are provided—this reflects the source content accurately. No unsupported claims are made."
+}

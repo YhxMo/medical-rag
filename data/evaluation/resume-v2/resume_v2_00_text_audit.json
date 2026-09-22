@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (iaea_diagnostic_radiology_physics_2014.pdf, p.123 / p.96 in the image) explicitly states that for common radiographic applications, tungsten (Z = 74) is the optimum choice because: (1) high atomic number ensures high bremsstrahlung yield, and (2) favorable thermal properties—melting point, vapour pressure, heat conduction, specific heat, and density—are essential due to low X-ray production efficiency. It contrasts this with molybdenum (Z = 42) and rhodium (Z = 45), which are used in mammography where characteristic X-rays dominate and bremsstrahlung is less important. The reference answer matches the source verbatim in content and reasoning."
+}

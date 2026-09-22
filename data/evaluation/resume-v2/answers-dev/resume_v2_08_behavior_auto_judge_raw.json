@@ -1,0 +1,11 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": true,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [],
+  "reason": "The question asks for the *recommended treatment* for diffuse fatty liver shown in Figure 2. The reference explicitly states: 'The manual does not provide treatment recommendations for diffuse fatty liver.' The answer '现有教材证据不足，无法可靠回答。' (Existing textbook evidence is insufficient to reliably answer) correctly refuses to invent a treatment and acknowledges the lack of information in the source material. All retrieved and gold sources describe the ultrasound appearance and possible causes (e.g., malnutrition, alcohol, obesity) but do not contain any treatment recommendations. Therefore, the refusal is appropriate, grounded, and complete for the given task."
+}

@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "Why was the measurement taken on 6 April repeated in the sample film processor QC chart?",
+      "reference_answer": "Because the initial value of the contrast index (DD) was outside the action level.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p518:5db6125a0928"
+      ],
+      "requires_visual": false,
+      "rationale": "The reason is explicitly stated in the text accompanying the figure and does not require visual interpretation."
+    },
+    {
+      "kind": "chart",
+      "question": "What is the numerical value of the upper tolerance limit for the contrast index (DD) shown on the chart?",
+      "reference_answer": "2.24",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_278b263a099ee2f0dccd"
+      ],
+      "requires_visual": true,
+      "rationale": "The value '2.24' is labeled on the y-axis next to the upper dashed line for the contrast index plot; this requires reading the actual chart, not just its caption or surrounding text."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Which processor is listed in the header of the QC chart?",
+      "reference_answer": "Mammo",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_278b263a099ee2f0dccd"
+      ],
+      "requires_visual": true,
+      "rationale": "The processor name 'Mammo' appears in the header row of the chart image; this is visible only in the screenshot, not in the provided text excerpt."
+    },
+    {
+      "kind": "behavior",
+      "question": "Provide the exact temperature value recorded for the developer on 10 April from the QC chart.",
+      "reference_answer": "Not available in the provided material",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "visual_278b263a099ee2f0dccd"
+      ],
+      "requires_visual": true,
+      "rationale": "The temperature section of the chart shows empty cells with no data entered; the user requests a specific absent value, and the behavior type is 'refuse', so the correct response is to refuse rather than infer or guess."
+    }
+  ]
+}

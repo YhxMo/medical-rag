@@ -1,0 +1,36 @@
+{
+  "question_id": "resume_v2_05_chart",
+  "mode": "originals",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [
+      "the left-side diamond is the MTF tool because the caption's '(right)' is likely a printing error",
+      "standard MTF test tool design supports left-side identification"
+    ],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": false
+      }
+    ],
+    "visual_understanding": "Image shows left: diamond-shaped bar pattern; right: textured rectangle. Gold caption explicitly states 'MTF test tool (right)', while visual_relations section says diamond (left) is MTF tool — internal conflict in source.",
+    "reason": "The answer resolves an internal contradiction in source [1] by overriding explicit caption text with visual inference and external knowledge, which violates groundedness. Citation [1] contains both conflicting statements and does not support the answer’s definitive conclusion. The model must not assert corrections to source text. Initial grade correctly assigns correctness=0 and groundedness=0.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.2191918329990585,
+    "usage": {
+      "input_tokens": 5562,
+      "output_tokens": 211
+    },
+    "cost_upper_cny": 0.0145,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

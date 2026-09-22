@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (TABLE 8, section 2.1.1) explicitly states: 'Alignment: ±2% of SID; Centring: ±1% of SID', matching the reference_answer and expected_answer exactly."
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "resume_v2_05_chart",
+  "mode": "text_only",
+  "review": {
+    "original_grade_reliable": false,
+    "material_unsupported_claims": [],
+    "citation_review": [],
+    "visual_understanding": "The image shows a diamond-shaped bar-patterned object on the left and a speckled rectangular object on the right. The figure caption in the text states '(right)', but the visual evidence (and consistent description in gold reference) identifies the diamond-shaped bar pattern as the MTF test tool.",
+    "reason": "The model refused to answer due to 'insufficient evidence', but the provided image and textual sources (especially citation 1) explicitly describe FIG. 43, including the visual layout and the MTF tool’s appearance. The gold reference resolves the caption ambiguity by stating the diamond-shaped object with alternating bars (left) is the MTF tool. Since the image is provided and the description matches it, the refusal is unjustified; the answer is derivable. The initial grade incorrectly penalized groundedness for refusal, but the model *did* have sufficient evidence—thus the original grade is unreliable.",
+    "uncited_entries_ignored": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      },
+      {
+        "id": 3,
+        "supported": true
+      },
+      {
+        "id": 4,
+        "supported": true
+      },
+      {
+        "id": 5,
+        "supported": true
+      }
+    ]
+  },
+  "usage": {
+    "seconds": 10.248854875000688,
+    "usage": {
+      "input_tokens": 4089,
+      "output_tokens": 306
+    },
+    "cost_upper_cny": 0.013074,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states: 'Ultrasound shows the haemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall', which matches the reference answer exactly. The figure (Figure 12) and its caption further corroborate this description, but the answer is directly extractable from the text alone, satisfying the 'requires_visual: false' condition."
+}

@@ -1,0 +1,39 @@
+{
+  "question_id": "resume_v2_07_screenshot",
+  "mode": "auto",
+  "status": "ok",
+  "original_untouched": true,
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states that floating echodensities and a small clot confirm the collection is blood, directly quoting source [1] (Figure 12 caption): 'Floating echodensities within the collection and a small clot confirm the collection as being blood.' Source [2] (same page text) independently confirms this and describes the pathology and typical ultrasound appearances (anechoic, floating echogenic particles, solid if clotted), all matching the image findings. Both required citations [1,2] are valid and support all key claims. No unsupported assertions are made."
+  },
+  "usage": {
+    "seconds": 8.085157375000563,
+    "usage": {
+      "input_tokens": 6170,
+      "output_tokens": 229
+    },
+    "cost_upper_cny": 0.016004,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  }
+}

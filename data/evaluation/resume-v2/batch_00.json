@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "Why is tungsten preferred over molybdenum or rhodium for anodes in common radiographic applications?",
+      "reference_answer": "Because tungsten has a high atomic number (Z = 74), yielding high bremsstrahlung production, and favorable thermal properties including high melting point, suitable vapour pressure, heat conduction, specific heat, and density.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states the reasons for tungsten’s superiority in common radiography: high Z for bremsstrahlung yield and optimal thermal properties. No visual is needed."
+    },
+    {
+      "kind": "chart",
+      "question": "According to Figure 5.7(b), how does the shape of the focal spot change as one moves from the cathode side toward the anode side of the radiation field for a 20° anode angle?",
+      "reference_answer": "The focal spot becomes progressively more elongated and tilted, with increasing asymmetry; the projected length increases and the orientation rotates relative to the tube axis.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_535a9d07428592c8521f"
+      ],
+      "requires_visual": true,
+      "rationale": "Figure 5.7(b) shows a grid of focal spot shapes at different positions (e.g., 20° cathode side to 20° anode side); the pattern of distortion is only discernible by inspecting the actual figure, not its caption alone."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the schematic of the line focus principle (Fig. 5.7(a)), what two labeled dimensions differ due to the anode angle, and which appears shorter in the beam direction?",
+      "reference_answer": "The filament length and the effective focus; the effective focus appears shorter in the beam direction.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_535a9d07428592c8521f"
+      ],
+      "requires_visual": true,
+      "rationale": "The diagram labels 'filament length' and 'effective focus', and visually shows the effective focus as the projected (shortened) dimension along the beam. This requires viewing the figure."
+    },
+    {
+      "kind": "behavior",
+      "question": "A user asks: 'What is the recommended anode angle for chest radiography?'",
+      "reference_answer": "The provided material does not specify a recommended anode angle for chest radiography.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e",
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:cfacfa258286"
+      ],
+      "requires_visual": false,
+      "rationale": "The text discusses the line focus principle and gives an example anode angle of 20° in Figure 5.7(b), but does not link any specific angle to chest radiography. The behavior type is 'refuse', and the correct response is to decline to answer due to missing information."
+    }
+  ]
+}

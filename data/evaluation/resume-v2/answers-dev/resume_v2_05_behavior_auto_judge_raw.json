@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly states the technician's claim is incorrect, citing clause (f) from page 128 of IAEA Radiology Quality Control 2023: 'For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.' This directly contradicts the technician’s claim that it must be *worse* than 12 lp/mm. The answer accurately interprets 'better (higher)' as >12 lp/mm and explicitly contrasts the correct requirement (✅ >12 lp/mm) with the technician’s erroneous claim (❌ <12 lp/mm). Both cited sources (IDs 1 and 2) contain the exact quoted text, and the image (FIG. 43) shows the test tool used for such measurements, supporting the context. No unsupported claims are made; all assertions are grounded in the retrieved source text."
+}

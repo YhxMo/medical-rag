@@ -1,0 +1,152 @@
+{
+  "question_id": "resume_v2_03_chart",
+  "kind": "chart",
+  "mode": "captions",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The schematic in Figure 3 (provided in the user message) explicitly labels two locations with measuring tape: (1) 'Built-in measuring tape' along the vertical path from the focal spot indicator on the X-ray tube, and (2) 'Measuring tape' laid horizontally on the tabletop surface (labeled 'Table'). This matches the reference_answer: 'The X-ray tube (specifically the focal spot indicator side) and the tabletop/image receptor surface'. The text in section 2.1.2.3(b) also confirms this procedure: 'starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3)'."
+  },
+  "result": {
+    "answer": "根据图3（Figure 3）的示意图及其图像描述（source [1]），**两个被标注为应用了卷尺（measuring tape）的组件是**：\n\n1. **X射线管（X-ray tube）上的“内置卷尺”（Built-in measuring tape）** —— 该卷尺从X射线管侧面的焦点指示器（focal spot indicator）处开始，沿管 housing 垂直向下延伸；  \n2. **桌台（Table）上的“测量卷尺”（Measuring tape）** —— 该卷尺水平放置在桌台（即图像接收器表面）上。\n\n图像中的箭头明确标注了这两个部件为 “Built-in measuring tape” 和 “Measuring tape”，且两个放大插图分别显示了卷尺在焦点端（标有“0”）和桌台端（标有“99”）的刻度读数，用于测量实际源-像距（SID）[1]。\n\n因此，答案是：  \n**X射线管（含内置卷尺）和桌台（放置外部卷尺）**。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6523082500789315,
+      "first_token_seconds": 3.356248459080234,
+      "total_seconds": 6.995665959082544,
+      "model_seconds": 5.293223166139796,
+      "model_first_token_seconds": 0.5815542498603463
+    },
+    "calls": [
+      {
+        "seconds": 1.0783096661325544,
+        "usage": {
+          "input_tokens": 1859,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.003974,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 4.214913500007242,
+        "usage": {
+          "input_tokens": 1871,
+          "output_tokens": 243
+        },
+        "cost_upper_cny": 0.00763,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 0.5815542498603463,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to the schematic in Figure 3, what two components are labeled as having measuring tape applied to them?",
+    "citations": {
+      "citation_mentions": 2,
+      "valid_citation_mentions": 2,
+      "unique_citations": [
+        1
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "visual_3b856a3681de7a04edc9",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 17,
+        "type": "image_caption",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: 2.1.2.2. Equipment\nThe equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.\n2.1.2.3. Procedure\nThe following procedure is used for the test:\n(a) Set an SID of 100 cm by using the SID indicator of the system.\n(b) Measure the actual SID using the ruler or measuring tape, starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3).\nNote: Some recent X ray systems do not have an indicator of the focal spot. In this case, the manufacturer’s documentation could be used as a reference to estimate its position, or the medical physicist may determine the location of the focal spot using the intercept theorem.\n(c) Record the result.\n2.1.2.4. Analysis and interpretation\nCompare the measured value with the SID readout indicator of the X ray system.\nFIG. 3. Schematic of the suggested set-up.\nvisual_relations: Figure 3 shows a vertical schematic: X-ray tube labeled 'Focus' at top, with a built-in measuring tape extending downward through the tube housing; a yellow dashed line represents the central ray from the focal spot to the tabletop; a separate measuring tape lies horizontally on the tabletop; two circular magnified insets show scale markings: left inset shows '0' near the focal spot indicator, right inset shows '99' near the tabletop surface, indicating a measured distance close to 100 cm. Arrows label 'Built-in measuring tape', 'Table', and 'Measuring tape'.\nunits: cm\nuncertainties: The note indicates uncertainty in focal spot location for modern systems lacking a physical indicator; alternative methods (manufacturer docs, intercept theorem) are suggested but no numerical uncertainty bounds are provided.\nsummary: This section describes a quality control test to verify Source-to-Image Distance (SID) accuracy in X-ray systems. It specifies required equipment (≥100 cm ruler/tape), step-by-step procedure (set SID to 100 cm via system indicator, then physically measure from focal spot indicator to image receptor surface), and analysis (compare measured vs. indicated SID). Figure 3 illustrates the measurement setup, showing alignment of focal spot, central ray, and measurement tapes, with scale insets suggesting a reading near 99 cm.",
+        "scores": {
+          "dense": 0.7299941458367651,
+          "bm25": 41.553954641743346,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9708598852157593
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 17,
+        "type": "text",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n2.1.2.2.\t Equipment\nThe equipment needed for the test is a long ruler or a measuring tape at \nleast 100 cm long.\n2.1.2.3.\t Procedure\nThe following procedure is used for the test:\n(a)\t\nSet an SID of 100 cm by using the SID indicator of the system.\n(b)\t\nMeasure the actual SID using the ruler or measuring tape, starting at \nthe focal spot indicator on the side of the X  ray tube and extending \nto the tabletop or surface of the image receptor (Fig. 3). \t\n\nNote: Some recent X ray systems do not have an indicator of the focal spot. \nIn this case, the manufacturer’s documentation could be used as a reference \nto estimate its position, or the medical physicist may determine the location \nof the focal spot using the intercept theorem.\n(c)\t\nRecord the result.\n2.1.2.4.\t Analysis and interpretation\nCompare the measured value with the SID readout indicator of \nthe X ray system.\n7\nFIG. 3. Schematic of the suggested set‑up.",
+        "scores": {
+          "dense": 0.7013315285164999,
+          "bm25": 30.319078960393707,
+          "rrf": 0.03021353930031804,
+          "weighted": 0.03021353930031804,
+          "rerank": 0.03466440364718437
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p196:3531b1f4dd8e",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 196,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n186\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\n2.2.6\nHalf‑value layer\nSolid state detector or \nionization chamber, \nAl attenuators, metal \nplate, measuring tape\nCompliance with minimum \nvalues in national regulations \nAt 80 kV: >2.3 mm Al (X ray \nsystems marketed before \n2012‑06‑01) and 2.9 mm Al \n(X ray systems marketed after \n2012‑06‑01)\nAnnual\n[6, 8, 9]\n2.2.7\nKAP meter accuracy\nSolid state detector or \nionization chamber, \nplate or film, ruler or \nmeasuring tape, Pb \nplate\nStandalone KAP meters: ±25%\nOtherwise: ±35%\nAnnual\n[9–11]\n2.2.8\nShort term reproducibility \nof exposure indicator \nAttenuator (e.g. Cu \nplate, PMMA)\n±10% of baseline\nAnnual\n[4, 12]\n2.2.9\nExposure indicator \naccuracy\nCu plate or PMMA\n±20% of baseline\nAnnual\n[4, 6, 12]\n2.2.10\nImage receptor dose\nSolid state detector or \nionization chamber, \nattenuator (e.g. Cu \nplate, PMMA)\n±30% of baseline\nAnnual\n[4, 6]",
+        "scores": {
+          "dense": 0.7182760907632064,
+          "bm25": 0.0,
+          "rrf": 0.016129032258064516,
+          "weighted": 0.016129032258064516,
+          "rerank": 0.017427779734134674
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p202:68c7b36ea0c3",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 202,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n192\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\n4.2.2\nDetector alignment, \nalignment of X ray field to \ndetector area\nComputed radiography \nplate or \nself‑developing film, \nradiopaque tools, \nphosphorescent strips, \nmetal foil, PMMA \nslabs\nMissing tissue on chest wall \nside: ±5 mm\nOtherwise: see Section 4.2.2.5 \nAnnual and after service/\nreplacement\n[18, 19]\n4.2.3\nTube output\nSolid state detector or \nionization chamber, \nmetal plate\nNone\nAnnual\n[4, 18, 20]\n4.2.4\nHalf‑value layer\nIonization chamber, \nmeasuring tape, \naluminium filters, \nmetal plate\nSee Eq. (5)\nAnnual\n[9, 18]\n4.2.5\nAEC reproducibility\nPMMA slabs (45 mm \nthick), Al plate (0.2 cm \nthick), ionization \nchamber (for film–\nscreen systems)\nComputed radiography and \ndigital radiography: ±5% COV \nof SDNR\nFilm–screen systems: ±5% of \nincident air kerma\n6 months\n[18, 20, 21]",
+        "scores": {
+          "dense": 0.7044261280842588,
+          "bm25": 0.0,
+          "rrf": 0.014925373134328358,
+          "weighted": 0.014925373134328358,
+          "rerank": 0.01375596970319748
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the two components labeled with measuring tape in Figure 3: (1) the X-ray tube (specifically, the built-in measuring tape extending from the focal spot indicator on the side of the tube housing), and (2) the tabletop/image receptor surface (with a separate horizontal measuring tape placed on it). This is fully supported by both the visual description in the gold source (‘Built-in measuring tape’ arrow pointing to X-ray tube side, ‘Measuring tape’ arrow pointing to tabletop; insets show ‘0’ near focal spot indicator and ‘99’ near tabletop surface) and the procedural text (step b: ‘starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3)’). The answer explicitly references source [1] and accurately reflects the figure’s labeling and context. No unsupported claims are made; all details (e.g., ‘0’ and ‘99’ markings, vertical vs. horizontal tapes) are directly from the evidence."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 9.509392792126164,
+    "usage": {
+      "input_tokens": 4206,
+      "output_tokens": 309
+    },
+    "cost_upper_cny": 0.013356,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "question_id": "resume_v2_05_chart",
+  "kind": "chart",
+  "mode": "captions",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The provided image (FIG. 43) and its caption explicitly show two objects: a diamond-shaped object with alternating bars on the left, and a rectangular speckled object on the right. The caption states: 'X ray image of the modulation transfer function test tool (right) mounted in a quality control test object.' However, this phrasing is ambiguous—it could be interpreted as the *entire assembly* on the right being the MTF test tool, or the *tool itself* being mounted *in* the right object. The reference answer resolves this ambiguity by identifying the *diamond-shaped bar-patterned object (left)* as the actual MTF test tool, and the *rectangular speckled object (right)* as the housing. This interpretation is visually supported: standard MTF test tools use bar patterns (e.g., line-pair phantoms), and the left object clearly displays such a pattern; the right object appears to be a solid housing (speckled due to material/grain). The rationale confirms that visual inspection is required to distinguish the tool from its mount, and the expected answer matches both visual evidence and domain knowledge. Thus, the task is fully supported by the provided figure and context."
+  },
+  "result": {
+    "answer": "Based on the provided sources, particularly **Source 1** (the image caption for FIG. 43), the component in the X-ray image that corresponds to the **modulation transfer function (MTF) test tool** is:\n\n> **The diamond-shaped test tool with alternating dark and light bars**, positioned **left-of-center** in the image.\n\nThis identification is supported by the explicit description in Source 1:\n- *\"Figure 43 shows an X-ray image containing two objects within a dark rectangular frame: (1) a diamond-shaped test tool with alternating dark and light bars (modulation transfer function test tool), positioned left-of-center...\"* [1]\n\nAdditionally, the figure caption states:  \n> *\"FIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality control test object.\"* [1, 2, 3]\n\n⚠️ **Important clarification**: Although the caption says “(right)”, the *visual relations* description in Source 1 clarifies that the MTF test tool is actually **left-of-center**, while a *rectangular textured object* is to its right. This suggests a possible inconsistency between the caption’s parenthetical note (“right”) and the actual spatial layout described in the visual relations. Given that the visual relations provide a more detailed and specific spatial description, and explicitly label the diamond-shaped bar-patterned object as the MTF test tool, we rely on that for identification.\n\nThus, the correct answer is:  \n**The diamond-shaped object with alternating dark and light bars (a bar-patterned phantom), located left-of-center in FIG. 43**, corresponds to the modulation transfer function test tool [1].",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.5994849579874426,
+      "first_token_seconds": 3.2360437498427927,
+      "total_seconds": 9.272332291817293,
+      "model_seconds": 7.585485207848251,
+      "model_first_token_seconds": 0.5707944580353796
+    },
+    "calls": [
+      {
+        "seconds": 1.0204421659000218,
+        "usage": {
+          "input_tokens": 1890,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.004036,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 6.565043041948229,
+        "usage": {
+          "input_tokens": 1902,
+          "output_tokens": 350
+        },
+        "cost_upper_cny": 0.009404,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 0.5707944580353796,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "Based on FIG. 43, identify which component in the X-ray image corresponds to the modulation transfer function test tool.",
+    "citations": {
+      "citation_mentions": 2,
+      "valid_citation_mentions": 2,
+      "unique_citations": [
+        1
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "visual_3d4fbb0eddc00f97a0d6",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "image_caption",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nvisible_text: FIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality control test object.\n(b) Note the points where the MTF falls below 50% and 20%.\n(c) During commissioning, establish a baseline and record the transfer rate at 2.5, 5 and 7.5 cycles per millimetre.\n4.2.11.5. Baselines and tolerances\nThe following should be considered:\n(a) The spatial frequencies at which the MTF drops to 50% and 20% should not be less than the values specified for the relevant model.\n(b) The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.\n(c) The spatial resolution may vary on different regions of the image receptor if it deteriorates. In this case, the measurement should be repeated at several locations on the image. These images shall then be compared to each other.\n(d) Higher noise may cause the MTF to vary locally.\n(e) When a line pair resolution tool is used to determine the limiting spatial resolution, refer to the manufacturer’s specifications.\n(f) For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.\nvisual_relations: Figure 43 shows an X-ray image containing two objects within a dark rectangular frame: (1) a diamond-shaped test tool with alternating dark and light bars (modulation transfer function test tool), positioned left-of-center; (2) a rectangular textured object to its right. A small 'R' marker with 'CC' beneath appears in the top-right corner of the frame, likely indicating orientation (Right, Cranio-Caudal). The test tool is described as being mounted in a quality control test object.\nunits: cycles per millimetre\nline pairs per millimetre\nuncertainties: No numerical MTF values, spatial frequency thresholds, or baseline measurements are provided in the figure or surrounding text—only procedural instructions and tolerance criteria (e.g., ≤10% deviation, >12 lp/mm). The actual MTF curve is not shown; only the physical test tool is imaged.\nsummary: This page describes quality control procedures for assessing the Modulation Transfer Function (MTF) of X-ray imaging systems. It specifies recording MTF values at 2.5, 5, and 7.5 cycles/mm, noting where MTF drops below 50% and 20%, and establishing baselines during commissioning. Tolerances include ≤10% deviation from baseline at those frequencies, and minimum resolution requirements (e.g., >12 lp/mm for film-screen). Figure 43 shows an X-ray image of the physical MTF test tool—a bar-patterned device—mounted in a QC phantom.",
+        "scores": {
+          "dense": 0.7779973321280556,
+          "bm25": 48.337535614463995,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9867124557495117
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\n(b)\t\nNote the points where the MTF falls below 50% and 20%.\n(c)\t\nDuring commissioning, establish a baseline and record the transfer rate at \n2.5, 5 and 7.5 cycles per millimetre.\n4.2.11.5.\t Baselines and tolerances\nThe following should be considered:\n(a)\t\nThe spatial frequencies at which the MTF drops to 50% and 20% should not \nbe less than the values specified for the relevant model.\n(b)\t\nThe MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the \nbaseline by more than 10%.\n(c)\t\nThe spatial resolution may vary on different regions of the image receptor if \nit deteriorates. In this case, the measurement should be repeated at several \nlocations on the image. These images shall then be compared to each other.\n(d)\t\nHigher noise may cause the MTF to vary locally.\n(e)\t\nWhen a line pair resolution tool is used to determine the limiting spatial \nresolution, refer to the manufacturer’s specifications.\n(f)\t\nFor film–screen imaging, the limiting spatial resolution should be better \n(higher) than 12 line pairs per millimetre.\n118\nFIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality \ncontrol test object.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 38.09588925042008,
+          "rrf": 0.015873015873015872,
+          "weighted": 0.015873015873015872,
+          "rerank": 0.9253760576248169
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p128:44e560e2c83f",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nmetre.\n118\nFIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality \ncontrol test object.",
+        "scores": {
+          "dense": 0.8337348240470382,
+          "bm25": 44.78769082162755,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9166867733001709
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p127:a2e310969ad8",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 127,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\n4.2.11.3.\t Procedure\nThe test procedure is as follows:\n(a)\t\nPlace the MTF tool 45  mm above the breast support so that the metal \nattenuator is angled slightly (2°–5°) with respect to the chest wall edge \nFigure 42 shows the arrangement. In the case of film–screen systems, use a \nphantom with a bar pattern to determine the spatial resolution.\n(b)\t\nMake an exposure setting manually exposure factors similar to those used \nto obtain a clinical image of the average breast. Figure 43 shows an image \nobtained by such an exposure.\n4.2.11.4.\t Analysis and interpretation\nThe following process is used for the analysis and interpretation of \nthe test results:\n(a)\t\nProcess the image using the appropriate software, which calculates \nthe line spread function from the transition of the slanted edge (first \nderivative), performs a fast Fourier transform and processes the function \nto plot it against the spatial frequency. \t\n\t\n\t\n\t\n\n117\nFIG. 42. Set‑up for the determination of the modulation transfer function using a 10 mm thick \nphantom placed above a 35 mm PMMA slab.",
+        "scores": {
+          "dense": 0.71800982755137,
+          "bm25": 36.98247824308777,
+          "rrf": 0.03055037313432836,
+          "weighted": 0.03055037313432836,
+          "rerank": 0.741900622844696
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p15:39ecb629e7fb",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 15,
+        "type": "text",
+        "content": ". . . . . . . . . . . . . . . . . \t 257\n11.2.1.\t X ray projection, attenuation and acquisition of \ntransmission profiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . \t 257\n11.2.2.\t Hounsfield units. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . \t 259\n11.3.\t The CT Imaging System . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . \t 261",
+        "scores": {
+          "dense": 0.719171265583223,
+          "bm25": 0.0,
+          "rrf": 0.015151515151515152,
+          "weighted": 0.015151515151515152,
+          "rerank": 0.002165141748264432
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the diamond-shaped object with alternating bars as the MTF test tool, citing Source 1 (visual_3d4fbb0eddc00f97a0d6), which explicitly states: 'a diamond-shaped test tool with alternating dark and light bars (modulation transfer function test tool), positioned left-of-center'. The answer also acknowledges the apparent contradiction in the caption ('(right)') but resolves it by prioritizing the more detailed visual relations description — a reasonable and evidence-based approach. The image itself confirms this: the diamond-shaped bar-patterned object is on the left, the rectangular speckled object on the right. All key elements of the question are addressed: identification of the component, its appearance, and location. No unsupported claims are made; all assertions are grounded in the retrieved source. The citation ID [1] corresponds to the only gold source provided, and it fully supports the claim."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 9.312907291110605,
+    "usage": {
+      "input_tokens": 4623,
+      "output_tokens": 284
+    },
+    "cost_upper_cny": 0.01379,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

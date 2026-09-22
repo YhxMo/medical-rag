@@ -1,0 +1,12 @@
+{
+  "original_grade_reliable": true,
+  "material_unsupported_claims": [],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "Figure 3 shows two labeled tapes: 'Built-in measuring tape' on the X-ray tube (vertical, starting at focal spot indicator, marked '0') and 'Measuring tape' on the tabletop (horizontal, marked '99'), consistent with source [1] description.",
+  "reason": "The answer correctly identifies the two components with measuring tape per Figure 3 and source [1]: (1) X-ray tube (built-in tape from focal spot indicator), and (2) tabletop/image receptor surface (external horizontal tape). All details—'Built-in measuring tape', 'Measuring tape', '0' and '99' markings, vertical vs. horizontal orientation—are explicitly stated in the visual description of source [1]. No unsupported claims; grounding is complete for required citation [1]."
+}

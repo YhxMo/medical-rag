@@ -1,0 +1,33 @@
+{
+  "question_id": "resume_v2_07_chart",
+  "mode": "originals",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "The gold reference image (Figure 12) shows an 8-week transvaginal ultrasound with arrowheads pointing to a crescent-shaped hypoechoic collection (peri-gestational haemorrhage), a curved arrow to the amnion, an arrow without tail to the embryo, and an arrow with tail to the yolk sac — matching the caption and answer.",
+    "reason": "The answer precisely quotes the figure caption from source [1] (p.98), which explicitly maps each label type to its structure: arrowheads → peri-gestational haemorrhage, curved arrow → amnion, arrow without tail → embryo, arrow with tail → yolk sac. The gold image confirms these annotations visually and in its caption. All required citation IDs ([1]) are supported. No unsupported claims are made.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.978622791999442,
+    "usage": {
+      "input_tokens": 5523,
+      "output_tokens": 224
+    },
+    "cost_upper_cny": 0.01463,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

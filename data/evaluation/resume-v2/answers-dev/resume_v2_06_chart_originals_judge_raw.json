@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The question asks for the QC test with frequency 'According to the supplier’s recommendations' that appears immediately before the test with frequency '1–3 months'. From Table 8 (visible in both the gold source and retrieved sources, e.g., visual_11a672097c4760b738ba), row 2.1.5 is 'Condition of cassettes and image plates (computed radiography only)' with frequency 'According to the supplier’s recommendations', and row 2.1.6 is 'AEC sensitivity' with frequency '1–3 months'. The answer correctly identifies 2.1.5 as the required test. The cited sources [1][2] correspond to the table (visual_11a672097c4760b738ba and iaea_radiology_quality_control_2023.pdf:p194), which contain the exact data. All parts of the question are addressed accurately and fully, with no unsupported claims."
+}

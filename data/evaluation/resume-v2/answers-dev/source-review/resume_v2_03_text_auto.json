@@ -1,0 +1,37 @@
+{
+  "question_id": "resume_v2_03_text",
+  "mode": "auto",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "Figure 3 (gold reference) shows two magnified scale insets: left at '0' near focal spot, right at '99' near tabletop, supporting a measured distance close to 100 cm.",
+    "reason": "The answer correctly states the minimum length is 'at least 100 cm', directly quoted from both citation 1 (text, p.17) and citation 2 (image caption, p.17). The visual evidence (Figure 3 inset showing '99') is accurately described and consistent with the 100 cm standard. All required citations [1,2] are properly supported. No unsupported claims are made.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.201606291000644,
+    "usage": {
+      "input_tokens": 5596,
+      "output_tokens": 209
+    },
+    "cost_upper_cny": 0.014536,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

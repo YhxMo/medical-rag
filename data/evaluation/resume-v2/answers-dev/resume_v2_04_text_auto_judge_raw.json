@@ -1,0 +1,16 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies the three required distances: focal spot–image receptor distance, focal spot–table distance, and focal spot–test object distance. This is directly quoted from step (d) of section 3.1.1.3 in the gold source (p75), which states: 'measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' The answer also correctly cites [1] as the source. The image (Fig. 22) is accurately described as illustrating the geometric arrangement of these distances, and the visual retrieved source confirms this description. All three distances are explicitly listed and matched to the reference. No unsupported claims are made; the answer sticks strictly to the provided text and figure."
+}

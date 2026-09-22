@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What is the minimum required length of the measuring tool specified for the SID verification test?",
+      "reference_answer": "At least 100 cm long",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40"
+      ],
+      "requires_visual": false,
+      "rationale": "The text in section 2.1.2.2 explicitly states 'a long ruler or a measuring tape at least 100 cm long'. This is directly answerable from the text alone."
+    },
+    {
+      "kind": "chart",
+      "question": "According to the schematic in Figure 3, what two components are labeled as having measuring tape applied to them?",
+      "reference_answer": "The X-ray tube (specifically the focal spot indicator side) and the tabletop/image receptor surface",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_3b856a3681de7a04edc9"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure shows 'Built-in measuring tape' along the vertical path from the focal spot indicator on the X-ray tube to the table, and 'Measuring tape' laid horizontally on the table surface. The labels and arrows must be visually inspected to identify these two locations; the caption alone does not specify which parts have tape applied."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the provided page image, what numerical value is shown on the circular scale near the tabletop in Figure 3?",
+      "reference_answer": "99",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_3b856a3681de7a04edc9"
+      ],
+      "requires_visual": true,
+      "rationale": "The screenshot shows a circular dial near the tabletop with clearly legible numbers '99' on both left and right sides. This requires direct visual inspection of the figure; the text does not mention this value."
+    },
+    {
+      "kind": "behavior",
+      "question": "A technician claims that the SID indicator on the X-ray system can be used directly as the final measurement without any physical verification. Is this claim consistent with the procedure described?",
+      "reference_answer": "No, the procedure requires measuring the actual SID with a ruler or tape and comparing it to the SID readout indicator.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40"
+      ],
+      "requires_visual": false,
+      "rationale": "Section 2.1.2.3(b) mandates measuring the actual SID physically, and section 2.1.2.4 explicitly states to compare the measured value with the SID readout indicator—implying the readout alone is insufficient. The claim contradicts the documented procedure, so the correct behavior is to correct the premise."
+    }
+  ]
+}

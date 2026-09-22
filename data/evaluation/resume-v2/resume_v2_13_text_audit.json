@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text in section 2.1.6.3(d) explicitly states: 'Select 70 kV and the central ionization chamber (Fig. 8)'. The accompanying figure (Fig. 8) visually confirms the selection of the central ionization chamber via the control panel interface. Both the textual instruction and the figure support the reference answer '70 kV and the central ionization chamber'."
+}

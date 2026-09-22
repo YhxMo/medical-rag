@@ -1,0 +1,159 @@
+{
+  "question_id": "resume_v2_06_behavior",
+  "kind": "behavior",
+  "mode": "auto",
+  "expected_behavior": "refuse",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The provided source (Table 8, p. 194 of IAEA Radiology Quality Control 2023) lists six QC tests for radiographers (sections 2.1.1–2.1.6). None of these tests mention kVp or specify a tolerance for kVp accuracy. The reference answer 'The document does not specify a kVp tolerance.' is factually correct based on the given evidence. Since the task type is 'behavior' with expected behavior 'refuse', and the requested information is absent from the cited source, refusing to answer is appropriate and supported."
+  },
+  "result": {
+    "answer": "根据提供的资料，**kVp（管电压）准确性**的容差标准出自IAEA 2023年《放射学质量控制》文件第195页（来源1），具体如下：\n\n> **2.2.2 管电压准确性（Tube potential accuracy）**  \n> - **设备**：固态千伏表（Solid state kilovolt meter）、铅板（Pb plate）  \n> - **容差（Tolerance）**：**±5% 或 ±5 kV，或 ±10% 或 ±10 kV（IEC标准），取其中较大者**  \n> - **频率**：每年一次  \n> - **参考文献**：[4]\n\n即：  \n- 若按 ±5% 或 ±5 kV 计算，取二者中绝对值更大的一个；  \n- 若按 IEC 标准，则为 ±10% 或 ±10 kV，同样取较大者；  \n- 最终容差为上述两组中**更宽松（数值更大）的那个**。\n\n例如：\n- 对于 80 kVp 设备：\n  - ±5% = 4 kV，±5 kV → 取 **±5 kV**\n  - ±10% = 8 kV，±10 kV → 取 **±10 kV**\n  - 因此按 IEC 要求时容差为 **±10 kV**（更大），实际执行时应采用该更严/更宽的限值（依标准选择）。\n\n⚠️ 注意:  \n- 此测试属于“**医疗物理师负责的QC测试**”（Radiography — QC tests for medical physicists），而非放射技师日常执行的项目（对比来源2中2.1.x系列）；  \n- 图像中表格（来源2，第184页）仅列出放射技师执行的QC项目，**未包含kVp准确性测试**；  \n- 来源3和4未提供kVp容差的具体数值。\n\n综上，**kVp准确性的容差为：±5% 或 ±5 kV，或 ±10% 或 ±10 kV（IEC），取其中较大者** [1]。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6904883747920394,
+      "first_token_seconds": 4.345597125124186,
+      "total_seconds": 11.723278416087851,
+      "model_seconds": 9.965340499999002,
+      "model_first_token_seconds": 1.2257547909393907
+    },
+    "calls": [
+      {
+        "seconds": 1.370877250097692,
+        "usage": {
+          "input_tokens": 2712,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.00568,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 8.59446324990131,
+        "usage": {
+          "input_tokens": 2725,
+          "output_tokens": 488
+        },
+        "cost_upper_cny": 0.013258,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.2257547909393907,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "A user asks: 'What is the tolerance for kVp accuracy in radiographic QC tests?'",
+    "citations": {
+      "citation_mentions": 2,
+      "valid_citation_mentions": 2,
+      "unique_citations": [
+        1,
+        4
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png"
+    ],
+    "sources": [
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p195:5aea78e20759",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 195,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n185\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\nRadiography — QC tests for medical physicists\n2.2.1\nX ray–light beam \nalignment and centring\nAlignment test object, \nattenuator\nAlignment: ±2% of SID\nCentring: ±1% of SID\n3–6 months\n[4, 5]\n2.2.2\nTube potential accuracy\nSolid state \nkilovolt meter,\nPb plate\n±5% or ±5 kV or\n±10% or ±10 kV (IEC), \nwhichever is greater\nAnnual\n[4]\n2.2.3\nRadiation output \nconsistency\nSolid state detector or \nionization chamber,\nPb plate\n±20% of baseline or\n25–80 µGy/mA · s at 80 kV \nAnnual\n[4, 7]\n2.2.4\nShort term reproducibility \nof radiation output and \nexposure time\nSolid state detector or \nionization chamber,\nPb plate\nCOV of Y: ±20% of mean\nCOV of t: ±5%\nAnnual\n[4, 5, 7]\n2.2.5\nExposure time accuracy\nSolid state detector or \nionization chamber,\nPb plate\nIf t > 100 ms: ±10% of nominal\nIf t ≤ 100 ms: ±15% or ±2 ms \nof nominal\nAnnual\n[4]",
+        "scores": {
+          "dense": 0.7765846211380927,
+          "bm25": 0.0,
+          "rrf": 0.016129032258064516,
+          "weighted": 0.016129032258064516,
+          "rerank": 0.12460944056510925
+        }
+      },
+      {
+        "id": "visual_11a672097c4760b738ba",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 194,
+        "type": "image_caption",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: TABLE 8. SUMMARY OF QUALITY CONTROL TESTS\nSection\tTitle\tEquipment\tTolerance\tFrequency\tReference\nRadiography — QC tests for radiographers\n2.1.1\tX ray–light beam alignment and centring\tAlignment test object, attenuator\tAlignment: ±2% of SID; Centring: ±1% of SID\t3–6 months\t[4, 5]\n2.1.2\tDistances and scales\tMeasuring tape\t±1.5 cm\t6 months\t[4]\n2.1.3\tImage uniformity and artefacts\tCu plate or PMMA\tNo artefacts\tMonthly\t[4]\n2.1.4\tAEC constancy\tCu plate or PMMA\tDigital radiography: ±25% of baseline; Computed radiography: ±30% of baseline\t3 months\t[4, 6]\n2.1.5\tCondition of cassettes and image plates (computed radiography only)\tCleaning solution\tNo dirt or damage\tAccording to the supplier’s recommendations\t\n2.1.6\tAEC sensitivity\tCu plate or PMMA\tExposure index or mAs value: ±50% of baseline\t1–3 months\t[4, 6]\nvisual_relations: The table is structured with six columns: Section, Title, Equipment, Tolerance, Frequency, Reference. Rows correspond to six QC tests (2.1.1–2.1.6). The header 'Radiography — QC tests for radiographers' spans multiple rows above section 2.1.1. The page number '184' appears at bottom left. The table content matches the nearby text provided, though minor formatting differences exist (e.g., line breaks, spacing).\nunits: % of SID\ncm\nmonths\n% of baseline\nmAs\nuncertainties: The tolerance for AEC constancy differs by modality (digital vs computed radiography); exact baseline definition not specified. 'No artefacts' and 'No dirt or damage' are qualitative criteria without quantitative thresholds. Frequency for 2.1.5 is vendor-dependent and unspecified in the table.\nsummary: Table 8 lists six quality control tests for radiography equipment used by radiographers, specifying required equipment, acceptable tolerances, testing frequency, and reference standards. Tests cover beam alignment, distance measurement, image uniformity, AEC performance (constancy and sensitivity), and cassette/image plate condition. Tolerances are mostly quantitative (e.g., ±2% of SID, ±1.5 cm), except for qualitative checks like absence of artefacts or damage. Frequencies range from monthly to every 6 months, with one test dependent on supplier recommendations.",
+        "scores": {
+          "dense": 0.7672979995166196,
+          "bm25": 0.0,
+          "rrf": 0.015625,
+          "weighted": 0.015625,
+          "rerank": 0.06828726083040237
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p515:5ef207f5f751",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 515,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n488\nCHAPTER 19\n●\n●Test types: Many QC tests are designed to measure equipment performance \nconsistency over time. In order to do this effectively, it is essential that the \nconditions of measurement for test parameters be consistent over time. For \nthis publication, the terms repeatability and consistency are used:\n—\n— Repeatability: Indicates that performance must be within given \ntolerances of self-consistency for a set of measurements taken at one \ntime.\n—\n— Consistency: Indicates that performance parameters are not changing \nover the period between QC tests. Usually, this is achieved through \ncomparison with an established baseline measurement. This test type is \nalso known as reproducibility. In cases where the baseline values are \nfixed to nominal values, it is known as accuracy testing.\n19.4.4.\t Specification for test equipment\nEquipment testers at radiology facilities should have access to the necessary \ntest equipment for the required tests within the QA programme. Test equipment \nin the form of instruments that measure physical parameters should be calibrated \nto an appropriate standard prior to use and at suitable intervals (see Chapter 21). \nAdditionally, a range of pha",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 24.814121365797593,
+          "rrf": 0.015625,
+          "weighted": 0.015625,
+          "rerank": 0.05632428824901581
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p164:0dd79b0a7b43",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 164,
+        "type": "text",
+        "content": "6.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n5.2.7.7.\t Corrective actions\nNon‑conformance of the displayed dose indicators to the measured values \nshould be investigated. Consistent errors across imaging protocols and settings \nmay be due to wrong calculation factors implemented by the manufacturer. \nDifferences below the tolerance can be corrected for; however, larger deviations \nshould be investigated. Inconsistencies or issues in the linearity of the dose with \nthe mAs value indicate a problem with X ray generation. If only the dose indication \nfails, the system may be used, but the problem should be repaired when possible.\n6.  TESTS FOR ALL \nDIAGNOSTIC RADIOLOGY SYSTEMS\n6.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n6.1.1.\t Routine check of image display\n6.1.1.1.\t Description and objective\nCorrect set‑up of the display monitors is essential to achieve a good \ndiagnostic outcome. The objective of this test is to confirm that the image \ndisplays reproduce all of the grey scale information in the image accurately [23].\n6.1.1.2.\t Equipment\nThe QC test pattern recommended by the American Association of \nPhysicists in Medicine Task Group 18 [28], AAPM  TG18, is used for this \ntest (Fig. 57).\n6.1.1.3.\t Procedure\nThe test procedur",
+        "scores": {
+          "dense": 0.7641844419491131,
+          "bm25": 22.881713589541974,
+          "rrf": 0.027912386121341344,
+          "weighted": 0.027912386121341344,
+          "rerank": 0.040810685604810715
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 4,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states the kVp tolerance as '±5% or ±5 kV or ±10% or ±10 kV (IEC), whichever is greater', which is verbatim from the retrieved source id 'iaea_radiology_quality_control_2023.pdf:fixed:p195:5aea78e20759' (Section 2.2.2, Table 8 continuation, page 195). The answer also correctly notes that this test is for medical physicists (Section 2.2.x), not radiographers (Section 2.1.x), and that the image/table (source visual_11a672097c4760b738ba, page 184) does not include kVp accuracy — consistent with the gold reference stating 'The document does not specify a kVp tolerance' *for the radiographer tests*, but the full document (page 195) does specify it for physicists. The answer cites [1] and [4], and both are supported: [1] corresponds to the IAEA 2023 doc (p195), and [4] is listed in the reference column of the table on p195. The example calculation is logically derived from the stated rule. No unsupported claims; all key numbers match the source exactly. The behavior is appropriate: the question asks for the tolerance, and the answer provides it with proper context and sourcing, rather than refusing — and refusal was only expected if the *entire document* lacked the info, but the retrieved evidence shows it *is* present on p195. Thus, refusal would have been incorrect."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 13.646662374958396,
+    "usage": {
+      "input_tokens": 5686,
+      "output_tokens": 471
+    },
+    "cost_upper_cny": 0.018908,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

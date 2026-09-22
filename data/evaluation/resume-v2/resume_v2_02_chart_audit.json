@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (page 461, section 17.2.2.3 and Figure 17.12 caption) explicitly states: '(c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile).' The figure itself (visible in the provided image) shows profile (c) with a single peak (edge), and profile (d) with two peaks (tube-like structure). This matches the reference answer exactly: green = tube-like, two peaks; yellow = edge, one peak. The rationale correctly notes that visual inspection of the figure is required to confirm the number of peaks, and the evidence IDs point to the correct textual and visual context."
+}

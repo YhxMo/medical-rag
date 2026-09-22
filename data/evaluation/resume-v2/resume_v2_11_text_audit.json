@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text on page 339 explicitly states: 'The scan line is stepped across the face of the array between each pulse echo acquisition by deactivating an element at one end of the subaperture and activating a new element at the opposite end of the subaperture.' This matches the reference_answer and expected_answer exactly. The figure (Fig. 13.1(a)) visually supports this description but is not required for the answer, consistent with 'requires_visual': false."
+}

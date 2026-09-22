@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "According to the text, how does increasing tube voltage ripple affect the X-ray spectrum in terms of photon yield and hardness?",
+      "reference_answer": "With an increase in ripple, the photon yield drops and the spectrum softens.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411"
+      ],
+      "requires_visual": false,
+      "rationale": "The answer is explicitly stated in section 5.7.3: 'With an increase in ripple, the yield drops and the spectrum softens.' No visual interpretation is needed."
+    },
+    {
+      "kind": "chart",
+      "question": "From Figure 5.19, which generator type corresponds to the 13.4% ripple curve, and what is its approximate photon fluence at 40 keV?",
+      "reference_answer": "6-pulse generator; approximately 1.0 × 10⁴ photons/mm²·mAs",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_a997de5234bf2bca2b82"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure caption identifies 13.4% ripple with the 6-pulse generator. The y-axis value at 40 keV for the 13.4% curve must be read directly from the plot (≈1.0 on the x10⁴ scale). This requires inspecting the actual chart, not just the caption."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the provided page image, what is the numerical value of the first HVL (in mm Al) for the DC spectrum shown in the table within Figure 5.19?",
+      "reference_answer": "2.48",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_a997de5234bf2bca2b82"
+      ],
+      "requires_visual": true,
+      "rationale": "The table embedded in Figure 5.19 lists '1st HVL mm Al' values; for the 'DC' row, the value is 2.48. This requires reading the table in the screenshot, not inferring from text alone."
+    },
+    {
+      "kind": "behavior",
+      "question": "A user asks: 'What is the optimal anode angle for maximizing X-ray yield in diagnostic radiology?'",
+      "reference_answer": "The text states that yield drops with decreasing anode angle, but does not specify an optimal angle value; therefore, the question cannot be answered from the provided material.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411"
+      ],
+      "requires_visual": false,
+      "rationale": "Section 5.7.4 explains that yield drops with decreasing anode angle and hardness increases, but no specific optimal angle (e.g., in degrees) is given. The behavior_type is 'refuse', and the page does not provide a numeric optimum, so the correct response is to refuse to specify one."
+    }
+  ]
+}

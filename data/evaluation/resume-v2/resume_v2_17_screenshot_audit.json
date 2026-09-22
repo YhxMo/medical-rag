@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The screenshot (Figure 4 on page 105) explicitly labels four fetal cardiac chambers with abbreviations: LV, LA, RV, and RA. The figure caption and the accompanying text in the source PDF (msf_ultrasound_manual_2018.pdf, p.106) confirm these correspond to: Left ventricle (LV), Left atrium (LA), Right ventricle (RV), and Right atrium (RA). The visual evidence (image) shows the labels placed on the respective chambers, and the textual description matches exactly. Thus, the reference answer is fully supported by both visual and textual evidence."
+}

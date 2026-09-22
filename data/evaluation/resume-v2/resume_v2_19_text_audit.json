@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The reference answer is fully supported by the provided source text. Specifically, the text in 'msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c' states: 'The normal thymus is homogenous, does not cause mass effect and usually appears rhomboid in the transverse plane or triangular in the sagittal plane as opposed to lymph nodes, which are oval, more hypoechoic and cause mass effect.' This matches the reference answer exactly. The second evidence fragment ('msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130') repeats part of this sentence, confirming consistency. No visual interpretation is required; all features are explicitly described in the text."
+}

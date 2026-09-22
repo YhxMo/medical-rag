@@ -1,0 +1,11 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": true,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [],
+  "reason": "The question asks for a specific recommended anode angle for chest radiography. The reference explicitly states: 'The provided material does not specify a recommended anode angle for chest radiography.' The answer '现有教材证据不足，无法可靠回答。' (Existing teaching materials lack sufficient evidence to answer reliably) correctly refuses to invent a value and aligns with the reference's statement. Although Figure 5.7(b) in the retrieved source shows an example with a 20° anode angle, the caption and text clarify this is an illustrative example ('anode angle 20°') for demonstrating focal spot shape variation, not a clinical recommendation for chest radiography. No source specifies a *recommended* angle for chest radiography; the material only discusses general principles and mammography-specific materials. Therefore, refusal is appropriate and fully grounded."
+}

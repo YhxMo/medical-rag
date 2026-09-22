@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states: 'A curvilinear array (Fig. 13.1(b)) [...] produces a circular sector image with a wide FOV at all depths.' This directly contradicts the premise that it produces a rectangular field of view like a linear array. The figure and accompanying text confirm the curvilinear array yields a convex, sector-shaped image (wider at depth), whereas the linear array yields a rectangular FOV. The correction in the reference answer matches the source verbatim."
+}

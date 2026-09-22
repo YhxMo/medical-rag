@@ -1,0 +1,155 @@
+{
+  "question_id": "resume_v2_04_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text in section 3.1.1.3, step (d), explicitly states: 'measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' This matches exactly the reference_answer and expected_answer. The image (Fig. 22) illustrates the setup but is not required to identify the three distances, consistent with 'requires_visual': false."
+  },
+  "result": {
+    "answer": "根据第1号来源（IAEA文件第75页，第3.1.1.3节）的明确说明，在该测试程序中必须测量并记录的三个距离是：\n\n1. **焦点–影像接收器距离**（focal spot–image receptor distance）  \n2. **焦点–检查床（或台面）距离**（focal spot–table distance）  \n3. **焦点–测试物体距离**（focal spot–test object distance）  \n\n该要求直接出自步骤 (d)：“Note or draw the exact geometry of this arrangement and measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.” [1]  \n\n图像（图22）也直观展示了这些距离的几何关系：X射线管焦点、PMMA测试体（位于检查床上）、以及影像接收器沿垂直轴排列，三者之间的相对位置需精确记录。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.598505707923323,
+      "first_token_seconds": 5.138478333828971,
+      "total_seconds": 7.881831124890596,
+      "model_seconds": 6.174369707936421,
+      "model_first_token_seconds": 1.39250704087317
+    },
+    "calls": [
+      {
+        "seconds": 2.0460093750152737,
+        "usage": {
+          "input_tokens": 3370,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.006996,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 4.128360332921147,
+        "usage": {
+          "input_tokens": 3383,
+          "output_tokens": 199
+        },
+        "cost_upper_cny": 0.00995,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.39250704087317,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "What are the three distances that must be measured and recorded during the test procedure described in section 3.1.1.3?",
+    "citations": {
+      "citation_mentions": 1,
+      "valid_citation_mentions": 1,
+      "unique_citations": [
+        1
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+      "artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_daccad1268a711b5b585",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 75,
+        "type": "image_caption",
+        "content": "3.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: 3.1.1.3. Procedure\nThe test procedure is as follows:\n(a) Set the focal spot to image receptor distance to be 100 cm or another clinically relevant distance used earlier, and set the arm holding the X ray tube and the image receptor to be vertical.\nNote: In many cases, it is more convenient to rotate the X ray tube into an upside down arrangement, with the X ray tube on the upper end of the C arm, rather than in the regular ‘under couch’ set-up.\n(b) Position the table or couch near the image receptor.\n(c) Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22).\n(d) Note or draw the exact geometry of this arrangement and measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.\nFIG. 22. Simple set-up using PMMA to check the performance of AERC settings.\nvisual_relations: Figure 22 shows a C-arm fluoroscopy system with the X-ray tube mounted on the upper part of the C-arm (upside-down configuration). A stack of PMMA blocks is placed on the patient table directly beneath the X-ray tube and in front of the image receptor. The table is positioned close to the image receptor. The C-arm is oriented vertically, aligning the X-ray tube and image receptor along a vertical axis.\nunits: cm\nmm\nuncertainties: No explicit uncertainties stated; measurements (e.g., 100 cm, 10 cm, 1 mm) are given as nominal values without tolerance ranges.\nsummary: This section describes a standardized procedure for testing Automatic Exposure Rate Control (AERC) performance using a simple phantom setup: a 10 cm PMMA block or 1 mm copper plate placed on the table/couch, with the C-arm in a vertical orientation (often upside-down for convenience). Key distances—focal spot to image receptor, focal spot to table, and focal spot to test object—must be recorded. Figure 22 illustrates the physical arrangement.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 35.385088965817836,
+          "rrf": 0.015384615384615385,
+          "weighted": 0.015384615384615385,
+          "rerank": 0.9933956265449524
+        }
+      },
+      {
+        "id": "visual_3b856a3681de7a04edc9",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 17,
+        "type": "image_caption",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: 2.1.2.2. Equipment\nThe equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.\n2.1.2.3. Procedure\nThe following procedure is used for the test:\n(a) Set an SID of 100 cm by using the SID indicator of the system.\n(b) Measure the actual SID using the ruler or measuring tape, starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3).\nNote: Some recent X ray systems do not have an indicator of the focal spot. In this case, the manufacturer’s documentation could be used as a reference to estimate its position, or the medical physicist may determine the location of the focal spot using the intercept theorem.\n(c) Record the result.\n2.1.2.4. Analysis and interpretation\nCompare the measured value with the SID readout indicator of the X ray system.\nFIG. 3. Schematic of the suggested set-up.\nvisual_relations: Figure 3 shows a vertical schematic: X-ray tube labeled 'Focus' at top, with a built-in measuring tape extending downward through the tube housing; a yellow dashed line represents the central ray from the focal spot to the tabletop; a separate measuring tape lies horizontally on the tabletop; two circular magnified insets show scale markings: left inset shows '0' near the focal spot indicator, right inset shows '99' near the tabletop surface, indicating a measured distance close to 100 cm. Arrows label 'Built-in measuring tape', 'Table', and 'Measuring tape'.\nunits: cm\nuncertainties: The note indicates uncertainty in focal spot location for modern systems lacking a physical indicator; alternative methods (manufacturer docs, intercept theorem) are suggested but no numerical uncertainty bounds are provided.\nsummary: This section describes a quality control test to verify Source-to-Image Distance (SID) accuracy in X-ray systems. It specifies required equipment (≥100 cm ruler/tape), step-by-step procedure (set SID to 100 cm via system indicator, then physically measure from focal spot indicator to image receptor surface), and analysis (compare measured vs. indicated SID). Figure 3 illustrates the measurement setup, showing alignment of focal spot, central ray, and measurement tapes, with scale insets suggesting a reading near 99 cm.",
+        "scores": {
+          "dense": 0.7358686103410377,
+          "bm25": 0.0,
+          "rrf": 0.01639344262295082,
+          "weighted": 0.01639344262295082,
+          "rerank": 0.09001684188842773
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p21:8aec03c99505",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 21,
+        "type": "text",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n2.1.4.2.\t Equipment\nA copper plate or other attenuator, as described in Section  2.1.3, is \nused for this test.\n2.1.4.3.\t Procedure\nThe test procedure is as follows:\n(a)\t\nCentre the tube on the image receptor area.\n(b)\t\nCollimate the beam so that it covers the whole image receptor. The field size \nneeds to be set in a way it covers the AEC sensor(s).\n(c)\t\nPut the attenuator on the X ray tube or place it at the appropriate distance \nbetween the focal spot and the image receptor so that it covers the whole \nimage receptor area (Fig. 5).\n(d)\t\nSelect the exposure parameters according to the local routine or use the \nparameters applied during the commissioning procedure (e.g.  70  kV). \nChoose the AEC sensor designated or used earlier for this test. The tube \nkilovoltage should be kept the same for all measurements.\n(e)\t\nMake an exposure and record the tube current–exposure time product \n(‘mAs value’) and the exposure indicator (exposure index) displayed on the \noperator’s console.\n11\nFIG. 5. Arrangement to check the constancy of the automatic exposure control sensor using a \ncopper attenuator.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 33.3260389181962,
+          "rrf": 0.014285714285714285,
+          "weighted": 0.014285714285714285,
+          "rerank": 0.08480300009250641
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p86:7598e4d9dbc2",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 86,
+        "type": "text",
+        "content": "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nt meter calibration \nThe test is as described in Section 2.2.7.\n3.2.7.\t Leakage radiation\nThe test is as described in Section 2.2.11.\n3.2.8.\t Scattered radiation\nThe test is as described in Section 2.2.12.\n3.2.9.\t Image quality of fluoroscopy\n3.2.9.1.\t Description and objective\nThe image quality assessment for fluoroscopy consists of testing several \nindicators related to image quality. Descriptions of the recommended tests are \n76",
+        "scores": {
+          "dense": 0.7178779902938298,
+          "bm25": 34.42148183147464,
+          "rrf": 0.02964426877470356,
+          "weighted": 0.02964426877470356,
+          "rerank": 0.02205280214548111
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the three required distances: focal spot–image receptor distance, focal spot–table distance, and focal spot–test object distance. This is directly quoted from step (d) of section 3.1.1.3 in the gold source (p75), which states: 'measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' The answer also correctly cites [1] as the source. The image (Fig. 22) is accurately described as illustrating the geometric arrangement of these distances, and the visual retrieved source confirms this description. All three distances are explicitly listed and matched to the reference. No unsupported claims are made; the answer sticks strictly to the provided text and figure."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 8.310142084024847,
+    "usage": {
+      "input_tokens": 5416,
+      "output_tokens": 250
+    },
+    "cost_upper_cny": 0.014832,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

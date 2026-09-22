@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The caption for Figure 25 explicitly states: '(d) C arm unit set for lateral exposures or when a couch is not available for clinical use', and the visual diagram labeled (d) shows a side-on C-arm configuration with no couch, consistent with lateral exposure setup. This matches both the reference answer 'Configuration (d)' and the provided rationale."
+}

@@ -1,0 +1,6 @@
+{
+  "pid": 11789,
+  "status": "paused_by_user",
+  "worker_stopped": true,
+  "credentials_cleared_by_process_exit": true
+}

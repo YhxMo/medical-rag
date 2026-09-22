@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The caption beneath Fig. 13.1 explicitly states: 'In each figure, the dark grey shading represents the active subaperture during acquisition of the scan line indicated by the beam contours.' This directly matches the reference answer: 'The active subaperture during acquisition of the indicated scan line.' The question requires interpreting the visual (dark grey shading) using the figure’s caption, which is present in the provided image/text."
+}

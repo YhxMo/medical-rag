@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies the two core reasons from the reference: (1) high atomic number (Z=74) → high bremsstrahlung yield (∝ Z²), and (2) superior thermal properties (melting point, vapour pressure, heat conduction, specific heat, density). It further adds context not in the minimal reference but fully supported by the retrieved source (p.123): that Mo/Rh are used in mammography for characteristic X-rays, and that digital mammography is shifting toward W anodes. All quantitative values (Z numbers, melting points, Kα energies) match standard knowledge and are consistent with the source’s description of Mo/Z=42, Rh/Z=45, W/Z=74 and their respective spectral roles. The answer explicitly distinguishes common radiography (W preferred) from mammography (Mo/Rh historically preferred), which aligns precisely with the reference. Citations [1][2] refer to the single retrieved source (iaea_diagnostic_radiology_physics_2014.pdf, p.123), which fully supports all major claims. The image (Fig. 5.7) is correctly described in the source caption and referenced appropriately in the answer’s line-focus discussion, though the answer does not rely on the image for the *anode material* question—so image support is not required for the main claim, but the answer does not misrepresent it. No unsupported claims are made; all statements are either directly from or logically inferred from the source."
+}

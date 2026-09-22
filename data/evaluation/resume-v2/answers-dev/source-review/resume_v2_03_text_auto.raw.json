@@ -1,0 +1,16 @@
+{
+  "original_grade_reliable": true,
+  "material_unsupported_claims": [],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    },
+    {
+      "id": 2,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "Figure 3 (gold reference) shows two magnified scale insets: left at '0' near focal spot, right at '99' near tabletop, supporting a measured distance close to 100 cm.",
+  "reason": "The answer correctly states the minimum length is 'at least 100 cm', directly quoted from both citation 1 (text, p.17) and citation 2 (image caption, p.17). The visual evidence (Figure 3 inset showing '99') is accurately described and consistent with the 100 cm standard. All required citations [1,2] are properly supported. No unsupported claims are made."
+}

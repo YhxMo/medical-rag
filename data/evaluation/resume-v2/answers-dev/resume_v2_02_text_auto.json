@@ -1,0 +1,164 @@
+{
+  "question_id": "resume_v2_02_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text explicitly states in Equation (17.12) and the sentence preceding it: 'The gradient magnitude reaches a local maximum at x in the direction v if, and only if: D_vv F = 0 and D_vvv F ≤ 0'. This matches exactly the reference_answer and expected_answer. Note: The notation in the source uses D_vv F and D_vvv F (second and third directional derivatives), not D_v F or D_vv F as might be misread; the reference answer correctly reflects the source's D_vv F (second derivative) and D_vvv F (third derivative). However, there is a potential typographical inconsistency: standard calculus for a local maximum of a function g(t) = |∇F(x + tv)| would require first derivative g'(0)=0 and second derivative g''(0) ≤ 0 — i.e., *second* directional derivative of the *gradient magnitude*, not the third derivative of F itself. But per the task instructions, we must base judgment solely on the provided source text, which indeed writes D_vv F = 0 and D_vvv F ≤ 0 in Eq. (17.12). Since the question asks 'According to the text', and the text states exactly that, the answer is supported."
+  },
+  "result": {
+    "answer": "根据提供的文本（特别是来源1、2、3中明确给出的公式(17.12)），梯度幅度在点 $ x $ 沿方向 $ v $ 达到局部最大值的**数学条件**是：\n\n$$\nD_{vv}F = 0 \\quad \\text{且} \\quad D_{vvv}F \\leq 0\n$$\n\n其中：\n- $ D_{vv}F $ 表示图像函数 $ F $ 在点 $ x $ 处沿单位向量 $ v $ 方向的**二阶方向导数**；\n- $ D_{vvv}F $ 表示图像函数 $ F $ 在点 $ x $ 处沿单位向量 $ v $ 方向的**三阶方向导数**；\n- $ v $ 是粒子运动方向的单位向量，即图像梯度方向（正交于边缘）[1]。\n\n该条件是**充要条件**（if and only if）[1][2][3]。  \n此外，文本指出，一个**必要但不充分**的条件是拉普拉斯算子为零：$ D_{xx}F + D_{yy}F = 0 $ [1][2][3]，这是 Marr–Hildreth 边缘检测器的基础，但它会包含假阳性（如鞍点）[1]。\n\n因此，严格来说，问题所问的“数学条件”即为公式 (17.12) 所述的两个不等式/等式组合。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.630212624790147,
+      "first_token_seconds": 5.197976707946509,
+      "total_seconds": 11.129812292056158,
+      "model_seconds": 9.400959709193558,
+      "model_first_token_seconds": 1.8322597078513354
+    },
+    "calls": [
+      {
+        "seconds": 1.6450208341702819,
+        "usage": {
+          "input_tokens": 2809,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005874,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 7.755938875023276,
+        "usage": {
+          "input_tokens": 2822,
+          "output_tokens": 333
+        },
+        "cost_upper_cny": 0.010972,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.8322597078513354,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to the text, what mathematical condition must hold for the gradient magnitude of an image to reach a local maximum at a point x in direction v?",
+    "citations": {
+      "citation_mentions": 8,
+      "valid_citation_mentions": 8,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_cb59cd0a1891b2dea0c4",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 461,
+        "type": "image_caption",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nvisible_text: 17.2.2.3. Detectors based on zero crossing of the second derivative\nImagine a particle crossing an edge in a continuously smooth image, F, moving in a direction orthogonal to the edge (i.e. in the direction of the image gradient). If we plot the gradient magnitude of the image along the path of the particle, we see that at the edge there is a local maximum of the gradient magnitude (Fig. 17.12).\nFIG. 17.12. Gradient magnitude at image edges. (a) A detail from the chest CT image from Fig. 17.8. (b) Corresponding gradient magnitude image. (c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile). The gradient magnitude reaches its maximum at the points where the profiles cross the image edge.\nLet us denote the unit vector in the particle’s direction as v, and the point where the particle crosses the edge as x. The gradient magnitude of the image F at x is simply:\n∇F(x) = D_v F |x   (17.11)\nThe gradient magnitude reaches a local maximum at x in the direction v if, and only if:\nD_{vv} F = 0  and  D_{vvv} F ≤ 0   (17.12)\nSeveral edge detectors leverage this property. The earliest of these operators is the Marr–Hildreth edge detector. It is based on the fact that the necessary (but not sufficient) condition for Eq. (17.12) is:\nD_{xx} F + D_{yy} F = 0   (17.13)\nThe operator (D_{xx} + D_{yy}) is the Laplacian operator. By finding the set of all points in the image where the Laplacian of the image is zero, we find the superset of all the points that satisfy Eq. (17.12).\nvisual_relations: Figure 17.12 contains four subfigures: (a) chest CT image detail with yellow/green lines indicating profiles; (b) corresponding gradient magnitude image; (c) 1D plot of gradient magnitude along yellow profile (edge), showing a single peak; (d) 1D plot along green profile (tube-like structure), showing two peaks. The peaks in (c) and (d) align with edge crossings.\nunits: No explicit units are given; image intensity is dimensionless, spatial coordinates are in pixels, derivatives are per pixel.\nuncertainties: Equation (17.13) is stated to be a *necessary but not sufficient* condition for a local maximum of gradient magnitude; thus zero-crossings of the Laplacian include false positives (e.g., saddle points).\nsummary: This section explains edge detection via zero-crossings of the second directional derivative. It states that at an edge, the gradient magnitude has a local maximum along the gradient direction, requiring first derivative zero and second derivative non-positive (Eq. 17.12). The Marr–Hildreth detector approximates this by using the Laplacian (sum of second partials) zero-crossings (Eq. 17.13), which is necessary but not sufficient. Figure 17.12 visually demonstrates gradient magnitude peaks at edges.",
+        "scores": {
+          "dense": 0.810109363822115,
+          "bm25": 65.76478876517811,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9897807836532593
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:d87717aa3c48",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 461,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nradient magnitude reaches a local maximum at x in the direction v if, \nand only if:\n0  and  \n0\nD F\nD\nF\n=\n≤\nvv\nvvv\n\t\n(17.12)\nSeveral edge detectors leverage this property. The earliest of these operators \nis the Marr–Hildreth edge detector. It is based on the fact that the necessary (but \nnot sufficient) condition for Eq. (17.12) is:\n0\nxx\nyy\nD F\nD F\n+\n=\n\t\n(17.13)\nThe operator (\nxx\nyy\nD\nD\n+\n) is the Laplacian operator. By finding the set of all \npoints in the image where the Laplacian of the image is zero, we find the superset \nof all the points that satisfy Eq. (17.12).",
+        "scores": {
+          "dense": 0.8058820806915747,
+          "bm25": 44.56073558658756,
+          "rrf": 0.03149801587301587,
+          "weighted": 0.03149801587301587,
+          "rerank": 0.9830107688903809
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 461,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n434\nCHAPTER 17\n17.2.2.3.\t Detectors based on zero crossing of the second derivative\nImagine a particle crossing an edge in a continuously smooth image, F, \nmoving in a direction orthogonal to the edge (i.e. in the direction of the image \ngradient). If we plot the gradient magnitude of the image along the path of \nthe particle, we see that at the edge there is a local maximum of the gradient \nmagnitude (Fig. 17.12).\nFIG. 17.12.  Gradient magnitude at image edges. (a) A detail from the chest CT image from \nFig.  17.8. (b) Corresponding gradient magnitude image. (c) A plot of gradient magnitude \nimage across the edge (yellow profile). (d) A plot of gradient magnitude image across the \ntube-like structure (green profile). The gradient magnitude reaches its maximum at the points \nwhere the profiles cross the image edge.\nLet us denote the unit vector in the particle’s direction as v, and the point \nwhere the particle crosses the edge as x. The gradient magnitude of the image F \nat x is simply:\n( )\n|\nF\nD F\n∇\n=\nv\nx\nx \t\n(17.11)\nThe gradient magnitude reaches a local maximum at x in the direction v if, \nand only if:\n0  and  \n0\nD F\nD\nF\n=\n≤\nvv\nvvv\n\t\n(17.12)\nSeveral edge detectors leverage this",
+        "scores": {
+          "dense": 0.8127236942005562,
+          "bm25": 63.95729973013688,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9709907174110413
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p462:7634f9894e05",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 462,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n435\nIMAGE POST-PROCESSING AND ANALYSIS\nWhen dealing with discrete images, we must, of course, use convolution \nwith a smooth filter, as with the Gaussian, when computing the second derivatives \nand the Laplacian. That is precisely what the Marr–Hildreth edge detector does. \nIt convolves the discrete image I with the Laplacian of Gaussian filter, given by:\n(\n)\n(\n)\n(\n)\nxx\nyy\nxx\nyy\nJ\nI\nD G\nD G\nD\nI\nG\nD\nI\nG\n=\n+\n=\n+\n\u001a\n\u001a\n\u001a\n\t\n(17.14)\nNext, the Marr–Hildreth edge detector finds contours in the image where \nJ = 0. These contours are closed and form the superset of edges in the image. The \nlast step is to eliminate the parts of the contour where the gradient magnitude of \nthe input image is below a user specified threshold. These two steps are illustrated \nin Fig. 17.13.\nThe Canny edge detector is also rooted in the fact that the second derivative \nof the image in the edge direction is zero. This detector first applies Gaussian \nsmoothing to the image. It then finds the pixels in the image with high gradient \nmagnitude, using the Sobel operator and thresholding. Next, it eliminates \npixels that do not satisfy the maximum condition of Eq. (17.12). Lastly, it uses \na procedure called hysteresis",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 47.84974573073486,
+          "rrf": 0.015873015873015872,
+          "weighted": 0.015873015873015872,
+          "rerank": 0.08883554488420486
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states the mathematical condition from Eq. (17.12) in the source: D_vv F = 0 and D_vvv F ≤ 0, and identifies it as necessary and sufficient (\"if and only if\"). It accurately defines D_vv F and D_vvv F as second and third directional derivatives along unit vector v (the gradient direction), matching the text. It also correctly notes that the Laplacian zero-crossing (D_xx F + D_yy F = 0) is necessary but not sufficient, per the source. All claims are directly supported by the retrieved sources (especially id 'iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06', which contains the exact equation and wording). The citations [1][2][3] refer to the same source document (as evidenced by identical content across retrieved IDs), and the answer does not invent any unsupported details. The image description in the answer (e.g., Fig. 17.12 showing peaks at edges) is consistent with the figure caption provided in the retrieved sources."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 11.614930916810408,
+    "usage": {
+      "input_tokens": 5145,
+      "output_tokens": 376
+    },
+    "cost_upper_cny": 0.016306,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

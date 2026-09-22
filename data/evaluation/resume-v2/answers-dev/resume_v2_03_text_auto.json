@@ -1,0 +1,160 @@
+{
+  "question_id": "resume_v2_03_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text in section 2.1.2.2 explicitly states: 'The equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.' This directly matches the reference answer 'At least 100 cm long' and is confirmed by both the extracted content and the provided image (Fig. 3 caption and surrounding text). No inference or external knowledge is required."
+  },
+  "result": {
+    "answer": "根据提供的资料，SID（Source-to-Image Distance，源-像距离）验证测试中规定的测量工具的**最低要求长度为 100 cm**。\n\n该要求明确出现在以下来源中：\n\n*   **来源 1（第 17 页）**：“The equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.” [1]\n*   **来源 2（第 17 页，图像说明）**：同样引用了上述文字，确认了“at least 100 cm long”的要求 [2]。\n*   **用户上传的图片（第 7 页）**：在“2.1.2.2. Equipment”部分也清晰地写着：“The equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.” [1]\n\n此外，图 3 的示意图也佐证了这一点，其放大细节显示测量值接近 100 cm（如右下角刻度显示为“99”），这与测试中设定 SID 为 100 cm 的标准操作一致。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.62209333316423,
+      "first_token_seconds": 11.056099124951288,
+      "total_seconds": 15.578948999987915,
+      "model_seconds": 13.818819082109258,
+      "model_first_token_seconds": 7.965569583000615
+    },
+    "calls": [
+      {
+        "seconds": 1.3701241661328822,
+        "usage": {
+          "input_tokens": 3424,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.007104,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 12.448694915976375,
+        "usage": {
+          "input_tokens": 3437,
+          "output_tokens": 247
+        },
+        "cost_upper_cny": 0.010826,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 7.965569583000615,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "What is the minimum required length of the measuring tool specified for the SID verification test?",
+    "citations": {
+      "citation_mentions": 3,
+      "valid_citation_mentions": 3,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+      "artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png"
+    ],
+    "sources": [
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 17,
+        "type": "text",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n2.1.2.2.\t Equipment\nThe equipment needed for the test is a long ruler or a measuring tape at \nleast 100 cm long.\n2.1.2.3.\t Procedure\nThe following procedure is used for the test:\n(a)\t\nSet an SID of 100 cm by using the SID indicator of the system.\n(b)\t\nMeasure the actual SID using the ruler or measuring tape, starting at \nthe focal spot indicator on the side of the X  ray tube and extending \nto the tabletop or surface of the image receptor (Fig. 3). \t\n\nNote: Some recent X ray systems do not have an indicator of the focal spot. \nIn this case, the manufacturer’s documentation could be used as a reference \nto estimate its position, or the medical physicist may determine the location \nof the focal spot using the intercept theorem.\n(c)\t\nRecord the result.\n2.1.2.4.\t Analysis and interpretation\nCompare the measured value with the SID readout indicator of \nthe X ray system.\n7\nFIG. 3. Schematic of the suggested set‑up.",
+        "scores": {
+          "dense": 0.7866631440588172,
+          "bm25": 35.407109837692076,
+          "rrf": 0.03200204813108039,
+          "weighted": 0.03200204813108039,
+          "rerank": 0.8737035989761353
+        }
+      },
+      {
+        "id": "visual_3b856a3681de7a04edc9",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 17,
+        "type": "image_caption",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: 2.1.2.2. Equipment\nThe equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.\n2.1.2.3. Procedure\nThe following procedure is used for the test:\n(a) Set an SID of 100 cm by using the SID indicator of the system.\n(b) Measure the actual SID using the ruler or measuring tape, starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3).\nNote: Some recent X ray systems do not have an indicator of the focal spot. In this case, the manufacturer’s documentation could be used as a reference to estimate its position, or the medical physicist may determine the location of the focal spot using the intercept theorem.\n(c) Record the result.\n2.1.2.4. Analysis and interpretation\nCompare the measured value with the SID readout indicator of the X ray system.\nFIG. 3. Schematic of the suggested set-up.\nvisual_relations: Figure 3 shows a vertical schematic: X-ray tube labeled 'Focus' at top, with a built-in measuring tape extending downward through the tube housing; a yellow dashed line represents the central ray from the focal spot to the tabletop; a separate measuring tape lies horizontally on the tabletop; two circular magnified insets show scale markings: left inset shows '0' near the focal spot indicator, right inset shows '99' near the tabletop surface, indicating a measured distance close to 100 cm. Arrows label 'Built-in measuring tape', 'Table', and 'Measuring tape'.\nunits: cm\nuncertainties: The note indicates uncertainty in focal spot location for modern systems lacking a physical indicator; alternative methods (manufacturer docs, intercept theorem) are suggested but no numerical uncertainty bounds are provided.\nsummary: This section describes a quality control test to verify Source-to-Image Distance (SID) accuracy in X-ray systems. It specifies required equipment (≥100 cm ruler/tape), step-by-step procedure (set SID to 100 cm via system indicator, then physically measure from focal spot indicator to image receptor surface), and analysis (compare measured vs. indicated SID). Figure 3 illustrates the measurement setup, showing alignment of focal spot, central ray, and measurement tapes, with scale insets suggesting a reading near 99 cm.",
+        "scores": {
+          "dense": 0.7883434418877541,
+          "bm25": 35.76367920100315,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.8460986614227295
+        }
+      },
+      {
+        "id": "visual_29421148ef1df4eee448",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 199,
+        "type": "image_caption",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: TABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\tTitle\tEquipment\tTolerance\tFrequency\tReference\n3.2.1\tVerification of beam collimation\tPhantom, computed radiography plate or self-developing film\t±2% of SID\tAnnual\t[14]\n3.2.2\tVerification of beam geometry\tAlignment test objects, attenuator, computed radiography plate or self-developing film\tAlignment: ±2% SID; Centring: ±1% SID\tAnnual\t[4, 5]\n3.2.3\tVerification of different field sizes\tPhantom\t±2% of SID\tAnnual\t[14]\n3.2.4\tPatient ESAK rate\tIonization chamber or solid state detector, PMMA slabs\tManufacturer’s specifications or 88 mGy/min (normal mode); 176 mGy/min (high dose rate mode)\tAnnual\t[5, 6, 8, 9, 11]\n3.2.5\tImage receptor ESAK rate\tIonization chamber or solid state detector, 25 mm Al slab, Cu plates\t0.2–1 μGy/s (with Al, 70–80 kV); ±25% of baseline\tAnnual\t[4, 7]\nvisual_relations: The table is structured with six columns: Section, Title, Equipment, Tolerance, Frequency, Reference. Each row corresponds to a specific QC test (sections 3.2.1–3.2.5). The 'Tolerance' column contains compound entries for sections 3.2.2 and 3.2.5, with multiple conditions separated by line breaks or semicolons. The 'Equipment' column lists measurement tools and phantoms. The 'Reference' column cites numbered sources in square brackets.\nunits: % of SID\nmGy/min\nμGy/s\nmm\nkV\nuncertainties: ±2% of SID\n±1% SID\n±25% of baseline\nsummary: This page (p. 189) continues Table 8, summarizing five quality control tests for radiographic equipment: beam collimation (3.2.1), beam geometry (3.2.2), field size verification (3.2.3), patient ESAK rate (3.2.4), and image receptor ESAK rate (3.2.5). All tests are performed annually. Tolerances are specified relative to SID (source-to-image distance) or as absolute dose rates, with references cited for each test.",
+        "scores": {
+          "dense": 0.7251008587479388,
+          "bm25": 36.13632824190918,
+          "rrf": 0.031544957774465976,
+          "weighted": 0.031544957774465976,
+          "rerank": 0.5713236331939697
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p16:fcdbbed1dfd0",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 16,
+        "type": "text",
+        "content": "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nis observed when repeating this test, then the service engineer \nshould adjust the beam limiting device. \n(d)\t\nIf misalignment occurs in a random manner, then check for observable slack.\n2.1.2.\t Distances and scales\n2.1.2.1.\t Description and objective\nThe aim of this test is to determine the accuracy of the SID indicator of \nthe X ray system. This test has an important role for radiographic imaging and \nwhen dose monitoring software is used, as the distance indication may be used \nas an input for determining the distance from the focal spot to the entrance \nsurface (skin) [4].\n6",
+        "scores": {
+          "dense": 0.7594686811680489,
+          "bm25": 0.0,
+          "rrf": 0.015625,
+          "weighted": 0.015625,
+          "rerank": 0.040643319487571716
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states the minimum required length is 100 cm, which is directly supported by the gold source (Section 2.1.2.2: 'at least 100 cm long') and the retrieved text source (id: iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40). The answer also correctly cites two sources [1] and [2], both of which correspond to the same textual content on page 17 (the text and its image caption), and the image caption (id: visual_3b856a3681de7a04edc9) explicitly confirms the 'at least 100 cm long' requirement and describes Figure 3, whose right inset shows '99', supporting the claim that the measurement is close to 100 cm. All parts of the question are addressed, and no unsupported claims are made."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 10.247355540981516,
+    "usage": {
+      "input_tokens": 5499,
+      "output_tokens": 318
+    },
+    "cost_upper_cny": 0.016086,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}
