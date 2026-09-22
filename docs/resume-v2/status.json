@@ -1,0 +1,49 @@
+{
+  "scope": "textbook learning application; not clinical validation",
+  "python": "3.12.14",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "human_reviewed": 0,
+  "additional_paid_api_calls": 418,
+  "live_multimodal_accepted": false,
+  "new_80_task_evaluation_completed": false,
+  "text_records": 2809,
+  "selected_visual_pages": 60,
+  "registered_image_files": 117,
+  "source_split_counts": {
+    "dev": 30,
+    "holdout": 30
+  },
+  "chapter_counts": {
+    "unknown": 162,
+    "numbered_heading": 1939,
+    "bookmark": 708
+  },
+  "text_indexes_built": true,
+  "multimodal_indexes_built": true,
+  "accounted_cost_upper_cny": 5.190992,
+  "tests": {
+    "exit_code": 0,
+    "passed": 151,
+    "summary": "151 passed, 5 warnings in 1.53s",
+    "source": "artifacts/resume-v2/workflow.log"
+  },
+  "regression_strategies_completed": [
+    "baseline",
+    "chapter",
+    "rerank"
+  ],
+  "new_task_count": 80,
+  "pending": [
+    "holdout end-to-end answer/vision/refusal experiments",
+    "holdout source review of failures, disagreements and random sample",
+    "Remote Linux CI has not been observed",
+    "Clinical or medical expert validation is outside scope"
+  ],
+  "required_credentials": [
+    "DEEPSEEK_API_KEY",
+    "DASHSCOPE_API_KEY"
+  ],
+  "python_sources_sha256": "078f026120fed0b310da293bcf099c72fdb1c467a8c82340b8c6904753690aa8",
+  "execution_status": "paused_by_user",
+  "handoff": "docs/resume-v2/HANDOFF.md"
+}

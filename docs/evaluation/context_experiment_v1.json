@@ -1,0 +1,66 @@
+{
+  "dataset_sha256": "e5994ba6f45052b7d1597182351cc5a49c6f7fe6510979ad02faada76ad24ca7",
+  "API_calls": 0,
+  "methods_frozen_before_run": true,
+  "limits": "Source-conditioned AI-reviewed regression labels, not exhaustive. Eval cases already inspected; not blind holdout. Coverage with extra context is not Recall@5 or answer accuracy. One warm run; shared search timing excludes model initialization.",
+  "splits": {
+    "dev": {
+      "baseline_5": {
+        "n": 28,
+        "hits": 26,
+        "mean_label_coverage": 0.9107142857142857,
+        "all_labels_present": 25,
+        "mean_context_chars": 5210,
+        "median_shared_search_ms": 54.08,
+        "median_expansion_ms": 0.0
+      },
+      "ranked_10": {
+        "n": 28,
+        "hits": 27,
+        "mean_label_coverage": 0.9642857142857143,
+        "all_labels_present": 27,
+        "mean_context_chars": 10188,
+        "median_shared_search_ms": 54.08,
+        "median_expansion_ms": 0.0
+      },
+      "neighbors_10": {
+        "n": 28,
+        "hits": 26,
+        "mean_label_coverage": 0.9196428571428571,
+        "all_labels_present": 25,
+        "mean_context_chars": 9253,
+        "median_shared_search_ms": 54.08,
+        "median_expansion_ms": 0.02
+      }
+    },
+    "eval": {
+      "baseline_5": {
+        "n": 29,
+        "hits": 27,
+        "mean_label_coverage": 0.9310344827586207,
+        "all_labels_present": 27,
+        "mean_context_chars": 5354,
+        "median_shared_search_ms": 54.9,
+        "median_expansion_ms": 0
+      },
+      "ranked_10": {
+        "n": 29,
+        "hits": 28,
+        "mean_label_coverage": 0.9655172413793104,
+        "all_labels_present": 28,
+        "mean_context_chars": 10396,
+        "median_shared_search_ms": 54.9,
+        "median_expansion_ms": 0
+      },
+      "neighbors_10": {
+        "n": 29,
+        "hits": 27,
+        "mean_label_coverage": 0.9310344827586207,
+        "all_labels_present": 27,
+        "mean_context_chars": 9119,
+        "median_shared_search_ms": 54.9,
+        "median_expansion_ms": 0.02
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "expected": 12,
+  "completed": 12,
+  "same_model_proxy": true,
+  "controlled_context_not_live_retrieval": true,
+  "types": {
+    "answerable": {
+      "n": 4,
+      "behavior_met": 4
+    },
+    "insufficient": {
+      "n": 4,
+      "behavior_met": 4
+    },
+    "false_premise": {
+      "n": 4,
+      "behavior_met": 4
+    }
+  },
+  "usage": {
+    "model_requested": "deepseek-flash",
+    "api_host": "api.deepseek.com",
+    "budget_cny": 1.0,
+    "pricing_basis": "2026-09-19 peak: input miss 2, input hit .04, output 8 CNY/million",
+    "pricing_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "reserved_upper_cny": 0.358126,
+    "known_usage_peak_cost_upper_cny": 0.03846399999999999,
+    "requests_started": 24,
+    "requests_succeeded": 24,
+    "requests_failed": 0,
+    "prompt_tokens": 11672,
+    "completion_tokens": 1890,
+    "cached_prompt_tokens": 0,
+    "usage_complete": true,
+    "errors": [],
+    "models_returned": [
+      "deepseek-flash"
+    ]
+  },
+  "dataset_sha256": "5966ab1a3f7981032e6ee46b5798f2871af56c58496b5dacb12c5fa568b727b3"
+}

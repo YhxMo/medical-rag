@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "metrics_version": "retrieval-v2",
+  "privacy_mode": "aggregate_only",
+  "top_k": 3,
+  "search_options": {
+    "final_top_k": 4
+  },
+  "total": 4,
+  "hit_count": 3,
+  "hit_rate_at_k": 0.75,
+  "recall_at_k": 0.5,
+  "precision_at_k": 0.3333333333333333,
+  "mrr": 0.625,
+  "ndcg_at_k": 0.5,
+  "fixture_version": "synthetic-ranking-v1",
+  "scope": "metric_arithmetic_only_not_medical_retrieval_quality",
+  "python_version": "3.12.14",
+  "verification": "passed",
+  "external_model_calls": 0,
+  "source_sha256": {
+    "src/evaluation/evaluator.py": "dd4d070868534eb156579c0f5f220e421fd0080e52e3e7141c27e13d94ed0b3f",
+    "src/evaluation/dataset.py": "96fd92a603ab082d782b4d3b302070d8cea0ddc8b6dfc1aaebcf93b0edee021a",
+    "src/evaluation/ablation.py": "cd5f182d85cdf4822f60e10f054599de29c71effc835eb021c53fafa5ec5706a",
+    "src/cli.py": "0b062797fceda47159880349d53bacf8f646656fb8e1d2239d617d68101db1bc",
+    "scripts/verify_evaluation_offline.py": "c77f9c347d7ec00137668c8d03404f114712b348316d1093e7cc13ec39b6968b"
+  }
+}

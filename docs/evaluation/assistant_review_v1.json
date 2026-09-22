@@ -1,0 +1,10 @@
+{
+  "reviewer_type": "AI_assistant_not_human_or_medical_expert",
+  "spot_checked_count": 4,
+  "model_scoring_false_positive_identified": 1,
+  "initial_vs_current_source_review_disagreements": 2,
+  "human_reviewed_count": 0,
+  "medical_expert_reviewed_count": 0,
+  "frozen_dataset_modified": false,
+  "interpretation": "29/30 is the raw same-model judge pass count; independent assistant inspection found one scoring false positive. No verified accuracy estimate is claimed."
+}

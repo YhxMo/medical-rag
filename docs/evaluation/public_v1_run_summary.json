@@ -1,0 +1,80 @@
+{
+  "run_date": "2026-09-19",
+  "corpus_version": "public-medical-imaging-v1",
+  "index": {
+    "evidence_count": 2809,
+    "source_counts": {
+      "iaea_diagnostic_radiology_physics_2014.pdf": 1709,
+      "iaea_radiology_quality_control_2023.pdf": 392,
+      "msf_ultrasound_manual_2018.pdf": 708
+    },
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "embedding_dimensions": 384,
+    "text_only": true,
+    "evidence_sha256": "8f0c6d0510978595f81e8f2d90329a3c29a574c90ec1109e7dd5724645c4c8b3"
+  },
+  "dataset": {
+    "candidate_count": 60,
+    "human_reviewed_count": 0,
+    "automated_check_passed_count": 58,
+    "dev_count": 30,
+    "eval_count": 30,
+    "source_page_overlap_between_splits": 0,
+    "dataset_sha256": {
+      "dev": "ceb12ae324b623fe7fa2bf7ad31902c51670e8f4582b12b2d6666645eaac9024",
+      "eval": "991cf0f52ed21964915e75c73f1828caed378d2084b7387f0e555333dc60d809"
+    },
+    "model_requested": "deepseek-flash",
+    "scope": "source-conditioned candidates, not an expert benchmark"
+  },
+  "usage": {
+    "model_requested": "deepseek-flash",
+    "api_host": "api.deepseek.com",
+    "budget_cny": 2.0,
+    "pricing_basis": "2026-09-19 peak: input miss 2, input hit .04, output 8 CNY/million",
+    "pricing_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "reserved_upper_cny": 0.7721579999999999,
+    "known_usage_peak_cost_upper_cny": 0.14145799999999997,
+    "requests_started": 24,
+    "requests_succeeded": 24,
+    "requests_failed": 0,
+    "prompt_tokens": 43905,
+    "completion_tokens": 6706,
+    "cached_prompt_tokens": 0,
+    "usage_complete": true,
+    "errors": [],
+    "models_returned": [
+      "deepseek-flash"
+    ]
+  },
+  "tests": {
+    "passed": 95,
+    "warnings": 5
+  },
+  "privacy": {
+    "credential_persisted": false,
+    "log_raw_prompts": false,
+    "log_raw_answers": false,
+    "question_files_contain_public_source_derived_content": true
+  },
+  "source_code_sha256": {
+    "scripts/rebuild_public_corpus.py": "347b33116585436324fbf9c6b7613707a070e527bdfbaa5d767e8f3eaa1cb0d0",
+    "scripts/generate_public_questions.py": "f97222ace2ce41c8025803b5af1ccc355b414f26f9e13e48ae109ba81efe8274",
+    "scripts/evaluate_public_candidates.py": "ca04a9cac8e5521a138695fb914307e4ebb2bd7783e18a76115c1935d944e2da",
+    "src/indexer/common.py": "79d91ae770e91d50a29d8242ee4ad969cb50c3d7a85db29dd6915885803054e7",
+    "src/embedding/fastembed_provider.py": "3972f0d02a421a250fa7c2cb70e139b8113764c94a1590bbd4cc664fd08f2ac4",
+    "src/evaluation/evaluator.py": "dd4d070868534eb156579c0f5f220e421fd0080e52e3e7141c27e13d94ed0b3f",
+    "src/cli.py": "0b062797fceda47159880349d53bacf8f646656fb8e1d2239d617d68101db1bc"
+  },
+  "completed_date": "2026-09-20",
+  "verification": {
+    "index_checksum_matches": true,
+    "all_labels_resolve": true,
+    "dev_count": 30,
+    "eval_count": 30,
+    "human_reviewed_count": 0,
+    "credential_pattern_findings": 0,
+    "scanned_text_files": 116,
+    "local_cli_query_with_citations": true
+  }
+}

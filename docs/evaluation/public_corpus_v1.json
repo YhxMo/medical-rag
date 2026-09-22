@@ -1,0 +1,59 @@
+{
+  "corpus_version": "public-medical-imaging-v1",
+  "purpose": "Replacement source collection; not the original Chinese textbook corpus",
+  "old_evaluation_labels_compatible": false,
+  "external_model_calls": 0,
+  "documents": [
+    {
+      "file": "data/raw/iaea_diagnostic_radiology_physics_2014.pdf",
+      "title": "Diagnostic Radiology Physics: A Handbook for Teachers and Students",
+      "publisher": "IAEA",
+      "publication_year": 2014,
+      "language": "en",
+      "source_page": "https://www.iaea.org/publications/8841/diagnostic-radiology-physics",
+      "download_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1564webNew-74666420.pdf",
+      "download_date": "2026-09-19",
+      "bytes": 13345351,
+      "sha256": "648a78e360da383461820067b0b59777165a2c12459579172e7d2dc1edc43e1a",
+      "pdf_pages": 710,
+      "pages_with_at_least_50_text_characters": 695,
+      "extracted_text_characters": 1428379,
+      "rights_page_pdf_number": 5,
+      "rights": "Copyright retained by publisher; no open reuse license identified. Do not redistribute or republish without required permission."
+    },
+    {
+      "file": "data/raw/iaea_radiology_quality_control_2023.pdf",
+      "title": "Handbook of Basic Quality Control Tests for Diagnostic Radiology",
+      "publisher": "IAEA",
+      "publication_year": 2023,
+      "language": "en",
+      "source_page": "https://www.iaea.org/publications/14890/handbook-of-basic-quality-control-tests-for-diagnostic-radiology",
+      "download_url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB2021_web.pdf",
+      "download_date": "2026-09-19",
+      "bytes": 6463820,
+      "sha256": "80edad12842bec5813509981909d1f5266ad6285601f141664c5b2fd59dbc76c",
+      "pdf_pages": 222,
+      "pages_with_at_least_50_text_characters": 216,
+      "extracted_text_characters": 308723,
+      "rights_page_pdf_number": 6,
+      "rights": "Copyright retained by publisher; no open reuse license identified. Do not redistribute or republish without required permission."
+    },
+    {
+      "file": "data/raw/msf_ultrasound_manual_2018.pdf",
+      "title": "Ultrasound manual: For trained practitioners",
+      "publisher": "MSF",
+      "publication_year": 2018,
+      "language": "en",
+      "source_page": "https://medicalguidelines.msf.org/sites/default/files/2023-07/MSF%20International%20Ultrasound%20manual%20Guideline%2020181004%20EN.pdf",
+      "download_url": "https://medicalguidelines.msf.org/sites/default/files/2023-07/MSF%20International%20Ultrasound%20manual%20Guideline%2020181004%20EN.pdf",
+      "download_date": "2026-09-19",
+      "bytes": 24579613,
+      "sha256": "ca7fd626be45ef909aeeec1f66d5ed0b6f56894de30e0a3781b4a4b957675e9f",
+      "pdf_pages": 345,
+      "pages_with_at_least_50_text_characters": 327,
+      "extracted_text_characters": 561795,
+      "rights_page_pdf_number": 3,
+      "rights": "Copyright retained by publisher; no open reuse license identified. Do not redistribute or republish without required permission."
+    }
+  ]
+}

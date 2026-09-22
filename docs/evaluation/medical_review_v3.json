@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "review_type": "AI_assistant_source_review_not_human_or_expert_certification",
+  "reviewed_items": 60,
+  "decision_counts": {
+    "retain_with_scope": 31,
+    "revise": 26,
+    "hold": 3
+  },
+  "changed_items": 27,
+  "regression_candidates": 57,
+  "held_items": 3,
+  "human_reviewed_count": 0,
+  "external_sources": 6,
+  "external_cross_checked_items": 6,
+  "visually_checked_pdf_pages": 3,
+  "additional_model_api_calls": 0,
+  "scope": "60 labeled text excerpts checked; targeted adjacent pages, 3 visual pages and 6 external sources. Not a complete medical literature review. No new answers or quality scores generated.",
+  "input_sha256": "e325a0becf65f1b7f5506d5976ff1215691efc1310f583794dfd982e9749479b",
+  "output_sha256": {
+    "all_candidates.json": "11dbf26b7ebd060ed51437119255cce98948cc648777dce44578f04746507be9",
+    "regression_candidates.json": "e5994ba6f45052b7d1597182351cc5a49c6f7fe6510979ad02faada76ad24ca7",
+    "held_candidates.json": "46bcd0cb2b4c982433d50751e39c7e684ba782ad84b4506c00e1bf4dbb49b8fd",
+    "review_ledger.json": "4c38a0545ad47f62d7ab0a9b9950f4b63f86f1f847c1a21aab424c3154c8be8d",
+    "external_sources.json": "a4c3233a427e9e2aead3bbd8bd74f3154465e79a877e8ee737a1fb188d175a41"
+  }
+}

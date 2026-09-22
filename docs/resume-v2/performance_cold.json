@@ -1,0 +1,16 @@
+{
+  "scenario": "Fresh Python process with local model and index already downloaded; OS disk cache not flushed; offline extractive query; baseline before dev selection",
+  "seconds": 1.137412334093824,
+  "exit_code": 0,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "query_timings": {
+    "retrieval_seconds": 0.9332627919502556,
+    "total_seconds": 0.933780541876331,
+    "model_seconds": 0,
+    "first_token_seconds": null,
+    "model_first_token_seconds": null
+  },
+  "evidence_count": 5,
+  "n": 1,
+  "limitations": "Single cold-process observation, not a cold-start percentile or network generation latency."
+}

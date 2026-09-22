@@ -1,0 +1,7 @@
+{
+  "new_source_topics": 4,
+  "hit5": 4,
+  "hit10": 4,
+  "labels_outside_original_plus_minus_two_pages": true,
+  "limitation": "4 AI-authored answerable questions only; no tuning after results; same book and source-conditioned; not a representative clinical holdout"
+}

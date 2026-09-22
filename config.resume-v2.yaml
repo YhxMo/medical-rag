@@ -1,0 +1,49 @@
+active:
+  application: resume-v2
+  embedding: fastembed
+  reranker: none
+  vector_store: qdrant
+paths:
+  data_dir: data/raw
+  artifact_dir: artifacts/resume-v2
+  index_dir: artifacts/resume-v2/baseline/index
+vector_store:
+  qdrant:
+    collection: resume_v2_baseline
+    local_path: artifacts/resume-v2/baseline/qdrant
+embedding:
+  fastembed:
+    model: BAAI/bge-small-en-v1.5
+    cache_dir: models/fastembed
+reranker:
+  bge_base:
+    model: models/bge-reranker-base
+    device: cpu
+application:
+  strategy: baseline
+  selection_file: artifacts/resume-v2/selection.json
+  evidence_manifest: artifacts/resume-v2/preparation.json
+  candidate_k: 20
+  top_k: 5
+  max_context_chars: 6000
+  max_images: 2
+  cache_dir: artifacts/resume-v2/api-cache
+  text:
+    api_key: ${DEEPSEEK_API_KEY}
+    api_base: https://api.deepseek.com
+    model: deepseek-flash
+    input_cny_per_million: 2
+    output_cny_per_million: 8
+  vision:
+    api_key: ${DASHSCOPE_API_KEY}
+    api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen3-vl-plus
+    input_cny_per_million: 2
+    output_cny_per_million: 16
+  budget:
+    ledger: artifacts/resume-v2/budget.json
+    total_cny: 30
+    limits:
+      ingest: 10
+      evaluation: 15
+      demo: 5

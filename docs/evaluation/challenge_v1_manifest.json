@@ -1,0 +1,12 @@
+{
+  "count": 12,
+  "types": {
+    "answerable": 4,
+    "insufficient": 4,
+    "false_premise": 4
+  },
+  "question_sha256": "5966ab1a3f7981032e6ee46b5798f2871af56c58496b5dacb12c5fa568b727b3",
+  "source_pages_disjoint_from_old_labels_plus_two_pages": true,
+  "design": "AI-authored and evidence-reviewed; frozen after retrieval design; controlled supplied-evidence challenge, not live-retrieval or clinical benchmark",
+  "human_reviewed": 0
+}
