@@ -1,50 +1,93 @@
 # 医学影像教材学习助手
 
-[English](README.md) · [安装、演示与完整实验流程](docs/resume-v2/README.md) · [当前验收状态](docs/resume-v2/status.json)
+[![Offline tests](https://github.com/YhxMo/medical-rag/actions/workflows/tests.yml/badge.svg)](https://github.com/YhxMo/medical-rag/actions/workflows/tests.yml)
+![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)
+![python](https://img.shields.io/badge/python-3.12-blue)
 
-面向教材学习的 RAG 项目：**混合检索、教材图文证据、截图提问、来源引用与可追溯评测**。不是患者影像诊断系统。
+[English](README.md) · [安装、演示与完整实验流程](docs/resume-v2/README.md) · [验收状态](docs/resume-v2/status.json)
 
-## 当前版本
+面向教材学习的来源可溯 RAG 应用：**混合检索、教材图文证据、截图提问、来源引用与可复现评测**。**不是患者影像诊断系统。**
 
-- 基础语料为三份英文官方教材，共 **2,809 条文本证据**。
-- **60 个图表页**已完成真实视觉描述和入库，每本教材 20 页；两套独立图文索引各含 **2,869 条证据**，保留原图、页码、章节信息及内容摘要。
-- 检索采用本地 BGE／ONNX、Qdrant、BM25、RRF。10 道开发集文本任务上，重排序使标注 Recall@5 从 **0.80 到 0.90**、NDCG@5 从 **0.706 到 0.755**，检索 P95 约 **1.85 秒**；已据此冻结默认策略。这是小样本检索结果，不是回答准确率。
-- **80 道 AI 候选题已冻结**，按来源分为开发／留出各 40 道；来源核验和评分复核均明确标记 AI，人工审核数为 0。
-- CLI 与 Gradio 共用问答服务；支持中文检索表达转换、截图解析、原图回答、引用编号检查和证据不足状态。
-- 提供模型输入版本校验、断点缓存、统一 30 元费用上限与离线测试。
+## 亮点
 
-**当前哪些能力已实际运行、哪些仍待模型服务验收，以状态文件为准。新版本不沿用旧版 100% 检索成绩，也不将代码实现写成已验证的多模态收益。**
-
-## 快速使用
-
-准备 Python 3.12、依赖、三份原文及本地模型，步骤见[复现说明](docs/resume-v2/README.md)。
-
-```bash
-python -m pytest -q -p no:cacheprovider --tb=short
-python scripts/build_resume_v2.py --mode text
-python -m src.cli query 'What determines axial resolution in ultrasound?' --config config.resume-v2.yaml --json
-python -m src.cli serve --config config.resume-v2.yaml
-```
-
-新机器需要先取得清单中的原文并构建公开语料基础索引；克隆仓库不包含教材、模型和生成数据。在线多模态需要本机配置 DeepSeek 与百炼密钥。无回显输入与续跑命令见复现说明。
+- **语料**：3 份公开教材（IAEA/MSF）2,809 条文本证据 + 60 个图表页的真实视觉描述；原始／章节增强两套独立索引（各 2,869 条证据），书名与 PDF 页码可追溯。
+- **检索**：本地 BGE/ONNX 向量 + Qdrant + BM25 + RRF 融合，可选 BGE 重排序——默认策略由实测消融冻结，不靠口号。
+- **评测可信**：80 道冻结题集（text / chart / screenshot / behavior × 开发/留出）；`run_manifest` 按输入哈希拒绝跨输入复用缓存；配对对照、双轮评分（初评 + 限定修复 + 独立来源复核）；失败记录如实保留。
+- **成本与运维**：跨进程费用预留账本（30 元硬上限，418 次调用保守累计 5.19 元）、内容寻址模型调用缓存、仓库零密钥、断点续跑。
+- **诚实边界**：题目与评审均为 AI 生成／AI 代理，人工审核数为 0，不声称临床准确率；无可靠收益的能力（原图增强回答）**不**默认启用。
 
 ## 架构
 
 ```mermaid
 flowchart LR
-  A[PDF正文与图表] --> B[版本化证据与原图登记]
-  B --> C[BGE向量 + BM25]
-  Q[文字或教材截图] --> P[英文查询 / 视觉解析]
+  A[教材 PDF<br/>正文 + 图表] --> B[版本化证据<br/>+ 原图登记]
+  B --> C[BGE 向量 + BM25]
+  Q[文字或截图] --> P[查询 / 视觉解析]
   P --> C
-  C --> D[RRF / 可选重排序]
-  D --> E[5条与6000字符预算]
-  E --> F[证据充分性检查]
-  F --> G[文本或原图增强回答]
-  G --> H[引用校验与来源展示]
+  C --> D[RRF 融合 / 可选重排序]
+  D --> E[上下文预算<br/>5 条 / 6,000 字符]
+  E --> F[证据充分性分流]
+  F --> G[抽取式或模型回答]
+  G --> H[引用校验<br/>+ 来源展示]
+  H --> I[冻结评测<br/>run_manifest + 配对评审]
 ```
 
-## 结果表述
+## 实测结果
 
-见[验收记录](docs/resume-v2/status.json)。模型评分是代理指标；不等于医学准确率、人工标注或临床安全验证。
+开发集检索选择（10 道标注文本题，预热后单次计时、不含模型初始化——检索指标，**不是**回答正确率）：
 
-旧四本中文教材的多模态索引、旧口径评测及旧安装说明保留在[历史中文说明](docs/history/README.pre-resume-v2.zh-CN.md)。既有公开语料实验见[历史实验记录](docs/evaluation/improvement_experiment_v1.md)。
+| 策略 | Recall@5 | NDCG@5 | P95 |
+|---|---:|---:|---:|
+| 混合基线 | 0.80 | 0.706 | 0.38 秒 |
+| 章节增强 | 0.75 | 0.657 | 0.21 秒 |
+| 章节 + BGE 重排序（冻结默认） | **0.90** | **0.755** | 1.85 秒 |
+
+57 题旧回归集（含已检视旧题，仅作回归）：重排序使命中 53/57 → 55/57、NDCG@5 0.840 → 0.938（[retrieval_regression.json](docs/resume-v2/retrieval_regression.json)）。离线单次查询冷进程约 1.14 秒。
+
+配对回答实验（开发集 60 次运行）：严格代理通过数为正文 1/10、视觉描述 9/10、原图 7/10——**原图尚无可靠收益**，因此默认不启用。完整口径见[改进与实验记录](docs/evaluation/README.md)与[验收状态](docs/resume-v2/status.json)。
+
+## 界面
+
+![Gradio 界面：离线检索、来源可溯摘录与显式非模型标识](docs/resume-v2/ui-screenshot-with-answer.png)
+
+*Gradio 界面：文字／截图提问、仅本地模式、带教材标题路径的引用摘录、可展开原文证据与登记原图。*
+
+## 快速使用
+
+```bash
+# 0) 离线端到端演示——无 API、无下载
+python scripts/offline_resume_demo.py
+
+# 1) 测试
+python -m pytest -q -p no:cacheprovider --tb=short
+
+# 2) 构建索引 / 查询 / 界面（需原文 PDF 与本地模型，见安装说明）
+python scripts/build_resume_v2.py --mode text
+python -m src.cli query 'What determines axial resolution in ultrasound?' --config config.resume-v2.yaml --json
+python -m src.cli serve --config config.resume-v2.yaml
+```
+
+Python 3.12；依赖锁定见 `docs/resume-v2/requirements.lock.txt`。教材、模型权重与生成数据**不**随仓库分发，全新克隆需按安装说明获取公开来源。在线多模态需要本机提供 `DEEPSEEK_API_KEY` / `DASHSCOPE_API_KEY`（运行时无回显输入，不落盘）。
+
+## 评测可信
+
+- 80 道 AI 生成、来源核验题集**已冻结**（开发／留出各 40，按来源页与图像连通组划分，防泄漏）。
+- `run_manifest.json` 按 dataset / index / judge-prompt / selection 哈希冻结每个输出目录；输入变化必须换新目录——旧结果永不覆盖。
+- 评分来自模型代理 + 第二轮来源复核（复核已发现评委假阳性）；失败与未完成记录如实保留，不清理。
+- 截图输入是教材页面／图表，**不是**患者 CT/MRI 影像；图注是模型生成描述而非图文联合嵌入，本项目未训练视觉模型。
+
+## 改进方向
+
+1. 章节标题回退缺陷（跨章节沿用）版本化修复 + 重新开发验证——现有结果保留为 v1。
+2. 冻结题集的人工复核落地（当前人工审核数为 0）。
+3. 图像策略的产品默认与实验配置分离（变更版本化，不追溯改写已完成运行）。
+4. 补齐 UI 流式逻辑、Qwen-VL、OCR 路径测试；依赖文件统一到仓库根。
+
+## 文档
+
+| 文档 | 内容 |
+|---|---|
+| [docs/resume-v2/README.md](docs/resume-v2/README.md) | 安装、演示与完整实验流程 |
+| [docs/evaluation/README.md](docs/evaluation/README.md) | 逐轮改进记录（问题 → 改动 → 实测效果） |
+| [docs/resume-v2/status.json](docs/resume-v2/status.json) | 机器可读验收状态 |
+| [docs/resume-v2/HANDOFF.md](docs/resume-v2/HANDOFF.md) | 冻结实验的暂停与续跑记录 |

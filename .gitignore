@@ -19,6 +19,7 @@ models/
 
 # Local tooling caches and temporary outputs
 .codegraph/
+.playwright-mcp/
 .tmp_pytest/
 .tmp_pytest_cache/
 tmp/
