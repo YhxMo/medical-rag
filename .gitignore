@@ -1,60 +1,25 @@
-# Python caches and local environments
+# Local data, generated indexes, model weights and secrets
+.env
+.env.*
+config.yaml
+/data/raw/
+/artifacts/
+/models/
+
+# Python and editor files
+.venv/
 __pycache__/
+*.py[cod]
+*.egg-info/
 .pytest_cache/
 .ruff_cache/
-.venv/
-venv/
-*.pyc
+build/
+dist/
+.DS_Store
 ._*
-
-# Local secrets/configuration
-.env
-config.yaml
-
-# Generated artifacts and model/data assets (rebuildable; only frozen run records are tracked)
-artifacts/*
-models/
-*.faiss
-*.pkl
-
-# Local tooling caches and temporary outputs
-.codegraph/
-.playwright-mcp/
-.tmp_pytest/
-.tmp_pytest_cache/
-tmp/
-temp/
-*.tmp
+.vscode/
+.claude/
 *.log
-scripts/_tmp*
 
-# Private source corpora (never distributed)
-data/raw/
-data/*.pdf
-
-# Evaluation data: track only the layout guide and the frozen resume-v2 records.
-# Older local experiment datasets stay untracked (regression inputs for frozen tooling).
-data/evaluation/*
-!data/evaluation/README.md
-!data/evaluation/resume-v2/
-
-# Frozen resume-v2 run records: small JSON/text state only.
-# Indexes, images, model caches and API caches stay local; rebuild with
-# scripts/prepare_resume_v2.py + scripts/build_resume_v2.py.
-!artifacts/resume-v2/
-artifacts/resume-v2/*
-!artifacts/resume-v2/*.json
-!artifacts/resume-v2/*.txt
-!artifacts/resume-v2/workflow.log
-!artifacts/resume-v2/caption-run/
-artifacts/resume-v2/caption-run/*
-!artifacts/resume-v2/caption-run/*.json
-!artifacts/resume-v2/dev-retrieval/
-artifacts/resume-v2/dev-retrieval/*
-!artifacts/resume-v2/dev-retrieval/*.json
-!artifacts/resume-v2/regression-retrieval/
-artifacts/resume-v2/regression-retrieval/*
-!artifacts/resume-v2/regression-retrieval/*.json
-!artifacts/resume-v2/multimodal/
-artifacts/resume-v2/multimodal/*
-!artifacts/resume-v2/multimodal/build_manifest.json
+# Historical run logs are part of the experiment record.
+!/experiments/**/*.log

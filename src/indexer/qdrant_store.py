@@ -1,8 +1,9 @@
 """Qdrant-backed dense retrieval with the project's BM25 hybrid sidecar."""
+
 from __future__ import annotations
 
-import hashlib
 import uuid
+from dataclasses import asdict
 from pathlib import Path
 from typing import Any
 
@@ -12,10 +13,8 @@ from src.embedding.base import EmbeddingProvider
 from src.indexer.common import (
     bm25_candidates,
     build_bm25_index,
-    evidence_to_json,
     fuse_hybrid_candidates,
     read_evidence,
-    retrieval_text,
     write_evidence,
 )
 from src.schema import EvidenceItem, RetrievalHit
@@ -24,8 +23,7 @@ from src.schema import EvidenceItem, RetrievalHit
 class QdrantIndexStore:
     """Persist dense vectors and evidence payloads in Qdrant.
 
-    BM25 remains a local sidecar so the existing RRF fusion, ablations, and
-    evidence-type weighting retain their current behavior.
+    Dense and BM25 candidates are fused with reciprocal rank fusion.
     """
 
     def __init__(
@@ -33,21 +31,14 @@ class QdrantIndexStore:
         index_dir: str | Path,
         *,
         collection_name: str = "medical_rag_evidence",
-        url: str | None = None,
-        api_key: str | None = None,
         local_path: str | Path | None = None,
-        client: Any | None = None,
-        models_module: Any | None = None,
     ) -> None:
         self.index_dir = Path(index_dir)
         self.collection_name = collection_name
-        self.url = url.strip() if url else None
-        self.api_key = api_key or None
         self.local_path = Path(local_path) if local_path else self.index_dir.parent / "qdrant"
         self.bm25_path = self.index_dir / "bm25.pkl"
         self.evidence_path = self.index_dir / "evidence.jsonl"
-        self._client = client
-        self._models_module = models_module
+        self._client = None
 
     def build(self, evidence: list[EvidenceItem], embedding_provider: EmbeddingProvider) -> None:
         """Replace the collection contents and rebuild the BM25 sidecar."""
@@ -57,10 +48,14 @@ class QdrantIndexStore:
         if not evidence:
             if client.collection_exists(self.collection_name):
                 self._clear_collection_points(client, models)
+            self.bm25_path.unlink(missing_ok=True)
             write_evidence(self.evidence_path, evidence)
             return
 
-        vectors = np.asarray(embedding_provider.embed_texts([retrieval_text(item) for item in evidence]), dtype="float32")
+        vectors = np.asarray(
+            embedding_provider.embed_texts([item.content for item in evidence]),
+            dtype="float32",
+        )
         if vectors.ndim != 2 or vectors.shape[0] != len(evidence):
             raise ValueError("Embeddings must be a 2D matrix with one row per evidence item.")
 
@@ -69,7 +64,7 @@ class QdrantIndexStore:
             models.PointStruct(
                 id=self._point_id(ordinal, item),
                 vector=vector.tolist(),
-                payload={**evidence_to_json(item), "_ordinal": ordinal},
+                payload={**asdict(item), "_ordinal": ordinal},
             )
             for ordinal, (item, vector) in enumerate(zip(evidence, vectors, strict=True))
         ]
@@ -88,10 +83,9 @@ class QdrantIndexStore:
         dense_top_k: int = 10,
         bm25_top_k: int = 10,
         final_top_k: int = 5,
-        evidence_type_weights: dict[str, float] | None = None,
     ) -> list[RetrievalHit]:
         evidence = self.load_evidence()
-        if not evidence:
+        if not evidence or final_top_k <= 0:
             return []
 
         dense_limit = min(max(0, dense_top_k), len(evidence))
@@ -111,52 +105,42 @@ class QdrantIndexStore:
             dense=dense,
             bm25=bm25,
             final_top_k=final_top_k,
-            evidence_type_weights=evidence_type_weights,
         )
 
-    def create_empty(self, index_dir: str | Path) -> "QdrantIndexStore":
-        """Create an isolated collection for a temporary ablation index."""
-        new_index_dir = Path(index_dir)
-        suffix = hashlib.sha1(str(new_index_dir.resolve()).encode("utf-8")).hexdigest()[:12]
-        return QdrantIndexStore(
-            new_index_dir,
-            collection_name=f"{self.collection_name}_{suffix}",
-            url=self.url,
-            api_key=self.api_key,
-            local_path=None if self.url else new_index_dir / "qdrant",
-        )
-
-    def _connection(self) -> tuple[Any, Any]:
+    def close(self) -> None:
         if self._client is not None:
-            if self._models_module is None:
-                raise RuntimeError("models_module is required when injecting a Qdrant client.")
-            return self._client, self._models_module
+            self._client.close()
+            self._client = None
 
-        try:
-            from qdrant_client import QdrantClient, models
-        except ImportError as exc:
-            raise RuntimeError(
-                "qdrant-client is required for the qdrant vector-store backend. "
-                "Install the project's requirements in the active environment."
-            ) from exc
+    def _connection(self):
+        from qdrant_client import QdrantClient, models
 
-        if self.url:
-            self._client = QdrantClient(url=self.url, api_key=self.api_key)
-        else:
+        if self._client is None:
             self.local_path.parent.mkdir(parents=True, exist_ok=True)
             self._client = QdrantClient(path=str(self.local_path))
-        self._models_module = models
         return self._client, models
 
     def _replace_collection(self, client: Any, models: Any, *, vector_size: int) -> None:
         if not client.collection_exists(self.collection_name):
             client.create_collection(
                 collection_name=self.collection_name,
-                vectors_config=models.VectorParams(size=vector_size, distance=models.Distance.COSINE),
+                vectors_config=models.VectorParams(
+                    size=vector_size, distance=models.Distance.COSINE
+                ),
             )
             return
 
-        self._clear_collection_points(client, models)
+        current_size = client.get_collection(self.collection_name).config.params.vectors.size
+        if current_size != vector_size:
+            client.delete_collection(self.collection_name)
+            client.create_collection(
+                collection_name=self.collection_name,
+                vectors_config=models.VectorParams(
+                    size=vector_size, distance=models.Distance.COSINE
+                ),
+            )
+        else:
+            self._clear_collection_points(client, models)
 
     def _clear_collection_points(self, client: Any, models: Any) -> None:
         """Remove every point while retaining the collection schema."""
@@ -183,24 +167,14 @@ class QdrantIndexStore:
 
     def _query_points(self, query_vector: list[float], limit: int) -> list[Any]:
         client, _ = self._connection()
-        if hasattr(client, "query_points"):
-            response = client.query_points(
-                collection_name=self.collection_name,
-                query=query_vector,
-                limit=limit,
-                with_payload=True,
-                with_vectors=False,
-            )
-            return list(getattr(response, "points", response))
-        return list(
-            client.search(
-                collection_name=self.collection_name,
-                query_vector=query_vector,
-                limit=limit,
-                with_payload=True,
-                with_vectors=False,
-            )
+        response = client.query_points(
+            collection_name=self.collection_name,
+            query=query_vector,
+            limit=limit,
+            with_payload=True,
+            with_vectors=False,
         )
+        return list(response.points)
 
     def _point_id(self, ordinal: int, item: EvidenceItem) -> str:
         key = f"{self.collection_name}:{ordinal}:{item.evidence_id}"

@@ -1,4 +1,5 @@
-"""Evaluation runner for retrieval-focused MVP metrics."""
+"""Evaluation runner for labelled retrieval metrics."""
+
 from __future__ import annotations
 
 import json
@@ -7,9 +8,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from src.evaluation.dataset import EvaluationQuestion
-from src.indexer.base import EvidenceStore
 from src.embedding.base import EmbeddingProvider
+from src.evaluation.dataset import EvaluationQuestion
+from src.indexer.qdrant_store import QdrantIndexStore
 from src.reranker.base import NoopReranker, Reranker
 
 
@@ -34,7 +35,7 @@ class EvaluationResult:
 
 def evaluate_retrieval(
     questions: list[EvaluationQuestion],
-    store: EvidenceStore,
+    store: QdrantIndexStore,
     embedding_provider: EmbeddingProvider,
     *,
     top_k: int = 5,
@@ -51,11 +52,6 @@ def evaluate_retrieval(
     search_options = dict(search_kwargs or {})
     search_options.setdefault("final_top_k", top_k)
     details: list[dict] = []
-    hits = 0
-    precision_sum = 0.0
-    reciprocal_rank_sum = 0.0
-    ndcg_sum = 0.0
-    recall_sum = 0.0
 
     for question in questions:
         retrieved = store.search(question.question, embedding_provider, **search_options)
@@ -65,12 +61,10 @@ def evaluate_retrieval(
         expected = set(question.expected_evidence_ids)
 
         is_hit = bool(expected and expected.intersection(retrieved_ids))
-        hits += int(is_hit)
 
         matches = sum(1 for evidence_id in retrieved_ids if evidence_id in expected)
         precision = matches / top_k
         recall = matches / len(expected)
-        recall_sum += recall
 
         reciprocal_rank = 0.0
         for rank, evidence_id in enumerate(retrieved_ids, start=1):
@@ -79,10 +73,6 @@ def evaluate_retrieval(
                 break
 
         ndcg = _ndcg(retrieved_ids, expected, top_k)
-
-        precision_sum += precision
-        reciprocal_rank_sum += reciprocal_rank
-        ndcg_sum += ndcg
 
         details.append(
             {
@@ -101,11 +91,11 @@ def evaluate_retrieval(
     total = len(questions)
     return EvaluationResult(
         total=total,
-        recall_at_k=recall_sum / total,
-        hit_count=hits,
-        precision_at_k=precision_sum / total if total else 0.0,
-        mrr=reciprocal_rank_sum / total if total else 0.0,
-        ndcg_at_k=ndcg_sum / total if total else 0.0,
+        recall_at_k=sum(d["recall"] for d in details) / total,
+        hit_count=sum(d["hit"] for d in details),
+        precision_at_k=sum(d["precision"] for d in details) / total,
+        mrr=sum(d["reciprocal_rank"] for d in details) / total,
+        ndcg_at_k=sum(d["ndcg"] for d in details) / total,
         details=details,
         top_k=top_k,
         search_options=search_options,
@@ -132,11 +122,12 @@ def result_summary(result: EvaluationResult) -> dict[str, Any]:
     return {
         "schema_version": 2,
         "metrics_version": "retrieval-v2",
-        "privacy_mode": "aggregate_only",
         "top_k": result.top_k,
-        "search_options": {key: int(result.search_options[key])
-                           for key in ("dense_top_k", "bm25_top_k", "final_top_k")
-                           if key in result.search_options},
+        "search_options": {
+            key: int(result.search_options[key])
+            for key in ("dense_top_k", "bm25_top_k", "final_top_k")
+            if key in result.search_options
+        },
         "total": result.total,
         "hit_count": result.hit_count,
         "hit_rate_at_k": result.hit_rate_at_k,
@@ -147,8 +138,10 @@ def result_summary(result: EvaluationResult) -> dict[str, Any]:
     }
 
 
-def save_result(path: str | Path, result: EvaluationResult) -> None:
+def save_result(path: str | Path, result: EvaluationResult, *, inputs=None) -> None:
+    """Keep aggregate and per-question results together; never overwrite a previous run."""
     output_path = Path(path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w", encoding="utf-8") as handle:
-        json.dump(result_summary(result), handle, ensure_ascii=False, indent=2)
+    report = {"metrics": result_summary(result), "details": result.details, "inputs": inputs or {}}
+    with output_path.open("x", encoding="utf-8") as handle:
+        json.dump(report, handle, ensure_ascii=False, indent=2)

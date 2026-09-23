@@ -1,4 +1,5 @@
 """Deterministic lightweight embeddings for tests and offline smoke runs."""
+
 from __future__ import annotations
 
 import hashlib

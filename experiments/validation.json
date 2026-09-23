@@ -1,0 +1,20 @@
+{
+  "kind": "functional_validation",
+  "date": "2026-09-23",
+  "validation": {
+    "pytest_passed": 49,
+    "pytest_exit_code": 0,
+    "ruff_check": "passed",
+    "ruff_format_check": "passed",
+    "offline_demo": "passed",
+    "gradio_http_query": "passed",
+    "real_pdf_text_index_records": 3460,
+    "real_local_bge_hybrid_rerank_query": "passed",
+    "paid_api_calls": 0
+  },
+  "scope": "Automated tests, local textbook indexing, retrieval and Gradio HTTP queries",
+  "notes": [
+    "Model responses in automated tests use test doubles.",
+    "Live text and vision APIs were not called during these checks."
+  ]
+}

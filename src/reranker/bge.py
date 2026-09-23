@@ -1,26 +1,30 @@
 """BGE cross-encoder reranker."""
+
 from __future__ import annotations
 
 from dataclasses import replace
 
 from src.reranker.base import Reranker
 from src.schema import RetrievalHit
-from src.indexer.common import retrieval_text
 
 
 class BGEReranker(Reranker):
     """Lazy wrapper around sentence-transformers CrossEncoder."""
 
-    def __init__(self, model_name: str = "BAAI/bge-reranker-base", device: str | None = None) -> None:
+    def __init__(
+        self, model_name: str = "BAAI/bge-reranker-base", device: str | None = None
+    ) -> None:
         self.model_name = model_name
         self.device = None if device in {None, "auto"} else device
         self._model = None
 
-    def rerank(self, query: str, hits: list[RetrievalHit], *, top_k: int | None = None) -> list[RetrievalHit]:
+    def rerank(
+        self, query: str, hits: list[RetrievalHit], *, top_k: int | None = None
+    ) -> list[RetrievalHit]:
         if not hits:
             return []
         model = self._load_model()
-        pairs = [(query, retrieval_text(hit.evidence)) for hit in hits]
+        pairs = [(query, hit.evidence.content) for hit in hits]
         scores = model.predict(pairs)
         reranked = [
             replace(

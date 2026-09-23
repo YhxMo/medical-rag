@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(du -sh .git/lfs/incomplete)",
-      "Bash(rm -rf .git/lfs/incomplete/*)"
-    ]
-  }
-}

@@ -1,4 +1,5 @@
 """Evaluation dataset schema and IO."""
+
 from __future__ import annotations
 
 import json
@@ -39,7 +40,9 @@ def load_dataset(path: str | Path, *, reviewed_only: bool = True) -> list[Evalua
         if not isinstance(item.get("reviewed", False), bool):
             raise ValueError("reviewed must be a JSON boolean")
         labels = item.get("expected_evidence_ids", [])
-        if not isinstance(labels, list) or any(not isinstance(x, str) or not x.strip() for x in labels):
+        if not isinstance(labels, list) or any(
+            not isinstance(x, str) or not x.strip() for x in labels
+        ):
             raise ValueError("Evidence labels must be a list of nonempty strings")
         if len(labels) != len(set(labels)):
             raise ValueError("Evidence labels must be unique within each question")

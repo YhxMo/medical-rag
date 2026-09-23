@@ -1,4 +1,5 @@
 """YAML configuration loading with environment variable resolution."""
+
 from __future__ import annotations
 
 import os
@@ -8,7 +9,6 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-
 
 _ENV_PATTERN = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)\}")
 
@@ -28,13 +28,9 @@ class Settings:
             value = value[key]
         return value
 
-    @property
-    def active_chunking(self) -> str:
-        return str(self.get("active", "chunking", default="layout_heading"))
-
-    @property
-    def ocr_min_chars(self) -> int:
-        return int(self.get("vision_captioner", "ocr_text_min_chars", default=50))
+    def resolve_path(self, *keys: str, default: str) -> Path:
+        value = Path(self.get(*keys, default=default)).expanduser()
+        return value if value.is_absolute() else self.path.parent / value
 
 
 def _resolve_env(value: Any) -> Any:
@@ -48,7 +44,7 @@ def _resolve_env(value: Any) -> Any:
 
 
 def load_settings(path: str | Path) -> Settings:
-    config_path = Path(path)
+    config_path = Path(path).expanduser().resolve()
     with config_path.open("r", encoding="utf-8") as handle:
         raw = yaml.safe_load(handle) or {}
     if not isinstance(raw, dict):
