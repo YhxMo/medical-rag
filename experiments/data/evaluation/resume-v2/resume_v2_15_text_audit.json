@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states in section 5.1.4.5(a): 'For CT number accuracy: ±5 HU (Hounsefield units; for water) from the baseline value is acceptable', which directly matches the reference answer '±5 HU'. The evidence ID and page number (p145) also align with the provided excerpt and image caption."
+}

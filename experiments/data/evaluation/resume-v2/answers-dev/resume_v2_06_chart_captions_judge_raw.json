@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies 'Condition of cassettes and image plates (computed radiography only)' as the QC test with frequency 'According to the supplier’s recommendations' that appears immediately before 'AEC sensitivity' (frequency '1–3 months'). This is directly supported by Table 8 in the retrieved source (visual_11a672097c4760b738ba), where row 2.1.5 has the specified frequency and row 2.1.6 has '1–3 months'. The table layout (Section column) confirms sequential ordering. Both cited sources [1] and [2] refer to the same Table 8 content, and the answer accurately reflects the data without invention. The reference answer matches the gold expectation."
+}

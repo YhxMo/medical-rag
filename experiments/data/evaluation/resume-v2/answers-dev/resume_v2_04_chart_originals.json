@@ -1,0 +1,174 @@
+{
+  "question_id": "resume_v2_04_chart",
+  "kind": "chart",
+  "mode": "originals",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The text in section 3.1.1.3(c) explicitly states: 'Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22).' The figure caption confirms: 'FIG. 22. Simple set-up using PMMA to check the performance of AERC settings.' The visual shows transparent stacked blocks on the table, consistent with PMMA, and the question asks specifically about the test object *placed on the table or couch*, which per step (c) is the 10 cm PMMA option (the copper plate is an alternative placed on the collimator or table—but the caption and context prioritize PMMA for this setup). Thus, the reference answer '10 cm of PMMA (polymethyl methacrylate)' is directly supported by both textual and visual evidence."
+  },
+  "result": {
+    "answer": "根据图22（Figure 22）及其相关文字描述（来源1、2、以及图像下方的图注），用于测试的物体（test object）有两种可选方案：\n\n1. **材料：PMMA（有机玻璃/聚甲基丙烯酸甲酯）**，**厚度：10 cm**；  \n   或  \n2. **材料：铜（copper）**，**厚度：1 mm**。\n\n具体说明如下：\n\n- 文中步骤 (c) 明确指出：“Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22).” [1][2]\n- 图22的图注也说明：“Simple set-up using PMMA to check the performance of AERC settings.” [1]\n- 图像本身（用户提供的图22）显示：在患者台（table/couch）上放置了一叠透明块状物，与PMMA块的外观一致，且位于X射线管正下方、影像接收器前方，符合描述[1]。\n\n因此，**图22所示的设置中，测试物体为10 cm厚的PMMA块**；但标准程序允许替代方案——1 mm厚的铜板（可置于准直器或台面上）[1][2]。\n\n> 注意：虽然铜板是备选方案，但图22明确标注为“using PMMA”，且图像中可见的是PMMA块堆叠，故针对“**图22所示设置**”，答案应为 **PMMA，厚度10 cm**。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.5805992081295699,
+      "first_token_seconds": 4.263541084015742,
+      "total_seconds": 9.294835041975603,
+      "model_seconds": 7.5657657091505826,
+      "model_first_token_seconds": 0.9124788329936564
+    },
+    "calls": [
+      {
+        "seconds": 1.6630386670585722,
+        "usage": {
+          "input_tokens": 3405,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.007066,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 5.90272704209201,
+        "usage": {
+          "input_tokens": 3418,
+          "output_tokens": 353
+        },
+        "cost_upper_cny": 0.012484,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 0.9124788329936564,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "Based on the setup shown in Figure 22, what material and thickness are used as the test object placed on the table or couch?",
+    "citations": {
+      "citation_mentions": 6,
+      "valid_citation_mentions": 6,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+      "artifacts/resume-v2/images/40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_daccad1268a711b5b585",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 75,
+        "type": "image_caption",
+        "content": "3.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: 3.1.1.3. Procedure\nThe test procedure is as follows:\n(a) Set the focal spot to image receptor distance to be 100 cm or another clinically relevant distance used earlier, and set the arm holding the X ray tube and the image receptor to be vertical.\nNote: In many cases, it is more convenient to rotate the X ray tube into an upside down arrangement, with the X ray tube on the upper end of the C arm, rather than in the regular ‘under couch’ set-up.\n(b) Position the table or couch near the image receptor.\n(c) Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22).\n(d) Note or draw the exact geometry of this arrangement and measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.\nFIG. 22. Simple set-up using PMMA to check the performance of AERC settings.\nvisual_relations: Figure 22 shows a C-arm fluoroscopy system with the X-ray tube mounted on the upper part of the C-arm (upside-down configuration). A stack of PMMA blocks is placed on the patient table directly beneath the X-ray tube and in front of the image receptor. The table is positioned close to the image receptor. The C-arm is oriented vertically, aligning the X-ray tube and image receptor along a vertical axis.\nunits: cm\nmm\nuncertainties: No explicit uncertainties stated; measurements (e.g., 100 cm, 10 cm, 1 mm) are given as nominal values without tolerance ranges.\nsummary: This section describes a standardized procedure for testing Automatic Exposure Rate Control (AERC) performance using a simple phantom setup: a 10 cm PMMA block or 1 mm copper plate placed on the table/couch, with the C-arm in a vertical orientation (often upside-down for convenience). Key distances—focal spot to image receptor, focal spot to table, and focal spot to test object—must be recorded. Figure 22 illustrates the physical arrangement.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 52.28290991099567,
+          "rrf": 0.01639344262295082,
+          "weighted": 0.01639344262295082,
+          "rerank": 0.994617760181427
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 75,
+        "type": "text",
+        "content": "3.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n3.1.1.3.\t Procedure\nThe test procedure is as follows:\n(a)\t\nSet the focal spot to image receptor distance to be 100  cm or another \nclinically relevant distance used earlier, and set the arm holding the \nX ray tube and the image receptor to be vertical. \t\n\t\n\nNote: In many cases, it is more convenient to rotate the X ray tube into \nan upside down arrangement, with the X ray tube on the upper end of the \nC arm, rather than in the regular ‘under couch’ set‑up.\n(b)\t\nPosition the table or couch near the image receptor.\n(c)\t\nPlace 10 cm of PMMA on the couch or the table, or place a copper plate \nwith 1 mm thickness either on the collimator or the table (Fig. 22).\n(d)\t\nNote or draw the exact geometry of this arrangement and measure the focal \nspot–image receptor distance, the focal spot–table distance and the focal \nspot–test object distance.\n65\nFIG. 22. Simple set-up using PMMA to check the performance of AERC settings.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 43.86738569483977,
+          "rrf": 0.016129032258064516,
+          "weighted": 0.016129032258064516,
+          "rerank": 0.932207465171814
+        }
+      },
+      {
+        "id": "visual_5fb60e1524930bbc6a07",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 40,
+        "type": "image_caption",
+        "content": "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nvisible_text: FIG. 11. Set-up using an ionization chamber and a self-developing film to determine the accuracy of the kerma–area product meter.\n\n2.2.7.3. Procedure\n\nThe test procedure is as follows:\n\n(a) Remove the image receptor or cover it with a lead plate if it is not removable.\n\n(b) Place the reference instrument on the central axis of the X ray beam at least 20 cm above the couch (tabletop) to avoid the influence of backscattered radiation (for a back shielded solid state detector, this is not needed). A block of extruded polystyrene foam on a holder/stand can be used to support the instrument.\n\n(c) Collimate the X ray beam so that it covers an area of approximately 10 cm × 10 cm on the sensitive area of the reference instrument. Do not change the field size throughout this measurement.\n\n(d) Make manual exposures, irradiating the reference instrument and the KAP meter simultaneously using combinations of tube voltage and total filtration that are typically used in clinical applications.\n\nNote: In the case of fluoroscopy, the most frequently used imaging protocol should be used and noted. When automatic exposure rate control (AERC) is needed to determine the exposure parameters, it may be necessary to cover\nvisual_relations: The figure shows an X-ray tube positioned above a transparent tray containing a yellow-orange self-developing film with a grid pattern. An ionization chamber (cylindrical probe with black tip) is mounted horizontally across the film, aligned with the beam axis. The setup rests on a white tabletop/couch surface. The film appears to record the beam profile; the ionization chamber is placed within the irradiated field.\nunits: cm\ncm × cm\nuncertainties: The figure caption mentions 'accuracy of the kerma–area product meter', but no numerical uncertainty values, tolerances, or measurement uncertainties are provided in the visible text or image. The phrase 'approximately 10 cm × 10 cm' indicates a nominal field size without specified tolerance.\nsummary: This page describes a test procedure (Section 2.2.7.3) for verifying the accuracy of a kerma–area product (KAP) meter using a reference instrument (e.g., ionization chamber) and self-developing film. The setup (Fig. 11) involves collimating the X-ray beam to ~10 cm × 10 cm, positioning the reference instrument ≥20 cm above the couch to minimize backscatter, and performing simultaneous manual exposures under clinically relevant tube voltage/filtration combinations. Fluoroscopy protocols and AERC considerations are noted.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 36.75552336638289,
+          "rrf": 0.015151515151515152,
+          "weighted": 0.015151515151515152,
+          "rerank": 0.20042243599891663
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p82:84027d4c835e",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 82,
+        "type": "text",
+        "content": "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nC arm unit with ancillary couch; \n(d) C arm unit set for lateral exposures or when a couch is not available for clinical use.",
+        "scores": {
+          "dense": 0.6870201340276956,
+          "bm25": 0.0,
+          "rrf": 0.015873015873015872,
+          "weighted": 0.015873015873015872,
+          "rerank": 0.011038863100111485
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p55:8f316b8c8826",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 55,
+        "type": "text",
+        "content": "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nl resolution (bar pattern) test object is used for this test (an example \nis given in Fig. 16). \n45\nFIG. 16.\tImage of bar pattern used for the visual determination of the limiting spatial \nresolution.",
+        "scores": {
+          "dense": 0.6737331841463592,
+          "bm25": 0.0,
+          "rrf": 0.014285714285714285,
+          "weighted": 0.014285714285714285,
+          "rerank": 0.0008678201702423394
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies that Figure 22 specifically shows a PMMA setup (10 cm thick), as stated in the figure caption ('Simple set-up using PMMA...') and confirmed by the visual evidence (stack of transparent blocks on the table). It also accurately notes the alternative copper plate option (1 mm) from step (c) of the procedure, but correctly emphasizes that for *Figure 22 itself*, the material is PMMA, 10 cm. Both cited sources (id 1 and 2) contain the exact text: 'Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22)' and the figure caption 'FIG. 22. Simple set-up using PMMA...'. The visual description in source 2 ('A stack of PMMA blocks is placed on the patient table...') further supports the image-based claim. All parts of the question are addressed precisely with no unsupported claims."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 10.46897758403793,
+    "usage": {
+      "input_tokens": 6223,
+      "output_tokens": 327
+    },
+    "cost_upper_cny": 0.017678,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

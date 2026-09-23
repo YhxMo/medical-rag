@@ -1,0 +1,77 @@
+{
+  "status": "AI_proxy_evidence_review_and_answer_quality_not_human_review",
+  "human_reviewed_count": 0,
+  "source_review_count": 60,
+  "source_review_verdicts": {
+    "supported": 60,
+    "revise": 0,
+    "uncertain": 0
+  },
+  "answer_quality": {
+    "expected_count": 30,
+    "answer_success_count": 30,
+    "judged_count": 30,
+    "failed_or_unavailable_count": 0,
+    "judge_label": "same_model_AI_proxy_not_human_clinical_accuracy",
+    "strict_pass_count": 29,
+    "correctness_full_count": 29,
+    "completeness_full_count": 29,
+    "groundedness_full_count": 30,
+    "unsupported_claim_answer_count": 0,
+    "reference_disputed_count": 0,
+    "refusal_count": 0,
+    "answers_with_citations": 30,
+    "citation_mentions": 229,
+    "valid_citation_mentions": 229,
+    "citation_id_precision": 1.0,
+    "semantic_citation_assessments": 77,
+    "semantic_citation_supported": 77,
+    "semantic_citation_precision": 1.0,
+    "answer_latency_median_seconds": 2.0775,
+    "answer_latency_p95_seconds": 3.548
+  },
+  "empty_evidence_guard": {
+    "passed": 6,
+    "total": 6,
+    "api_calls": 0,
+    "scope": "deterministic_empty_input_guard_only_not_semantic_refusal_rate"
+  },
+  "answer_model": "deepseek-flash",
+  "judge_model": "deepseek-flash",
+  "same_model_judge_bias": true,
+  "original_dataset_unchanged": true,
+  "dataset_sha256": "991cf0f52ed21964915e75c73f1828caed378d2084b7387f0e555333dc60d809",
+  "index_evidence_sha256": "8f0c6d0510978595f81e8f2d90329a3c29a574c90ec1109e7dd5724645c4c8b3",
+  "api_budget_cny": 3,
+  "usage": {
+    "model_requested": "deepseek-flash",
+    "api_host": "api.deepseek.com",
+    "budget_cny": 3.0,
+    "pricing_basis": "2026-09-19 peak: input miss 2, input hit .04, output 8 CNY/million",
+    "pricing_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "reserved_upper_cny": 2.736741999999999,
+    "known_usage_peak_cost_upper_cny": 0.42099687999999996,
+    "requests_started": 82,
+    "requests_succeeded": 82,
+    "requests_failed": 0,
+    "prompt_tokens": 161973,
+    "completion_tokens": 18372,
+    "cached_prompt_tokens": 25472,
+    "usage_complete": true,
+    "errors": [],
+    "models_returned": [
+      "deepseek-flash"
+    ]
+  },
+  "assistant_spot_check": {
+    "reviewer_type": "AI_assistant_not_human_or_medical_expert",
+    "spot_checked_count": 4,
+    "model_scoring_false_positive_identified": 1,
+    "initial_vs_current_source_review_disagreements": 2,
+    "human_reviewed_count": 0,
+    "medical_expert_reviewed_count": 0,
+    "frozen_dataset_modified": false,
+    "interpretation": "29/30 is the raw same-model judge pass count; independent assistant inspection found one scoring false positive. No verified accuracy estimate is claimed."
+  },
+  "judge_schema_retries": 10
+}

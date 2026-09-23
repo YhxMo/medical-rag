@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What is the maximum allowable deviation of the MTF at 2.5, 5, and 7.5 cycles per millimetre from the baseline during routine quality control?",
+      "reference_answer": "The MTF should not differ from the baseline by more than 10%.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+      ],
+      "requires_visual": false,
+      "rationale": "This value is explicitly stated in section 4.2.11.5(b) of the text source."
+    },
+    {
+      "kind": "chart",
+      "question": "Based on FIG. 43, identify which component in the X-ray image corresponds to the modulation transfer function test tool.",
+      "reference_answer": "The diamond-shaped object with alternating bars (left side of the image) is the MTF test tool; the rectangular speckled object (right side) is the quality control test object housing it.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_3d4fbb0eddc00f97a0d6"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure shows two distinct objects; the caption identifies the right-side item as the test object containing the MTF tool, but visual inspection is required to distinguish the actual MTF pattern (the bar-patterned diamond) from its mount. The caption alone does not label which part is the tool itself—only that the tool is mounted in the object on the right. However, the image clearly shows the bar pattern on the left, and standard MTF tools are bar-patterned; thus visual analysis is necessary to correctly assign components."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the provided page image, what label appears in the top-right corner of the X-ray image (FIG. 43)?",
+      "reference_answer": "R",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_3d4fbb0eddc00f97a0d6"
+      ],
+      "requires_visual": true,
+      "rationale": "The label 'R' is visible in the upper-right corner of the X-ray image in FIG. 43; this is a visual detail not present in the text sources."
+    },
+    {
+      "kind": "behavior",
+      "question": "A technician claims that for film–screen imaging, the limiting spatial resolution must be *worse* than 12 line pairs per millimetre. Is this claim correct according to the provided material?",
+      "reference_answer": "No, the claim is incorrect. The material states the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+      ],
+      "requires_visual": false,
+      "rationale": "Section 4.2.11.5(f) explicitly states 'the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre', directly refuting the false premise that it must be worse."
+    }
+  ]
+}

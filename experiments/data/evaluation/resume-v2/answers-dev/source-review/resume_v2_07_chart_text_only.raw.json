@@ -1,0 +1,12 @@
+{
+  "original_grade_reliable": false,
+  "material_unsupported_claims": [],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "The gold reference image (Figure 12) and its caption explicitly label: arrowheads = peri-gestational haemorrhage; curved arrow = amnion; arrow without tail = embryo; arrow with tail = yolk sac.",
+  "reason": "The answer '现有教材证据不足' is incorrect: the gold reference page 97 caption and citation 1 (p.98) both explicitly identify all four labels. The model refused despite sufficient evidence, so groundedness=0 is correct, but the initial grade wrongly attributes refusal to lack of evidence when evidence exists. Thus original_grade_reliable=false."
+}

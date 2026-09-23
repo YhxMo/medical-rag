@@ -1,0 +1,11 @@
+[
+  {
+    "question_id": "resume_v2_00_chart",
+    "original_reference_answer": "The focal spot becomes progressively more elongated and tilted, with increasing asymmetry; the projected length increases and the orientation rotates relative to the tube axis.",
+    "corrected_reference_answer": "Moving from the cathode side at the bottom toward the anode side at the top, the projected focal spots become shorter in the vertical direction. Their tilt also varies with lateral position across the tube axis.",
+    "basis": "Direct inspection of the registered page image, Figure 5.7(b): bottom cathode-side shapes are longer; top anode-side shapes are shorter. Original draft reversed this direction.",
+    "image_sha256": "9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712",
+    "reviewer": "AI source inspection; not human or expert review",
+    "before_system_evaluation": true
+  }
+]

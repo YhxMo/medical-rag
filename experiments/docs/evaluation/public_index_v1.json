@@ -1,0 +1,34 @@
+{
+  "corpus_version": "public-medical-imaging-v1",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimensions": 384,
+  "store": "Qdrant local + BM25/RRF",
+  "chunk_size": 1200,
+  "chunk_overlap": 160,
+  "text_only": true,
+  "evidence_count": 2809,
+  "source_counts": {
+    "iaea_diagnostic_radiology_physics_2014.pdf": 1709,
+    "iaea_radiology_quality_control_2023.pdf": 392,
+    "msf_ultrasound_manual_2018.pdf": 708
+  },
+  "source_sha256": {
+    "iaea_diagnostic_radiology_physics_2014.pdf": "648a78e360da383461820067b0b59777165a2c12459579172e7d2dc1edc43e1a",
+    "iaea_radiology_quality_control_2023.pdf": "80edad12842bec5813509981909d1f5266ad6285601f141664c5b2fd59dbc76c",
+    "msf_ultrasound_manual_2018.pdf": "ca7fd626be45ef909aeeec1f66d5ed0b6f56894de30e0a3781b4a4b957675e9f"
+  },
+  "evidence_sha256": "8f0c6d0510978595f81e8f2d90329a3c29a574c90ec1109e7dd5724645c4c8b3",
+  "sampling_plan_sha256": "3c48feeef7f2944a0e522b47d9d0c1dbcab7d4075662a9f40bda46337cddcae4",
+  "embedding_artifact_sha256": {
+    "files_metadata.json": "d30540117f497aff38c69bd650f25eea8d6404d0f5faecd4fff249b57a79c416",
+    "52398278842ec682c6f32300af41344b1c0b0bb2.json": "d05d2a1244b5e1c0ee190100060ce9770042413570c1148ac86094ae935b8b5d",
+    "config.json": "13582bcf2effc85b7bf3d3f5532e686bc1c9ce86bb009d10f0ec33cbe92299dd",
+    "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "tokenizer_config.json": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53",
+    "model_optimized.onnx": "51f1bd0addd6e859e42c2c8021a5e5461385bb676a649f4b269aa445449f2431"
+  },
+  "build_seconds": 159.351,
+  "smoke_query_hit_count": 5,
+  "external_chat_calls": 0
+}

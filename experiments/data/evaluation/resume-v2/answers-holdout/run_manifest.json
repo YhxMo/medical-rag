@@ -1,0 +1,9 @@
+{
+  "dataset": "554ee2b3273e680c15d2a7e4b1154c687ec04f8bfe6be9c6d990caf7153c6485",
+  "index": "1aafc877f17870e21daba81953236c49d3b194fbc427690bedc537e29c9ffb5b",
+  "judge": "db7c53b3c461824e834b22bbba9e598e6f26874d40c8c4f2e7cdd19185258bfc",
+  "selection": "1c8738180ab15835c1677d2adc44de13007314239e07074bc91741a7608d585e",
+  "split": "holdout",
+  "text_model": "deepseek-flash",
+  "vision_model": "qwen3-vl-plus"
+}

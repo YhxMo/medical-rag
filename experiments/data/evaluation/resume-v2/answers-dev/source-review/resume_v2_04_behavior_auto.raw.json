@@ -1,0 +1,24 @@
+{
+  "original_grade_reliable": true,
+  "material_unsupported_claims": [
+    "床面距离无需单独记录",
+    "IAEA文件从未将床面作为标准测量基准面",
+    "来源2第82页要求测量焦点–辐射探测器而非焦点–床面距离（实际p75(d)明确要求FS–Table）"
+  ],
+  "citation_review": [
+    {
+      "id": 2,
+      "supported": false
+    },
+    {
+      "id": 3,
+      "supported": false
+    },
+    {
+      "id": 4,
+      "supported": false
+    }
+  ],
+  "visual_understanding": "图22（p65）对应AERC测试，步骤(d)明确要求测量焦点–影像接收器、焦点–床面、焦点–测试物距离；图25（p72）为剂量测量配置，辐射探测器置于phantom入口面，非床面——答案混淆两套不同规程。",
+  "reason": "答案虽拒绝跳过测量（行为正确），但核心论点‘床面非标准参考面’‘无需记录FS–Table’与gold源p75(d)直接矛盾：该处明确要求测量focal spot–table distance. 答案误将剂量测试（p82, Fig.25）的辐射探测器位置套用于AERC测试，并错误否定FS–Table必要性，导致 groundedness=0。引用[2][3][4]未支持其关键主张，反而被gold证伪。"
+}

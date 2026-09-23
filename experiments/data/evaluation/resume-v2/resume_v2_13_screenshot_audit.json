@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The screenshot (Figure 8) clearly displays the label 'MA' with the numeric value '200' directly beneath it in the control system interface. This matches the reference_answer and expected_answer of '200'. The value is visually present and not derivable from surrounding text alone, satisfying the requirement that it must be read from the image."
+}

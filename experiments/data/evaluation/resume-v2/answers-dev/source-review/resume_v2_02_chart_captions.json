@@ -1,0 +1,37 @@
+{
+  "question_id": "resume_v2_02_chart",
+  "mode": "captions",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      },
+      {
+        "id": 2,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "The gold image (Fig. 17.12) shows subfigures (c) and (d): (c) yellow profile across edge → single gradient magnitude peak; (d) green profile across tube-like structure → two gradient magnitude peaks, matching textual descriptions.",
+    "reason": "The answer correctly identifies green = tube (two peaks), yellow = edge (single peak), citing sources [1] and [2] which explicitly state: '(c) plot across edge (yellow)', '(d) plot across tube-like structure (green)', and describe one vs. two maxima. The visual in the gold reference confirms this. No unsupported claims; all key assertions are directly grounded in provided evidence.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 7.6805492080002296,
+    "usage": {
+      "input_tokens": 4364,
+      "output_tokens": 213
+    },
+    "cost_upper_cny": 0.012136,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

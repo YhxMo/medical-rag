@@ -1,0 +1,1297 @@
+{
+  "version": "resume-v2",
+  "original_evidence_sha256": "8f0c6d0510978595f81e8f2d90329a3c29a574c90ec1109e7dd5724645c4c8b3",
+  "source_sha256": {
+    "iaea_diagnostic_radiology_physics_2014.pdf": "648a78e360da383461820067b0b59777165a2c12459579172e7d2dc1edc43e1a",
+    "iaea_radiology_quality_control_2023.pdf": "80edad12842bec5813509981909d1f5266ad6285601f141664c5b2fd59dbc76c",
+    "msf_ultrasound_manual_2018.pdf": "ca7fd626be45ef909aeeec1f66d5ed0b6f56894de30e0a3781b4a4b957675e9f"
+  },
+  "text_count": 2809,
+  "visual_pages": [
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p71",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 71,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/f34b70af26885d310a3a657089a48aedafa6ecd31c3476917bdcf338d7d79db6.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.4.\t INTERACTIONS OF ELECTRONS WITH MATTER"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p71"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p127",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 127,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/9d530963818d50733dcdfd17e1fd6fdf63ced370b402890574e6967c4396bb3c.png",
+        "artifacts/resume-v2/images/fa2b662070e38d9d7102d025d1c70245d0ad627d1f70dccf2345ffd1e8dbbd66.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t IMAGE THEORY FUNDAMENTALS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p127"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 140,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+        "artifacts/resume-v2/images/e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t IMAGE THEORY FUNDAMENTALS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p140"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p161",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 161,
+      "split": "holdout",
+      "kind": "table",
+      "image_paths": [
+        "artifacts/resume-v2/images/f7117fcb427790d1528862f04baae66a38769483658ffa83436242e3c7315250.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "6.3.\t SCATTERED RADIATION IN PROJECTION RADIOGRAPHY"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p161"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p196",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 196,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/f0fe5879438bc561f296fa839dbfcf03e69af65adfa475596c036972a34b4db8.png",
+        "artifacts/resume-v2/images/35a735fe5b0f45d45a1891b8aef21fb14df43d7a65617aadd574414662ea8b8d.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p196"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p270",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 270,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/2994283cee5d6d7e1bd2e631cef151f93677ff71319b133435ad4650446ca2fe.png",
+        "artifacts/resume-v2/images/fa1a0c50967b8758bfc8f0addca1d202601e0096b772c60ec0d140167cf589aa.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p270"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p309",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 309,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/1f0d18b52daa2f69947035071cbf159bf85a1980a7a2168ec7d83a40f59bb2b6.png",
+        "artifacts/resume-v2/images/a7f8bc2ba4ac98786dccd7cd5ef7311b557056ad53faacf7ed85ad701f12539e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p309"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p321",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 321,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/8eb4e1f6cea67b64a83dbbac76decb1c64cf89831fa887884e10e1f80b24032e.png",
+        "artifacts/resume-v2/images/4c61b5129f064610fa3561c862b45c6f3e0e02928354760d124e29c5af2117ec.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p321"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p328",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 328,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/657c28ae2d77e3a3ca2bd1621cafa671024050bba8d8df535ace93c25ecb1dd2.png",
+        "artifacts/resume-v2/images/a976513ccaa46ad6d4879a253b6afc3a9a15d33e7d53d035955c54626b07c244.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p328"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 339,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+        "artifacts/resume-v2/images/591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p339"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p345",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 345,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/4ae2fb634fd8cbdcfc8d7e8cd44bf679d39e1a0a5e166b14a51ad11e495f1ba5.png",
+        "artifacts/resume-v2/images/998b96e2e4e619947db9a1c4d7cc09ac7253e996c6440e74496404c7318f968f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p345"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p403",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 403,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/5cb33c17834cd25bdf50a11d71982be166830ee11871d0d6ad3616a70e4b254e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p403"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p415",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 415,
+      "split": "dev",
+      "kind": "table",
+      "image_paths": [
+        "artifacts/resume-v2/images/3d4990cfe0d6fa376300b89c91352dbbca56a2b06283ee28dd376e6b17d2b8e8.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p415"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p451",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 451,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/8e4c85122d21344bc525c9e4b2bb530004b29498d6a67ebcffa7dd4a1471ba23.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p451"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p456",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 456,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/4af5e6ac343d0929912af020584f505564b72a0f02e6ebaf7662bdc32e66b98e.png",
+        "artifacts/resume-v2/images/d59bf7c4096e2fa4710cd960911058bb837e8f18856eb40664a42094231b4be1.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p456"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p491",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 491,
+      "split": "holdout",
+      "kind": "table",
+      "image_paths": [
+        "artifacts/resume-v2/images/79010cab8712f87a9d82799cfc82ca507f0aef55cdef8ffb76564b0a5e64015a.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p491"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p544",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 544,
+      "split": "dev",
+      "kind": "table",
+      "image_paths": [
+        "artifacts/resume-v2/images/0966870d4167ce2bb57b169dd8d2c9ea0dd5492fc83e59a7599ab51ce61a65e3.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p544"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p556",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 556,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/54aa49aba5ae33491f8adfcb902bdb22c679c46ba8b2c8c98d25c2a87f73ebf3.png",
+        "artifacts/resume-v2/images/dffa23833c2ab289cf4602afbf878e54c47efaa67fade8125626482cee75a348.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p556"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p595",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 595,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/670a7370f2894f58c3d21ea66b566ed67a8278c33d9413ecd8fd5e538eb71c89.png",
+        "artifacts/resume-v2/images/843e8e13b2f359bf4da977f0541400dae3cfea34e033b4e05c091ae93dd0a961.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p595"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p607",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 607,
+      "split": "holdout",
+      "kind": "table",
+      "image_paths": [
+        "artifacts/resume-v2/images/eaf307e58d36bd62c4fb340741f764eab844f2ae9101e21f9f48e117289fc364.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p607"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p17",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 17,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+        "artifacts/resume-v2/images/9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p17"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p23",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 23,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/62ff776b69ad331d25886af93d015ef47dc9be515894e5fe48c120375a2aef34.png",
+        "artifacts/resume-v2/images/e407f7656a389a6c4b507434933de66cf64e803804fc9fc37af061a4c2bdef49.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p23"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p33",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 33,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/275b2d18781b2327722b3444d2563fcc807899ccf5de2462d1b0729a6fbe7c2c.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p33"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p40",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 40,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb.png",
+        "artifacts/resume-v2/images/62d9e0dc91d4435fd0c1e390612a3b7130c86e3af2c7f2ec576c042603dad214.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p40"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p52",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 52,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/c412cc73708969938d227e921cee0279bae1a2646eaa471b619169a7ffbfd95a.png",
+        "artifacts/resume-v2/images/146fbee3bc27fafc7d829c11e8f92206100a823417e7454c8496ff904f68c4ff.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p52"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p58",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 58,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/3adfd9e678164a29141035465c82aedd41c9f032e696dfdaf5d38d4060f18bfb.png",
+        "artifacts/resume-v2/images/eb445d454355edb886ab97cac0b408625f6e49198dcfbd83a0d4ba391171ccb4.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p58"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p67",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 67,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/328fd4e75c86b0427e471f77f1f72ebb415e8e9f996168b23baef65b583f0f78.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p67"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p75",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 75,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+        "artifacts/resume-v2/images/d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "3.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p75"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p81",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 81,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/e8478443aa4f8d2cb6fb81d11a7e99f4365fc76ee390f0db3019e2fd5b139755.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p81"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p91",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 91,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/dae3fc53d9f894c228dbbfc4d993cf66cf0ebd2b099c6ecd7ece49a717a3248e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p91"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p101",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 101,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/74c3bc503b8c11ad90f73aad2e70ca147ac4783443423ea334b81b41c4a1f3bb.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p101"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p109",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 109,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/84ea8333ad7f14738d3d4c6026b7a2336625b6eb4f60dd8234b0013581e0ad1c.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p109"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p120",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 120,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/029b50c604c664a9b141831f6cac9b120a172f8318404246917a5f256cb28960.png",
+        "artifacts/resume-v2/images/e2955bfa7e60ea0786070beb34f32157464a2146f90a7bb7c5ebe2876697fb03.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p120"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p128",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 128,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+        "artifacts/resume-v2/images/4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p128"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p135",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 135,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/380762e7c5951ac0974b3b58b2f0230ee6195a031683ca30e310bf409d20ebf1.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p135"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p152",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 152,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/da6a11313571bed2cdfa75359ea491904eda3b5a8a63a3b1e05f004f3c1c368f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "5.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p152"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p161",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 161,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/bc8f10bef3b1aedcafdc1881e7780c427662f6ce86a811255c57b6aa6db07813.png",
+        "artifacts/resume-v2/images/f14418ac59ed5336513074b1c8a32e9662b2571cae8d80cca71755047665863c.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "5.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p161"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p170",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 170,
+      "split": "holdout",
+      "kind": "table",
+      "image_paths": [
+        "artifacts/resume-v2/images/030af36da7eb8db50f6fe344b0f5af81225e7623c8903c1198d13cbc91531c7d.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "6.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p170"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p187",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 187,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/268844feba097999862f5a70c8f03d6f20e1cb2a7df8e714442c95bb30f65067.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p187"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p197",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 197,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/c2fec31562966477753ebe81871024fd81cc0dd39738b7dad63ebbe2ca0ad815.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p197"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p27",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 27,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/81104f150be75aca3c54a8951fad9e87f8a949973ee91257b43b6ef4d50a335d.png",
+        "artifacts/resume-v2/images/4ae302fa229f61be2f8acf218810dd57501a4125d021a7518f2564bf1a40ce2e.png",
+        "artifacts/resume-v2/images/452a9c12c4e0595ddfa585424ca54d43c5a002f841e7bcd71c9851003399bb4d.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "2. Ultrasound equipment and basics of imaging",
+          "2.3 Ultrasound machine basics"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p27"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p43",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 43,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/1a6472c751cbb51d27fdc41d4005877a4768a7c10de41d3d127c835191a4b017.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "2. Ultrasound equipment and basics of imaging",
+          "2.4 Scanning basics"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p43"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p73",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 73,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/54fc74da7beba6b2c669965b6ddae9af75c695072659c453f46c66fbeab669bb.png",
+        "artifacts/resume-v2/images/709d6d4d0459d7f7f0f9b88ff7f2f16d9acc016da971830f0b922b76d98345c8.png",
+        "artifacts/resume-v2/images/27b721e4d148b68ec272e4a740474d233176b13d8235e16110f844c7e23ba935.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "7. Gynaecology",
+          "7.3 Ovaries and ovarian tubes"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p73"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p96",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 96,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/6a84115197db58d67cb8d41e364e669df1b10c38e818fa4e65a4791a7d9b40e9.png",
+        "artifacts/resume-v2/images/80a0df9a370eb26f58828c63dcf4c8d901cce9a75588ad182442f40728079d0f.png",
+        "artifacts/resume-v2/images/f3eac64f41ca4f644389fa36afe2d71b03126bac4b87a6f5dc184f745461293f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "8. Obstetrics early ultrasound – first trimester",
+          "8.3 Abnormal early pregnancy"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p96"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p108",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 108,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/71b3b72b11e95e4ff5ccc4fe4f71fb2f11721d9bda5107d1c81b51172931ecb4.png",
+        "artifacts/resume-v2/images/bfab33f832a5cf888f5c4f06b69320e3ce8a6fef41e511234962a234fe5cc273.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "9. 2nd / 3rd trimester obstetrics ultrasound",
+          "9.5 Gestational age"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p108"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p118",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 118,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/cc5ac6e99dcabff91ab44ec6ea5759a99539fa7539f03e5d8f19e74b7b13082a.png",
+        "artifacts/resume-v2/images/76999c23d4a4c1651d213f40745a71111890467bd4fc745a8571ad092a6b1fca.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "9. 2nd / 3rd trimester obstetrics ultrasound",
+          "9.8 Cervix"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p118"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p123",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 123,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/c16dba13b443d1a807be5427149ea11bbd8e1ca1485eed3e31d2508f7c0536ce.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "10. Ultrasound in emergencies – the extended ‘FAST’ scan",
+          "10.2 Right upper quadrant (RUQ) view"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p123"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p131",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 131,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/e57e22098513ef9104684a2f2546c1b060f03511e6faeccb39a5d8da5855f293.png",
+        "artifacts/resume-v2/images/886520818998cafcd7ffdbf097d7af5c8f298ac6dbc4d431d0aa03e5e38b8fb3.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "10. Ultrasound in emergencies – the extended ‘FAST’ scan",
+          "10.5 Pelvic view"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p131"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p149",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 149,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/4a2747f6e58b58aa5a1efe157a6e96b9a4495683b5d1c72e176f4bf25f554853.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "11. Cardiac",
+          "11.3 Pathology",
+          "11.3.6 Volume status"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p149"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p174",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 174,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/b724eac31ef1137dec1f16b6490e6d1f1f645cc875c7235b1b27d3c6e0a7c48b.png",
+        "artifacts/resume-v2/images/f07ec8d4a4d78e0e522c247916101214b4670cff782adfc81d4e157121e2869b.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "14. Upper abdominal scan",
+          "14.2 Liver",
+          "14.2.2 Liver abnormalities"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p174"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p190",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 190,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/3f1fcace5a0b235d41060b980fdd4815d46f551082c5c1600c29a04a8138e6d2.png",
+        "artifacts/resume-v2/images/f028f6ee3bc288c0cbe7268f729cca850eeb272c166f1635f67a1b0223cad69a.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "14. Upper abdominal scan",
+          "14.6 Free fluid"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p190"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p202",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 202,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/8c0a975ec1ea7f2232a9f9dfbe2fad9b2187b3a0883d3b27683a941e0d45f07b.png",
+        "artifacts/resume-v2/images/df3766107f691ace63fd3fa5cfc696b6dc24b18562a9a83d5a010ed9e586f335.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "15. Urinary tract",
+          "15.3 Bladder",
+          "15.3.1 Normal appearance of the bladder"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p202"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p211",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 211,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/a388e8b11f4010ce5053f49a61f80165c84b687f1c0a3776a97215f1ddc04e77.png",
+        "artifacts/resume-v2/images/5779eba94717bcff8fd137848399200137034cfe58c71593732fab369ea070b7.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "16. Ultrasound of the right iliac fossa and lower abdomen",
+          "16.3 Inflammatory bowel disease"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p211"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p218",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 218,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/9fdbe92ad4871560b0cafb7791fb8ed5dcab5ebcc13b68b3aec3c129352fad1a.png",
+        "artifacts/resume-v2/images/1bdb765c15ba1bb3b9ec687a3aa94ae77f188b3edbdab3493e1bc533a533b175.png",
+        "artifacts/resume-v2/images/898665846d94104ecb3eccba41587f7a46c59142626192013075e44655275747.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "17. Bones",
+          "17.3 Fractures"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p218"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p246",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 246,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/07e1bc84cfd630fbe829027f53b0ef98c81ee4b4a8062ff6fbb9b9286cf0c543.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "20. Deep vein thrombosis",
+          "20.2 Diagnosis of DVT"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p246"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p258",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 258,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/0ecc9cd0b4cfc2ea825de2c304fbe376d0a7be79ea04d293207aeec2519ffe12.png",
+        "artifacts/resume-v2/images/032b925058658889e968fd0ed1527f63cf7c73c70c25c81bbb268c0da33d93ea.png",
+        "artifacts/resume-v2/images/caa7cd5a5079b23635d11467158d5b4c3d91661767e8a000a88c93b1fa0672ba.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "22. Neonatal head",
+          "22.1 Scanning technique – neonatal head"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p258"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p276",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 276,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "artifacts/resume-v2/images/90ee472a22892d1bc0093c0023442a015bcd6f397a9ce037f9727c7a7e85f0bb.png",
+        "artifacts/resume-v2/images/f3ba27fb705513352a81aa993e74a280cf5340d8b369d81a8d95d46b930429e2.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "23. Paediatric chest ultrasound",
+          "23.2 Normal findings – paediatric chest"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p276"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p288",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 288,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "artifacts/resume-v2/images/de839901faad3919db6464797c420717be28568b5f63ebf85180a5aecdd63aa7.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "24. Mediastinal ultrasound in children",
+          "24.1 Scanning technique - mediastinal ultrasound"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p288"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p300",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 300,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/4a5be53db989038de242ad73f94fe2bdcd878738cc9194715b7087e5ce2b2919.png",
+        "artifacts/resume-v2/images/b2bb990e5911ef736ecef282243a4571d36007487cc2c8ce311a1f5a5fc71af5.png",
+        "artifacts/resume-v2/images/16686e47305dd4ef9c9af0239e79abbd02c391986deb242f1d62168f3097e2ce.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "25. Paediatric urinary system",
+          "25.2 Bladder and ureters",
+          "25.2.2 Bladder abnormalities"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p300"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p307",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 307,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "artifacts/resume-v2/images/cb19513cbf57689fdb6313720497f2db771066f8996a42eb31915e3bdd4b57b6.png",
+        "artifacts/resume-v2/images/61aa0fcb7b8f7d0a1bf1936996c32245269cad169a8a4e699f58f27a1f5a271c.png",
+        "artifacts/resume-v2/images/2b8f7df9905dbdc394046b15786be28a7f86200f4165de1464aad051af1742d6.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "25. Paediatric urinary system",
+          "25.3 Kidneys",
+          "25.3.3 Congenital anomalies: duplex, ectopic, horseshoe Kidney"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Figure/table marker, >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p307"
+    }
+  ],
+  "image_registry": {
+    "artifacts/resume-v2/images/f34b70af26885d310a3a657089a48aedafa6ecd31c3476917bdcf338d7d79db6.png": "f34b70af26885d310a3a657089a48aedafa6ecd31c3476917bdcf338d7d79db6",
+    "artifacts/resume-v2/images/9d530963818d50733dcdfd17e1fd6fdf63ced370b402890574e6967c4396bb3c.png": "9d530963818d50733dcdfd17e1fd6fdf63ced370b402890574e6967c4396bb3c",
+    "artifacts/resume-v2/images/fa2b662070e38d9d7102d025d1c70245d0ad627d1f70dccf2345ffd1e8dbbd66.png": "fa2b662070e38d9d7102d025d1c70245d0ad627d1f70dccf2345ffd1e8dbbd66",
+    "artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png": "1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63",
+    "artifacts/resume-v2/images/e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad.png": "e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad",
+    "artifacts/resume-v2/images/f7117fcb427790d1528862f04baae66a38769483658ffa83436242e3c7315250.png": "f7117fcb427790d1528862f04baae66a38769483658ffa83436242e3c7315250",
+    "artifacts/resume-v2/images/f0fe5879438bc561f296fa839dbfcf03e69af65adfa475596c036972a34b4db8.png": "f0fe5879438bc561f296fa839dbfcf03e69af65adfa475596c036972a34b4db8",
+    "artifacts/resume-v2/images/35a735fe5b0f45d45a1891b8aef21fb14df43d7a65617aadd574414662ea8b8d.png": "35a735fe5b0f45d45a1891b8aef21fb14df43d7a65617aadd574414662ea8b8d",
+    "artifacts/resume-v2/images/2994283cee5d6d7e1bd2e631cef151f93677ff71319b133435ad4650446ca2fe.png": "2994283cee5d6d7e1bd2e631cef151f93677ff71319b133435ad4650446ca2fe",
+    "artifacts/resume-v2/images/fa1a0c50967b8758bfc8f0addca1d202601e0096b772c60ec0d140167cf589aa.png": "fa1a0c50967b8758bfc8f0addca1d202601e0096b772c60ec0d140167cf589aa",
+    "artifacts/resume-v2/images/1f0d18b52daa2f69947035071cbf159bf85a1980a7a2168ec7d83a40f59bb2b6.png": "1f0d18b52daa2f69947035071cbf159bf85a1980a7a2168ec7d83a40f59bb2b6",
+    "artifacts/resume-v2/images/a7f8bc2ba4ac98786dccd7cd5ef7311b557056ad53faacf7ed85ad701f12539e.png": "a7f8bc2ba4ac98786dccd7cd5ef7311b557056ad53faacf7ed85ad701f12539e",
+    "artifacts/resume-v2/images/8eb4e1f6cea67b64a83dbbac76decb1c64cf89831fa887884e10e1f80b24032e.png": "8eb4e1f6cea67b64a83dbbac76decb1c64cf89831fa887884e10e1f80b24032e",
+    "artifacts/resume-v2/images/4c61b5129f064610fa3561c862b45c6f3e0e02928354760d124e29c5af2117ec.png": "4c61b5129f064610fa3561c862b45c6f3e0e02928354760d124e29c5af2117ec",
+    "artifacts/resume-v2/images/657c28ae2d77e3a3ca2bd1621cafa671024050bba8d8df535ace93c25ecb1dd2.png": "657c28ae2d77e3a3ca2bd1621cafa671024050bba8d8df535ace93c25ecb1dd2",
+    "artifacts/resume-v2/images/a976513ccaa46ad6d4879a253b6afc3a9a15d33e7d53d035955c54626b07c244.png": "a976513ccaa46ad6d4879a253b6afc3a9a15d33e7d53d035955c54626b07c244",
+    "artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png": "fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d",
+    "artifacts/resume-v2/images/591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee.png": "591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee",
+    "artifacts/resume-v2/images/4ae2fb634fd8cbdcfc8d7e8cd44bf679d39e1a0a5e166b14a51ad11e495f1ba5.png": "4ae2fb634fd8cbdcfc8d7e8cd44bf679d39e1a0a5e166b14a51ad11e495f1ba5",
+    "artifacts/resume-v2/images/998b96e2e4e619947db9a1c4d7cc09ac7253e996c6440e74496404c7318f968f.png": "998b96e2e4e619947db9a1c4d7cc09ac7253e996c6440e74496404c7318f968f",
+    "artifacts/resume-v2/images/5cb33c17834cd25bdf50a11d71982be166830ee11871d0d6ad3616a70e4b254e.png": "5cb33c17834cd25bdf50a11d71982be166830ee11871d0d6ad3616a70e4b254e",
+    "artifacts/resume-v2/images/3d4990cfe0d6fa376300b89c91352dbbca56a2b06283ee28dd376e6b17d2b8e8.png": "3d4990cfe0d6fa376300b89c91352dbbca56a2b06283ee28dd376e6b17d2b8e8",
+    "artifacts/resume-v2/images/8e4c85122d21344bc525c9e4b2bb530004b29498d6a67ebcffa7dd4a1471ba23.png": "8e4c85122d21344bc525c9e4b2bb530004b29498d6a67ebcffa7dd4a1471ba23",
+    "artifacts/resume-v2/images/4af5e6ac343d0929912af020584f505564b72a0f02e6ebaf7662bdc32e66b98e.png": "4af5e6ac343d0929912af020584f505564b72a0f02e6ebaf7662bdc32e66b98e",
+    "artifacts/resume-v2/images/d59bf7c4096e2fa4710cd960911058bb837e8f18856eb40664a42094231b4be1.png": "d59bf7c4096e2fa4710cd960911058bb837e8f18856eb40664a42094231b4be1",
+    "artifacts/resume-v2/images/79010cab8712f87a9d82799cfc82ca507f0aef55cdef8ffb76564b0a5e64015a.png": "79010cab8712f87a9d82799cfc82ca507f0aef55cdef8ffb76564b0a5e64015a",
+    "artifacts/resume-v2/images/0966870d4167ce2bb57b169dd8d2c9ea0dd5492fc83e59a7599ab51ce61a65e3.png": "0966870d4167ce2bb57b169dd8d2c9ea0dd5492fc83e59a7599ab51ce61a65e3",
+    "artifacts/resume-v2/images/54aa49aba5ae33491f8adfcb902bdb22c679c46ba8b2c8c98d25c2a87f73ebf3.png": "54aa49aba5ae33491f8adfcb902bdb22c679c46ba8b2c8c98d25c2a87f73ebf3",
+    "artifacts/resume-v2/images/dffa23833c2ab289cf4602afbf878e54c47efaa67fade8125626482cee75a348.png": "dffa23833c2ab289cf4602afbf878e54c47efaa67fade8125626482cee75a348",
+    "artifacts/resume-v2/images/670a7370f2894f58c3d21ea66b566ed67a8278c33d9413ecd8fd5e538eb71c89.png": "670a7370f2894f58c3d21ea66b566ed67a8278c33d9413ecd8fd5e538eb71c89",
+    "artifacts/resume-v2/images/843e8e13b2f359bf4da977f0541400dae3cfea34e033b4e05c091ae93dd0a961.png": "843e8e13b2f359bf4da977f0541400dae3cfea34e033b4e05c091ae93dd0a961",
+    "artifacts/resume-v2/images/eaf307e58d36bd62c4fb340741f764eab844f2ae9101e21f9f48e117289fc364.png": "eaf307e58d36bd62c4fb340741f764eab844f2ae9101e21f9f48e117289fc364",
+    "artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png": "438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f",
+    "artifacts/resume-v2/images/9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f.png": "9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f",
+    "artifacts/resume-v2/images/62ff776b69ad331d25886af93d015ef47dc9be515894e5fe48c120375a2aef34.png": "62ff776b69ad331d25886af93d015ef47dc9be515894e5fe48c120375a2aef34",
+    "artifacts/resume-v2/images/e407f7656a389a6c4b507434933de66cf64e803804fc9fc37af061a4c2bdef49.png": "e407f7656a389a6c4b507434933de66cf64e803804fc9fc37af061a4c2bdef49",
+    "artifacts/resume-v2/images/275b2d18781b2327722b3444d2563fcc807899ccf5de2462d1b0729a6fbe7c2c.png": "275b2d18781b2327722b3444d2563fcc807899ccf5de2462d1b0729a6fbe7c2c",
+    "artifacts/resume-v2/images/40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb.png": "40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb",
+    "artifacts/resume-v2/images/62d9e0dc91d4435fd0c1e390612a3b7130c86e3af2c7f2ec576c042603dad214.png": "62d9e0dc91d4435fd0c1e390612a3b7130c86e3af2c7f2ec576c042603dad214",
+    "artifacts/resume-v2/images/c412cc73708969938d227e921cee0279bae1a2646eaa471b619169a7ffbfd95a.png": "c412cc73708969938d227e921cee0279bae1a2646eaa471b619169a7ffbfd95a",
+    "artifacts/resume-v2/images/146fbee3bc27fafc7d829c11e8f92206100a823417e7454c8496ff904f68c4ff.png": "146fbee3bc27fafc7d829c11e8f92206100a823417e7454c8496ff904f68c4ff",
+    "artifacts/resume-v2/images/3adfd9e678164a29141035465c82aedd41c9f032e696dfdaf5d38d4060f18bfb.png": "3adfd9e678164a29141035465c82aedd41c9f032e696dfdaf5d38d4060f18bfb",
+    "artifacts/resume-v2/images/eb445d454355edb886ab97cac0b408625f6e49198dcfbd83a0d4ba391171ccb4.png": "eb445d454355edb886ab97cac0b408625f6e49198dcfbd83a0d4ba391171ccb4",
+    "artifacts/resume-v2/images/328fd4e75c86b0427e471f77f1f72ebb415e8e9f996168b23baef65b583f0f78.png": "328fd4e75c86b0427e471f77f1f72ebb415e8e9f996168b23baef65b583f0f78",
+    "artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png": "7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e",
+    "artifacts/resume-v2/images/d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3.png": "d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3",
+    "artifacts/resume-v2/images/e8478443aa4f8d2cb6fb81d11a7e99f4365fc76ee390f0db3019e2fd5b139755.png": "e8478443aa4f8d2cb6fb81d11a7e99f4365fc76ee390f0db3019e2fd5b139755",
+    "artifacts/resume-v2/images/dae3fc53d9f894c228dbbfc4d993cf66cf0ebd2b099c6ecd7ece49a717a3248e.png": "dae3fc53d9f894c228dbbfc4d993cf66cf0ebd2b099c6ecd7ece49a717a3248e",
+    "artifacts/resume-v2/images/74c3bc503b8c11ad90f73aad2e70ca147ac4783443423ea334b81b41c4a1f3bb.png": "74c3bc503b8c11ad90f73aad2e70ca147ac4783443423ea334b81b41c4a1f3bb",
+    "artifacts/resume-v2/images/84ea8333ad7f14738d3d4c6026b7a2336625b6eb4f60dd8234b0013581e0ad1c.png": "84ea8333ad7f14738d3d4c6026b7a2336625b6eb4f60dd8234b0013581e0ad1c",
+    "artifacts/resume-v2/images/029b50c604c664a9b141831f6cac9b120a172f8318404246917a5f256cb28960.png": "029b50c604c664a9b141831f6cac9b120a172f8318404246917a5f256cb28960",
+    "artifacts/resume-v2/images/e2955bfa7e60ea0786070beb34f32157464a2146f90a7bb7c5ebe2876697fb03.png": "e2955bfa7e60ea0786070beb34f32157464a2146f90a7bb7c5ebe2876697fb03",
+    "artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png": "4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21",
+    "artifacts/resume-v2/images/4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e.png": "4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e",
+    "artifacts/resume-v2/images/380762e7c5951ac0974b3b58b2f0230ee6195a031683ca30e310bf409d20ebf1.png": "380762e7c5951ac0974b3b58b2f0230ee6195a031683ca30e310bf409d20ebf1",
+    "artifacts/resume-v2/images/da6a11313571bed2cdfa75359ea491904eda3b5a8a63a3b1e05f004f3c1c368f.png": "da6a11313571bed2cdfa75359ea491904eda3b5a8a63a3b1e05f004f3c1c368f",
+    "artifacts/resume-v2/images/bc8f10bef3b1aedcafdc1881e7780c427662f6ce86a811255c57b6aa6db07813.png": "bc8f10bef3b1aedcafdc1881e7780c427662f6ce86a811255c57b6aa6db07813",
+    "artifacts/resume-v2/images/f14418ac59ed5336513074b1c8a32e9662b2571cae8d80cca71755047665863c.png": "f14418ac59ed5336513074b1c8a32e9662b2571cae8d80cca71755047665863c",
+    "artifacts/resume-v2/images/030af36da7eb8db50f6fe344b0f5af81225e7623c8903c1198d13cbc91531c7d.png": "030af36da7eb8db50f6fe344b0f5af81225e7623c8903c1198d13cbc91531c7d",
+    "artifacts/resume-v2/images/268844feba097999862f5a70c8f03d6f20e1cb2a7df8e714442c95bb30f65067.png": "268844feba097999862f5a70c8f03d6f20e1cb2a7df8e714442c95bb30f65067",
+    "artifacts/resume-v2/images/c2fec31562966477753ebe81871024fd81cc0dd39738b7dad63ebbe2ca0ad815.png": "c2fec31562966477753ebe81871024fd81cc0dd39738b7dad63ebbe2ca0ad815",
+    "artifacts/resume-v2/images/81104f150be75aca3c54a8951fad9e87f8a949973ee91257b43b6ef4d50a335d.png": "81104f150be75aca3c54a8951fad9e87f8a949973ee91257b43b6ef4d50a335d",
+    "artifacts/resume-v2/images/4ae302fa229f61be2f8acf218810dd57501a4125d021a7518f2564bf1a40ce2e.png": "4ae302fa229f61be2f8acf218810dd57501a4125d021a7518f2564bf1a40ce2e",
+    "artifacts/resume-v2/images/452a9c12c4e0595ddfa585424ca54d43c5a002f841e7bcd71c9851003399bb4d.png": "452a9c12c4e0595ddfa585424ca54d43c5a002f841e7bcd71c9851003399bb4d",
+    "artifacts/resume-v2/images/1a6472c751cbb51d27fdc41d4005877a4768a7c10de41d3d127c835191a4b017.png": "1a6472c751cbb51d27fdc41d4005877a4768a7c10de41d3d127c835191a4b017",
+    "artifacts/resume-v2/images/54fc74da7beba6b2c669965b6ddae9af75c695072659c453f46c66fbeab669bb.png": "54fc74da7beba6b2c669965b6ddae9af75c695072659c453f46c66fbeab669bb",
+    "artifacts/resume-v2/images/709d6d4d0459d7f7f0f9b88ff7f2f16d9acc016da971830f0b922b76d98345c8.png": "709d6d4d0459d7f7f0f9b88ff7f2f16d9acc016da971830f0b922b76d98345c8",
+    "artifacts/resume-v2/images/27b721e4d148b68ec272e4a740474d233176b13d8235e16110f844c7e23ba935.png": "27b721e4d148b68ec272e4a740474d233176b13d8235e16110f844c7e23ba935",
+    "artifacts/resume-v2/images/6a84115197db58d67cb8d41e364e669df1b10c38e818fa4e65a4791a7d9b40e9.png": "6a84115197db58d67cb8d41e364e669df1b10c38e818fa4e65a4791a7d9b40e9",
+    "artifacts/resume-v2/images/80a0df9a370eb26f58828c63dcf4c8d901cce9a75588ad182442f40728079d0f.png": "80a0df9a370eb26f58828c63dcf4c8d901cce9a75588ad182442f40728079d0f",
+    "artifacts/resume-v2/images/f3eac64f41ca4f644389fa36afe2d71b03126bac4b87a6f5dc184f745461293f.png": "f3eac64f41ca4f644389fa36afe2d71b03126bac4b87a6f5dc184f745461293f",
+    "artifacts/resume-v2/images/71b3b72b11e95e4ff5ccc4fe4f71fb2f11721d9bda5107d1c81b51172931ecb4.png": "71b3b72b11e95e4ff5ccc4fe4f71fb2f11721d9bda5107d1c81b51172931ecb4",
+    "artifacts/resume-v2/images/bfab33f832a5cf888f5c4f06b69320e3ce8a6fef41e511234962a234fe5cc273.png": "bfab33f832a5cf888f5c4f06b69320e3ce8a6fef41e511234962a234fe5cc273",
+    "artifacts/resume-v2/images/cc5ac6e99dcabff91ab44ec6ea5759a99539fa7539f03e5d8f19e74b7b13082a.png": "cc5ac6e99dcabff91ab44ec6ea5759a99539fa7539f03e5d8f19e74b7b13082a",
+    "artifacts/resume-v2/images/76999c23d4a4c1651d213f40745a71111890467bd4fc745a8571ad092a6b1fca.png": "76999c23d4a4c1651d213f40745a71111890467bd4fc745a8571ad092a6b1fca",
+    "artifacts/resume-v2/images/c16dba13b443d1a807be5427149ea11bbd8e1ca1485eed3e31d2508f7c0536ce.png": "c16dba13b443d1a807be5427149ea11bbd8e1ca1485eed3e31d2508f7c0536ce",
+    "artifacts/resume-v2/images/e57e22098513ef9104684a2f2546c1b060f03511e6faeccb39a5d8da5855f293.png": "e57e22098513ef9104684a2f2546c1b060f03511e6faeccb39a5d8da5855f293",
+    "artifacts/resume-v2/images/886520818998cafcd7ffdbf097d7af5c8f298ac6dbc4d431d0aa03e5e38b8fb3.png": "886520818998cafcd7ffdbf097d7af5c8f298ac6dbc4d431d0aa03e5e38b8fb3",
+    "artifacts/resume-v2/images/4a2747f6e58b58aa5a1efe157a6e96b9a4495683b5d1c72e176f4bf25f554853.png": "4a2747f6e58b58aa5a1efe157a6e96b9a4495683b5d1c72e176f4bf25f554853",
+    "artifacts/resume-v2/images/b724eac31ef1137dec1f16b6490e6d1f1f645cc875c7235b1b27d3c6e0a7c48b.png": "b724eac31ef1137dec1f16b6490e6d1f1f645cc875c7235b1b27d3c6e0a7c48b",
+    "artifacts/resume-v2/images/f07ec8d4a4d78e0e522c247916101214b4670cff782adfc81d4e157121e2869b.png": "f07ec8d4a4d78e0e522c247916101214b4670cff782adfc81d4e157121e2869b",
+    "artifacts/resume-v2/images/3f1fcace5a0b235d41060b980fdd4815d46f551082c5c1600c29a04a8138e6d2.png": "3f1fcace5a0b235d41060b980fdd4815d46f551082c5c1600c29a04a8138e6d2",
+    "artifacts/resume-v2/images/f028f6ee3bc288c0cbe7268f729cca850eeb272c166f1635f67a1b0223cad69a.png": "f028f6ee3bc288c0cbe7268f729cca850eeb272c166f1635f67a1b0223cad69a",
+    "artifacts/resume-v2/images/8c0a975ec1ea7f2232a9f9dfbe2fad9b2187b3a0883d3b27683a941e0d45f07b.png": "8c0a975ec1ea7f2232a9f9dfbe2fad9b2187b3a0883d3b27683a941e0d45f07b",
+    "artifacts/resume-v2/images/df3766107f691ace63fd3fa5cfc696b6dc24b18562a9a83d5a010ed9e586f335.png": "df3766107f691ace63fd3fa5cfc696b6dc24b18562a9a83d5a010ed9e586f335",
+    "artifacts/resume-v2/images/a388e8b11f4010ce5053f49a61f80165c84b687f1c0a3776a97215f1ddc04e77.png": "a388e8b11f4010ce5053f49a61f80165c84b687f1c0a3776a97215f1ddc04e77",
+    "artifacts/resume-v2/images/5779eba94717bcff8fd137848399200137034cfe58c71593732fab369ea070b7.png": "5779eba94717bcff8fd137848399200137034cfe58c71593732fab369ea070b7",
+    "artifacts/resume-v2/images/9fdbe92ad4871560b0cafb7791fb8ed5dcab5ebcc13b68b3aec3c129352fad1a.png": "9fdbe92ad4871560b0cafb7791fb8ed5dcab5ebcc13b68b3aec3c129352fad1a",
+    "artifacts/resume-v2/images/1bdb765c15ba1bb3b9ec687a3aa94ae77f188b3edbdab3493e1bc533a533b175.png": "1bdb765c15ba1bb3b9ec687a3aa94ae77f188b3edbdab3493e1bc533a533b175",
+    "artifacts/resume-v2/images/898665846d94104ecb3eccba41587f7a46c59142626192013075e44655275747.png": "898665846d94104ecb3eccba41587f7a46c59142626192013075e44655275747",
+    "artifacts/resume-v2/images/07e1bc84cfd630fbe829027f53b0ef98c81ee4b4a8062ff6fbb9b9286cf0c543.png": "07e1bc84cfd630fbe829027f53b0ef98c81ee4b4a8062ff6fbb9b9286cf0c543",
+    "artifacts/resume-v2/images/0ecc9cd0b4cfc2ea825de2c304fbe376d0a7be79ea04d293207aeec2519ffe12.png": "0ecc9cd0b4cfc2ea825de2c304fbe376d0a7be79ea04d293207aeec2519ffe12",
+    "artifacts/resume-v2/images/032b925058658889e968fd0ed1527f63cf7c73c70c25c81bbb268c0da33d93ea.png": "032b925058658889e968fd0ed1527f63cf7c73c70c25c81bbb268c0da33d93ea",
+    "artifacts/resume-v2/images/caa7cd5a5079b23635d11467158d5b4c3d91661767e8a000a88c93b1fa0672ba.png": "caa7cd5a5079b23635d11467158d5b4c3d91661767e8a000a88c93b1fa0672ba",
+    "artifacts/resume-v2/images/90ee472a22892d1bc0093c0023442a015bcd6f397a9ce037f9727c7a7e85f0bb.png": "90ee472a22892d1bc0093c0023442a015bcd6f397a9ce037f9727c7a7e85f0bb",
+    "artifacts/resume-v2/images/f3ba27fb705513352a81aa993e74a280cf5340d8b369d81a8d95d46b930429e2.png": "f3ba27fb705513352a81aa993e74a280cf5340d8b369d81a8d95d46b930429e2",
+    "artifacts/resume-v2/images/de839901faad3919db6464797c420717be28568b5f63ebf85180a5aecdd63aa7.png": "de839901faad3919db6464797c420717be28568b5f63ebf85180a5aecdd63aa7",
+    "artifacts/resume-v2/images/4a5be53db989038de242ad73f94fe2bdcd878738cc9194715b7087e5ce2b2919.png": "4a5be53db989038de242ad73f94fe2bdcd878738cc9194715b7087e5ce2b2919",
+    "artifacts/resume-v2/images/b2bb990e5911ef736ecef282243a4571d36007487cc2c8ce311a1f5a5fc71af5.png": "b2bb990e5911ef736ecef282243a4571d36007487cc2c8ce311a1f5a5fc71af5",
+    "artifacts/resume-v2/images/16686e47305dd4ef9c9af0239e79abbd02c391986deb242f1d62168f3097e2ce.png": "16686e47305dd4ef9c9af0239e79abbd02c391986deb242f1d62168f3097e2ce",
+    "artifacts/resume-v2/images/cb19513cbf57689fdb6313720497f2db771066f8996a42eb31915e3bdd4b57b6.png": "cb19513cbf57689fdb6313720497f2db771066f8996a42eb31915e3bdd4b57b6",
+    "artifacts/resume-v2/images/61aa0fcb7b8f7d0a1bf1936996c32245269cad169a8a4e699f58f27a1f5a271c.png": "61aa0fcb7b8f7d0a1bf1936996c32245269cad169a8a4e699f58f27a1f5a271c",
+    "artifacts/resume-v2/images/2b8f7df9905dbdc394046b15786be28a7f86200f4165de1464aad051af1742d6.png": "2b8f7df9905dbdc394046b15786be28a7f86200f4165de1464aad051af1742d6"
+  },
+  "chapter_counts": {
+    "unknown": 162,
+    "numbered_heading": 1939,
+    "bookmark": 708
+  },
+  "split_counts": {
+    "dev": 30,
+    "holdout": 30
+  },
+  "selection_frozen_before_model_calls": true,
+  "human_reviewed": 0,
+  "preparation_input_digest": "964425e7107f05b1f044a51a3919d06967de1ce566803ef79e6401354117e4b8"
+}

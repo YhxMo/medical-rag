@@ -1,0 +1,30 @@
+# Paths are resolved relative to this file. Copy to config.yaml for local use.
+paths:
+  data_dir: data/raw
+  artifact_dir: artifacts/rag
+chunking:
+  chunk_size: 900
+  overlap: 100
+embedding:
+  model: BAAI/bge-small-en-v1.5
+  cache_dir: models/fastembed
+reranker:
+  enabled: true
+  model: BAAI/bge-reranker-base
+  device: cpu
+retrieval:
+  candidate_k: 20
+  top_k: 5
+  max_context_chars: 6000
+  translate_queries: true  # Chinese questions -> English textbook search
+models:
+  text:
+    api_key: ${DEEPSEEK_API_KEY}
+    api_base: https://api.deepseek.com
+    model: deepseek-flash
+    max_tokens: 2048
+  vision:
+    api_key: ${DASHSCOPE_API_KEY}
+    api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen3-vl-plus
+    max_tokens: 2048

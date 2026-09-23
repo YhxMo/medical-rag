@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text on page 330 explicitly states: 'the maximum blood flow velocity under normal conditions is about 1 m/s at the entrance to the aorta, so eq. (12.18) indicates that the megahertz transmit frequencies used for diagnostic ultrasound will produce Doppler frequencies of a few kilohertz at most'. This directly matches the reference_answer and expected_answer."
+}

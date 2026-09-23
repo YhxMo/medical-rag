@@ -1,0 +1,19 @@
+{
+  "original_grade_reliable": false,
+  "material_unsupported_claims": [
+    "The test object is either 10 cm thick PMMA or 1 mm thick copper plate",
+    "copper plate can be placed on the table/couch"
+  ],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    },
+    {
+      "id": 2,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "Figure 22 shows only PMMA blocks on the table; no copper plate is visible.",
+  "reason": "The question asks specifically for 'the test object placed on the table or couch' *based on the setup shown in Figure 22*. While source texts [1] and [2] state two options (10 cm PMMA *or* 1 mm copper), the copper plate is explicitly allowed 'either on the collimator or the table' — but the figure (and its caption) only depicts PMMA. The answer overgeneralizes by presenting both as equally valid *for the depicted setup*, whereas the visual evidence (gold reference) and caption confirm only PMMA is shown. The initial grade incorrectly treated textual alternatives as equally grounded for the *figure-based* question. Citations [1] and [2] support the procedural text, but not the claim that copper is part of the *shown* setup. Thus, the answer is incomplete and partially unsupported for the specific query."
+}

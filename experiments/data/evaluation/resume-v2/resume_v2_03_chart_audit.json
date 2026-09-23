@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The schematic in Figure 3 (provided in the user message) explicitly labels two locations with measuring tape: (1) 'Built-in measuring tape' along the vertical path from the focal spot indicator on the X-ray tube, and (2) 'Measuring tape' laid horizontally on the tabletop surface (labeled 'Table'). This matches the reference_answer: 'The X-ray tube (specifically the focal spot indicator side) and the tabletop/image receptor surface'. The text in section 2.1.2.3(b) also confirms this procedure: 'starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3)'."
+}

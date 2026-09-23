@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130) explicitly states: 'To save a static image, click the ‘freeze’ button to pause scanning. Use the touch pad to scroll through the last 30-60 seconds of scanning and then click the ‘save’ button on representative images.' This matches the reference_answer and expected_answer verbatim. The screenshot (page 289, labeled as p290 in metadata due to possible offset or pagination difference) visually confirms this instruction is in the 'Scanning notes' box under 'If uncertainty occurs...', with identical wording (using ‘freeze’ and ‘save’ buttons, touch pad, 30–60 seconds). The task does not require visual interpretation beyond confirming the textual instruction is present, which it is."
+}

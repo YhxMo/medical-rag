@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided image (FIG. 22) shows a C-arm with the X-ray tube mounted on the upper end of the arc and the image receptor (flat panel detector) on the lower end, positioned over the table. This matches the 'upside-down C-arm arrangement' described in the reference answer and the note in the text: 'rotate the X ray tube into an upside down arrangement, with the X ray tube on the upper end of the C arm'. The visual evidence directly supports that the X-ray tube is above the image receptor."
+}

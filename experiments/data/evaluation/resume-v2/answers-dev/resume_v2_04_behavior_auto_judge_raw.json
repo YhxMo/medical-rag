@@ -1,0 +1,24 @@
+{
+  "correctness": 0,
+  "completeness": 1,
+  "groundedness": 0,
+  "behavior_ok": false,
+  "refused": false,
+  "unsupported_claims": true,
+  "image_claims_supported": false,
+  "citations": [
+    {
+      "id": 2,
+      "supports_associated_claim": false
+    },
+    {
+      "id": 3,
+      "supports_associated_claim": false
+    },
+    {
+      "id": 4,
+      "supports_associated_claim": false
+    }
+  ],
+  "reason": "The answer incorrectly states that the procedure requires measuring 'focal spot–table distance' and claims the reference explicitly requires all three distances (FS–IR, FS–Table, FS–Test Object). However, the gold source (iaea_radiology_quality_control_2023.pdf:p75:1cbf6453ffa3) in step (d) *does* explicitly say: 'measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' So the reference *does* require FS–Table. But the answer then contradicts itself by later stating '床面距离无需单独记录' (table distance need not be recorded) and claims IAEA never uses bed as reference — which directly conflicts with the gold source. The answer also misrepresents source 2 (p82) by claiming it says 'focal spot–radiation detector' instead of 'focal spot–table', but p82(f) actually says 'focal spot–image receptor and focal spot–radiation detector distances' — which is for a *different* test (dose measurement), not the PMMA/AERC test in p75. The question is about skipping FS–Table when FS–IR and Table–IR are known; the gold source (p75(d)) mandates direct measurement of FS–Table, so the correct answer is 'No, you cannot skip it'. The answer correctly refuses skipping, but its reasoning is internally inconsistent and misattributes requirements across different tests. It falsely claims '床面不是标准参考平面' and 'IAEA文件从未将床面作为标准测量基准面', yet the gold source (p75) explicitly requires measuring FS–Table for that specific procedure. Thus, groundedness fails due to misrepresentation of sources and contradictory statements. Citations [2][3][4] are cited but do not support the claim that table distance is unnecessary — in fact, [gold] supports the opposite. The image (Fig.25) shows radiation detector at phantom entrance, not table, but the question is about the procedure in p75 (Fig.22), not Fig.25. The answer conflates two different procedures. Therefore: correctness=0 (wrong justification despite correct refusal), groundedness=0 (misuses sources), behavior_ok=false (should refuse but gives misleading rationale)."
+}

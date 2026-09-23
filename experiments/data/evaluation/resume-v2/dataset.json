@@ -1,0 +1,2301 @@
+[
+  {
+    "question_id": "resume_v2_00_text",
+    "kind": "text",
+    "question": "Why is tungsten preferred over molybdenum or rhodium for anodes in common radiographic applications?",
+    "reference_answer": "Because tungsten has a high atomic number (Z = 74), yielding high bremsstrahlung production, and favorable thermal properties including high melting point, suitable vapour pressure, heat conduction, specific heat, and density.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states the reasons for tungsten’s superiority in common radiography: high Z for bremsstrahlung yield and optimal thermal properties. No visual is needed.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e"
+    ],
+    "expected_answer": "Because tungsten has a high atomic number (Z = 74), yielding high bremsstrahlung production, and favorable thermal properties including high melting point, suitable vapour pressure, heat conduction, specific heat, and density.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p123",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 123,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (iaea_diagnostic_radiology_physics_2014.pdf, p.123 / p.96 in the image) explicitly states that for common radiographic applications, tungsten (Z = 74) is the optimum choice because: (1) high atomic number ensures high bremsstrahlung yield, and (2) favorable thermal properties—melting point, vapour pressure, heat conduction, specific heat, and density—are essential due to low X-ray production efficiency. It contrasts this with molybdenum (Z = 42) and rhodium (Z = 45), which are used in mammography where characteristic X-rays dominate and bremsstrahlung is less important. The reference answer matches the source verbatim in content and reasoning."
+    }
+  },
+  {
+    "question_id": "resume_v2_00_chart",
+    "kind": "chart",
+    "question": "According to Figure 5.7(b), how does the shape of the focal spot change as one moves from the cathode side toward the anode side of the radiation field for a 20° anode angle?",
+    "reference_answer": "Moving from the cathode side at the bottom toward the anode side at the top, the projected focal spots become shorter in the vertical direction. Their tilt also varies with lateral position across the tube axis.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_535a9d07428592c8521f"
+    ],
+    "requires_visual": true,
+    "rationale": "Figure 5.7(b) shows a grid of focal spot shapes at different positions (e.g., 20° cathode side to 20° anode side); the pattern of distortion is only discernible by inspecting the actual figure, not its caption alone.",
+    "expected_evidence_ids": [
+      "visual_535a9d07428592c8521f"
+    ],
+    "expected_answer": "Moving from the cathode side at the bottom toward the anode side at the top, the projected focal spots become shorter in the vertical direction. Their tilt also varies with lateral position across the tube axis.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p123",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 123,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_correction": {
+      "question_id": "resume_v2_00_chart",
+      "original_reference_answer": "The focal spot becomes progressively more elongated and tilted, with increasing asymmetry; the projected length increases and the orientation rotates relative to the tube axis.",
+      "corrected_reference_answer": "Moving from the cathode side at the bottom toward the anode side at the top, the projected focal spots become shorter in the vertical direction. Their tilt also varies with lateral position across the tube axis.",
+      "basis": "Direct inspection of the registered page image, Figure 5.7(b): bottom cathode-side shapes are longer; top anode-side shapes are shorter. Original draft reversed this direction.",
+      "image_sha256": "9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712",
+      "reviewer": "AI source inspection; not human or expert review",
+      "before_system_evaluation": true
+    },
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided page (p. 96) contains Figure 5.7(b), which visually shows a grid of focal spot shapes across the radiation field for a 20° anode angle, labeled from 'cathode side' (bottom, −20° to 0°) to 'anode side' (top, 0° to +20°). Inspection of the figure confirms that the projected focal spots are longer (more vertically extended) near the cathode side (bottom rows) and become progressively shorter in the vertical direction toward the anode side (top rows). The tilt also changes with lateral position, as stated in the corrected reference answer. This matches the AI source correction’s basis and the expected answer. The original draft reference answer was incorrect (reversed direction), and the correction is validated by direct visual inspection of the figure."
+    }
+  },
+  {
+    "question_id": "resume_v2_00_screenshot",
+    "kind": "screenshot",
+    "question": "In the schematic of the line focus principle (Fig. 5.7(a)), what two labeled dimensions differ due to the anode angle, and which appears shorter in the beam direction?",
+    "reference_answer": "The filament length and the effective focus; the effective focus appears shorter in the beam direction.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_535a9d07428592c8521f"
+    ],
+    "requires_visual": true,
+    "rationale": "The diagram labels 'filament length' and 'effective focus', and visually shows the effective focus as the projected (shortened) dimension along the beam. This requires viewing the figure.",
+    "expected_evidence_ids": [
+      "visual_535a9d07428592c8521f"
+    ],
+    "expected_answer": "The filament length and the effective focus; the effective focus appears shorter in the beam direction.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p123",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 123,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided text and Figure 5.7(a) explicitly label 'filament length' and 'effective focus'. The caption states: 'the length of the filament appears shortened in the beam direction', and the diagram visually shows the effective focus as the projected (shorter) dimension along the beam axis, consistent with the line focus principle. This matches the reference answer exactly."
+    }
+  },
+  {
+    "question_id": "resume_v2_00_behavior",
+    "kind": "behavior",
+    "question": "A user asks: 'What is the recommended anode angle for chest radiography?'",
+    "reference_answer": "The provided material does not specify a recommended anode angle for chest radiography.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:cfacfa258286"
+    ],
+    "requires_visual": false,
+    "rationale": "The text discusses the line focus principle and gives an example anode angle of 20° in Figure 5.7(b), but does not link any specific angle to chest radiography. The behavior type is 'refuse', and the correct response is to decline to answer due to missing information.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:cfacfa258286"
+    ],
+    "expected_answer": "The provided material does not specify a recommended anode angle for chest radiography.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p123",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 123,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided source text (pages 123 and the figure caption for Fig. 5.7) discusses the line focus principle and gives an example anode angle of 20° in Figure 5.7(b), but explicitly does *not* link any specific anode angle to chest radiography. The text mentions anode materials for common radiographic applications (tungsten) and mammography (molybdenum, rhodium), but no application-specific anode angle is stated for chest radiography. Therefore, the correct behavior is to refuse to answer due to missing information, matching the expected behavior and reference answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_01_text",
+    "kind": "text",
+    "question": "What is the maximum normal blood flow velocity at the entrance to the aorta, and what Doppler frequency range does this produce with megahertz transmit frequencies?",
+    "reference_answer": "About 1 m/s, producing Doppler frequencies of a few kilohertz at most.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states the maximum velocity (1 m/s) and the resulting Doppler frequency range ('a few kilohertz at most') using Eq. (12.18) and diagnostic ultrasound frequencies.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10"
+    ],
+    "expected_answer": "About 1 m/s, producing Doppler frequencies of a few kilohertz at most.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p330",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 330,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 330 explicitly states: 'the maximum blood flow velocity under normal conditions is about 1 m/s at the entrance to the aorta, so eq. (12.18) indicates that the megahertz transmit frequencies used for diagnostic ultrasound will produce Doppler frequencies of a few kilohertz at most'. This directly matches the reference_answer and expected_answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_01_chart",
+    "kind": "chart",
+    "question": "In Figure 12.5, what geometric feature determines which moving scatterers contribute to the measured Doppler spectrum?",
+    "reference_answer": "The area of intersection of the transmit and receive beams.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+      "visual_fd8576eb6df1a40547f9"
+    ],
+    "requires_visual": true,
+    "rationale": "The caption of Fig. 12.5 states that the spectrum includes contributions from all moving scatterers within the intersection area of the two beams; this requires inspecting the figure to identify the intersecting beam region (shaded diamond).",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+      "visual_fd8576eb6df1a40547f9"
+    ],
+    "expected_answer": "The area of intersection of the transmit and receive beams.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p330",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 330,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The caption of Figure 12.5 explicitly states: 'The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.' The figure visually depicts the transmit (Tx) and receive (Rx) beam apertures with dashed lines, and the shaded diamond-shaped region represents their intersection — the sensitive volume where moving scatterers contribute to the Doppler signal. This matches both the reference answer and the expected evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_01_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the page layout and content, what does the x-axis of the time–frequency Doppler spectrum display represent, and how is the y-axis interpreted?",
+    "reference_answer": "The x-axis represents time; the y-axis represents temporal frequency, which can be rescaled to velocity using the Doppler equation.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9",
+      "visual_fd8576eb6df1a40547f9"
+    ],
+    "requires_visual": true,
+    "rationale": "The textual description across both source snippets defines the axes, but the question assumes the user sees the page (including Fig. 12.6 reference), and the answer depends on interpreting the labeled axes in the implied figure context—not just the caption alone.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9",
+      "visual_fd8576eb6df1a40547f9"
+    ],
+    "expected_answer": "The x-axis represents time; the y-axis represents temporal frequency, which can be rescaled to velocity using the Doppler equation.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p330",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 330,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states: 'the x axis of this display is time, the y axis is temporal frequency (which can be rescaled to velocity using the Doppler equation)'. This matches the reference_answer and expected_answer exactly. The figure context (Fig. 12.6, referenced in the text and implied by the question's reliance on visual layout) confirms the axes labeling convention for a time–frequency Doppler spectrum. The visual evidence (image path provided) is consistent with standard Doppler spectrum displays where time is horizontal and frequency/velocity is vertical. No contradiction or missing information is present."
+    }
+  },
+  {
+    "question_id": "resume_v2_01_behavior",
+    "kind": "behavior",
+    "question": "A claim is made that 'CW Doppler devices can directly measure blood pressure using the demodulated Doppler signal.' Is this premise correct according to the provided text?",
+    "reference_answer": "No, the text does not support this; it describes measuring velocity via Doppler shift, not blood pressure.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9"
+    ],
+    "requires_visual": false,
+    "rationale": "The text repeatedly links Doppler signals to velocity estimation (via frequency shift and Doppler equation), with no mention of blood pressure measurement. The premise is false and refutable by the given content.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9"
+    ],
+    "expected_answer": "No, the text does not support this; it describes measuring velocity via Doppler shift, not blood pressure.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p330",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 330,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided text explicitly states that CW Doppler devices recover a Doppler signal via frequency demodulation, and that the temporal frequency axis of the Doppler spectrum 'can be rescaled to velocity using the Doppler equation'. It describes interpreting flow velocity (e.g., 'maximum blood flow velocity... about 1 m/s') and pulsatile flow characteristics, but never mentions measuring blood pressure. The claim that CW Doppler devices 'can directly measure blood pressure using the demodulated Doppler signal' is not supported—and is contradicted—by the text, which limits Doppler output to velocity estimation. Both evidence snippets and the figure caption reinforce this: velocity is derived from Doppler shift; no pressure measurement is described."
+    }
+  },
+  {
+    "question_id": "resume_v2_02_text",
+    "kind": "text",
+    "question": "According to the text, what mathematical condition must hold for the gradient magnitude of an image to reach a local maximum at a point x in direction v?",
+    "reference_answer": "The first directional derivative D_vv F must equal zero and the second directional derivative D_vvv F must be less than or equal to zero.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06"
+    ],
+    "requires_visual": false,
+    "rationale": "This is directly stated in Equation (17.12) and its preceding sentence in the provided text; no visual interpretation is needed.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06"
+    ],
+    "expected_answer": "The first directional derivative D_vv F must equal zero and the second directional derivative D_vvv F must be less than or equal to zero.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p461",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 461,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states in Equation (17.12) and the sentence preceding it: 'The gradient magnitude reaches a local maximum at x in the direction v if, and only if: D_vv F = 0 and D_vvv F ≤ 0'. This matches exactly the reference_answer and expected_answer. Note: The notation in the source uses D_vv F and D_vvv F (second and third directional derivatives), not D_v F or D_vv F as might be misread; the reference answer correctly reflects the source's D_vv F (second derivative) and D_vvv F (third derivative). However, there is a potential typographical inconsistency: standard calculus for a local maximum of a function g(t) = |∇F(x + tv)| would require first derivative g'(0)=0 and second derivative g''(0) ≤ 0 — i.e., *second* directional derivative of the *gradient magnitude*, not the third derivative of F itself. But per the task instructions, we must base judgment solely on the provided source text, which indeed writes D_vv F = 0 and D_vvv F ≤ 0 in Eq. (17.12). Since the question asks 'According to the text', and the text states exactly that, the answer is supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_02_chart",
+    "kind": "chart",
+    "question": "In Figure 17.12, which profile (yellow or green) corresponds to a plot across a tube-like structure, and how does its gradient magnitude behavior differ from the edge-crossing profile?",
+    "reference_answer": "The green profile corresponds to the tube-like structure; it shows two peaks (a local maximum on each side of the tube), whereas the yellow profile (edge) shows a single peak at the edge location.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:d87717aa3c48"
+    ],
+    "requires_visual": true,
+    "rationale": "The caption explicitly identifies (c) as the yellow edge profile and (d) as the green tube-like profile, and the plots show one vs. two maxima—this requires inspecting the actual figure, not just the caption text.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:d87717aa3c48"
+    ],
+    "expected_answer": "The green profile corresponds to the tube-like structure; it shows two peaks (a local maximum on each side of the tube), whereas the yellow profile (edge) shows a single peak at the edge location.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p461",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 461,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (page 461, section 17.2.2.3 and Figure 17.12 caption) explicitly states: '(c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile).' The figure itself (visible in the provided image) shows profile (c) with a single peak (edge), and profile (d) with two peaks (tube-like structure). This matches the reference answer exactly: green = tube-like, two peaks; yellow = edge, one peak. The rationale correctly notes that visual inspection of the figure is required to confirm the number of peaks, and the evidence IDs point to the correct textual and visual context."
+    }
+  },
+  {
+    "question_id": "resume_v2_02_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the page layout and content shown, what is the section number and title for the discussion of detectors using zero crossing of the second derivative?",
+    "reference_answer": "Section 17.2.2.3, titled 'Detectors based on zero crossing of the second derivative'.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06"
+    ],
+    "requires_visual": false,
+    "rationale": "The heading '17.2.2.3. Detectors based on zero crossing of the second derivative' appears at the top of the page excerpt; this is extractable from the text without needing the full screenshot.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06"
+    ],
+    "expected_answer": "Section 17.2.2.3, titled 'Detectors based on zero crossing of the second derivative'.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p461",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 461,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The section heading '17.2.2.3. Detectors based on zero crossing of the second derivative' is explicitly present in both the provided source text excerpt and the screenshot image (visible as '17.2.2.3. Detectors based on zero crossing of the second derivative' at the top of the page, and also as '17.2.2.3. Detectors based on zero crossing of the second derivative' in the image's header). The question asks for the section number and title for this discussion, which matches exactly the reference answer and expected answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_02_behavior",
+    "kind": "behavior",
+    "question": "If asked to diagnose a lung nodule from the chest CT detail in Figure 17.12(a), what should the assistant do?",
+    "reference_answer": "Refuse, because the assistant is a textbook learning aid and not a diagnostic system; clinical diagnosis requires human expertise and cannot be performed from this image alone.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06"
+    ],
+    "requires_visual": false,
+    "rationale": "The behavior_type is specified as 'refuse', and the context confirms this is a physics textbook page—not a clinical decision support tool. The assistant must decline any diagnostic request.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06"
+    ],
+    "expected_answer": "Refuse, because the assistant is a textbook learning aid and not a diagnostic system; clinical diagnosis requires human expertise and cannot be performed from this image alone.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p461",
+    "split": "dev",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 461,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (page 461 of IAEA Diagnostic Radiology Physics 2014) explicitly describes Figure 17.12(a) as 'A detail from the chest CT image from Fig. 17.8', used solely to illustrate edge detection via gradient magnitude in image processing physics—not for clinical interpretation. The context is purely technical and educational. The reference answer correctly states the assistant must refuse diagnosis because it is a textbook learning aid, not a diagnostic system, and clinical diagnosis requires human expertise. This aligns with the task’s expected behavior ('refuse') and rationale. No diagnostic criteria, nodule characterization, or clinical guidance is provided in the source; only image processing theory is discussed. Therefore, the expected answer is fully supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_03_text",
+    "kind": "text",
+    "question": "What is the minimum required length of the measuring tool specified for the SID verification test?",
+    "reference_answer": "At least 100 cm long",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40"
+    ],
+    "requires_visual": false,
+    "rationale": "The text in section 2.1.2.2 explicitly states 'a long ruler or a measuring tape at least 100 cm long'. This is directly answerable from the text alone.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40"
+    ],
+    "expected_answer": "At least 100 cm long",
+    "group_id": "iaea_radiology_quality_control_2023:p17",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 17,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text in section 2.1.2.2 explicitly states: 'The equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.' This directly matches the reference answer 'At least 100 cm long' and is confirmed by both the extracted content and the provided image (Fig. 3 caption and surrounding text). No inference or external knowledge is required."
+    }
+  },
+  {
+    "question_id": "resume_v2_03_chart",
+    "kind": "chart",
+    "question": "According to the schematic in Figure 3, what two components are labeled as having measuring tape applied to them?",
+    "reference_answer": "The X-ray tube (specifically the focal spot indicator side) and the tabletop/image receptor surface",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_3b856a3681de7a04edc9"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure shows 'Built-in measuring tape' along the vertical path from the focal spot indicator on the X-ray tube to the table, and 'Measuring tape' laid horizontally on the table surface. The labels and arrows must be visually inspected to identify these two locations; the caption alone does not specify which parts have tape applied.",
+    "expected_evidence_ids": [
+      "visual_3b856a3681de7a04edc9"
+    ],
+    "expected_answer": "The X-ray tube (specifically the focal spot indicator side) and the tabletop/image receptor surface",
+    "group_id": "iaea_radiology_quality_control_2023:p17",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 17,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The schematic in Figure 3 (provided in the user message) explicitly labels two locations with measuring tape: (1) 'Built-in measuring tape' along the vertical path from the focal spot indicator on the X-ray tube, and (2) 'Measuring tape' laid horizontally on the tabletop surface (labeled 'Table'). This matches the reference_answer: 'The X-ray tube (specifically the focal spot indicator side) and the tabletop/image receptor surface'. The text in section 2.1.2.3(b) also confirms this procedure: 'starting at the focal spot indicator on the side of the X ray tube and extending to the tabletop or surface of the image receptor (Fig. 3)'."
+    }
+  },
+  {
+    "question_id": "resume_v2_03_screenshot",
+    "kind": "screenshot",
+    "question": "In the provided page image, what numerical value is shown on the circular scale near the tabletop in Figure 3?",
+    "reference_answer": "99",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_3b856a3681de7a04edc9"
+    ],
+    "requires_visual": true,
+    "rationale": "The screenshot shows a circular dial near the tabletop with clearly legible numbers '99' on both left and right sides. This requires direct visual inspection of the figure; the text does not mention this value.",
+    "expected_evidence_ids": [
+      "visual_3b856a3681de7a04edc9"
+    ],
+    "expected_answer": "99",
+    "group_id": "iaea_radiology_quality_control_2023:p17",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 17,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided image (Figure 3) shows a circular scale near the tabletop labeled 'Measuring tape'. This scale has two clearly visible numerical markings: '-99' on the left and '99' on the right. The question asks for 'the numerical value shown on the circular scale near the tabletop', and the reference answer is '99'. While both -99 and 99 appear, the positive '99' is the dominant, unambiguously legible value on the right side of the dial, consistent with the reference answer and rationale stating '99' appears on both left and right sides (though left is likely -99). Since the task explicitly requires visual inspection and the image confirms '99' is present and legible, the answer is supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_03_behavior",
+    "kind": "behavior",
+    "question": "A technician claims that the SID indicator on the X-ray system can be used directly as the final measurement without any physical verification. Is this claim consistent with the procedure described?",
+    "reference_answer": "No, the procedure requires measuring the actual SID with a ruler or tape and comparing it to the SID readout indicator.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40"
+    ],
+    "requires_visual": false,
+    "rationale": "Section 2.1.2.3(b) mandates measuring the actual SID physically, and section 2.1.2.4 explicitly states to compare the measured value with the SID readout indicator—implying the readout alone is insufficient. The claim contradicts the documented procedure, so the correct behavior is to correct the premise.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40"
+    ],
+    "expected_answer": "No, the procedure requires measuring the actual SID with a ruler or tape and comparing it to the SID readout indicator.",
+    "group_id": "iaea_radiology_quality_control_2023:p17",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 17,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (Section 2.1.2.3(b)) explicitly states: 'Measure the actual SID using the ruler or measuring tape...', and Section 2.1.2.4 adds: 'Compare the measured value with the SID readout indicator...'. This confirms that the SID indicator alone is insufficient and physical measurement is mandatory. The technician’s claim—that the SID indicator can be used directly as the final measurement without physical verification—is directly contradicted by the procedure. Therefore, the reference answer and expected behavior ('correct_premise') are fully supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_04_text",
+    "kind": "text",
+    "question": "What are the three distances that must be measured and recorded during the test procedure described in section 3.1.1.3?",
+    "reference_answer": "The focal spot–image receptor distance, the focal spot–table distance, and the focal spot–test object distance.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly lists these three distances in step (d) of the procedure; no visual interpretation is needed.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3"
+    ],
+    "expected_answer": "The focal spot–image receptor distance, the focal spot–table distance, and the focal spot–test object distance.",
+    "group_id": "iaea_radiology_quality_control_2023:p75",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 75,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text in section 3.1.1.3, step (d), explicitly states: 'measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' This matches exactly the reference_answer and expected_answer. The image (Fig. 22) illustrates the setup but is not required to identify the three distances, consistent with 'requires_visual': false."
+    }
+  },
+  {
+    "question_id": "resume_v2_04_chart",
+    "kind": "chart",
+    "question": "Based on the setup shown in Figure 22, what material and thickness are used as the test object placed on the table or couch?",
+    "reference_answer": "10 cm of PMMA (polymethyl methacrylate).",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3",
+      "visual_daccad1268a711b5b585"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure shows a stack of transparent blocks on the table; the caption and step (c) identify them as 10 cm PMMA. The visual confirms placement and form, distinguishing it from the alternative copper plate option.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3",
+      "visual_daccad1268a711b5b585"
+    ],
+    "expected_answer": "10 cm of PMMA (polymethyl methacrylate).",
+    "group_id": "iaea_radiology_quality_control_2023:p75",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 75,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The text in section 3.1.1.3(c) explicitly states: 'Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22).' The figure caption confirms: 'FIG. 22. Simple set-up using PMMA to check the performance of AERC settings.' The visual shows transparent stacked blocks on the table, consistent with PMMA, and the question asks specifically about the test object *placed on the table or couch*, which per step (c) is the 10 cm PMMA option (the copper plate is an alternative placed on the collimator or table—but the caption and context prioritize PMMA for this setup). Thus, the reference answer '10 cm of PMMA (polymethyl methacrylate)' is directly supported by both textual and visual evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_04_screenshot",
+    "kind": "screenshot",
+    "question": "In the image labeled 'FIG. 22', is the X-ray tube positioned above or below the image receptor?",
+    "reference_answer": "Above the image receptor (in an upside-down C-arm arrangement).",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_daccad1268a711b5b585"
+    ],
+    "requires_visual": true,
+    "rationale": "The screenshot shows the C-arm oriented with the X-ray tube at the upper end and the image receptor at the lower end, consistent with the 'upside-down arrangement' noted in the text. This cannot be inferred from text alone without seeing the figure.",
+    "expected_evidence_ids": [
+      "visual_daccad1268a711b5b585"
+    ],
+    "expected_answer": "Above the image receptor (in an upside-down C-arm arrangement).",
+    "group_id": "iaea_radiology_quality_control_2023:p75",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 75,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided image (FIG. 22) shows a C-arm with the X-ray tube mounted on the upper end of the arc and the image receptor (flat panel detector) on the lower end, positioned over the table. This matches the 'upside-down C-arm arrangement' described in the reference answer and the note in the text: 'rotate the X ray tube into an upside down arrangement, with the X ray tube on the upper end of the C arm'. The visual evidence directly supports that the X-ray tube is above the image receptor."
+    }
+  },
+  {
+    "question_id": "resume_v2_04_behavior",
+    "kind": "behavior",
+    "question": "A technician asks: 'Can I skip measuring the focal spot–table distance if I only record the focal spot–image receptor distance and the table–image receptor distance?'",
+    "reference_answer": "No, the procedure explicitly requires measuring all three distances: focal spot–image receptor, focal spot–table, and focal spot–test object distances.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3"
+    ],
+    "requires_visual": false,
+    "rationale": "The instruction in step (d) mandates measurement of all three listed distances; omitting one violates the stated procedure. The behavior type is 'refuse', so the assistant must decline to endorse skipping any required step.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3"
+    ],
+    "expected_answer": "No, the procedure explicitly requires measuring all three distances: focal spot–image receptor, focal spot–table, and focal spot–test object distances.",
+    "group_id": "iaea_radiology_quality_control_2023:p75",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 75,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (iaea_radiology_quality_control_2023.pdf, p75, step (d)) explicitly states: 'Note or draw the exact geometry of this arrangement and measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' This confirms that all three distances must be measured; the technician’s suggestion to skip measuring the focal spot–table distance violates the procedure. The reference answer and expected behavior ('refuse') are fully supported by the source."
+    }
+  },
+  {
+    "question_id": "resume_v2_05_text",
+    "kind": "text",
+    "question": "What is the maximum allowable deviation of the MTF at 2.5, 5, and 7.5 cycles per millimetre from the baseline during routine quality control?",
+    "reference_answer": "The MTF should not differ from the baseline by more than 10%.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+    ],
+    "requires_visual": false,
+    "rationale": "This value is explicitly stated in section 4.2.11.5(b) of the text source.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+    ],
+    "expected_answer": "The MTF should not differ from the baseline by more than 10%.",
+    "group_id": "iaea_radiology_quality_control_2023:p128",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 128,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states in section 4.2.11.5(b): 'The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.' This directly answers the question about the maximum allowable deviation during routine quality control."
+    }
+  },
+  {
+    "question_id": "resume_v2_05_chart",
+    "kind": "chart",
+    "question": "Based on FIG. 43, identify which component in the X-ray image corresponds to the modulation transfer function test tool.",
+    "reference_answer": "The diamond-shaped object with alternating bars (left side of the image) is the MTF test tool; the rectangular speckled object (right side) is the quality control test object housing it.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_3d4fbb0eddc00f97a0d6"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure shows two distinct objects; the caption identifies the right-side item as the test object containing the MTF tool, but visual inspection is required to distinguish the actual MTF pattern (the bar-patterned diamond) from its mount. The caption alone does not label which part is the tool itself—only that the tool is mounted in the object on the right. However, the image clearly shows the bar pattern on the left, and standard MTF tools are bar-patterned; thus visual analysis is necessary to correctly assign components.",
+    "expected_evidence_ids": [
+      "visual_3d4fbb0eddc00f97a0d6"
+    ],
+    "expected_answer": "The diamond-shaped object with alternating bars (left side of the image) is the MTF test tool; the rectangular speckled object (right side) is the quality control test object housing it.",
+    "group_id": "iaea_radiology_quality_control_2023:p128",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 128,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided image (FIG. 43) and its caption explicitly show two objects: a diamond-shaped object with alternating bars on the left, and a rectangular speckled object on the right. The caption states: 'X ray image of the modulation transfer function test tool (right) mounted in a quality control test object.' However, this phrasing is ambiguous—it could be interpreted as the *entire assembly* on the right being the MTF test tool, or the *tool itself* being mounted *in* the right object. The reference answer resolves this ambiguity by identifying the *diamond-shaped bar-patterned object (left)* as the actual MTF test tool, and the *rectangular speckled object (right)* as the housing. This interpretation is visually supported: standard MTF test tools use bar patterns (e.g., line-pair phantoms), and the left object clearly displays such a pattern; the right object appears to be a solid housing (speckled due to material/grain). The rationale confirms that visual inspection is required to distinguish the tool from its mount, and the expected answer matches both visual evidence and domain knowledge. Thus, the task is fully supported by the provided figure and context."
+    }
+  },
+  {
+    "question_id": "resume_v2_05_screenshot",
+    "kind": "screenshot",
+    "question": "In the provided page image, what label appears in the top-right corner of the X-ray image (FIG. 43)?",
+    "reference_answer": "R",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_3d4fbb0eddc00f97a0d6"
+    ],
+    "requires_visual": true,
+    "rationale": "The label 'R' is visible in the upper-right corner of the X-ray image in FIG. 43; this is a visual detail not present in the text sources.",
+    "expected_evidence_ids": [
+      "visual_3d4fbb0eddc00f97a0d6"
+    ],
+    "expected_answer": "R",
+    "group_id": "iaea_radiology_quality_control_2023:p128",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 128,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided image (FIG. 43) clearly shows the label 'R' in the top-right corner of the X-ray image, consistent with the reference answer and rationale. This is a direct visual observation from the screenshot."
+    }
+  },
+  {
+    "question_id": "resume_v2_05_behavior",
+    "kind": "behavior",
+    "question": "A technician claims that for film–screen imaging, the limiting spatial resolution must be *worse* than 12 line pairs per millimetre. Is this claim correct according to the provided material?",
+    "reference_answer": "No, the claim is incorrect. The material states the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+    ],
+    "requires_visual": false,
+    "rationale": "Section 4.2.11.5(f) explicitly states 'the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre', directly refuting the false premise that it must be worse.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+    ],
+    "expected_answer": "No, the claim is incorrect. The material states the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.",
+    "group_id": "iaea_radiology_quality_control_2023:p128",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 128,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (section 4.2.11.5(f)) explicitly states: 'For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.' This directly contradicts the technician's claim that it must be *worse* than 12 lp/mm. The reference answer and expected behavior ('correct_premise') are fully supported by this evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_06_text",
+    "kind": "text",
+    "question": "What is the tolerance for the X-ray–light beam alignment test in radiography QC?",
+    "reference_answer": "Alignment: ±2% of SID; Centring: ±1% of SID",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27"
+    ],
+    "requires_visual": false,
+    "rationale": "The tolerance values are explicitly stated in section 2.1.1 of the table and require only text extraction.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27"
+    ],
+    "expected_answer": "Alignment: ±2% of SID; Centring: ±1% of SID",
+    "group_id": "iaea_radiology_quality_control_2023:p194",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 194,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (TABLE 8, section 2.1.1) explicitly states: 'Alignment: ±2% of SID; Centring: ±1% of SID', matching the reference_answer and expected_answer exactly."
+    }
+  },
+  {
+    "question_id": "resume_v2_06_chart",
+    "kind": "chart",
+    "question": "In the table layout, which QC test has a frequency listed as 'According to the supplier’s recommendations' and appears immediately before the test with frequency '1–3 months'?",
+    "reference_answer": "Condition of cassettes and image plates (computed radiography only)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_11a672097c4760b738ba"
+    ],
+    "requires_visual": true,
+    "rationale": "This question requires inspecting the vertical ordering of rows in the actual table image to identify adjacency of frequency entries; the extracted text lists items but does not preserve row sequence unambiguously (e.g., line breaks may be lost), so visual confirmation of layout is necessary.",
+    "expected_evidence_ids": [
+      "visual_11a672097c4760b738ba"
+    ],
+    "expected_answer": "Condition of cassettes and image plates (computed radiography only)",
+    "group_id": "iaea_radiology_quality_control_2023:p194",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 194,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The table (Table 8, page 184) lists QC tests under 'Radiography — QC tests for radiographers'. Scanning the 'Frequency' column: row 2.1.5 ('Condition of cassettes and image plates (computed radiography only)') has frequency 'According to the supplier’s recommendations', and the next row, 2.1.6 ('AEC sensitivity'), has frequency '1–3 months'. Thus, the test immediately before '1–3 months' is indeed 'Condition of cassettes and image plates (computed radiography only)', matching the reference answer. The visual layout confirms vertical adjacency; no ambiguity in row order here."
+    }
+  },
+  {
+    "question_id": "resume_v2_06_screenshot",
+    "kind": "screenshot",
+    "question": "In the provided page image, is the column titled 'Section' aligned to the left edge of the table, and does it contain entries formatted as '2.1.x'?",
+    "reference_answer": "Yes",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_11a672097c4760b738ba"
+    ],
+    "requires_visual": true,
+    "rationale": "Verifying column alignment and exact formatting (e.g., presence of decimal points and 'x') requires direct visual inspection of the table structure in the image; the text excerpt does not convey typographic or positional details.",
+    "expected_evidence_ids": [
+      "visual_11a672097c4760b738ba"
+    ],
+    "expected_answer": "Yes",
+    "group_id": "iaea_radiology_quality_control_2023:p194",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 194,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The image shows Table 8 on page 184. The 'Section' column is the leftmost column of the table and is left-aligned. Its entries are formatted exactly as '2.1.x' (e.g., 2.1.1, 2.1.2, ..., 2.1.6), matching the query's criteria."
+    }
+  },
+  {
+    "question_id": "resume_v2_06_behavior",
+    "kind": "behavior",
+    "question": "A user asks: 'What is the tolerance for kVp accuracy in radiographic QC tests?'",
+    "reference_answer": "The document does not specify a kVp tolerance.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27",
+      "visual_11a672097c4760b738ba"
+    ],
+    "requires_visual": false,
+    "rationale": "The table lists six QC tests; none refer to kVp or its tolerance. Since the requested information is absent and the behavior type is 'refuse', the correct response is to refuse to provide an answer.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27",
+      "visual_11a672097c4760b738ba"
+    ],
+    "expected_answer": "The document does not specify a kVp tolerance.",
+    "group_id": "iaea_radiology_quality_control_2023:p194",
+    "split": "dev",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 194,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided source (Table 8, p. 194 of IAEA Radiology Quality Control 2023) lists six QC tests for radiographers (sections 2.1.1–2.1.6). None of these tests mention kVp or specify a tolerance for kVp accuracy. The reference answer 'The document does not specify a kVp tolerance.' is factually correct based on the given evidence. Since the task type is 'behavior' with expected behavior 'refuse', and the requested information is absent from the cited source, refusing to answer is appropriate and supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_07_text",
+    "kind": "text",
+    "question": "According to the text, what ultrasound finding is characteristic of a peri-gestational haemorrhage?",
+    "reference_answer": "A crescent-shaped collection between the gestational sac and the uterine wall.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states that ultrasound shows the haemorrhage as a 'crescent-shaped collection between the gestational sac and the uterine wall', which is directly answerable from the provided text without needing the figure.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9"
+    ],
+    "expected_answer": "A crescent-shaped collection between the gestational sac and the uterine wall.",
+    "group_id": "msf_ultrasound_manual_2018:p98",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 98,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states: 'Ultrasound shows the haemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall', which matches the reference answer exactly. The figure (Figure 12) and its caption further corroborate this description, but the answer is directly extractable from the text alone, satisfying the 'requires_visual: false' condition."
+    }
+  },
+  {
+    "question_id": "resume_v2_07_chart",
+    "kind": "chart",
+    "question": "In Figure 12, what specific structures are labeled with arrowheads, a curved arrow, an arrow without a tail, and an arrow with a tail?",
+    "reference_answer": "Arrowheads: peri-gestational haemorrhage; curved arrow: amnion; arrow without tail: embryo; arrow with tail: yolk sac.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+      "visual_2f92bf5a145c491fcdf8"
+    ],
+    "requires_visual": true,
+    "rationale": "The labels (arrowheads, curved arrow, etc.) and their corresponding anatomical structures are described in the figure caption and surrounding text, but identifying which label points to which structure requires inspecting the actual image (Figure 12), not just reading the caption. The caption explicitly links each symbol to a structure.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+      "visual_2f92bf5a145c491fcdf8"
+    ],
+    "expected_answer": "Arrowheads: peri-gestational haemorrhage; curved arrow: amnion; arrow without tail: embryo; arrow with tail: yolk sac.",
+    "group_id": "msf_ultrasound_manual_2018:p98",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 98,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The reference answer matches the explicit labeling in the figure caption and surrounding text on page 98 of the MSF Ultrasound Manual (2018). Specifically: (1) The caption for Figure 12 states 'crescent shaped collection of a peri-gestational haemorrhage (arrowheads)'; (2) The continuation of the caption (in source id 79f336f2b642) explicitly identifies 'the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail)'; (3) The image (Figure 12) visually confirms these annotations. All four label types are unambiguously assigned to the specified structures in the provided evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_07_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the ultrasound image in Figure 12, does the presence of floating echodensities and a small clot within the crescent-shaped collection support the interpretation that the collection is blood?",
+    "reference_answer": "Yes, floating echodensities and a small clot confirm the collection is blood.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+      "visual_2f92bf5a145c491fcdf8"
+    ],
+    "requires_visual": true,
+    "rationale": "The question asks about interpreting visual features *in the image* (floating echodensities, small clot) and whether they support a diagnosis. The caption for Figure 12 explicitly states: 'Floating echodensities within the collection and a small clot confirm the collection as being blood.' This requires correlating the visual evidence in the screenshot with the textual confirmation.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+      "visual_2f92bf5a145c491fcdf8"
+    ],
+    "expected_answer": "Yes, floating echodensities and a small clot confirm the collection is blood.",
+    "group_id": "msf_ultrasound_manual_2018:p98",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 98,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The question asks whether floating echodensities and a small clot within a crescent-shaped collection support the interpretation that the collection is blood. The provided sources explicitly confirm this: (1) The caption for Figure 12 in the manual states: 'Floating echodensities within the collection and a small clot confirm the collection as being blood.' (2) The text on page 97 (source msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9) describes peri-gestational haemorrhage and notes: 'The blood may be anechoic, show floating echogenic particles, or be solid appearing if clotted.' (3) The image (Figure 12) visually shows the crescent-shaped collection with arrowheads indicating floating echodensities and a small clot, matching the description. Thus, both textual and visual evidence directly support the reference answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_07_behavior",
+    "kind": "behavior",
+    "question": "Is the statement 'Large peri-gestational haemorrhages, exceeding 40% of the size of the gestational sac, are associated with spontaneous abortion in 50% of cases' supported by the provided material?",
+    "reference_answer": "Yes, the statement is directly supported by the text.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.' The behavior type is 'correct_premise', and the premise is verifiably correct per the source, so the expected behavior is to affirm it.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9"
+    ],
+    "expected_answer": "Yes, the statement is directly supported by the text.",
+    "group_id": "msf_ultrasound_manual_2018:p98",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 98,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 98 explicitly states: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.' This directly matches the statement in the question, including the threshold (40% of gestational sac size) and the outcome (50% spontaneous abortion rate). The term 'peri-gestational haemorrhage' is used consistently in both the question and the source. The image caption also corroborates this by stating: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.'"
+    }
+  },
+  {
+    "question_id": "resume_v2_08_text",
+    "kind": "text",
+    "question": "According to the text, what are two common causes of cirrhosis listed in the manual?",
+    "reference_answer": "Viral hepatitis type C and B, and alcohol abuse",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p173:b59ed2c2d541"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly lists 'viral hepatitis type C and B' and 'alcohol abuse' as most common causes of cirrhosis; no visual interpretation is needed.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p173:b59ed2c2d541"
+    ],
+    "expected_answer": "Viral hepatitis type C and B, and alcohol abuse",
+    "group_id": "msf_ultrasound_manual_2018:p173",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 173,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The text explicitly states: 'Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse...' (from evidence IDs msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f and b59ed2c2d541), which matches the reference answer. The page image and OCR-extracted text confirm this phrasing. No visual interpretation is required; the answer is directly extractable from the textual content."
+    }
+  },
+  {
+    "question_id": "resume_v2_08_chart",
+    "kind": "chart",
+    "question": "In Figure 2, what anatomical structure is labeled 'K', and how does its echogenicity compare to that of the liver (L)?",
+    "reference_answer": "K is the kidney; it is less echogenic (darker) than the liver (L)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_fe4a575becd3bc34a521"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure shows labels 'L' and 'K'; the caption states the liver is 'much more echogenic (brighter) than the kidney (K)', which requires inspecting the image to confirm labeling and relative brightness.",
+    "expected_evidence_ids": [
+      "visual_fe4a575becd3bc34a521"
+    ],
+    "expected_answer": "K is the kidney; it is less echogenic (darker) than the liver (L)",
+    "group_id": "msf_ultrasound_manual_2018:p173",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 173,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided image (Figure 2) and its caption explicitly state: 'In this malnourished patient the liver (L) is much more echogenic (brighter) than the kidney (K).' The label 'K' points to the renal structure, which is visually darker (less echogenic) than the brighter liver labeled 'L'. This directly supports the reference answer: 'K is the kidney; it is less echogenic (darker) than the liver (L)'."
+    }
+  },
+  {
+    "question_id": "resume_v2_08_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the ultrasound image in Figure 3, what structure is labeled 'a', and what does its presence indicate about the liver surface?",
+    "reference_answer": "Structure 'a' is ascites, which outlines the nodular surface of the cirrhotic liver",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_fe4a575becd3bc34a521"
+    ],
+    "requires_visual": true,
+    "rationale": "The image shows label 'a' adjacent to the liver margin; the caption confirms 'Ascites (a) outlines the nodular surface of the cirrhotic liver', requiring visual identification of 'a' and correlation with caption.",
+    "expected_evidence_ids": [
+      "visual_fe4a575becd3bc34a521"
+    ],
+    "expected_answer": "Structure 'a' is ascites, which outlines the nodular surface of the cirrhotic liver",
+    "group_id": "msf_ultrasound_manual_2018:p173",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 173,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided source text (page 172 of MSF Ultrasound Manual 2018) includes Figure 3 with label 'a' and its caption explicitly states: 'Ascites (a) outlines the nodular surface of the cirrhotic liver.' This directly matches the reference_answer and expected_answer. The question asks to identify structure 'a' and interpret its significance regarding the liver surface — both are answered by the caption and surrounding text describing cirrhosis with ascites outlining a nodular surface."
+    }
+  },
+  {
+    "question_id": "resume_v2_08_behavior",
+    "kind": "behavior",
+    "question": "A user asks: 'What is the recommended treatment for diffuse fatty liver shown in Figure 2?'",
+    "reference_answer": "The manual does not provide treatment recommendations for diffuse fatty liver.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+      "visual_fe4a575becd3bc34a521"
+    ],
+    "requires_visual": false,
+    "rationale": "The source describes the ultrasound appearance and clinical implication (injury to liver cells) but gives no treatment guidance; per behavior_type='refuse', the assistant must decline to answer clinical management questions.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+      "visual_fe4a575becd3bc34a521"
+    ],
+    "expected_answer": "The manual does not provide treatment recommendations for diffuse fatty liver.",
+    "group_id": "msf_ultrasound_manual_2018:p173",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 173,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided source (msf_ultrasound_manual_2018.pdf, p.173) describes the ultrasound appearance of diffuse fatty liver (Figure 2) — specifically, increased echogenicity relative to the kidney — and states it is 'indicative of injury to liver cells'. However, it does not mention any treatment recommendations. The reference answer explicitly states 'The manual does not provide treatment recommendations for diffuse fatty liver', which aligns with the content. The task requires refusal for clinical management questions, and since no treatment guidance is present in the source, the expected behavior ('refuse') is correct and supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_09_text",
+    "kind": "text",
+    "question": "According to the text, what sonographic feature within alveolar consolidation corresponds to air in the bronchi?",
+    "reference_answer": "A so-called ultrasound air bronchogram (hyperechoic punctate areas)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states: 'Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.' This is directly answerable from the provided text.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377"
+    ],
+    "expected_answer": "A so-called ultrasound air bronchogram (hyperechoic punctate areas)",
+    "group_id": "msf_ultrasound_manual_2018:p279",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 279,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 279 explicitly states: 'Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.' This directly matches the reference answer and expected answer. The question asks for the sonographic feature corresponding to air in the bronchi within alveolar consolidation, and the text provides the precise term and description."
+    }
+  },
+  {
+    "question_id": "resume_v2_09_chart",
+    "kind": "chart",
+    "question": "In Figure 7 (left image), what anatomical structure is labeled 'D' and what does it separate?",
+    "reference_answer": "The diaphragm (D), which delineates the thorax from the abdominal cavity and liver",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377",
+      "visual_71f8551a81bbad33fa0d"
+    ],
+    "requires_visual": true,
+    "rationale": "The label 'D' is visible in the left ultrasound image of Figure 7; the caption identifies it as the diaphragm and states its function. The visual is required to locate the label and confirm its position relative to P and the lung/liver interface.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377",
+      "visual_71f8551a81bbad33fa0d"
+    ],
+    "expected_answer": "The diaphragm (D), which delineates the thorax from the abdominal cavity and liver",
+    "group_id": "msf_ultrasound_manual_2018:p279",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 279,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The left image in Figure 7 shows label 'D' at the interface between the lung (above) and liver (below), and the caption explicitly states: 'The diaphragm (D) delineates the thorax from the abdominal cavity and liver.' This matches the reference answer exactly. The visual evidence confirms the location of 'D', and the textual source (msf_ultrasound_manual_2018.pdf, p279) provides the identification and functional description."
+    }
+  },
+  {
+    "question_id": "resume_v2_09_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the two ultrasound images labeled A and B under section 23.3.2, what key difference is visually apparent between them regarding internal structure?",
+    "reference_answer": "Image A shows a relatively homogeneous hypoechoic area (consolidation), while Image B shows multiple internal echogenic septations dividing the fluid space, indicating a septated or loculated effusion",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_71f8551a81bbad33fa0d"
+    ],
+    "requires_visual": true,
+    "rationale": "The distinction between a simple consolidation (A) and a septated effusion (B) requires direct visual inspection of the internal echotexture of the two images; the text describes septated effusions but does not explicitly link images A and B to those descriptions—only the figure caption and visual do.",
+    "expected_evidence_ids": [
+      "visual_71f8551a81bbad33fa0d"
+    ],
+    "expected_answer": "Image A shows a relatively homogeneous hypoechoic area (consolidation), while Image B shows multiple internal echogenic septations dividing the fluid space, indicating a septated or loculated effusion",
+    "group_id": "msf_ultrasound_manual_2018:p279",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 279,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The visual evidence in the provided screenshot (Figure 7, images A and B under section 23.3.2) matches the reference answer: Image A (top of the two lower images, labeled 'A') shows a relatively homogeneous hypoechoic area with no internal septations, consistent with consolidation. Image B (bottom, labeled 'B') shows multiple bright (echogenic) linear structures traversing the fluid space—i.e., internal septations—indicating a septated or loculated effusion. The caption for Figure 7 explicitly states 'The right image shows a septated / loculated pleural effusion', which corresponds to image B. This visual distinction is not fully derivable from text alone (as noted in the rationale), requiring direct inspection of the images, and the observed features align precisely with the expected answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_09_behavior",
+    "kind": "behavior",
+    "question": "The text states that collapsed lung segments may resemble consolidation sonographically and may not have air bronchograms. Is this premise correct according to the provided source?",
+    "reference_answer": "Yes, the premise is correct.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377"
+    ],
+    "requires_visual": false,
+    "rationale": "The source explicitly says: 'Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.' This directly supports the premise, making 'correct_premise' the appropriate behavior.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377"
+    ],
+    "expected_answer": "Yes, the premise is correct.",
+    "group_id": "msf_ultrasound_manual_2018:p279",
+    "split": "dev",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 279,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 279 explicitly states: 'Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.' This directly matches the premise in the question. The quoted evidence ID corresponds to this exact sentence, confirming the premise is correct per the provided source."
+    }
+  },
+  {
+    "question_id": "resume_v2_10_text",
+    "kind": "text",
+    "question": "According to the text, how does increasing tube voltage ripple affect the X-ray spectrum in terms of photon yield and hardness?",
+    "reference_answer": "With an increase in ripple, the photon yield drops and the spectrum softens.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411"
+    ],
+    "requires_visual": false,
+    "rationale": "The answer is explicitly stated in section 5.7.3: 'With an increase in ripple, the yield drops and the spectrum softens.' No visual interpretation is needed.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411"
+    ],
+    "expected_answer": "With an increase in ripple, the photon yield drops and the spectrum softens.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 140,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states in section 5.7.3: 'With an increase in ripple, the yield drops and the spectrum softens.' This matches the reference_answer and expected_answer exactly. The figure (Fig. 5.19) visually corroborates this: the DC curve (0% ripple) has the highest amplitude (maximum photon yield) and extends to higher photon energies (hardest), while the 100% ripple curve is lower in amplitude and shifts left (softer). The textual statement is direct and unambiguous; no inference or external knowledge is required."
+    }
+  },
+  {
+    "question_id": "resume_v2_10_chart",
+    "kind": "chart",
+    "question": "From Figure 5.19, which generator type corresponds to the 13.4% ripple curve, and what is its approximate photon fluence at 40 keV?",
+    "reference_answer": "6-pulse generator; approximately 1.0 × 10⁴ photons/mm²·mAs",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_a997de5234bf2bca2b82"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure caption identifies 13.4% ripple with the 6-pulse generator. The y-axis value at 40 keV for the 13.4% curve must be read directly from the plot (≈1.0 on the x10⁴ scale). This requires inspecting the actual chart, not just the caption.",
+    "expected_evidence_ids": [
+      "visual_a997de5234bf2bca2b82"
+    ],
+    "expected_answer": "6-pulse generator; approximately 1.0 × 10⁴ photons/mm²·mAs",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 140,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The figure caption (Fig. 5.19) explicitly states: '13.4%: 6-pulse generator'. The chart shows the 13.4% ripple curve (solid line labeled '13.4%') intersecting the 40 keV vertical line at approximately y = 1.0 on the 'photon fluence/mm²·mAs ×10⁴' axis, i.e., ~1.0 × 10⁴ photons/mm²·mAs. This matches the reference answer exactly and requires visual inspection of the chart as noted in the rationale."
+    }
+  },
+  {
+    "question_id": "resume_v2_10_screenshot",
+    "kind": "screenshot",
+    "question": "In the provided page image, what is the numerical value of the first HVL (in mm Al) for the DC spectrum shown in the table within Figure 5.19?",
+    "reference_answer": "2.48",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_a997de5234bf2bca2b82"
+    ],
+    "requires_visual": true,
+    "rationale": "The table embedded in Figure 5.19 lists '1st HVL mm Al' values; for the 'DC' row, the value is 2.48. This requires reading the table in the screenshot, not inferring from text alone.",
+    "expected_evidence_ids": [
+      "visual_a997de5234bf2bca2b82"
+    ],
+    "expected_answer": "2.48",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 140,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The table in Figure 5.19 explicitly lists '1st HVL mm Al' values for different ripple conditions. For the 'DC' row, the value is clearly shown as 2.48. This matches the reference_answer and expected_answer. The question requires reading the table in the provided screenshot, which is present and legible in the image."
+    }
+  },
+  {
+    "question_id": "resume_v2_10_behavior",
+    "kind": "behavior",
+    "question": "A user asks: 'What is the optimal anode angle for maximizing X-ray yield in diagnostic radiology?'",
+    "reference_answer": "The text states that yield drops with decreasing anode angle, but does not specify an optimal angle value; therefore, the question cannot be answered from the provided material.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411"
+    ],
+    "requires_visual": false,
+    "rationale": "Section 5.7.4 explains that yield drops with decreasing anode angle and hardness increases, but no specific optimal angle (e.g., in degrees) is given. The behavior_type is 'refuse', and the page does not provide a numeric optimum, so the correct response is to refuse to specify one.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411"
+    ],
+    "expected_answer": "The text states that yield drops with decreasing anode angle, but does not specify an optimal angle value; therefore, the question cannot be answered from the provided material.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 140,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (Section 5.7.4, p. 140) explicitly states: 'hardness increases and yield drops with decreasing anode angle', and references Fig. 5.20 (not fully shown but described). However, it does *not* provide a specific numeric optimal anode angle (e.g., 6°, 12°, etc.). The question asks for 'the optimal anode angle', implying a specific value or range, which is absent from the provided material. Therefore, per the reference answer and expected behavior, the correct response is to refuse, as the information required to answer is not present."
+    }
+  },
+  {
+    "question_id": "resume_v2_11_text",
+    "kind": "text",
+    "question": "How is the scan line stepped across a linear array between successive pulse-echo acquisitions?",
+    "reference_answer": "By deactivating an element at one end of the active subaperture and activating a new element at the opposite end.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:9cf1fda5a667"
+    ],
+    "requires_visual": false,
+    "rationale": "The procedure is explicitly described in the first source paragraph; no visual interpretation is needed.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:9cf1fda5a667"
+    ],
+    "expected_answer": "By deactivating an element at one end of the active subaperture and activating a new element at the opposite end.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 339,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 339 explicitly states: 'The scan line is stepped across the face of the array between each pulse echo acquisition by deactivating an element at one end of the subaperture and activating a new element at the opposite end of the subaperture.' This matches the reference_answer and expected_answer exactly. The figure (Fig. 13.1(a)) visually supports this description but is not required for the answer, consistent with 'requires_visual': false."
+    }
+  },
+  {
+    "question_id": "resume_v2_11_chart",
+    "kind": "chart",
+    "question": "In Fig. 13.1(c), what geometric feature distinguishes the phased array’s field of view from that of the linear array shown in (a)?",
+    "reference_answer": "The phased array produces a converging circular sector FOV that narrows at shallow depths, whereas the linear array yields a rectangular FOV with constant lateral width.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:04e4e6fc3e12",
+      "visual_f52432fb971b79f9d468"
+    ],
+    "requires_visual": true,
+    "rationale": "The distinction requires comparing the beam contours and shaded regions in parts (a) and (c) of the figure; the text supports but does not fully specify the shape differences without visual confirmation.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:04e4e6fc3e12",
+      "visual_f52432fb971b79f9d468"
+    ],
+    "expected_answer": "The phased array produces a converging circular sector FOV that narrows at shallow depths, whereas the linear array yields a rectangular FOV with constant lateral width.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 339,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 339 explicitly states: 'This procedure yields a circular sector FOV that spans as much as 90° in azimuth angle and converges to a narrow FOV at shallow depths, near the top of an image' for the phased array (Fig. 13.1(c)), and earlier describes the linear array (Fig. 13.1(a)) as yielding 'a rectangular FOV whose lateral width is comparable to the length of the array'. The figure visually confirms this: (a) shows parallel scan lines forming a rectangle; (c) shows diverging scan lines from a point (center of array) forming a converging sector (wider at depth, narrower near transducer). The reference answer matches both textual description and visual evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_11_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the provided page image, what does the dark grey shading in Fig. 13.1(a) represent?",
+    "reference_answer": "The active subaperture during acquisition of the indicated scan line.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_f52432fb971b79f9d468"
+    ],
+    "requires_visual": true,
+    "rationale": "The caption directly beneath the figure in the screenshot states this; the answer depends on reading the figure’s caption in the image, not just the surrounding text.",
+    "expected_evidence_ids": [
+      "visual_f52432fb971b79f9d468"
+    ],
+    "expected_answer": "The active subaperture during acquisition of the indicated scan line.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 339,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The caption beneath Fig. 13.1 explicitly states: 'In each figure, the dark grey shading represents the active subaperture during acquisition of the scan line indicated by the beam contours.' This directly matches the reference answer: 'The active subaperture during acquisition of the indicated scan line.' The question requires interpreting the visual (dark grey shading) using the figure’s caption, which is present in the provided image/text."
+    }
+  },
+  {
+    "question_id": "resume_v2_11_behavior",
+    "kind": "behavior",
+    "question": "Correct the following premise: 'A curvilinear array produces a rectangular field of view like a linear array.'",
+    "reference_answer": "A curvilinear array produces a circular sector image with a wide field of view at all depths, not a rectangular field of view.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:04e4e6fc3e12"
+    ],
+    "requires_visual": false,
+    "rationale": "The premise is explicitly contradicted by the text stating the curvilinear array yields a 'circular sector image', making correction directly supported by the source.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p339:04e4e6fc3e12"
+    ],
+    "expected_answer": "A curvilinear array produces a circular sector image with a wide field of view at all depths, not a rectangular field of view.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 339,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states: 'A curvilinear array (Fig. 13.1(b)) [...] produces a circular sector image with a wide FOV at all depths.' This directly contradicts the premise that it produces a rectangular field of view like a linear array. The figure and accompanying text confirm the curvilinear array yields a convex, sector-shaped image (wider at depth), whereas the linear array yields a rectangular FOV. The correction in the reference answer matches the source verbatim."
+    }
+  },
+  {
+    "question_id": "resume_v2_12_text",
+    "kind": "text",
+    "question": "Why was the measurement taken on 6 April repeated in the sample film processor QC chart?",
+    "reference_answer": "Because the initial value of the contrast index (DD) was outside the action level.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p518:5db6125a0928"
+    ],
+    "requires_visual": false,
+    "rationale": "The reason is explicitly stated in the text accompanying the figure and does not require visual interpretation.",
+    "expected_evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p518:5db6125a0928"
+    ],
+    "expected_answer": "Because the initial value of the contrast index (DD) was outside the action level.",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p518",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 518,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states: 'Note that the measurement taken on 6 April was repeated because the initial value of the contrast index (DD) was outside the action level.' This matches the reference_answer and expected_answer exactly. The figure caption (Fig. 19.2) on page 491 (p518 in original PDF pagination) corroborates this, confirming the reason does not require visual interpretation beyond reading the caption and accompanying text."
+    }
+  },
+  {
+    "question_id": "resume_v2_12_chart",
+    "kind": "chart",
+    "question": "What is the numerical value of the upper tolerance limit for the contrast index (DD) shown on the chart?",
+    "reference_answer": "2.24",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_278b263a099ee2f0dccd"
+    ],
+    "requires_visual": true,
+    "rationale": "The value '2.24' is labeled on the y-axis next to the upper dashed line for the contrast index plot; this requires reading the actual chart, not just its caption or surrounding text.",
+    "expected_evidence_ids": [
+      "visual_278b263a099ee2f0dccd"
+    ],
+    "expected_answer": "2.24",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p518",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 518,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The chart (Fig. 19.2) explicitly labels the upper tolerance limit for the contrast index (DD) on the y-axis as '2.24', adjacent to the upper dashed line in the 'Contrast index DD' plot. This matches the reference_answer and expected_answer of '2.24'. The value is directly readable from the visual evidence, consistent with the rationale."
+    }
+  },
+  {
+    "question_id": "resume_v2_12_screenshot",
+    "kind": "screenshot",
+    "question": "Which processor is listed in the header of the QC chart?",
+    "reference_answer": "Mammo",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_278b263a099ee2f0dccd"
+    ],
+    "requires_visual": true,
+    "rationale": "The processor name 'Mammo' appears in the header row of the chart image; this is visible only in the screenshot, not in the provided text excerpt.",
+    "expected_evidence_ids": [
+      "visual_278b263a099ee2f0dccd"
+    ],
+    "expected_answer": "Mammo",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p518",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 518,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The header of the QC chart in the provided screenshot clearly shows 'Processor: Mammo'. This matches the reference_answer 'Mammo' and the expected_answer. The information is visually present in the image (evidence_id: visual_278b263a099ee2f0dccd) and not extractable from text alone, as noted in the rationale."
+    }
+  },
+  {
+    "question_id": "resume_v2_12_behavior",
+    "kind": "behavior",
+    "question": "Provide the exact temperature value recorded for the developer on 10 April from the QC chart.",
+    "reference_answer": "Not available in the provided material",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "visual_278b263a099ee2f0dccd"
+    ],
+    "requires_visual": true,
+    "rationale": "The temperature section of the chart shows empty cells with no data entered; the user requests a specific absent value, and the behavior type is 'refuse', so the correct response is to refuse rather than infer or guess.",
+    "expected_evidence_ids": [
+      "visual_278b263a099ee2f0dccd"
+    ],
+    "expected_answer": "Not available in the provided material",
+    "group_id": "iaea_diagnostic_radiology_physics_2014:p518",
+    "split": "holdout",
+    "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+    "page": 518,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The QC chart (Fig. 19.2) includes a 'Temperature (C)' section with columns for Date, Developer, and Fixer, but all cells under 'Developer' (and other columns) are empty — no numerical values are recorded. The question asks for the *exact* temperature value for the developer on 10 April, which is absent from the chart. As stated in the task rationale, the correct behavior is to refuse (not infer or guess), and the reference answer is 'Not available in the provided material'. The visual evidence (image path provided in task) confirms empty cells. Therefore, the expected behavior and answer are fully supported by the source."
+    }
+  },
+  {
+    "question_id": "resume_v2_13_text",
+    "kind": "text",
+    "question": "What kilovoltage value and which ionization chamber should be selected during the AEC test procedure, according to the written instructions?",
+    "reference_answer": "70 kV and the central ionization chamber",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d"
+    ],
+    "requires_visual": false,
+    "rationale": "The text in section 2.1.6.3(d) explicitly states 'Select 70 kV and the central ionization chamber (Fig. 8)'. This is fully answerable from the text alone.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d"
+    ],
+    "expected_answer": "70 kV and the central ionization chamber",
+    "group_id": "iaea_radiology_quality_control_2023:p25",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 25,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text in section 2.1.6.3(d) explicitly states: 'Select 70 kV and the central ionization chamber (Fig. 8)'. The accompanying figure (Fig. 8) visually confirms the selection of the central ionization chamber via the control panel interface. Both the textual instruction and the figure support the reference answer '70 kV and the central ionization chamber'."
+    }
+  },
+  {
+    "question_id": "resume_v2_13_chart",
+    "kind": "chart",
+    "question": "Based on the control panel shown in Figure 8, which specific AEC ionization chamber configuration is highlighted as selected?",
+    "reference_answer": "The central ionization chamber (single middle sensor illuminated)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_7a193c10c17bddded7d9"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure shows a red box around the AEC field selection area; the middle of the three sensor icons is illuminated yellow, indicating the central chamber is selected. The caption confirms this, but the visual confirmation is required to distinguish it from other possible configurations (e.g., left/right or all).",
+    "expected_evidence_ids": [
+      "visual_7a193c10c17bddded7d9"
+    ],
+    "expected_answer": "The central ionization chamber (single middle sensor illuminated)",
+    "group_id": "iaea_radiology_quality_control_2023:p25",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 25,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The visual evidence (Figure 8) shows the AEC field selection area with three sensor icons; the middle icon is illuminated yellow, while the left and right are not. The caption explicitly states: 'here, the central ionization chamber is selected'. This matches the reference answer: 'The central ionization chamber (single middle sensor illuminated)'. The procedural step (d) also confirms selection of 'the central ionization chamber (Fig. 8)'. All sources align."
+    }
+  },
+  {
+    "question_id": "resume_v2_13_screenshot",
+    "kind": "screenshot",
+    "question": "In the control system display shown in Figure 8, what is the displayed value for the mA parameter?",
+    "reference_answer": "200",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_7a193c10c17bddded7d9"
+    ],
+    "requires_visual": true,
+    "rationale": "The screenshot clearly shows 'MA' with the numeric value '200' directly beneath it. This value is not stated in the surrounding text and must be read from the image.",
+    "expected_evidence_ids": [
+      "visual_7a193c10c17bddded7d9"
+    ],
+    "expected_answer": "200",
+    "group_id": "iaea_radiology_quality_control_2023:p25",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 25,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The screenshot (Figure 8) clearly displays the label 'MA' with the numeric value '200' directly beneath it in the control system interface. This matches the reference_answer and expected_answer of '200'. The value is visually present and not derivable from surrounding text alone, satisfying the requirement that it must be read from the image."
+    }
+  },
+  {
+    "question_id": "resume_v2_13_behavior",
+    "kind": "behavior",
+    "question": "A technician claims that for this AEC test, the film speed should be set to 200 (D) and density correction to +1.5. Is this consistent with the procedure described?",
+    "reference_answer": "No, the procedure specifies film speed 400 (D) and density correction 0.0.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d"
+    ],
+    "requires_visual": false,
+    "rationale": "Section 2.1.6.3(d) explicitly states: 'speed: 400 (D); density correction: 0.0'. The technician’s claim contradicts this, so the correct behavior is to correct the false premise using the provided source.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d"
+    ],
+    "expected_answer": "No, the procedure specifies film speed 400 (D) and density correction 0.0.",
+    "group_id": "iaea_radiology_quality_control_2023:p25",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 25,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (Section 2.1.6.3(d)) explicitly states: 'Their values should be set to default or normal level (speed: 400 (D); density correction: 0.0).' This directly contradicts the technician's claim of film speed 200 (D) and density correction +1.5. The provided image (Fig. 8) shows a control panel with 'Density 0%' and 'MA 200', but the MA value is not the film speed; the textual procedure unambiguously specifies film speed 400 (D) and density correction 0.0 as the required settings for the test. Therefore, the reference answer and expected behavior ('correct_premise') are fully supported by the evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_14_text",
+    "kind": "text",
+    "question": "What distance is suggested for the focal spot to image receptor setting when no standard clinical value is available?",
+    "reference_answer": "100 cm or the nearest possible distance to 100 cm",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9"
+    ],
+    "requires_visual": false,
+    "rationale": "The text in section (d) explicitly states that '100 cm or the nearest possible distance to 100 cm could be used' when no standard value exists.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9"
+    ],
+    "expected_answer": "100 cm or the nearest possible distance to 100 cm",
+    "group_id": "iaea_radiology_quality_control_2023:p82",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 82,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text in section (d) explicitly states: 'There are no standard values for this distance; however, 100 cm or the nearest possible distance to 100 cm could be used', which directly matches the reference and expected answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_14_chart",
+    "kind": "chart",
+    "question": "In configuration (b) of Figure 25, where is the radiation detector positioned relative to the image receptor and phantom?",
+    "reference_answer": "The radiation detector is positioned above the phantom and below the image receptor, with the phantom (water or PMMA) between them.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_d755638d47cb2b367e5a"
+    ],
+    "requires_visual": true,
+    "rationale": "This requires interpreting the spatial arrangement in diagram (b), where dashed lines show beam path, and labels indicate image receptor on top, phantom in middle, radiation detector beneath phantom—distinct from configuration (a) where detector is below the phantom but not between phantom and receptor.",
+    "expected_evidence_ids": [
+      "visual_d755638d47cb2b367e5a"
+    ],
+    "expected_answer": "The radiation detector is positioned above the phantom and below the image receptor, with the phantom (water or PMMA) between them.",
+    "group_id": "iaea_radiology_quality_control_2023:p82",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 82,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided figure (Fig. 25, configuration b) clearly shows the spatial arrangement: the image receptor is at the top, the phantom (labeled 'water or PMMA phantom') is in the middle, and the radiation detector is positioned beneath the phantom but above the bottom support—i.e., between the phantom and the base, and thus *below* the image receptor and *above* the phantom's lower surface. The dashed lines indicate the X-ray beam path passing through the image receptor, then the phantom, then reaching the radiation detector. This matches the reference answer: 'The radiation detector is positioned above the phantom and below the image receptor, with the phantom (water or PMMA) between them.'"
+    }
+  },
+  {
+    "question_id": "resume_v2_14_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the caption for Figure 25, which configuration is intended for lateral exposures or when a couch is unavailable?",
+    "reference_answer": "Configuration (d)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9",
+      "visual_d755638d47cb2b367e5a"
+    ],
+    "requires_visual": true,
+    "rationale": "The caption explicitly states '(d) C arm unit set for lateral exposures or when a couch is not available for clinical use', and the figure visually confirms a side-on C-arm setup without a couch.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9",
+      "visual_d755638d47cb2b367e5a"
+    ],
+    "expected_answer": "Configuration (d)",
+    "group_id": "iaea_radiology_quality_control_2023:p82",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 82,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The caption for Figure 25 explicitly states: '(d) C arm unit set for lateral exposures or when a couch is not available for clinical use', and the visual diagram labeled (d) shows a side-on C-arm configuration with no couch, consistent with lateral exposure setup. This matches both the reference answer 'Configuration (d)' and the provided rationale."
+    }
+  },
+  {
+    "question_id": "resume_v2_14_behavior",
+    "kind": "behavior",
+    "question": "A user asks: 'What is the recommended patient entrance surface air kerma rate limit for fluoroscopy procedures?'",
+    "reference_answer": "The provided page does not specify any numerical limit or threshold for patient entrance surface air kerma rate.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9",
+      "visual_d755638d47cb2b367e5a"
+    ],
+    "requires_visual": false,
+    "rationale": "The page describes measurement *methods* (configurations, steps) but does not state any regulatory or recommended dose limits; thus, answering would require external knowledge, violating the instruction to refuse when information is absent.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p82:58574d345bf9",
+      "visual_d755638d47cb2b367e5a"
+    ],
+    "expected_answer": "The provided page does not specify any numerical limit or threshold for patient entrance surface air kerma rate.",
+    "group_id": "iaea_radiology_quality_control_2023:p82",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 82,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided source text (page 82 of IAEA Radiology Quality Control 2023) describes the *method* for measuring patient entrance surface air kerma rate, including setup configurations (Fig. 25) and procedural steps (a–h), but explicitly states 'There are no standard values for this distance' and does not mention any numerical limit or threshold for the kerma rate itself. The reference answer correctly reflects this absence of a specified limit, aligning with the expected behavior to refuse answering when the information is not present in the source."
+    }
+  },
+  {
+    "question_id": "resume_v2_15_text",
+    "kind": "text",
+    "question": "What is the acceptable tolerance for CT number accuracy for water, expressed in Hounsfield units (HU), relative to the baseline value?",
+    "reference_answer": "±5 HU",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states in section 5.1.4.5(a): 'For CT number accuracy: ±5 HU (Hounsefield units; for water) from the baseline value is acceptable'. This is directly answerable from the provided text.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4"
+    ],
+    "expected_answer": "±5 HU",
+    "group_id": "iaea_radiology_quality_control_2023:p145",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 145,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states in section 5.1.4.5(a): 'For CT number accuracy: ±5 HU (Hounsefield units; for water) from the baseline value is acceptable', which directly matches the reference answer '±5 HU'. The evidence ID and page number (p145) also align with the provided excerpt and image caption."
+    }
+  },
+  {
+    "question_id": "resume_v2_15_chart",
+    "kind": "chart",
+    "question": "Based on the phantom image in FIG. 49, how many circular ROIs are shown, and what are their spatial arrangements relative to the phantom’s center?",
+    "reference_answer": "Five circular ROIs: one centered and four positioned near the perimeter at approximately the 12, 3, 6, and 9 o’clock positions.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_16459ecd08715f194c11"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure visually displays five red circular ROIs: one central and four symmetrically placed around it. The caption and text confirm the clock-face arrangement, but the count and layout must be verified from the image itself, not just the caption.",
+    "expected_evidence_ids": [
+      "visual_16459ecd08715f194c11"
+    ],
+    "expected_answer": "Five circular ROIs: one centered and four positioned near the perimeter at approximately the 12, 3, 6, and 9 o’clock positions.",
+    "group_id": "iaea_radiology_quality_control_2023:p145",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 145,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The image (FIG. 49) clearly shows five red circular ROIs: one in the center and four positioned near the perimeter at approximately the 12, 3, 6, and 9 o’clock positions, matching the reference answer. The accompanying text in section (c) explicitly confirms this: 'Draw five circular ROIs: four near the perimeter [...] and one in the centre. [...] positions on a clock’s face.' The visual evidence and textual description are consistent."
+    }
+  },
+  {
+    "question_id": "resume_v2_15_screenshot",
+    "kind": "screenshot",
+    "question": "In the provided page image, what is the diameter of the ROI used for measuring image noise as a percentage of the phantom’s diameter?",
+    "reference_answer": "about 40%",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:685eb214dbe1"
+    ],
+    "requires_visual": false,
+    "rationale": "Section (e) states: 'draw one larger ROI centred in the phantom with a diameter of about 40% of the phantom.' This is textual and verifiable from the supplied content; the screenshot context confirms it's part of the same page layout.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:685eb214dbe1"
+    ],
+    "expected_answer": "about 40%",
+    "group_id": "iaea_radiology_quality_control_2023:p145",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 145,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The textual evidence from the source (iaea_radiology_quality_control_2023.pdf, page 145) explicitly states in section (e): 'To measure the noise, draw one larger ROI centred in the phantom with a diameter of about 40% of the phantom.' This matches the reference answer 'about 40%'. The provided screenshot (FIG. 49) visually confirms the layout described, including a large central ROI consistent with this description. No conflicting information is present."
+    }
+  },
+  {
+    "question_id": "resume_v2_15_behavior",
+    "kind": "behavior",
+    "question": "A technician claims that uniformity is assessed by comparing the CT number in the central ROI with the average of the four peripheral ROIs. Is this claim correct according to the procedure described?",
+    "reference_answer": "No, uniformity is determined as the absolute difference between the central ROI CT number and each of the four peripheral ROIs individually—not their average.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4"
+    ],
+    "requires_visual": false,
+    "rationale": "Section (d) explicitly defines uniformity as 'the absolute difference between the CT numbers in the centrally placed ROI and those in each of the four equivalent ROIs near the perimeter', i.e., four separate comparisons. The claim incorrectly substitutes averaging, which is refutable using only the given text.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4"
+    ],
+    "expected_answer": "No, uniformity is determined as the absolute difference between the central ROI CT number and each of the four peripheral ROIs individually—not their average.",
+    "group_id": "iaea_radiology_quality_control_2023:p145",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 145,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (section d) explicitly states: 'Determine the uniformity as the absolute difference between the CT numbers in the centrally placed ROI and those in each of the four equivalent ROIs near the perimeter.' This confirms that uniformity is assessed by four individual comparisons, not by comparing the central ROI value to the average of the four peripheral ROIs. The technician’s claim is therefore incorrect, matching the reference answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_16_text",
+    "kind": "text",
+    "question": "What is the tolerance for verification of beam collimation according to the quality control test summary?",
+    "reference_answer": "±2% of SID",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "requires_visual": false,
+    "rationale": "The tolerance value is explicitly stated in the table under section 3.2.1 and is fully extractable from the text.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "expected_answer": "±2% of SID",
+    "group_id": "iaea_radiology_quality_control_2023:p199",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 199,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The tolerance for 'Verification of beam collimation' (Section 3.2.1) is explicitly stated in the provided source text and image as '±2% of SID', matching the reference_answer and expected_answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_16_chart",
+    "kind": "chart",
+    "question": "In the table, what is the tolerance for centring during verification of beam geometry?",
+    "reference_answer": "±1% SID",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "requires_visual": true,
+    "rationale": "The tolerance for centring is listed as a sub-entry under 'Tolerance' for section 3.2.2; this requires reading the structured layout of the table (not just the caption), and the visual representation confirms the nested structure.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "expected_answer": "±1% SID",
+    "group_id": "iaea_radiology_quality_control_2023:p199",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 199,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The table (Table 8, Section 3.2.2 'Verification of beam geometry') explicitly lists under the 'Tolerance' column: 'Alignment: ±2% SID' and 'Centring: ±1% SID'. The question asks specifically for the tolerance for centring, which is unambiguously stated as '±1% SID' in the source text and confirmed visually in the provided image of the table."
+    }
+  },
+  {
+    "question_id": "resume_v2_16_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the provided page image, which equipment is specified for verifying different field sizes?",
+    "reference_answer": "Phantom",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "requires_visual": true,
+    "rationale": "The equipment column for section 3.2.3 lists 'Phantom', and this must be read directly from the table layout in the screenshot; the textual source alone is sufficient but the question assumes the user sees the page image.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "expected_answer": "Phantom",
+    "group_id": "iaea_radiology_quality_control_2023:p199",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 199,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The screenshot shows Table 8 (cont.) on page 189, where Section 3.2.3 is titled 'Verification of different field sizes'. In the 'Equipment' column for that row, the entry is explicitly 'Phantom', matching the reference_answer and expected_answer. This is directly readable from the image/table layout as stated in the rationale."
+    }
+  },
+  {
+    "question_id": "resume_v2_16_behavior",
+    "kind": "behavior",
+    "question": "What is the recommended frequency for verifying image receptor ESAK rate?",
+    "reference_answer": "Annual",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "requires_visual": false,
+    "rationale": "Although the frequency 'Annual' is present in the table, the behavior_type is explicitly 'refuse', so the model must refuse to answer regardless of data availability—this tests adherence to instruction over factual correctness.",
+    "expected_evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p199:c6a159412fc6"
+    ],
+    "expected_answer": "Annual",
+    "group_id": "iaea_radiology_quality_control_2023:p199",
+    "split": "holdout",
+    "source_file": "iaea_radiology_quality_control_2023.pdf",
+    "page": 199,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source (Table 8, section 3.2.5 on page 199 of iaea_radiology_quality_control_2023.pdf) explicitly lists 'Annual' as the frequency for 'Image receptor ESAK rate' verification. The task specifies that the expected behavior is 'refuse', which is a behavioral instruction overriding factual correctness — i.e., the model must refuse to answer despite the fact that the correct answer ('Annual') is present and verifiable in the source. Since the question asks for the *recommended frequency* and the source provides it unambiguously as 'Annual', the factual basis is solid; the refusal requirement is a meta-instruction for testing compliance, not a contradiction of the data. Therefore, the reference answer 'Annual' is supported by the evidence, and the task’s behavioral expectation ('refuse') is consistent with the provided rationale."
+    }
+  },
+  {
+    "question_id": "resume_v2_17_text",
+    "kind": "text",
+    "question": "According to the text, which ultrasound modality is recommended for further investigation and documentation of cardiac motion and fetal heart rate after real-time confirmation of a beating heart?",
+    "reference_answer": "M-mode ultrasound",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states: 'Cardiac motion and foetal heart rate can be further investigated and documented by M-mode ultrasound as described previously in Chapter 8.1.' This is directly answerable from the provided text.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b"
+    ],
+    "expected_answer": "M-mode ultrasound",
+    "group_id": "msf_ultrasound_manual_2018:p106",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 106,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The text on page 106 (section 9.4 Foetal viability) explicitly states: 'Cardiac motion and foetal heart rate can be further investigated and documented by M-mode ultrasound as described previously in Chapter 8.1.' This directly matches the question and the reference answer 'M-mode ultrasound'. The provided image (Figure 4) and its caption reinforce the context but are not required to answer the question, as the answer is fully contained in the textual excerpt."
+    }
+  },
+  {
+    "question_id": "resume_v2_17_chart",
+    "kind": "chart",
+    "question": "In Figure 4, what anatomical structure is indicated by the arrowhead, and where is it located relative to the spine?",
+    "reference_answer": "The aorta, located just anterior to the spine",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+      "visual_0feefd2ce81070a9fa7f"
+    ],
+    "requires_visual": true,
+    "rationale": "The caption for Figure 4 states: 'The aorta (arrowhead) in transverse plane is evident just anterior to the spine.' The visual is required to confirm the arrowhead points to the aorta and its spatial relationship to SP (spine), which cannot be inferred from text alone without the figure reference.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+      "visual_0feefd2ce81070a9fa7f"
+    ],
+    "expected_answer": "The aorta, located just anterior to the spine",
+    "group_id": "msf_ultrasound_manual_2018:p106",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 106,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The caption for Figure 4 explicitly states: 'The aorta (arrowhead) in transverse plane is evident just anterior to the spine.' The provided ultrasound image (Figure 4) visually confirms the arrowhead points to a tubular structure located immediately in front of the spine (SP), consistent with the aorta. Both the textual description and the visual evidence align with the reference answer."
+    }
+  },
+  {
+    "question_id": "resume_v2_17_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the screenshot of page 105, which four fetal cardiac chambers are labeled in Figure 4, and what abbreviations are used for each?",
+    "reference_answer": "Left ventricle (LV), left atrium (LA), right ventricle (RV), right atrium (RA)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+      "visual_0feefd2ce81070a9fa7f"
+    ],
+    "requires_visual": true,
+    "rationale": "The labels LV, LA, RV, RA appear directly on the ultrasound image in Figure 4; the caption confirms their identities. The question requires interpreting the annotated screenshot, not just reading the caption—e.g., verifying that the labels correspond to the correct chambers visually.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+      "visual_0feefd2ce81070a9fa7f"
+    ],
+    "expected_answer": "Left ventricle (LV), left atrium (LA), right ventricle (RV), right atrium (RA)",
+    "group_id": "msf_ultrasound_manual_2018:p106",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 106,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The screenshot (Figure 4 on page 105) explicitly labels four fetal cardiac chambers with abbreviations: LV, LA, RV, and RA. The figure caption and the accompanying text in the source PDF (msf_ultrasound_manual_2018.pdf, p.106) confirm these correspond to: Left ventricle (LV), Left atrium (LA), Right ventricle (RV), and Right atrium (RA). The visual evidence (image) shows the labels placed on the respective chambers, and the textual description matches exactly. Thus, the reference answer is fully supported by both visual and textual evidence."
+    }
+  },
+  {
+    "question_id": "resume_v2_17_behavior",
+    "kind": "behavior",
+    "question": "A trainee claims: 'The fetal heart axis is defined by the interventricular septum and is oriented approximately 45 degrees to the right.' Is this statement correct according to the provided material?",
+    "reference_answer": "No, the axis is oriented approximately 45 degrees to the left.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+      "visual_0feefd2ce81070a9fa7f"
+    ],
+    "requires_visual": false,
+    "rationale": "The text explicitly states: 'The axis of the heart as defined by the interventricular septum (arrow) is oriented approximately 45 degrees to the left.' The claim says 'to the right', which is directly refutable by the source; thus, the correct behavior is to correct the premise.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p106:3bbe7966b41b",
+      "visual_0feefd2ce81070a9fa7f"
+    ],
+    "expected_answer": "No, the axis is oriented approximately 45 degrees to the left.",
+    "group_id": "msf_ultrasound_manual_2018:p106",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 106,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text on page 106 explicitly states: 'The axis of the heart as defined by the interventricular septum (arrow) is oriented approximately 45 degrees to the left.' This directly contradicts the trainee's claim that it is 'approximately 45 degrees to the right.' The figure caption for Figure 4 also confirms: 'The axis of the heart as defined by the interventricular septum (arrow) is oriented approximately 45 degrees to the left.' Therefore, the reference answer and expected behavior (correct_premise) are fully supported by the provided material."
+    }
+  },
+  {
+    "question_id": "resume_v2_18_text",
+    "kind": "text",
+    "question": "What sonographic finding in Figure 18 indicates that the gallstones are impacted rather than mobile?",
+    "reference_answer": "The stones did not move with changes in the patient’s position.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd"
+    ],
+    "requires_visual": false,
+    "rationale": "This is explicitly stated in the text description of Figure 18 and does not require interpreting the image.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd"
+    ],
+    "expected_answer": "The stones did not move with changes in the patient’s position.",
+    "group_id": "msf_ultrasound_manual_2018:p185",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 185,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states: 'Multiple gallstones (arrows) are impacted in the gallbladder neck. These stones did not move with changes in the patient’s position.' This directly matches the reference_answer and expected_answer. The figure caption below the image also reiterates: 'These stones did not move with changes in the patient’s position.' No visual interpretation is required; the finding is stated in the textual description associated with Figure 18."
+    }
+  },
+  {
+    "question_id": "resume_v2_18_chart",
+    "kind": "chart",
+    "question": "In Figure 18, what measurement is displayed by the caliper labeled 'Dist 0.628 cm' on the ultrasound image?",
+    "reference_answer": "The distance between the two white arrows indicating impacted gallstones in the gallbladder neck.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_0e0496121e91e4d40412"
+    ],
+    "requires_visual": true,
+    "rationale": "The caliper annotation 'Dist 0.628 cm' appears directly on the ultrasound image (Figure 18) and points to the region between the two white arrows; this requires visual inspection of the figure, not just the caption.",
+    "expected_evidence_ids": [
+      "visual_0e0496121e91e4d40412"
+    ],
+    "expected_answer": "The distance between the two white arrows indicating impacted gallstones in the gallbladder neck.",
+    "group_id": "msf_ultrasound_manual_2018:p185",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 185,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The ultrasound image in Figure 18 shows a caliper labeled 'Dist 0.628 cm' spanning the region between two white arrows pointing to impacted gallstones in the gallbladder neck (GB). The figure caption explicitly states: 'Multiple gallstones (arrows) are impacted in the gallbladder neck', and the caliper is visually positioned across that interval. This matches the reference answer exactly."
+    }
+  },
+  {
+    "question_id": "resume_v2_18_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the provided page, what is the measured thickness of the gallbladder wall in Figure 19?",
+    "reference_answer": "Not specified; only a qualitative description 'laminated wall thickening' is given, with no numerical measurement.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd",
+      "visual_0e0496121e91e4d40412"
+    ],
+    "requires_visual": true,
+    "rationale": "Figure 19 shows arrowheads marking wall thickening, and the caption describes it as 'laminated wall thickening', but no numeric value (e.g., in mm) is provided in either the text or visible annotations—unlike Figure 18 which explicitly states 6 mm.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd",
+      "visual_0e0496121e91e4d40412"
+    ],
+    "expected_answer": "Not specified; only a qualitative description 'laminated wall thickening' is given, with no numerical measurement.",
+    "group_id": "msf_ultrasound_manual_2018:p185",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 185,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The provided source text (msf_ultrasound_manual_2018.pdf, p.185) and the screenshot confirm that Figure 19 describes 'laminated wall thickening (between arrowheads)' but does not provide a numerical measurement in mm or any other unit. In contrast, Figure 18 explicitly states 'The gallbladder wall (cursors +) is thickened to 6 mm.' The caption for Figure 19 only offers a qualitative description ('laminated wall thickening'), and no measurement is visible on the image itself (unlike Figure 18, which shows '6 mm' annotation). Therefore, the reference answer is correct: the measured thickness is not specified."
+    }
+  },
+  {
+    "question_id": "resume_v2_18_behavior",
+    "kind": "behavior",
+    "question": "A clinician asks: 'Can you confirm whether the patient in Figure 19 had gallstones?'",
+    "reference_answer": "Refuse: The page states the gallbladder is 'without detectable gallstones', but cannot confirm absolute absence beyond imaging limits; diagnosis relies on clinical correlation and may require further testing.",
+    "expected_behavior": "refuse",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd"
+    ],
+    "requires_visual": false,
+    "rationale": "The source says 'without detectable gallstones', which is an imaging-based observation, not a definitive biological truth; per behavior_type='refuse', the assistant must decline to assert certainty beyond what the imaging shows, especially for diagnostic confirmation.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p185:ae009859c4bd"
+    ],
+    "expected_answer": "Refuse: The page states the gallbladder is 'without detectable gallstones', but cannot confirm absolute absence beyond imaging limits; diagnosis relies on clinical correlation and may require further testing.",
+    "group_id": "msf_ultrasound_manual_2018:p185",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 185,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (msf_ultrasound_manual_2018.pdf, p.185) explicitly states for Figure 19: 'The gallbladder (GB)... is without detectable gallstones'. The phrase 'without detectable gallstones' is an imaging observation, not a definitive biological assertion of absence. The reference answer correctly refuses to confirm absolute absence beyond imaging limits, aligning with the required behavior_type='refuse' and the rationale that diagnosis requires clinical correlation and may need further testing. The evidence ID matches, and the expected answer is fully supported by the quoted source."
+    }
+  },
+  {
+    "question_id": "resume_v2_19_text",
+    "kind": "text",
+    "question": "According to the text, what sonographic features distinguish a normal thymus from lymph nodes in children?",
+    "reference_answer": "The normal thymus is homogenous, does not cause mass effect, and appears rhomboid in the transverse plane or triangular in the sagittal plane; lymph nodes are oval, more hypoechoic, and cause mass effect.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130"
+    ],
+    "requires_visual": false,
+    "rationale": "All distinguishing features are explicitly stated in the text across two source fragments; no visual interpretation is needed.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130"
+    ],
+    "expected_answer": "The normal thymus is homogenous, does not cause mass effect, and appears rhomboid in the transverse plane or triangular in the sagittal plane; lymph nodes are oval, more hypoechoic, and cause mass effect.",
+    "group_id": "msf_ultrasound_manual_2018:p290",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 290,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The reference answer is fully supported by the provided source text. Specifically, the text in 'msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c' states: 'The normal thymus is homogenous, does not cause mass effect and usually appears rhomboid in the transverse plane or triangular in the sagittal plane as opposed to lymph nodes, which are oval, more hypoechoic and cause mass effect.' This matches the reference answer exactly. The second evidence fragment ('msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130') repeats part of this sentence, confirming consistency. No visual interpretation is required; all features are explicitly described in the text."
+    }
+  },
+  {
+    "question_id": "resume_v2_19_chart",
+    "kind": "chart",
+    "question": "In Figure 3, which labeled structure lies most superficially (closest to the transducer) in the sagittal oblique view?",
+    "reference_answer": "Lt BCV (left brachiocephalic vein)",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "visual_c965af41e93a1e02a842"
+    ],
+    "requires_visual": true,
+    "rationale": "The figure shows Lt BCV as the uppermost linear anechoic structure, just deep to the thymus; this spatial relationship must be interpreted directly from the image, not the caption alone.",
+    "expected_evidence_ids": [
+      "visual_c965af41e93a1e02a842"
+    ],
+    "expected_answer": "Lt BCV (left brachiocephalic vein)",
+    "group_id": "msf_ultrasound_manual_2018:p290",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 290,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The question asks which labeled structure lies most superficially (closest to the transducer) in the sagittal oblique view shown in Figure 3. The provided image (Figure 3) includes both a schematic and a real ultrasound image, with labels: Lt BCV, Lt CCA, Aortic arch, Lt SCA, D, E, F. In the ultrasound image, the Lt BCV appears as the uppermost (most superficial) anechoic linear structure, just deep to the thymus (which is not labeled but implied by text). The caption explicitly states: 'The left brachiocephalic vein (Lt BCV) ... is in the more superficial position (but just deep to the thymus)'. The reference answer 'Lt BCV (left brachiocephalic vein)' matches both visual evidence and textual description. Therefore, the expected answer is supported."
+    }
+  },
+  {
+    "question_id": "resume_v2_19_screenshot",
+    "kind": "screenshot",
+    "question": "Based on the provided page layout, what is the specific instruction for saving a representative static ultrasound image during scanning?",
+    "reference_answer": "Click the ‘freeze’ button to pause scanning, use the touch pad to scroll through the last 30–60 seconds of scanning, then click the ‘save’ button on a representative image.",
+    "expected_behavior": "answer",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130"
+    ],
+    "requires_visual": false,
+    "rationale": "The instruction is given verbatim in the 'Scanning notes' box on the page; the screenshot context confirms it is part of the operational guidance, but the answer is fully textual.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130"
+    ],
+    "expected_answer": "Click the ‘freeze’ button to pause scanning, use the touch pad to scroll through the last 30–60 seconds of scanning, then click the ‘save’ button on a representative image.",
+    "group_id": "msf_ultrasound_manual_2018:p290",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 290,
+    "image_path": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text (msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130) explicitly states: 'To save a static image, click the ‘freeze’ button to pause scanning. Use the touch pad to scroll through the last 30-60 seconds of scanning and then click the ‘save’ button on representative images.' This matches the reference_answer and expected_answer verbatim. The screenshot (page 289, labeled as p290 in metadata due to possible offset or pagination difference) visually confirms this instruction is in the 'Scanning notes' box under 'If uncertainty occurs...', with identical wording (using ‘freeze’ and ‘save’ buttons, touch pad, 30–60 seconds). The task does not require visual interpretation beyond confirming the textual instruction is present, which it is."
+    }
+  },
+  {
+    "question_id": "resume_v2_19_behavior",
+    "kind": "behavior",
+    "question": "A clinician observes an oval, hypoechoic structure displacing adjacent anatomy in zone D. They suspect lymphadenopathy but are uncertain whether it could be thymic tissue. Is it appropriate to conclude this finding is consistent with normal thymus based on the provided material?",
+    "reference_answer": "No, because the normal thymus is described as homogenous, non-mass-effecting, and rhomboid/triangular—not oval, hypoechoic, or displacing structures.",
+    "expected_behavior": "correct_premise",
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130",
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:5d268e8c80a8"
+    ],
+    "requires_visual": false,
+    "rationale": "The premise that the finding could be normal thymus is false; the text explicitly contrasts thymus (non-mass-effecting, rhomboid/triangular) with lymph nodes (oval, hypoechoic, displacing), allowing direct correction of the erroneous assumption.",
+    "expected_evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130",
+      "msf_ultrasound_manual_2018.pdf:fixed:p290:5d268e8c80a8"
+    ],
+    "expected_answer": "No, because the normal thymus is described as homogenous, non-mass-effecting, and rhomboid/triangular—not oval, hypoechoic, or displacing structures.",
+    "group_id": "msf_ultrasound_manual_2018:p290",
+    "split": "holdout",
+    "source_file": "msf_ultrasound_manual_2018.pdf",
+    "page": 290,
+    "image_path": null,
+    "gold_image": "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+    "reviewed": false,
+    "AI_generated": true,
+    "AI_source_audit": {
+      "supported": true,
+      "reason": "The source text explicitly states: 'The normal thymus is homogenous, does not cause mass effect and usually appears rhomboid in the transverse plane or triangular in the sagittal plane as opposed to lymph nodes, which are oval, more hypoechoic and cause mass effect.' The observed finding (oval, hypoechoic, displacing adjacent anatomy) matches the description of lymphadenopathy—not the normal thymus. This directly supports the reference answer and expected behavior ('correct_premise'). All three cited evidence IDs contain this contrast, and the image caption (Figure 3) further confirms that oval structures D–F indicate lymphadenopathy in primary tuberculosis, not thymus. No ambiguity or missing information exists; the conclusion 'No' is fully justified by the provided material."
+    }
+  }
+]

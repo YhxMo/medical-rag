@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (Section 5.7.4, p. 140) explicitly states: 'hardness increases and yield drops with decreasing anode angle', and references Fig. 5.20 (not fully shown but described). However, it does *not* provide a specific numeric optimal anode angle (e.g., 6°, 12°, etc.). The question asks for 'the optimal anode angle', implying a specific value or range, which is absent from the provided material. Therefore, per the reference answer and expected behavior, the correct response is to refuse, as the information required to answer is not present."
+}

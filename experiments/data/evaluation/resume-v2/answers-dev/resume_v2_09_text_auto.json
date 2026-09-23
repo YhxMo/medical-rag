@@ -1,0 +1,159 @@
+{
+  "question_id": "resume_v2_09_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text on page 279 explicitly states: 'Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.' This directly matches the reference answer and expected answer. The question asks for the sonographic feature corresponding to air in the bronchi within alveolar consolidation, and the text provides the precise term and description."
+  },
+  "result": {
+    "answer": "根据提供的文本（来源1和2），在肺泡实变（alveolar consolidation）内，对应支气管内空气的超声特征是：**强回声点状影（hyperechoic punctate areas）**，即所谓的**超声空气支气管征（ultrasound air bronchogram）**。\n\n具体依据如下：\n- 文本明确指出：“Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.” [1][2]\n- 图像A和B（位于第278页下方）也展示了这种表现：在低回声（hypoechoic）的实变区域内可见内部强回声焦点（internal echogenic foci），被标注为“air bronchograms”[2]。\n\n因此，答案是：**超声空气支气管征（ultrasound air bronchogram）**，表现为实变区内**强回声点状影**。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.8087516250016051,
+      "first_token_seconds": 4.287476957999388,
+      "total_seconds": 7.7535997919985675,
+      "model_seconds": 5.849152834000051,
+      "model_first_token_seconds": 1.1735912919994007
+    },
+    "calls": [
+      {
+        "seconds": 1.218792042000132,
+        "usage": {
+          "input_tokens": 3136,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.006528,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 4.6303607919999195,
+        "usage": {
+          "input_tokens": 3149,
+          "output_tokens": 215
+        },
+        "cost_upper_cny": 0.009738,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.1735912919994007,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to the text, what sonographic feature within alveolar consolidation corresponds to air in the bronchi?",
+    "citations": {
+      "citation_mentions": 3,
+      "valid_citation_mentions": 3,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png"
+    ],
+    "sources": [
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p279:a71e1064d377",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 279,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.2 Consolidation\n23. Paediatric chest ultrasound\n278\n \nFigure 7: Pleural effusion\nImages showing a right sided pleural effusion (P) lying between the edge of the aerated lung \nand the diaphragm / liver below. The diaphragm (D) delineates the thorax from the abdominal \ncavity and liver. The right image shows a septated / loculated pleural effusion.\n23.3.2 Consolidation\nAlveolar consolidation appears as an area of poorly defined dark, i.e. hypoechoic, lung tissue \nresembling liver called hepatisation. Within the consolidation, hyperechoic punctate areas can \nbe seen corresponding to air in the bronchi: a so called ultrasound air bronchogram. Collapsed \nlung segments can resemble consolidation sonographically and may not have air bronchograms.\nA   \nB",
+        "scores": {
+          "dense": 0.8071336127401142,
+          "bm25": 45.50900168265287,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9923660159111023
+        }
+      },
+      {
+        "id": "visual_71f8551a81bbad33fa0d",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 279,
+        "type": "image_caption",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.2 Consolidation\nvisible_text: 23. Paediatric chest ultrasound\n278\n\nFigure 7: Pleural effusion\nImages showing a right sided pleural effusion (P) lying between the edge of the aerated lung and the diaphragm / liver below. The diaphragm (D) delineates the thorax from the abdominal cavity and liver. The right image shows a septated / loculated pleural effusion.\n\n23.3.2 Consolidation\nAlveolar consolidation appears as an area of poorly defined dark, i.e. hypoechoic, lung tissue resembling liver called hepatization. Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram. Collapsed lung segments can resemble consolidation sonographically and may not have air bronchograms.\n\nA\nB\nvisual_relations: Figure 7 contains two upper ultrasound images labeled 'P' (pleural effusion) and 'D' (diaphragm). Below are two labeled images A and B showing hypoechoic lung regions with internal echogenic foci (air bronchograms); image A is labeled 'M', image B shows 'RPU' and 'M'. Both lower images display depth markers and machine settings (e.g., DP-10, Ped-ABD, MI 0.6–0.7, TIS 0.2–0.3).\nunits: MI (Mechanical Index): 0.6–0.7; TIS (Thermal Index for Soft tissue): 0.2–0.3; Depth scale in cm (e.g., -0 to -4 cm on right side of images A and B); Gain settings visible (e.g., 88%, 79%); Time stamps: 2014Jul08 13:20 and 2014Nov26 15:4x.\nuncertainties: Exact depth measurements not readable from image; precise size of effusion or consolidation not quantified; 'RPU' label meaning not defined in text; 'M' marker purpose unspecified; no scale bar provided for absolute sizing.\nsummary: This textbook page (p. 278) describes paediatric chest ultrasound findings: Figure 7 illustrates right-sided pleural effusion (P) adjacent to the diaphragm (D), with the right panel showing a septated/loculated form. Section 23.3.2 defines alveolar consolidation as hypoechoic ('hepatization') lung tissue with possible hyperechoic air bronchograms; it notes that collapsed lung may mimic consolidation without air bronchograms. Two additional ultrasound images (A and B) demonstrate such consolidation patterns.",
+        "scores": {
+          "dense": 0.8074178563934267,
+          "bm25": 43.91148502142333,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9899145364761353
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p282:c7ba0063ea42",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 282,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.3 Interstitial syndrome\n23. Paediatric chest ultrasound\n281\nD   \nFigure 9: Interstitial syndrome\nThe images above show the progression of interstitial syndrome \nwith the appearance of two B-lines in (A) indicating normality to multiple lines in (B). \nIn (C), the B-lines are becoming more confluent indicating \nmore severe pulmonary oedema while in (D) there is complete confluence (solid) B-lines.\nFigure 10: Interstitial syndrome\nThe figure shows the other appearance of the interstitial syndrome \nwith multiple B-lines (indicated by white arrows) in a child with severe pneumonia \nevidenced by the consolidation (bronchograms) seen in the top left of the image.\nThe explanation for these pathological B-lines is that they represent thickened interlobular septae \nsurrounded by alveolar air. In pulmonary interstitial oedema the juxtaposition of air in the alveoli \nand fluid in the interlobular septa causes the sound to reverberate ‘to and fro’ between the septa \ncreating a line for each reverberation which combine to form B-lines. When oedema becomes \nmore severe, the mixing of fluid and air causes more B-lines to be generated and they become \ncloser together. Very severe oedema can cause the B-lines to fuse with",
+        "scores": {
+          "dense": 0.7345453397187652,
+          "bm25": 31.792048691605057,
+          "rrf": 0.03149801587301587,
+          "weighted": 0.03149801587301587,
+          "rerank": 0.17539529502391815
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p278:88b34217ccbc",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 278,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 23. Paediatric chest ultrasound > 23.3 Pathological findings – paediatric chest > 23.3.1 Pleural effusion\n23. Paediatric chest ultrasound\n277\n \nFigure 6: Curtain sign\nThe same image above is shown below with respiratory variation of the ‘curtain’ (lung tissue) \nduring expiration (left) and inspiration (right). Note the appearance and disappearance of the \nliver (L) as it is shielded by the inflated lung.\n23.3 Pathological findings – paediatric chest\nIdentification of pathology depends on a few principles, namely:\n–\t In the pleural space, air, i.e. pneumothorax, and fluids, i.e. effusions, have opposite gravitational \ndirections; air within the pleural space will rise (non-dependant) whereas a pleural effusion is \ndependant.\n–\t If fluid is present within lung parenchymal tissue, it is in very close proximity to the air in the \nalveoli with minimal gravitational effect as is seen in interstitial (pulmonary) oedema and \nproduces a distinct pattern on ultrasound.\n–\t Nearly all acute disorders border the pleural line.\n–\t Pathological conditions are associated with changes in the appearance of the artefacts seen in \nnormal lung as described in Chapter 22.2.\n–\t A number of lung ultrasound findings, both normal and abnormal depend on the presence of \nmoving lung tissue (and will thus be absent",
+        "scores": {
+          "dense": 0.725985807909574,
+          "bm25": 0.0,
+          "rrf": 0.015384615384615385,
+          "weighted": 0.015384615384615385,
+          "rerank": 0.005442717578262091
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the sonographic feature as 'hyperechoic punctate areas' corresponding to air in the bronchi, and names it the 'ultrasound air bronchogram', exactly matching the reference and the retrieved source text (msf_ultrasound_manual_2018.pdf, p.278/279): 'Within the consolidation, hyperechoic punctate areas can be seen corresponding to air in the bronchi: a so called ultrasound air bronchogram.' The answer also correctly cites the textual evidence [1][2] and references images A and B on page 278, which the retrieved image caption confirms show 'hypoechoic lung regions with internal echogenic foci (air bronchograms)'. All claims are directly supported by the provided sources; no unsupported or invented information is present. The required citations [1,2] correspond to the two retrieved sources that contain the key sentence and the figure description, respectively."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 10.02160745799847,
+    "usage": {
+      "input_tokens": 5632,
+      "output_tokens": 312
+    },
+    "cost_upper_cny": 0.016256,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

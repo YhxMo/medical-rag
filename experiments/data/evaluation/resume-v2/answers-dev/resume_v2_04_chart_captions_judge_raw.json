@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies two valid test objects per the source text: (1) 10 cm PMMA on the table/couch, and (2) 1 mm copper plate on the collimator or table — both explicitly stated in step (c) of the procedure (gold source id: iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3 and visual_daccad1268a711b5b585). The answer also accurately notes that Figure 22 visually shows PMMA blocks (confirmed by visual_relations in both gold sources), and correctly cites the caption 'Simple set-up using PMMA...'. All claims are directly supported by the retrieved evidence. The question asks for 'the test object placed on the table or couch'; while copper can be placed *on the table*, it can also be placed *on the collimator*—but the answer clarifies this nuance without overgeneralizing. Since the procedure explicitly allows either option, and both are documented, the answer is complete and grounded. Citations [1] and [2] correspond to the two gold sources provided, both of which contain the identical procedural text and figure caption; thus both support the claim."
+}

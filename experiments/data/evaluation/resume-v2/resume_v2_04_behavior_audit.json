@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (iaea_radiology_quality_control_2023.pdf, p75, step (d)) explicitly states: 'Note or draw the exact geometry of this arrangement and measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' This confirms that all three distances must be measured; the technician’s suggestion to skip measuring the focal spot–table distance violates the procedure. The reference answer and expected behavior ('refuse') are fully supported by the source."
+}

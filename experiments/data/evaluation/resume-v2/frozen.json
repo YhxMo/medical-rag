@@ -1,0 +1,9 @@
+{
+  "count": 80,
+  "dataset_sha256": "554ee2b3273e680c15d2a7e4b1154c687ec04f8bfe6be9c6d990caf7153c6485",
+  "AI_audit_flagged": 0,
+  "human_reviewed": 0,
+  "AI_source_corrected": 1,
+  "source_corrections_sha256": "bd11ab29c58a55cb45395bf4b74c85a0d65729ea5a38b986c709dbcd0d24692d",
+  "holdout_status": "not_yet_run"
+}

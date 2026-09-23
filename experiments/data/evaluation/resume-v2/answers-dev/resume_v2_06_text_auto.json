@@ -1,0 +1,129 @@
+{
+  "question_id": "resume_v2_06_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text (TABLE 8, section 2.1.1) explicitly states: 'Alignment: ±2% of SID; Centring: ±1% of SID', matching the reference_answer and expected_answer exactly."
+  },
+  "result": {
+    "answer": "根据提供的资料，X射线–光野束对准（X-ray–light beam alignment）测试的容差如下：\n\n- **对准（Alignment）容差**：±2% 的 SID（源–影像距离）  \n- **中心定位（Centring）容差**：±1% 的 SID  \n\n该容差适用于：\n- 放射技师执行的 QC 测试（Section 2.1.1）[1, 3]  \n- 医学物理师执行的 QC 测试（Section 2.2.1）[2]  \n- 束几何验证（Section 3.2.2）[4]\n\n所有来源一致指出上述数值，且测试频率为每 3–6 个月（放射技师）或每年（医学物理师及束几何验证）。\n\n注意：SID 是指 X 射线管焦点到影像接收器的距离，单位为厘米或米；容差以该距离的百分比表示，例如若 SID = 100 cm，则对准容差为 ±2 cm，中心容差为 ±1 cm。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6024041250348091,
+      "first_token_seconds": 5.51880137482658,
+      "total_seconds": 9.591765374876559,
+      "model_seconds": 7.880266999825835,
+      "model_first_token_seconds": 1.8000629169400781
+    },
+    "calls": [
+      {
+        "seconds": 2.0153075829148293,
+        "usage": {
+          "input_tokens": 3772,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.0078,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 5.864959416911006,
+        "usage": {
+          "input_tokens": 3785,
+          "output_tokens": 235
+        },
+        "cost_upper_cny": 0.01133,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.8000629169400781,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "What is the tolerance for the X-ray–light beam alignment test in radiography QC?",
+    "citations": {
+      "citation_mentions": 2,
+      "valid_citation_mentions": 2,
+      "unique_citations": [
+        2,
+        4
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png",
+      "artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_11a672097c4760b738ba",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 194,
+        "type": "image_caption",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: TABLE 8. SUMMARY OF QUALITY CONTROL TESTS\nSection\tTitle\tEquipment\tTolerance\tFrequency\tReference\nRadiography — QC tests for radiographers\n2.1.1\tX ray–light beam alignment and centring\tAlignment test object, attenuator\tAlignment: ±2% of SID; Centring: ±1% of SID\t3–6 months\t[4, 5]\n2.1.2\tDistances and scales\tMeasuring tape\t±1.5 cm\t6 months\t[4]\n2.1.3\tImage uniformity and artefacts\tCu plate or PMMA\tNo artefacts\tMonthly\t[4]\n2.1.4\tAEC constancy\tCu plate or PMMA\tDigital radiography: ±25% of baseline; Computed radiography: ±30% of baseline\t3 months\t[4, 6]\n2.1.5\tCondition of cassettes and image plates (computed radiography only)\tCleaning solution\tNo dirt or damage\tAccording to the supplier’s recommendations\t\n2.1.6\tAEC sensitivity\tCu plate or PMMA\tExposure index or mAs value: ±50% of baseline\t1–3 months\t[4, 6]\nvisual_relations: The table is structured with six columns: Section, Title, Equipment, Tolerance, Frequency, Reference. Rows correspond to six QC tests (2.1.1–2.1.6). The header 'Radiography — QC tests for radiographers' spans multiple rows above section 2.1.1. The page number '184' appears at bottom left. The table content matches the nearby text provided, though minor formatting differences exist (e.g., line breaks, spacing).\nunits: % of SID\ncm\nmonths\n% of baseline\nmAs\nuncertainties: The tolerance for AEC constancy differs by modality (digital vs computed radiography); exact baseline definition not specified. 'No artefacts' and 'No dirt or damage' are qualitative criteria without quantitative thresholds. Frequency for 2.1.5 is vendor-dependent and unspecified in the table.\nsummary: Table 8 lists six quality control tests for radiography equipment used by radiographers, specifying required equipment, acceptable tolerances, testing frequency, and reference standards. Tests cover beam alignment, distance measurement, image uniformity, AEC performance (constancy and sensitivity), and cassette/image plate condition. Tolerances are mostly quantitative (e.g., ±2% of SID, ±1.5 cm), except for qualitative checks like absence of artefacts or damage. Frequencies range from monthly to every 6 months, with one test dependent on supplier recommendations.",
+        "scores": {
+          "dense": 0.8218791777010812,
+          "bm25": 36.944833660876306,
+          "rrf": 0.031544957774465976,
+          "weighted": 0.031544957774465976,
+          "rerank": 0.9702396988868713
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p195:5aea78e20759",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 195,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n185\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\nRadiography — QC tests for medical physicists\n2.2.1\nX ray–light beam \nalignment and centring\nAlignment test object, \nattenuator\nAlignment: ±2% of SID\nCentring: ±1% of SID\n3–6 months\n[4, 5]\n2.2.2\nTube potential accuracy\nSolid state \nkilovolt meter,\nPb plate\n±5% or ±5 kV or\n±10% or ±10 kV (IEC), \nwhichever is greater\nAnnual\n[4]\n2.2.3\nRadiation output \nconsistency\nSolid state detector or \nionization chamber,\nPb plate\n±20% of baseline or\n25–80 µGy/mA · s at 80 kV \nAnnual\n[4, 7]\n2.2.4\nShort term reproducibility \nof radiation output and \nexposure time\nSolid state detector or \nionization chamber,\nPb plate\nCOV of Y: ±20% of mean\nCOV of t: ±5%\nAnnual\n[4, 5, 7]\n2.2.5\nExposure time accuracy\nSolid state detector or \nionization chamber,\nPb plate\nIf t > 100 ms: ±10% of nominal\nIf t ≤ 100 ms: ±15% or ±2 ms \nof nominal\nAnnual\n[4]",
+        "scores": {
+          "dense": 0.8271719522951875,
+          "bm25": 0.0,
+          "rrf": 0.015625,
+          "weighted": 0.015625,
+          "rerank": 0.878147542476654
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p194:e648453dfc27",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 194,
+        "type": "text",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\n184\nTABLE 8. SUMMARY OF QUALITY CONTROL TESTS\nSection\nTitle\nEquipment\nTolerance\nFrequency\nReference\nRadiography — QC tests for radiographers\n2.1.1\nX ray–light beam \nalignment and centring\nAlignment test object, \nattenuator\nAlignment: ±2% of SID\nCentring: ±1% of SID\n3–6 months\n[4, 5]\n2.1.2\nDistances and scales\nMeasuring tape\n±1.5 cm\n6 months\n[4]\n2.1.3\nImage uniformity and \nartefacts\nCu plate or PMMA\nNo artefacts\nMonthly\n[4]\n2.1.4\nAEC constancy\nCu plate or PMMA\nDigital radiography:\n±25% of baseline\nComputed radiography: \n±30% of baseline\n3 months\n[4, 6]\n2.1.5\nCondition of cassettes and \nimage plates (computed \nradiography only)\nCleaning solution\nNo dirt or damage\nAccording to the supplier’s \nrecommendations\n2.1.6\nAEC sensitivity\nCu plate or PMMA\nExposure index or mAs value: \n±50% of baseline\n\n1–3 months\n[4, 6]",
+        "scores": {
+          "dense": 0.8161458975896809,
+          "bm25": 31.381400689529904,
+          "rrf": 0.029857397504456328,
+          "weighted": 0.029857397504456328,
+          "rerank": 0.8012750744819641
+        }
+      },
+      {
+        "id": "visual_29421148ef1df4eee448",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 199,
+        "type": "image_caption",
+        "content": "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS\nvisible_text: TABLE 8. SUMMARY OF QUALITY CONTROL TESTS (cont.)\nSection\tTitle\tEquipment\tTolerance\tFrequency\tReference\n3.2.1\tVerification of beam collimation\tPhantom, computed radiography plate or self-developing film\t±2% of SID\tAnnual\t[14]\n3.2.2\tVerification of beam geometry\tAlignment test objects, attenuator, computed radiography plate or self-developing film\tAlignment: ±2% SID; Centring: ±1% SID\tAnnual\t[4, 5]\n3.2.3\tVerification of different field sizes\tPhantom\t±2% of SID\tAnnual\t[14]\n3.2.4\tPatient ESAK rate\tIonization chamber or solid state detector, PMMA slabs\tManufacturer’s specifications or 88 mGy/min (normal mode); 176 mGy/min (high dose rate mode)\tAnnual\t[5, 6, 8, 9, 11]\n3.2.5\tImage receptor ESAK rate\tIonization chamber or solid state detector, 25 mm Al slab, Cu plates\t0.2–1 μGy/s (with Al, 70–80 kV); ±25% of baseline\tAnnual\t[4, 7]\nvisual_relations: The table is structured with six columns: Section, Title, Equipment, Tolerance, Frequency, Reference. Each row corresponds to a specific QC test (sections 3.2.1–3.2.5). The 'Tolerance' column contains compound entries for sections 3.2.2 and 3.2.5, with multiple conditions separated by line breaks or semicolons. The 'Equipment' column lists measurement tools and phantoms. The 'Reference' column cites numbered sources in square brackets.\nunits: % of SID\nmGy/min\nμGy/s\nmm\nkV\nuncertainties: ±2% of SID\n±1% SID\n±25% of baseline\nsummary: This page (p. 189) continues Table 8, summarizing five quality control tests for radiographic equipment: beam collimation (3.2.1), beam geometry (3.2.2), field size verification (3.2.3), patient ESAK rate (3.2.4), and image receptor ESAK rate (3.2.5). All tests are performed annually. Tolerances are specified relative to SID (source-to-image distance) or as absolute dose rates, with references cited for each test.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 29.799153192350325,
+          "rrf": 0.014925373134328358,
+          "weighted": 0.014925373134328358,
+          "rerank": 0.7543200254440308
+        }
+      }
+    ]
+  },
+  "judge": null,
+  "status": "failed",
+  "judge_error": "ValueError"
+}

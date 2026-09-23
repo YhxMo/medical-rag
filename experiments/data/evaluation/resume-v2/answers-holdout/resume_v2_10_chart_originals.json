@@ -1,0 +1,113 @@
+{
+  "question_id": "resume_v2_10_chart",
+  "kind": "chart",
+  "mode": "originals",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The figure caption (Fig. 5.19) explicitly states: '13.4%: 6-pulse generator'. The chart shows the 13.4% ripple curve (solid line labeled '13.4%') intersecting the 40 keV vertical line at approximately y = 1.0 on the 'photon fluence/mm²·mAs ×10⁴' axis, i.e., ~1.0 × 10⁴ photons/mm²·mAs. This matches the reference answer exactly and requires visual inspection of the chart as noted in the rationale."
+  },
+  "result": {
+    "answer": "根据图5.19及其相关说明：\n\n1. **对应13.4%纹波的发电机类型**：  \n   图5.19的图注明确指出：**13.4% 对应 6-pulse generator（6脉冲发生器）** [1][2]。\n\n2. **其在40 keV处的近似光子注量（photon fluence）**：  \n   - 图5.19的纵轴单位为：**photon fluence / mm²·mAs × 10⁴**  \n   - 13.4%曲线（点划线，dash-dot line）在 photon energy = 40 keV 处的纵坐标值约为 **1.3 × 10⁴**（即读数为1.3，乘以10⁴）  \n   - 因此，**光子注量 ≈ 1.3 × 10⁴ photons / mm²·mAs**  \n     （注意：该值是归一化到每mAs的注量；实际注量需乘以mAs值，但题目仅问“approximate photon fluence”，且图中已归一化，故直接取该值即可）[1]。\n\n✅ 答案：  \n- 发电机类型：**6-pulse generator**  \n- 40 keV处近似光子注量：**1.3 × 10⁴ photons / mm²·mAs**",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.601755667001271,
+      "first_token_seconds": 4.617661666999993,
+      "total_seconds": 9.516190708000067,
+      "model_seconds": 7.816263208000237,
+      "model_first_token_seconds": 1.2398854580005718
+    },
+    "calls": [
+      {
+        "seconds": 1.7174319169989758,
+        "usage": {
+          "input_tokens": 2690,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005636,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 6.098831291001261,
+        "usage": {
+          "input_tokens": 2703,
+          "output_tokens": 328
+        },
+        "cost_upper_cny": 0.010654,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.2398854580005718,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "From Figure 5.19, which generator type corresponds to the 13.4% ripple curve, and what is its approximate photon fluence at 40 keV?",
+    "citations": {
+      "citation_mentions": 3,
+      "valid_citation_mentions": 3,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_a997de5234bf2bca2b82",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 140,
+        "type": "image_caption",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nvisible_text: 5.7.3. Tube voltage ripple\nFigure 5.19 shows spectral variations for a tube voltage of 70 kV for various voltage ripples. A DC voltage gives the hardest spectrum with maximum photon yield. With an increase in ripple, the yield drops and the spectrum softens.\nFIG. 5.19. Variation of X ray spectra from a tungsten target with tube voltage ripple at 70 kVp tube voltage. DC: constant potential; 3.4%: 12-pulse or converter generator; 13.4%: 6-pulse generator; 100%: 2-pulse generator.\n5.7.4. Anode angle\nThe anode angle determines the degree of X ray absorption in the anode material. A decrease in anode angle causes an increase in the absorption length within the target. Accordingly, the maximum photon energy remains unchanged, but hardness increases and yield drops with decreasing anode angle (Fig. 5.20).\n5.8. FILTRATION\nAs low energy photons do not contribute to the formation of an image, filters are used to reduce the low energy component. Figure 5.21 illustrates the effect of added filters on an X ray spectrum (90 kV, 3.4% ripple). Again,\n[Chart: Figure 5.19]\n- Title: Variation of X ray spectra from a tungsten target with tube voltage ripple at 70 kVp tube voltage.\n- X-axis: photon energy, keV (0 to ~80 keV)\n- Y-axis: photon fluence/mm²·mAs ×10⁴ (0 to 2.0)\n- Curves:\n  • Solid line labeled 'DC' — highest peak (~1.8×10⁴), hardest spectrum (extends furthest right)\n  • Dashed line labeled '3.4%' — lower peak (~1.6×10⁴)\n  • Dash-dot line labeled '13.4%' — lower still (~1.3×10⁴)\n  • Dotted line labeled '100%' — lowest peak (~0.9×10⁴), softest spectrum (steepest drop-off, ends earliest)\n- Table inset:\n  | ripple | 1st HVL mm Al | Kerma μGy·mAs⁻¹ |\n  |--------|----------------|------------------|\n  | DC     | 2.48           | 61.0             |\n  | 3.4%   | 2.44           | 59.6             |\n  | 13.4%  | 2.38           | 56.8             |\n  | 100%   | 2.10           | 38.1             |\nvisual_relations: In Figure 5.19, as ripple increases (DC → 3.4% → 13.4% → 100%), the spectral curves shift downward (lower photon fluence) and leftward (reduced high-energy tail), indicating reduced yield and softer spectrum. The table shows monotonic decrease in both 1st HVL and Kerma with increasing ripple.\nunits: kVp\nkeV\nmm Al\nμGy·mAs⁻¹\nphoton fluence/mm²·mAs\nuncertainties: None explicitly stated; values in table are given to two significant figures (e.g., 2.48, 61.0). No error bars shown on Figure 5.19.\nsummary: Page 113 discusses how tube voltage ripple affects X-ray spectra: higher ripple reduces photon yield and softens the spectrum (lower average energy). Figure 5.19 quantitatively shows this for 70 kVp using four ripple conditions (DC, 3.4%, 13.4%, 100%), supported by tabulated HVL and Kerma values. Sections 5.7.4 and 5.8 introduce anode angle (smaller angle increases hardness but reduces yield) and filtration (removes low-energy photons), respectively.",
+        "scores": {
+          "dense": 0.7528760091551363,
+          "bm25": 51.737835376037346,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9970316886901855
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 140,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n113\nX RAY PRODUCTION\ninfluence on the photon distribution; however, photon intensities are proportional \nto mAs.\n5.7.3.\t Tube voltage ripple\nFigure 5.19 shows spectral variations for a tube voltage of 70 kV for various \nvoltage ripples. A DC voltage gives the hardest spectrum with maximum photon \nyield. With an increase in ripple, the yield drops and the spectrum softens.\nFIG. 5.19.  Variation of X  ray spectra from a tungsten target with tube voltage ripple at \n70  kVp tube voltage. DC: constant potential; 3.4%: 12-pulse or converter generator; \n13.4%: 6-pulse generator; 100%: 2-pulse generator.\n5.7.4.\t Anode angle\nThe anode angle determines the degree of X ray absorption in the anode \nmaterial. A decrease in anode angle causes an increase in the absorption length \nwithin the target. Accordingly, the maximum photon energy remains unchanged, \nbut hardness increases and yield drops with decreasing anode angle (Fig. 5.20).\n5.8.\t Filtration\nAs low energy photons do not contribute to the formation of an image, \nfilters are used to reduce the low energy component. Figure  5.21 illustrates \nthe effect of added filters on an X ray spectrum (90 kV, 3.4% ripple). Again,",
+        "scores": {
+          "dense": 0.7388844041229174,
+          "bm25": 41.13023080093727,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.9911317229270935
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p131:e57158f2ec82",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 131,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n104\nCHAPTER 5\nthe transformed voltage gives a 1-pulse waveform, where a pulse is a half wave \nper period of mains frequency (50 or 60 Hz). Some low power X ray units use \nthe tube as a self-rectifying diode with current only flowing from the cathode to \nthe anode, but reverse current flow, as a result of a hot anode, is a limiting factor. \nNowadays, solid state diodes are used as rectifiers. A full wave rectification \nyields two half waves per period (2-pulse waveform). Voltage ripple of 1- and \n2-pulse waveforms is 100%.\n5.4.2.2.\t Three-phase generators\nWith a three-phase mains supply, three AC voltages, each with a phase \nshift of 120°, are available. Full wave rectification then gives six half waves per \nperiod (6-pulse waveform), with a nominal ripple of 13.4%. Owing to imbalances \nin transformer windings and voltages, the ripple might, in practice, approach \n25%. Adding another secondary winding to the transformer gives two secondary \nvoltages. Combining the full wave rectified secondary voltages using delta and \nwye connections yields a total of six phases with a phase shift of 60° each. Full \nwave rectification then gives a total of 12 pulses per period, with a nominal rippl",
+        "scores": {
+          "dense": 0.6796930044570337,
+          "bm25": 0.0,
+          "rrf": 0.014492753623188406,
+          "weighted": 0.014492753623188406,
+          "rerank": 0.3274346888065338
+        }
+      }
+    ]
+  },
+  "judge": null,
+  "status": "failed"
+}

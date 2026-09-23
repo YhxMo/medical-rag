@@ -1,0 +1,12 @@
+{
+  "original_grade_reliable": true,
+  "material_unsupported_claims": [],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "Figure 2 shows liver (L) markedly brighter than kidney (K), consistent with the caption stating liver is 'much more echogenic (brighter) than the kidney (K)' in a malnourished patient.",
+  "reason": "The answer correctly identifies K as the kidney and states liver (L) is more echogenic (brighter) than K, directly quoting and grounding this in citation [1] (page 172 caption for Figure 2). The supplementary pediatric context from citation [3] is explicitly framed as contrasting normal vs. pathological states and does not contradict or overextend the core claim. All required citation IDs ([1]) are supported. No unsupported claims are made."
+}

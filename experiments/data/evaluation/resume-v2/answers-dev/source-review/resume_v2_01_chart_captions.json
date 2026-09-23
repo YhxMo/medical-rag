@@ -1,0 +1,32 @@
+{
+  "question_id": "resume_v2_01_chart",
+  "mode": "captions",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "Figure 12.5 shows Tx and Rx beams (dashed lines) intersecting in a shaded diamond-shaped region (sample volume); only scatterers within this overlap contribute to Doppler spectrum, as stated in caption and visual relations.",
+    "reason": "The answer correctly identifies 'area of intersection of transmit and receive beams' as the determining geometric feature, directly quoting and elaborating on the explicit statement in source [1]: 'The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.' The figure and its description confirm the shaded diamond is that intersection (sample volume). No unsupported claims are made; all details align with retrieved evidence. Citation [1] fully supports the claim."
+  },
+  "usage": {
+    "seconds": 5.849676541000008,
+    "usage": {
+      "input_tokens": 3544,
+      "output_tokens": 202
+    },
+    "cost_upper_cny": 0.01032,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

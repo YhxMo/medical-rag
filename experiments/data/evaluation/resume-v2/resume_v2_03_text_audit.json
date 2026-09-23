@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text in section 2.1.2.2 explicitly states: 'The equipment needed for the test is a long ruler or a measuring tape at least 100 cm long.' This directly matches the reference answer 'At least 100 cm long' and is confirmed by both the extracted content and the provided image (Fig. 3 caption and surrounding text). No inference or external knowledge is required."
+}

@@ -1,0 +1,415 @@
+{
+  "initial_invalid_grades": 8,
+  "repaired_grades": 5,
+  "repair_failures": 3,
+  "total_answer_runs": 60,
+  "effective_judged": 57,
+  "original_answers_and_grades_unchanged": true,
+  "protocol": "One judge-only repair pass, predeclared before holdout",
+  "operations_with_repaired_grades": {
+    "behavior/auto": {
+      "runs": 10,
+      "failed": 0,
+      "status_counts": {
+        "insufficient_evidence": 5,
+        "ok": 5
+      },
+      "source_hits": 9,
+      "source_hit_denominator": 10,
+      "judged": 10,
+      "distinct_tasks": 10,
+      "image_claims_supported_among_judged": 8,
+      "semantic_citations_scored": 11,
+      "semantic_citations_supported": 8,
+      "score_means_among_judged": {
+        "correctness": 1.4,
+        "completeness": 1.5,
+        "groundedness": 1.4
+      },
+      "unsupported_expansions": 1,
+      "live_answer_runs": 10,
+      "latency_seconds_live_only": {
+        "retrieval_seconds": {
+          "n": 10,
+          "p50": 1.668719479011088,
+          "p95": 1.7424719355436535
+        },
+        "model_seconds": {
+          "n": 10,
+          "p50": 7.256054812486582,
+          "p95": 15.27418873308924
+        },
+        "total_seconds": {
+          "n": 10,
+          "p50": 9.030419229011386,
+          "p95": 16.99024426412069
+        },
+        "first_token_seconds": {
+          "n": 5,
+          "p50": 4.35844837500008,
+          "p95": 6.617617558315396
+        },
+        "model_first_token_seconds": {
+          "n": 5,
+          "p50": 1.4347834580112249,
+          "p95": 2.3198052582331
+        }
+      },
+      "context_characters": {
+        "n": 10,
+        "p50": 5842.0,
+        "p95": 5967.1
+      },
+      "textbook_originals": {
+        "n": 10,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "uploaded_images": 0,
+      "cached_model_calls": 0,
+      "reported_model_tokens": {
+        "input_tokens": 42194,
+        "output_tokens": 3147
+      },
+      "calls_with_unknown_usage": 0,
+      "reported_answer_cost_cny": 0.13474,
+      "cost_scope": "Successful answer-call metadata only; shared ledger includes judges, failed requests and unresolved reservations."
+    },
+    "chart/captions": {
+      "runs": 10,
+      "failed": 0,
+      "status_counts": {
+        "ok": 10
+      },
+      "source_hits": 10,
+      "source_hit_denominator": 10,
+      "judged": 10,
+      "distinct_tasks": 10,
+      "image_claims_supported_among_judged": 10,
+      "semantic_citations_scored": 16,
+      "semantic_citations_supported": 15,
+      "score_means_among_judged": {
+        "correctness": 1.9,
+        "completeness": 2.0,
+        "groundedness": 1.9
+      },
+      "unsupported_expansions": 1,
+      "live_answer_runs": 9,
+      "latency_seconds_live_only": {
+        "retrieval_seconds": {
+          "n": 9,
+          "p50": 1.625778999999966,
+          "p95": 1.8508414167910814
+        },
+        "model_seconds": {
+          "n": 9,
+          "p50": 6.589627084089443,
+          "p95": 10.224633691739289
+        },
+        "total_seconds": {
+          "n": 9,
+          "p50": 8.32008720911108,
+          "p95": 12.149863149877635
+        },
+        "first_token_seconds": {
+          "n": 9,
+          "p50": 3.3603694170014933,
+          "p95": 5.19858191688545
+        },
+        "model_first_token_seconds": {
+          "n": 9,
+          "p50": 0.5815542498603463,
+          "p95": 1.0573655753396451
+        }
+      },
+      "context_characters": {
+        "n": 10,
+        "p50": 5838.5,
+        "p95": 5973.1
+      },
+      "textbook_originals": {
+        "n": 10,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "uploaded_images": 0,
+      "cached_model_calls": 1,
+      "reported_model_tokens": {
+        "input_tokens": 34839,
+        "output_tokens": 3105
+      },
+      "calls_with_unknown_usage": 0,
+      "reported_answer_cost_cny": 0.11935799999999999,
+      "cost_scope": "Successful answer-call metadata only; shared ledger includes judges, failed requests and unresolved reservations."
+    },
+    "chart/originals": {
+      "runs": 10,
+      "failed": 0,
+      "status_counts": {
+        "ok": 10
+      },
+      "source_hits": 10,
+      "source_hit_denominator": 10,
+      "judged": 10,
+      "distinct_tasks": 10,
+      "image_claims_supported_among_judged": 8,
+      "semantic_citations_scored": 15,
+      "semantic_citations_supported": 12,
+      "score_means_among_judged": {
+        "correctness": 1.7,
+        "completeness": 1.9,
+        "groundedness": 1.6
+      },
+      "unsupported_expansions": 3,
+      "live_answer_runs": 10,
+      "latency_seconds_live_only": {
+        "retrieval_seconds": {
+          "n": 10,
+          "p50": 1.645711291464977,
+          "p95": 1.890955773264977
+        },
+        "model_seconds": {
+          "n": 10,
+          "p50": 7.810869917040691,
+          "p95": 12.42042180813305
+        },
+        "total_seconds": {
+          "n": 10,
+          "p50": 9.542192375520244,
+          "p95": 14.216739155960385
+        },
+        "first_token_seconds": {
+          "n": 10,
+          "p50": 4.533829562482424,
+          "p95": 7.769164377235025
+        },
+        "model_first_token_seconds": {
+          "n": 10,
+          "p50": 1.2183011875022203,
+          "p95": 3.9094770041490814
+        }
+      },
+      "context_characters": {
+        "n": 10,
+        "p50": 5838.5,
+        "p95": 5973.1
+      },
+      "textbook_originals": {
+        "n": 10,
+        "p50": 1.0,
+        "p95": 2.0
+      },
+      "uploaded_images": 0,
+      "cached_model_calls": 0,
+      "reported_model_tokens": {
+        "input_tokens": 59236,
+        "output_tokens": 3264
+      },
+      "calls_with_unknown_usage": 0,
+      "reported_answer_cost_cny": 0.170696,
+      "cost_scope": "Successful answer-call metadata only; shared ledger includes judges, failed requests and unresolved reservations."
+    },
+    "chart/text_only": {
+      "runs": 10,
+      "failed": 3,
+      "status_counts": {
+        "ok": 6,
+        "insufficient_evidence": 4
+      },
+      "source_hits": 4,
+      "source_hit_denominator": 10,
+      "judged": 7,
+      "distinct_tasks": 10,
+      "image_claims_supported_among_judged": 1,
+      "semantic_citations_scored": 8,
+      "semantic_citations_supported": 8,
+      "score_means_among_judged": {
+        "correctness": 0.2857142857142857,
+        "completeness": 0.2857142857142857,
+        "groundedness": 0.2857142857142857
+      },
+      "unsupported_expansions": 1,
+      "live_answer_runs": 10,
+      "latency_seconds_live_only": {
+        "retrieval_seconds": {
+          "n": 10,
+          "p50": 0.9925776249901901,
+          "p95": 1.5645040144561788
+        },
+        "model_seconds": {
+          "n": 10,
+          "p50": 3.635359812527895,
+          "p95": 5.0787067830562584
+        },
+        "total_seconds": {
+          "n": 10,
+          "p50": 4.8621318329824135,
+          "p95": 6.127221164130606
+        },
+        "first_token_seconds": {
+          "n": 6,
+          "p50": 2.93789497949183,
+          "p95": 3.239468978892546
+        },
+        "model_first_token_seconds": {
+          "n": 6,
+          "p50": 0.8631228959420696,
+          "p95": 1.2221218229387887
+        }
+      },
+      "context_characters": {
+        "n": 10,
+        "p50": 5191.5,
+        "p95": 5875.05
+      },
+      "textbook_originals": {
+        "n": 10,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "uploaded_images": 0,
+      "cached_model_calls": 0,
+      "reported_model_tokens": {
+        "input_tokens": 28132,
+        "output_tokens": 3160
+      },
+      "calls_with_unknown_usage": 0,
+      "reported_answer_cost_cny": 0.081544,
+      "cost_scope": "Successful answer-call metadata only; shared ledger includes judges, failed requests and unresolved reservations."
+    },
+    "screenshot/auto": {
+      "runs": 10,
+      "failed": 0,
+      "status_counts": {
+        "ok": 10
+      },
+      "source_hits": 9,
+      "source_hit_denominator": 10,
+      "judged": 10,
+      "distinct_tasks": 10,
+      "image_claims_supported_among_judged": 8,
+      "semantic_citations_scored": 12,
+      "semantic_citations_supported": 11,
+      "score_means_among_judged": {
+        "correctness": 1.8,
+        "completeness": 1.8,
+        "groundedness": 1.6
+      },
+      "unsupported_expansions": 2,
+      "live_answer_runs": 10,
+      "latency_seconds_live_only": {
+        "retrieval_seconds": {
+          "n": 10,
+          "p50": 1.664630770450458,
+          "p95": 2.0217008811305273
+        },
+        "model_seconds": {
+          "n": 10,
+          "p50": 16.57318747951649,
+          "p95": 31.735810737456532
+        },
+        "total_seconds": {
+          "n": 10,
+          "p50": 18.302420604624785,
+          "p95": 33.617531528962346
+        },
+        "first_token_seconds": {
+          "n": 10,
+          "p50": 13.124773854506202,
+          "p95": 20.504525256121177
+        },
+        "model_first_token_seconds": {
+          "n": 10,
+          "p50": 1.3808849584311247,
+          "p95": 1.4798574625980108
+        }
+      },
+      "context_characters": {
+        "n": 10,
+        "p50": 5764.5,
+        "p95": 5963.2
+      },
+      "textbook_originals": {
+        "n": 10,
+        "p50": 1.0,
+        "p95": 2.0
+      },
+      "uploaded_images": 10,
+      "cached_model_calls": 0,
+      "reported_model_tokens": {
+        "input_tokens": 97929,
+        "output_tokens": 6671
+      },
+      "calls_with_unknown_usage": 0,
+      "reported_answer_cost_cny": 0.302594,
+      "cost_scope": "Successful answer-call metadata only; shared ledger includes judges, failed requests and unresolved reservations."
+    },
+    "text/auto": {
+      "runs": 10,
+      "failed": 0,
+      "status_counts": {
+        "ok": 10
+      },
+      "source_hits": 9,
+      "source_hit_denominator": 10,
+      "judged": 10,
+      "distinct_tasks": 10,
+      "image_claims_supported_among_judged": 10,
+      "semantic_citations_scored": 22,
+      "semantic_citations_supported": 21,
+      "score_means_among_judged": {
+        "correctness": 2.0,
+        "completeness": 2.0,
+        "groundedness": 1.8
+      },
+      "unsupported_expansions": 1,
+      "live_answer_runs": 10,
+      "latency_seconds_live_only": {
+        "retrieval_seconds": {
+          "n": 10,
+          "p50": 1.6246435830835253,
+          "p95": 3.6267535937335165
+        },
+        "model_seconds": {
+          "n": 10,
+          "p50": 8.322831311961636,
+          "p95": 13.522661276499274
+        },
+        "total_seconds": {
+          "n": 10,
+          "p50": 10.041946916491725,
+          "p95": 17.11972725004889
+        },
+        "first_token_seconds": {
+          "n": 10,
+          "p50": 4.7129776459141794,
+          "p95": 9.856469699856822
+        },
+        "model_first_token_seconds": {
+          "n": 10,
+          "p50": 1.1887157290475443,
+          "p95": 5.205580139183432
+        }
+      },
+      "context_characters": {
+        "n": 10,
+        "p50": 5907.0,
+        "p95": 5974.2
+      },
+      "textbook_originals": {
+        "n": 10,
+        "p50": 1.0,
+        "p95": 2.0
+      },
+      "uploaded_images": 0,
+      "cached_model_calls": 0,
+      "reported_model_tokens": {
+        "input_tokens": 60780,
+        "output_tokens": 3184
+      },
+      "calls_with_unknown_usage": 0,
+      "reported_answer_cost_cny": 0.172504,
+      "cost_scope": "Successful answer-call metadata only; shared ledger includes judges, failed requests and unresolved reservations."
+    }
+  }
+}

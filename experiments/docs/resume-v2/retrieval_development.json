@@ -1,0 +1,51 @@
+{
+  "dataset_sha256": "554ee2b3273e680c15d2a7e4b1154c687ec04f8bfe6be9c6d990caf7153c6485",
+  "kind": "development_selection",
+  "reports": {
+    "baseline": {
+      "total": 10,
+      "scored": 10,
+      "failed": 0,
+      "hit": 0.8,
+      "recall": 0.8,
+      "mrr": 0.675,
+      "ndcg": 0.706160631164485,
+      "retrieval_p50_ms": 30.10054142214358,
+      "retrieval_p95_ms": 383.6488330271095,
+      "context_mean_chars": 5655.6
+    },
+    "chapter": {
+      "total": 10,
+      "scored": 10,
+      "failed": 0,
+      "hit": 0.8,
+      "recall": 0.75,
+      "mrr": 0.6333333333333333,
+      "ndcg": 0.6568433103525644,
+      "retrieval_p50_ms": 33.201104030013084,
+      "retrieval_p95_ms": 213.50849978625774,
+      "context_mean_chars": 5786.8
+    },
+    "rerank": {
+      "total": 10,
+      "scored": 10,
+      "failed": 0,
+      "hit": 0.9,
+      "recall": 0.9,
+      "mrr": 0.7166666666666667,
+      "ndcg": 0.7550650542719646,
+      "retrieval_p50_ms": 1712.048166547902,
+      "retrieval_p95_ms": 1850.544499931857,
+      "context_mean_chars": 5870.8
+    }
+  },
+  "versions": {
+    "baseline": "7e46a7adca814b220ec05ad75ec5c77194310d8940a2f736139fde0750078019",
+    "chapter": "9a0c02a784afcd65b9dd126360a65005011a97588bad9d37dd1baa255c9d1d0f",
+    "rerank": "1aafc877f17870e21daba81953236c49d3b194fbc427690bedc537e29c9ffb5b"
+  },
+  "hardware": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "measurement": "one warm pass; excludes model initialization; no clinical accuracy",
+  "missing_strategies": []
+}

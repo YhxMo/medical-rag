@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies the characteristic ultrasound finding as 'a crescent-shaped collection of blood between the gestational sac and the uterine wall', which matches the reference and is explicitly stated in both gold source (p98) and retrieved sources (e.g., visual_2f92bf5a145c491fcdf8, msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9). The additional details about appearance (anechoic, floating echogenic particles, solid if clotted) and Figure 12 are all directly supported by the provided text and image caption. The citations [1][2] correspond to the two retrieved text/image sources that contain this information. The image claim (Figure 12 showing arrowheads pointing to the crescent-shaped hypoechoic collection with floating echodensities and a clot) is confirmed by the figure caption in the gold source and the retrieved image caption. No unsupported claims are made; all statements are grounded in the evidence."
+}

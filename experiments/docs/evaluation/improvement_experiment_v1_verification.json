@@ -1,0 +1,13 @@
+{
+  "paired_answers_completed": 114,
+  "challenge_answers_completed": 12,
+  "model_api_requests": 252,
+  "conservative_reserved_total_cny": 9.850846,
+  "known_usage_peak_cost_upper_cny": 1.1500791199999996,
+  "tests_passed": 120,
+  "warnings": 5,
+  "v1_unchanged": true,
+  "credential_pattern_matches": 0,
+  "scanned_files": 400,
+  "offline_query_and_expansion_smoke": "passed"
+}

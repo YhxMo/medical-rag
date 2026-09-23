@@ -1,0 +1,164 @@
+{
+  "question_id": "resume_v2_08_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The text explicitly states: 'Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse...' (from evidence IDs msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f and b59ed2c2d541), which matches the reference answer. The page image and OCR-extracted text confirm this phrasing. No visual interpretation is required; the answer is directly extractable from the textual content."
+  },
+  "result": {
+    "answer": "根据手册文本，肝硬化（cirrhosis）的两个常见病因是：\n\n1. **丙型和乙型病毒性肝炎**（viral hepatitis type C and B）  \n2. **酒精滥用**（alcohol abuse）\n\n这两个原因在多个来源中被明确列出为“most commonly”（最常见）的病因 [1][2][3]。其他病因如寄生虫病、硬化性胆管炎、代谢性疾病和原发性胆汁性肝硬化也提及，但问题仅要求列出**两个常见原因**。\n\n注意：图像本身（Figure 3）显示肝硬化的超声特征（如异质性轻度回声增强、腹水勾勒结节状表面），但未直接列出病因；病因信息完全来自文本描述。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6457968750037253,
+      "first_token_seconds": 4.256149832857773,
+      "total_seconds": 6.551693707937375,
+      "model_seconds": 4.790215166984126,
+      "model_first_token_seconds": 0.977696041809395
+    },
+    "calls": [
+      {
+        "seconds": 1.5245064171031117,
+        "usage": {
+          "input_tokens": 2959,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.006174,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 3.2657087498810142,
+        "usage": {
+          "input_tokens": 2972,
+          "output_tokens": 168
+        },
+        "cost_upper_cny": 0.008632,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 0.977696041809395,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to the text, what are two common causes of cirrhosis listed in the manual?",
+    "citations": {
+      "citation_mentions": 3,
+      "valid_citation_mentions": 3,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png"
+    ],
+    "sources": [
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p173:b59ed2c2d541",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 173,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 14. Upper abdominal scan > 14.2 Liver > 14.2.2 Liver abnormalities\nand \nright heart failure. Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse, \nparasitic diseases, sclerosing cholangitis, metabolic diseases, and primary biliary cirrhosis.\nFigure 3: Liver cirrhosis\nThe liver (L) shows heterogeneous mildly increased echogenicity \ncharacteristic of cirrhosis. Ascites (a) outlines the nodular surface of the cirrhotic liver.",
+        "scores": {
+          "dense": 0.8475229595077955,
+          "bm25": 0.0,
+          "rrf": 0.01639344262295082,
+          "weighted": 0.01639344262295082,
+          "rerank": 0.9059987664222717
+        }
+      },
+      {
+        "id": "visual_fe4a575becd3bc34a521",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 173,
+        "type": "image_caption",
+        "content": "MSF-Ultrasound manual - 2018 edition > 14. Upper abdominal scan > 14.2 Liver > 14.2.2 Liver abnormalities\nvisible_text: 14. Upper abdominal scan\n172\nFigure 2: Diffuse fatty liver\nIn this malnourished patient the liver (L) is much more echogenic (brighter) than the kidney (K). This finding is indicative of injury to liver cells.\nCirrhosis and portal hypertension\nCirrhosis is the result of chronic progressive injury to liver cells. Parenchymal necrosis is followed by progressive fibrosis and nodular regeneration. This process distorts the parenchymal and vascular architecture of the liver resulting in reduced liver size and volume in later stages with jaundice and ascites. The liver will have a coarse echotexture, with mildly increased echogenicity, irregular nodular surface, iso- or hypo- echoic nodules (Figure 3). As portal hypertension develops the portal vein becomes dilated (>13 mm) with biphasic or reverse blood flow which can be assessed by a more experienced user with colour Doppler. Portal hypertension is most commonly caused by cirrhosis but can be caused by other conditions such as portal vein thrombosis, Budd-Chiari syndrome and right heart failure. Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse, parasitic diseases, sclerosing cholangitis, metabolic diseases, and primary biliary cirrhosis.\nFigure 3: Liver cirrhosis\nThe liver (L) shows heterogeneous mildly increased echogenicity characteristic of cirrhosis. Ascites (a) outlines the nodular surface of the cirrhotic liver.\nvisual_relations: {\"Figure 2\": {\"labels\": [\"L\", \"K\"], \"description\": \"Ultrasound image showing liver (L) markedly brighter (more echogenic) than kidney (K); labeled 'LPO LIV SAG' indicating left parasagittal liver scan.\", \"interpretation_in_text\": \"Indicative of diffuse fatty liver in a malnourished patient; suggests liver cell injury.\"}, \"Figure 3\": {\"labels\": [\"L\", \"a\"], \"description\": \"Ultrasound image labeled 'LONG LIVER SUPINE', showing liver (L) with heterogeneous echotexture and fluid (a) surrounding it.\", \"interpretation_in_text\": \"Heterogeneous mildly increased echogenicity and ascites (a) outlining nodular liver surface—characteristic of cirrhosis.\"}}\nunits: {\"portal_vein_diameter\": \">13 mm\", \"depth_scale\": \"−5, −10, −15 (cm, implied by standard ultrasound depth markers)\", \"image_orientation\": \"SAG (sagittal), SUPINE (patient position)\"}\nuncertainties: The text states 'malnourished patient' for Figure 2, but diffuse fatty liver is classically associated with obesity/metabolic syndrome; malnutrition-related fatty liver (e.g., kwashiorkor) is less common and may reflect a specific clinical context not fully explained.\nNo scale bar or explicit measurement shown on images; dimensions inferred from standard ultrasound display conventions.\nText repeats 'and right heart failure' twice—likely a typographical duplication.\nsummary: This textbook page (p. 172) describes upper abdominal ultrasound findings in two liver pathologies: diffuse fatty liver (Figure 2), where the liver appears significantly more echogenic than the kidney in a malnourished patient, and cirrhosis (Figure 3), characterized by heterogeneous mildly increased echogenicity, nodular surface, and ascites outlining the liver. It explains cirrhosis as chronic liver injury leading to fibrosis, nodular regeneration, and architectural distortion, often causing portal hypertension (portal vein >13 mm, abnormal Doppler flow). Common etiologies include viral hepatitis (B/C), alcohol, metabolic diseases, and others.",
+        "scores": {
+          "dense": 0.7410331862415309,
+          "bm25": 32.45800247338837,
+          "rrf": 0.032266458495966696,
+          "weighted": 0.032266458495966696,
+          "rerank": 0.839249849319458
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 173,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 14. Upper abdominal scan > 14.2 Liver > 14.2.2 Liver abnormalities\n14. Upper abdominal scan\n172\nFigure 2: Diffuse fatty liver\nIn this malnourished patient the liver (L) is much more echogenic (brighter) \nthan the kidney (K). This finding is indicative of injury to liver cells.\nCirrhosis and portal hypertension\nCirrhosis is the result of chronic progressive injury to liver cells. Parenchymal necrosis is followed by \nprogressive fibrosis and nodular regeneration. This process distorts the parenchymal and vascular \narchitecture of the liver resulting in reduced liver size and volume in later stages with jaundice \nand ascites. The liver will have a coarse echotexture, with mildly increased echogenicity, irregular \nnodular surface, iso- or hypo- echoic nodules (Figure 3). As portal hypertension develops the portal \nvein becomes dilated (>13 mm) with biphasic or reverse blood flow which can be assessed by a more \nexperienced user with colour Doppler. Portal hypertension is most commonly caused by cirrhosis \nbut can be caused by other conditions such as portal vein thrombosis, Budd-Chiari syndrome and \nright heart failure. Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse, \nparasitic diseases, sclerosing cholangitis, metabo",
+        "scores": {
+          "dense": 0.7502355827284535,
+          "bm25": 0.0,
+          "rrf": 0.016129032258064516,
+          "weighted": 0.016129032258064516,
+          "rerank": 0.7765637040138245
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p228:76f7443c17be",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 228,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 18. Ultrasound in HIV / TB (FASH) > 18.4 Right upper quadrant (RUQ) and liver\natients with HIV amoebic and bacterial abscesses are also common causes of liver lesions.",
+        "scores": {
+          "dense": 0.692681073995922,
+          "bm25": 0.0,
+          "rrf": 0.014492753623188406,
+          "weighted": 0.014492753623188406,
+          "rerank": 0.014716391451656818
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the two most common causes of cirrhosis as stated in the manual: 'viral hepatitis type C and B' and 'alcohol abuse'. This is directly supported by the retrieved text from page 173 (both fragments id: msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f and id: msf_ultrasound_manual_2018.pdf:fixed:p173:b59ed2c2d541), which explicitly states: 'Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse...'. The answer also correctly notes that the image (Figure 3) shows ultrasound features but does not list causes, aligning with the source text. The citations [1][2][3] are referenced, and while the exact IDs 1,2,3 are not provided in the input, the answer's claim is fully grounded in the two retrieved text sources that contain the required information. The answer is complete for the question asked (only two common causes requested)."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 11.965235790936276,
+    "usage": {
+      "input_tokens": 5621,
+      "output_tokens": 367
+    },
+    "cost_upper_cny": 0.017114,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The text in section 3.1.1.3(c) explicitly states: 'Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22).' The figure caption confirms: 'FIG. 22. Simple set-up using PMMA to check the performance of AERC settings.' The visual shows transparent stacked blocks on the table, consistent with PMMA, and the question asks specifically about the test object *placed on the table or couch*, which per step (c) is the 10 cm PMMA option (the copper plate is an alternative placed on the collimator or table—but the caption and context prioritize PMMA for this setup). Thus, the reference answer '10 cm of PMMA (polymethyl methacrylate)' is directly supported by both textual and visual evidence."
+}

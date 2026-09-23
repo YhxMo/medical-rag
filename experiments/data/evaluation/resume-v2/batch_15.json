@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What is the acceptable tolerance for CT number accuracy for water, expressed in Hounsfield units (HU), relative to the baseline value?",
+      "reference_answer": "±5 HU",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states in section 5.1.4.5(a): 'For CT number accuracy: ±5 HU (Hounsefield units; for water) from the baseline value is acceptable'. This is directly answerable from the provided text."
+    },
+    {
+      "kind": "chart",
+      "question": "Based on the phantom image in FIG. 49, how many circular ROIs are shown, and what are their spatial arrangements relative to the phantom’s center?",
+      "reference_answer": "Five circular ROIs: one centered and four positioned near the perimeter at approximately the 12, 3, 6, and 9 o’clock positions.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_16459ecd08715f194c11"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure visually displays five red circular ROIs: one central and four symmetrically placed around it. The caption and text confirm the clock-face arrangement, but the count and layout must be verified from the image itself, not just the caption."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the provided page image, what is the diameter of the ROI used for measuring image noise as a percentage of the phantom’s diameter?",
+      "reference_answer": "about 40%",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4",
+        "iaea_radiology_quality_control_2023.pdf:fixed:p145:685eb214dbe1"
+      ],
+      "requires_visual": false,
+      "rationale": "Section (e) states: 'draw one larger ROI centred in the phantom with a diameter of about 40% of the phantom.' This is textual and verifiable from the supplied content; the screenshot context confirms it's part of the same page layout."
+    },
+    {
+      "kind": "behavior",
+      "question": "A technician claims that uniformity is assessed by comparing the CT number in the central ROI with the average of the four peripheral ROIs. Is this claim correct according to the procedure described?",
+      "reference_answer": "No, uniformity is determined as the absolute difference between the central ROI CT number and each of the four peripheral ROIs individually—not their average.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p145:aa9582194ec4"
+      ],
+      "requires_visual": false,
+      "rationale": "Section (d) explicitly defines uniformity as 'the absolute difference between the CT numbers in the centrally placed ROI and those in each of the four equivalent ROIs near the perimeter', i.e., four separate comparisons. The claim incorrectly substitutes averaging, which is refutable using only the given text."
+    }
+  ]
+}

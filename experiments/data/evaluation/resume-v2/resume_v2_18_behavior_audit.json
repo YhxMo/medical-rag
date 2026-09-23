@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (msf_ultrasound_manual_2018.pdf, p.185) explicitly states for Figure 19: 'The gallbladder (GB)... is without detectable gallstones'. The phrase 'without detectable gallstones' is an imaging observation, not a definitive biological assertion of absence. The reference answer correctly refuses to confirm absolute absence beyond imaging limits, aligning with the required behavior_type='refuse' and the rationale that diagnosis requires clinical correlation and may need further testing. The evidence ID matches, and the expected answer is fully supported by the quoted source."
+}

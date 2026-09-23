@@ -1,0 +1,4997 @@
+{
+  "total_cny": 30.0,
+  "limits": {
+    "ingest": 10,
+    "evaluation": 15,
+    "demo": 5
+  },
+  "calls": [
+    {
+      "id": 0,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.056924,
+      "charged_upper_cny": 0.011216,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1288,
+        "output_tokens": 540
+      }
+    },
+    {
+      "id": 1,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.055942,
+      "charged_upper_cny": 0.010682,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1165,
+        "output_tokens": 522
+      }
+    },
+    {
+      "id": 2,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.057782,
+      "charged_upper_cny": 0.015566,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1815,
+        "output_tokens": 746
+      }
+    },
+    {
+      "id": 3,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05858,
+      "charged_upper_cny": 0.011782,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1475,
+        "output_tokens": 552
+      }
+    },
+    {
+      "id": 4,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.057638,
+      "charged_upper_cny": 0.01551,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1363,
+        "output_tokens": 799
+      }
+    },
+    {
+      "id": 5,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05674,
+      "charged_upper_cny": 0.017386,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1293,
+        "output_tokens": 925
+      }
+    },
+    {
+      "id": 6,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058012,
+      "charged_upper_cny": 0.015104,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1584,
+        "output_tokens": 746
+      }
+    },
+    {
+      "id": 7,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059502,
+      "charged_upper_cny": 0.01865,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1533,
+        "output_tokens": 974
+      }
+    },
+    {
+      "id": 8,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.056628,
+      "charged_upper_cny": 0.010202,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1197,
+        "output_tokens": 488
+      }
+    },
+    {
+      "id": 9,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.055946,
+      "charged_upper_cny": 0.006848,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1144,
+        "output_tokens": 285
+      }
+    },
+    {
+      "id": 10,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.057762,
+      "charged_upper_cny": 0.014546,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1369,
+        "output_tokens": 738
+      }
+    },
+    {
+      "id": 11,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05923,
+      "charged_upper_cny": 0.01716,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1556,
+        "output_tokens": 878
+      }
+    },
+    {
+      "id": 12,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058216,
+      "charged_upper_cny": 0.014682,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1381,
+        "output_tokens": 745
+      }
+    },
+    {
+      "id": 13,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.057256,
+      "charged_upper_cny": 0.013872,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1304,
+        "output_tokens": 704
+      }
+    },
+    {
+      "id": 14,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059116,
+      "charged_upper_cny": 0.018928,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1656,
+        "output_tokens": 976
+      }
+    },
+    {
+      "id": 15,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059468,
+      "charged_upper_cny": 0.016526,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1567,
+        "output_tokens": 837
+      }
+    },
+    {
+      "id": 16,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.057764,
+      "charged_upper_cny": 0.014728,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1468,
+        "output_tokens": 737
+      }
+    },
+    {
+      "id": 17,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.054556,
+      "charged_upper_cny": 0.013872,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 976,
+        "output_tokens": 745
+      }
+    },
+    {
+      "id": 18,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058734,
+      "charged_upper_cny": 0.021016,
+      "status": "failed",
+      "usage": {
+        "input_tokens": 2508,
+        "output_tokens": 1000
+      }
+    },
+    {
+      "id": 19,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.075502,
+      "charged_upper_cny": 0.03508,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2508,
+        "output_tokens": 1879
+      }
+    },
+    {
+      "id": 20,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072944,
+      "charged_upper_cny": 0.012584,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1284,
+        "output_tokens": 626
+      }
+    },
+    {
+      "id": 21,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074598,
+      "charged_upper_cny": 0.0147,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1358,
+        "output_tokens": 749
+      }
+    },
+    {
+      "id": 22,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073682,
+      "charged_upper_cny": 0.013736,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1348,
+        "output_tokens": 690
+      }
+    },
+    {
+      "id": 23,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073614,
+      "charged_upper_cny": 0.01324,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1268,
+        "output_tokens": 669
+      }
+    },
+    {
+      "id": 24,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073676,
+      "charged_upper_cny": 0.011838,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1271,
+        "output_tokens": 581
+      }
+    },
+    {
+      "id": 25,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073754,
+      "charged_upper_cny": 0.01225,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1269,
+        "output_tokens": 607
+      }
+    },
+    {
+      "id": 26,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072866,
+      "charged_upper_cny": 0.011156,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1178,
+        "output_tokens": 550
+      }
+    },
+    {
+      "id": 27,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072078,
+      "charged_upper_cny": 0.008784,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1080,
+        "output_tokens": 414
+      }
+    },
+    {
+      "id": 28,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07274,
+      "charged_upper_cny": 0.009998,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1175,
+        "output_tokens": 478
+      }
+    },
+    {
+      "id": 29,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073492,
+      "charged_upper_cny": 0.011936,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1256,
+        "output_tokens": 589
+      }
+    },
+    {
+      "id": 30,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.071296,
+      "charged_upper_cny": 0.006826,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 981,
+        "output_tokens": 304
+      }
+    },
+    {
+      "id": 31,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072614,
+      "charged_upper_cny": 0.014836,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1146,
+        "output_tokens": 784
+      }
+    },
+    {
+      "id": 32,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072922,
+      "charged_upper_cny": 0.012274,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1193,
+        "output_tokens": 618
+      }
+    },
+    {
+      "id": 33,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073366,
+      "charged_upper_cny": 0.011842,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1281,
+        "output_tokens": 580
+      }
+    },
+    {
+      "id": 34,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07349,
+      "charged_upper_cny": 0.012708,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1282,
+        "output_tokens": 634
+      }
+    },
+    {
+      "id": 35,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073826,
+      "charged_upper_cny": 0.012512,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1304,
+        "output_tokens": 619
+      }
+    },
+    {
+      "id": 36,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073304,
+      "charged_upper_cny": 0.010556,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1206,
+        "output_tokens": 509
+      }
+    },
+    {
+      "id": 37,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073702,
+      "charged_upper_cny": 0.0129,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1322,
+        "output_tokens": 641
+      }
+    },
+    {
+      "id": 38,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07395,
+      "charged_upper_cny": 0.013236,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1274,
+        "output_tokens": 668
+      }
+    },
+    {
+      "id": 39,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072358,
+      "charged_upper_cny": 0.009174,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1123,
+        "output_tokens": 433
+      }
+    },
+    {
+      "id": 40,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072578,
+      "charged_upper_cny": 0.011938,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1209,
+        "output_tokens": 595
+      }
+    },
+    {
+      "id": 41,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072656,
+      "charged_upper_cny": 0.011762,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1241,
+        "output_tokens": 580
+      }
+    },
+    {
+      "id": 42,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073144,
+      "charged_upper_cny": 0.011254,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1659,
+        "output_tokens": 496
+      }
+    },
+    {
+      "id": 43,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074808,
+      "charged_upper_cny": 0.016022,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1827,
+        "output_tokens": 773
+      }
+    },
+    {
+      "id": 44,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07212,
+      "charged_upper_cny": 0.014214,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1571,
+        "output_tokens": 692
+      }
+    },
+    {
+      "id": 45,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076774,
+      "charged_upper_cny": 0.022066,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2121,
+        "output_tokens": 1114
+      }
+    },
+    {
+      "id": 46,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.075118,
+      "charged_upper_cny": 0.016904,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1916,
+        "output_tokens": 817
+      }
+    },
+    {
+      "id": 47,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07626,
+      "charged_upper_cny": 0.022966,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2059,
+        "output_tokens": 1178
+      }
+    },
+    {
+      "id": 48,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074672,
+      "charged_upper_cny": 0.01521,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1861,
+        "output_tokens": 718
+      }
+    },
+    {
+      "id": 49,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073492,
+      "charged_upper_cny": 0.014302,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1703,
+        "output_tokens": 681
+      }
+    },
+    {
+      "id": 50,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.071338,
+      "charged_upper_cny": 0.010924,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1454,
+        "output_tokens": 501
+      }
+    },
+    {
+      "id": 51,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074008,
+      "charged_upper_cny": 0.01689,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1781,
+        "output_tokens": 833
+      }
+    },
+    {
+      "id": 52,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072354,
+      "charged_upper_cny": 0.01251,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1599,
+        "output_tokens": 582
+      }
+    },
+    {
+      "id": 53,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07313,
+      "charged_upper_cny": 0.01502,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1678,
+        "output_tokens": 729
+      }
+    },
+    {
+      "id": 54,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074404,
+      "charged_upper_cny": 0.013684,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1834,
+        "output_tokens": 626
+      }
+    },
+    {
+      "id": 55,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.0749,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 56,
+      "category": "demo",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.0749,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 57,
+      "category": "demo",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.0749,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 58,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.0749,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 59,
+      "category": "demo",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.0749,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 60,
+      "category": "demo",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.0749,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 61,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0749,
+      "charged_upper_cny": 0.01195,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 513
+      }
+    },
+    {
+      "id": 62,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0712,
+      "charged_upper_cny": 0.006432,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1448,
+        "output_tokens": 221
+      }
+    },
+    {
+      "id": 63,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072294,
+      "charged_upper_cny": 0.012694,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 596
+      }
+    },
+    {
+      "id": 64,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076464,
+      "charged_upper_cny": 0.018654,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2063,
+        "output_tokens": 908
+      }
+    },
+    {
+      "id": 65,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.072094,
+      "charged_upper_cny": 0.009486,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1551,
+        "output_tokens": 399
+      }
+    },
+    {
+      "id": 66,
+      "category": "ingest",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07218,
+      "charged_upper_cny": 0.010996,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1554,
+        "output_tokens": 493
+      }
+    },
+    {
+      "id": 67,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076668,
+      "charged_upper_cny": 0.01583,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1659,
+        "output_tokens": 782
+      }
+    },
+    {
+      "id": 68,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07681,
+      "charged_upper_cny": 0.016126,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1663,
+        "output_tokens": 800
+      }
+    },
+    {
+      "id": 69,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076794,
+      "charged_upper_cny": 0.016194,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1761,
+        "output_tokens": 792
+      }
+    },
+    {
+      "id": 70,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0748,
+      "charged_upper_cny": 0.013864,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1420,
+        "output_tokens": 689
+      }
+    },
+    {
+      "id": 71,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074812,
+      "charged_upper_cny": 0.01395,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1423,
+        "output_tokens": 694
+      }
+    },
+    {
+      "id": 72,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.075758,
+      "charged_upper_cny": 0.015136,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1576,
+        "output_tokens": 749
+      }
+    },
+    {
+      "id": 73,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074652,
+      "charged_upper_cny": 0.012716,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1462,
+        "output_tokens": 612
+      }
+    },
+    {
+      "id": 74,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07964,
+      "charged_upper_cny": 0.014746,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2109,
+        "output_tokens": 658
+      }
+    },
+    {
+      "id": 75,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079158,
+      "charged_upper_cny": 0.019408,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2448,
+        "output_tokens": 907
+      }
+    },
+    {
+      "id": 76,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076222,
+      "charged_upper_cny": 0.01516,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2068,
+        "output_tokens": 689
+      }
+    },
+    {
+      "id": 77,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074368,
+      "charged_upper_cny": 0.015488,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1832,
+        "output_tokens": 739
+      }
+    },
+    {
+      "id": 78,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07577,
+      "charged_upper_cny": 0.015048,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1588,
+        "output_tokens": 742
+      }
+    },
+    {
+      "id": 79,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07846,
+      "charged_upper_cny": 0.014476,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1894,
+        "output_tokens": 668
+      }
+    },
+    {
+      "id": 80,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.073404,
+      "charged_upper_cny": 0.011148,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1230,
+        "output_tokens": 543
+      }
+    },
+    {
+      "id": 81,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.075878,
+      "charged_upper_cny": 0.013802,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1557,
+        "output_tokens": 668
+      }
+    },
+    {
+      "id": 82,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.075738,
+      "charged_upper_cny": 0.014262,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1547,
+        "output_tokens": 698
+      }
+    },
+    {
+      "id": 83,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076094,
+      "charged_upper_cny": 0.01543,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 765
+      }
+    },
+    {
+      "id": 84,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07473,
+      "charged_upper_cny": 0.012214,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1491,
+        "output_tokens": 577
+      }
+    },
+    {
+      "id": 85,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07735,
+      "charged_upper_cny": 0.017174,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2203,
+        "output_tokens": 798
+      }
+    },
+    {
+      "id": 86,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07441,
+      "charged_upper_cny": 0.015096,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1852,
+        "output_tokens": 712
+      }
+    },
+    {
+      "id": 87,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.078854,
+      "charged_upper_cny": 0.018246,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2395,
+        "output_tokens": 841
+      }
+    },
+    {
+      "id": 88,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05075,
+      "charged_upper_cny": 0.006194,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1577,
+        "output_tokens": 190
+      }
+    },
+    {
+      "id": 89,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051596,
+      "charged_upper_cny": 0.006272,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1688,
+        "output_tokens": 181
+      }
+    },
+    {
+      "id": 90,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048744,
+      "charged_upper_cny": 0.004128,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1352,
+        "output_tokens": 89
+      }
+    },
+    {
+      "id": 91,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.052808,
+      "charged_upper_cny": 0.006088,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1892,
+        "output_tokens": 144
+      }
+    },
+    {
+      "id": 92,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051092,
+      "charged_upper_cny": 0.004804,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1642,
+        "output_tokens": 95
+      }
+    },
+    {
+      "id": 93,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0512,
+      "charged_upper_cny": 0.00504,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1664,
+        "output_tokens": 107
+      }
+    },
+    {
+      "id": 94,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050746,
+      "charged_upper_cny": 0.005408,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1608,
+        "output_tokens": 137
+      }
+    },
+    {
+      "id": 95,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.053108,
+      "charged_upper_cny": 0.006364,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1902,
+        "output_tokens": 160
+      }
+    },
+    {
+      "id": 96,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051298,
+      "charged_upper_cny": 0.007944,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1700,
+        "output_tokens": 284
+      }
+    },
+    {
+      "id": 97,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05347,
+      "charged_upper_cny": 0.00685,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2065,
+        "output_tokens": 170
+      }
+    },
+    {
+      "id": 98,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051512,
+      "charged_upper_cny": 0.005756,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1790,
+        "output_tokens": 136
+      }
+    },
+    {
+      "id": 99,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051508,
+      "charged_upper_cny": 0.006142,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1711,
+        "output_tokens": 170
+      }
+    },
+    {
+      "id": 100,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05014,
+      "charged_upper_cny": 0.004688,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1544,
+        "output_tokens": 100
+      }
+    },
+    {
+      "id": 101,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048624,
+      "charged_upper_cny": 0.005122,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1281,
+        "output_tokens": 160
+      }
+    },
+    {
+      "id": 102,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048256,
+      "charged_upper_cny": 0.005424,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1304,
+        "output_tokens": 176
+      }
+    },
+    {
+      "id": 103,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051084,
+      "charged_upper_cny": 0.00531,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1623,
+        "output_tokens": 129
+      }
+    },
+    {
+      "id": 104,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050524,
+      "charged_upper_cny": 0.004738,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1569,
+        "output_tokens": 100
+      }
+    },
+    {
+      "id": 105,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050554,
+      "charged_upper_cny": 0.006482,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1617,
+        "output_tokens": 203
+      }
+    },
+    {
+      "id": 106,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048548,
+      "charged_upper_cny": 0.004676,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1338,
+        "output_tokens": 125
+      }
+    },
+    {
+      "id": 107,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051026,
+      "charged_upper_cny": 0.005158,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1611,
+        "output_tokens": 121
+      }
+    },
+    {
+      "id": 108,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050758,
+      "charged_upper_cny": 0.00461,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1641,
+        "output_tokens": 83
+      }
+    },
+    {
+      "id": 109,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.049384,
+      "charged_upper_cny": 0.006918,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1363,
+        "output_tokens": 262
+      }
+    },
+    {
+      "id": 110,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048092,
+      "charged_upper_cny": 0.003556,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1298,
+        "output_tokens": 60
+      }
+    },
+    {
+      "id": 111,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051444,
+      "charged_upper_cny": 0.00505,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1701,
+        "output_tokens": 103
+      }
+    },
+    {
+      "id": 112,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.049996,
+      "charged_upper_cny": 0.004134,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1587,
+        "output_tokens": 60
+      }
+    },
+    {
+      "id": 113,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048544,
+      "charged_upper_cny": 0.005018,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1277,
+        "output_tokens": 154
+      }
+    },
+    {
+      "id": 114,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048376,
+      "charged_upper_cny": 0.004068,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1322,
+        "output_tokens": 89
+      }
+    },
+    {
+      "id": 115,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050318,
+      "charged_upper_cny": 0.00553,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1645,
+        "output_tokens": 140
+      }
+    },
+    {
+      "id": 116,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050952,
+      "charged_upper_cny": 0.005662,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2087,
+        "output_tokens": 93
+      }
+    },
+    {
+      "id": 117,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.054366,
+      "charged_upper_cny": 0.00792,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2584,
+        "output_tokens": 172
+      }
+    },
+    {
+      "id": 118,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.054706,
+      "charged_upper_cny": 0.008652,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2646,
+        "output_tokens": 210
+      }
+    },
+    {
+      "id": 119,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051216,
+      "charged_upper_cny": 0.006782,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2127,
+        "output_tokens": 158
+      }
+    },
+    {
+      "id": 120,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051822,
+      "charged_upper_cny": 0.006466,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2257,
+        "output_tokens": 122
+      }
+    },
+    {
+      "id": 121,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048198,
+      "charged_upper_cny": 0.005304,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1740,
+        "output_tokens": 114
+      }
+    },
+    {
+      "id": 122,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.0486,
+      "charged_upper_cny": 0.005564,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1822,
+        "output_tokens": 120
+      }
+    },
+    {
+      "id": 123,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051072,
+      "charged_upper_cny": 0.006468,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2106,
+        "output_tokens": 141
+      }
+    },
+    {
+      "id": 124,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050004,
+      "charged_upper_cny": 0.005542,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1979,
+        "output_tokens": 99
+      }
+    },
+    {
+      "id": 125,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050198,
+      "charged_upper_cny": 0.00586,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2034,
+        "output_tokens": 112
+      }
+    },
+    {
+      "id": 126,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.049296,
+      "charged_upper_cny": 0.006714,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1877,
+        "output_tokens": 185
+      }
+    },
+    {
+      "id": 127,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050008,
+      "charged_upper_cny": 0.005096,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1964,
+        "output_tokens": 73
+      }
+    },
+    {
+      "id": 128,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05099,
+      "charged_upper_cny": 0.005454,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1655,
+        "output_tokens": 134
+      }
+    },
+    {
+      "id": 129,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048362,
+      "charged_upper_cny": 0.004888,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1308,
+        "output_tokens": 142
+      }
+    },
+    {
+      "id": 130,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048296,
+      "charged_upper_cny": 0.004064,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1328,
+        "output_tokens": 88
+      }
+    },
+    {
+      "id": 131,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051604,
+      "charged_upper_cny": 0.005802,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 148
+      }
+    },
+    {
+      "id": 132,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050982,
+      "charged_upper_cny": 0.005054,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1615,
+        "output_tokens": 114
+      }
+    },
+    {
+      "id": 133,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051596,
+      "charged_upper_cny": 0.006192,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1696,
+        "output_tokens": 175
+      }
+    },
+    {
+      "id": 134,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048428,
+      "charged_upper_cny": 0.004244,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1314,
+        "output_tokens": 101
+      }
+    },
+    {
+      "id": 135,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051214,
+      "charged_upper_cny": 0.00511,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1627,
+        "output_tokens": 116
+      }
+    },
+    {
+      "id": 136,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.04895,
+      "charged_upper_cny": 0.00443,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1359,
+        "output_tokens": 107
+      }
+    },
+    {
+      "id": 137,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.04794,
+      "charged_upper_cny": 0.003976,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1228,
+        "output_tokens": 95
+      }
+    },
+    {
+      "id": 138,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048056,
+      "charged_upper_cny": 0.004052,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1282,
+        "output_tokens": 93
+      }
+    },
+    {
+      "id": 139,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.04814,
+      "charged_upper_cny": 0.004898,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1233,
+        "output_tokens": 152
+      }
+    },
+    {
+      "id": 140,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050876,
+      "charged_upper_cny": 0.00485,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1617,
+        "output_tokens": 101
+      }
+    },
+    {
+      "id": 141,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048474,
+      "charged_upper_cny": 0.00428,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1252,
+        "output_tokens": 111
+      }
+    },
+    {
+      "id": 142,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048154,
+      "charged_upper_cny": 0.003952,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1288,
+        "output_tokens": 86
+      }
+    },
+    {
+      "id": 143,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051198,
+      "charged_upper_cny": 0.006164,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1666,
+        "output_tokens": 177
+      }
+    },
+    {
+      "id": 144,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050806,
+      "charged_upper_cny": 0.004272,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1608,
+        "output_tokens": 66
+      }
+    },
+    {
+      "id": 145,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048714,
+      "charged_upper_cny": 0.005124,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1282,
+        "output_tokens": 160
+      }
+    },
+    {
+      "id": 146,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051196,
+      "charged_upper_cny": 0.004802,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1713,
+        "output_tokens": 86
+      }
+    },
+    {
+      "id": 147,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051382,
+      "charged_upper_cny": 0.005406,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1671,
+        "output_tokens": 129
+      }
+    },
+    {
+      "id": 148,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050846,
+      "charged_upper_cny": 0.004724,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1626,
+        "output_tokens": 92
+      }
+    },
+    {
+      "id": 149,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.04865,
+      "charged_upper_cny": 0.004434,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1305,
+        "output_tokens": 114
+      }
+    },
+    {
+      "id": 150,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.052198,
+      "charged_upper_cny": 0.005652,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1874,
+        "output_tokens": 119
+      }
+    },
+    {
+      "id": 151,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05184,
+      "charged_upper_cny": 0.00497,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1693,
+        "output_tokens": 99
+      }
+    },
+    {
+      "id": 152,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050006,
+      "charged_upper_cny": 0.004152,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1604,
+        "output_tokens": 59
+      }
+    },
+    {
+      "id": 153,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050192,
+      "charged_upper_cny": 0.00488,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1624,
+        "output_tokens": 102
+      }
+    },
+    {
+      "id": 154,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050476,
+      "charged_upper_cny": 0.004812,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1702,
+        "output_tokens": 88
+      }
+    },
+    {
+      "id": 155,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05017,
+      "charged_upper_cny": 0.00632,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1608,
+        "output_tokens": 194
+      }
+    },
+    {
+      "id": 156,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050928,
+      "charged_upper_cny": 0.005926,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2067,
+        "output_tokens": 112
+      }
+    },
+    {
+      "id": 157,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05116,
+      "charged_upper_cny": 0.005754,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2133,
+        "output_tokens": 93
+      }
+    },
+    {
+      "id": 158,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05159,
+      "charged_upper_cny": 0.006794,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2237,
+        "output_tokens": 145
+      }
+    },
+    {
+      "id": 159,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.051388,
+      "charged_upper_cny": 0.006522,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2157,
+        "output_tokens": 138
+      }
+    },
+    {
+      "id": 160,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.049808,
+      "charged_upper_cny": 0.005616,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1960,
+        "output_tokens": 106
+      }
+    },
+    {
+      "id": 161,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048336,
+      "charged_upper_cny": 0.00508,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1748,
+        "output_tokens": 99
+      }
+    },
+    {
+      "id": 162,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050688,
+      "charged_upper_cny": 0.006868,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2146,
+        "output_tokens": 161
+      }
+    },
+    {
+      "id": 163,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.050686,
+      "charged_upper_cny": 0.006256,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2040,
+        "output_tokens": 136
+      }
+    },
+    {
+      "id": 164,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.054162,
+      "charged_upper_cny": 0.007962,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2517,
+        "output_tokens": 183
+      }
+    },
+    {
+      "id": 165,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.048048,
+      "charged_upper_cny": 0.006596,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1722,
+        "output_tokens": 197
+      }
+    },
+    {
+      "id": 166,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05168,
+      "charged_upper_cny": 0.007574,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2203,
+        "output_tokens": 198
+      }
+    },
+    {
+      "id": 167,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05571,
+      "charged_upper_cny": 0.008324,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2762,
+        "output_tokens": 175
+      }
+    },
+    {
+      "id": 168,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059438,
+      "charged_upper_cny": 0.005446,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2595,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 169,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080228,
+      "charged_upper_cny": 0.015568,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2608,
+        "output_tokens": 647
+      }
+    },
+    {
+      "id": 170,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.111204,
+      "charged_upper_cny": 0.017342,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5231,
+        "output_tokens": 430
+      }
+    },
+    {
+      "id": 171,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.021452,
+      "charged_upper_cny": 0.00342,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1670,
+        "output_tokens": 10
+      }
+    },
+    {
+      "id": 172,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.031938,
+      "charged_upper_cny": 0.00729,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1665,
+        "output_tokens": 495
+      }
+    },
+    {
+      "id": 173,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08158,
+      "charged_upper_cny": 0.01687,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4851,
+        "output_tokens": 448
+      }
+    },
+    {
+      "id": 174,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.026756,
+      "charged_upper_cny": 0.003986,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1865,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 175,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.047546,
+      "charged_upper_cny": 0.01353,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1877,
+        "output_tokens": 611
+      }
+    },
+    {
+      "id": 176,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08275,
+      "charged_upper_cny": 0.01927,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4907,
+        "output_tokens": 591
+      }
+    },
+    {
+      "id": 177,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059562,
+      "charged_upper_cny": 0.005562,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2653,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 178,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080352,
+      "charged_upper_cny": 0.012772,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2666,
+        "output_tokens": 465
+      }
+    },
+    {
+      "id": 179,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11443,
+      "charged_upper_cny": 0.021614,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5551,
+        "output_tokens": 657
+      }
+    },
+    {
+      "id": 180,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066864,
+      "charged_upper_cny": 0.007394,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 921,
+        "output_tokens": 347
+      }
+    },
+    {
+      "id": 181,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.09207,
+      "charged_upper_cny": 0.00706,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3402,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 182,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11286,
+      "charged_upper_cny": 0.010622,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3415,
+        "output_tokens": 237
+      }
+    },
+    {
+      "id": 183,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.112758,
+      "charged_upper_cny": 0.015632,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5400,
+        "output_tokens": 302
+      }
+    },
+    {
+      "id": 184,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059098,
+      "charged_upper_cny": 0.006906,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2845,
+        "output_tokens": 76
+      }
+    },
+    {
+      "id": 185,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.107574,
+      "charged_upper_cny": 0.013732,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4930,
+        "output_tokens": 242
+      }
+    },
+    {
+      "id": 186,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059226,
+      "charged_upper_cny": 0.005372,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2558,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 187,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080016,
+      "charged_upper_cny": 0.01247,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2571,
+        "output_tokens": 458
+      }
+    },
+    {
+      "id": 188,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.10907,
+      "charged_upper_cny": 0.018344,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4972,
+        "output_tokens": 525
+      }
+    },
+    {
+      "id": 189,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.021172,
+      "charged_upper_cny": 0.003304,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1612,
+        "output_tokens": 10
+      }
+    },
+    {
+      "id": 190,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.031658,
+      "charged_upper_cny": 0.005542,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1607,
+        "output_tokens": 291
+      }
+    },
+    {
+      "id": 191,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.081844,
+      "charged_upper_cny": 0.016712,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4836,
+        "output_tokens": 440
+      }
+    },
+    {
+      "id": 192,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.025154,
+      "charged_upper_cny": 0.003324,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1534,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 193,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.045944,
+      "charged_upper_cny": 0.006884,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1546,
+        "output_tokens": 237
+      }
+    },
+    {
+      "id": 194,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080086,
+      "charged_upper_cny": 0.013314,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4273,
+        "output_tokens": 298
+      }
+    },
+    {
+      "id": 195,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05796,
+      "charged_upper_cny": 0.0049,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2322,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 196,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07875,
+      "charged_upper_cny": 0.008702,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2335,
+        "output_tokens": 252
+      }
+    },
+    {
+      "id": 197,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11321,
+      "charged_upper_cny": 0.014344,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5076,
+        "output_tokens": 262
+      }
+    },
+    {
+      "id": 198,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066836,
+      "charged_upper_cny": 0.006022,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 915,
+        "output_tokens": 262
+      }
+    },
+    {
+      "id": 199,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.092326,
+      "charged_upper_cny": 0.00689,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3317,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 200,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113116,
+      "charged_upper_cny": 0.012996,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3330,
+        "output_tokens": 396
+      }
+    },
+    {
+      "id": 201,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.115076,
+      "charged_upper_cny": 0.017428,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5466,
+        "output_tokens": 406
+      }
+    },
+    {
+      "id": 202,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059462,
+      "charged_upper_cny": 0.007622,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2659,
+        "output_tokens": 144
+      }
+    },
+    {
+      "id": 203,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.10862,
+      "charged_upper_cny": 0.013874,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4929,
+        "output_tokens": 251
+      }
+    },
+    {
+      "id": 204,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059722,
+      "charged_upper_cny": 0.005874,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2809,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 205,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080512,
+      "charged_upper_cny": 0.010972,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2822,
+        "output_tokens": 333
+      }
+    },
+    {
+      "id": 206,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.10896,
+      "charged_upper_cny": 0.016306,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5145,
+        "output_tokens": 376
+      }
+    },
+    {
+      "id": 207,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.022762,
+      "charged_upper_cny": 0.00377,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1845,
+        "output_tokens": 10
+      }
+    },
+    {
+      "id": 208,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.033248,
+      "charged_upper_cny": 0.00768,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1840,
+        "output_tokens": 500
+      }
+    },
+    {
+      "id": 209,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080538,
+      "charged_upper_cny": 0.015582,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4823,
+        "output_tokens": 371
+      }
+    },
+    {
+      "id": 210,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.026782,
+      "charged_upper_cny": 0.00411,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1927,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 211,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.047572,
+      "charged_upper_cny": 0.009718,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1939,
+        "output_tokens": 365
+      }
+    },
+    {
+      "id": 212,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.078376,
+      "charged_upper_cny": 0.015058,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4561,
+        "output_tokens": 371
+      }
+    },
+    {
+      "id": 213,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059588,
+      "charged_upper_cny": 0.005686,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2715,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 214,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080378,
+      "charged_upper_cny": 0.011776,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2728,
+        "output_tokens": 395
+      }
+    },
+    {
+      "id": 215,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.111246,
+      "charged_upper_cny": 0.017518,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5383,
+        "output_tokens": 422
+      }
+    },
+    {
+      "id": 216,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066846,
+      "charged_upper_cny": 0.004656,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 912,
+        "output_tokens": 177
+      }
+    },
+    {
+      "id": 217,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.092744,
+      "charged_upper_cny": 0.007688,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3716,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 218,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113534,
+      "charged_upper_cny": 0.011954,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3729,
+        "output_tokens": 281
+      }
+    },
+    {
+      "id": 219,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.108918,
+      "charged_upper_cny": 0.0164,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5192,
+        "output_tokens": 376
+      }
+    },
+    {
+      "id": 220,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059402,
+      "charged_upper_cny": 0.009568,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2800,
+        "output_tokens": 248
+      }
+    },
+    {
+      "id": 221,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.106712,
+      "charged_upper_cny": 0.013264,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4744,
+        "output_tokens": 236
+      }
+    },
+    {
+      "id": 222,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.091982,
+      "charged_upper_cny": 0.007104,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3424,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 223,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.112772,
+      "charged_upper_cny": 0.010826,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3437,
+        "output_tokens": 247
+      }
+    },
+    {
+      "id": 224,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.140044,
+      "charged_upper_cny": 0.016086,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5499,
+        "output_tokens": 318
+      }
+    },
+    {
+      "id": 225,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.022078,
+      "charged_upper_cny": 0.004562,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2085,
+        "output_tokens": 49
+      }
+    },
+    {
+      "id": 226,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.075918,
+      "charged_upper_cny": 0.013446,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4379,
+        "output_tokens": 293
+      }
+    },
+    {
+      "id": 227,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.025418,
+      "charged_upper_cny": 0.003974,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1859,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 228,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.046208,
+      "charged_upper_cny": 0.00763,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 243
+      }
+    },
+    {
+      "id": 229,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076336,
+      "charged_upper_cny": 0.013356,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4206,
+        "output_tokens": 309
+      }
+    },
+    {
+      "id": 230,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058224,
+      "charged_upper_cny": 0.00555,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2647,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 231,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079014,
+      "charged_upper_cny": 0.008856,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2660,
+        "output_tokens": 221
+      }
+    },
+    {
+      "id": 232,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.10908,
+      "charged_upper_cny": 0.014528,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4976,
+        "output_tokens": 286
+      }
+    },
+    {
+      "id": 233,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.06675,
+      "charged_upper_cny": 0.004756,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 906,
+        "output_tokens": 184
+      }
+    },
+    {
+      "id": 234,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.124918,
+      "charged_upper_cny": 0.008624,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4184,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 235,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.145708,
+      "charged_upper_cny": 0.011322,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4197,
+        "output_tokens": 183
+      }
+    },
+    {
+      "id": 236,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.1429,
+      "charged_upper_cny": 0.015676,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5798,
+        "output_tokens": 255
+      }
+    },
+    {
+      "id": 237,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059224,
+      "charged_upper_cny": 0.009734,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2595,
+        "output_tokens": 284
+      }
+    },
+    {
+      "id": 238,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.106376,
+      "charged_upper_cny": 0.013022,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4615,
+        "output_tokens": 237
+      }
+    },
+    {
+      "id": 239,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.09231,
+      "charged_upper_cny": 0.006996,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3370,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 240,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.1131,
+      "charged_upper_cny": 0.00995,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3383,
+        "output_tokens": 199
+      }
+    },
+    {
+      "id": 241,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.140492,
+      "charged_upper_cny": 0.014832,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5416,
+        "output_tokens": 250
+      }
+    },
+    {
+      "id": 242,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.021164,
+      "charged_upper_cny": 0.003576,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1748,
+        "output_tokens": 10
+      }
+    },
+    {
+      "id": 243,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.03165,
+      "charged_upper_cny": 0.008166,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1743,
+        "output_tokens": 585
+      }
+    },
+    {
+      "id": 244,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08081,
+      "charged_upper_cny": 0.015604,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4946,
+        "output_tokens": 357
+      }
+    },
+    {
+      "id": 245,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.026964,
+      "charged_upper_cny": 0.00391,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1827,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 246,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.047754,
+      "charged_upper_cny": 0.008254,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1839,
+        "output_tokens": 286
+      }
+    },
+    {
+      "id": 247,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08003,
+      "charged_upper_cny": 0.015136,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4576,
+        "output_tokens": 374
+      }
+    },
+    {
+      "id": 248,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.09258,
+      "charged_upper_cny": 0.007066,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3405,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 249,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11337,
+      "charged_upper_cny": 0.012484,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3418,
+        "output_tokens": 353
+      }
+    },
+    {
+      "id": 250,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.145908,
+      "charged_upper_cny": 0.017678,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6223,
+        "output_tokens": 327
+      }
+    },
+    {
+      "id": 251,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.06672,
+      "charged_upper_cny": 0.006006,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 907,
+        "output_tokens": 262
+      }
+    },
+    {
+      "id": 252,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.124236,
+      "charged_upper_cny": 0.008254,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3999,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 253,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.145026,
+      "charged_upper_cny": 0.01196,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4012,
+        "output_tokens": 246
+      }
+    },
+    {
+      "id": 254,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.141302,
+      "charged_upper_cny": 0.01644,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5364,
+        "output_tokens": 357
+      }
+    },
+    {
+      "id": 255,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059874,
+      "charged_upper_cny": 0.00549,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2617,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 256,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080664,
+      "charged_upper_cny": 0.019292,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2630,
+        "output_tokens": 877
+      }
+    },
+    {
+      "id": 257,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113822,
+      "charged_upper_cny": 0.021178,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5573,
+        "output_tokens": 627
+      }
+    },
+    {
+      "id": 258,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059338,
+      "charged_upper_cny": 0.005572,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2658,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 259,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080128,
+      "charged_upper_cny": 0.01131,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2671,
+        "output_tokens": 373
+      }
+    },
+    {
+      "id": 260,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.108824,
+      "charged_upper_cny": 0.016312,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4996,
+        "output_tokens": 395
+      }
+    },
+    {
+      "id": 261,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.021152,
+      "charged_upper_cny": 0.004178,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1805,
+        "output_tokens": 71
+      }
+    },
+    {
+      "id": 262,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07577,
+      "charged_upper_cny": 0.014732,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4246,
+        "output_tokens": 390
+      }
+    },
+    {
+      "id": 263,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.026062,
+      "charged_upper_cny": 0.004036,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1890,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 264,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.046852,
+      "charged_upper_cny": 0.009404,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1902,
+        "output_tokens": 350
+      }
+    },
+    {
+      "id": 265,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079714,
+      "charged_upper_cny": 0.01379,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4623,
+        "output_tokens": 284
+      }
+    },
+    {
+      "id": 266,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058868,
+      "charged_upper_cny": 0.005612,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2678,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 267,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079658,
+      "charged_upper_cny": 0.01551,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2691,
+        "output_tokens": 633
+      }
+    },
+    {
+      "id": 268,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.114314,
+      "charged_upper_cny": 0.018024,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5708,
+        "output_tokens": 413
+      }
+    },
+    {
+      "id": 269,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.06673,
+      "charged_upper_cny": 0.004588,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 910,
+        "output_tokens": 173
+      }
+    },
+    {
+      "id": 270,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.09184,
+      "charged_upper_cny": 0.006948,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3346,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 271,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11263,
+      "charged_upper_cny": 0.00843,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3359,
+        "output_tokens": 107
+      }
+    },
+    {
+      "id": 272,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.109186,
+      "charged_upper_cny": 0.014254,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4823,
+        "output_tokens": 288
+      }
+    },
+    {
+      "id": 273,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059648,
+      "charged_upper_cny": 0.005442,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2593,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 274,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080438,
+      "charged_upper_cny": 0.0091,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2606,
+        "output_tokens": 243
+      }
+    },
+    {
+      "id": 275,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.108428,
+      "charged_upper_cny": 0.014416,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4816,
+        "output_tokens": 299
+      }
+    },
+    {
+      "id": 276,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.092608,
+      "charged_upper_cny": 0.0078,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3772,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 277,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113398,
+      "charged_upper_cny": 0.01133,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3785,
+        "output_tokens": 235
+      }
+    },
+    {
+      "id": 278,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.140404,
+      "charged_upper_cny": 0.019506,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5889,
+        "output_tokens": 483
+      }
+    },
+    {
+      "id": 279,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.02124,
+      "charged_upper_cny": 0.003832,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1876,
+        "output_tokens": 10
+      }
+    },
+    {
+      "id": 280,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.031726,
+      "charged_upper_cny": 0.008142,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 550
+      }
+    },
+    {
+      "id": 281,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.078872,
+      "charged_upper_cny": 0.015368,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4804,
+        "output_tokens": 360
+      }
+    },
+    {
+      "id": 282,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.02744,
+      "charged_upper_cny": 0.004704,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2224,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 283,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.04823,
+      "charged_upper_cny": 0.009816,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2236,
+        "output_tokens": 334
+      }
+    },
+    {
+      "id": 284,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07911,
+      "charged_upper_cny": 0.014096,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4864,
+        "output_tokens": 273
+      }
+    },
+    {
+      "id": 285,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.060246,
+      "charged_upper_cny": 0.00628,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3012,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 286,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.081036,
+      "charged_upper_cny": 0.00885,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3025,
+        "output_tokens": 175
+      }
+    },
+    {
+      "id": 287,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11089,
+      "charged_upper_cny": 0.016218,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5485,
+        "output_tokens": 328
+      }
+    },
+    {
+      "id": 288,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066824,
+      "charged_upper_cny": 0.008478,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 919,
+        "output_tokens": 415
+      }
+    },
+    {
+      "id": 289,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.124596,
+      "charged_upper_cny": 0.008496,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4120,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 290,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.145386,
+      "charged_upper_cny": 0.014346,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4133,
+        "output_tokens": 380
+      }
+    },
+    {
+      "id": 291,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.147766,
+      "charged_upper_cny": 0.016506,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4557,
+        "output_tokens": 462
+      }
+    },
+    {
+      "id": 292,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.142952,
+      "charged_upper_cny": 0.016898,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5809,
+        "output_tokens": 330
+      }
+    },
+    {
+      "id": 293,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059144,
+      "charged_upper_cny": 0.00568,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2712,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 294,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079934,
+      "charged_upper_cny": 0.013258,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2725,
+        "output_tokens": 488
+      }
+    },
+    {
+      "id": 295,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113004,
+      "charged_upper_cny": 0.018908,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5686,
+        "output_tokens": 471
+      }
+    },
+    {
+      "id": 296,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059112,
+      "charged_upper_cny": 0.006344,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3044,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 297,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079902,
+      "charged_upper_cny": 0.008498,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3057,
+        "output_tokens": 149
+      }
+    },
+    {
+      "id": 298,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.106886,
+      "charged_upper_cny": 0.016216,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5436,
+        "output_tokens": 334
+      }
+    },
+    {
+      "id": 299,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.022254,
+      "charged_upper_cny": 0.004262,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1747,
+        "output_tokens": 96
+      }
+    },
+    {
+      "id": 300,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.085342,
+      "charged_upper_cny": 0.01647,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5779,
+        "output_tokens": 307
+      }
+    },
+    {
+      "id": 301,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.02619,
+      "charged_upper_cny": 0.00378,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1762,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 302,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.04698,
+      "charged_upper_cny": 0.006364,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1774,
+        "output_tokens": 176
+      }
+    },
+    {
+      "id": 303,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.085628,
+      "charged_upper_cny": 0.017384,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5612,
+        "output_tokens": 385
+      }
+    },
+    {
+      "id": 304,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058996,
+      "charged_upper_cny": 0.006312,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3028,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 305,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079786,
+      "charged_upper_cny": 0.009634,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3041,
+        "output_tokens": 222
+      }
+    },
+    {
+      "id": 306,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11877,
+      "charged_upper_cny": 0.01874,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6930,
+        "output_tokens": 305
+      }
+    },
+    {
+      "id": 307,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066928,
+      "charged_upper_cny": 0.01096,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1400,
+        "output_tokens": 510
+      }
+    },
+    {
+      "id": 308,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.091556,
+      "charged_upper_cny": 0.008732,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4238,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 309,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.112346,
+      "charged_upper_cny": 0.013958,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4251,
+        "output_tokens": 341
+      }
+    },
+    {
+      "id": 310,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.118946,
+      "charged_upper_cny": 0.01866,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6858,
+        "output_tokens": 309
+      }
+    },
+    {
+      "id": 311,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058708,
+      "charged_upper_cny": 0.006204,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2974,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 312,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079498,
+      "charged_upper_cny": 0.01111,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2987,
+        "output_tokens": 321
+      }
+    },
+    {
+      "id": 313,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.107278,
+      "charged_upper_cny": 0.015942,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5411,
+        "output_tokens": 320
+      }
+    },
+    {
+      "id": 314,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.05846,
+      "charged_upper_cny": 0.006174,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2959,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 315,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.07925,
+      "charged_upper_cny": 0.008632,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2972,
+        "output_tokens": 168
+      }
+    },
+    {
+      "id": 316,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.10759,
+      "charged_upper_cny": 0.017114,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5621,
+        "output_tokens": 367
+      }
+    },
+    {
+      "id": 317,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.022532,
+      "charged_upper_cny": 0.003674,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1797,
+        "output_tokens": 10
+      }
+    },
+    {
+      "id": 318,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.033018,
+      "charged_upper_cny": 0.006704,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1792,
+        "output_tokens": 390
+      }
+    },
+    {
+      "id": 319,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.081774,
+      "charged_upper_cny": 0.016476,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5342,
+        "output_tokens": 362
+      }
+    },
+    {
+      "id": 320,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.025556,
+      "charged_upper_cny": 0.003542,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1643,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 321,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.046346,
+      "charged_upper_cny": 0.046346,
+      "status": "pending",
+      "usage": null
+    },
+    {
+      "id": 322,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.046346,
+      "charged_upper_cny": 0.006174,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1655,
+        "output_tokens": 179
+      }
+    },
+    {
+      "id": 323,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.077886,
+      "charged_upper_cny": 0.015188,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4538,
+        "output_tokens": 382
+      }
+    },
+    {
+      "id": 324,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058362,
+      "charged_upper_cny": 0.006074,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2909,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 325,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079152,
+      "charged_upper_cny": 0.009588,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2922,
+        "output_tokens": 234
+      }
+    },
+    {
+      "id": 326,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.111168,
+      "charged_upper_cny": 0.016068,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5858,
+        "output_tokens": 272
+      }
+    },
+    {
+      "id": 327,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066798,
+      "charged_upper_cny": 0.006746,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1389,
+        "output_tokens": 248
+      }
+    },
+    {
+      "id": 328,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.092074,
+      "charged_upper_cny": 0.008888,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4316,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 329,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.112864,
+      "charged_upper_cny": 0.010802,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4329,
+        "output_tokens": 134
+      }
+    },
+    {
+      "id": 330,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.114114,
+      "charged_upper_cny": 0.011244,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4494,
+        "output_tokens": 141
+      }
+    },
+    {
+      "id": 331,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.111772,
+      "charged_upper_cny": 0.0165,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6074,
+        "output_tokens": 272
+      }
+    },
+    {
+      "id": 332,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059212,
+      "charged_upper_cny": 0.007512,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3132,
+        "output_tokens": 78
+      }
+    },
+    {
+      "id": 333,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113416,
+      "charged_upper_cny": 0.015818,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6349,
+        "output_tokens": 195
+      }
+    },
+    {
+      "id": 334,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059184,
+      "charged_upper_cny": 0.006528,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3136,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 335,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.079974,
+      "charged_upper_cny": 0.009738,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3149,
+        "output_tokens": 215
+      }
+    },
+    {
+      "id": 336,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.106846,
+      "charged_upper_cny": 0.016256,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5632,
+        "output_tokens": 312
+      }
+    },
+    {
+      "id": 337,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.019766,
+      "charged_upper_cny": 0.003442,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1429,
+        "output_tokens": 73
+      }
+    },
+    {
+      "id": 338,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.074954,
+      "charged_upper_cny": 0.013136,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4528,
+        "output_tokens": 255
+      }
+    },
+    {
+      "id": 339,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.025758,
+      "charged_upper_cny": 0.003556,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1650,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 340,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.046548,
+      "charged_upper_cny": 0.006204,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1662,
+        "output_tokens": 180
+      }
+    },
+    {
+      "id": 341,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.076554,
+      "charged_upper_cny": 0.013654,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4411,
+        "output_tokens": 302
+      }
+    },
+    {
+      "id": 342,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.091374,
+      "charged_upper_cny": 0.008624,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4184,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 343,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.112164,
+      "charged_upper_cny": 0.010858,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4197,
+        "output_tokens": 154
+      }
+    },
+    {
+      "id": 344,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.142026,
+      "charged_upper_cny": 0.018202,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6925,
+        "output_tokens": 272
+      }
+    },
+    {
+      "id": 345,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.066842,
+      "charged_upper_cny": 0.01325,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1393,
+        "output_tokens": 654
+      }
+    },
+    {
+      "id": 346,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.092008,
+      "charged_upper_cny": 0.009156,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4450,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 347,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.112798,
+      "charged_upper_cny": 0.014862,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4463,
+        "output_tokens": 371
+      }
+    },
+    {
+      "id": 348,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11194,
+      "charged_upper_cny": 0.020288,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6368,
+        "output_tokens": 472
+      }
+    },
+    {
+      "id": 349,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059294,
+      "charged_upper_cny": 0.006562,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3153,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 350,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080084,
+      "charged_upper_cny": 0.01126,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3166,
+        "output_tokens": 308
+      }
+    },
+    {
+      "id": 351,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.107762,
+      "charged_upper_cny": 0.017628,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5758,
+        "output_tokens": 382
+      }
+    },
+    {
+      "id": 352,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08965,
+      "charged_upper_cny": 0.016618,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4765,
+        "output_tokens": 443
+      }
+    },
+    {
+      "id": 353,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.122088,
+      "charged_upper_cny": 0.017942,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5475,
+        "output_tokens": 437
+      }
+    },
+    {
+      "id": 354,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.087542,
+      "charged_upper_cny": 0.014638,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4567,
+        "output_tokens": 344
+      }
+    },
+    {
+      "id": 355,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.115396,
+      "charged_upper_cny": 0.012736,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4704,
+        "output_tokens": 208
+      }
+    },
+    {
+      "id": 356,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.116182,
+      "charged_upper_cny": 0.013686,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4739,
+        "output_tokens": 263
+      }
+    },
+    {
+      "id": 357,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.082426,
+      "charged_upper_cny": 0.01032,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3544,
+        "output_tokens": 202
+      }
+    },
+    {
+      "id": 358,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.115356,
+      "charged_upper_cny": 0.01131,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4311,
+        "output_tokens": 168
+      }
+    },
+    {
+      "id": 359,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.085242,
+      "charged_upper_cny": 0.012626,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4257,
+        "output_tokens": 257
+      }
+    },
+    {
+      "id": 360,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.086438,
+      "charged_upper_cny": 0.012136,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4364,
+        "output_tokens": 213
+      }
+    },
+    {
+      "id": 361,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.119496,
+      "charged_upper_cny": 0.01507,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5231,
+        "output_tokens": 288
+      }
+    },
+    {
+      "id": 362,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.088562,
+      "charged_upper_cny": 0.013206,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4627,
+        "output_tokens": 247
+      }
+    },
+    {
+      "id": 363,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.118222,
+      "charged_upper_cny": 0.014376,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5244,
+        "output_tokens": 243
+      }
+    },
+    {
+      "id": 364,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.115616,
+      "charged_upper_cny": 0.012688,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4656,
+        "output_tokens": 211
+      }
+    },
+    {
+      "id": 365,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08346,
+      "charged_upper_cny": 0.011588,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4058,
+        "output_tokens": 217
+      }
+    },
+    {
+      "id": 366,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.116056,
+      "charged_upper_cny": 0.012714,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4805,
+        "output_tokens": 194
+      }
+    },
+    {
+      "id": 367,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.083288,
+      "charged_upper_cny": 0.012068,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4234,
+        "output_tokens": 225
+      }
+    },
+    {
+      "id": 368,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.149252,
+      "charged_upper_cny": 0.014536,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5596,
+        "output_tokens": 209
+      }
+    },
+    {
+      "id": 369,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.126054,
+      "charged_upper_cny": 0.017352,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5972,
+        "output_tokens": 338
+      }
+    },
+    {
+      "id": 370,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.085922,
+      "charged_upper_cny": 0.013468,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4238,
+        "output_tokens": 312
+      }
+    },
+    {
+      "id": 371,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.151412,
+      "charged_upper_cny": 0.015212,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5838,
+        "output_tokens": 221
+      }
+    },
+    {
+      "id": 372,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.083994,
+      "charged_upper_cny": 0.013568,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4264,
+        "output_tokens": 315
+      }
+    },
+    {
+      "id": 373,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.086134,
+      "charged_upper_cny": 0.012888,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4348,
+        "output_tokens": 262
+      }
+    },
+    {
+      "id": 374,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.12207,
+      "charged_upper_cny": 0.0145,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5562,
+        "output_tokens": 211
+      }
+    },
+    {
+      "id": 375,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.083496,
+      "charged_upper_cny": 0.013074,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4089,
+        "output_tokens": 306
+      }
+    },
+    {
+      "id": 376,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.115286,
+      "charged_upper_cny": 0.012258,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4545,
+        "output_tokens": 198
+      }
+    },
+    {
+      "id": 377,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.118038,
+      "charged_upper_cny": 0.014172,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5086,
+        "output_tokens": 250
+      }
+    },
+    {
+      "id": 378,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.118898,
+      "charged_upper_cny": 0.018554,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5285,
+        "output_tokens": 499
+      }
+    },
+    {
+      "id": 379,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08574,
+      "charged_upper_cny": 0.012534,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4611,
+        "output_tokens": 207
+      }
+    },
+    {
+      "id": 380,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.117766,
+      "charged_upper_cny": 0.01435,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5287,
+        "output_tokens": 236
+      }
+    },
+    {
+      "id": 381,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.083628,
+      "charged_upper_cny": 0.013416,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4308,
+        "output_tokens": 300
+      }
+    },
+    {
+      "id": 382,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.14762,
+      "charged_upper_cny": 0.015878,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5299,
+        "output_tokens": 330
+      }
+    },
+    {
+      "id": 383,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.147776,
+      "charged_upper_cny": 0.017404,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5654,
+        "output_tokens": 381
+      }
+    },
+    {
+      "id": 384,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.083492,
+      "charged_upper_cny": 0.01225,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4285,
+        "output_tokens": 230
+      }
+    },
+    {
+      "id": 385,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.116118,
+      "charged_upper_cny": 0.01463,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5523,
+        "output_tokens": 224
+      }
+    },
+    {
+      "id": 386,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.08303,
+      "charged_upper_cny": 0.01168,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4400,
+        "output_tokens": 180
+      }
+    },
+    {
+      "id": 387,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.114104,
+      "charged_upper_cny": 0.013414,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5163,
+        "output_tokens": 193
+      }
+    },
+    {
+      "id": 388,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.082924,
+      "charged_upper_cny": 0.082924,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 389,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.11533,
+      "charged_upper_cny": 0.01387,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5367,
+        "output_tokens": 196
+      }
+    },
+    {
+      "id": 390,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.084038,
+      "charged_upper_cny": 0.084038,
+      "status": "failed",
+      "usage": null
+    },
+    {
+      "id": 391,
+      "category": "demo",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.082924,
+      "charged_upper_cny": 0.01637,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4145,
+        "output_tokens": 505
+      }
+    },
+    {
+      "id": 392,
+      "category": "demo",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.084038,
+      "charged_upper_cny": 0.014322,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4617,
+        "output_tokens": 318
+      }
+    },
+    {
+      "id": 393,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.113992,
+      "charged_upper_cny": 0.01438,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5342,
+        "output_tokens": 231
+      }
+    },
+    {
+      "id": 394,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.081902,
+      "charged_upper_cny": 0.011798,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 3939,
+        "output_tokens": 245
+      }
+    },
+    {
+      "id": 395,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.147202,
+      "charged_upper_cny": 0.01619,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6423,
+        "output_tokens": 209
+      }
+    },
+    {
+      "id": 396,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080226,
+      "charged_upper_cny": 0.01282,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4042,
+        "output_tokens": 296
+      }
+    },
+    {
+      "id": 397,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.120702,
+      "charged_upper_cny": 0.018172,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6318,
+        "output_tokens": 346
+      }
+    },
+    {
+      "id": 398,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.089012,
+      "charged_upper_cny": 0.013408,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4944,
+        "output_tokens": 220
+      }
+    },
+    {
+      "id": 399,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.117886,
+      "charged_upper_cny": 0.014462,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5015,
+        "output_tokens": 277
+      }
+    },
+    {
+      "id": 400,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.086612,
+      "charged_upper_cny": 0.01277,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4689,
+        "output_tokens": 212
+      }
+    },
+    {
+      "id": 401,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.149946,
+      "charged_upper_cny": 0.015332,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5650,
+        "output_tokens": 252
+      }
+    },
+    {
+      "id": 402,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.15314,
+      "charged_upper_cny": 0.018686,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6479,
+        "output_tokens": 358
+      }
+    },
+    {
+      "id": 403,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.121878,
+      "charged_upper_cny": 0.016004,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 6170,
+        "output_tokens": 229
+      }
+    },
+    {
+      "id": 404,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.087046,
+      "charged_upper_cny": 0.013696,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5000,
+        "output_tokens": 231
+      }
+    },
+    {
+      "id": 405,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.116392,
+      "charged_upper_cny": 0.01442,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5634,
+        "output_tokens": 197
+      }
+    },
+    {
+      "id": 406,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.059252,
+      "charged_upper_cny": 0.00616,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2952,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 407,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080042,
+      "charged_upper_cny": 0.01193,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2965,
+        "output_tokens": 375
+      }
+    },
+    {
+      "id": 408,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.109006,
+      "charged_upper_cny": 0.017206,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5419,
+        "output_tokens": 398
+      }
+    },
+    {
+      "id": 409,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.022436,
+      "charged_upper_cny": 0.004202,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1901,
+        "output_tokens": 50
+      }
+    },
+    {
+      "id": 410,
+      "category": "evaluation",
+      "model": "deepseek-flash",
+      "reserved_cny": 0.033274,
+      "charged_upper_cny": 0.007588,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1938,
+        "output_tokens": 464
+      }
+    },
+    {
+      "id": 411,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.080962,
+      "charged_upper_cny": 0.017098,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 5221,
+        "output_tokens": 416
+      }
+    },
+    {
+      "id": 412,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.025378,
+      "charged_upper_cny": 0.00406,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1902,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 413,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.046168,
+      "charged_upper_cny": 0.013668,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 1914,
+        "output_tokens": 615
+      }
+    },
+    {
+      "id": 414,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.078878,
+      "charged_upper_cny": 0.022132,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 4906,
+        "output_tokens": 770
+      }
+    },
+    {
+      "id": 415,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.058184,
+      "charged_upper_cny": 0.005636,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2690,
+        "output_tokens": 16
+      }
+    },
+    {
+      "id": 416,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.078974,
+      "charged_upper_cny": 0.010654,
+      "status": "response_received",
+      "usage": {
+        "input_tokens": 2703,
+        "output_tokens": 328
+      }
+    },
+    {
+      "id": 417,
+      "category": "evaluation",
+      "model": "qwen3-vl-plus",
+      "reserved_cny": 0.109998,
+      "charged_upper_cny": 0.109998,
+      "status": "pending",
+      "usage": null
+    }
+  ],
+  "overrun": false
+}

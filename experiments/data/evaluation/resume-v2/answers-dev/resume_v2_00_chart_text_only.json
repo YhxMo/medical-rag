@@ -1,0 +1,176 @@
+{
+  "question_id": "resume_v2_00_chart",
+  "kind": "chart",
+  "mode": "text_only",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The provided page (p. 96) contains Figure 5.7(b), which visually shows a grid of focal spot shapes across the radiation field for a 20° anode angle, labeled from 'cathode side' (bottom, −20° to 0°) to 'anode side' (top, 0° to +20°). Inspection of the figure confirms that the projected focal spots are longer (more vertically extended) near the cathode side (bottom rows) and become progressively shorter in the vertical direction toward the anode side (top rows). The tilt also changes with lateral position, as stated in the corrected reference answer. This matches the AI source correction’s basis and the expected answer. The original draft reference answer was incorrect (reversed direction), and the correction is validated by direct visual inspection of the figure."
+  },
+  "result": {
+    "answer": "根据所提供的资料，无法完整回答“图 5.7(b) 中 20° 阳极角下焦点形状从阴极侧向阳极侧如何变化”这一问题。原因如下：\n\n**1. 图 5.7(b) 本身未提供**\n\n资料中仅在图 5.7 的图注里提到“(b) graphic representation of the focal spot shape at different locations in the radiation field (anode angle 20°)”[1]，即该图是“辐射野内不同位置处焦点形状的图示（阳极角 20°）”。但图 5.7(b) 的图像内容并未包含在所提供的文本资料中，因此无法描述图中焦点形状的具体几何变化。\n\n**2. 文字资料只说明了尺寸变化趋势，未说明形状变化**\n\n资料中与图 5.7(b) 相关的文字表述为：实际焦点尺寸取决于视野内的位置，**从阳极侧向阴极侧增大**[2]；另一处也表述为有效焦点尺寸**从阳极侧向阴极侧单调增大**[3]。\n\n这些表述说明的是焦点**尺寸（大小）**沿阴极—阳极方向的单调变化趋势，并未描述焦点**形状**（例如是圆形、椭圆形、矩形，以及长轴方向、长短轴比例等）如何随位置改变。因此，即使结合文字，也只能得出“尺寸由阳极侧向阴极侧增大”这一结论，不能据此推断形状变化。\n\n**3. 可确认的相关背景（非形状描述）**\n\n- 电子焦点在射线方向上按 sin θ 缩短，形成有效焦点[2]。\n- 诊断用 X 射线管阳极角范围为 6°–22°，通用管常用 10°–16°[2]。\n- 焦点尺寸的标称值是对中心束定义的，而实际焦点尺寸随视野内位置变化[2]。\n\n**结论与局限**\n\n- 依据现有资料可确认：在 20° 阳极角下，焦点尺寸从阳极侧向阴极侧增大[2][3]。\n- 关于图 5.7(b) 所示焦点**形状**的具体变化，所提供资料中缺少该图的图像内容及相应文字描述，无法作答。\n- 若需回答形状问题，需要提供图 5.7(b) 的图像本身，或教材中对该图焦点形状的明确文字说明。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.1382625829428434,
+      "first_token_seconds": 2.888715334003791,
+      "total_seconds": 5.748618833953515,
+      "model_seconds": 4.528587915934622,
+      "model_first_token_seconds": 0.8528054170310497
+    },
+    "calls": [
+      {
+        "seconds": 0.8554072908591479,
+        "usage": {
+          "input_tokens": 1670,
+          "output_tokens": 10
+        },
+        "cost_upper_cny": 0.00342,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 3.6731806250754744,
+        "usage": {
+          "input_tokens": 1665,
+          "output_tokens": 495
+        },
+        "cost_upper_cny": 0.00729,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": 0.8528054170310497,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to Figure 5.7(b), how does the shape of the focal spot change as one moves from the cathode side toward the anode side of the radiation field for a 20° anode angle?",
+    "citations": {
+      "citation_mentions": 8,
+      "valid_citation_mentions": 8,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:cfacfa258286",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 123,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nis defined along the \ncentral beam projection. For high anode currents, the area of the anode hit by \nthe electrons should be as large as possible, to keep the power density within \nacceptable limits. To balance the need for substantial heat dissipation with that of \na small focal spot size, the line focus principle is used (Fig. 5.7(a)).\nFIG. 5.7.  (a) Line focus principle: the length of the filament appears shortened in the beam \ndirection; (b) graphic representation of the focal spot shape at different locations in the \nradiation field (anode angle 20°).",
+        "scores": {
+          "dense": 0.811662617156016,
+          "bm25": 81.82697352214876,
+          "rrf": 0.032266458495966696,
+          "weighted": 0.032266458495966696,
+          "rerank": 0.7718201875686646
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p124:5902fa4dedc7",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 124,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n97\nX RAY PRODUCTION\nThe anode is inclined to the tube axis, typically with the central ray of \nthe X ray field perpendicular to the tube axis. The electrons hit the anode in the \nelectronic focus, largely determined by the length of the cathode filament. The \nelectronic focus appears shortened in beam direction by sin θ as the effective \nfocus (Fig.  5.7(a)). Anode angles in diagnostic tubes range from 6° to 22°, \ndepending on their task, with 10–16° used for general purpose tubes. The radial \ndimension of the focus size is given by the filament coil diameter and the action \nof the focusing cup. The size of the focal spot of an X ray tube is given for the \ncentral beam in the X ray field running perpendicular to the electron beam or the \ntube axis. The actual focal spot size depends on the position within the field of \nview, increasing from the anode side of the tube to the cathode (Fig. 5.7(b)).\nThe reduction of anode angles to achieve smaller effective focus sizes is \nlimited by the size of the field of view required as the X ray beam is cut off by \nthe anode. A further limit is given by the heel effect (Fig. 5.8). Here, the X rays \nproduced at depth within the anode suffer some",
+        "scores": {
+          "dense": 0.7885767533276364,
+          "bm25": 78.24509728762338,
+          "rrf": 0.03149801587301587,
+          "weighted": 0.03149801587301587,
+          "rerank": 0.7371431589126587
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p241:3af0155f49ad",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 241,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n214\nCHAPTER 9\nFIG. 9.5.  System geometry for image acquisition showing (a) correct alignment and (b) missed \ntissue associated with incorrect alignment.\nOn modern equipment, the typical nominal focal spot size for contact \nmammography is 0.3  mm, while the smaller focal spot used primarily for \nmagnification is 0.1  mm. The nominal focal spot size is defined relative to \nthe effective spot size at a reference axis. As shown in Fig. 9.6, this reference \naxis, which may vary from manufacturer to manufacturer, is normally specified \nat some midpoint in the image. The effective size of the focal spot will \nmonotonically increase from the anode side to the cathode side of the imaging \nfield, as illustrated in Fig. 5.7. In mammography, the X ray tube is arranged such \nthat the cathode side of the tube is adjacent to the patient’s chest wall, because the \nhighest intensity of X rays is available at the cathode side and the attenuation of \nX rays by the patient is generally greater near the chest wall. Frequently in breast \nimaging, there may be different target angles according to the focal spot size. In \naddition, the angulation of the X ray tube itself may be changed according to the \nc",
+        "scores": {
+          "dense": 0.7136588091614635,
+          "bm25": 82.6787208587505,
+          "rrf": 0.02878726010616578,
+          "weighted": 0.02878726010616578,
+          "rerank": 0.05747466906905174
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p125:b35364473ff2",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 125,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n(Fig. 5.9). Here, a small tungsten block serving as the target is brazed to a copper \nblock to dissipate the heat efficiently to the surrounding cooling medium. As \nthe focal spot is stationary, the maximum loading is determined by the anode \ntemperature and temperature gradients.\nFIG. 5.9.  Dental X ray tube with a stationary anode.\nMost X  ray examinations need photon fluences that cannot be obtained \nwith stationary anodes, as bombarding the same spot with higher anode currents \nleads to melting and destruction of the anode. In a tube with a rotating anode, \na tungsten disc rotates during an exposure, thus effectively increasing the area \nbombarded by the electrons to the circumference of a focal track. The energy is \ndissipated to a much larger volume as it is spread over the anode disc (Fig. 5.10). \nThe anode disc is fixed to a rotor and a spindle with a short stem. The spindle is",
+        "scores": {
+          "dense": 0.7462906244716282,
+          "bm25": 58.981928090455646,
+          "rrf": 0.028381642512077296,
+          "weighted": 0.028381642512077296,
+          "rerank": 0.05380476638674736
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p121:cc268b72afe6",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 121,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n94\nCHAPTER 5\nthe focal spot at the anode (Fig. 5.4). X ray tubes with two focal spots usually \nemploy two separate filament/cup assemblies (cathode blocks).\nThe degree of focusing depends on the potential difference or bias voltage \nbetween the filament and focusing electrode. The focal spot will be largest if both \nare at the same potential. With an increasing negative bias voltage at the focusing \ncup, the focus size will decrease and finally the electron current will be pinched \noff. This effect is sometimes used to control the focus size electronically, or for \na fast switching of the anode current (grid controlled tubes) when short radiation \npulses are required, as in pulsed fluoroscopy. Some bias can simply be achieved \nby connecting the filament and cup with a high resistance grid leak resistor. Some \nelectrons emitted from the filament surface will hit and charge the cup. The cup \nis discharged via the grid leak resistor, maintaining the cup at a negative potential \ndifference.\nFIG. 5.4.  (a) The effect of an unbiased focusing cup on the electric field and electron \ntrajectories. The typical bimodal distribution of the current density can also be seen in a \npinhole image o",
+        "scores": {
+          "dense": 0.7979018928749543,
+          "bm25": 59.779063398537986,
+          "rrf": 0.0304147465437788,
+          "weighted": 0.0304147465437788,
+          "rerank": 0.020730599761009216
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 0,
+    "completeness": 0,
+    "groundedness": 0,
+    "behavior_ok": true,
+    "refused": true,
+    "unsupported_claims": false,
+    "image_claims_supported": false,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The model correctly refuses to answer due to missing Figure 5.7(b) image and lack of explicit shape description in text. However, the gold evidence (visual_535a9d07428592c8521f) *does* provide a description of Fig. 5.7(b): 'Grid of rectangular focal spot shapes across radiation field; horizontal axis labeled \"cathode side\" to \"anode side\", vertical axis labeled angles from 20° to 20° (symmetric); focal spots elongated and tilted, becoming more distorted toward edges'. Crucially, it also states: 'Moving from the cathode side at the bottom toward the anode side at the top, the projected focal spots become shorter in the vertical direction. Their tilt also varies with lateral position across the tube axis.' This directly answers the question. Since the model had access to this gold source (as per input), but failed to extract and use this information—instead claiming the figure is unavailable—it is incorrect and not grounded. The refusal is inappropriate because the necessary information *is* present in the provided gold source. Citations [1], [2], [3] are supported by retrieved text (e.g., p124: 'actual focal spot size... increasing from the anode side... to the cathode'), but the model misinterprets 'size' vs 'shape' and ignores the visual description that *does* describe shape change. Thus correctness=0, groundedness=0."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 13.47278454201296,
+    "usage": {
+      "input_tokens": 4851,
+      "output_tokens": 448
+    },
+    "cost_upper_cny": 0.01687,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

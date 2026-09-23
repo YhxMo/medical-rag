@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided source (Table 8, p. 194 of IAEA Radiology Quality Control 2023) lists six QC tests for radiographers (sections 2.1.1–2.1.6). None of these tests mention kVp or specify a tolerance for kVp accuracy. The reference answer 'The document does not specify a kVp tolerance.' is factually correct based on the given evidence. Since the task type is 'behavior' with expected behavior 'refuse', and the requested information is absent from the cited source, refusing to answer is appropriate and supported."
+}

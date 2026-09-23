@@ -1,0 +1,31 @@
+# Public replacement corpus. Credentials are read from DEEPSEEK_API_KEY at runtime.
+active:
+  embedding: fastembed
+  reranker: none
+  vector_store: qdrant
+  chunking: fixed
+  multimodal: false
+paths:
+  data_dir: data/raw
+  artifact_dir: artifacts/public-v1
+  index_dir: artifacts/public-v1/index
+vector_store:
+  qdrant:
+    collection: public_imaging_v1
+    local_path: artifacts/public-v1/qdrant
+    url: ""
+embedding:
+  fastembed:
+    model: BAAI/bge-small-en-v1.5
+    cache_dir: models/fastembed
+chunking:
+  fixed:
+    chunk_size: 1200
+    chunk_overlap: 160
+retrieval:
+  hybrid:
+    dense_top_k: 20
+    bm25_top_k: 20
+    final_top_k: 5
+evaluation:
+  test_dataset: data/evaluation/public-v1/eval.json

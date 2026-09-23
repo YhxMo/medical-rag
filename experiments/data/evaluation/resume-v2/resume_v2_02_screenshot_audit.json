@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The section heading '17.2.2.3. Detectors based on zero crossing of the second derivative' is explicitly present in both the provided source text excerpt and the screenshot image (visible as '17.2.2.3. Detectors based on zero crossing of the second derivative' at the top of the page, and also as '17.2.2.3. Detectors based on zero crossing of the second derivative' in the image's header). The question asks for the section number and title for this discussion, which matches exactly the reference answer and expected answer."
+}

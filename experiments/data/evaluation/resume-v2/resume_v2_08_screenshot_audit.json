@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided source text (page 172 of MSF Ultrasound Manual 2018) includes Figure 3 with label 'a' and its caption explicitly states: 'Ascites (a) outlines the nodular surface of the cirrhotic liver.' This directly matches the reference_answer and expected_answer. The question asks to identify structure 'a' and interpret its significance regarding the liver surface — both are answered by the caption and surrounding text describing cirrhosis with ascites outlining a nodular surface."
+}

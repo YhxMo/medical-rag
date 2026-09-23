@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided text explicitly states that CW Doppler devices recover a Doppler signal via frequency demodulation, and that the temporal frequency axis of the Doppler spectrum 'can be rescaled to velocity using the Doppler equation'. It describes interpreting flow velocity (e.g., 'maximum blood flow velocity... about 1 m/s') and pulsatile flow characteristics, but never mentions measuring blood pressure. The claim that CW Doppler devices 'can directly measure blood pressure using the demodulated Doppler signal' is not supported—and is contradicted—by the text, which limits Doppler output to velocity estimation. Both evidence snippets and the figure caption reinforce this: velocity is derived from Doppler shift; no pressure measurement is described."
+}

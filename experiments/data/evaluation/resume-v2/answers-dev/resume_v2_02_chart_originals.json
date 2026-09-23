@@ -1,0 +1,164 @@
+{
+  "question_id": "resume_v2_02_chart",
+  "kind": "chart",
+  "mode": "originals",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text (page 461, section 17.2.2.3 and Figure 17.12 caption) explicitly states: '(c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile).' The figure itself (visible in the provided image) shows profile (c) with a single peak (edge), and profile (d) with two peaks (tube-like structure). This matches the reference answer exactly: green = tube-like, two peaks; yellow = edge, one peak. The rationale correctly notes that visual inspection of the figure is required to confirm the number of peaks, and the evidence IDs point to the correct textual and visual context."
+  },
+  "result": {
+    "answer": "根据提供的资料（特别是来源 [1] 和 [2] 中对 **Figure 17.12** 的图注说明）：\n\n- **绿色轮廓（green profile）** 对应于穿过**管状结构（tube-like structure）**的剖面线；\n- **黄色轮廓（yellow profile）** 对应于穿过**边缘（edge）**的剖面线。\n\n---\n\n### 梯度幅值行为的差异：\n\n- **黄色轮廓（边缘穿越）**：  \n  在梯度幅值图中，沿该路径的剖面（Fig. 17.12c）呈现**一个单一的峰值（single peak）**。这对应于图像中一个强度突变的边界（即边缘），梯度幅值在此处达到局部最大值 [1]。\n\n- **绿色轮廓（管状结构穿越）**：  \n  沿该路径的剖面（Fig. 17.12d）呈现**两个峰值（two peaks）**。这是因为管状结构（如血管或支气管在CT图像中）具有**两侧边界**：当剖面线穿过管状结构时, 先遇到外壁（上升边），梯度幅值增大至第一个峰值；然后穿过低强度腔体（如空气或液体），再遇到内壁（下降边），梯度幅值再次增大至第二个峰值 [1]。\n\n> 简言之：  \n> - 边缘 → 单一梯度幅值峰值（一次强度跃变）；  \n> - 管状结构 → 双峰梯度幅值响应（两次强度跃变，对应内外壁）。\n\n此行为是边缘检测与管状结构检测算法（如Marr–Hildreth、Hessian-based tubular detectors）区分目标形态的重要依据 [1][3]。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6536446248646826,
+      "first_token_seconds": 5.3504090420901775,
+      "total_seconds": 10.712327291956171,
+      "model_seconds": 8.953304958064109,
+      "model_first_token_seconds": 1.7846178750041872
+    },
+    "calls": [
+      {
+        "seconds": 1.8127134579699486,
+        "usage": {
+          "input_tokens": 2715,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005686,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 7.14059150009416,
+        "usage": {
+          "input_tokens": 2728,
+          "output_tokens": 395
+        },
+        "cost_upper_cny": 0.011776,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.7846178750041872,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "In Figure 17.12, which profile (yellow or green) corresponds to a plot across a tube-like structure, and how does its gradient magnitude behavior differ from the edge-crossing profile?",
+    "citations": {
+      "citation_mentions": 6,
+      "valid_citation_mentions": 6,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_cb59cd0a1891b2dea0c4",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 461,
+        "type": "image_caption",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nvisible_text: 17.2.2.3. Detectors based on zero crossing of the second derivative\nImagine a particle crossing an edge in a continuously smooth image, F, moving in a direction orthogonal to the edge (i.e. in the direction of the image gradient). If we plot the gradient magnitude of the image along the path of the particle, we see that at the edge there is a local maximum of the gradient magnitude (Fig. 17.12).\nFIG. 17.12. Gradient magnitude at image edges. (a) A detail from the chest CT image from Fig. 17.8. (b) Corresponding gradient magnitude image. (c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile). The gradient magnitude reaches its maximum at the points where the profiles cross the image edge.\nLet us denote the unit vector in the particle’s direction as v, and the point where the particle crosses the edge as x. The gradient magnitude of the image F at x is simply:\n∇F(x) = D_v F |x   (17.11)\nThe gradient magnitude reaches a local maximum at x in the direction v if, and only if:\nD_{vv} F = 0  and  D_{vvv} F ≤ 0   (17.12)\nSeveral edge detectors leverage this property. The earliest of these operators is the Marr–Hildreth edge detector. It is based on the fact that the necessary (but not sufficient) condition for Eq. (17.12) is:\nD_{xx} F + D_{yy} F = 0   (17.13)\nThe operator (D_{xx} + D_{yy}) is the Laplacian operator. By finding the set of all points in the image where the Laplacian of the image is zero, we find the superset of all the points that satisfy Eq. (17.12).\nvisual_relations: Figure 17.12 contains four subfigures: (a) chest CT image detail with yellow/green lines indicating profiles; (b) corresponding gradient magnitude image; (c) 1D plot of gradient magnitude along yellow profile (edge), showing a single peak; (d) 1D plot along green profile (tube-like structure), showing two peaks. The peaks in (c) and (d) align with edge crossings.\nunits: No explicit units are given; image intensity is dimensionless, spatial coordinates are in pixels, derivatives are per pixel.\nuncertainties: Equation (17.13) is stated to be a *necessary but not sufficient* condition for a local maximum of gradient magnitude; thus zero-crossings of the Laplacian include false positives (e.g., saddle points).\nsummary: This section explains edge detection via zero-crossings of the second directional derivative. It states that at an edge, the gradient magnitude has a local maximum along the gradient direction, requiring first derivative zero and second derivative non-positive (Eq. 17.12). The Marr–Hildreth detector approximates this by using the Laplacian (sum of second partials) zero-crossings (Eq. 17.13), which is necessary but not sufficient. Figure 17.12 visually demonstrates gradient magnitude peaks at edges.",
+        "scores": {
+          "dense": 0.8337791642102997,
+          "bm25": 85.62366267605137,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9308879375457764
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 461,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n434\nCHAPTER 17\n17.2.2.3.\t Detectors based on zero crossing of the second derivative\nImagine a particle crossing an edge in a continuously smooth image, F, \nmoving in a direction orthogonal to the edge (i.e. in the direction of the image \ngradient). If we plot the gradient magnitude of the image along the path of \nthe particle, we see that at the edge there is a local maximum of the gradient \nmagnitude (Fig. 17.12).\nFIG. 17.12.  Gradient magnitude at image edges. (a) A detail from the chest CT image from \nFig.  17.8. (b) Corresponding gradient magnitude image. (c) A plot of gradient magnitude \nimage across the edge (yellow profile). (d) A plot of gradient magnitude image across the \ntube-like structure (green profile). The gradient magnitude reaches its maximum at the points \nwhere the profiles cross the image edge.\nLet us denote the unit vector in the particle’s direction as v, and the point \nwhere the particle crosses the edge as x. The gradient magnitude of the image F \nat x is simply:\n( )\n|\nF\nD F\n∇\n=\nv\nx\nx \t\n(17.11)\nThe gradient magnitude reaches a local maximum at x in the direction v if, \nand only if:\n0  and  \n0\nD F\nD\nF\n=\n≤\nvv\nvvv\n\t\n(17.12)\nSeveral edge detectors leverage this",
+        "scores": {
+          "dense": 0.8057725407507883,
+          "bm25": 84.61099677432348,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.8971806168556213
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p457:331a2f445604",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 457,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n.8.  Illustration of edges and tubes in an image. (a) A detail from the chest CT image is \nshown. The yellow profile crosses an edge and the green profile crosses a tube-like structure. \n(b) A plot of image intensity along the yellow profile (in blue) and a plot of image intensity \nafter smoothing the input image with a Gaussian filter with σ = 1 (in red). (c) A plot of image \nintensity along the green profile. Edge and tube detectors use properties of the image derivative \nto detect edges and tubes.\n17.2.2.1.\t How image derivatives are computed\nAn edge is a discontinuity in the image intensity. Therefore, the directional \nderivative of the image intensity in the direction orthogonal to the edge must be \nlarge, as seen in Fig. 17.8. Edge detection algorithms exploit this property.\nHow do we compute the derivatives of image intensity? In order to compute \nderivatives, we require a continuous function. However, an image is just an array \nof numbers. One solution is to use the finite difference approximation of the \nderivative. From the Taylor series expansion, it is easy to derive the following \napproximation of the derivative. For a 1-D function, ( )\nf x , we have:\n2\n(\n)\n(\n)\n'( )\n(",
+        "scores": {
+          "dense": 0.7887014317800254,
+          "bm25": 73.07722263008453,
+          "rrf": 0.031746031746031744,
+          "weighted": 0.031746031746031744,
+          "rerank": 0.7797096371650696
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p460:1b6a1d190750",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 460,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n) and (DyG), as shown in Fig.  17.11. The resulting \ngradient magnitude image should be compared with the gradient magnitude \nimage obtained with the Sobel operator in Fig. 17.10.\nFIG. 17.11.  Illustration of convolution with Gaussian derivative filters. (a) Input image. \n(b) and (c) Convolution with Gaussian derivative filters with σ = 2. (d) Gradient magnitude \nimage. Compare with Fig. 17.10.\nOf course, too much smoothing can remove important edges too. Finding \nthe right amount of smoothing is a difficult and often ill posed problem.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 33.8883753160599,
+          "rrf": 0.013888888888888888,
+          "weighted": 0.013888888888888888,
+          "rerank": 0.0008383271633647382
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 1,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": true,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": false
+      }
+    ],
+    "reason": "The answer correctly identifies green = tube-like structure (two peaks) and yellow = edge (single peak), matching the reference and Figure 17.12 caption in retrieved source [visual_cb59cd0a1891b2dea0c4] and gold source [iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06]. The explanation of the two peaks corresponding to outer/inner walls is plausible and consistent with the figure, though not explicitly stated in the provided text—still, it's a standard interpretation and the core claim (two vs. one peak) is fully supported. However, the answer cites [3] for 'Hessian-based tubular detectors', but no source [3] is provided in the retrieved or gold sources; this is an unsupported claim. Also, while the answer attributes the explanation to sources [1] and [2], only source [1] (the main caption) is clearly present and sufficient; source [2] is just a continuation of the same page and doesn’t add new info, but the citation numbering is ambiguous. Groundedness is reduced to 1 because of the unsupported [3] citation and minor over-attribution. All question parts are addressed. Image claims (peaks in c/d) are supported by the visual relations in the retrieved caption."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 12.657513292040676,
+    "usage": {
+      "input_tokens": 5383,
+      "output_tokens": 422
+    },
+    "cost_upper_cny": 0.017518,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

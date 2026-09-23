@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text in section 3.1.1.3, step (d), explicitly states: 'measure the focal spot–image receptor distance, the focal spot–table distance and the focal spot–test object distance.' This matches exactly the reference_answer and expected_answer. The image (Fig. 22) illustrates the setup but is not required to identify the three distances, consistent with 'requires_visual': false."
+}

@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "According to the text, what are two common causes of cirrhosis listed in the manual?",
+      "reference_answer": "Viral hepatitis type C and B, and alcohol abuse",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+        "msf_ultrasound_manual_2018.pdf:fixed:p173:b59ed2c2d541"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly lists 'viral hepatitis type C and B' and 'alcohol abuse' as most common causes of cirrhosis; no visual interpretation is needed."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 2, what anatomical structure is labeled 'K', and how does its echogenicity compare to that of the liver (L)?",
+      "reference_answer": "K is the kidney; it is less echogenic (darker) than the liver (L)",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_fe4a575becd3bc34a521"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure shows labels 'L' and 'K'; the caption states the liver is 'much more echogenic (brighter) than the kidney (K)', which requires inspecting the image to confirm labeling and relative brightness."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the ultrasound image in Figure 3, what structure is labeled 'a', and what does its presence indicate about the liver surface?",
+      "reference_answer": "Structure 'a' is ascites, which outlines the nodular surface of the cirrhotic liver",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_fe4a575becd3bc34a521"
+      ],
+      "requires_visual": true,
+      "rationale": "The image shows label 'a' adjacent to the liver margin; the caption confirms 'Ascites (a) outlines the nodular surface of the cirrhotic liver', requiring visual identification of 'a' and correlation with caption."
+    },
+    {
+      "kind": "behavior",
+      "question": "A user asks: 'What is the recommended treatment for diffuse fatty liver shown in Figure 2?'",
+      "reference_answer": "The manual does not provide treatment recommendations for diffuse fatty liver.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f",
+        "visual_fe4a575becd3bc34a521"
+      ],
+      "requires_visual": false,
+      "rationale": "The source describes the ultrasound appearance and clinical implication (injury to liver cells) but gives no treatment guidance; per behavior_type='refuse', the assistant must decline to answer clinical management questions."
+    }
+  ]
+}

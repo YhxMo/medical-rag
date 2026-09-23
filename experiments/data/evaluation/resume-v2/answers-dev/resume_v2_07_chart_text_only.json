@@ -1,0 +1,139 @@
+{
+  "question_id": "resume_v2_07_chart",
+  "kind": "chart",
+  "mode": "text_only",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The reference answer matches the explicit labeling in the figure caption and surrounding text on page 98 of the MSF Ultrasound Manual (2018). Specifically: (1) The caption for Figure 12 states 'crescent shaped collection of a peri-gestational haemorrhage (arrowheads)'; (2) The continuation of the caption (in source id 79f336f2b642) explicitly identifies 'the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail)'; (3) The image (Figure 12) visually confirms these annotations. All four label types are unambiguously assigned to the specified structures in the provided evidence."
+  },
+  "result": {
+    "answer": "现有教材证据不足，无法可靠回答。",
+    "status": "insufficient_evidence",
+    "warnings": [
+      "No image of Figure 12 is provided; the only Figure 12 text (source 3, page 25) concerns adding a new patient and selecting exam type, not the labeled structures described (arrowheads, curved arrow, arrow without tail, arrow with tail). Those labels appear in a different figure on page 98 (source 1), so the question's premise about Figure 12 cannot be verified from the sources."
+    ],
+    "timings": {
+      "retrieval_seconds": 0.9655465001706034,
+      "total_seconds": 2.7294675421435386,
+      "model_seconds": 1.7528323750011623,
+      "first_token_seconds": null,
+      "model_first_token_seconds": null
+    },
+    "calls": [
+      {
+        "seconds": 1.7528323750011623,
+        "usage": {
+          "input_tokens": 1747,
+          "output_tokens": 96
+        },
+        "cost_upper_cny": 0.004262,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      }
+    ],
+    "query": "In Figure 12, what specific structures are labeled with arrowheads, a curved arrow, an arrow without a tail, and an arrow with a tail?",
+    "citations": {},
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 98,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 8. Obstetrics early ultrasound – first trimester > 8.3 Abnormal early pregnancy\national haemorrhage (arrowheads). \nFloating echodensities within the collection and a small clot confirm the collection as being \nblood. Also note in this early pregnancy the normal amnion (curved arrow), the embryo (arrow \nwithout tail), and the yolk sac (arrow with tail).\nGestational trophoblastic disease – molar pregnancy\nGestational trophoblastic disease (GTD) or molar pregnancy is a proliferation of trophoblastic \ntissue from the fertilized ovum that ranges from benign and curable to aggressively malignant. \nTrophoblastic tissue is the functional unit of the placenta. Patients typically present in the first \ntrimester with hyperemesis, bleeding, or toxemia. Quantitative serum beta-human chorionic \ngonadotropin levels (beta-hCG) are typically substantially elevated serving to confirm the \ndiagnosis. The following forms of GTD are most relevant:\n–\t The complete hydatidiform mole, ‘classic’ mole, is most common accounting for 80 % of cases \nof GTD (Figure 13). Placental villi develop cystic changes and proliferate excessively. The uterus \nis larger than expected for dates. In the first trimester the uterine cavity is filled with a highly \nechogenic granular mass producing a ‘snow",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 62.843571711735535,
+          "rrf": 0.01639344262295082,
+          "weighted": 0.01639344262295082,
+          "rerank": 0.9666101336479187
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p129:193b194fecef",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 129,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 10. Ultrasound in emergencies – the extended ‘FAST’ scan > 10.5 Pelvic view\n10. Ultrasound in emergencies – the extended ‘FAST’ scan\n128\nFigure 7: Pericardial effusion\nTransverse upward-angled subxiphoid view reveals a pericardial effusion (PE) as a hypoechoic \nband between the chest wall (arrowheads) and the myocardium (m). The heart is shown\nin 4-chamber view from the cardiac apex. Anterior and to the right is the right ventricle (RV), \njust to the left is the left ventricle (LV) separated from the right ventricle by the ventricular \nseptum (VS). In this patient both the right atrium (RA) and the left atrium (LA) are dilated.\nThe atrial septum (AS) separated the enlarged atria. The tricuspid valve (arrow without tail)\nand the mitral valve (arrow with tail) are both closed in this phase of the cardiac cycle\n(early ventricular systole).\n10.5 Pelvic view\nThe pelvic view examines for the presence of free fluid around the bladder. Transverse and \nlongitudinal views of the suprapubic region are obtained to depict the urinary bladder and \nrectouterine/retrovesical pouch, a recess formed by a fold of the peritoneum descending between \nthe rectum and uterus in women or the rectum and bladder in men.\nThis scan should be performed on a patient with full bladder if",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 55.282719447106544,
+          "rrf": 0.015873015873015872,
+          "weighted": 0.015873015873015872,
+          "rerank": 0.8384661078453064
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p25:7cca629ed6c0",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 25,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 2. Ultrasound equipment and basics of imaging > 2.3 Ultrasound machine basics\n2. Ultrasound equipment and basics of imaging\n24\n \n     \n \n     \nFigure 11: Connecting a transducer\nPlace the M-Turbo upside down, line up the connections for the transducer\nwith the silver latch in the vertical position and gently fit into position.\nRotate the latch counter clockwise and pull the latch down to lock the transducer into place.\nPatient details and exam type:\nFirstly, always select the relevant type of exam from the pre-set menu according to scan type \nbeing undertaken, e.g. abdominal, obs / gyn. The available exam types depend on the transducer. \nPatient details are entered on the same screen (Figure 12).\n \n     \nFigure 12: Adding a new patient and selecting the exam type\nTo add a new patient, press the patient button (highlighted) in the image on the left.\nFrom the image on the right, press the new/end button (arrow bottom left of screen), enter the \npatient’s details (highlighted box). Select the appropriate exam type from the drop down menu \n(highlighted box with arrow), then click ‘Done’ (arrow bottom right of the screen) to start scanning",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 39.66449623026254,
+          "rrf": 0.014492753623188406,
+          "weighted": 0.014492753623188406,
+          "rerank": 0.11778897047042847
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p76:3c1ea501bee1",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 76,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 7. Gynaecology > 7.3 Ovaries and ovarian tubes\n7. Gynaecology\n75\nNote: careful adjustment of the 2D gain and focal zone settings on the ultrasound unit are critical \nfor demonstrating these important and characteristic ultrasound features of haemorrhagic fluid. \nMost haemorrhagic cysts resolve in 2-8 weeks.\nFigure 17: Haemorrhagic ovarian cyst – Clots and blood\nTransvaginal image of the ovary shows a 4 cm cystic mass with fine floating internal echoes \n(straight arrow) representing blood in liquid form. A solid appearing structure (curved arrow) in \nthe upper portion of the cyst represents a blood clot. Doppler ultrasound (not shown) typically \nshows no blood flow within the clot. The wall of the cyst (arrowhead) is thickened.\nFollow-up ultrasound obtained following two menstrual cycles confirmed complete resolution \nof this haemorrhage cyst.\nFigure 18: Haemorrhagic ovarian cyst – Spider web appearance\nTransvaginal image of the left ovary in a woman with acute left pelvic pain shows a thick-walled \ncystic ovarian mass with fine septations extending across the cyst. This ‘spider-web’\nappearance is characteristic of a hemorrhagic ovarian cyst. Doppler ultrasound evaluation \nshows no blood flow within these fine septa. Blood flow",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 40.5273723654483,
+          "rrf": 0.015151515151515152,
+          "weighted": 0.015151515151515152,
+          "rerank": 0.04505927488207817
+        }
+      },
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p262:cc13f3c7402a",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 262,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 22. Neonatal head > 22.2 Germinal matrix haemorrhage\n22. Neonatal head\n261\nFigure 13: Bilateral Grade 1 germinal matrix haemorrhage\nParasagittal images demonstrate echogenic material consistent with blood products (arrows) \nextends anterior to the caudothalamic grooves (arrowheads) bilaterally.\nFigure 14: Left Grade 4 germinal matrix haemorrhage\nParasagittal and coronal images demonstrate heterogeneous echogenic material consistent with \nblood products is present \nin the left caudothalamic region (arrowhead) and the adjacent left parietal lobe \nand left lateral ventricle (arrows).",
+        "scores": {
+          "dense": 0.6324717576094872,
+          "bm25": 0.0,
+          "rrf": 0.016129032258064516,
+          "weighted": 0.016129032258064516,
+          "rerank": 0.010125703178346157
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 0,
+    "completeness": 0,
+    "groundedness": 0,
+    "behavior_ok": true,
+    "refused": true,
+    "unsupported_claims": false,
+    "image_claims_supported": false,
+    "citations": [],
+    "reason": "The model refused to answer, stating '现有教材证据不足，无法可靠回答。' (Existing teaching materials are insufficient to reliably answer). However, the provided gold sources—including the text on p.98 and the figure caption on p.97—explicitly identify all four labels in Figure 12: arrowheads = peri-gestational haemorrhage; curved arrow = amnion; arrow without tail = embryo; arrow with tail = yolk sac. The retrieved source msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642 contains the exact sentence: 'Also note in this early pregnancy the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail).' The figure caption also confirms the arrowheads label. Thus, sufficient evidence *is* available, and the refusal is unjustified. Since the model declined to answer despite clear support in the sources, correctness, completeness, and groundedness are 0. Behavior is acceptable (no hallucination), so behavior_ok = true and refused = true."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 9.142275874968618,
+    "usage": {
+      "input_tokens": 5779,
+      "output_tokens": 307
+    },
+    "cost_upper_cny": 0.01647,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

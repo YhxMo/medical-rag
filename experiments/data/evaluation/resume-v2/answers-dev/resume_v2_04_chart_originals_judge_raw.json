@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies that Figure 22 specifically shows a PMMA setup (10 cm thick), as stated in the figure caption ('Simple set-up using PMMA...') and confirmed by the visual evidence (stack of transparent blocks on the table). It also accurately notes the alternative copper plate option (1 mm) from step (c) of the procedure, but correctly emphasizes that for *Figure 22 itself*, the material is PMMA, 10 cm. Both cited sources (id 1 and 2) contain the exact text: 'Place 10 cm of PMMA on the couch or the table, or place a copper plate with 1 mm thickness either on the collimator or the table (Fig. 22)' and the figure caption 'FIG. 22. Simple set-up using PMMA...'. The visual description in source 2 ('A stack of PMMA blocks is placed on the patient table...') further supports the image-based claim. All parts of the question are addressed precisely with no unsupported claims."
+}

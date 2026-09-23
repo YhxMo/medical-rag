@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states in section 4.2.11.5(b): 'The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.' This directly answers the question about the maximum allowable deviation during routine quality control."
+}

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The caption of Figure 12.5 explicitly states: 'The measured Doppler spectrum will include contributions from all moving scatterers within the area of intersection of the two beams.' The figure visually depicts the transmit (Tx) and receive (Rx) beam apertures with dashed lines, and the shaded diamond-shaped region represents their intersection — the sensitive volume where moving scatterers contribute to the Doppler signal. This matches both the reference answer and the expected evidence."
+}

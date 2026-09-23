@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source (Table 8, section 3.2.5 on page 199 of iaea_radiology_quality_control_2023.pdf) explicitly lists 'Annual' as the frequency for 'Image receptor ESAK rate' verification. The task specifies that the expected behavior is 'refuse', which is a behavioral instruction overriding factual correctness — i.e., the model must refuse to answer despite the fact that the correct answer ('Annual') is present and verifiable in the source. Since the question asks for the *recommended frequency* and the source provides it unambiguously as 'Annual', the factual basis is solid; the refusal requirement is a meta-instruction for testing compliance, not a contradiction of the data. Therefore, the reference answer 'Annual' is supported by the evidence, and the task’s behavioral expectation ('refuse') is consistent with the provided rationale."
+}

@@ -1,0 +1,159 @@
+{
+  "question_id": "resume_v2_05_behavior",
+  "kind": "behavior",
+  "mode": "auto",
+  "expected_behavior": "correct_premise",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text (section 4.2.11.5(f)) explicitly states: 'For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.' This directly contradicts the technician's claim that it must be *worse* than 12 lp/mm. The reference answer and expected behavior ('correct_premise') are fully supported by this evidence."
+  },
+  "result": {
+    "answer": "该技术人员的主张**不正确**。\n\n根据提供的材料（来源 1 和 2，第 128 页，第 4.2.11.5(f) 条）明确指出：\n\n> **“(f) For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.”**  \n> （对于胶片-增感屏成像，极限空间分辨率应**优于**（即**高于**）12 线对/毫米。）[1][2]\n\n“Better (higher) than 12 lp/mm” 意味着极限空间分辨率应**大于**12 lp/mm（例如 13、14 或更高），而非“worse than 12 lp/mm”（即小于或等于12 lp/mm）。\n\n因此, 技术人员声称“必须比12 lp/mm更差”与文件规定直接矛盾。\n\n✅ 正确要求：**> 12 lp/mm**  \n❌ 技术人员声称：**< 12 lp/mm**\n\n结论：该主张**错误**。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6116993750911206,
+      "first_token_seconds": 4.271078665973619,
+      "total_seconds": 7.881471249973401,
+      "model_seconds": 6.205198291223496,
+      "model_first_token_seconds": 1.4347834580112249
+    },
+    "calls": [
+      {
+        "seconds": 1.1680876661557704,
+        "usage": {
+          "input_tokens": 2593,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005442,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 5.037110625067726,
+        "usage": {
+          "input_tokens": 2606,
+          "output_tokens": 243
+        },
+        "cost_upper_cny": 0.0091,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.4347834580112249,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "A technician claims that for film–screen imaging, the limiting spatial resolution must be *worse* than 12 line pairs per millimetre. Is this claim correct according to the provided material?",
+    "citations": {
+      "citation_mentions": 2,
+      "valid_citation_mentions": 2,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png"
+    ],
+    "sources": [
+      {
+        "id": "visual_3d4fbb0eddc00f97a0d6",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "image_caption",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nvisible_text: FIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality control test object.\n(b) Note the points where the MTF falls below 50% and 20%.\n(c) During commissioning, establish a baseline and record the transfer rate at 2.5, 5 and 7.5 cycles per millimetre.\n4.2.11.5. Baselines and tolerances\nThe following should be considered:\n(a) The spatial frequencies at which the MTF drops to 50% and 20% should not be less than the values specified for the relevant model.\n(b) The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.\n(c) The spatial resolution may vary on different regions of the image receptor if it deteriorates. In this case, the measurement should be repeated at several locations on the image. These images shall then be compared to each other.\n(d) Higher noise may cause the MTF to vary locally.\n(e) When a line pair resolution tool is used to determine the limiting spatial resolution, refer to the manufacturer’s specifications.\n(f) For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.\nvisual_relations: Figure 43 shows an X-ray image containing two objects within a dark rectangular frame: (1) a diamond-shaped test tool with alternating dark and light bars (modulation transfer function test tool), positioned left-of-center; (2) a rectangular textured object to its right. A small 'R' marker with 'CC' beneath appears in the top-right corner of the frame, likely indicating orientation (Right, Cranio-Caudal). The test tool is described as being mounted in a quality control test object.\nunits: cycles per millimetre\nline pairs per millimetre\nuncertainties: No numerical MTF values, spatial frequency thresholds, or baseline measurements are provided in the figure or surrounding text—only procedural instructions and tolerance criteria (e.g., ≤10% deviation, >12 lp/mm). The actual MTF curve is not shown; only the physical test tool is imaged.\nsummary: This page describes quality control procedures for assessing the Modulation Transfer Function (MTF) of X-ray imaging systems. It specifies recording MTF values at 2.5, 5, and 7.5 cycles/mm, noting where MTF drops below 50% and 20%, and establishing baselines during commissioning. Tolerances include ≤10% deviation from baseline at those frequencies, and minimum resolution requirements (e.g., >12 lp/mm for film-screen). Figure 43 shows an X-ray image of the physical MTF test tool—a bar-patterned device—mounted in a QC phantom.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 60.30791985984689,
+          "rrf": 0.016129032258064516,
+          "weighted": 0.016129032258064516,
+          "rerank": 0.9991763234138489
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\n(b)\t\nNote the points where the MTF falls below 50% and 20%.\n(c)\t\nDuring commissioning, establish a baseline and record the transfer rate at \n2.5, 5 and 7.5 cycles per millimetre.\n4.2.11.5.\t Baselines and tolerances\nThe following should be considered:\n(a)\t\nThe spatial frequencies at which the MTF drops to 50% and 20% should not \nbe less than the values specified for the relevant model.\n(b)\t\nThe MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the \nbaseline by more than 10%.\n(c)\t\nThe spatial resolution may vary on different regions of the image receptor if \nit deteriorates. In this case, the measurement should be repeated at several \nlocations on the image. These images shall then be compared to each other.\n(d)\t\nHigher noise may cause the MTF to vary locally.\n(e)\t\nWhen a line pair resolution tool is used to determine the limiting spatial \nresolution, refer to the manufacturer’s specifications.\n(f)\t\nFor film–screen imaging, the limiting spatial resolution should be better \n(higher) than 12 line pairs per millimetre.\n118\nFIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality \ncontrol test object.",
+        "scores": {
+          "dense": 0.7898246866275254,
+          "bm25": 61.80724617694684,
+          "rrf": 0.032018442622950824,
+          "weighted": 0.032018442622950824,
+          "rerank": 0.9975033402442932
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p126:0c9cc2e9ac98",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 126,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nof the images; if it does, the use of the machine should be suspended until \nrecalibration is performed.\n4.2.11.\t Spatial resolution\n4.2.11.1.\t Description and objective\nThis test is used to determine the smallest (high contrast) detail that is visible \nby an imaging system. Smaller details are blurred and may not be distinguished \nfrom the background. The focal spot size — and in the case of film–screen \nsystems, the film grain size — is a limiting factor, while digital imaging systems \nare affected by the imaging technology used and the detector elements.\nFilms have superior high contrast resolution to digital imaging devices, but \nthis is not the single most important factor for breast imaging and diagnosis.\nWith the wide availability of computers, it is recommended to use a \nspecial test tool for the determination of the modulation transfer function (MTF). \nThis test may also be carried out in a more traditional fashion, with a line pair \nresolution test object, but in this case only the limiting spatial resolution can be \ndetermined. This section describes the determination of the MTF. The test using \na line pair resolution tool differs only in the test object itself and its s",
+        "scores": {
+          "dense": 0.7985933719470864,
+          "bm25": 41.276226141222054,
+          "rrf": 0.03128054740957967,
+          "weighted": 0.03128054740957967,
+          "rerank": 0.10097082704305649
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p249:c3bc109ae61b",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 249,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nred with the granularity of the image, \nthereby improving the SNR in the image. This improvement can be valuable, \nparticularly for the visualization of fine calcifications and spiculations.\nIn digital mammography, where the film grain noise has been eliminated, \nbut where the limiting spatial resolution of the detector is lower than that provided \nby the screen film image receptor, the benefits of magnification may be different \nin nature. In this case, the increase in projected size of anatomical features does \nimprove the effective resolution of the detector, which in some cases is a limiting \nfactor.\nThe spatial resolution of magnification mammography is always limited \nby focal spot size. As such, the use of a small spot for magnification imaging \n(typically a nominal size of 0.1 mm) is critical. Loss of spatial resolution can be",
+        "scores": {
+          "dense": 0.7784599728647784,
+          "bm25": 40.88711670435492,
+          "rrf": 0.028991596638655463,
+          "weighted": 0.028991596638655463,
+          "rerank": 0.03994210809469223
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states the technician's claim is incorrect, citing clause (f) from page 128 of IAEA Radiology Quality Control 2023: 'For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.' This directly contradicts the technician’s claim that it must be *worse* than 12 lp/mm. The answer accurately interprets 'better (higher)' as >12 lp/mm and explicitly contrasts the correct requirement (✅ >12 lp/mm) with the technician’s erroneous claim (❌ <12 lp/mm). Both cited sources (IDs 1 and 2) contain the exact quoted text, and the image (FIG. 43) shows the test tool used for such measurements, supporting the context. No unsupported claims are made; all assertions are grounded in the retrieved source text."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 9.397829416906461,
+    "usage": {
+      "input_tokens": 4816,
+      "output_tokens": 299
+    },
+    "cost_upper_cny": 0.014416,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

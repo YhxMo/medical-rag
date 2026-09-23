@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided source text (page 82 of IAEA Radiology Quality Control 2023) describes the *method* for measuring patient entrance surface air kerma rate, including setup configurations (Fig. 25) and procedural steps (a–h), but explicitly states 'There are no standard values for this distance' and does not mention any numerical limit or threshold for the kerma rate itself. The reference answer correctly reflects this absence of a specified limit, aligning with the expected behavior to refuse answering when the information is not present in the source."
+}

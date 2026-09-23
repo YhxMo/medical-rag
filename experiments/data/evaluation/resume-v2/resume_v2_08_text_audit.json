@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The text explicitly states: 'Cirrhosis is caused most commonly by viral hepatitis type C and B, alcohol abuse...' (from evidence IDs msf_ultrasound_manual_2018.pdf:fixed:p173:7e4118c8661f and b59ed2c2d541), which matches the reference answer. The page image and OCR-extracted text confirm this phrasing. No visual interpretation is required; the answer is directly extractable from the textual content."
+}

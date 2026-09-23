@@ -1,0 +1,16 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly identifies all four labeled structures in Figure 12 exactly as stated in the reference and confirmed by the provided source text (both the caption on p.97–98 and the visual_relations metadata): arrowheads = peri-gestational haemorrhage, curved arrow = amnion, arrow without tail = embryo, arrow with tail = yolk sac. The answer explicitly quotes the figure caption and cites source [1], which matches the retrieved evidence (visual_2f92bf5a145c491fcdf8 and msf_ultrasound_manual_2018.pdf:fixed:p98:79f336f2b642) containing the exact phrasing. All four labels are addressed, no unsupported claims are made, and the image-based claims (e.g., crescent-shaped collection, floating echodensities, etc.) are directly supported by the caption and visual_relations. The citation ID '1' is valid and corresponds to the provided gold source."
+}

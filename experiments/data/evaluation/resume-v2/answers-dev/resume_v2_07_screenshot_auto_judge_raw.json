@@ -1,0 +1,16 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly states that floating echodensities and a small clot confirm the collection is blood, directly quoting the source text: 'Floating echodensities within the collection and a small clot confirm the collection as being blood.' [1]. The answer also accurately describes the pathology (peri-gestational haemorrhage) and typical ultrasound appearances (anechoic, floating echogenic particles, solid if clotted), all of which are supported by the retrieved sources (e.g., msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9 and visual_2f92bf5a145c491fcdf8). The image caption in the gold material explicitly labels the arrowheads as the crescent-shaped collection and confirms the floating echodensities and small clot as evidence of blood. All key points in the answer are grounded in the provided evidence; no unsupported claims are made. The required citation ID [1] is valid and supports the central claim."
+}

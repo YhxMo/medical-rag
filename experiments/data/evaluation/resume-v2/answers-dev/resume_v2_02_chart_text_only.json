@@ -1,0 +1,176 @@
+{
+  "question_id": "resume_v2_02_chart",
+  "kind": "chart",
+  "mode": "text_only",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text (page 461, section 17.2.2.3 and Figure 17.12 caption) explicitly states: '(c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile).' The figure itself (visible in the provided image) shows profile (c) with a single peak (edge), and profile (d) with two peaks (tube-like structure). This matches the reference answer exactly: green = tube-like, two peaks; yellow = edge, one peak. The rationale correctly notes that visual inspection of the figure is required to confirm the number of peaks, and the evidence IDs point to the correct textual and visual context."
+  },
+  "result": {
+    "answer": "根据所提供的教材来源，可以明确回答如下：\n\n**1. 哪条剖面线对应管状结构？**\n\n绿色剖面（green profile）对应横跨管状结构（tube-like structure）的剖面线；黄色剖面（yellow profile）对应横跨边缘（edge）的剖面线[1][2]。教材图 17.12 的图注明确写道：“(c) A plot of gradient magnitude image across the edge (yellow profile). (d) A plot of gradient magnitude image across the tube-like structure (green profile).”[1] 图 17.8 的图注同样说明：“The yellow profile crosses an edge and the green profile crosses a tube-like structure.”[2][3]\n\n**2. 梯度幅值行为有何不同？**\n\n来源中关于梯度幅值行为的直接描述是：沿粒子路径（即沿与边缘正交的方向）绘制梯度幅值时，**在边缘处梯度幅值出现局部极大值**（local maximum）[1]。教材指出：“The gradient magnitude reaches its maximum at the points where the profiles cross the image edge.”[1]\n\n关于管状结构（绿色剖面）的梯度幅值曲线具体形状，所提供来源中**没有给出进一步的定量或形状描述**——来源只说明绿色剖面是“across the tube-like structure”的梯度幅值图，并指出管状结构具有两条大致平行的边缘（“Tube-like structures have two edges that are roughly parallel to each other”）[3]。因此，从现有来源只能推断：绿色剖面会穿过两条大致平行的边缘，而黄色剖面只穿过一条边缘；但来源未明确描述绿色剖面梯度幅值曲线是否出现双峰、峰间是否为零等具体形态。\n\n**3. 需要说明的缺失信息与局限**\n\n- 所提供来源中**没有包含图 17.12 的图像本身**，也没有给出黄色与绿色剖面梯度幅值曲线的具体数值、坐标轴或曲线形状描述。\n- 因此，关于两条剖面梯度幅值曲线在峰的数量、峰值间距、峰间幅值等方面的差异，**无法仅凭所给文本确定**，需要查看原图 17.12(c) 与 (d) 才能确认。\n- 上述关于“绿色对应管状结构、黄色对应边缘”的结论，完全基于教材图注的文字说明[1][2][3]，而非对图像的独立观察。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.1949795000255108,
+      "first_token_seconds": 3.19135804194957,
+      "total_seconds": 5.9372894580010325,
+      "model_seconds": 4.622518999967724,
+      "model_first_token_seconds": 1.1031686668284237
+    },
+    "calls": [
+      {
+        "seconds": 0.8143600830808282,
+        "usage": {
+          "input_tokens": 1845,
+          "output_tokens": 10
+        },
+        "cost_upper_cny": 0.00377,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 3.808158916886896,
+        "usage": {
+          "input_tokens": 1840,
+          "output_tokens": 500
+        },
+        "cost_upper_cny": 0.00768,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": 1.1031686668284237,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "In Figure 17.12, which profile (yellow or green) corresponds to a plot across a tube-like structure, and how does its gradient magnitude behavior differ from the edge-crossing profile?",
+    "citations": {
+      "citation_mentions": 11,
+      "valid_citation_mentions": 11,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 461,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n434\nCHAPTER 17\n17.2.2.3.\t Detectors based on zero crossing of the second derivative\nImagine a particle crossing an edge in a continuously smooth image, F, \nmoving in a direction orthogonal to the edge (i.e. in the direction of the image \ngradient). If we plot the gradient magnitude of the image along the path of \nthe particle, we see that at the edge there is a local maximum of the gradient \nmagnitude (Fig. 17.12).\nFIG. 17.12.  Gradient magnitude at image edges. (a) A detail from the chest CT image from \nFig.  17.8. (b) Corresponding gradient magnitude image. (c) A plot of gradient magnitude \nimage across the edge (yellow profile). (d) A plot of gradient magnitude image across the \ntube-like structure (green profile). The gradient magnitude reaches its maximum at the points \nwhere the profiles cross the image edge.\nLet us denote the unit vector in the particle’s direction as v, and the point \nwhere the particle crosses the edge as x. The gradient magnitude of the image F \nat x is simply:\n( )\n|\nF\nD F\n∇\n=\nv\nx\nx \t\n(17.11)\nThe gradient magnitude reaches a local maximum at x in the direction v if, \nand only if:\n0  and  \n0\nD F\nD\nF\n=\n≤\nvv\nvvv\n\t\n(17.12)\nSeveral edge detectors leverage this",
+        "scores": {
+          "dense": 0.8057725407507883,
+          "bm25": 84.61099677432348,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.8971806168556213
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p457:331a2f445604",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 457,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n.8.  Illustration of edges and tubes in an image. (a) A detail from the chest CT image is \nshown. The yellow profile crosses an edge and the green profile crosses a tube-like structure. \n(b) A plot of image intensity along the yellow profile (in blue) and a plot of image intensity \nafter smoothing the input image with a Gaussian filter with σ = 1 (in red). (c) A plot of image \nintensity along the green profile. Edge and tube detectors use properties of the image derivative \nto detect edges and tubes.\n17.2.2.1.\t How image derivatives are computed\nAn edge is a discontinuity in the image intensity. Therefore, the directional \nderivative of the image intensity in the direction orthogonal to the edge must be \nlarge, as seen in Fig. 17.8. Edge detection algorithms exploit this property.\nHow do we compute the derivatives of image intensity? In order to compute \nderivatives, we require a continuous function. However, an image is just an array \nof numbers. One solution is to use the finite difference approximation of the \nderivative. From the Taylor series expansion, it is easy to derive the following \napproximation of the derivative. For a 1-D function, ( )\nf x , we have:\n2\n(\n)\n(\n)\n'( )\n(",
+        "scores": {
+          "dense": 0.7887014317800254,
+          "bm25": 73.07722263008453,
+          "rrf": 0.031746031746031744,
+          "weighted": 0.031746031746031744,
+          "rerank": 0.7797096371650696
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p457:80ace51732b5",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 457,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\n430\nCHAPTER 17\nintensity. Most of these are not related to the structure of interest. Instead, they \nmay be discontinuities due to noise, imaging artefacts or other structures. Good \nedge detection algorithms identify edges that are more likely to be of interest. \nHowever, no matter how good an edge detection algorithm is, it will frequently \nfind irrelevant edges. It is important to remember that edge detection algorithms \nare not powerful enough to identify, completely and automatically, structures of \ninterest in most medical images. Instead, they are helpful tools for more complex \nsegmentation algorithms, as well as useful visualization tools.\nSome structures in medical images have very characteristic shapes. For \nexample, blood vessels are tube-like structures of gradually varying widths. \nTube-like structures have two edges that are roughly parallel to each other. This \nproperty can be exploited by special tube detection algorithms.\nProperties of image intensity at edges and tubes are illustrated in Fig. 17.8.\nFIG. 17.8.  Illustration of edges and tubes in an image. (a) A detail from the chest CT image is \nshown. The yellow profile crosses an edge and the green profile cross",
+        "scores": {
+          "dense": 0.7341785911860719,
+          "bm25": 56.2965699532928,
+          "rrf": 0.03125,
+          "weighted": 0.03125,
+          "rerank": 0.3100208640098572
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p459:f5fbf0178c34",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 459,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nthe Sobel operator approximates the derivative at the given pixel and at \nthe two neighbouring pixels and then computes a weighted average of these three \nvalues with weights (1, 2, –1). This averaging makes the output of the Sobel \noperator slightly less sensitive to noise than simple finite differences.\nFigure 17.10 shows the results of convolution with Sx and Sy. The last image \nis the so-called gradient magnitude image, given by \n2\n2\n(\n)\nx\ny\nS\nS\n+\n. Large values of \nthe gradient magnitude correspond to edges, and low values are regions where \nintensity is nearly constant. However, there is no absolute value of the gradient \nmagnitude that distinguishes edge from non-edge. For each image, one has to \nestablish, empirically, a threshold to apply to the gradient magnitude image in \norder to separate the edges of interest from spurious edges caused by noise and \nFIG. 17.9.  (a) and (c) First and second partial derivatives in x of the Gaussian with σ = 1. \n(b) and (d) Corresponding 21 × 21 discrete Gaussian derivative filters.",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 36.89277811533777,
+          "rrf": 0.014925373134328358,
+          "weighted": 0.014925373134328358,
+          "rerank": 0.01819898560643196
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p374:853f799aef40",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 374,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nregion in the slice profile.\nIn MRI, three sets of linear gradient coils are used for spatial encoding: Gx, \nGy and Gz, which provide linear gradients along the x, y and z axes, respectively. \nThe slice selection gradient can be any of these three. In addition, a slice plane \nwith any spatial orientation could be selected by turning on more than one \ngradient during excitation. The excited plane will always be perpendicular to the \ndirection of the net gradient.\n14.5.2.\t Frequency and phase encoding\nSubsequent to exciting the desired slice, spatial encoding within the plane \nof the selected slice follows. This is achieved by utilizing linear gradients along \nthe two perpendicular in-plane directions (by convention assumed to be Gx and \nGy following excitation of an axial slice plane with the Gz gradient). A linear \ngradient field will cause spins at different positions along the direction of the \ngradient to precess at different frequencies, varying linearly with position:\nx\nx\nG x\nω =g\n\t\n(14.14)",
+        "scores": {
+          "dense": 0.7005973453428751,
+          "bm25": 33.48371167067606,
+          "rrf": 0.0288981288981289,
+          "weighted": 0.0288981288981289,
+          "rerank": 0.0010207775048911572
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 0,
+    "completeness": 0,
+    "groundedness": 0,
+    "behavior_ok": false,
+    "refused": false,
+    "unsupported_claims": true,
+    "image_claims_supported": false,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer incorrectly claims that the source does *not* describe the green profile's gradient magnitude behavior (e.g., 'two peaks'), while the reference and the provided gold source (iaea_diagnostic_radiology_physics_2014.pdf:fixed:p461:745432757f06) explicitly state in Fig. 17.12 caption: '(d) A plot of gradient magnitude image across the tube-like structure (green profile)' and the reference says 'The green profile corresponds to the tube-like structure; it shows two peaks (a local maximum on each side of the tube)'. The answer fabricates a limitation ('source does not give further quantitative description') that contradicts the actual evidence. The figure itself (shown in the user-provided image) visually confirms (c) single peak (yellow), (d) double peak (green). Thus, the answer misrepresents the available evidence, makes unsupported claims about missing information, and fails to correctly report the gradient behavior difference. Citations [1][2][3] are valid and support the correct behavior, but the answer rejects that support erroneously."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 11.489987791981548,
+    "usage": {
+      "input_tokens": 4823,
+      "output_tokens": 371
+    },
+    "cost_upper_cny": 0.015582,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

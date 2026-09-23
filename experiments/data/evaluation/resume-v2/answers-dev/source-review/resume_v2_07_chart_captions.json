@@ -1,0 +1,33 @@
+{
+  "question_id": "resume_v2_07_chart",
+  "mode": "captions",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "The gold image (Figure 12) shows a longitudinal transvaginal ultrasound of an 8-week uterus with labeled structures matching the caption: arrowheads = peri-gestational haemorrhage, curved arrow = amnion, arrow without tail = embryo, arrow with tail = yolk sac.",
+    "reason": "The answer precisely matches the explicit labeling in the provided caption (citation 1), which states: 'peri-gestational haemorrhage (arrowheads)', 'amnion (curved arrow)', 'embryo (arrow without tail)', and 'yolk sac (arrow with tail)'. All four labels are correctly identified and supported by the source text. No unsupported claims are made; even descriptive details (e.g., crescent-shaped, floating echodensities) are directly quoted from the caption. The initial grade is correct.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.691936999999598,
+    "usage": {
+      "input_tokens": 4285,
+      "output_tokens": 230
+    },
+    "cost_upper_cny": 0.01225,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

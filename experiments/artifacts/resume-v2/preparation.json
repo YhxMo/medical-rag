@@ -1,0 +1,1327 @@
+{
+  "version": "resume-v2",
+  "original_evidence_sha256": "8f0c6d0510978595f81e8f2d90329a3c29a574c90ec1109e7dd5724645c4c8b3",
+  "source_sha256": {
+    "iaea_diagnostic_radiology_physics_2014.pdf": "648a78e360da383461820067b0b59777165a2c12459579172e7d2dc1edc43e1a",
+    "iaea_radiology_quality_control_2023.pdf": "80edad12842bec5813509981909d1f5266ad6285601f141664c5b2fd59dbc76c",
+    "msf_ultrasound_manual_2018.pdf": "ca7fd626be45ef909aeeec1f66d5ed0b6f56894de30e0a3781b4a4b957675e9f"
+  },
+  "text_count": 2809,
+  "visual_pages": [
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p63",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 63,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f30b30763a6de91944b332d6c4b75986083895ed6721b456dd720730bf2a6b3f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.4.\t INTERACTIONS OF ELECTRONS WITH MATTER"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p63"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p74",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 74,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/48e37b3000cdbc42abd7e0add6b58e888eccc749e8139cfac7a361186ac5e453.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4fa82d5ffeac99f88019a67b15ca5de3f81cfceee4523c4e84397842edeb8b43.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b278b2411c82b7f71490a29ce232bfb2708edd11511f40d6007cd7b02fe8a0a1.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.4.\t INTERACTIONS OF ELECTRONS WITH MATTER"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p74"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p123",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 123,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t IMAGE THEORY FUNDAMENTALS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p123"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p140",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 140,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t IMAGE THEORY FUNDAMENTALS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p140"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p161",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 161,
+      "split": "dev",
+      "kind": "table",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f7117fcb427790d1528862f04baae66a38769483658ffa83436242e3c7315250.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "6.3.\t SCATTERED RADIATION IN PROJECTION RADIOGRAPHY"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p161"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p200",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 200,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/0f6022b2b548c2f5f4ce23e088365fb4568843d223086c60d0473c897fa31ae5.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p200"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p280",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 280,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4fa1977b1fcc881ff7c1de08d115be0647b484dcf5869d913cd42da59b8395b8.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p280"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p309",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 309,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1f0d18b52daa2f69947035071cbf159bf85a1980a7a2168ec7d83a40f59bb2b6.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/a7f8bc2ba4ac98786dccd7cd5ef7311b557056ad53faacf7ed85ad701f12539e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p309"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p330",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 330,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7605d5d0fb25d5733c6652852ed6d0831579cfe0e10b6156daaba32354a94cd6.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p330"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p339",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 339,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p339"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p345",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 345,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4ae2fb634fd8cbdcfc8d7e8cd44bf679d39e1a0a5e166b14a51ad11e495f1ba5.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/998b96e2e4e619947db9a1c4d7cc09ac7253e996c6440e74496404c7318f968f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p345"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p393",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 393,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/dea308c12cae87a228530b80608aaedab013efba0d1e7a129cc11fa2c65c8730.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/bc70c96b1ce4bc082c3b824aa5e7659925bb8b76a8420877ef82db1bc5cad10d.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p393"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p416",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 416,
+      "split": "dev",
+      "kind": "table",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b8c002df79a005c3fc218260dfff95386a55fc5932ad752f087771b2dc719fb7.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p416"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p456",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 456,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4af5e6ac343d0929912af020584f505564b72a0f02e6ebaf7662bdc32e66b98e.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/d59bf7c4096e2fa4710cd960911058bb837e8f18856eb40664a42094231b4be1.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p456"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p461",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 461,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8b5819515877672fdd1d611349e900b2f507856dc338a5c92562a37ce62ce9a3.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p461"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p518",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 518,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/69fd9750e3aaab92f97d2b26b1ce095d571ec48459fe59cbfcfdcbf6f631fd4a.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p518"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p540",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 540,
+      "split": "dev",
+      "kind": "table",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9f04ea52f740e523ca9da39af7b4e18f1453a0744d937a14c64d09527e0bf625.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p540"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p545",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 545,
+      "split": "holdout",
+      "kind": "table",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/852476e60391b04c4f470cca4ae41b88630a4ee7b63bd8547bc2b9102b02ccf2.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ac9585566e69c80ebcb4852a56927e977ec48df7666087435a99537ba6473327.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p545"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p595",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 595,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/670a7370f2894f58c3d21ea66b566ed67a8278c33d9413ecd8fd5e538eb71c89.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/843e8e13b2f359bf4da977f0541400dae3cfea34e033b4e05c091ae93dd0a961.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p595"
+    },
+    {
+      "group_id": "iaea_diagnostic_radiology_physics_2014:p607",
+      "source_file": "iaea_diagnostic_radiology_physics_2014.pdf",
+      "page": 607,
+      "split": "holdout",
+      "kind": "table",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eaf307e58d36bd62c4fb340741f764eab844f2ae9101e21f9f48e117289fc364.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.3.\t FILM AND SCREEN FILM SYSTEMS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_diagnostic_radiology_physics_2014:p607"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p17",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 17,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p17"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p25",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 25,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b55cb8fb44692f6717d57343a5377df4506fdd6d6ee5c2352949ab16e5b1d5a4.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p25"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p40",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 40,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/62d9e0dc91d4435fd0c1e390612a3b7130c86e3af2c7f2ec576c042603dad214.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p40"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p49",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 49,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1a817f24fc7d5a6a896e71dc8cd26ba9f3ffba394e1bdecdfdde06a07fb2ea74.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ed606c29c2a71799c2fbe7b92486fc9545fe7f057f73c95467590c135ac49d06.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p49"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p60",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 60,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/50cff956d35f4c096c37c5ea6fc3827db89f31e87bd4a3c149a93e864d08f914.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/c00302707a1e31df5a54d6fae5b91653057efd5a63294dd261b130439fea9cb4.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/639a3e83a4093effb7663f80ff0d9cf0193d828a1073ed68204151ff526c86f5.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p60"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p68",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 68,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/2252499bf5047193c6b3cd2b725b32f6e01a70d300279682da959e94f776e222.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fb6170853a0e709332fe73c3ab84c469e41fb2d54c5c602866c0a2f83bdbfb2f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "2.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p68"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p75",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 75,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "3.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p75"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p82",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 82,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ea197d42e90f325f01adc4787f0a584ffe54901f45ebb92e9a57823db9a59065.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p82"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p91",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 91,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/dae3fc53d9f894c228dbbfc4d993cf66cf0ebd2b099c6ecd7ece49a717a3248e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "3.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p91"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p102",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 102,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ee3aca1d5614f65cd7db7ae4197883d6fb0f75bbde6c6ae9caea87b70f4b405a.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p102"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p110",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 110,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/6ce1d8dae5324825287ac4aaf7b7463b4eaca1e187cad6790e0801b5bdac40e4.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ee87e8f180a092c2a4f50aff7b70c7f1ee192a51a111231f1107d7cc929dc05c.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p110"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p120",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 120,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/029b50c604c664a9b141831f6cac9b120a172f8318404246917a5f256cb28960.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/e2955bfa7e60ea0786070beb34f32157464a2146f90a7bb7c5ebe2876697fb03.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p120"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p128",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 128,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p128"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p145",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 145,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/a234c37f572dc4d8d28b351dbd176f45c2d426a5d5c92dde046adb6822dc6b3f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "5.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p145"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p153",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 153,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/89596161f0b1bd71932faf57cd75dd589a6e1ba55e8c11a88d0e4782aca7ce3d.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/3f5ab34792e3565441c536a5aa63358fe1171248485318d22a6024bcb2c9ee11.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "5.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p153"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p161",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 161,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/bc8f10bef3b1aedcafdc1881e7780c427662f6ce86a811255c57b6aa6db07813.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f14418ac59ed5336513074b1c8a32e9662b2571cae8d80cca71755047665863c.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "5.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p161"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p171",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 171,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/30f36b7899528f9f8cb2ddba9844ebd3576806b672642592dc923ef04a921d7e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "6.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p171"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p186",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 186,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b79da2e27aa132da8644a8c597828e26dcfa5d9db02e4e3b72bd952ea15adb31.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/98dde05d786d90736ef91b452a1bc34da92b8ad03a5c93988e14f9fe98066c58.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p186"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p194",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 194,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p194"
+    },
+    {
+      "group_id": "iaea_radiology_quality_control_2023:p199",
+      "source_file": "iaea_radiology_quality_control_2023.pdf",
+      "page": 199,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "7.1.\t QUALITY CONTROL TESTS FOR RADIOGRAPHERS"
+        ],
+        "chapter_origin": "numbered_heading"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "iaea_radiology_quality_control_2023:p199"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p21",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 21,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/13c71c38c74305a8d99049bced33cfde642a105d95c326de6509e7d00bd31cea.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "2. Ultrasound equipment and basics of imaging",
+          "2.2 Basic principles of ultrasound imaging"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p21"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p27",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 27,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/81104f150be75aca3c54a8951fad9e87f8a949973ee91257b43b6ef4d50a335d.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4ae302fa229f61be2f8acf218810dd57501a4125d021a7518f2564bf1a40ce2e.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/452a9c12c4e0595ddfa585424ca54d43c5a002f841e7bcd71c9851003399bb4d.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "2. Ultrasound equipment and basics of imaging",
+          "2.3 Ultrasound machine basics"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p27"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p39",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 39,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/695d307220ed1ec97f73715205dc2d0905fec1da9f102cb8d2b47b204e47aa4a.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9ee376b98a32f5bf3e7a01d01fa8b13602fb5d305d3ae473e059159e683afed2.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "2. Ultrasound equipment and basics of imaging",
+          "2.4 Scanning basics"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p39"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p73",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 73,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/54fc74da7beba6b2c669965b6ddae9af75c695072659c453f46c66fbeab669bb.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/709d6d4d0459d7f7f0f9b88ff7f2f16d9acc016da971830f0b922b76d98345c8.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/27b721e4d148b68ec272e4a740474d233176b13d8235e16110f844c7e23ba935.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "7. Gynaecology",
+          "7.3 Ovaries and ovarian tubes"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p73"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p98",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 98,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ee7e8aa776b9645c4a38a74227e807ef49ce282fae467e173494ab909c57a30e.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "8. Obstetrics early ultrasound – first trimester",
+          "8.3 Abnormal early pregnancy"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p98"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p106",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 106,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7ba100b67ec0065dfca3f72871e18bb111d5d072867f9d7206a59c47b9b0147.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "9. 2nd / 3rd trimester obstetrics ultrasound",
+          "9.5 Gestational age"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p106"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p111",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 111,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cb814b41db8ab87ecced52d10da7f754fada8c59bac2a3ff2fe747a36b45df9a.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/5b583c48d9fe8cd8f896ee9987dd6ee7174ead08f3264fef8708480d1865f29b.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "9. 2nd / 3rd trimester obstetrics ultrasound",
+          "9.5 Gestational age"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p111"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p118",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 118,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cc5ac6e99dcabff91ab44ec6ea5759a99539fa7539f03e5d8f19e74b7b13082a.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/76999c23d4a4c1651d213f40745a71111890467bd4fc745a8571ad092a6b1fca.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "9. 2nd / 3rd trimester obstetrics ultrasound",
+          "9.8 Cervix"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p118"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p147",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 147,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/048ef6c456bb44819aad5fdf4601ce0457bfca62864185fbf83f6a93318f5e70.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/a4312456f16eaa9e33d0f2c8d2f1578bffef6edb4cdb7851d0c70619c0487c5d.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "11. Cardiac",
+          "11.3 Pathology",
+          "11.3.4 Infective endocarditis"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p147"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p161",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 161,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/e2ee316bdeba9f910a284844836c118209484b4c7c36f4905a7e62ff105f23ba.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "12. Ultrasound assessment of the inferior vena cava for volume status",
+          "12.2 IVC collapsibility and fluid responsiveness"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p161"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p173",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 173,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8b431c6669b895bf3adbe90f412f592e5e8759dd4ca48cf932e3c61d067a297b.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/6ec85b5bf36d52a9309208853856ca8e7fe818f02704bc6ef36a83e204cd65c2.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "14. Upper abdominal scan",
+          "14.2 Liver",
+          "14.2.2 Liver abnormalities"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p173"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p185",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 185,
+      "split": "holdout",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/d89eaf22516473c2ea253cbe7556943fd23f5ea898a6debe49440584444837de.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/25e82fab7da68ea563bf05919f62ae79399fc195f7cea8483937ce50c03a7f01.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "14. Upper abdominal scan",
+          "14.3 Gallbladder",
+          "14.3.2 Gallbladder abnormalities"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p185"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p190",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 190,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/3f1fcace5a0b235d41060b980fdd4815d46f551082c5c1600c29a04a8138e6d2.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f028f6ee3bc288c0cbe7268f729cca850eeb272c166f1635f67a1b0223cad69a.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "14. Upper abdominal scan",
+          "14.6 Free fluid"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p190"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p200",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 200,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cce3c802319afa43bd4d21c35b482c9f2960fa3362c796f89087d6604bb4b176.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fd2a1524b7ee398fcd871d61d44d8184a32f840bfdeeba8a0889b7ae79897f3.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "15. Urinary tract",
+          "15.2 Kidneys",
+          "15.2.2 Kidney abnormalities"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p200"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p216",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 216,
+      "split": "dev",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/0382a6bc7b06a5712c5a161e6413e542a87a4d3d81f0f9585758c1fb3e59c789.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/60a4c97a0077d5d791b7f952c4ac6e7cdd58d5d201f0247102912a25667d2003.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "17. Bones",
+          "17.2 Normal bone appearances"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p216"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p258",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 258,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/0ecc9cd0b4cfc2ea825de2c304fbe376d0a7be79ea04d293207aeec2519ffe12.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/032b925058658889e968fd0ed1527f63cf7c73c70c25c81bbb268c0da33d93ea.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/caa7cd5a5079b23635d11467158d5b4c3d91661767e8a000a88c93b1fa0672ba.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "22. Neonatal head",
+          "22.1 Scanning technique – neonatal head"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p258"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p279",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 279,
+      "split": "dev",
+      "kind": "curve",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/46d12992ac30a9f5259ae34e7c945e637a9fa9f6ced7faf9c63132308a4f6d0a.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/31fdd6069d5fa57ac9fe14020c8fe5612585b75f2de61f830a2eaca5b882d423.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/34ed5131cc40771aee0554b29c8bdf24cfb80bf41a1ada0911ac9981ffd2d769.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "23. Paediatric chest ultrasound",
+          "23.3 Pathological findings – paediatric chest",
+          "23.3.2 Consolidation"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p279"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p290",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 290,
+      "split": "holdout",
+      "kind": "imaging_example",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/2bac08800e965813c3884779290e8f94690e307161a3408c9ff61e0c7f845853.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/08659eae08fd66371a11c849ca9f05e92108a03c759b167dba908b0cce287e2f.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "24. Mediastinal ultrasound in children",
+          "24.2 Lymphadenopathy"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p290"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p300",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 300,
+      "split": "dev",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4a5be53db989038de242ad73f94fe2bdcd878738cc9194715b7087e5ce2b2919.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b2bb990e5911ef736ecef282243a4571d36007487cc2c8ce311a1f5a5fc71af5.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/16686e47305dd4ef9c9af0239e79abbd02c391986deb242f1d62168f3097e2ce.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "25. Paediatric urinary system",
+          "25.2 Bladder and ureters",
+          "25.2.2 Bladder abnormalities"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p300"
+    },
+    {
+      "group_id": "msf_ultrasound_manual_2018:p307",
+      "source_file": "msf_ultrasound_manual_2018.pdf",
+      "page": 307,
+      "split": "holdout",
+      "kind": "diagram",
+      "image_paths": [
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cb19513cbf57689fdb6313720497f2db771066f8996a42eb31915e3bdd4b57b6.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/61aa0fcb7b8f7d0a1bf1936996c32245269cad169a8a4e699f58f27a1f5a271c.png",
+        "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/2b8f7df9905dbdc394046b15786be28a7f86200f4165de1464aad051af1742d6.png"
+      ],
+      "chapter": {
+        "chapter_path": [
+          "MSF-Ultrasound manual - 2018 edition",
+          "25. Paediatric urinary system",
+          "25.3 Kidneys",
+          "25.3.3 Congenital anomalies: duplex, ectopic, horseshoe Kidney"
+        ],
+        "chapter_origin": "bookmark"
+      },
+      "selection_reason": "Actual raster >=128px or caption plus >=5 drawing paths; >160 text chars; stratified type and page spacing; old labels +/-2 excluded",
+      "leakage_group": "msf_ultrasound_manual_2018:p307"
+    }
+  ],
+  "image_registry": {
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f30b30763a6de91944b332d6c4b75986083895ed6721b456dd720730bf2a6b3f.png": "f30b30763a6de91944b332d6c4b75986083895ed6721b456dd720730bf2a6b3f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/48e37b3000cdbc42abd7e0add6b58e888eccc749e8139cfac7a361186ac5e453.png": "48e37b3000cdbc42abd7e0add6b58e888eccc749e8139cfac7a361186ac5e453",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4fa82d5ffeac99f88019a67b15ca5de3f81cfceee4523c4e84397842edeb8b43.png": "4fa82d5ffeac99f88019a67b15ca5de3f81cfceee4523c4e84397842edeb8b43",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b278b2411c82b7f71490a29ce232bfb2708edd11511f40d6007cd7b02fe8a0a1.png": "b278b2411c82b7f71490a29ce232bfb2708edd11511f40d6007cd7b02fe8a0a1",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png": "9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63.png": "1977ad2c1f0397eef61dc1c1dda3a48ee354287af3166fe7ed62e0925649ef63",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad.png": "e4d41b582c84e3d39937a769938733155f53a4769d333d39006a828c55935dad",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f7117fcb427790d1528862f04baae66a38769483658ffa83436242e3c7315250.png": "f7117fcb427790d1528862f04baae66a38769483658ffa83436242e3c7315250",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/0f6022b2b548c2f5f4ce23e088365fb4568843d223086c60d0473c897fa31ae5.png": "0f6022b2b548c2f5f4ce23e088365fb4568843d223086c60d0473c897fa31ae5",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4fa1977b1fcc881ff7c1de08d115be0647b484dcf5869d913cd42da59b8395b8.png": "4fa1977b1fcc881ff7c1de08d115be0647b484dcf5869d913cd42da59b8395b8",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1f0d18b52daa2f69947035071cbf159bf85a1980a7a2168ec7d83a40f59bb2b6.png": "1f0d18b52daa2f69947035071cbf159bf85a1980a7a2168ec7d83a40f59bb2b6",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/a7f8bc2ba4ac98786dccd7cd5ef7311b557056ad53faacf7ed85ad701f12539e.png": "a7f8bc2ba4ac98786dccd7cd5ef7311b557056ad53faacf7ed85ad701f12539e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c.png": "f48f24fcac979aae0407bc6c9f8dbc5561f9584ab68eeb56f9ade0861ccae55c",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7605d5d0fb25d5733c6652852ed6d0831579cfe0e10b6156daaba32354a94cd6.png": "7605d5d0fb25d5733c6652852ed6d0831579cfe0e10b6156daaba32354a94cd6",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d.png": "fdc0264aaa72986fe8f07c22689f46655d0accbbc5e32f02cd7005915743578d",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee.png": "591b19d77d3c5e7db7ac8a81cb3c01a393adcc3f83854ecebfe857623552dfee",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4ae2fb634fd8cbdcfc8d7e8cd44bf679d39e1a0a5e166b14a51ad11e495f1ba5.png": "4ae2fb634fd8cbdcfc8d7e8cd44bf679d39e1a0a5e166b14a51ad11e495f1ba5",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/998b96e2e4e619947db9a1c4d7cc09ac7253e996c6440e74496404c7318f968f.png": "998b96e2e4e619947db9a1c4d7cc09ac7253e996c6440e74496404c7318f968f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/dea308c12cae87a228530b80608aaedab013efba0d1e7a129cc11fa2c65c8730.png": "dea308c12cae87a228530b80608aaedab013efba0d1e7a129cc11fa2c65c8730",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/bc70c96b1ce4bc082c3b824aa5e7659925bb8b76a8420877ef82db1bc5cad10d.png": "bc70c96b1ce4bc082c3b824aa5e7659925bb8b76a8420877ef82db1bc5cad10d",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b8c002df79a005c3fc218260dfff95386a55fc5932ad752f087771b2dc719fb7.png": "b8c002df79a005c3fc218260dfff95386a55fc5932ad752f087771b2dc719fb7",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4af5e6ac343d0929912af020584f505564b72a0f02e6ebaf7662bdc32e66b98e.png": "4af5e6ac343d0929912af020584f505564b72a0f02e6ebaf7662bdc32e66b98e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/d59bf7c4096e2fa4710cd960911058bb837e8f18856eb40664a42094231b4be1.png": "d59bf7c4096e2fa4710cd960911058bb837e8f18856eb40664a42094231b4be1",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17.png": "74b9735f0f7c49990dfc605aa3e923f0a1d8742fa3b6a2247278a24960e9fe17",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8b5819515877672fdd1d611349e900b2f507856dc338a5c92562a37ce62ce9a3.png": "8b5819515877672fdd1d611349e900b2f507856dc338a5c92562a37ce62ce9a3",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21.png": "788fd063eeee44996a65805d7c89ff49ebef22f0862448712358eb6f5812fb21",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/69fd9750e3aaab92f97d2b26b1ce095d571ec48459fe59cbfcfdcbf6f631fd4a.png": "69fd9750e3aaab92f97d2b26b1ce095d571ec48459fe59cbfcfdcbf6f631fd4a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9f04ea52f740e523ca9da39af7b4e18f1453a0744d937a14c64d09527e0bf625.png": "9f04ea52f740e523ca9da39af7b4e18f1453a0744d937a14c64d09527e0bf625",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/852476e60391b04c4f470cca4ae41b88630a4ee7b63bd8547bc2b9102b02ccf2.png": "852476e60391b04c4f470cca4ae41b88630a4ee7b63bd8547bc2b9102b02ccf2",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ac9585566e69c80ebcb4852a56927e977ec48df7666087435a99537ba6473327.png": "ac9585566e69c80ebcb4852a56927e977ec48df7666087435a99537ba6473327",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/670a7370f2894f58c3d21ea66b566ed67a8278c33d9413ecd8fd5e538eb71c89.png": "670a7370f2894f58c3d21ea66b566ed67a8278c33d9413ecd8fd5e538eb71c89",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/843e8e13b2f359bf4da977f0541400dae3cfea34e033b4e05c091ae93dd0a961.png": "843e8e13b2f359bf4da977f0541400dae3cfea34e033b4e05c091ae93dd0a961",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eaf307e58d36bd62c4fb340741f764eab844f2ae9101e21f9f48e117289fc364.png": "eaf307e58d36bd62c4fb340741f764eab844f2ae9101e21f9f48e117289fc364",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f.png": "438e9f674823f12914d3e157fdba7b6f4187fbffc223a33c4d739de7488d897f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f.png": "9d80c5982d1effb9e040b2ee17251705cdd954211705b266b3b130d92617620f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14.png": "946bc2312ef1a77acc3e088b7afe3c8e130a6a2a12efa1868b2e979b1eb9ba14",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b55cb8fb44692f6717d57343a5377df4506fdd6d6ee5c2352949ab16e5b1d5a4.png": "b55cb8fb44692f6717d57343a5377df4506fdd6d6ee5c2352949ab16e5b1d5a4",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb.png": "40faf30ba0702394e5885a6663d996c57a4c5109896e52515214fe9a23ae23fb",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/62d9e0dc91d4435fd0c1e390612a3b7130c86e3af2c7f2ec576c042603dad214.png": "62d9e0dc91d4435fd0c1e390612a3b7130c86e3af2c7f2ec576c042603dad214",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/1a817f24fc7d5a6a896e71dc8cd26ba9f3ffba394e1bdecdfdde06a07fb2ea74.png": "1a817f24fc7d5a6a896e71dc8cd26ba9f3ffba394e1bdecdfdde06a07fb2ea74",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ed606c29c2a71799c2fbe7b92486fc9545fe7f057f73c95467590c135ac49d06.png": "ed606c29c2a71799c2fbe7b92486fc9545fe7f057f73c95467590c135ac49d06",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/50cff956d35f4c096c37c5ea6fc3827db89f31e87bd4a3c149a93e864d08f914.png": "50cff956d35f4c096c37c5ea6fc3827db89f31e87bd4a3c149a93e864d08f914",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/c00302707a1e31df5a54d6fae5b91653057efd5a63294dd261b130439fea9cb4.png": "c00302707a1e31df5a54d6fae5b91653057efd5a63294dd261b130439fea9cb4",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/639a3e83a4093effb7663f80ff0d9cf0193d828a1073ed68204151ff526c86f5.png": "639a3e83a4093effb7663f80ff0d9cf0193d828a1073ed68204151ff526c86f5",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/2252499bf5047193c6b3cd2b725b32f6e01a70d300279682da959e94f776e222.png": "2252499bf5047193c6b3cd2b725b32f6e01a70d300279682da959e94f776e222",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/fb6170853a0e709332fe73c3ab84c469e41fb2d54c5c602866c0a2f83bdbfb2f.png": "fb6170853a0e709332fe73c3ab84c469e41fb2d54c5c602866c0a2f83bdbfb2f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e.png": "7a9e003a615e60280ea391f8c53794e3175a7463ba9e83ef74884b71f000b53e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3.png": "d77b612a8ee197e5d0e609556e408506630de25e2796eb73c914887a464695b3",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa.png": "eb114f4d056b41f7ec4ea463db880dd517c4da1757b72d60d32be03a46128caa",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ea197d42e90f325f01adc4787f0a584ffe54901f45ebb92e9a57823db9a59065.png": "ea197d42e90f325f01adc4787f0a584ffe54901f45ebb92e9a57823db9a59065",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/dae3fc53d9f894c228dbbfc4d993cf66cf0ebd2b099c6ecd7ece49a717a3248e.png": "dae3fc53d9f894c228dbbfc4d993cf66cf0ebd2b099c6ecd7ece49a717a3248e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ee3aca1d5614f65cd7db7ae4197883d6fb0f75bbde6c6ae9caea87b70f4b405a.png": "ee3aca1d5614f65cd7db7ae4197883d6fb0f75bbde6c6ae9caea87b70f4b405a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/6ce1d8dae5324825287ac4aaf7b7463b4eaca1e187cad6790e0801b5bdac40e4.png": "6ce1d8dae5324825287ac4aaf7b7463b4eaca1e187cad6790e0801b5bdac40e4",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ee87e8f180a092c2a4f50aff7b70c7f1ee192a51a111231f1107d7cc929dc05c.png": "ee87e8f180a092c2a4f50aff7b70c7f1ee192a51a111231f1107d7cc929dc05c",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/029b50c604c664a9b141831f6cac9b120a172f8318404246917a5f256cb28960.png": "029b50c604c664a9b141831f6cac9b120a172f8318404246917a5f256cb28960",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/e2955bfa7e60ea0786070beb34f32157464a2146f90a7bb7c5ebe2876697fb03.png": "e2955bfa7e60ea0786070beb34f32157464a2146f90a7bb7c5ebe2876697fb03",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png": "4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e.png": "4e34ec996ddf12381f0dc6cec706cc6f01a31e07dd98b1ef1cd3a7e047e8331e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887.png": "7fbd9cf3dd53a6b6f664176c2aa56f5a2572f136ddd95333c1265741377e8887",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/a234c37f572dc4d8d28b351dbd176f45c2d426a5d5c92dde046adb6822dc6b3f.png": "a234c37f572dc4d8d28b351dbd176f45c2d426a5d5c92dde046adb6822dc6b3f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/89596161f0b1bd71932faf57cd75dd589a6e1ba55e8c11a88d0e4782aca7ce3d.png": "89596161f0b1bd71932faf57cd75dd589a6e1ba55e8c11a88d0e4782aca7ce3d",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/3f5ab34792e3565441c536a5aa63358fe1171248485318d22a6024bcb2c9ee11.png": "3f5ab34792e3565441c536a5aa63358fe1171248485318d22a6024bcb2c9ee11",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/bc8f10bef3b1aedcafdc1881e7780c427662f6ce86a811255c57b6aa6db07813.png": "bc8f10bef3b1aedcafdc1881e7780c427662f6ce86a811255c57b6aa6db07813",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f14418ac59ed5336513074b1c8a32e9662b2571cae8d80cca71755047665863c.png": "f14418ac59ed5336513074b1c8a32e9662b2571cae8d80cca71755047665863c",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/30f36b7899528f9f8cb2ddba9844ebd3576806b672642592dc923ef04a921d7e.png": "30f36b7899528f9f8cb2ddba9844ebd3576806b672642592dc923ef04a921d7e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b79da2e27aa132da8644a8c597828e26dcfa5d9db02e4e3b72bd952ea15adb31.png": "b79da2e27aa132da8644a8c597828e26dcfa5d9db02e4e3b72bd952ea15adb31",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/98dde05d786d90736ef91b452a1bc34da92b8ad03a5c93988e14f9fe98066c58.png": "98dde05d786d90736ef91b452a1bc34da92b8ad03a5c93988e14f9fe98066c58",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b.png": "56df75bb767836cd7619f10ed26c0a9881e3a40d4eb4855d8c520952e7152e3b",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66.png": "43f38c92be3699323377c468d712b4e2d86f45498b02d7d868e27cb2f57b1c66",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/13c71c38c74305a8d99049bced33cfde642a105d95c326de6509e7d00bd31cea.png": "13c71c38c74305a8d99049bced33cfde642a105d95c326de6509e7d00bd31cea",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/81104f150be75aca3c54a8951fad9e87f8a949973ee91257b43b6ef4d50a335d.png": "81104f150be75aca3c54a8951fad9e87f8a949973ee91257b43b6ef4d50a335d",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4ae302fa229f61be2f8acf218810dd57501a4125d021a7518f2564bf1a40ce2e.png": "4ae302fa229f61be2f8acf218810dd57501a4125d021a7518f2564bf1a40ce2e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/452a9c12c4e0595ddfa585424ca54d43c5a002f841e7bcd71c9851003399bb4d.png": "452a9c12c4e0595ddfa585424ca54d43c5a002f841e7bcd71c9851003399bb4d",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/695d307220ed1ec97f73715205dc2d0905fec1da9f102cb8d2b47b204e47aa4a.png": "695d307220ed1ec97f73715205dc2d0905fec1da9f102cb8d2b47b204e47aa4a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/9ee376b98a32f5bf3e7a01d01fa8b13602fb5d305d3ae473e059159e683afed2.png": "9ee376b98a32f5bf3e7a01d01fa8b13602fb5d305d3ae473e059159e683afed2",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/54fc74da7beba6b2c669965b6ddae9af75c695072659c453f46c66fbeab669bb.png": "54fc74da7beba6b2c669965b6ddae9af75c695072659c453f46c66fbeab669bb",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/709d6d4d0459d7f7f0f9b88ff7f2f16d9acc016da971830f0b922b76d98345c8.png": "709d6d4d0459d7f7f0f9b88ff7f2f16d9acc016da971830f0b922b76d98345c8",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/27b721e4d148b68ec272e4a740474d233176b13d8235e16110f844c7e23ba935.png": "27b721e4d148b68ec272e4a740474d233176b13d8235e16110f844c7e23ba935",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png": "879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/ee7e8aa776b9645c4a38a74227e807ef49ce282fae467e173494ab909c57a30e.png": "ee7e8aa776b9645c4a38a74227e807ef49ce282fae467e173494ab909c57a30e",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941.png": "844a4fbd742fdd0370bd4757674a9fc8e977a9ea94ad60c49fce4a3e81c7a941",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7ba100b67ec0065dfca3f72871e18bb111d5d072867f9d7206a59c47b9b0147.png": "b7ba100b67ec0065dfca3f72871e18bb111d5d072867f9d7206a59c47b9b0147",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cb814b41db8ab87ecced52d10da7f754fada8c59bac2a3ff2fe747a36b45df9a.png": "cb814b41db8ab87ecced52d10da7f754fada8c59bac2a3ff2fe747a36b45df9a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/5b583c48d9fe8cd8f896ee9987dd6ee7174ead08f3264fef8708480d1865f29b.png": "5b583c48d9fe8cd8f896ee9987dd6ee7174ead08f3264fef8708480d1865f29b",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cc5ac6e99dcabff91ab44ec6ea5759a99539fa7539f03e5d8f19e74b7b13082a.png": "cc5ac6e99dcabff91ab44ec6ea5759a99539fa7539f03e5d8f19e74b7b13082a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/76999c23d4a4c1651d213f40745a71111890467bd4fc745a8571ad092a6b1fca.png": "76999c23d4a4c1651d213f40745a71111890467bd4fc745a8571ad092a6b1fca",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/048ef6c456bb44819aad5fdf4601ce0457bfca62864185fbf83f6a93318f5e70.png": "048ef6c456bb44819aad5fdf4601ce0457bfca62864185fbf83f6a93318f5e70",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/a4312456f16eaa9e33d0f2c8d2f1578bffef6edb4cdb7851d0c70619c0487c5d.png": "a4312456f16eaa9e33d0f2c8d2f1578bffef6edb4cdb7851d0c70619c0487c5d",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/e2ee316bdeba9f910a284844836c118209484b4c7c36f4905a7e62ff105f23ba.png": "e2ee316bdeba9f910a284844836c118209484b4c7c36f4905a7e62ff105f23ba",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca.png": "b7c517ef27d31c68287fa47b40de580a9757f83835f137c31ca7a7dc3e0653ca",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8b431c6669b895bf3adbe90f412f592e5e8759dd4ca48cf932e3c61d067a297b.png": "8b431c6669b895bf3adbe90f412f592e5e8759dd4ca48cf932e3c61d067a297b",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/6ec85b5bf36d52a9309208853856ca8e7fe818f02704bc6ef36a83e204cd65c2.png": "6ec85b5bf36d52a9309208853856ca8e7fe818f02704bc6ef36a83e204cd65c2",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a.png": "f492afbaeb3aac555a71e7a3d40800d07d6bc2161f2bd408fd2aa8d348c9e65a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/d89eaf22516473c2ea253cbe7556943fd23f5ea898a6debe49440584444837de.png": "d89eaf22516473c2ea253cbe7556943fd23f5ea898a6debe49440584444837de",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/25e82fab7da68ea563bf05919f62ae79399fc195f7cea8483937ce50c03a7f01.png": "25e82fab7da68ea563bf05919f62ae79399fc195f7cea8483937ce50c03a7f01",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/3f1fcace5a0b235d41060b980fdd4815d46f551082c5c1600c29a04a8138e6d2.png": "3f1fcace5a0b235d41060b980fdd4815d46f551082c5c1600c29a04a8138e6d2",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/f028f6ee3bc288c0cbe7268f729cca850eeb272c166f1635f67a1b0223cad69a.png": "f028f6ee3bc288c0cbe7268f729cca850eeb272c166f1635f67a1b0223cad69a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cce3c802319afa43bd4d21c35b482c9f2960fa3362c796f89087d6604bb4b176.png": "cce3c802319afa43bd4d21c35b482c9f2960fa3362c796f89087d6604bb4b176",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/7fd2a1524b7ee398fcd871d61d44d8184a32f840bfdeeba8a0889b7ae79897f3.png": "7fd2a1524b7ee398fcd871d61d44d8184a32f840bfdeeba8a0889b7ae79897f3",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/0382a6bc7b06a5712c5a161e6413e542a87a4d3d81f0f9585758c1fb3e59c789.png": "0382a6bc7b06a5712c5a161e6413e542a87a4d3d81f0f9585758c1fb3e59c789",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/60a4c97a0077d5d791b7f952c4ac6e7cdd58d5d201f0247102912a25667d2003.png": "60a4c97a0077d5d791b7f952c4ac6e7cdd58d5d201f0247102912a25667d2003",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/0ecc9cd0b4cfc2ea825de2c304fbe376d0a7be79ea04d293207aeec2519ffe12.png": "0ecc9cd0b4cfc2ea825de2c304fbe376d0a7be79ea04d293207aeec2519ffe12",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/032b925058658889e968fd0ed1527f63cf7c73c70c25c81bbb268c0da33d93ea.png": "032b925058658889e968fd0ed1527f63cf7c73c70c25c81bbb268c0da33d93ea",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/caa7cd5a5079b23635d11467158d5b4c3d91661767e8a000a88c93b1fa0672ba.png": "caa7cd5a5079b23635d11467158d5b4c3d91661767e8a000a88c93b1fa0672ba",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58.png": "8a750cbe5964eb0ced9579c461015dfcbb40f44b54fc9342cd6e1416d90dfb58",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/46d12992ac30a9f5259ae34e7c945e637a9fa9f6ced7faf9c63132308a4f6d0a.png": "46d12992ac30a9f5259ae34e7c945e637a9fa9f6ced7faf9c63132308a4f6d0a",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/31fdd6069d5fa57ac9fe14020c8fe5612585b75f2de61f830a2eaca5b882d423.png": "31fdd6069d5fa57ac9fe14020c8fe5612585b75f2de61f830a2eaca5b882d423",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/34ed5131cc40771aee0554b29c8bdf24cfb80bf41a1ada0911ac9981ffd2d769.png": "34ed5131cc40771aee0554b29c8bdf24cfb80bf41a1ada0911ac9981ffd2d769",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb.png": "343a76edf00dd6589a885bdb28b90c9021ae5d97c537c7f79cd612b6659c40bb",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/2bac08800e965813c3884779290e8f94690e307161a3408c9ff61e0c7f845853.png": "2bac08800e965813c3884779290e8f94690e307161a3408c9ff61e0c7f845853",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/08659eae08fd66371a11c849ca9f05e92108a03c759b167dba908b0cce287e2f.png": "08659eae08fd66371a11c849ca9f05e92108a03c759b167dba908b0cce287e2f",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/4a5be53db989038de242ad73f94fe2bdcd878738cc9194715b7087e5ce2b2919.png": "4a5be53db989038de242ad73f94fe2bdcd878738cc9194715b7087e5ce2b2919",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/b2bb990e5911ef736ecef282243a4571d36007487cc2c8ce311a1f5a5fc71af5.png": "b2bb990e5911ef736ecef282243a4571d36007487cc2c8ce311a1f5a5fc71af5",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/16686e47305dd4ef9c9af0239e79abbd02c391986deb242f1d62168f3097e2ce.png": "16686e47305dd4ef9c9af0239e79abbd02c391986deb242f1d62168f3097e2ce",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/cb19513cbf57689fdb6313720497f2db771066f8996a42eb31915e3bdd4b57b6.png": "cb19513cbf57689fdb6313720497f2db771066f8996a42eb31915e3bdd4b57b6",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/61aa0fcb7b8f7d0a1bf1936996c32245269cad169a8a4e699f58f27a1f5a271c.png": "61aa0fcb7b8f7d0a1bf1936996c32245269cad169a8a4e699f58f27a1f5a271c",
+    "/Volumes/YHX/medical_rag/medical-rag/artifacts/resume-v2/images/2b8f7df9905dbdc394046b15786be28a7f86200f4165de1464aad051af1742d6.png": "2b8f7df9905dbdc394046b15786be28a7f86200f4165de1464aad051af1742d6"
+  },
+  "chapter_counts": {
+    "unknown": 162,
+    "numbered_heading": 1939,
+    "bookmark": 708
+  },
+  "split_counts": {
+    "dev": 30,
+    "holdout": 30
+  },
+  "selection_frozen_before_model_calls": true,
+  "human_reviewed": 0,
+  "preparation_input_digest": "964425e7107f05b1f044a51a3919d06967de1ce566803ef79e6401354117e4b8"
+}

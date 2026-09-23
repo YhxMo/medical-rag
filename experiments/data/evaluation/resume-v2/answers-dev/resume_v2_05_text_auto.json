@@ -1,0 +1,164 @@
+{
+  "question_id": "resume_v2_05_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text explicitly states in section 4.2.11.5(b): 'The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.' This directly answers the question about the maximum allowable deviation during routine quality control."
+  },
+  "result": {
+    "answer": "根据提供的资料（来源1和2），在常规质量控制中，**MTF在2.5、5和7.5 cycles/mm处相对于基线的最大允许偏差为10%**。\n\n具体依据如下：\n\n- 来源1（第128页）第4.2.11.5节“(b)”明确指出：  \n  > “The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.”  \n  （MTF在2.5、5和7.5 cycles/mm处的值与基线的差异不应超过10%。）[1]\n\n- 来源2（同页图像说明）也重复了该条款，并确认其为质量控制中的容忍限值[2]。\n\n- 来源3（第129页）第4.2.11.7节进一步佐证：  \n  > “if the MTF at 2.5, 5 and 7.5 cycles per millimetre has changed by 10% or more from previously measured values, consult the manufacturer’s service representative.”  \n  （若MTF在上述频率处的变化 ≥10%，应咨询制造商服务代表。）[3]\n\n因此，**最大 allowable deviation（允许偏差）为 ±10%**。\n\n⚠️ 注意：该10%是**相对偏差**（即 |(当前值 − 基线值)| / 基线值 ≤ 10%），而非绝对数值；实际基线值需在设备验收/初装（commissioning）时测定并记录。资料中未提供具体基线数值或单位外的其他限制条件。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.597987082786858,
+      "first_token_seconds": 4.045232875039801,
+      "total_seconds": 10.49212845810689,
+      "model_seconds": 8.765395624097437,
+      "model_first_token_seconds": 1.1727060831617564
+    },
+    "calls": [
+      {
+        "seconds": 1.1847272908780724,
+        "usage": {
+          "input_tokens": 2658,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005572,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 7.580668333219364,
+        "usage": {
+          "input_tokens": 2671,
+          "output_tokens": 373
+        },
+        "cost_upper_cny": 0.01131,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.1727060831617564,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "What is the maximum allowable deviation of the MTF at 2.5, 5, and 7.5 cycles per millimetre from the baseline during routine quality control?",
+    "citations": {
+      "citation_mentions": 3,
+      "valid_citation_mentions": 3,
+      "unique_citations": [
+        1,
+        2,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/4c7929314f09501e4ec3cbd37c15c260c0b973ab23d585060a415281ab6add21.png"
+    ],
+    "sources": [
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\n(b)\t\nNote the points where the MTF falls below 50% and 20%.\n(c)\t\nDuring commissioning, establish a baseline and record the transfer rate at \n2.5, 5 and 7.5 cycles per millimetre.\n4.2.11.5.\t Baselines and tolerances\nThe following should be considered:\n(a)\t\nThe spatial frequencies at which the MTF drops to 50% and 20% should not \nbe less than the values specified for the relevant model.\n(b)\t\nThe MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the \nbaseline by more than 10%.\n(c)\t\nThe spatial resolution may vary on different regions of the image receptor if \nit deteriorates. In this case, the measurement should be repeated at several \nlocations on the image. These images shall then be compared to each other.\n(d)\t\nHigher noise may cause the MTF to vary locally.\n(e)\t\nWhen a line pair resolution tool is used to determine the limiting spatial \nresolution, refer to the manufacturer’s specifications.\n(f)\t\nFor film–screen imaging, the limiting spatial resolution should be better \n(higher) than 12 line pairs per millimetre.\n118\nFIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality \ncontrol test object.",
+        "scores": {
+          "dense": 0.8083750097410858,
+          "bm25": 65.5267494467223,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9989483952522278
+        }
+      },
+      {
+        "id": "visual_3d4fbb0eddc00f97a0d6",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 128,
+        "type": "image_caption",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nvisible_text: FIG. 43. X ray image of the modulation transfer function test tool (right) mounted in a quality control test object.\n(b) Note the points where the MTF falls below 50% and 20%.\n(c) During commissioning, establish a baseline and record the transfer rate at 2.5, 5 and 7.5 cycles per millimetre.\n4.2.11.5. Baselines and tolerances\nThe following should be considered:\n(a) The spatial frequencies at which the MTF drops to 50% and 20% should not be less than the values specified for the relevant model.\n(b) The MTF at 2.5, 5 and 7.5 cycles per millimetre should not differ from the baseline by more than 10%.\n(c) The spatial resolution may vary on different regions of the image receptor if it deteriorates. In this case, the measurement should be repeated at several locations on the image. These images shall then be compared to each other.\n(d) Higher noise may cause the MTF to vary locally.\n(e) When a line pair resolution tool is used to determine the limiting spatial resolution, refer to the manufacturer’s specifications.\n(f) For film–screen imaging, the limiting spatial resolution should be better (higher) than 12 line pairs per millimetre.\nvisual_relations: Figure 43 shows an X-ray image containing two objects within a dark rectangular frame: (1) a diamond-shaped test tool with alternating dark and light bars (modulation transfer function test tool), positioned left-of-center; (2) a rectangular textured object to its right. A small 'R' marker with 'CC' beneath appears in the top-right corner of the frame, likely indicating orientation (Right, Cranio-Caudal). The test tool is described as being mounted in a quality control test object.\nunits: cycles per millimetre\nline pairs per millimetre\nuncertainties: No numerical MTF values, spatial frequency thresholds, or baseline measurements are provided in the figure or surrounding text—only procedural instructions and tolerance criteria (e.g., ≤10% deviation, >12 lp/mm). The actual MTF curve is not shown; only the physical test tool is imaged.\nsummary: This page describes quality control procedures for assessing the Modulation Transfer Function (MTF) of X-ray imaging systems. It specifies recording MTF values at 2.5, 5, and 7.5 cycles/mm, noting where MTF drops below 50% and 20%, and establishing baselines during commissioning. Tolerances include ≤10% deviation from baseline at those frequencies, and minimum resolution requirements (e.g., >12 lp/mm for film-screen). Figure 43 shows an X-ray image of the physical MTF test tool—a bar-patterned device—mounted in a QC phantom.",
+        "scores": {
+          "dense": 0.7756193144637883,
+          "bm25": 70.2761781597346,
+          "rrf": 0.03252247488101534,
+          "weighted": 0.03252247488101534,
+          "rerank": 0.9951351284980774
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p129:853a339f3fa0",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 129,
+        "type": "text",
+        "content": "4.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\n4.2.11.6.\t Frequency\nThe test is repeated annually, and after changes or service to the detector, \ntube or computed radiography plate reader.\n4.2.11.7.\t Corrective actions\nIf the 50% or 20% frequencies for the MTF, either parallel or perpendicular \nto the chest wall, drop below the manufacturer’s specifications or if the MTF at \n2.5, 5 and 7.5 cycles per millimetre has changed by 10% or more from previously \nmeasured values, consult the manufacturer’s service representative.\nWhen the limiting spatial resolution is less than the desirable value, confirm \nthat the system is performing satisfactorily and that processing is acceptable for \nfilm–screen systems, and check the radiation output. The focal spot size may \naffect the resolution.\n4.2.12.\t Ghosting (computed radiography and digital radiography only)\n4.2.12.1.\t Description and objective\nThis test evaluates the severity of artefacts caused by previous exposure to \nthe detector in all systems except photon counting systems [18].\n4.2.12.2.\t Equipment\nThe equipment required is 45 mm thick PMMA slabs.\n4.2.12.3.\t Procedure\n(a)\t\nPlace the PMMA slab on the right half of the breast support so that \napproximately one half of the breast im",
+        "scores": {
+          "dense": 0.7455167069594866,
+          "bm25": 49.048727005606416,
+          "rrf": 0.031746031746031744,
+          "weighted": 0.031746031746031744,
+          "rerank": 0.8721110820770264
+        }
+      },
+      {
+        "id": "iaea_radiology_quality_control_2023.pdf:fixed:p163:fda016e5e355",
+        "source": "iaea_radiology_quality_control_2023.pdf",
+        "page": 163,
+        "type": "text",
+        "content": "5.2.\t QUALITY CONTROL TESTS FOR MEDICAL PHYSICISTS\nseline and displayed dose index values. \n(d)\t\nMeasure Cair for all beam collimations.\n(e)\t\nCalculate Cair from the dosimeter readings for all X ray beam collimations \nand kilovoltages used.\n(f)\t\nCompare these values with the results of commissioning or previous \nconstancy tests.\n5.2.7.5.\t Baselines and tolerances\nThe following apply:\n(a)\t\nFor Cvol, ±20% difference between the baseline or displayed values and the \nmeasured values is acceptable.\n(b)\t\nCair should confirm the tolerances stated by the manufacturer. If no such \ntolerance is available, then ±20% deviation from the baseline is acceptable.\n5.2.7.6.\t Frequency\nThe test is repeated annually or after changes that affect dosimetry.\n153",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 42.31678512412098,
+          "rrf": 0.015151515151515152,
+          "weighted": 0.015151515151515152,
+          "rerank": 0.011621978133916855
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly states the maximum allowable deviation is 10% at 2.5, 5, and 7.5 cycles/mm, directly quoting section 4.2.11.5(b) from the retrieved source (id: iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329), which matches the reference. It also correctly cites section 4.2.11.7 (id: iaea_radiology_quality_control_2023.pdf:fixed:p129:853a339f3fa0) stating that a change ≥10% triggers consultation with the manufacturer, reinforcing the 10% tolerance. The image caption (id: visual_3d4fbb0eddc00f97a0d6) repeats the same text as the page 128 source, supporting claim [2]. All three required citations are valid and support the claims made. The answer clarifies the deviation is relative (±10%), notes the baseline must be established during commissioning, and correctly observes no absolute values or units beyond % are provided—this reflects the source content accurately. No unsupported claims are made."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 11.895081291906536,
+    "usage": {
+      "input_tokens": 4996,
+      "output_tokens": 395
+    },
+    "cost_upper_cny": 0.016312,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "model": "qwen3-vl-plus",
+  "preparation": "2f1c1515c49e701eb57b63508df2cd6804fdfda1a8b73a49dbf0250216b96f61",
+  "prompt": "0c203ca73c91d1400091a09ce01720bece3b7868c191c010daa70a0c13c3aa4a"
+}

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text explicitly states: 'The normal thymus is homogenous, does not cause mass effect and usually appears rhomboid in the transverse plane or triangular in the sagittal plane as opposed to lymph nodes, which are oval, more hypoechoic and cause mass effect.' The observed finding (oval, hypoechoic, displacing adjacent anatomy) matches the description of lymphadenopathy—not the normal thymus. This directly supports the reference answer and expected behavior ('correct_premise'). All three cited evidence IDs contain this contrast, and the image caption (Figure 3) further confirms that oval structures D–F indicate lymphadenopathy in primary tuberculosis, not thymus. No ambiguity or missing information exists; the conclusion 'No' is fully justified by the provided material."
+}

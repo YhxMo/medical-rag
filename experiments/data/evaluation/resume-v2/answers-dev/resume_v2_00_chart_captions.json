@@ -1,0 +1,157 @@
+{
+  "question_id": "resume_v2_00_chart",
+  "kind": "chart",
+  "mode": "captions",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The provided page (p. 96) contains Figure 5.7(b), which visually shows a grid of focal spot shapes across the radiation field for a 20° anode angle, labeled from 'cathode side' (bottom, −20° to 0°) to 'anode side' (top, 0° to +20°). Inspection of the figure confirms that the projected focal spots are longer (more vertically extended) near the cathode side (bottom rows) and become progressively shorter in the vertical direction toward the anode side (top rows). The tilt also changes with lateral position, as stated in the corrected reference answer. This matches the AI source correction’s basis and the expected answer. The original draft reference answer was incorrect (reversed direction), and the correction is validated by direct visual inspection of the figure."
+  },
+  "result": {
+    "answer": "根据提供的资料，特别是图5.7(b)的描述（来源1、2、3），对于**20°阳极角**的X射线管，当从**阴极侧向阳极侧**移动穿过辐射野时，**焦点形状的变化如下**：\n\n- 焦点在辐射野中并非恒定不变，而是**随位置变化而变形**；\n- 在**阴极侧**（cathode side），焦点呈**较长且倾斜的矩形**（或近似平行四边形），其长轴方向与电子束入射方向相关；\n- 随着向**阳极侧**（anode side）移动，焦点**逐渐变短、变宽，并发生更显著的畸变（扭曲）**；\n- 图5.7(b)显示：焦点形状在中心区域相对规则（接近矩形），但在边缘（尤其是靠近阳极侧）变得**明显拉长、倾斜且不对称**；\n- 文本明确指出：“**实际焦点尺寸取决于在视野中的位置，从阳极侧到阴极侧逐渐增大**” [3] —— 注意：此处“增大”指**实际物理焦点尺寸**（非有效焦点），即阳极侧的实际焦点**较小**，阴极侧**较大**；但结合图5.7(b)的视觉描述（“elongated and tilted, becoming more distorted toward edges”），以及线焦点原理，可进一步解释为：\n  - **有效焦点**（投影到成像平面的尺寸）在中心最小，在阴极侧因几何投影效应而**增大**；\n  - **实际焦点**（阳极表面被电子轰击的区域）在阳极侧因电子束“掠入射”角度更陡峭而**变窄**，在阴极侧则因入射角更平缓而**展宽**；\n  - 因此，**从阴极侧移向阳极侧时，焦点形状由长而倾斜的矩形 → 逐渐缩短、变窄、畸变加剧**，尤其在靠近阳极边缘处出现严重压缩和倾斜。\n\n⚠️ 补充说明：  \n- 图5.7(b)的纵轴标签存在疑似印刷错误（如“20°”出现在顶部和底部），因此垂直方向的具体角度含义不明确，但**水平方向（阴极→阳极）的变化趋势是可靠的** [1]；\n- 所有结论均基于**20°阳极角**的特定条件；\n- 未提供具体数值尺寸，仅能定性描述形状变化。\n\n综上：  \n**从阴极侧向阳极侧移动时，焦点形状由较长、较倾斜的矩形逐渐变为更短、更窄、且畸变（扭曲）更明显的形状；在阳极侧边缘处变形最显著。** [1][3]",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.8218727908097208,
+      "first_token_seconds": 3.353564999997616,
+      "total_seconds": 13.440986833069474,
+      "model_seconds": 11.532492375001311,
+      "model_first_token_seconds": 0.4850890829693526
+    },
+    "calls": [
+      {
+        "seconds": 1.0025938330218196,
+        "usage": {
+          "input_tokens": 1865,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.003986,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 10.529898541979492,
+        "usage": {
+          "input_tokens": 1877,
+          "output_tokens": 611
+        },
+        "cost_upper_cny": 0.01353,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 0.4850890829693526,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "According to Figure 5.7(b), how does the shape of the focal spot change as one moves from the cathode side toward the anode side of the radiation field for a 20° anode angle?",
+    "citations": {
+      "citation_mentions": 4,
+      "valid_citation_mentions": 4,
+      "unique_citations": [
+        1,
+        3
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "visual_535a9d07428592c8521f",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 123,
+        "type": "image_caption",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nvisible_text: 5.3.3. Anode\n5.3.3.1. Choice of material\nFor common radiographic applications, a high bremsstrahlung yield is mandatory, requiring materials with high atomic numbers (Z). Additionally, because of the low effectiveness of X ray production, it is also essential that the thermal properties are such that the maximum useful temperature determined by melting point, vapour pressure, heat conduction, specific heat and density is also considered. Tungsten (Z = 74) is the optimum choice here.\nFor mammography, other anode materials such as molybdenum (Z = 42) and rhodium (Z = 45) are frequently used. For such anodes, X ray spectra show less contribution by bremsstrahlung but rather dominant characteristic X rays of the anode materials. This allows a more satisfactory optimization of image quality and patient dose. In digital mammography, these advantages are less significant and some manufacturers prefer tungsten anodes.\n5.3.3.2. Line focus principle (anode angle)\nFor measurement purposes, the focal spot size is defined along the central beam projection. For high anode currents, the area of the anode hit by the electrons should be as large as possible, to keep the power density within acceptable limits. To balance the need for substantial heat dissipation with that of a small focal spot size, the line focus principle is used (Fig. 5.7(a)).\nFIG. 5.7. (a) Line focus principle: the length of the filament appears shortened in the beam direction; (b) graphic representation of the focal spot shape at different locations in the radiation field (anode angle 20°).\nvisual_relations: {\"Fig. 5.7(a)\": \"Schematic showing cathode filament, electron focus, effective focus (projected smaller than actual filament length), beam center, and anode angled relative to tube axis.\", \"Fig. 5.7(b)\": \"Grid of rectangular focal spot shapes across radiation field; horizontal axis labeled 'cathode side' to 'anode side', vertical axis labeled angles from 20° to 20° (symmetric); focal spots elongated and tilted, becoming more distorted toward edges; anode angle specified as 20°.\"}\nunits: Atomic number Z (dimensionless)\nAnode angle: degrees (°)\nuncertainties: Figure 5.7(b) y-axis labels appear mirrored or misaligned (e.g., '20°' at top and bottom, decreasing inward), suggesting possible printing artifact; exact interpretation of vertical axis requires context not fully visible.\nNo numerical values for focal spot size, power density, or temperatures are given—only qualitative descriptions.\nsummary: This textbook section (p. 96, Chapter 5, §5.3.3) discusses X-ray tube anode design. It explains that high-Z materials like tungsten (Z=74) are preferred for general radiography due to high bremsstrahlung yield and favorable thermal properties. For mammography, lower-Z materials (molybdenum Z=42, rhodium Z=45) are used to enhance characteristic X-rays and optimize image quality/dose, though tungsten is increasingly used in digital systems. The line focus principle is introduced to reconcile large electron impact area (for heat dissipation) with small effective focal spot (for image resolution), illustrated in Fig. 5.7: (a) shows geometric projection shortening of filament length, and (b) shows how focal spot shape varies across the radiation field at a 20° anode angle.",
+        "scores": {
+          "dense": 0.7483471411478559,
+          "bm25": 93.82388373800798,
+          "rrf": 0.03131881575727918,
+          "weighted": 0.03131881575727918,
+          "rerank": 0.9690002202987671
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:cfacfa258286",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 123,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nis defined along the \ncentral beam projection. For high anode currents, the area of the anode hit by \nthe electrons should be as large as possible, to keep the power density within \nacceptable limits. To balance the need for substantial heat dissipation with that of \na small focal spot size, the line focus principle is used (Fig. 5.7(a)).\nFIG. 5.7.  (a) Line focus principle: the length of the filament appears shortened in the beam \ndirection; (b) graphic representation of the focal spot shape at different locations in the \nradiation field (anode angle 20°).",
+        "scores": {
+          "dense": 0.811662617156016,
+          "bm25": 81.82697352214876,
+          "rrf": 0.032266458495966696,
+          "weighted": 0.032266458495966696,
+          "rerank": 0.7718201875686646
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p124:5902fa4dedc7",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 124,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n97\nX RAY PRODUCTION\nThe anode is inclined to the tube axis, typically with the central ray of \nthe X ray field perpendicular to the tube axis. The electrons hit the anode in the \nelectronic focus, largely determined by the length of the cathode filament. The \nelectronic focus appears shortened in beam direction by sin θ as the effective \nfocus (Fig.  5.7(a)). Anode angles in diagnostic tubes range from 6° to 22°, \ndepending on their task, with 10–16° used for general purpose tubes. The radial \ndimension of the focus size is given by the filament coil diameter and the action \nof the focusing cup. The size of the focal spot of an X ray tube is given for the \ncentral beam in the X ray field running perpendicular to the electron beam or the \ntube axis. The actual focal spot size depends on the position within the field of \nview, increasing from the anode side of the tube to the cathode (Fig. 5.7(b)).\nThe reduction of anode angles to achieve smaller effective focus sizes is \nlimited by the size of the field of view required as the X ray beam is cut off by \nthe anode. A further limit is given by the heel effect (Fig. 5.8). Here, the X rays \nproduced at depth within the anode suffer some",
+        "scores": {
+          "dense": 0.7885767533276364,
+          "bm25": 78.24509728762338,
+          "rrf": 0.03149801587301587,
+          "weighted": 0.03149801587301587,
+          "rerank": 0.7371431589126587
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p37:925e0d4c70e0",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 37,
+        "type": "text",
+        "content": "on, the angular distribution is peaked \nin the forward direction, but as the electron energy decreases, the position of the \npeak moves so that it is at an angle to the forward direction. When the electron \nenergy is low, the radiation is mainly emitted between 60° and 90° to the forward \ndirection.\nBIBLIOGRAPHY\nATTIX, F.H., Introduction to Radiological Physics and Radiation Dosimetry, John Wiley \n& Sons, New York (1986).\nBUSHBERG, J.T., SEIBERT, J.A., LEIDHOLDT, E.M.J., BOONE, J.M., The Essential \nPhysics of Medical Imaging, 2nd edn, Lippincott Williams & Wilkins (2002).\nINTERNATIONAL ATOMIC ENERGY AGENCY, Radiation Oncology Physics: A \nHandbook for Teachers and Students, IAEA, Vienna (2005). \nJOHNS, H.E., CUNNINGHAM, J.R., The Physics of Radiology, 4th edn, Charles C. \nThomas, Springfield, IL (1983).",
+        "scores": {
+          "dense": 0.7287010857609221,
+          "bm25": 0.0,
+          "rrf": 0.014084507042253521,
+          "weighted": 0.014084507042253521,
+          "rerank": 0.005464278627187014
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 1,
+    "completeness": 2,
+    "groundedness": 1,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": true,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 3,
+        "supports_associated_claim": false
+      }
+    ],
+    "reason": "The answer correctly describes the qualitative shape change (elongated/tilted at cathode side → shorter/more distorted toward anode side) based on Fig. 5.7(b) and the text (e.g., 'focal spots elongated and tilted, becoming more distorted toward edges' from visual_relations in source id:visual_535a9d07428592c8521f). It also correctly notes the y-axis labeling issue. However, it makes unsupported claims: (1) It states 'in cathode side, focus is longer and tilted... in anode side becomes shorter, narrower, more distorted' — while distortion increases toward edges, the *effective* focal spot size *decreases* from cathode to anode side (per p124: 'actual focal spot size depends on position... increasing from anode side to cathode'), but the answer conflates actual vs effective and adds 'narrower' without support; Fig. 5.7(b) shows focal spots become *more tilted and compressed vertically* near anode side, not necessarily narrower horizontally. (2) It cites '[3]' for 'actual focal spot size... from anode side to cathode gradually增大', but no source ID 3 exists in retrieved or gold sources — only IDs 1, 2, 3 were required, but only one source (visual_535a9d07428592c8521f) is provided as gold, and retrieved sources have IDs like 'iaea_diagnostic_radiology_physics_2014.pdf:fixed:p124:5902fa4dedc7' — the answer fabricates citation [3]. (3) The claim 'in center region relatively rule (close to rectangle)' is not explicitly stated in sources; Fig. 5.7(b) shows all spots are tilted, none perfectly rectangular. Groundedness is 1 because core trend (elongated/tilted at cathode → more distorted at anode edges) is supported by visual_relations, but unsupported details reduce full grounding. Completeness is high (covers shape, tilt, distortion, edge effects, caveat about axis), correctness is acceptable for main point, but unsupported claims prevent full score."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 16.85485874977894,
+    "usage": {
+      "input_tokens": 4907,
+      "output_tokens": 591
+    },
+    "cost_upper_cny": 0.01927,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

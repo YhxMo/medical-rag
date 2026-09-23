@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What are the three distances that must be measured and recorded during the test procedure described in section 3.1.1.3?",
+      "reference_answer": "The focal spot–image receptor distance, the focal spot–table distance, and the focal spot–test object distance.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly lists these three distances in step (d) of the procedure; no visual interpretation is needed."
+    },
+    {
+      "kind": "chart",
+      "question": "Based on the setup shown in Figure 22, what material and thickness are used as the test object placed on the table or couch?",
+      "reference_answer": "10 cm of PMMA (polymethyl methacrylate).",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3",
+        "visual_daccad1268a711b5b585"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure shows a stack of transparent blocks on the table; the caption and step (c) identify them as 10 cm PMMA. The visual confirms placement and form, distinguishing it from the alternative copper plate option."
+    },
+    {
+      "kind": "screenshot",
+      "question": "In the image labeled 'FIG. 22', is the X-ray tube positioned above or below the image receptor?",
+      "reference_answer": "Above the image receptor (in an upside-down C-arm arrangement).",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_daccad1268a711b5b585"
+      ],
+      "requires_visual": true,
+      "rationale": "The screenshot shows the C-arm oriented with the X-ray tube at the upper end and the image receptor at the lower end, consistent with the 'upside-down arrangement' noted in the text. This cannot be inferred from text alone without seeing the figure."
+    },
+    {
+      "kind": "behavior",
+      "question": "A technician asks: 'Can I skip measuring the focal spot–table distance if I only record the focal spot–image receptor distance and the table–image receptor distance?'",
+      "reference_answer": "No, the procedure explicitly requires measuring all three distances: focal spot–image receptor, focal spot–table, and focal spot–test object distances.",
+      "expected_behavior": "refuse",
+      "evidence_ids": [
+        "iaea_radiology_quality_control_2023.pdf:fixed:p75:1cbf6453ffa3"
+      ],
+      "requires_visual": false,
+      "rationale": "The instruction in step (d) mandates measurement of all three listed distances; omitting one violates the stated procedure. The behavior type is 'refuse', so the assistant must decline to endorse skipping any required step."
+    }
+  ]
+}

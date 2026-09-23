@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medical-textbook-rag"
+version = "0.2.0"
+description = "Source-grounded textbook Q&A with hybrid retrieval and screenshot input"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = "MIT"
+dependencies = [
+  "PyYAML>=6.0.1",
+  "PyMuPDF>=1.24",
+  "numpy>=1.26",
+  "qdrant-client>=1.10",
+  "rank-bm25>=0.2.2",
+  "jieba>=0.42.1",
+  "fastembed>=0.8",
+  "sentence-transformers>=3.4,<4",
+  "openai>=1.40",
+  "Pillow>=10",
+  "gradio>=5.50,<7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[project.scripts]
+medical-rag = "src.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

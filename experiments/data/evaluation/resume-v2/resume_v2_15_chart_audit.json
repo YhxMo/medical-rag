@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The image (FIG. 49) clearly shows five red circular ROIs: one in the center and four positioned near the perimeter at approximately the 12, 3, 6, and 9 o’clock positions, matching the reference answer. The accompanying text in section (c) explicitly confirms this: 'Draw five circular ROIs: four near the perimeter [...] and one in the centre. [...] positions on a clock’s face.' The visual evidence and textual description are consistent."
+}

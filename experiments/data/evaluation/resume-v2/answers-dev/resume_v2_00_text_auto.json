@@ -1,0 +1,159 @@
+{
+  "question_id": "resume_v2_00_text",
+  "kind": "text",
+  "mode": "auto",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text (iaea_diagnostic_radiology_physics_2014.pdf, p.123 / p.96 in the image) explicitly states that for common radiographic applications, tungsten (Z = 74) is the optimum choice because: (1) high atomic number ensures high bremsstrahlung yield, and (2) favorable thermal properties—melting point, vapour pressure, heat conduction, specific heat, and density—are essential due to low X-ray production efficiency. It contrasts this with molybdenum (Z = 42) and rhodium (Z = 45), which are used in mammography where characteristic X-rays dominate and bremsstrahlung is less important. The reference answer matches the source verbatim in content and reasoning."
+  },
+  "result": {
+    "answer": "在常规放射摄影（如普通X光拍片）中，**钨（Tungsten, Z = 74）被优先选用作阳极材料，而非钼（Molybdenum, Z = 42）或铑（Rhodium, Z = 45）**，主要原因如下：\n\n1. **高韧致辐射（bremsstrahlung）产额需求**：  \n   常规放射摄影需要高强度、宽能谱的连续X射线（即韧致辐射），其产额与阳极材料的原子序数 *Z* 的平方成正比（≈ *Z²*）。钨的原子序数（74）显著高于钼（42）和铑（45），因此能产生更强的韧致辐射，满足高穿透力成像需求 [1][2]。\n\n2. **优异的热物理性能**：  \n   X射线管效率极低（<1%），99%以上的电子能量转化为热量。因此阳极必须具备：\n   - 高熔点（钨：3422 °C；钼：2623 °C；铑：1964 °C），\n   - 低蒸气压（高温下不易蒸发导致管内污染），\n   - 良好的热导率与高密度（利于热扩散与储热），\n   - 合适的比热容。  \n   综合这些因素，钨在“最大可用工作温度”方面最优，可承受高功率电子束轰击而不熔化或变形 [1][2]。\n\n3. **钼/铑适用于乳腺摄影（mammography），而非常规摄影**：  \n   乳腺组织对比度依赖于低能X射线（~17–25 keV），而钼（Kα ≈ 17.5 keV）和铑（Kα ≈ 20.2 keV）的特征X射线能量恰好匹配该范围。它们产生的X射线谱以**特征峰为主、韧致辐射为辅**，有利于优化图像质量与患者剂量 [1][2]。  \n   但这一优势在常规摄影中不适用——常规检查需要更高能量（>50 keV）的连续谱以穿透厚组织（如胸腹），此时特征X射线贡献小且易被滤过掉，反而降低效率。\n\n4. **数字乳腺摄影趋势转向钨阳极**：  \n   随着数字探测器灵敏度提升，对特征X射线的依赖减弱，部分厂商已改用钨阳极+特殊滤过（如银/铝滤片）实现类似优化，进一步凸显钨的通用性优势 [1][2]。\n\n综上：**钨因高原子序数（高韧致辐射产额）与卓越耐热性，成为常规放射摄影阳极的最优选择**；而钼、铑是针对乳腺摄影的特定优化方案，并非通用替代品 [1][2]。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 5.1142097499687225,
+      "first_token_seconds": 8.390255958074704,
+      "total_seconds": 18.38036400009878,
+      "model_seconds": 13.160690625198185,
+      "model_first_token_seconds": 1.1992487080860883
+    },
+    "calls": [
+      {
+        "seconds": 1.977833750192076,
+        "usage": {
+          "input_tokens": 2595,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.005446,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 11.18285687500611,
+        "usage": {
+          "input_tokens": 2608,
+          "output_tokens": 647
+        },
+        "cost_upper_cny": 0.015568,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.1992487080860883,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "Why is tungsten preferred over molybdenum or rhodium for anodes in common radiographic applications?",
+    "citations": {
+      "citation_mentions": 10,
+      "valid_citation_mentions": 10,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/9d36ad81f2b96442ba36615ae853917d99bc4120ec6832c0b9ab85da6137f712.png"
+    ],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p123:9fc47178d79e",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 123,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n96\nCHAPTER 5\n5.3.3.\t Anode\n5.3.3.1.\t Choice of material\nFor common radiographic applications, a high bremsstrahlung yield is \nmandatory, requiring materials with high atomic numbers (Z). Additionally, \nbecause of the low effectiveness of X ray production, it is also essential that the \nthermal properties are such that the maximum useful temperature determined by \nmelting point, vapour pressure, heat conduction, specific heat and density is also \nconsidered. Tungsten (Z = 74) is the optimum choice here.\nFor mammography, other anode materials such as molybdenum (Z = 42) \nand rhodium (Z = 45) are frequently used. For such anodes, X ray spectra show \nless contribution by bremsstrahlung but rather dominant characteristic X  rays \nof the anode materials. This allows a more satisfactory optimization of image \nquality and patient dose. In digital mammography, these advantages are less \nsignificant and some manufacturers prefer tungsten anodes.\n5.3.3.2.\t Line focus principle (anode angle)\nFor measurement purposes, the focal spot size is defined along the \ncentral beam projection. For high anode currents, the area of the anode hit by \nthe electrons should be as large as possible, to keep the",
+        "scores": {
+          "dense": 0.8223177599218106,
+          "bm25": 40.37549248294182,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.9979186654090881
+        }
+      },
+      {
+        "id": "visual_535a9d07428592c8521f",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 123,
+        "type": "image_caption",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nvisible_text: 5.3.3. Anode\n5.3.3.1. Choice of material\nFor common radiographic applications, a high bremsstrahlung yield is mandatory, requiring materials with high atomic numbers (Z). Additionally, because of the low effectiveness of X ray production, it is also essential that the thermal properties are such that the maximum useful temperature determined by melting point, vapour pressure, heat conduction, specific heat and density is also considered. Tungsten (Z = 74) is the optimum choice here.\nFor mammography, other anode materials such as molybdenum (Z = 42) and rhodium (Z = 45) are frequently used. For such anodes, X ray spectra show less contribution by bremsstrahlung but rather dominant characteristic X rays of the anode materials. This allows a more satisfactory optimization of image quality and patient dose. In digital mammography, these advantages are less significant and some manufacturers prefer tungsten anodes.\n5.3.3.2. Line focus principle (anode angle)\nFor measurement purposes, the focal spot size is defined along the central beam projection. For high anode currents, the area of the anode hit by the electrons should be as large as possible, to keep the power density within acceptable limits. To balance the need for substantial heat dissipation with that of a small focal spot size, the line focus principle is used (Fig. 5.7(a)).\nFIG. 5.7. (a) Line focus principle: the length of the filament appears shortened in the beam direction; (b) graphic representation of the focal spot shape at different locations in the radiation field (anode angle 20°).\nvisual_relations: {\"Fig. 5.7(a)\": \"Schematic showing cathode filament, electron focus, effective focus (projected smaller than actual filament length), beam center, and anode angled relative to tube axis.\", \"Fig. 5.7(b)\": \"Grid of rectangular focal spot shapes across radiation field; horizontal axis labeled 'cathode side' to 'anode side', vertical axis labeled angles from 20° to 20° (symmetric); focal spots elongated and tilted, becoming more distorted toward edges; anode angle specified as 20°.\"}\nunits: Atomic number Z (dimensionless)\nAnode angle: degrees (°)\nuncertainties: Figure 5.7(b) y-axis labels appear mirrored or misaligned (e.g., '20°' at top and bottom, decreasing inward), suggesting possible printing artifact; exact interpretation of vertical axis requires context not fully visible.\nNo numerical values for focal spot size, power density, or temperatures are given—only qualitative descriptions.\nsummary: This textbook section (p. 96, Chapter 5, §5.3.3) discusses X-ray tube anode design. It explains that high-Z materials like tungsten (Z=74) are preferred for general radiography due to high bremsstrahlung yield and favorable thermal properties. For mammography, lower-Z materials (molybdenum Z=42, rhodium Z=45) are used to enhance characteristic X-rays and optimize image quality/dose, though tungsten is increasingly used in digital systems. The line focus principle is introduced to reconcile large electron impact area (for heat dissipation) with small effective focal spot (for image resolution), illustrated in Fig. 5.7: (a) shows geometric projection shortening of filament length, and (b) shows how focal spot shape varies across the radiation field at a 20° anode angle.",
+        "scores": {
+          "dense": 0.81873659016427,
+          "bm25": 34.30387821161894,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.9950751662254333
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p127:ce576f5724a9",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 127,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nhe specific heat and mass of the anode materials. Molybdenum is superior to \ntungsten in this respect. Increasing the mass of the anode (diameter, thickness) \nhas its limitations, as balancing the rotating anode becomes difficult for the \nwide range of temperatures occurring. Since graphite has a higher specific heat \nthan molybdenum or tungsten at higher temperatures, the heat capacity can be \nincreased by attaching graphite heat sinks to the back of the anode disc. Graphite \nenhances the dissipation of heat by black body thermal radiation.\nThe maximum permissible load for long or continuous exposures is \ndetermined by the effectiveness of heat removal from the anode ((D) in \nFig. 5.11). Most of the heat is removed by thermal radiation and absorbed in",
+        "scores": {
+          "dense": 0.7753760130121858,
+          "bm25": 22.73557221784612,
+          "rrf": 0.03055037313432836,
+          "weighted": 0.03055037313432836,
+          "rerank": 0.6810727119445801
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p41:4402e5b64cc0",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 41,
+        "type": "text",
+        "content": "e \nthat of the K shell (K edge). Thus, the major contribution to the cross-section \nabove the K edge comes from interactions with the two K shell electrons. The \ndiscontinuities in the tungsten cross-section at energies just greater than 10 keV \nrepresent the effect of the L shell, which is more complicated because it comprises \nthree subshells. The effect of the M shell shows up at about 2.5 keV with an even \nmore complex structure. For copper and molybdenum, the K absorption edges \nare at 8.98 and 20.00 keV, respectively.\nFIG. 2.1.  Atomic photoelectric cross-sections for copper (Cu), molybdenum (Mo) and \ntungsten (W).",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 21.606137553788383,
+          "rrf": 0.014492753623188406,
+          "weighted": 0.014492753623188406,
+          "rerank": 0.020709529519081116
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies the two core reasons from the reference: (1) high atomic number (Z=74) → high bremsstrahlung yield (∝ Z²), and (2) superior thermal properties (melting point, vapour pressure, heat conduction, specific heat, density). It further adds context not in the minimal reference but fully supported by the retrieved source (p.123): that Mo/Rh are used in mammography for characteristic X-rays, and that digital mammography is shifting toward W anodes. All quantitative values (Z numbers, melting points, Kα energies) match standard knowledge and are consistent with the source’s description of Mo/Z=42, Rh/Z=45, W/Z=74 and their respective spectral roles. The answer explicitly distinguishes common radiography (W preferred) from mammography (Mo/Rh historically preferred), which aligns precisely with the reference. Citations [1][2] refer to the single retrieved source (iaea_diagnostic_radiology_physics_2014.pdf, p.123), which fully supports all major claims. The image (Fig. 5.7) is correctly described in the source caption and referenced appropriately in the answer’s line-focus discussion, though the answer does not rely on the image for the *anode material* question—so image support is not required for the main claim, but the answer does not misrepresent it. No unsupported claims are made; all statements are either directly from or logically inferred from the source."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 12.82106558396481,
+    "usage": {
+      "input_tokens": 5231,
+      "output_tokens": 430
+    },
+    "cost_upper_cny": 0.017342,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

@@ -1,0 +1,140 @@
+# Copy this file to config.yaml for local development.
+# Keep config.yaml private: it may contain local paths or real API keys.
+
+active:
+  # hash/none keep the default setup runnable without downloading models.
+  # Switch to bge_small_zh and bge_base after placing models under models/.
+  embedding: hash
+  reranker: none
+  vector_store: qdrant
+  retrieval: hybrid
+  chunking: layout_heading
+  multimodal: true
+  chunk_size: 512
+  chunk_overlap: 50
+  top_k_retrieval: 10
+  top_k_rerank: 5
+
+paths:
+  data_dir: data
+  artifact_dir: artifacts
+  index_dir: artifacts/index
+
+vector_store:
+  # qdrant is the default. Set active.vector_store to faiss for the legacy
+  # file-backed baseline used in retrieval comparisons.
+  backend: qdrant
+  qdrant:
+    collection: medical_rag_evidence
+    # Leave url empty for embedded local persistence. For a Qdrant service,
+    # set this to e.g. http://localhost:6333 and optionally set QDRANT_API_KEY.
+    url: ""
+    api_key: ${QDRANT_API_KEY}
+    local_path: artifacts/qdrant
+
+llm:
+  api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+  api_key: ${DASHSCOPE_API_KEY}
+  model: qwen-plus
+  temperature: 0.1
+  max_tokens: 2048
+
+vision_captioner:
+  provider: dashscope
+  # Used by --captioner qwen.
+  model: models/Qwen3-VL-2B-Instruct
+  # Used by --captioner dashscope.
+  api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+  api_key: ${DASHSCOPE_API_KEY}
+  api_model: qwen-vl-plus
+  quantization: 4bit
+  max_workers: 4
+  max_images_per_page: 6
+  ocr_text_min_chars: 50
+  caption_prompt: "请用中文描述这张医学影像或教材图片，保留疾病、部位、序列、征象和图注信息。"
+  ocr_prompt: "请对这一页医学教材内容进行中文OCR，尽量保留标题、题号、选项、图注、表格和页内结构。"
+
+ocr:
+  provider: rapidocr_onnxruntime
+  cache_dir: artifacts/ocr
+  scale: 1.0
+  min_confidence: 0.5
+  use_cls: false
+
+image_caption_context:
+  max_chars: 900
+  max_chunks: 2
+
+embedding:
+  bge_small_zh:
+    provider: sentence_transformers
+    model: models/bge-small-zh-v1.5
+    device: auto
+
+reranker:
+  bge_base:
+    provider: sentence_transformers_cross_encoder
+    model: models/bge-reranker-base
+    device: auto
+
+retrieval:
+  naive:
+    top_k: 10
+  hybrid:
+    dense_top_k: 10
+    bm25_top_k: 10
+    fusion_method: rrf
+    final_top_k: 10
+  parent_child:
+    child_top_k: 20
+    parent_top_k: 5
+    child_chunk_size: 256
+    parent_chunk_size: 1024
+
+chunking:
+  layout_heading:
+    target_chars: 700
+    max_chars: 1200
+    min_chars: 120
+    preserve_headings: true
+    attach_nearby_captions: true
+    split_on:
+      - chapter
+      - section
+      - subsection
+      - paragraph
+  parent_child:
+    parent_target_chars: 1800
+    child_target_chars: 500
+    child_overlap_chars: 80
+  semantic:
+    target_chars: 700
+    similarity_threshold: 0.72
+    fallback_to_layout: true
+  fixed:
+    chunk_size: 512
+    chunk_overlap: 50
+  exercise_qa_pair:
+    enabled: true
+    question_section_markers:
+      - 习题
+      - 选择题
+      - 名词解释
+      - 简答题
+      - 病例分析
+    answer_section_markers:
+      - 参考答案
+      - 答案
+      - 解析
+      - 参考答案与解析
+    question_id_template: "{source_stem}:{chapter}:{question_number}"
+    one_question_per_chunk: true
+
+evaluation:
+  test_dataset: data/test_questions.json
+  metrics:
+    - recall
+    - precision
+    - mrr
+    - ndcg
+  dataset_generation: semi_auto

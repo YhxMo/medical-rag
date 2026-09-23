@@ -1,0 +1,16 @@
+{
+  "correctness": 0,
+  "completeness": 0,
+  "groundedness": 0,
+  "behavior_ok": false,
+  "refused": true,
+  "unsupported_claims": true,
+  "image_claims_supported": false,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer refuses to identify the QC test despite clear evidence in source [1] (p.194) and the provided image (p.184) showing that section 2.1.5 'Condition of cassettes and image plates' has frequency 'According to the supplier’s recommendations' and is immediately followed by 2.1.6 'AEC sensitivity' with frequency '1–3 months'. The table is contiguous with no intervening rows; the claim that adjacency cannot be confirmed is unsupported. The correct answer is directly evidenced, so refusal is unjustified."
+}

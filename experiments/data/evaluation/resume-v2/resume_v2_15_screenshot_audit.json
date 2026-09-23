@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The textual evidence from the source (iaea_radiology_quality_control_2023.pdf, page 145) explicitly states in section (e): 'To measure the noise, draw one larger ROI centred in the phantom with a diameter of about 40% of the phantom.' This matches the reference answer 'about 40%'. The provided screenshot (FIG. 49) visually confirms the layout described, including a large central ROI consistent with this description. No conflicting information is present."
+}

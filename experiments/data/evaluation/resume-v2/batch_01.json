@@ -1,0 +1,51 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "What is the maximum normal blood flow velocity at the entrance to the aorta, and what Doppler frequency range does this produce with megahertz transmit frequencies?",
+      "reference_answer": "About 1 m/s, producing Doppler frequencies of a few kilohertz at most.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10"
+      ],
+      "requires_visual": false,
+      "rationale": "The text explicitly states the maximum velocity (1 m/s) and the resulting Doppler frequency range ('a few kilohertz at most') using Eq. (12.18) and diagnostic ultrasound frequencies."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 12.5, what geometric feature determines which moving scatterers contribute to the measured Doppler spectrum?",
+      "reference_answer": "The area of intersection of the transmit and receive beams.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+        "visual_fd8576eb6df1a40547f9"
+      ],
+      "requires_visual": true,
+      "rationale": "The caption of Fig. 12.5 states that the spectrum includes contributions from all moving scatterers within the intersection area of the two beams; this requires inspecting the figure to identify the intersecting beam region (shaded diamond)."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the page layout and content, what does the x-axis of the time–frequency Doppler spectrum display represent, and how is the y-axis interpreted?",
+      "reference_answer": "The x-axis represents time; the y-axis represents temporal frequency, which can be rescaled to velocity using the Doppler equation.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9",
+        "visual_fd8576eb6df1a40547f9"
+      ],
+      "requires_visual": true,
+      "rationale": "The textual description across both source snippets defines the axes, but the question assumes the user sees the page (including Fig. 12.6 reference), and the answer depends on interpreting the labeled axes in the implied figure context—not just the caption alone."
+    },
+    {
+      "kind": "behavior",
+      "question": "A claim is made that 'CW Doppler devices can directly measure blood pressure using the demodulated Doppler signal.' Is this premise correct according to the provided text?",
+      "reference_answer": "No, the text does not support this; it describes measuring velocity via Doppler shift, not blood pressure.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:7d23073ddc10",
+        "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p330:5764d2adf8a9"
+      ],
+      "requires_visual": false,
+      "rationale": "The text repeatedly links Doppler signals to velocity estimation (via frequency shift and Doppler equation), with no mention of blood pressure measurement. The premise is false and refutable by the given content."
+    }
+  ]
+}

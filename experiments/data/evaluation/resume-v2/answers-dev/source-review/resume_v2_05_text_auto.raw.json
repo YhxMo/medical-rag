@@ -1,0 +1,20 @@
+{
+  "original_grade_reliable": true,
+  "material_unsupported_claims": [],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    },
+    {
+      "id": 2,
+      "supported": true
+    },
+    {
+      "id": 3,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "The image (FIG. 43) shows the physical MTF test tool but contains no numerical MTF data; the tolerance of ≤10% deviation is only in the accompanying text/caption, not visually derivable.",
+  "reason": "The answer correctly states the 10% maximum allowable deviation at 2.5, 5, and 7.5 cycles/mm, directly quoting section 4.2.11.5(b) from citation 1 and 2 (text and caption), and reinforcing with citation 3’s corrective action threshold (≥10% change triggers consultation). All three required citations explicitly support the claim. The answer accurately clarifies the deviation is relative and notes baseline establishment during commissioning—both consistent with the sources. No unsupported claims are made."
+}

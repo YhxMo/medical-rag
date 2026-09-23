@@ -1,0 +1,15 @@
+{
+  "original_grade_reliable": false,
+  "material_unsupported_claims": [
+    "The caption says 'right' but visual relations clarify it's left-of-center; we rely on visual relations",
+    "The image itself confirms this: the diamond-shaped bar-patterned object is on the left, the rectangular speckled object on the right"
+  ],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": true
+    }
+  ],
+  "visual_understanding": "Gold image shows diamond-shaped bar-patterned object on left, rectangular speckled object on right; caption text (FIG. 43) states 'MTF test tool (right)', contradicting visual layout.",
+  "reason": "The answer claims the image confirms the diamond object is on the left—but the answerer did NOT receive the original image (answer_received_originals=false), so they cannot assert what 'the image itself confirms'. That claim is unsupported. The only grounded evidence is Source 1’s visual_relations stating the diamond tool is 'left-of-center', and the caption saying '(right)'. The contradiction exists, but the answer invents visual confirmation. Initial grade incorrectly assumed image access. Groundedness should be reduced for unsupported visual claims."
+}

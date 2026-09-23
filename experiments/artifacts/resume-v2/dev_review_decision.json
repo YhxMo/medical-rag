@@ -1,0 +1,7 @@
+{
+  "decision": "freeze_system_and_report_observed_limitations",
+  "review_sha256": "16b85011d3f5d39db6163e5c24c5e5ce700aced405a8c44168fa5b85c07f5265",
+  "dataset_sha256": "554ee2b3273e680c15d2a7e4b1154c687ec04f8bfe6be9c6d990caf7153c6485",
+  "limitations": "Initial grades can be unreliable; publish review disagreements and no clinical accuracy claims.",
+  "answer_system_changed_after_dev": false
+}

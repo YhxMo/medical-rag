@@ -1,30 +1,17 @@
-"""测试本地配置加载。"""
-from __future__ import annotations
-
-import os
-
-from config import load_local_env
+from src.config.settings import load_settings
 
 
-def test_load_local_env_reads_dotenv_without_overriding_environment(
-    tmp_path,
-    monkeypatch,
-):
-    """本地.env可提供密钥，但不能覆盖已设置的环境变量。"""
-    env_file = tmp_path / ".env"
-    env_file.write_text(
-        "\n".join([
-            "# local secrets",
-            "DEEPSEEK_API_KEY=local-test-key",
-            "DEEPSEEK_MODEL=local-test-model",
-        ]),
-        encoding="utf-8",
+def test_environment_and_paths_are_resolved_relative_to_config(tmp_path, monkeypatch):
+    config = tmp_path / "config.yaml"
+    config.write_text(
+        "paths:\n  data_dir: inputs\nmodels:\n  text:\n    api_key: ${TEST_RAG_KEY}\n"
     )
-
-    monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
-    monkeypatch.setenv("DEEPSEEK_MODEL", "existing-model")
-
-    load_local_env(env_file)
-
-    assert os.environ["DEEPSEEK_API_KEY"] == "local-test-key"
-    assert os.environ["DEEPSEEK_MODEL"] == "existing-model"
+    monkeypatch.setenv("TEST_RAG_KEY", "local-only")
+    settings = load_settings(config)
+    monkeypatch.chdir(tmp_path.parent)
+    assert settings.get("models", "text", "api_key") == "local-only"
+    assert settings.resolve_path("paths", "data_dir", default="data") == tmp_path / "inputs"
+    assert (
+        settings.resolve_path("paths", "artifact_dir", default="artifacts")
+        == tmp_path / "artifacts"
+    )

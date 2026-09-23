@@ -1,0 +1,3422 @@
+[
+  {
+    "id": "public_v1_s001",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.37036033417098224,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5999,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p30:2416b17d8749",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p62:ceb7edd64a87",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p65:4c40cab2a43c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p66:87ca7815b5da",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p528:8ec532895b40"
+    ]
+  },
+  {
+    "id": "public_v1_s002",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.028690250124782324,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5998,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p57:5996d4e1a0ff",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p56:480ed9b72bcf",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p72:e5ca0c2eb199",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p57:3f44acb6d97e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:b7acca84f016"
+    ]
+  },
+  {
+    "id": "public_v1_s003",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02778458409011364,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5507,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p88:f20f25acc829",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p195:791747794d52",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p88:2d1382565481",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p89:53f3a31c4e8d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p99:e6d82a9f3af5"
+    ]
+  },
+  {
+    "id": "public_v1_s004",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.04094308312050998,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5997,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p117:7946324c0a93",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p116:c8e28c182986",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p34:1875f4b0fa05",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p120:d480ede5bcf0",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p56:f230ef38e193"
+    ]
+  },
+  {
+    "id": "public_v1_s005",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02925995783880353,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4336,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p145:d32972790c44",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p496:80ed0ca4944d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p146:43347274e688",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p145:7a3bcb5a3efa",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p90:e279bf2b5e02"
+    ]
+  },
+  {
+    "id": "public_v1_s006",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.03068816685117781,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 4420,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p174:8c5df7efaf5b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p39:da438521723d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p174:0a23bb38d332",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p51:121e4b27f1d5",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p54:474818d8322e"
+    ]
+  },
+  {
+    "id": "public_v1_s007",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.024517999961972237,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 5149,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p5:4ffec210797b",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p211:6f73cfd5d356",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p12:f2da7657f0eb",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p103:94ef6527512e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570"
+    ]
+  },
+  {
+    "id": "public_v1_s008",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02582758292555809,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 6000,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p2:32828581f59f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p550:089d33712cf4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p7:4827c2bc2579",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p646:1cd82b4b0288"
+    ]
+  },
+  {
+    "id": "public_v1_s009",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026213916018605232,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5327,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p262:f8ca99a411e2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p264:2afabc63dee3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:04638cca6f00",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p578:0f264972cc57",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p579:d04afa31c7b0"
+    ]
+  },
+  {
+    "id": "public_v1_s010",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.044021917041391134,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5194,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p293:6fb2f42e67af",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p290:46850d7539f6",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p288:e6234db8c0f2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p292:462407175477",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p284:43cac264cd90"
+    ]
+  },
+  {
+    "id": "public_v1_s011",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.027910291915759444,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5999,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p324:a50470a2154d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p323:cb56668d48df",
+      "msf_ultrasound_manual_2018.pdf:fixed:p134:45b738fa3df0",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p51:cbaeb9904c7f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p54:8643b5273006"
+    ]
+  },
+  {
+    "id": "public_v1_s012",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02679258305579424,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5605,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p353:f02d2c70eb9e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:fa00e2c562b7",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p351:2647ac073bb3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:b8f61169e7e2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:f55fc3498f6c"
+    ]
+  },
+  {
+    "id": "public_v1_s013",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026285958010703325,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5279,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p381:a812501d719e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p381:102af5e51181",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p402:e1cb69f2ec61",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p382:cda522e38ccd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p402:f181fefac554"
+    ]
+  },
+  {
+    "id": "public_v1_s014",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02501774998381734,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5599,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p410:02c41b216bd4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p409:eee45ee3bde8",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p409:bd882b6b2c4b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p310:ebd85d1cc470",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p408:519136c50352"
+    ]
+  },
+  {
+    "id": "public_v1_s015",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.04981595813296735,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5617,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p438:f6ef56938416",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p6:b42d49883fbb",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p6:fd0bfb145fd1",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p439:4774433a9c38"
+    ]
+  },
+  {
+    "id": "public_v1_s016",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026564541971310973,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5966,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p468:6eaf91ea9aab",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p467:d63eaeb78f2c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p20:5be45acdcc21",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p465:0d119b7d75a6",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p475:9fdeab210c37"
+    ]
+  },
+  {
+    "id": "public_v1_s017",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02877612505108118,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5387,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p497:e868f9ef8f1c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p498:77b0d580f170",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p497:80f1f3aa1980",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p498:23c67c233203",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p422:8109e944b878"
+    ]
+  },
+  {
+    "id": "public_v1_s018",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.028591958107426763,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5998,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p530:3f82fc8d044f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p530:c6caecea64dd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p529:a78d4f2d3483",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p531:ecf0db9b4b67",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p528:263f0accbd54"
+    ]
+  },
+  {
+    "id": "public_v1_s019",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.027317000087350607,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.2,
+      "ndcg": 0.38685280723454163
+    },
+    "context_chars": 6000,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p71:85ae5688c399",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p555:b503db613799",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p553:c94fdc367dfd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p559:1fefc143a52c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p560:d2b6d4d79b12"
+    ]
+  },
+  {
+    "id": "public_v1_s020",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.027812917018309236,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5823,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p590:185918ac030a",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p590:f0a7175465b3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p614:2041dfd2518c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p595:0428210b4336"
+    ]
+  },
+  {
+    "id": "public_v1_s021",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.042314625112339854,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 6000,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p20:f22b8441b729",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p57:8e886113c92f",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p73:fe2e5091ad88",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p97:84cbeb2d93db"
+    ]
+  },
+  {
+    "id": "public_v1_s022",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.0288183749653399,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4760,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p29:e4e3a6a02c06",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p103:4d6b81f81e84",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p28:4c5e06f224f1",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p273:6bf7b79f72dc",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p154:513b58d91c24"
+    ]
+  },
+  {
+    "id": "public_v1_s024",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026131249964237213,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5036,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p43:d99f34eb5329",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p46:d59d9c8140e8",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p59:1d3008424d4d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p84:94f10d1170f7",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p78:46d3e932658a"
+    ]
+  },
+  {
+    "id": "public_v1_s025",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.024715916952118278,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 4741,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p126:0c9cc2e9ac98",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:5d8dd900ca9e",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:8f316b8c8826",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p98:e314a92fb13d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p56:d733911397d1"
+    ]
+  },
+  {
+    "id": "public_v1_s026",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026222333079203963,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 4968,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:0e41315f2ea1",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p63:babdae026837",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p117:666d1447595b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p629:5dcb44f03efb"
+    ]
+  },
+  {
+    "id": "public_v1_s027",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.0460974161978811,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 6000,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p66:60ae695587cf",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p26:9c0cc31c8da9",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p6:07123108f368",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p22:3926936c93f6"
+    ]
+  },
+  {
+    "id": "public_v1_s029",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.025115749798715115,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 3588,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p88:13c48c160f77",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p88:922dbf56659f",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p87:0ae0cf079852",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p87:046961c86dc4",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p91:ffdb809d315c"
+    ]
+  },
+  {
+    "id": "public_v1_s030",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02541237510740757,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5645,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p98:090d66b4aff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p99:4a7254aa47bd",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p201:bbe99ccb0444",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p100:b041054ac807"
+    ]
+  },
+  {
+    "id": "public_v1_s031",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02544712508097291,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5500,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p106:6ca76e2e8dea",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p35:4ee79a83f923",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p98:090d66b4aff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p108:87ba6c682f7f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p552:30fea9c60a02"
+    ]
+  },
+  {
+    "id": "public_v1_s032",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.028778458014130592,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5439,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p115:f70421441bd9",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p136:e39f1f4fdefe",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p198:5d7738d43077",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p114:7b234b49d6a2"
+    ]
+  },
+  {
+    "id": "public_v1_s033",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.024344915989786386,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5414,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p123:abc2ab143c0c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p92:62792cf37369",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p19:0541d34677c4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p247:266f1368684c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p69:173d3029ebeb"
+    ]
+  },
+  {
+    "id": "public_v1_s034",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.0431573330424726,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5000,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p132:3552c7d363f2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p73:fe2e5091ad88",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:fa9a27938051",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:43b8e376ab57",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p129:853a339f3fa0"
+    ]
+  },
+  {
+    "id": "public_v1_s035",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.022502582985907793,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4568,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:2ef1be1064a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:8fcd4367fff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p13:ad68d810bf08",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p141:a790e550176d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p14:39a7213df113"
+    ]
+  },
+  {
+    "id": "public_v1_s036",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02652358287014067,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5073,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p148:90974fd193c2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p144:8957eb01497d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p311:ddb188d8aea8",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p139:565bcbece851",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p307:5d6d6e1becfb"
+    ]
+  },
+  {
+    "id": "public_v1_s037",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026048416970297694,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4842,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p157:df41e6458a77",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p142:314ac592e176",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p312:043ac5552517",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p158:b8a1504b097d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p303:4d5a24fbd6f7"
+    ]
+  },
+  {
+    "id": "public_v1_s038",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02607487514615059,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5649,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p165:72979b201448",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:d61183db8319",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p166:e10d419ddef6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:5d8dd900ca9e",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p172:5f3fba7d6ddd"
+    ]
+  },
+  {
+    "id": "public_v1_s039",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026910708053037524,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 4914,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:d61183db8319",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p174:000dd912d165",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p166:e10d419ddef6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p165:72979b201448",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:c3e523035721"
+    ]
+  },
+  {
+    "id": "public_v1_s040",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.04047883301973343,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 5083,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p181:a3bc33543027",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p274:9737ca770550",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:04638cca6f00",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p513:28aa37a44821",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:b7acca84f016"
+    ]
+  },
+  {
+    "id": "public_v1_s041",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026098083006218076,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 3579,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:cde0b037a9f1",
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:4a53f076d077",
+      "msf_ultrasound_manual_2018.pdf:fixed:p23:08efe9e0d841",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p318:d9a5918afa89",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p349:a49da986ac84"
+    ]
+  },
+  {
+    "id": "public_v1_s042",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.026648125145584345,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4555,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p36:a3157cf89050",
+      "msf_ultrasound_manual_2018.pdf:fixed:p35:a93e287170d5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:9c045b043669",
+      "msf_ultrasound_manual_2018.pdf:fixed:p171:7ef5adf29bd8",
+      "msf_ultrasound_manual_2018.pdf:fixed:p195:ae22499586ee"
+    ]
+  },
+  {
+    "id": "public_v1_s043",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02315675001591444,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5172,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p50:993e54a377f4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p18:7af24fd003ad",
+      "msf_ultrasound_manual_2018.pdf:fixed:p44:e93fd9e54fcd",
+      "msf_ultrasound_manual_2018.pdf:fixed:p19:c85612a24a97",
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:4a53f076d077"
+    ]
+  },
+  {
+    "id": "public_v1_s044",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.025503541808575392,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5150,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p66:5ce7dc470947",
+      "msf_ultrasound_manual_2018.pdf:fixed:p64:48480d629939",
+      "msf_ultrasound_manual_2018.pdf:fixed:p130:d345f99f6851",
+      "msf_ultrasound_manual_2018.pdf:fixed:p65:8f30b6707579",
+      "msf_ultrasound_manual_2018.pdf:fixed:p131:8dc7ace8f95a"
+    ]
+  },
+  {
+    "id": "public_v1_s046",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.046094957971945405,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 5705,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:e50909d9512d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:8cf2f0d8b344",
+      "msf_ultrasound_manual_2018.pdf:fixed:p92:9ac930d01b9a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:32f2db0dd262",
+      "msf_ultrasound_manual_2018.pdf:fixed:p95:10ccb804cc9d"
+    ]
+  },
+  {
+    "id": "public_v1_s047",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.0275884170550853,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 4199,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p171:ffd6fd3cc0ab",
+      "msf_ultrasound_manual_2018.pdf:fixed:p323:af0d9404c825",
+      "msf_ultrasound_manual_2018.pdf:fixed:p195:f47b115c096c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p207:e3fcc573f88a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p141:512649748bcc"
+    ]
+  },
+  {
+    "id": "public_v1_s048",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.031513874884694815,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4248,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p115:5cca0a945f9d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p119:e7758e78ea73",
+      "msf_ultrasound_manual_2018.pdf:fixed:p117:3ff961a5ae1f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p105:eecb0caeb508",
+      "msf_ultrasound_manual_2018.pdf:fixed:p118:e32e434fb170"
+    ]
+  },
+  {
+    "id": "public_v1_s049",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02771958289667964,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 4720,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p123:b1516cd7a1b5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p127:aebf15f69c27",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:d134d1a9ce1b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:9c045b043669",
+      "msf_ultrasound_manual_2018.pdf:fixed:p35:a93e287170d5"
+    ]
+  },
+  {
+    "id": "public_v1_s050",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02733508311212063,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5708,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p140:a1dd8fe98938",
+      "msf_ultrasound_manual_2018.pdf:fixed:p139:fd50b98eab40",
+      "msf_ultrasound_manual_2018.pdf:fixed:p137:264fadaaa87b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p148:3a22e9131b46",
+      "msf_ultrasound_manual_2018.pdf:fixed:p142:dc118e1c2328"
+    ]
+  },
+  {
+    "id": "public_v1_s051",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02779441699385643,
+    "metrics": {
+      "hit": 1,
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.5855700749881525
+    },
+    "context_chars": 6000,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p152:dd57aacaac72",
+      "msf_ultrasound_manual_2018.pdf:fixed:p162:b64fa6289ff6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p152:edaedb122287",
+      "msf_ultrasound_manual_2018.pdf:fixed:p159:ef767619946b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p153:3423fd971754"
+    ]
+  },
+  {
+    "id": "public_v1_s052",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.0474049171898514,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5998,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p167:937f6d6fb072",
+      "msf_ultrasound_manual_2018.pdf:fixed:p168:a899c650a1b4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p4:039c1883d722",
+      "msf_ultrasound_manual_2018.pdf:fixed:p164:5a0c5541e486",
+      "msf_ultrasound_manual_2018.pdf:fixed:p52:bff5c622fe3f"
+    ]
+  },
+  {
+    "id": "public_v1_s053",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.028530834009870887,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5236,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p179:1863b9a838da",
+      "msf_ultrasound_manual_2018.pdf:fixed:p328:810c2e1fc9fc",
+      "msf_ultrasound_manual_2018.pdf:fixed:p4:039c1883d722",
+      "msf_ultrasound_manual_2018.pdf:fixed:p181:1a2c015f145d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p4:74bb34ce9f6f"
+    ]
+  },
+  {
+    "id": "public_v1_s054",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.03050662507303059,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5999,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p194:cc338d68bb93",
+      "msf_ultrasound_manual_2018.pdf:fixed:p294:3969361cfc74",
+      "msf_ultrasound_manual_2018.pdf:fixed:p4:039c1883d722",
+      "msf_ultrasound_manual_2018.pdf:fixed:p52:17af228d06b0",
+      "msf_ultrasound_manual_2018.pdf:fixed:p251:41fe9a33112b"
+    ]
+  },
+  {
+    "id": "public_v1_s055",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.02653179201297462,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5891,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p206:4fa5dbe989e8",
+      "msf_ultrasound_manual_2018.pdf:fixed:p130:d345f99f6851",
+      "msf_ultrasound_manual_2018.pdf:fixed:p207:8501b12040be",
+      "msf_ultrasound_manual_2018.pdf:fixed:p131:8dc7ace8f95a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p295:e7c19c9eb43d"
+    ]
+  },
+  {
+    "id": "public_v1_s056",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.023439166834577918,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5996,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:8714f684557a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:4834a1a8342e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p225:db77d45cb2e5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p229:bad60004caf9",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:bccc46f29e11"
+    ]
+  },
+  {
+    "id": "public_v1_s057",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.04112199996598065,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5847,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p237:503694552e2e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p44:097d27bc9c60",
+      "msf_ultrasound_manual_2018.pdf:fixed:p122:5a8cbf595056",
+      "msf_ultrasound_manual_2018.pdf:fixed:p122:395e8b492e65",
+      "msf_ultrasound_manual_2018.pdf:fixed:p187:0697c87f8928"
+    ]
+  },
+  {
+    "id": "public_v1_s058",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.025606832932680845,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4170,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:76b174fee56a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p257:87b5bea77893",
+      "msf_ultrasound_manual_2018.pdf:fixed:p260:fdfbbdcce650",
+      "msf_ultrasound_manual_2018.pdf:fixed:p254:2ad2b3dd68fb",
+      "msf_ultrasound_manual_2018.pdf:fixed:p258:a26df079197a"
+    ]
+  },
+  {
+    "id": "public_v1_s059",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.022262874990701675,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5056,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p268:527913ab1dfa",
+      "msf_ultrasound_manual_2018.pdf:fixed:p263:bd548ac64da6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p267:fd1d0ccdc807",
+      "msf_ultrasound_manual_2018.pdf:fixed:p261:9f462aa2f003",
+      "msf_ultrasound_manual_2018.pdf:fixed:p272:f2ad0415f013"
+    ]
+  },
+  {
+    "id": "public_v1_s060",
+    "strategy": "baseline",
+    "status": "ok",
+    "seconds": 0.024007249856367707,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4487,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p284:d61fb4390685",
+      "msf_ultrasound_manual_2018.pdf:fixed:p133:28d075a1809a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p285:f288033a72c6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p283:e4e5c1162874",
+      "msf_ultrasound_manual_2018.pdf:fixed:p286:f8cdf28b9b49"
+    ]
+  },
+  {
+    "id": "public_v1_s001",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.21528870915062726,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5505,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p30:2416b17d8749",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p62:ceb7edd64a87",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p66:87ca7815b5da",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p65:4c40cab2a43c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p528:fb1304b4188d"
+    ]
+  },
+  {
+    "id": "public_v1_s002",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.031722042011097074,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5554,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p57:5996d4e1a0ff",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p56:480ed9b72bcf",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p72:e5ca0c2eb199",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p57:3f44acb6d97e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p57:56e00fd8c53f"
+    ]
+  },
+  {
+    "id": "public_v1_s003",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.030120166018605232,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5670,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p88:f20f25acc829",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p195:791747794d52",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p88:2d1382565481",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p89:53f3a31c4e8d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p99:e6d82a9f3af5"
+    ]
+  },
+  {
+    "id": "public_v1_s004",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.027110000140964985,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 5655,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p117:7946324c0a93",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p34:1875f4b0fa05",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p116:c8e28c182986",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p120:d480ede5bcf0",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p116:0266f46c08c8"
+    ]
+  },
+  {
+    "id": "public_v1_s005",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03257824992761016,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5258,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p145:d32972790c44",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p146:43347274e688",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p496:80ed0ca4944d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p90:e279bf2b5e02",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p154:75e3c2af58e3"
+    ]
+  },
+  {
+    "id": "public_v1_s006",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.05134954093955457,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 4287,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p174:8c5df7efaf5b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p174:0a23bb38d332",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p39:da438521723d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p54:474818d8322e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p674:20223a83fcd9"
+    ]
+  },
+  {
+    "id": "public_v1_s007",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.029169665882363915,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 5231,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p5:4ffec210797b",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p12:f2da7657f0eb",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p103:94ef6527512e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p209:995aaad2c5a2"
+    ]
+  },
+  {
+    "id": "public_v1_s008",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028889999957755208,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 5134,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p2:32828581f59f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p550:089d33712cf4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p7:4827c2bc2579",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p4:b90af7115f0e"
+    ]
+  },
+  {
+    "id": "public_v1_s009",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.02897624997422099,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5502,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p262:f8ca99a411e2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:04638cca6f00",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p264:2afabc63dee3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p578:0f264972cc57",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p579:d04afa31c7b0"
+    ]
+  },
+  {
+    "id": "public_v1_s010",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03124520881101489,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5369,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p293:6fb2f42e67af",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p290:46850d7539f6",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p288:e6234db8c0f2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p292:462407175477",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p284:43cac264cd90"
+    ]
+  },
+  {
+    "id": "public_v1_s011",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.04758083401247859,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5518,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p324:a50470a2154d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p51:cbaeb9904c7f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p20:5614d7259572",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p53:4c0ed73af874",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p323:cb56668d48df"
+    ]
+  },
+  {
+    "id": "public_v1_s012",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03025300009176135,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5318,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p353:f02d2c70eb9e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:fa00e2c562b7",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p351:2647ac073bb3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:b8f61169e7e2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p351:1093b7dcc453"
+    ]
+  },
+  {
+    "id": "public_v1_s013",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.030423625139519572,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5454,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p381:a812501d719e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p381:102af5e51181",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p402:e1cb69f2ec61",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p382:cda522e38ccd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p401:fcec0e06a8fd"
+    ]
+  },
+  {
+    "id": "public_v1_s014",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028154124971479177,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5774,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p410:02c41b216bd4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p409:eee45ee3bde8",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p408:519136c50352",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p409:bd882b6b2c4b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p310:ebd85d1cc470"
+    ]
+  },
+  {
+    "id": "public_v1_s015",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.048673374811187387,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4876,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p438:f6ef56938416",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p6:fd0bfb145fd1",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p6:b42d49883fbb",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:24847de32a9e"
+    ]
+  },
+  {
+    "id": "public_v1_s016",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.029194584116339684,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5887,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p468:6eaf91ea9aab",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p467:d63eaeb78f2c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p465:0d119b7d75a6",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p20:5be45acdcc21",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p469:e046a5d2689a"
+    ]
+  },
+  {
+    "id": "public_v1_s017",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.030693666078150272,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5562,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p497:e868f9ef8f1c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p498:77b0d580f170",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p497:80f1f3aa1980",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p498:23c67c233203",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p500:f05cf53b70e1"
+    ]
+  },
+  {
+    "id": "public_v1_s018",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.031586374854668975,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5436,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p530:3f82fc8d044f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p530:c6caecea64dd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p529:a78d4f2d3483",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p531:ecf0db9b4b67",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p529:1254a89c19f9"
+    ]
+  },
+  {
+    "id": "public_v1_s019",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.027898832922801375,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 5492,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p71:85ae5688c399",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p555:b503db613799",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p560:d2b6d4d79b12",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p553:c94fdc367dfd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p553:694ba36106c1"
+    ]
+  },
+  {
+    "id": "public_v1_s020",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.04936525016091764,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5963,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p590:185918ac030a",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p590:f0a7175465b3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p602:de880044648c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p613:d0ffac4c8be6"
+    ]
+  },
+  {
+    "id": "public_v1_s021",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.029013457940891385,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5726,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p20:f22b8441b729",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p73:fe2e5091ad88",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p97:84cbeb2d93db",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p100:f6f1afef07cd"
+    ]
+  },
+  {
+    "id": "public_v1_s022",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.032665790989995,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5656,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p29:e4e3a6a02c06",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p103:4d6b81f81e84",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p27:057a8a7f02f0",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p32:f0d2786d55ec",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p67:6a555c14b563"
+    ]
+  },
+  {
+    "id": "public_v1_s024",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.030099333031103015,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 5150,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p43:d99f34eb5329",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p59:1d3008424d4d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p46:d59d9c8140e8",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p79:0204ac306fe1",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p78:46d3e932658a"
+    ]
+  },
+  {
+    "id": "public_v1_s025",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.027753375004976988,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5204,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p126:0c9cc2e9ac98",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:5d8dd900ca9e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p98:e314a92fb13d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:8f316b8c8826",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p128:6cd6490e8329"
+    ]
+  },
+  {
+    "id": "public_v1_s026",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.04870945820584893,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5211,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p63:babdae026837",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:0e41315f2ea1",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p117:666d1447595b",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p162:ca8022ee425c"
+    ]
+  },
+  {
+    "id": "public_v1_s027",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.06639995891600847,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5920,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p66:60ae695587cf",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p6:07123108f368",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p22:3926936c93f6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p62:377709e9ac77"
+    ]
+  },
+  {
+    "id": "public_v1_s029",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028264000080525875,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 4034,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p88:922dbf56659f",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p88:13c48c160f77",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p87:0ae0cf079852",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p91:ffdb809d315c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p144:2c2b411f9b1c"
+    ]
+  },
+  {
+    "id": "public_v1_s030",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028610375011339784,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5895,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p98:090d66b4aff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p99:4a7254aa47bd",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p201:bbe99ccb0444",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p100:b041054ac807",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3"
+    ]
+  },
+  {
+    "id": "public_v1_s031",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028814333025366068,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5633,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p106:6ca76e2e8dea",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p35:4ee79a83f923",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p38:6f3898277bac",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p37:43681cd11d41"
+    ]
+  },
+  {
+    "id": "public_v1_s032",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.04810633393935859,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5587,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p115:f70421441bd9",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p136:e39f1f4fdefe",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p198:5d7738d43077",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p135:5cc1ac5141a5"
+    ]
+  },
+  {
+    "id": "public_v1_s033",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.027275542030110955,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5643,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p123:abc2ab143c0c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p92:62792cf37369",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p69:173d3029ebeb",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p247:266f1368684c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p19:0541d34677c4"
+    ]
+  },
+  {
+    "id": "public_v1_s034",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.02904883399605751,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5250,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p132:3552c7d363f2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p73:fe2e5091ad88",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:43b8e376ab57",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:fa9a27938051",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p20:f22b8441b729"
+    ]
+  },
+  {
+    "id": "public_v1_s035",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.026856624986976385,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4798,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:2ef1be1064a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p13:ad68d810bf08",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:8fcd4367fff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p141:a790e550176d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p14:39a7213df113"
+    ]
+  },
+  {
+    "id": "public_v1_s036",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.04754679091274738,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5496,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p144:8957eb01497d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p148:90974fd193c2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p144:2c2b411f9b1c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:8fcd4367fff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p139:565bcbece851"
+    ]
+  },
+  {
+    "id": "public_v1_s037",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.02886604191735387,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4821,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p157:df41e6458a77",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p312:043ac5552517",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p303:4d5a24fbd6f7",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p156:44e88bc203df",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p142:314ac592e176"
+    ]
+  },
+  {
+    "id": "public_v1_s038",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.02988687506876886,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5894,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p165:72979b201448",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:d61183db8319",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p166:e10d419ddef6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:5d8dd900ca9e",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p172:5f3fba7d6ddd"
+    ]
+  },
+  {
+    "id": "public_v1_s039",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03278954210691154,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5128,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:d61183db8319",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p174:000dd912d165",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p166:e10d419ddef6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:c3e523035721",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p165:72979b201448"
+    ]
+  },
+  {
+    "id": "public_v1_s040",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.0288440000731498,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 5269,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p181:a3bc33543027",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p274:9737ca770550",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p513:28aa37a44821",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:04638cca6f00",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:b7acca84f016"
+    ]
+  },
+  {
+    "id": "public_v1_s041",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.048021042020991445,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4000,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:cde0b037a9f1",
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:4a53f076d077",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p349:a49da986ac84",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p318:d9a5918afa89",
+      "msf_ultrasound_manual_2018.pdf:fixed:p23:08efe9e0d841"
+    ]
+  },
+  {
+    "id": "public_v1_s042",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.031021167058497667,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5113,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p36:a3157cf89050",
+      "msf_ultrasound_manual_2018.pdf:fixed:p35:a93e287170d5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:9c045b043669",
+      "msf_ultrasound_manual_2018.pdf:fixed:p195:ae22499586ee",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:d134d1a9ce1b"
+    ]
+  },
+  {
+    "id": "public_v1_s043",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.027315540937706828,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5773,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p50:993e54a377f4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p18:7af24fd003ad",
+      "msf_ultrasound_manual_2018.pdf:fixed:p19:c85612a24a97",
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:4a53f076d077",
+      "msf_ultrasound_manual_2018.pdf:fixed:p44:e93fd9e54fcd"
+    ]
+  },
+  {
+    "id": "public_v1_s044",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028811541851609945,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5559,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p66:5ce7dc470947",
+      "msf_ultrasound_manual_2018.pdf:fixed:p64:48480d629939",
+      "msf_ultrasound_manual_2018.pdf:fixed:p130:d345f99f6851",
+      "msf_ultrasound_manual_2018.pdf:fixed:p65:8f30b6707579",
+      "msf_ultrasound_manual_2018.pdf:fixed:p65:b8c12383c1b1"
+    ]
+  },
+  {
+    "id": "public_v1_s046",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03309074998833239,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    },
+    "context_chars": 5618,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:e50909d9512d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:8cf2f0d8b344",
+      "msf_ultrasound_manual_2018.pdf:fixed:p92:9ac930d01b9a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:32f2db0dd262",
+      "msf_ultrasound_manual_2018.pdf:fixed:p93:4f1f2e896af2"
+    ]
+  },
+  {
+    "id": "public_v1_s047",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.05010766698978841,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 4872,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p195:f47b115c096c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p171:ffd6fd3cc0ab",
+      "msf_ultrasound_manual_2018.pdf:fixed:p141:512649748bcc",
+      "msf_ultrasound_manual_2018.pdf:fixed:p260:4dfc9900c8ee",
+      "msf_ultrasound_manual_2018.pdf:fixed:p276:b18a548cf675"
+    ]
+  },
+  {
+    "id": "public_v1_s048",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03549199993722141,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4745,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p115:5cca0a945f9d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p119:e7758e78ea73",
+      "msf_ultrasound_manual_2018.pdf:fixed:p117:3ff961a5ae1f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p105:eecb0caeb508",
+      "msf_ultrasound_manual_2018.pdf:fixed:p116:03a774aae9d4"
+    ]
+  },
+  {
+    "id": "public_v1_s049",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.031245124991983175,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5353,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p123:b1516cd7a1b5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p127:aebf15f69c27",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:e7babea13a7c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:9c045b043669",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:d134d1a9ce1b"
+    ]
+  },
+  {
+    "id": "public_v1_s050",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.031942541943863034,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5940,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p140:a1dd8fe98938",
+      "msf_ultrasound_manual_2018.pdf:fixed:p139:fd50b98eab40",
+      "msf_ultrasound_manual_2018.pdf:fixed:p137:264fadaaa87b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p142:dc118e1c2328",
+      "msf_ultrasound_manual_2018.pdf:fixed:p139:d23db8899d3e"
+    ]
+  },
+  {
+    "id": "public_v1_s051",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03126120800152421,
+    "metrics": {
+      "hit": 1,
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.5855700749881525
+    },
+    "context_chars": 5597,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p152:dd57aacaac72",
+      "msf_ultrasound_manual_2018.pdf:fixed:p162:b64fa6289ff6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p153:0a4bb4a4dd2e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p153:3423fd971754",
+      "msf_ultrasound_manual_2018.pdf:fixed:p158:c6ad04e22fa4"
+    ]
+  },
+  {
+    "id": "public_v1_s052",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.05067616607993841,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5557,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p167:937f6d6fb072",
+      "msf_ultrasound_manual_2018.pdf:fixed:p168:a899c650a1b4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p164:5a0c5541e486",
+      "msf_ultrasound_manual_2018.pdf:fixed:p53:0a9800d0cc91",
+      "msf_ultrasound_manual_2018.pdf:fixed:p169:a38c99fa96fe"
+    ]
+  },
+  {
+    "id": "public_v1_s053",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03191608400084078,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5336,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p179:1863b9a838da",
+      "msf_ultrasound_manual_2018.pdf:fixed:p179:e0bf6da1cf46",
+      "msf_ultrasound_manual_2018.pdf:fixed:p328:810c2e1fc9fc",
+      "msf_ultrasound_manual_2018.pdf:fixed:p41:eb7b3ac3e66f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p7:78dcdcb3ad36"
+    ]
+  },
+  {
+    "id": "public_v1_s054",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.03387366607785225,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5499,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p194:cc338d68bb93",
+      "msf_ultrasound_manual_2018.pdf:fixed:p294:3969361cfc74",
+      "msf_ultrasound_manual_2018.pdf:fixed:p251:41fe9a33112b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p12:482d583f5e0f",
+      "msf_ultrasound_manual_2018.pdf:fixed:p7:a9f66f516b6c"
+    ]
+  },
+  {
+    "id": "public_v1_s055",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.030626958003267646,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5596,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p206:4fa5dbe989e8",
+      "msf_ultrasound_manual_2018.pdf:fixed:p130:d345f99f6851",
+      "msf_ultrasound_manual_2018.pdf:fixed:p131:8dc7ace8f95a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p129:081cdb762c42",
+      "msf_ultrasound_manual_2018.pdf:fixed:p206:96311f6a9d9a"
+    ]
+  },
+  {
+    "id": "public_v1_s056",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.04539229185320437,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5941,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:8714f684557a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:4834a1a8342e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:5bd131699ef1",
+      "msf_ultrasound_manual_2018.pdf:fixed:p225:db77d45cb2e5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:bccc46f29e11"
+    ]
+  },
+  {
+    "id": "public_v1_s057",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.02878295909613371,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5590,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p237:503694552e2e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p122:5a8cbf595056",
+      "msf_ultrasound_manual_2018.pdf:fixed:p44:097d27bc9c60",
+      "msf_ultrasound_manual_2018.pdf:fixed:p122:395e8b492e65",
+      "msf_ultrasound_manual_2018.pdf:fixed:p238:3afed75b4e8b"
+    ]
+  },
+  {
+    "id": "public_v1_s058",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.028888791101053357,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5543,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:76b174fee56a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p257:87b5bea77893",
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:4dcea9b9ceeb",
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:83475295f63d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p260:fdfbbdcce650"
+    ]
+  },
+  {
+    "id": "public_v1_s059",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.026147583033889532,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5470,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p268:527913ab1dfa",
+      "msf_ultrasound_manual_2018.pdf:fixed:p263:bd548ac64da6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p267:fd1d0ccdc807",
+      "msf_ultrasound_manual_2018.pdf:fixed:p261:9f462aa2f003",
+      "msf_ultrasound_manual_2018.pdf:fixed:p272:f2ad0415f013"
+    ]
+  },
+  {
+    "id": "public_v1_s060",
+    "strategy": "chapter",
+    "status": "ok",
+    "seconds": 0.02709404192864895,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4936,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p284:d61fb4390685",
+      "msf_ultrasound_manual_2018.pdf:fixed:p133:28d075a1809a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p132:151803253c1a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p285:f288033a72c6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p283:e4e5c1162874"
+    ]
+  },
+  {
+    "id": "public_v1_s001",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 2.4356477921828628,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5495,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p30:2416b17d8749",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p66:87ca7815b5da",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p528:8ec532895b40",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p528:fb1304b4188d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p62:ceb7edd64a87"
+    ]
+  },
+  {
+    "id": "public_v1_s002",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.651256041135639,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5917,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p57:5996d4e1a0ff",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p59:c2ce674db42b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p58:2bb8453cf404",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p56:480ed9b72bcf"
+    ]
+  },
+  {
+    "id": "public_v1_s003",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.3762715000193566,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5674,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p88:f20f25acc829",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p88:2d1382565481",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p195:791747794d52",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p89:53f3a31c4e8d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p203:1d08881c3d5d"
+    ]
+  },
+  {
+    "id": "public_v1_s004",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.6871380421798676,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5286,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p116:c8e28c182986",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p117:7946324c0a93",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p56:f230ef38e193",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p120:d480ede5bcf0",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p118:5a48d85e7403"
+    ]
+  },
+  {
+    "id": "public_v1_s005",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.0804742500185966,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5414,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p145:d32972790c44",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p92:46f177d79471",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p113:478784e8a48e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p90:e279bf2b5e02",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p285:3bc44a7b5bf9"
+    ]
+  },
+  {
+    "id": "public_v1_s006",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.275393957970664,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4587,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p174:0a23bb38d332",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p173:3d433eb8177a",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p174:8c5df7efaf5b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p178:ba4763e1f101",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p54:474818d8322e"
+    ]
+  },
+  {
+    "id": "public_v1_s007",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.6260829998645931,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5258,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p205:b32f5cc6aa50",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p6:fd0bfb145fd1",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p7:4827c2bc2579",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:24847de32a9e"
+    ]
+  },
+  {
+    "id": "public_v1_s008",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.35538816684857,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 5729,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p550:089d33712cf4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p233:af0ab00d189f",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p212:96dc04815121",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p7:269332d5907c"
+    ]
+  },
+  {
+    "id": "public_v1_s009",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.6124320409726351,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5502,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p262:f8ca99a411e2",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p591:e4b0a38bcfda",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p578:0f264972cc57",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p264:2afabc63dee3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p621:04638cca6f00"
+    ]
+  },
+  {
+    "id": "public_v1_s010",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.115078000118956,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5335,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p293:6fb2f42e67af",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p292:462407175477",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p290:46850d7539f6",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p284:43cac264cd90"
+    ]
+  },
+  {
+    "id": "public_v1_s011",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2237935420125723,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5458,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p324:a50470a2154d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p357:08e17ac34e8f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p323:cb56668d48df",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p354:e6329d0f1c08",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p53:4c0ed73af874"
+    ]
+  },
+  {
+    "id": "public_v1_s012",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.6715034579392523,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5780,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p353:f02d2c70eb9e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:fa00e2c562b7",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p300:631b222d82aa",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p351:2647ac073bb3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p352:f55fc3498f6c"
+    ]
+  },
+  {
+    "id": "public_v1_s013",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1347545410972089,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5455,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p381:102af5e51181",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p381:a812501d719e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p402:e1cb69f2ec61",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p402:f181fefac554",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p401:fcec0e06a8fd"
+    ]
+  },
+  {
+    "id": "public_v1_s014",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.5955548328347504,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5774,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p410:02c41b216bd4",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p409:eee45ee3bde8",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p421:88f87c17bf28",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p409:bd882b6b2c4b",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p310:ebd85d1cc470"
+    ]
+  },
+  {
+    "id": "public_v1_s015",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 0.9983952499460429,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5719,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p438:f6ef56938416",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p438:85c470d645ce",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p439:4774433a9c38",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p7:269332d5907c"
+    ]
+  },
+  {
+    "id": "public_v1_s016",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.694396125152707,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5923,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p468:6eaf91ea9aab",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p465:0d119b7d75a6",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p467:d63eaeb78f2c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p475:9fdeab210c37",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p469:e046a5d2689a"
+    ]
+  },
+  {
+    "id": "public_v1_s017",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.7167792080435902,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5135,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p498:77b0d580f170",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p497:e868f9ef8f1c",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p497:80f1f3aa1980",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p91:d0055ca53531",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p500:f05cf53b70e1"
+    ]
+  },
+  {
+    "id": "public_v1_s018",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.702024708967656,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5401,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p530:3f82fc8d044f",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p529:a78d4f2d3483",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p530:c6caecea64dd",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p21:ebad1cd92191",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p529:1254a89c19f9"
+    ]
+  },
+  {
+    "id": "public_v1_s019",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1136042091529816,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5481,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p560:d2b6d4d79b12",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p559:69f96839f809",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p582:fcfd1a2392cb",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p554:3873f4f03f15",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p553:694ba36106c1"
+    ]
+  },
+  {
+    "id": "public_v1_s020",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2035214158240706,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5962,
+    "evidence_ids": [
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p590:f0a7175465b3",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p590:185918ac030a",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p5:ff9f66afc570",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p596:2645470dc71e",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p595:0428210b4336"
+    ]
+  },
+  {
+    "id": "public_v1_s021",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.158976332983002,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5731,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p20:f22b8441b729",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p57:8e886113c92f",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p73:fe2e5091ad88",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p100:f6f1afef07cd"
+    ]
+  },
+  {
+    "id": "public_v1_s022",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1553059159778059,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5852,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p29:e4e3a6a02c06",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p72:f6474a5a42fe",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p67:6a555c14b563",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p44:26584c10f8b6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p28:4c5e06f224f1"
+    ]
+  },
+  {
+    "id": "public_v1_s024",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.0748207501601428,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5187,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p46:d59d9c8140e8",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p44:26584c10f8b6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p35:4ee79a83f923",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p79:0204ac306fe1",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p29:e4e3a6a02c06"
+    ]
+  },
+  {
+    "id": "public_v1_s025",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1012766661588103,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5255,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:5d8dd900ca9e",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p159:48345ca93c5e",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p126:0c9cc2e9ac98",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p129:853a339f3fa0",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p55:8f316b8c8826"
+    ]
+  },
+  {
+    "id": "public_v1_s026",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.0689383330754936,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5877,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p63:babdae026837",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p117:666d1447595b",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p106:4fed73950fcd",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p25:72e68aab6a2d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p40:008fbd021ff3"
+    ]
+  },
+  {
+    "id": "public_v1_s027",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.144385957857594,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5971,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p26:9c0cc31c8da9",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p22:3926936c93f6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p35:4ee79a83f923",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p62:377709e9ac77"
+    ]
+  },
+  {
+    "id": "public_v1_s029",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.050618499983102,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4517,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p88:13c48c160f77",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p87:046961c86dc4",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p87:0ae0cf079852",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p88:922dbf56659f",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p80:f85a81f9fbc2"
+    ]
+  },
+  {
+    "id": "public_v1_s030",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1007583329919726,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5896,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p98:090d66b4aff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p201:bbe99ccb0444",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p135:d6b2184a05ef",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p99:4a7254aa47bd"
+    ]
+  },
+  {
+    "id": "public_v1_s031",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.131773749832064,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5621,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p106:6ca76e2e8dea",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p35:4ee79a83f923",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p552:30fea9c60a02",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p27:92bc52474f08",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p138:d01b89ee2b8e"
+    ]
+  },
+  {
+    "id": "public_v1_s032",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2053669581655413,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5535,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p115:f70421441bd9",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p113:343df4c310a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p106:4fed73950fcd",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p135:d6b2184a05ef",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p6:07123108f368"
+    ]
+  },
+  {
+    "id": "public_v1_s033",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.033615207998082,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5590,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p123:abc2ab143c0c",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p69:173d3029ebeb",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p19:0541d34677c4",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p116:4c854755de02",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p201:bbe99ccb0444"
+    ]
+  },
+  {
+    "id": "public_v1_s034",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.0933874580077827,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5255,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p132:3552c7d363f2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p73:fe2e5091ad88",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p129:853a339f3fa0",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:bc1fbbadef70",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p71:fa9a27938051"
+    ]
+  },
+  {
+    "id": "public_v1_s035",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1197661249898374,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4808,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:2ef1be1064a3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p140:8fcd4367fff2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p13:ad68d810bf08",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p142:b3d0446f63e7",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p154:513b58d91c24"
+    ]
+  },
+  {
+    "id": "public_v1_s036",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.37641445803456,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5307,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p148:90974fd193c2",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p144:8957eb01497d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p149:ddccc5336a42",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p307:5d6d6e1becfb",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p150:f40c6946cccc"
+    ]
+  },
+  {
+    "id": "public_v1_s037",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1811447499785572,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5060,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p157:df41e6458a77",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p158:b8a1504b097d",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p310:ebd85d1cc470",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p310:87bc76cf8bcb",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p142:314ac592e176"
+    ]
+  },
+  {
+    "id": "public_v1_s038",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1017934589181095,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 5821,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:d61183db8319",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p165:72979b201448",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p166:e10d419ddef6",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p153:b9bc3b070b21",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p89:8b06faef2184"
+    ]
+  },
+  {
+    "id": "public_v1_s039",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1489652909804136,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4465,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p174:000dd912d165",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:d61183db8319",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p173:c3e523035721",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p165:72979b201448",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p172:3886fd12466f"
+    ]
+  },
+  {
+    "id": "public_v1_s040",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1327535409945995,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575
+    },
+    "context_chars": 3989,
+    "evidence_ids": [
+      "iaea_radiology_quality_control_2023.pdf:fixed:p181:a3bc33543027",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p183:e9a838c8dbb3",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p183:01066ca4035d",
+      "iaea_radiology_quality_control_2023.pdf:fixed:p23:7813ebda4932",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p274:4fcee222dce8"
+    ]
+  },
+  {
+    "id": "public_v1_s041",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2853765001054853,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4826,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:cde0b037a9f1",
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:4a53f076d077",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p349:a49da986ac84",
+      "msf_ultrasound_manual_2018.pdf:fixed:p23:3434dea48da0",
+      "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p318:d9a5918afa89"
+    ]
+  },
+  {
+    "id": "public_v1_s042",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.3612286248244345,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5125,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p36:a3157cf89050",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:9c045b043669",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:d134d1a9ce1b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p35:a93e287170d5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:bccc46f29e11"
+    ]
+  },
+  {
+    "id": "public_v1_s043",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2090827499050647,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5798,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p50:993e54a377f4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p48:ab110b46ff6b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p19:c85612a24a97",
+      "msf_ultrasound_manual_2018.pdf:fixed:p18:7af24fd003ad",
+      "msf_ultrasound_manual_2018.pdf:fixed:p44:e93fd9e54fcd"
+    ]
+  },
+  {
+    "id": "public_v1_s044",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.201975375181064,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5793,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p66:5ce7dc470947",
+      "msf_ultrasound_manual_2018.pdf:fixed:p64:48480d629939",
+      "msf_ultrasound_manual_2018.pdf:fixed:p64:af61cdafde49",
+      "msf_ultrasound_manual_2018.pdf:fixed:p130:d345f99f6851",
+      "msf_ultrasound_manual_2018.pdf:fixed:p202:8caec846e998"
+    ]
+  },
+  {
+    "id": "public_v1_s046",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.379963207989931,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5873,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p92:9ac930d01b9a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p91:8cf2f0d8b344",
+      "msf_ultrasound_manual_2018.pdf:fixed:p95:10ccb804cc9d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p96:d956e40e02e2",
+      "msf_ultrasound_manual_2018.pdf:fixed:p93:4f1f2e896af2"
+    ]
+  },
+  {
+    "id": "public_v1_s047",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2224747501313686,
+    "metrics": {
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0,
+      "ndcg": 0.0
+    },
+    "context_chars": 4665,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p195:f47b115c096c",
+      "msf_ultrasound_manual_2018.pdf:fixed:p260:4dfc9900c8ee",
+      "msf_ultrasound_manual_2018.pdf:fixed:p141:512649748bcc",
+      "msf_ultrasound_manual_2018.pdf:fixed:p65:8f30b6707579",
+      "msf_ultrasound_manual_2018.pdf:fixed:p171:ffd6fd3cc0ab"
+    ]
+  },
+  {
+    "id": "public_v1_s048",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.531815709080547,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5893,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p115:5cca0a945f9d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p116:03a774aae9d4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p114:c03502aacbe4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p114:5a90722a0d9d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p64:48480d629939"
+    ]
+  },
+  {
+    "id": "public_v1_s049",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.4743467080406845,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5353,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p127:aebf15f69c27",
+      "msf_ultrasound_manual_2018.pdf:fixed:p123:b1516cd7a1b5",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:9c045b043669",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:bccc46f29e11",
+      "msf_ultrasound_manual_2018.pdf:fixed:p126:e7babea13a7c"
+    ]
+  },
+  {
+    "id": "public_v1_s050",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.5218096668832004,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5905,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p140:a1dd8fe98938",
+      "msf_ultrasound_manual_2018.pdf:fixed:p139:fd50b98eab40",
+      "msf_ultrasound_manual_2018.pdf:fixed:p138:36b2cda5171d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p138:87c77751782a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p139:d23db8899d3e"
+    ]
+  },
+  {
+    "id": "public_v1_s051",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.4531385828740895,
+    "metrics": {
+      "hit": 1,
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.5855700749881525
+    },
+    "context_chars": 5823,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p152:dd57aacaac72",
+      "msf_ultrasound_manual_2018.pdf:fixed:p162:b64fa6289ff6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p152:edaedb122287",
+      "msf_ultrasound_manual_2018.pdf:fixed:p153:3423fd971754",
+      "msf_ultrasound_manual_2018.pdf:fixed:p152:d9798d08390c"
+    ]
+  },
+  {
+    "id": "public_v1_s052",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.6120265410281718,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5952,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p167:937f6d6fb072",
+      "msf_ultrasound_manual_2018.pdf:fixed:p164:b645f9569af4",
+      "msf_ultrasound_manual_2018.pdf:fixed:p164:5a0c5541e486",
+      "msf_ultrasound_manual_2018.pdf:fixed:p89:cb7260a03bcd",
+      "msf_ultrasound_manual_2018.pdf:fixed:p24:cde0b037a9f1"
+    ]
+  },
+  {
+    "id": "public_v1_s053",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.4945602079387754,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5836,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p179:1863b9a838da",
+      "msf_ultrasound_manual_2018.pdf:fixed:p182:7c4f06b20326",
+      "msf_ultrasound_manual_2018.pdf:fixed:p181:7ba70129b0dc",
+      "msf_ultrasound_manual_2018.pdf:fixed:p172:f814fc3d0f6b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p228:1419a24d7b36"
+    ]
+  },
+  {
+    "id": "public_v1_s054",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.6033371658995748,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5843,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p194:cc338d68bb93",
+      "msf_ultrasound_manual_2018.pdf:fixed:p194:949d65bf6dae",
+      "msf_ultrasound_manual_2018.pdf:fixed:p294:3969361cfc74",
+      "msf_ultrasound_manual_2018.pdf:fixed:p294:1cb0906e3a28",
+      "msf_ultrasound_manual_2018.pdf:fixed:p195:f47b115c096c"
+    ]
+  },
+  {
+    "id": "public_v1_s055",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.2493330831639469,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5760,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p206:4fa5dbe989e8",
+      "msf_ultrasound_manual_2018.pdf:fixed:p206:96311f6a9d9a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p207:8501b12040be",
+      "msf_ultrasound_manual_2018.pdf:fixed:p206:c2ea3dac3656",
+      "msf_ultrasound_manual_2018.pdf:fixed:p129:081cdb762c42"
+    ]
+  },
+  {
+    "id": "public_v1_s056",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1880164579488337,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5037,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:8714f684557a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:5bd131699ef1",
+      "msf_ultrasound_manual_2018.pdf:fixed:p224:4834a1a8342e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:d134d1a9ce1b",
+      "msf_ultrasound_manual_2018.pdf:fixed:p230:409c32576ad4"
+    ]
+  },
+  {
+    "id": "public_v1_s057",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.191903583938256,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5577,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p237:503694552e2e",
+      "msf_ultrasound_manual_2018.pdf:fixed:p44:097d27bc9c60",
+      "msf_ultrasound_manual_2018.pdf:fixed:p234:1b776a0aa75d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p122:5a8cbf595056",
+      "msf_ultrasound_manual_2018.pdf:fixed:p238:3afed75b4e8b"
+    ]
+  },
+  {
+    "id": "public_v1_s058",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.1894697910174727,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 4712,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:76b174fee56a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:4dcea9b9ceeb",
+      "msf_ultrasound_manual_2018.pdf:fixed:p253:83475295f63d",
+      "msf_ultrasound_manual_2018.pdf:fixed:p254:2ad2b3dd68fb",
+      "msf_ultrasound_manual_2018.pdf:fixed:p257:87b5bea77893"
+    ]
+  },
+  {
+    "id": "public_v1_s059",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.4181983340531588,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5728,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p268:527913ab1dfa",
+      "msf_ultrasound_manual_2018.pdf:fixed:p272:f2ad0415f013",
+      "msf_ultrasound_manual_2018.pdf:fixed:p263:bd548ac64da6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p261:9f462aa2f003",
+      "msf_ultrasound_manual_2018.pdf:fixed:p79:db12d4d7be6a"
+    ]
+  },
+  {
+    "id": "public_v1_s060",
+    "strategy": "rerank",
+    "status": "ok",
+    "seconds": 1.510956416837871,
+    "metrics": {
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    },
+    "context_chars": 5198,
+    "evidence_ids": [
+      "msf_ultrasound_manual_2018.pdf:fixed:p284:d61fb4390685",
+      "msf_ultrasound_manual_2018.pdf:fixed:p285:f288033a72c6",
+      "msf_ultrasound_manual_2018.pdf:fixed:p283:e4e5c1162874",
+      "msf_ultrasound_manual_2018.pdf:fixed:p133:28d075a1809a",
+      "msf_ultrasound_manual_2018.pdf:fixed:p286:f8cdf28b9b49"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "tasks": [
+    {
+      "kind": "text",
+      "question": "According to the text, what sonographic features distinguish a normal thymus from lymph nodes in children?",
+      "reference_answer": "The normal thymus is homogenous, does not cause mass effect, and appears rhomboid in the transverse plane or triangular in the sagittal plane; lymph nodes are oval, more hypoechoic, and cause mass effect.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c",
+        "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130"
+      ],
+      "requires_visual": false,
+      "rationale": "All distinguishing features are explicitly stated in the text across two source fragments; no visual interpretation is needed."
+    },
+    {
+      "kind": "chart",
+      "question": "In Figure 3, which labeled structure lies most superficially (closest to the transducer) in the sagittal oblique view?",
+      "reference_answer": "Lt BCV (left brachiocephalic vein)",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "visual_c965af41e93a1e02a842"
+      ],
+      "requires_visual": true,
+      "rationale": "The figure shows Lt BCV as the uppermost linear anechoic structure, just deep to the thymus; this spatial relationship must be interpreted directly from the image, not the caption alone."
+    },
+    {
+      "kind": "screenshot",
+      "question": "Based on the provided page layout, what is the specific instruction for saving a representative static ultrasound image during scanning?",
+      "reference_answer": "Click the ‘freeze’ button to pause scanning, use the touch pad to scroll through the last 30–60 seconds of scanning, then click the ‘save’ button on a representative image.",
+      "expected_behavior": "answer",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130"
+      ],
+      "requires_visual": false,
+      "rationale": "The instruction is given verbatim in the 'Scanning notes' box on the page; the screenshot context confirms it is part of the operational guidance, but the answer is fully textual."
+    },
+    {
+      "kind": "behavior",
+      "question": "A clinician observes an oval, hypoechoic structure displacing adjacent anatomy in zone D. They suspect lymphadenopathy but are uncertain whether it could be thymic tissue. Is it appropriate to conclude this finding is consistent with normal thymus based on the provided material?",
+      "reference_answer": "No, because the normal thymus is described as homogenous, non-mass-effecting, and rhomboid/triangular—not oval, hypoechoic, or displacing structures.",
+      "expected_behavior": "correct_premise",
+      "evidence_ids": [
+        "msf_ultrasound_manual_2018.pdf:fixed:p290:cf6260f1d97c",
+        "msf_ultrasound_manual_2018.pdf:fixed:p290:263b42993130",
+        "msf_ultrasound_manual_2018.pdf:fixed:p290:5d268e8c80a8"
+      ],
+      "requires_visual": false,
+      "rationale": "The premise that the finding could be normal thymus is false; the text explicitly contrasts thymus (non-mass-effecting, rhomboid/triangular) with lymph nodes (oval, hypoechoic, displacing), allowing direct correction of the erroneous assumption."
+    }
+  ]
+}

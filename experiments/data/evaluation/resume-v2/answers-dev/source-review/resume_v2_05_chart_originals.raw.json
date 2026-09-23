@@ -1,0 +1,15 @@
+{
+  "original_grade_reliable": true,
+  "material_unsupported_claims": [
+    "the left-side diamond is the MTF tool because the caption's '(right)' is likely a printing error",
+    "standard MTF test tool design supports left-side identification"
+  ],
+  "citation_review": [
+    {
+      "id": 1,
+      "supported": false
+    }
+  ],
+  "visual_understanding": "Image shows left: diamond-shaped bar pattern; right: textured rectangle. Gold caption explicitly states 'MTF test tool (right)', while visual_relations section says diamond (left) is MTF tool — internal conflict in source.",
+  "reason": "The answer resolves an internal contradiction in source [1] by overriding explicit caption text with visual inference and external knowledge, which violates groundedness. Citation [1] contains both conflicting statements and does not support the answer’s definitive conclusion. The model must not assert corrections to source text. Initial grade correctly assigns correctness=0 and groundedness=0."
+}

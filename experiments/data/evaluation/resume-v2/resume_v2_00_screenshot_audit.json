@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided text and Figure 5.7(a) explicitly label 'filament length' and 'effective focus'. The caption states: 'the length of the filament appears shortened in the beam direction', and the diagram visually shows the effective focus as the projected (shorter) dimension along the beam axis, consistent with the line focus principle. This matches the reference answer exactly."
+}

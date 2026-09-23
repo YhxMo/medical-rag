@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The provided figure (Fig. 25, configuration b) clearly shows the spatial arrangement: the image receptor is at the top, the phantom (labeled 'water or PMMA phantom') is in the middle, and the radiation detector is positioned beneath the phantom but above the bottom support—i.e., between the phantom and the base, and thus *below* the image receptor and *above* the phantom's lower surface. The dashed lines indicate the X-ray beam path passing through the image receptor, then the phantom, then reaching the radiation detector. This matches the reference answer: 'The radiation detector is positioned above the phantom and below the image receptor, with the phantom (water or PMMA) between them.'"
+}

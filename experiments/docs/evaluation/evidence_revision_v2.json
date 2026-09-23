@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "mode": "offline_no_API",
+  "baseline_count": 60,
+  "draft_count": 60,
+  "modified_draft_count": 3,
+  "human_reviewed_count": 0,
+  "api_calls": 0,
+  "additional_cost_cny": 0,
+  "gate_status_counts": {
+    "no_flag_detected": 56,
+    "needs_review": 4
+  },
+  "gate_reason_counts": {
+    "possible_visual_dependency": 1,
+    "unresolved_assistant_finding": 4,
+    "answer_quality_issue": 1,
+    "initial_screen_failed": 2,
+    "source_review_disagreement": 2
+  },
+  "baseline_sha256": {
+    "all_candidates.json": "dede2f3ab4c1241d72b440b6a2fff56f72e3d8d0201bfcb536b786c503f6694b",
+    "dev.json": "ceb12ae324b623fe7fa2bf7ad31902c51670e8f4582b12b2d6666645eaac9024",
+    "eval.json": "991cf0f52ed21964915e75c73f1828caed378d2084b7387f0e555333dc60d809"
+  },
+  "draft_sha256": "e325a0becf65f1b7f5506d5976ff1215691efc1310f583794dfd982e9749479b",
+  "limits": "heuristic triage, not medical accuracy; draft is no longer an independent holdout; no new answer scores",
+  "code_sha256": {
+    "src/evaluation/evidence_gate.py": "ae65289c1e23ec178941869bee716336459f71f7039ab7eba0c957c81fd8d554",
+    "scripts/build_evidence_revision.py": "c2691eb3398ace8f70760414ef4016872d0333f95a8b8698a095345ab0aa3b02"
+  }
+}

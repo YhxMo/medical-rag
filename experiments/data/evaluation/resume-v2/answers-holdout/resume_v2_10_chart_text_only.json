@@ -1,0 +1,144 @@
+{
+  "question_id": "resume_v2_10_chart",
+  "kind": "chart",
+  "mode": "text_only",
+  "expected_behavior": "answer",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The figure caption (Fig. 5.19) explicitly states: '13.4%: 6-pulse generator'. The chart shows the 13.4% ripple curve (solid line labeled '13.4%') intersecting the 40 keV vertical line at approximately y = 1.0 on the 'photon fluence/mm²·mAs ×10⁴' axis, i.e., ~1.0 × 10⁴ photons/mm²·mAs. This matches the reference answer exactly and requires visual inspection of the chart as noted in the rationale."
+  },
+  "result": {
+    "answer": "根据所提供的资料，无法回答“13.4% 波纹曲线在 40 keV 处的近似光子注量”这一部分。\n\n**1. 13.4% 波纹对应的发生器类型**\n\n资料明确指出：13.4% 波纹对应 **6 脉冲发生器（6-pulse generator）**[1]。同一处图注还给出了其他波纹的对应关系：DC 为恒定电位；3.4% 为 12 脉冲或逆变器（converter）发生器；100% 为 2 脉冲发生器[1]。\n\n这一对应关系在正文中也有独立说明：三相电源经全波整流后每周期得到六个半波（6 脉冲波形），**标称波纹为 13.4%**；由于变压器绕组和电压的不平衡，实际波纹可能接近 25%[2]。\n\n**2. 40 keV 处的光子注量**\n\n**无法提供该数值。** 原因如下：\n\n- 所给资料中没有任何一处给出 40 keV 处的光子注量数值[1][2][3][4][5]。\n- 本次未提供图 5.19 的图像，因此无法从图中读取曲线数值。资料中关于图 5.19 的文字仅说明：在 70 kVp 管电压下，直流电压给出最硬的能谱和最大光子产额；随着波纹增大，产额下降、能谱变软[1]。这些是定性描述，不含 40 keV 处的定量注量。\n- 资料中出现的 40 keV 仅与另一主题相关（数字放射成像使用的 40–150 keV 诊断能量范围）[5]，与图 5.19 无关。\n\n**3. 说明与局限**\n\n- 上述“6 脉冲发生器”结论来自资料文字，属于有据可依的陈述[1][2]。\n- 光子注量数值属于**缺失信息**：既未在文字中给出，也因缺少图 5.19 图像而无法读取。若需该数值，应查阅图 5.19 原图纵轴刻度，并注意其单位与归一化方式（资料未说明该图的纵轴单位或是否归一化）。",
+    "status": "needs_information",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。",
+      "The source text identifies the 13.4% ripple curve as corresponding to a 6-pulse generator, but no figure image is provided and the text gives no photon fluence value at 40 keV."
+    ],
+    "timings": {
+      "retrieval_seconds": 1.5501202909999847,
+      "first_token_seconds": 3.57669637500112,
+      "total_seconds": 5.913820249999844,
+      "model_seconds": 4.303503457998886,
+      "model_first_token_seconds": 0.7749977079984092
+    },
+    "calls": [
+      {
+        "seconds": 1.2010882499998843,
+        "usage": {
+          "input_tokens": 1901,
+          "output_tokens": 50
+        },
+        "cost_upper_cny": 0.004202,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 3.1024152079990017,
+        "usage": {
+          "input_tokens": 1938,
+          "output_tokens": 464
+        },
+        "cost_upper_cny": 0.007588,
+        "model": "deepseek-flash",
+        "cache_hit": false,
+        "first_token_seconds": 0.7749977079984092,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "From Figure 5.19, which generator type corresponds to the 13.4% ripple curve, and what is its approximate photon fluence at 40 keV?",
+    "citations": {
+      "citation_mentions": 12,
+      "valid_citation_mentions": 12,
+      "unique_citations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [],
+    "sources": [
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p140:08f01b984411",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 140,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n113\nX RAY PRODUCTION\ninfluence on the photon distribution; however, photon intensities are proportional \nto mAs.\n5.7.3.\t Tube voltage ripple\nFigure 5.19 shows spectral variations for a tube voltage of 70 kV for various \nvoltage ripples. A DC voltage gives the hardest spectrum with maximum photon \nyield. With an increase in ripple, the yield drops and the spectrum softens.\nFIG. 5.19.  Variation of X  ray spectra from a tungsten target with tube voltage ripple at \n70  kVp tube voltage. DC: constant potential; 3.4%: 12-pulse or converter generator; \n13.4%: 6-pulse generator; 100%: 2-pulse generator.\n5.7.4.\t Anode angle\nThe anode angle determines the degree of X ray absorption in the anode \nmaterial. A decrease in anode angle causes an increase in the absorption length \nwithin the target. Accordingly, the maximum photon energy remains unchanged, \nbut hardness increases and yield drops with decreasing anode angle (Fig. 5.20).\n5.8.\t Filtration\nAs low energy photons do not contribute to the formation of an image, \nfilters are used to reduce the low energy component. Figure  5.21 illustrates \nthe effect of added filters on an X ray spectrum (90 kV, 3.4% ripple). Again,",
+        "scores": {
+          "dense": 0.7388844041229174,
+          "bm25": 41.13023080093727,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.9911317229270935
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p131:e57158f2ec82",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 131,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\n104\nCHAPTER 5\nthe transformed voltage gives a 1-pulse waveform, where a pulse is a half wave \nper period of mains frequency (50 or 60 Hz). Some low power X ray units use \nthe tube as a self-rectifying diode with current only flowing from the cathode to \nthe anode, but reverse current flow, as a result of a hot anode, is a limiting factor. \nNowadays, solid state diodes are used as rectifiers. A full wave rectification \nyields two half waves per period (2-pulse waveform). Voltage ripple of 1- and \n2-pulse waveforms is 100%.\n5.4.2.2.\t Three-phase generators\nWith a three-phase mains supply, three AC voltages, each with a phase \nshift of 120°, are available. Full wave rectification then gives six half waves per \nperiod (6-pulse waveform), with a nominal ripple of 13.4%. Owing to imbalances \nin transformer windings and voltages, the ripple might, in practice, approach \n25%. Adding another secondary winding to the transformer gives two secondary \nvoltages. Combining the full wave rectified secondary voltages using delta and \nwye connections yields a total of six phases with a phase shift of 60° each. Full \nwave rectification then gives a total of 12 pulses per period, with a nominal rippl",
+        "scores": {
+          "dense": 0.6796930044570337,
+          "bm25": 0.0,
+          "rrf": 0.014492753623188406,
+          "weighted": 0.014492753623188406,
+          "rerank": 0.3274346888065338
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p67:19ffa74d549a",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 67,
+        "type": "text",
+        "content": "2.4.\t INTERACTIONS OF ELECTRONS WITH MATTER\n40\nCHAPTER 3\nbeen derived in Section 2.3.4. At a point, P, in space where there is a fluence, F, \nof photons of energy hν, kerma may be calculated as the product of the energy \nfluence and the mass energy transfer coefficient (\n)\ntr\nµ\nρ of the material:\n(\n) (\n)\ntr\ntr\nK\nh\n=Φ\n=\nΨ\nµ\nµ\nρ\nρ\nν\n\t\n(3.9)\nSimilarly, the collision kerma for photons is related to the fluence through \nthe use of the mass energy absorption coefficient (\n)\nen\nµ\nρ :\n(\n)\n(\n)\nen\nen\ncol\nK\nh\n= Φ\n=Ψ\nµ\nµ\nρ\nρ\nν\n\t\n(3.10)\nAlso in Section  2.3.4, a relationship was derived between the energy \nabsorption and energy transfer coefficients (Eq. 2.31). Using this equation, the \nrelationship between collision and total kerma is as follows:\n(\n)\ncol\n1\nK\nK\ng\n=\n−\n\t\n(3.11)\nwhere g is the average fraction of the energy transferred to the charged particles \nthat is lost to photons when the charged particles are slowed down in the same \nmedium as that in which they were released.\nIf the photon beam has a spectrum of energies, Eqs  (3.9, 3.10) may be \ngeneralized through a summation or integration over the range of energies of the \ndiscrete or continuous spectrum, respectively.\nFor photons in the diagnostic energy range (≤150 keV) interac",
+        "scores": {
+          "dense": 0.7043325264768238,
+          "bm25": 29.264303045514524,
+          "rrf": 0.031009615384615385,
+          "weighted": 0.031009615384615385,
+          "rerank": 0.035238757729530334
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p131:1f21c17edd05",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 131,
+        "type": "text",
+        "content": "4.2.\t IMAGE THEORY FUNDAMENTALS\nthe tube current.\nThe pulse shape of a single X ray exposure pulse resembles a fundamental \nfrequency of several tens of kilohertz, giving rise to the generator’s name. \nTransformers for such frequencies are much smaller than for 50/60 Hz voltages, \nreducing the weight substantially. In low power generators, the whole generator \ncould be included in the tube housing, avoiding any high voltage cabling.\nThe voltage ripple depends on many technical factors, but for low power \napplications it is typically ~13%, dropping to ~4% at higher currents. The time \nconstants relevant for voltage and current control are typically <250 µs, enabling \nbetter timing control of the exposure than with single and three phase generators.",
+        "scores": {
+          "dense": 0.7318403168947973,
+          "bm25": 27.327433524852307,
+          "rrf": 0.030798389007344232,
+          "weighted": 0.030798389007344232,
+          "rerank": 0.021603532135486603
+        }
+      },
+      {
+        "id": "iaea_diagnostic_radiology_physics_2014.pdf:fixed:p201:3fc31c314b7f",
+        "source": "iaea_diagnostic_radiology_physics_2014.pdf",
+        "page": 201,
+        "type": "text",
+        "content": "7.3.\t FILM AND SCREEN FILM SYSTEMS\nhis charge is stored in the pixel until the active matrix array is read \nout.\nThere are, in principle, two advantages of direct compared with indirect \nconversion: (i) the lower number of conversion stages makes it possible to have a \nsignificantly higher conversion efficiency of X ray energy to EHPs on the active \nmatrix (~8000 direct versus 1000–2000 indirect), and (ii) much higher resolution \ndue to the elimination of blurring during the charge (direct) or photon (indirect) \ncollection phase. Proposed photoconductors for this purpose include HgI2, CdTe \nand PbO. However, there is only one currently practical photoconductor, a-Se; \nits conversion efficiency is, in fact, comparable to phosphors, and technical \nissues limit its thickness, so it is used mostly in mammography where its low Z \nis ideally matched to the absorption requirements and high resolution is attained \n(see Section 9.4.2). Thus, at the current time, the dominant approaches to digital \ngeneral radiography (i.e. using diagnostic energy X rays in the range 40–150 keV) \nuse the indirect conversion approach owing to the higher specific absorption \nof available phosphors compared with a-Se. In mammography, however, a-",
+        "scores": {
+          "dense": 0.0,
+          "bm25": 26.847573049914068,
+          "rrf": 0.014285714285714285,
+          "weighted": 0.014285714285714285,
+          "rerank": 0.008675473742187023
+        }
+      }
+    ]
+  },
+  "judge": null,
+  "status": "failed",
+  "judge_error": "ValueError"
+}

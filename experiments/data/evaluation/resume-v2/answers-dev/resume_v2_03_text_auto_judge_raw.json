@@ -1,0 +1,20 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    },
+    {
+      "id": 2,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The answer correctly states the minimum required length is 100 cm, which is directly supported by the gold source (Section 2.1.2.2: 'at least 100 cm long') and the retrieved text source (id: iaea_radiology_quality_control_2023.pdf:fixed:p17:6d9092914a40). The answer also correctly cites two sources [1] and [2], both of which correspond to the same textual content on page 17 (the text and its image caption), and the image caption (id: visual_3b856a3681de7a04edc9) explicitly confirms the 'at least 100 cm long' requirement and describes Figure 3, whose right inset shows '99', supporting the claim that the measurement is close to 100 cm. All parts of the question are addressed, and no unsupported claims are made."
+}

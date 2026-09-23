@@ -1,0 +1,33 @@
+{
+  "question_id": "resume_v2_05_screenshot",
+  "mode": "auto",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 1,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "The gold reference image (FIG. 43) shows a small white box in the top-right corner of the X-ray frame containing 'R' above 'CC', matching the visual_relations description in citation 1.",
+    "reason": "The answer correctly identifies 'R' (above) and 'CC' (below) in the top-right corner of FIG. 43, which is explicitly confirmed by both the gold image and citation 1's visual_relations: 'A small 'R' marker with 'CC' beneath appears in the top-right corner'. The interpretation as Right/Cranio-Caudal is standard and supported by context. All required citation_ids [1] are satisfied. No unsupported claims.",
+    "uncited_entries_ignored": []
+  },
+  "usage": {
+    "seconds": 6.1034150420000515,
+    "usage": {
+      "input_tokens": 4545,
+      "output_tokens": 198
+    },
+    "cost_upper_cny": 0.012258,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

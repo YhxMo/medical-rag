@@ -1,15 +1,25 @@
-__pycache__/
-.pytest_cache/
-.claude/
-.vscode/
-tmp/
-outputs/
-*.pyc
+# Local data, generated indexes, model weights and secrets
 .env
 .env.*
-!.env.example
+config.yaml
+/data/raw/
+/artifacts/
+/models/
 
-data/pdfs/*.pdf
-data/excluded_pdfs/*.pdf
-vector_db/
-*.sqlite3
+# Python and editor files
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+.DS_Store
+._*
+.vscode/
+.claude/
+*.log
+
+# Historical run logs are part of the experiment record.
+!/experiments/**/*.log

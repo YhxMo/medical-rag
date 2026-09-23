@@ -1,0 +1,32 @@
+{
+  "question_id": "resume_v2_00_screenshot",
+  "mode": "auto",
+  "review": {
+    "original_grade_reliable": true,
+    "material_unsupported_claims": [],
+    "citation_review": [
+      {
+        "id": 3,
+        "supported": true
+      }
+    ],
+    "visual_understanding": "Fig. 5.7(a) explicitly labels 'filament length' and 'effective focus', showing the latter as the projected (shorter) dimension along the beam direction; caption confirms 'length of the filament appears shortened in the beam direction'.",
+    "reason": "The answer correctly identifies 'filament length' and 'effective focus' as the two labeled dimensions differing due to anode angle, and states that effective focus appears shorter in beam direction. This is directly supported by Fig. 5.7(a) and its caption (citations 1, 2) and by text stating 'electronic focus appears shortened in beam direction by sin θ as the effective focus' (citation 3). All required citation_ids ([3]) are satisfied."
+  },
+  "usage": {
+    "seconds": 9.029285915999935,
+    "usage": {
+      "input_tokens": 4704,
+      "output_tokens": 208
+    },
+    "cost_upper_cny": 0.012736,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  },
+  "AI_reviewed": true,
+  "human_reviewed": false,
+  "original_answer_preserved": true
+}

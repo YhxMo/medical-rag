@@ -1,0 +1,30 @@
+{
+  "question_id": "resume_v2_06_screenshot",
+  "mode": "auto",
+  "status": "ok",
+  "original_untouched": true,
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 0,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": true,
+    "image_claims_supported": false,
+    "citations": [],
+    "reason": "The answer claims the 'Section' column is left-aligned and contains '2.1.x' entries based on a user-uploaded image (page 184), but the only provided evidence is the gold image (page 184) which *does* show Section column with 2.1.1–2.1.6 and left alignment. However, the retrieved sources do not include this image; citation [1] is page 199 (3.2.x), [2] is page 171 (no Section column), [3] is unrelated ultrasound text. The model cannot ground its claim on retrieved evidence—it relies on an unprovided 'user_uploaded_not_a_textbook_source'. Thus, groundedness=0, unsupported_claims=true."
+  },
+  "usage": {
+    "seconds": 7.814998208999896,
+    "usage": {
+      "input_tokens": 5650,
+      "output_tokens": 252
+    },
+    "cost_upper_cny": 0.015332,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1536
+  }
+}

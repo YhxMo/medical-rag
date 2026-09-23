@@ -1,0 +1,30 @@
+{
+  "ids": [
+    "resume_v2_00_chart",
+    "resume_v2_00_screenshot",
+    "resume_v2_01_behavior",
+    "resume_v2_01_chart",
+    "resume_v2_02_chart",
+    "resume_v2_02_screenshot",
+    "resume_v2_03_behavior",
+    "resume_v2_03_chart",
+    "resume_v2_03_text",
+    "resume_v2_04_behavior",
+    "resume_v2_04_chart",
+    "resume_v2_05_chart",
+    "resume_v2_05_screenshot",
+    "resume_v2_05_text",
+    "resume_v2_06_behavior",
+    "resume_v2_06_chart",
+    "resume_v2_06_screenshot",
+    "resume_v2_06_text",
+    "resume_v2_07_chart",
+    "resume_v2_07_screenshot",
+    "resume_v2_08_chart",
+    "resume_v2_08_screenshot",
+    "resume_v2_09_chart",
+    "resume_v2_09_screenshot"
+  ],
+  "status": "pending_source_review",
+  "human_reviewed": 0
+}

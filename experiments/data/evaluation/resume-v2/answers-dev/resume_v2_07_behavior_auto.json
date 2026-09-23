@@ -1,0 +1,131 @@
+{
+  "question_id": "resume_v2_07_behavior",
+  "kind": "behavior",
+  "mode": "auto",
+  "expected_behavior": "correct_premise",
+  "AI_source_audit": {
+    "supported": true,
+    "reason": "The source text on page 98 explicitly states: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.' This directly matches the statement in the question, including the threshold (40% of gestational sac size) and the outcome (50% spontaneous abortion rate). The term 'peri-gestational haemorrhage' is used consistently in both the question and the source. The image caption also corroborates this by stating: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.'"
+  },
+  "result": {
+    "answer": "是的，该陈述 **“Large peri-gestational haemorrhages, exceeding 40% of the size of the gestational sac, are associated with spontaneous abortion in 50% of cases”** 在所提供的材料中得到了明确支持。\n\n具体依据如下：\n\n- 在来源 [1]（MSF超声手册2018版，第97页）中明确写道：  \n  > “Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.”  \n  [1]\n\n- 同样，在来源 [2]（同一页面的图像说明文字）中重复了相同内容：  \n  > “Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.”  \n  [2]\n\n- 此外，用户上传的图像（即手册第97页内容）也清晰显示了该句原文，并配有图12（8周妊娠的经阴道超声图像），图注进一步确认：“Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.”  \n  （图像中可见箭头指示的月牙形血肿、漂浮回声点及小血块，符合描述）\n\n因此，该陈述**直接引自并被所提供材料一致支持**。\n\n✅ 结论：**支持**。",
+    "status": "ok",
+    "warnings": [
+      "引用编号有效；语义支持性仍需核验。"
+    ],
+    "timings": {
+      "retrieval_seconds": 1.6195000419393182,
+      "first_token_seconds": 5.855360792018473,
+      "total_seconds": 11.435372042004019,
+      "model_seconds": 9.67059608292766,
+      "model_first_token_seconds": 1.5928942919708788
+    },
+    "calls": [
+      {
+        "seconds": 2.5360189999919385,
+        "usage": {
+          "input_tokens": 2974,
+          "output_tokens": 16
+        },
+        "cost_upper_cny": 0.006204,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": null,
+        "streaming": false,
+        "output_token_limit": 512
+      },
+      {
+        "seconds": 7.134577082935721,
+        "usage": {
+          "input_tokens": 2987,
+          "output_tokens": 321
+        },
+        "cost_upper_cny": 0.01111,
+        "model": "qwen3-vl-plus",
+        "cache_hit": false,
+        "first_token_seconds": 1.5928942919708788,
+        "streaming": true,
+        "output_token_limit": 1800
+      }
+    ],
+    "query": "Is the statement 'Large peri-gestational haemorrhages, exceeding 40% of the size of the gestational sac, are associated with spontaneous abortion in 50% of cases' supported by the provided material?",
+    "citations": {
+      "citation_mentions": 4,
+      "valid_citation_mentions": 4,
+      "unique_citations": [
+        1,
+        2
+      ],
+      "invalid_citations": [],
+      "has_citation": true,
+      "citation_id_precision": 1.0
+    },
+    "image_paths": [
+      "artifacts/resume-v2/images/879db1557bef673df3c35ec4b3d84057358c9ff268700faa53bdd49dfc521a74.png"
+    ],
+    "sources": [
+      {
+        "id": "msf_ultrasound_manual_2018.pdf:fixed:p98:3054a94f37f9",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 98,
+        "type": "text",
+        "content": "MSF-Ultrasound manual - 2018 edition > 8. Obstetrics early ultrasound – first trimester > 8.3 Abnormal early pregnancy\n8. Obstetrics early ultrasound – first trimester\n97\nPeri-gestational haemorrhage\nPeri-gestational haemorrhage, also called subchorionic haemorrhage or implantation bleeding, \nis a common cause of bleeding in the first trimester affecting about 20 % of women presenting \nwith threatened abortion. It is a mild form of early placental abruption with separation of the \nedge of the placenta from the myometrium resulting in venous bleeding. Ultrasound shows the \nhaemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall \n(Figure 12). The blood may be anechoic, show floating echogenic particles, or be solid appearing \nif clotted. Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated \nwith spontaneous abortion in 50 % of cases. Small haemorrhages are generally not of clinical \nsignificance.\nFigure 12: Peri-gestational haemorrhage\nLongitudinal transvaginal image of the uterus (U) of an 8-week gestational shows the \ncharacteristic crescent shaped collection of a peri-gestational haemorrhage (arrowheads). \nFloating echodensities within the collection and a small clot confirm the collection as being \nblood. Also note in this early",
+        "scores": {
+          "dense": 0.797384746373407,
+          "bm25": 99.88526758411712,
+          "rrf": 0.03278688524590164,
+          "weighted": 0.03278688524590164,
+          "rerank": 0.998467743396759
+        }
+      },
+      {
+        "id": "visual_2f92bf5a145c491fcdf8",
+        "source": "msf_ultrasound_manual_2018.pdf",
+        "page": 98,
+        "type": "image_caption",
+        "content": "MSF-Ultrasound manual - 2018 edition > 8. Obstetrics early ultrasound – first trimester > 8.3 Abnormal early pregnancy\nvisible_text: Peri-gestational haemorrhage\nPeri-gestational haemorrhage, also called subchorionic haemorrhage or implantation bleeding, is a common cause of bleeding in the first trimester affecting about 20 % of women presenting with threatened abortion. It is a mild form of early placental abruption with separation of the edge of the placenta from the myometrium resulting in venous bleeding. Ultrasound shows the haemorrhage as a crescent-shaped collection between the gestational sac and the uterine wall (Figure 12). The blood may be anechoic, show floating echogenic particles, or be solid appearing if clotted. Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases. Small haemorrhages are generally not of clinical significance.\n\nFigure 12: Peri-gestational haemorrhage\nLongitudinal transvaginal image of the uterus (U) of an 8-week gestational shows the characteristic crescent shaped collection of a peri-gestational haemorrhage (arrowheads). Floating echodensities within the collection and a small clot confirm the collection as being blood. Also note in this early pregnancy the normal amnion (curved arrow), the embryo (arrow without tail), and the yolk sac (arrow with tail).\n\nGestational trophoblastic disease – molar pregnancy\nGestational trophoblastic disease (GTD) or molar pregnancy is a proliferation of trophoblastic tissue from the fertilized ovum that ranges from benign and curable to aggressively malignant. Trophoblastic tissue is the functional unit of the placenta. Patients typically present in the first trimester with hyperemesis, bleeding, or toxemia. Quantitative serum beta-human chorionic gonadotropin levels (beta-hCG) are typically substantially elevated serving to confirm the diagnosis. The following forms of GTD are most relevant:\n– The complete hydatidiform mole, ‘classic’ mole, is most common accounting for 80 % of cases of GTD (Figure 13). Placental villi develop cystic changes and proliferate excessively. The uterus is larger than expected for dates. In the first trimester the uterine cavity is filled with a highly echogenic granular mass producing a ‘snowstorm’ appearance on ultrasound. The cysts that make up the mole are too small to be discretely visualized. The molar tissue shows prominent vascularity on colour Doppler (Figure 14). By the second trimester the cysts have enlarged and become distinctly visible. The ovaries are often enlarged by the presence of large cysts, e.g. theca lutein cysts. No embryo is present.\nvisual_relations: {\"Figure 12\": {\"type\": \"longitudinal transvaginal ultrasound\", \"subject\": \"uterus (U) at 8 weeks gestation\", \"key_features\": [\"crescent-shaped hypoechoic collection between gestational sac and uterine wall (arrowheads)\", \"floating echodensities within collection\", \"small clot (confirmed blood)\", \"amnion (curved arrow)\", \"embryo (arrow without tail)\", \"yolk sac (arrow with tail)\"]}}\nunits: % (percentage): 20% of women with threatened abortion; >40% haemorrhage size relative to gestational sac; 50% spontaneous abortion risk; 80% of GTD cases\nuncertainties: Text mentions 'Figure 13' and 'Figure 14' but they are not provided in the supplied image/page.\nThe phrase 'snowstorm' appears truncated in the nearby text ('snow\nely') but fully stated in the main page as 'snowstorm'.\nThe term 'peri-gestational haemorrhage' is used interchangeably with 'subchorionic haemorrhage' and 'implantation bleeding', though clinically implantation bleeding is distinct and typically earlier/milder; the text conflates them.\nsummary: This textbook page (p. 97, Chapter 8: Obstetrics early ultrasound – first trimester) describes two key first-trimester ultrasound findings: (1) Peri-gestational (subchorionic) haemorrhage—a crescent-shaped blood collection between the gestational sac and uterine wall, seen in ~20% of threatened abortions, with risk of miscarriage if >40% of sac size; Figure 12 shows an 8-week case with floating echodensities, a clot, amnion, embryo, and yolk sac. (2) Gestational trophoblastic disease (GTD), especially complete hydatidiform mole (80% of GTD), characterized by a 'snowstorm' echogenic uterine mass, elevated β-hCG, absent embryo, ovarian theca lutein cysts, and prominent vascularity on Doppler. No figures beyond Figure 12 are visible.",
+        "scores": {
+          "dense": 0.7884343496509596,
+          "bm25": 89.87346054347044,
+          "rrf": 0.03225806451612903,
+          "weighted": 0.03225806451612903,
+          "rerank": 0.997978150844574
+        }
+      }
+    ]
+  },
+  "judge": {
+    "correctness": 2,
+    "completeness": 2,
+    "groundedness": 2,
+    "behavior_ok": true,
+    "refused": false,
+    "unsupported_claims": false,
+    "image_claims_supported": true,
+    "citations": [
+      {
+        "id": 1,
+        "supports_associated_claim": true
+      },
+      {
+        "id": 2,
+        "supports_associated_claim": true
+      }
+    ],
+    "reason": "The answer correctly identifies that the statement is directly supported by the provided material. The gold source (msf_ultrasound_manual_2018.pdf, p.97) contains the exact sentence: 'Large haemorrhages, exceeding 40 % of the size of the gestational sac are associated with spontaneous abortion in 50 % of cases.' The retrieved sources (both text and image caption) reproduce this sentence verbatim. The answer cites [1] and [2], corresponding to the text and image-caption sources respectively, both of which contain the supporting quote. The image (Figure 12) is also correctly described as showing the crescent-shaped collection with floating echodensities and a clot, matching the textual description. All key elements of the statement (large peri-gestational haemorrhages >40% sac size, 50% spontaneous abortion risk) are explicitly present in the evidence. No unsupported claims are made; the answer sticks strictly to the provided text and image."
+  },
+  "status": "ok",
+  "judge_usage": {
+    "seconds": 10.746039875084534,
+    "usage": {
+      "input_tokens": 5411,
+      "output_tokens": 320
+    },
+    "cost_upper_cny": 0.015942,
+    "model": "qwen3-vl-plus",
+    "cache_hit": false,
+    "first_token_seconds": null,
+    "streaming": false,
+    "output_token_limit": 1024
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The source text (section d) explicitly states: 'Determine the uniformity as the absolute difference between the CT numbers in the centrally placed ROI and those in each of the four equivalent ROIs near the perimeter.' This confirms that uniformity is assessed by four individual comparisons, not by comparing the central ROI value to the average of the four peripheral ROIs. The technician’s claim is therefore incorrect, matching the reference answer."
+}

@@ -1,0 +1,4 @@
+{
+  "supported": true,
+  "reason": "The left image in Figure 7 shows label 'D' at the interface between the lung (above) and liver (below), and the caption explicitly states: 'The diaphragm (D) delineates the thorax from the abdominal cavity and liver.' This matches the reference answer exactly. The visual evidence confirms the location of 'D', and the textual source (msf_ultrasound_manual_2018.pdf, p279) provides the identification and functional description."
+}

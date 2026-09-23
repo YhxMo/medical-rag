@@ -1,0 +1,16 @@
+{
+  "correctness": 2,
+  "completeness": 2,
+  "groundedness": 2,
+  "behavior_ok": true,
+  "refused": false,
+  "unsupported_claims": false,
+  "image_claims_supported": true,
+  "citations": [
+    {
+      "id": 1,
+      "supports_associated_claim": true
+    }
+  ],
+  "reason": "The question asks for the label in the top-right corner of the X-ray image (FIG. 43). The provided image clearly shows a small white box in the top-right corner containing 'R' above 'CC'. The answer correctly identifies this as 'R' (above) and 'CC' (below), i.e., 'R/CC', and interprets it as Right/Cranio-Caudal, which is consistent with standard radiographic labeling conventions and explicitly supported by the visual_relations description in the gold source: 'A small 'R' marker with 'CC' beneath appears in the top-right corner of the frame, likely indicating orientation (Right, Cranio-Caudal)'. The citation [1] points to the correct source (visual_3d4fbb0eddc00f97a0d6), which contains this exact description. All parts of the question are addressed accurately and fully, with no unsupported claims."
+}

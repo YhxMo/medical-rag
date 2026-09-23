@@ -1,0 +1,8 @@
+{
+  "mode": "multimodal",
+  "preparation": "2f1c1515c49e701eb57b63508df2cd6804fdfda1a8b73a49dbf0250216b96f61",
+  "captions": "f54c0556bbbae082e4f90638b5c41b9f8ab716dd17f5972b2b9ca35c487734d2",
+  "embedding": "BAAI/bge-small-en-v1.5",
+  "text_count": 2809,
+  "caption_count": 60
+}
