@@ -3,6 +3,7 @@
 [![Offline tests](https://github.com/YhxMo/medical-rag/actions/workflows/tests.yml/badge.svg)](https://github.com/YhxMo/medical-rag/actions/workflows/tests.yml)
 ![tests](https://img.shields.io/badge/tests-151%20passed-brightgreen)
 ![python](https://img.shields.io/badge/python-3.12-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [简体中文](README.zh-CN.md) · [Setup & experiments](docs/resume-v2/README.md) · [Verification status](docs/resume-v2/status.json)
 
